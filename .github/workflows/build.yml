@@ -1,5 +1,5 @@
 name: Build
-run-name: Build the project
+run-name: Build the game
 on: [push]
 jobs:
   build:
