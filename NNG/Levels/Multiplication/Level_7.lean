@@ -24,7 +24,7 @@ just try `simp`.
 Statement MyNat.add_mul
 "Addition is distributive over multiplication.
 In other words, for all natural numbers $a$, $b$ and $t$, we have
-$(a + b) \times t = at + bt$."
+$(a + b) \\cdot t = at + bt$."
     (a b t : ℕ) : (a + b) * t = a * t + b * t := by
   induction b with d hd
   · rw [zero_mul]
