@@ -16,4 +16,4 @@ In order to create a new game, click "use this template"  aboove to create your 
 
 ## Development
 
-Note that the setup is currently still in development and will likely see changes and improvements in the next few months.
+Note that the setup is currently still in development and will likely see changes and improvements in the next few months. In particular, you need to change the game's name in several places inside the code when creating a new one.
