@@ -18,6 +18,9 @@ jobs:
       
       - uses: actions/checkout@v2
       
+      - name: lake update
+        run: lake update
+        
       - name: get cache
         run: lake exe cache get
       
