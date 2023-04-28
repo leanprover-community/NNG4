@@ -3,8 +3,6 @@ run-name: Build the game
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,5 +25,5 @@ jobs:
       - name: build game
         run: env LEAN_ABORT_ON_PANIC=1 lake build
 
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag nng:$(date +%s)
+      - name: build docker image
+        run: docker build . --file Dockerfile --tag nng:latest
