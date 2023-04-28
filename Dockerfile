@@ -14,11 +14,6 @@ RUN ./elan-init -y --default-toolchain leanprover/lean4:nightly-2022-09-23
 # TODO: Read out lean version from lean-toolchain file
 ENV PATH="${PATH}:/root/.elan/bin"
 
-
-FROM elan:latest
-
-WORKDIR /
-
 # Copy lean files
 COPY lake-packages/lean4game/server/GameServer ./GameServer
 COPY lake-packages/lean4game/server/Main.lean ./Main
