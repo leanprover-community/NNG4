@@ -16,7 +16,7 @@ ENV PATH="${PATH}:/root/.elan/bin"
 
 # Copy lean files
 COPY lake-packages/GameServer/server/GameServer ./GameServer
-COPY lake-packages/GameServer/server/Main.lean ./Main
+COPY lake-packages/GameServer/server/Main.lean ./Main.lean
 COPY lake-packages/GameServer/server/lakefile.lean ./lakefile.lean
 COPY lake-packages/GameServer/server/lake-manifest.json ./lake-manifest.json
 COPY lake-packages/GameServer/server/lean-toolchain ./lean-toolchain
