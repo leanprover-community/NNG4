@@ -12,7 +12,7 @@ See the [documentation](https://github.com/leanprover-community/lean4game/blob/m
 
 ### Creating a new game
 
-In order to create a new game, click "use this template"  aboove to create your own game. That way there is a github action that can build a docker image from your `main` branch which can be used to add the game to the server at [adam.math.hhu.de](https://adam.math.hhu.de).
+In order to create a new game, click "use this template"  above to create your own game. That way there is a github action that can build a docker image from your `main` branch which can be used to add the game to the server at [adam.math.hhu.de](https://adam.math.hhu.de).
 
 ## Development
 
