@@ -15,13 +15,18 @@ RUN ./elan-init -y --default-toolchain leanprover/lean4:nightly-2022-09-23
 ENV PATH="${PATH}:/root/.elan/bin"
 
 # Copy lean files
-COPY lake-packages/lean4game/server/GameServer ./GameServer
-COPY lake-packages/lean4game/server/Main.lean ./Main
-COPY lake-packages/lean4game/server/lakefile.lean ./lakefile.lean
-COPY lake-packages/lean4game/server/lake-manifest.json ./lake-manifest.json
-COPY lake-packages/lean4game/server/lean-toolchain ./lean-toolchain
-COPY $GAME_DIR ./$GAME_DIR
-# TODO: make `adam` a build argument
+COPY lake-packages/GameServer/server/GameServer ./GameServer
+COPY lake-packages/GameServer/server/Main.lean ./Main
+COPY lake-packages/GameServer/server/lakefile.lean ./lakefile.lean
+COPY lake-packages/GameServer/server/lake-manifest.json ./lake-manifest.json
+COPY lake-packages/GameServer/server/lean-toolchain ./lean-toolchain
+
+# Copy the game to `nng`
+COPY NNG4 ./nng/NNG4
+COPY NNG4.lean ./nng/NNG4.lean
+COPY lakefile.lean ./nng/lakefile.lean
+COPY lake-manifest.json ./nng/lake-manifest.json
+COPY lean-toolchain ./nng/lean-toolchain
 
 WORKDIR /
 RUN rm -f ./build/bin/gameserver
