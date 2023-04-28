@@ -22,8 +22,8 @@ COPY lake-packages/GameServer/server/lake-manifest.json ./lake-manifest.json
 COPY lake-packages/GameServer/server/lean-toolchain ./lean-toolchain
 
 # Copy the game to `nng`
-COPY NNG4 ./nng/NNG4
-COPY NNG4.lean ./nng/NNG4.lean
+COPY NNG ./nng/NNG
+COPY NNG.lean ./nng/NNG.lean
 COPY lakefile.lean ./nng/lakefile.lean
 COPY lake-manifest.json ./nng/lake-manifest.json
 COPY lean-toolchain ./nng/lean-toolchain
