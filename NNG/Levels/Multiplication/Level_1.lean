@@ -22,12 +22,14 @@ Statement MyNat.zero_mul
 "For all natural numbers $m$, we have $ 0 \\cdot m = 0$."
     (m : ℕ) : 0 * m = 0 := by
   induction m
-  rw [mul_zero]
-  rfl
-  rw [mul_succ]
-  rw [n_ih]
-  rw [add_zero]
-  rfl
+  · rw [mul_zero]
+    rfl
+  · rw [mul_succ]
+    rw [n_ih]
+    Branch
+      simp
+    rw [add_zero]
+    rfl
 
 NewTactic simp
 NewLemma MyNat.mul_zero MyNat.mul_succ

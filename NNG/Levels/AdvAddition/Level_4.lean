@@ -17,6 +17,8 @@ Statement
 "Two natural numbers are equal if and only if their successors are equal.
 "
     (a b : ℕ) : succ a = succ b ↔ a = b := by
+  Branch
+    simp
   constructor
   Hint "Now you have two goals. The first is exactly `succ_inj` so you can close
   it with
@@ -37,6 +39,7 @@ Statement
     rfl
 
 LemmaTab "Nat"
+DisabledTactic simp
 
 Conclusion
 "

@@ -25,12 +25,16 @@ $\\operatorname{succ}(\\operatorname{succ}(a))=\\operatorname{succ}(\\operatorna
 then we can deduce $a=b$. "
     {a b : ℕ} (h : succ (succ a) = succ (succ b)) : a = b := by
   Branch
+    simp at h
+    exact h
+  Branch
     exact succ_inj (succ_inj h)
   apply succ_inj
   apply succ_inj
   assumption
 
 LemmaTab "Nat"
+DisabledTactic simp
 
 Conclusion
 "

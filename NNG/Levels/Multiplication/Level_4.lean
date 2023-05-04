@@ -31,9 +31,13 @@ In other words, for all natural numbers $a$, $b$ and $t$, we have
 $t(a + b) = ta + tb$."
     (t a b : ℕ) : t * (a + b) = t * a + t * b := by
   induction b with d hd
-  · rw [add_zero, mul_zero, add_zero]
+  · Branch
+      simp [mul_zero]
+    rw [add_zero, mul_zero, add_zero]
     rfl
-  · rw [add_succ]
+  · Branch
+      simp[mul_succ, add_assoc, hd]
+    rw [add_succ]
     rw [mul_succ]
     rw [hd]
     rw [mul_succ]
@@ -41,4 +45,3 @@ $t(a + b) = ta + tb$."
     rfl
 
 LemmaTab "Mul"
-

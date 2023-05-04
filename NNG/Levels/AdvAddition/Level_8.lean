@@ -27,6 +27,8 @@ then $b = 0$."
   rfl
 
 LemmaTab "Add"
+-- Note: if you find a way to use `simp`, honestly go for it :)
+
 
 Conclusion
 "

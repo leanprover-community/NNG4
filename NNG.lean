@@ -17,7 +17,10 @@ Introduction
 "
 # Natural Number Game
 
-##### version 3.0.1
+##### version 3.0.2
+
+*(note that this ported version of the NNG is still a bit rough around the edges
+and will experience some more love soon.)*
 
 Welcome to the natural number game -- a game which shows the power of induction.
 

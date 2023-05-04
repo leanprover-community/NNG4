@@ -19,6 +19,9 @@ Statement MyNat.succ_eq_succ_of_eq
     {a b : ℕ} : a = b → succ a = succ b := by
   Hint "This is trivial -- we can just rewrite our proof of `a=b`.
   But how do we get to that proof? Use the `intro` tactic."
+  Branch
+    -- TODO: simp can proof this
+    simp?
   intro h
   Hint "Now we can indeed just `rw` `a` to `b`."
   rw [h]
@@ -26,3 +29,4 @@ Statement MyNat.succ_eq_succ_of_eq
   rfl
 
 LemmaTab "Nat"
+DisabledTactic simp

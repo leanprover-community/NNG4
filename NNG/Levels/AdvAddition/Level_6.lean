@@ -19,6 +19,11 @@ In other words, if there are natural numbers $a, b$ and $t$ such that
 $$ t + a = t + b, $$
 then we have $a = b$."
     (t a b : ℕ) : t + a = t + b → a = b := by
+  Branch
+    induction t
+    · simp
+    · simp
+      exact n_ih
   Hint "There is a three-line proof which ends in `exact add_right_cancel a t b` (or even
   `exact add_right_cancel _ _ _`); this
   strategy involves changing the goal to the statement of `add_right_cancel` somehow."
@@ -30,6 +35,7 @@ then we have $a = b$."
   exact add_right_cancel a t b
 
 LemmaTab "Add"
+DisabledTactic simp
 
 Conclusion
 "

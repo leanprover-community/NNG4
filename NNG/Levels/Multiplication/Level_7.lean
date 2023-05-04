@@ -39,8 +39,3 @@ $(a + b) \\cdot t = at + bt$."
     rfl
 
 LemmaTab "Mul"
-
-Conclusion
-"
-
-"

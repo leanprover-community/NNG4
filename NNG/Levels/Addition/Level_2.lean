@@ -33,7 +33,6 @@ $ (a + b) + c = a + (b + c). $"
   Branch
     induction a
     Hint "Good luck with that…"
-    simp?
     --rw [zero_add, zero_add]
     --rfl
   Branch

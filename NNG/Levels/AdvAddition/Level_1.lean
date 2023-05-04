@@ -19,6 +19,7 @@ succ_inj (a b : ℕ) :
 ```
 "
 
+-- NOTE:
 Statement -- MyNat.succ_inj'
 "For all naturals $a$ and $b$, if we assume $\\operatorname{succ}(a)=\\operatorname{succ}(b)$,
 then we can deduce $a=b$."
@@ -29,10 +30,16 @@ then we can deduce $a=b$."
   Branch
     apply succ_inj
     exact hs
+  Branch
+    -- NOTE: a version of `simp_inj` is always part of the `simp` set
+    -- as `succ.injEq : (succ a = succ b) = (a = b)` cannot be removed.
+    simp? at hs
+    exact hs
   exact succ_inj hs
 
 NewLemma MyNat.succ_inj
 LemmaTab "Nat"
+DisabledTactic simp
 
 Conclusion
 "

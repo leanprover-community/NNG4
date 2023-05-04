@@ -16,16 +16,22 @@ Statement MyNat.eq_zero_or_eq_zero_of_mul_eq_zero
 "If $ab = 0$, then at least one of $a$ or $b$ is equal to zero."
     (a b : ℕ) (h : a * b = 0) :
   a = 0 ∨ b = 0 := by
-  induction a with d
-  left
-  rfl
-  induction b with e
-  right
-  rfl
-  exfalso
-  rw [mul_succ] at h
-  rw [add_succ] at h
-  exact succ_ne_zero _ h
+  induction a with d hd
+  · Branch
+      simp
+    left
+    rfl
+  · induction b with e he
+    · Branch
+        simp
+      right
+      rfl
+    · exfalso
+      rw [mul_succ] at h
+      rw [add_succ] at h
+      exact succ_ne_zero _ h
+
+-- TODO: `induction` or `rcases`? Implement the latter.
 
 Conclusion
 "

@@ -11,6 +11,7 @@ def mul : MyNat → MyNat → MyNat
 instance : Mul MyNat where
   mul := MyNat.mul
 
+
 theorem mul_zero (a : MyNat) : a * 0 = 0 := by rfl
 
 theorem mul_succ (a b : MyNat) : a * (succ b) = a * b + a := by rfl

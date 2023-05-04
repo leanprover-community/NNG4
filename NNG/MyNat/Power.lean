@@ -23,4 +23,3 @@ theorem pow_succ (m n : ℕ) : m ^ (succ n) = m ^ n * m := by rfl
 def two_eq_succ_one : (2 : ℕ) = succ 1 := by rfl
 
 end MyNat
-

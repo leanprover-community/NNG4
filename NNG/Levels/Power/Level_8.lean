@@ -10,7 +10,7 @@ open MyNat
 
 Introduction
 "
-[final boss music] 
+[final boss music]
 
 You see something written on the stone dungeon wall:
 ```
@@ -30,6 +30,8 @@ Statement MyNat.add_squared
 "For all naturals $a$ and $b$, we have
 $$(a+b)^2=a^2+b^2+2ab.$$"
   (a b : ℕ) : (a + b) ^ 2 = a ^ 2 + b ^ 2 + 2 * a * b := by
+  Branch
+    simp? [two_eq_succ_one]
   rw [two_eq_succ_one]
   rw [one_eq_succ_zero]
   repeat rw [pow_succ]
@@ -49,3 +51,6 @@ Conclusion
 "
 
 "
+
+-- TODO: Here we could introduce `ring` and have an additional level with just
+-- algebraic equalities.

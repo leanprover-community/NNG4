@@ -23,6 +23,12 @@ Statement MyNat.pow_pow
 
 LemmaTab "Pow"
 
+attribute [simp] MyNat.pow_zero
+attribute [simp] MyNat.pow_succ
+attribute [simp] MyNat.pow_one
+attribute [simp] MyNat.one_pow
+attribute [simp] MyNat.pow_pow -- yes or no?
+
 Conclusion
 "
 Apparently Lean can't find a collectible, even though you feel like you

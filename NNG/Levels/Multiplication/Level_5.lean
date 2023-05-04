@@ -36,8 +36,3 @@ LemmaTab "Mul"
 
 -- TODO: old version introduced `rwa` here, but it would need to be modified
 -- as our `rw` does not call `rfl` at the end.
-
-Conclusion
-"
-
-"

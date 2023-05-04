@@ -32,9 +32,15 @@ Statement MyNat.succ_ne_zero
   `≠`. Or you could use the lemma `Ne.symm (a b : ℕ) : a ≠ b → b ≠ a` which I just added to your
   inventory."
   Branch
-    rw [Ne, Not]
+    simp?
+  Branch
+    rw [Ne] -- same as `simp` or `rw [ne_eq]`
+    rw[Not]
     intro h
     apply zero_ne_succ a
+    Branch
+      apply Eq.symm
+      exact h
     rw [h]
     rfl
   Branch

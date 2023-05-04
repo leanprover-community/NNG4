@@ -12,7 +12,7 @@ open MyNat
 
 Introduction
 "
-The goal below is to prove $x\\le 1+x$ for any natural number $x$. 
+The goal below is to prove $x\\le 1+x$ for any natural number $x$.
 First let's turn the goal explicitly into an existence problem with
 
 `rw le_iff_exists_add,`
@@ -55,7 +55,7 @@ Statement --one_add_le_self
   use 1
   rw [add_comm]
   rfl
-  
+
 Conclusion
 "
 

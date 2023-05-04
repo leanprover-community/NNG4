@@ -25,6 +25,8 @@ Statement MyNat.mul_one
 rw [one_eq_succ_zero]
 rw [mul_succ]
 rw [mul_zero]
+Branch
+  simp
 rw [zero_add]
 rfl
 

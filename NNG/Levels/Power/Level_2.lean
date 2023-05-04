@@ -14,4 +14,5 @@ Statement MyNat.zero_pow_succ
   rw [mul_zero]
   rfl
 
+NewLemma MyNat.pow_succ
 LemmaTab "Pow"

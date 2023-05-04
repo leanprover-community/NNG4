@@ -61,8 +61,6 @@ Statement MyNat.zero_add
     rw [hn]
     rfl
 
-attribute [simp] MyNat.zero_add
-
 NewTactic induction
 LemmaTab "Add"
 
@@ -84,7 +82,7 @@ give you a good grounding in these three basic tactics; after that, if you
 are still interested, there are other worlds to master, where you can learn
 more tactics.
 
-But we're getting ahead of ourselves, you still have to beat the rest of Addition World. 
+But we're getting ahead of ourselves, you still have to beat the rest of Addition World.
 We're going to stop explaining stuff carefully now. If you get stuck or want
 to know more about Lean (e.g. how to do much harder maths in Lean),
 ask in `#new members` at

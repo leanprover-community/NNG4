@@ -19,6 +19,11 @@ Statement MyNat.add_right_cancel_iff
 $$ a + t = b + t\\iff a=b. $$
 "
     (t a b : ℕ) :  a + t = b + t ↔ a = b := by
+  Branch
+    induction t
+    · simp
+    · simp
+      exact n_ih
   constructor
   · Hint "Pro tip: `exact add_right_cancel _ _ _` means \"let Lean figure out the missing inputs\"."
     exact add_right_cancel _ _ _
@@ -27,4 +32,4 @@ $$ a + t = b + t\\iff a=b. $$
     rfl
 
 LemmaTab "Add"
-
+DisabledTactic simp

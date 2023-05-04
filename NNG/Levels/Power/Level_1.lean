@@ -14,6 +14,6 @@ Statement MyNat.zero_pow_zero
   rw [pow_zero]
   rfl
 
-NewLemma MyNat.pow_zero MyNat.pow_succ
+NewLemma MyNat.pow_zero
 NewDefinition Pow
 LemmaTab "Pow"

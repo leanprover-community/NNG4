@@ -39,14 +39,11 @@ $\\operatorname{succ}(a) \\cdot b = ab + b$."
   · rw [mul_succ]
     rw [mul_succ]
     rw [hd]
+    Branch
+      simp [add_right_comm]
     rw [add_succ]
     rw [add_succ]
     rw [add_right_comm]
     rfl
 
 LemmaTab "Mul"
-
-Conclusion
-"
-
-"
