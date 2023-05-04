@@ -1,5 +1,3 @@
-ARG GAME_DIR
-
 FROM ubuntu:18.04
 
 WORKDIR /
@@ -14,22 +12,19 @@ RUN ./elan-init -y --default-toolchain leanprover/lean4:nightly-2022-09-23
 # TODO: Read out lean version from lean-toolchain file
 ENV PATH="${PATH}:/root/.elan/bin"
 
-# Copy lean files
-COPY lake-packages/GameServer/server/GameServer ./GameServer
-COPY lake-packages/GameServer/server/Main.lean ./Main.lean
-COPY lake-packages/GameServer/server/lakefile.lean ./lakefile.lean
-COPY lake-packages/GameServer/server/lake-manifest.json ./lake-manifest.json
-COPY lake-packages/GameServer/server/lean-toolchain ./lean-toolchain
+# Copy the game to `game`
+COPY . ./game
 
-# Copy the game to `nng`
-COPY NNG ./nng/NNG
-COPY NNG.lean ./nng/NNG.lean
-COPY lakefile.lean ./nng/lakefile.lean
-COPY lake-manifest.json ./nng/lake-manifest.json
-COPY lean-toolchain ./nng/lean-toolchain
+WORKDIR /game
+RUN lake update
+RUN lake exe cache get
 
-WORKDIR /
-RUN rm -f ./build/bin/gameserver
+WORKDIR /game/lake-packages/GameServer/server/
+RUN lake clean
 RUN lake build
 
-WORKDIR /build/bin/
+WORKDIR /game
+RUN lake clean
+RUN lake build
+
+WORKDIR /game/lake-packages/GameServer/server/build/bin/
