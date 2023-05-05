@@ -5,7 +5,7 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - name:Export into Game Server
+      - name: Export into Game Server
         uses: fjogeleit/http-request-action@v1
         with:
           url: https://adam.math.hhu.de/import/trigger/${{GITHUB_REPOSITORY}}
