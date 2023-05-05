@@ -1,0 +1,10 @@
+name: Build
+run-name: Export
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: export into Game Server
+        run: curl -s https://adam.math.hhu.de/import/trigger/${GITHUB_REPOSITORY}  > /dev/null && \
+          echo 'View progress at https://adam.math.hhu.de/import/status/${GITHUB_REPOSITORY}'

@@ -12,8 +12,3 @@ jobs:
 
       - name: build docker image
         run: docker build . --file Dockerfile --tag nng:latest
-
-      - name: Store docker container as an artifact
-        uses: ishworkh/docker-image-artifact-upload@v1
-        with:
-          image: "nng:latest"
