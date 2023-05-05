@@ -1,4 +1,4 @@
-name: Build
+name: Export
 run-name: Export
 on: [workflow_dispatch]
 jobs:
