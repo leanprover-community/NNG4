@@ -8,6 +8,6 @@ jobs:
       - name: Export into Game Server
         uses: fjogeleit/http-request-action@v1
         with:
-          url: https://adam.math.hhu.de/import/trigger/${{ env.GITHUB_REPOSITORY }}
+          url: "https://adam.math.hhu.de/import/trigger/${{ env.GITHUB_REPOSITORY }}"
       - name: View Progress
         run: echo "View progress at https://adam.math.hhu.de/import/status/$GITHUB_REPOSITORY"
