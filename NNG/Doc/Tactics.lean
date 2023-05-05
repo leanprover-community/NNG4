@@ -42,7 +42,7 @@ all `X`s in the goal to `Y`s.
 
 ### Variants
 
-* `rw [← h#` (changes `Y` to `X`)
+* `rw [← h]` (changes `Y` to `X`)
 * `rw [h] at h2` (changes `X` to `Y` in hypothesis `h2` instead of the goal)
 * `rw [h] at *` (changes `X` to `Y` in the goal and all hypotheses)
 
