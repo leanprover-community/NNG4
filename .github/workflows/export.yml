@@ -2,7 +2,7 @@ name: Export
 run-name: Export
 on: [workflow_dispatch]
 jobs:
-  build:
+  export:
     runs-on: ubuntu-latest
     steps:
       - name: export into Game Server
