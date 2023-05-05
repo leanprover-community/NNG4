@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: View Progress
-        run: echo "$GITHUB_REPOSITORY ${{GITHUB_REPOSITORY}}"
+        run: echo "$env.GITHUB_REPOSITORY ${{env.GITHUB_REPOSITORY}}"
       - name: View Progress
-        run: echo $GITHUB_REPOSITORY${{GITHUB_REPOSITORY}}
+        run: echo $env.GITHUB_REPOSITORY${{env.GITHUB_REPOSITORY}}
       - name: Export into Game Server
         uses: fjogeleit/http-request-action@v1
         with:
