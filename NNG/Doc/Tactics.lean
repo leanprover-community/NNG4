@@ -161,6 +161,10 @@ TacticDoc tauto
 "
 "
 
+TacticDoc use
+"
+"
+
 TacticDoc right
 "
 "

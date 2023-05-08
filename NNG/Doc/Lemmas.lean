@@ -98,7 +98,7 @@ LemmaDoc Iff.symm as "Iff.symm" in "Nat"
 
 LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Add"
 "(missing)"
-  
+
 LemmaDoc MyNat.add_right_cancel_iff as "add_right_cancel_iff" in "Add"
 "(missing)"
 
@@ -151,18 +151,29 @@ LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "Pow"
 LemmaDoc MyNat.add_squared as "add_squared" in "Pow"
 "(missing)"
 
--- LemmaDoc MyNat. as "" in "Pow"
+LemmaDoc MyNat.le_iff_exists_add as "le_iff_exists_add" in "Inequality"
+"(missing)"
+
+-- LemmaDoc MyNat. as "" in "Inequality"
 -- "(missing)"
 
--- LemmaDoc MyNat. as "" in "Pow"
+-- LemmaDoc MyNat. as "" in "Inequality"
 -- "(missing)"
 
--- LemmaDoc MyNat. as "" in "Pow"
+-- LemmaDoc MyNat. as "" in "Inequality"
 -- "(missing)"
 
--- LemmaDoc MyNat. as "" in "Pow"
+-- LemmaDoc MyNat. as "" in "Inequality"
 -- "(missing)"
 
--- LemmaDoc MyNat. as "" in "Pow"
+-- LemmaDoc MyNat. as "" in "Inequality"
 -- "(missing)"
 
+-- LemmaDoc MyNat. as "" in "Inequality"
+-- "(missing)"
+
+-- LemmaDoc MyNat. as "" in "Inequality"
+-- "(missing)"
+
+-- LemmaDoc MyNat. as "" in "Inequality"
+-- "(missing)"
