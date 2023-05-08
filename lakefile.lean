@@ -19,9 +19,8 @@ open Lean in
   modifyEnv (fun env => Lake.packageDepAttr.ext.addEntry env gameServerName)
    : Elab.Command.CommandElabM Unit)
 
-
-require mathlib from git
-  "https://github.com/leanprover-community/mathlib4.git" @ "fc4a489c2af75f687338fe85c8901335360f8541"
+require std from git
+  "https://github.com/leanprover/std4" @ "44a92d84c31a88b9af9329a441890ad449d8cd5f"
 
 package NNG where
   moreLeanArgs := #["-DautoImplicit=false", "-Dtactic.hygienic=false"]

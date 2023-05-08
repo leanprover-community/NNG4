@@ -1,6 +1,6 @@
 import NNG.Metadata
 import NNG.MyNat.LE
-import Mathlib.Tactic.Use
+import NNG.Tactic.Use
 import Std.Tactic.RCases
 
 Game "NNG"
@@ -20,7 +20,7 @@ that the `cases` tactic can be used (just like it was used to extract
 information from `∧` and `∨` and `↔` hypotheses). Let me talk you through
 the proof of $a\\le b\\implies a\\le\\operatorname{succ}(b)$.
 
-The goal is an implication so we clearly want to start with 
+The goal is an implication so we clearly want to start with
 
 `intro h,`
 
@@ -43,7 +43,7 @@ Now use `use` wisely and you're home.
 "
 
 Statement
-"For all naturals $a$, $b$, if $a\\leq b$ then $a\\leq \\operatorname{succ}(b)$. 
+"For all naturals $a$, $b$, if $a\\leq b$ then $a\\leq \\operatorname{succ}(b)$.
 "
     (a b : ℕ) : a ≤ b → a ≤ (succ b) := by
   intro h

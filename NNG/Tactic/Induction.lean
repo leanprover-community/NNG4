@@ -1,4 +1,4 @@
-import Mathlib.Lean.Expr.Basic
+import NNG.Tactic.LeanExprBasic
 import Lean.Elab.Tactic.Basic
 import NNG.MyNat.Definition
 
@@ -77,6 +77,3 @@ elab (name := _root_.MyNat.induction) "induction " tgts:(casesTarget,+)
       setGoals <| (subgoals ++ result.others).toList ++ gs
 
 end Lean.Parser.Tactic
-
-
-

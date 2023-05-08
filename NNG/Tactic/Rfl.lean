@@ -1,4 +1,4 @@
-import Mathlib.Lean.Expr.Basic
+import NNG.Tactic.LeanExprBasic
 import Lean.Elab.Tactic.Basic
 
 /-! # `rfl` tactic

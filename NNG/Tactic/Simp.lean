@@ -1,4 +1,4 @@
-import Mathlib.Lean.Expr.Basic
+import NNG.Tactic.LeanExprBasic
 import Lean.Elab.Tactic.Basic
 import NNG.Tactic.Rfl
 
@@ -47,5 +47,3 @@ syntax (name := simp) "simp" (config)? (discharger)? (&" only")?
     traceSimpCall stx usedSimps
 
 end MyNat
-
-
