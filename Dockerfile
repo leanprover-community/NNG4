@@ -13,7 +13,9 @@ ENV PATH="${PATH}:/root/.elan/bin"
 COPY . ./game
 
 WORKDIR /game
-RUN lake update && lake exe cache get
+RUN lake update
+# && lake exe cache get
+# # TODO: cache is currently only in mathlib, add it once its in Std
 
 WORKDIR /game/lake-packages/GameServer/server/
 RUN lake clean && lake build
