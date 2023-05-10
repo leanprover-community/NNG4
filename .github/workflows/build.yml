@@ -1,5 +1,5 @@
-name: Build and Upload
-run-name: Build the game
+name: Build
+run-name: Build the game and save artifact
 on:
   workflow_dispatch:
   push:
@@ -20,4 +20,6 @@ jobs:
           image: "game:latest"
 
       - name: What next?
-        run: echo "Once this action is finished, you can run the 'Export' action to pulish the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY."
+        run: echo "To export the game to the Game Server, open \
+          https://adam.math.hhu.de/import/trigger/$GITHUB_REPOSITORY \n\
+          Afterwards, you can play the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY"

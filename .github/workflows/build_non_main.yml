@@ -1,4 +1,4 @@
-name: Build non-main
+name: Build non-main branch
 run-name: Build non-main branch
 on:
   workflow_dispatch:
