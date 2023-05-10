@@ -11,5 +11,11 @@ jobs:
       - name: build docker image
         run: docker build . --file Dockerfile --tag game:latest
 
-      - name: View Progress
-        run: echo "Run the export action to publish the game."
+      - name: Store docker container as an artifact
+        uses: ishworkh/docker-image-artifact-upload@v1
+        with:
+          image: "game:latest"
+
+      - name: What next?
+        run: echo "Once this action is finished, you can run the 'Export' action
+             to pulish the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY."
