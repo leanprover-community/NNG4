@@ -10,6 +10,4 @@ jobs:
         run: wget https://adam.math.hhu.de/import/trigger/$GITHUB_REPOSITORY --no-check-certificate
 
       - name: What next?
-        run: echo "View progress at https://adam.math.hhu.de/import/status/$GITHUB_REPOSITORY.
-        Once done, you can play the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY.
-        "
+        run: echo "View progress at https://adam.math.hhu.de/import/status/$GITHUB_REPOSITORY. Once done, you can play the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY."
