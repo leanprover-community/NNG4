@@ -5,6 +5,17 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
+
+      - uses: actions/checkout@v2
+
+      - name: build docker image
+        run: docker build . --file Dockerfile --tag game:latest
+
+      - name: Store docker container as an artifact
+        uses: ishworkh/docker-image-artifact-upload@v1
+        with:
+          image: "game:latest"
+
       - name: Export into Game Server
         run: wget https://adam.math.hhu.de/import/trigger/$GITHUB_REPOSITORY --no-check-certificate
 

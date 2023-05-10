@@ -1,8 +1,6 @@
 name: Build
 run-name: Build the game
-on:
-  push:
-    branches: [ "main" ]
+on: push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,9 +9,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: build docker image
-        run: docker build . --file Dockerfile --tag nng:latest
+        run: docker build . --file Dockerfile --tag game:latest
 
-      - name: Store docker container as an artifact
-        uses: ishworkh/docker-image-artifact-upload@v1
-        with:
-          image: "nng:latest"
+      - name: View Progress
+        run: echo "Run the export action to publish the game."
