@@ -1,0 +1,15 @@
+name: Build non-main
+run-name: Build non-main branch
+on: [
+  workflow_dispatch,
+  push:
+    branches: [ "!main" ]]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: build docker image
+        run: docker build . --file Dockerfile --tag game:latest
