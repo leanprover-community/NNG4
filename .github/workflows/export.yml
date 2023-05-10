@@ -6,8 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Export into Game Server
-        uses: fjogeleit/http-request-action@v1
-        with:
-          url: ${{ format('https://adam.math.hhu.de/import/trigger/{0}', github.repository)}}
+        run: wget https://adam.math.hhu.de/import/trigger/$GITHUB_REPOSITORY --no-check-certificate
+
       - name: View Progress
         run: echo "View progress at https://adam.math.hhu.de/import/status/$GITHUB_REPOSITORY"
