@@ -17,5 +17,4 @@ jobs:
           image: "game:latest"
 
       - name: What next?
-        run: echo "Once this action is finished, you can run the 'Export' action
-             to pulish the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY."
+        run: echo "Once this action is finished, you can run the 'Export' action to pulish the game at https://adam.math.hhu.de/#/g/$GITHUB_REPOSITORY."
