@@ -1,9 +1,9 @@
 name: Build and Upload
 run-name: Build the game
-on: [
-  workflow_dispatch,
+on:
+  workflow_dispatch:
   push:
-    branches: [ "main" ]]
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest

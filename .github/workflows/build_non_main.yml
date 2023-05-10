@@ -1,9 +1,9 @@
 name: Build non-main
 run-name: Build non-main branch
-on: [
-  workflow_dispatch,
+on:
+  workflow_dispatch:
   push:
-    branches: [ "!main" ]]
+    branches: [ "!main" ]
 jobs:
   build:
     runs-on: ubuntu-latest

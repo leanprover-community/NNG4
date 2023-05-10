@@ -1,6 +1,7 @@
 name: Export
 run-name: Export
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 jobs:
   export:
     runs-on: ubuntu-latest
