@@ -1,6 +1,6 @@
 name: Build
 run-name: Build the game
-on: push
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
