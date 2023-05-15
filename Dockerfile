@@ -25,4 +25,4 @@ RUN lake clean && lake build
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
 
-CMD ./gameserver --server /game/ Game Game
+CMD ./gameserver --server /game/ Game NNG
