@@ -22,9 +22,9 @@ open Lean in
 require std from git
   "https://github.com/leanprover/std4" @ "44a92d84c31a88b9af9329a441890ad449d8cd5f"
 
-package NNG where
-  moreLeanArgs := #["-DautoImplicit=false", "-Dtactic.hygienic=false"]
-  moreServerArgs := #["-DautoImplicit=false", "-Dtactic.hygienic=false"]
+package Game where
+  moreLeanArgs := #["-Dtactic.hygienic=false"]
+  moreServerArgs := #["-Dtactic.hygienic=false"]
 
 @[default_target]
-lean_lib NNG
+lean_lib Game
