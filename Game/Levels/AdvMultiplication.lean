@@ -4,7 +4,7 @@ import Game.Levels.AdvMultiplication.Level_3
 import Game.Levels.AdvMultiplication.Level_4
 
 
-Game "NNG"
+
 World "AdvMultiplication"
 Title "Advanced Multiplication World"
 

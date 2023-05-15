@@ -1,7 +1,7 @@
 import Game.Levels.AdvAddition.Level_11
 
 
-Game "NNG"
+
 World "AdvAddition"
 Level 12
 Title "add_one_eq_succ"

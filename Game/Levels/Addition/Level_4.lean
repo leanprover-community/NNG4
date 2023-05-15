@@ -1,6 +1,6 @@
 import Game.Levels.Addition.Level_3
 
-Game "NNG"
+
 World "Addition"
 Level 4
 Title "`add_comm` (boss level)"

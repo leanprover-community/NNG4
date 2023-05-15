@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Multiplication
 
-Game "NNG"
+
 World "Tutorial"
 Level 1
 Title "The rfl tactic"

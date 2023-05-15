@@ -1,7 +1,7 @@
 import Game.Levels.Power.Level_7
 -- import Mathlib.Tactic.Ring
 
-Game "NNG"
+
 World "Power"
 Level 8
 Title "add_squared"

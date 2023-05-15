@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "AdvProposition"
 Level 3
 Title "and_trans"

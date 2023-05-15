@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition.Level_5
 
-Game "NNG"
+
 World "AdvAddition"
 Level 6
 Title "add_left_cancel"

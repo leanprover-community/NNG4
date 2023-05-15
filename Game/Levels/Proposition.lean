@@ -9,7 +9,7 @@ import Game.Levels.Proposition.Level_8
 import Game.Levels.Proposition.Level_9 -- `cc` is not ported
 
 
-Game "NNG"
+
 World "Proposition"
 Title "Proposition World"
 

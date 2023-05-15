@@ -16,7 +16,7 @@ import Game.Levels.Inequality.Level_1
 -- import Game.Levels.Inequality.Level_16
 -- import Game.Levels.Inequality.Level_17
 
-Game "NNG"
+
 World "Inequality"
 Title "Inequality World"
 

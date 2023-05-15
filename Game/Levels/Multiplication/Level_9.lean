@@ -1,6 +1,6 @@
 import Game.Levels.Multiplication.Level_8
 
-Game "NNG"
+
 World "Multiplication"
 Level 9
 Title "mul_left_comm"

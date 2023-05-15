@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition.Level_3
 
-Game "NNG"
+
 World "AdvAddition"
 Level 4
 Title "eq_iff_succ_eq_succ"

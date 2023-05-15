@@ -1,6 +1,6 @@
 import Game.Levels.Addition.Level_5
 
-Game "NNG"
+
 World "Addition"
 Level 6
 Title "add_right_comm"

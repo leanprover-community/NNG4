@@ -1,7 +1,6 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
 World "Addition"
 Level 1
 Title "the induction tactic."

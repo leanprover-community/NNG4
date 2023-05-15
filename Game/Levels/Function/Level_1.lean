@@ -2,7 +2,7 @@ import Game.Metadata
 
 -- TODO: Cannot import level from different world.
 
-Game "NNG"
+
 World "Function"
 Level 1
 Title "the `exact` tactic"

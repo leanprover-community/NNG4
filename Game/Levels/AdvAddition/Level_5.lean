@@ -1,7 +1,7 @@
 import Game.Levels.AdvAddition.Level_4
 
 
-Game "NNG"
+
 World "AdvAddition"
 Level 5
 Title "add_right_cancel"

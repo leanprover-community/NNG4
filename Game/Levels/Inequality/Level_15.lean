@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.MyNat.LE
 import Game.Tactic.Use
 
-Game "NNG"
+
 World "Inequality"
 Level 15
 Title ""

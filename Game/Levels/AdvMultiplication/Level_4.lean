@@ -1,6 +1,6 @@
 import Game.Levels.AdvMultiplication.Level_3
 
-Game "NNG"
+
 World "AdvMultiplication"
 Level 4
 Title "mul_left_cancel"

@@ -1,7 +1,7 @@
 import Game.Levels.Multiplication
 import Game.Levels.AdvAddition
 
-Game "NNG"
+
 World "AdvMultiplication"
 Level 1
 Title "mul_pos"

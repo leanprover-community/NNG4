@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition.Level_10
 
-Game "NNG"
+
 World "AdvAddition"
 Level 11
 Title "add_right_eq_zero"

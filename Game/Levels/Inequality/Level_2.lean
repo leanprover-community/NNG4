@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.MyNat.LE
 import Mathlib.Tactic.Use
 
-Game "NNG"
+
 World "Inequality"
 Level 2
 Title "le_rfl"

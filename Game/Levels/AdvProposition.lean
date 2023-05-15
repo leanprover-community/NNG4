@@ -10,7 +10,7 @@ import Game.Levels.AdvProposition.Level_9
 import Game.Levels.AdvProposition.Level_10
 
 
-Game "NNG"
+
 World "AdvProposition"
 Title "Advanced Proposition World"
 

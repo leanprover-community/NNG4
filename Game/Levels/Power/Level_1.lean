@@ -1,7 +1,7 @@
 import Game.Levels.Multiplication
 import Game.MyNat.Power
 
-Game "NNG"
+
 World "Power"
 Level 1
 Title "zero_pow_zero"

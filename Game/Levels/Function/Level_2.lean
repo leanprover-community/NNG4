@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Multiplication
 
-Game "NNG"
+
 World "Function"
 Level 2
 Title "the intro tactic"

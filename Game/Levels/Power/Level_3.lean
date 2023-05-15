@@ -1,6 +1,6 @@
 import Game.Levels.Power.Level_2
 
-Game "NNG"
+
 World "Power"
 Level 3
 Title "pow_one"

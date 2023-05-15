@@ -1,7 +1,7 @@
 import Game.Levels.AdvAddition.Level_7
 
 
-Game "NNG"
+
 World "AdvAddition"
 Level 8
 Title "eq_zero_of_add_right_eq_self"

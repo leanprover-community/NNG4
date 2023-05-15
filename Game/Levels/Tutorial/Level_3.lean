@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Definition
 
-Game "NNG"
+
 World "Tutorial"
 Level 3
 Title "Peano axioms"

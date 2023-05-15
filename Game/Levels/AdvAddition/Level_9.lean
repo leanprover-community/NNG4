@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition.Level_8
 
-Game "NNG"
+
 World "AdvAddition"
 Level 9
 Title "succ_ne_zero"

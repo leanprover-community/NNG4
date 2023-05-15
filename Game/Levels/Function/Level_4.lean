@@ -1,6 +1,6 @@
 import Game.Metadata
 
-Game "NNG"
+
 World "Function"
 Level 4
 Title "the `apply` tactic"

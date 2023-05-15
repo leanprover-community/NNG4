@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "Proposition"
 Level 9
 Title "a big maze."

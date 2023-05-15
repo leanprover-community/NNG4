@@ -1,6 +1,6 @@
 import Game.Levels.Power.Level_8
 
-Game "NNG"
+
 World "Power"
 Title "Power World"
 

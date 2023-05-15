@@ -9,7 +9,7 @@ import Game.Levels.Multiplication.Level_8
 import Game.Levels.Multiplication.Level_9
 
 
-Game "NNG"
+
 World "Multiplication"
 Title "Multiplication World"
 

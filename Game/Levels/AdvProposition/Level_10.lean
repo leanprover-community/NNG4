@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "AdvProposition"
 Level 10
 Title "The law of the excluded middle."

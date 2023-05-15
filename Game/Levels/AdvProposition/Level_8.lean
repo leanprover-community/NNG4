@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "AdvProposition"
 Level 8
 Title "`and_or_distrib_left`"

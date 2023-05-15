@@ -1,6 +1,6 @@
 import Game.Levels.Multiplication.Level_5
 
-Game "NNG"
+
 World "Multiplication"
 Level 6
 Title "succ_mul"

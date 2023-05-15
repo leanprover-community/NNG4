@@ -1,7 +1,7 @@
 import Game.Levels.Power.Level_4
 
 
-Game "NNG"
+
 World "Power"
 Level 5
 Title "pow_add"

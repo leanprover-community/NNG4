@@ -9,7 +9,7 @@ import Game.Levels.Function.Level_8
 import Game.Levels.Function.Level_9
 
 
-Game "NNG"
+
 World "Function"
 Title "Function World"
 

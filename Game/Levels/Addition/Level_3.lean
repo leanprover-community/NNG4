@@ -1,6 +1,6 @@
 import Game.Levels.Addition.Level_2
 
-Game "NNG"
+
 World "Addition"
 Level 3
 Title "succ_add"

@@ -1,6 +1,6 @@
 import Game.Levels.Multiplication.Level_1
 
-Game "NNG"
+
 World "Multiplication"
 Level 2
 Title "mul_one"

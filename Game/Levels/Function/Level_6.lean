@@ -1,6 +1,6 @@
 import Game.Metadata
 
-Game "NNG"
+
 World "Function"
 Level 6
 Title "(P → (Q → R)) → ((P → Q) → (P → R))"

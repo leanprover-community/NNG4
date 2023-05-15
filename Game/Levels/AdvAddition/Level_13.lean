@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition.Level_12
 
-Game "NNG"
+
 World "AdvAddition"
 Level 13
 Title "ne_succ_self"

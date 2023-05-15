@@ -3,7 +3,7 @@ import Game.MyNat.LE
 import Game.Tactic.Use
 --import Mathlib.Tactic.Ring
 
-Game "NNG"
+
 World "Inequality"
 Level 1
 Title "the `use` tactic"

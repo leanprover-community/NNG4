@@ -1,6 +1,6 @@
 import Game.Levels.Addition.Level_1
 
-Game "NNG"
+
 World "Addition"
 Level 2
 Title "add_assoc (associativity of addition)"

@@ -1,7 +1,7 @@
 import Game.MyNat.Multiplication
 import Game.Levels.Addition
 
-Game "NNG"
+
 World "Multiplication"
 Level 1
 Title "zero_mul"

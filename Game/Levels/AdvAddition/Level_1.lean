@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.MyNat.AdvAddition
 import Game.Levels.Addition
 
-Game "NNG"
+
 World "AdvAddition"
 Level 1
 Title "`succ_inj`. A function."

@@ -1,7 +1,7 @@
 import Game.Levels.AdvMultiplication.Level_2
 
 
-Game "NNG"
+
 World "AdvMultiplication"
 Level 3
 Title "mul_eq_zero_iff"

@@ -3,7 +3,7 @@ import Game.MyNat.LE
 import Game.Tactic.Use
 import Std.Tactic.RCases
 
-Game "NNG"
+
 World "Inequality"
 Level 3
 Title "le_succ_of_le"

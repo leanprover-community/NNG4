@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "Proposition"
 Level 1
 Title "the `exact` tactic"

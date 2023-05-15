@@ -1,6 +1,6 @@
 import Game.Levels.AdvMultiplication.Level_1
 
-Game "NNG"
+
 World "AdvMultiplication"
 Level 2
 Title "eq_zero_or_eq_zero_of_mul_eq_zero"

@@ -1,7 +1,7 @@
 import Game.Levels.AdvAddition.Level_9
 import Std.Tactic.RCases
 
-Game "NNG"
+
 World "AdvAddition"
 Level 10
 Title "add_left_eq_zero"

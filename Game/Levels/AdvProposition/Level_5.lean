@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "AdvProposition"
 Level 5
 Title "Easter eggs."

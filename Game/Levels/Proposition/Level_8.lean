@@ -1,7 +1,7 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-Game "NNG"
+
 World "Proposition"
 Level 8
 Title "(P → Q) → (¬ Q → ¬ P)"

@@ -11,7 +11,6 @@ import Game.Levels.AdvAddition
 import Game.Levels.AdvMultiplication
 --import Game.Levels.Inequality
 
-Game "NNG"
 Title "Natural Number Game"
 Introduction
 "

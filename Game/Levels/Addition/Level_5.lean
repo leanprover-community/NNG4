@@ -1,6 +1,6 @@
 import Game.Levels.Addition.Level_4
 
-Game "NNG"
+
 World "Addition"
 Level 5
 Title "succ_eq_add_one"
