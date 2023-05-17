@@ -11,7 +11,7 @@ axiom MyNat.one_eq_succ_zero : (1 : ℕ) = succ 0
 
 Introduction
 "
-I've just added `one_eq_succ_zero` (a proof of `1 = succc 0`)
+I've just added `one_eq_succ_zero` (a proof of `1 = succ 0`)
 to your list of theorems; this is true
 by definition of $1$, but we didn't need it until now.
 

@@ -44,7 +44,7 @@ Now let us practise the use of `rw` with this new function `succ`:
 "
 
 Statement
-"If $\\operatorname{succ}(a) = b$, then $\\operatorname{succ}(\\operatorname{succ}(a)) = \\operatorname{succ}(a)$."
+"If $\\operatorname{succ}(a) = b$, then $\\operatorname{succ}(\\operatorname{succ}(a)) = \\operatorname{succ}(b)$."
     (a b : ℕ) (h : (succ a) = b) : succ (succ a) = succ b := by
   Hint "You can use `rw` and your assumption `{h}` to substitute `succ a` with `b`.
 
