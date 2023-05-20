@@ -14,7 +14,7 @@ In Lean3 there was a tactic `cc` which stands for \"congruence closure\"
 which could solve all these mazes automatically. Currently this tactic has
 not been ported to Lean4, but it will eventually be available!
 
-For now, you can try to do this final level manually to apprechiate the use of such
+For now, you can try to do this final level manually to appreciate the use of such
 automatisation ;)
 "
 -- TODO:
