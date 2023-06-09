@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  nng4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lean4-game-dev
+    container_name: lean4-develop
+    command: npm start
+    volumes:
+      - ..:/NNG4
+    ports:
+      - "3000:3000"
