@@ -1,5 +1,5 @@
 {
   "dockerComposeFile": "./docker-compose.yml",
-  "service": "nng4",
-  "workspaceFolder": "/NNG4"
+  "service": "game",
+  "workspaceFolder": "/game"
 }

@@ -1,14 +1,12 @@
 version: "3.9"
 
 services:
-  nng4:
+  game:
     build:
       context: .
       dockerfile: Dockerfile
-    image: lean4-game-dev
-    container_name: lean4-develop
-    command: npm start
+    command: bash -c "(cd /game && lake update && lake build) && npm start"
     volumes:
-      - ..:/NNG4
+      - ..:/game
     ports:
       - "3000:3000"

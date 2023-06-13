@@ -15,11 +15,6 @@ RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -
   leanc --version; \
   lake --version;
 
-RUN git clone https://github.com/hhu-adam/NNG4.git
-
-WORKDIR /NNG4
-RUN lake update && lake build
-
 WORKDIR /
 RUN git clone https://github.com/leanprover-community/lean4game.git
 
