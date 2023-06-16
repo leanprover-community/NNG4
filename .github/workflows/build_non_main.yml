@@ -3,7 +3,8 @@ run-name: Build non-main branch
 on:
   workflow_dispatch:
   push:
-    branches: [ "!main" ]
+    branches-ignore:
+    - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
