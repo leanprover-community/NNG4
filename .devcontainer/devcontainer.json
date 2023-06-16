@@ -1,5 +1,13 @@
 {
   "dockerComposeFile": "./docker-compose.yml",
   "service": "game",
-  "workspaceFolder": "/game"
+  "workspaceFolder": "/game",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.autoForwardPorts": false
+      }
+    }
+  }
 }
