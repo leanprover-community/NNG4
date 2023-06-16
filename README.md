@@ -16,4 +16,10 @@ In order to create a new game, click "use this template"  above to create your o
 
 ## Development
 
-Note that the setup is currently still in development and will likely see changes and improvements in the next few months. In particular, you need to change the game's name in several places inside the code when creating a new one.
+### Installation
+
+Note that the setup is currently still in development and will likely see changes
+and improvements in the next few months.
+
+To run a local version of the game on your `localhost`, follow the
+instructions "[Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally)".
