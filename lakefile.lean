@@ -19,8 +19,8 @@ open Lean in
   modifyEnv (fun env => Lake.packageDepAttr.ext.addEntry env gameServerName)
    : Elab.Command.CommandElabM Unit)
 
-require std from git
-  "https://github.com/leanprover/std4" @ "44a92d84c31a88b9af9329a441890ad449d8cd5f"
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4" @ "88e129706828e01b7622d6635af1ca6667e25bac"
 
 package Game where
   moreLeanArgs := #["-Dtactic.hygienic=false"]
