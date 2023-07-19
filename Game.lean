@@ -59,8 +59,4 @@ If you delete it, your progress will be lost!
 
 "
 
-Path Tutorial → Addition → Function → Proposition → AdvProposition → AdvAddition → AdvMultiplication
-Path Addition → Multiplication → AdvMultiplication -- → Inequality
-Path Multiplication → Power
-
 MakeGame

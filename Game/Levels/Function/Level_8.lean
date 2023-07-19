@@ -20,7 +20,7 @@ make an element of $\\operatorname{Hom}(\\operatorname{Hom}(P,Q),
 \\operatorname{Hom}(\\operatorname{Hom}(Q,\\emptyset),\\operatorname{Hom}(P,\\emptyset)))$."
     (P Q : Type) : (P → Q) → ((Q → Empty) → (P → Empty)) := by
   Hint (hidden := true) "Maybe start again with `intro`."
-  intros f h p
+  intro f h p
   Hint "
   Note that now your job is to construct an element of the empty set!
   This on the face of it seems hard, but what is going on is that

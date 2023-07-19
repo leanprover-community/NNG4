@@ -33,6 +33,9 @@ then we can deduce $a=b$. "
   apply succ_inj
   assumption
 
+TacticDoc assumption "none"
+
+NewTactic assumption -- TODO: just added to satisfy the linter
 LemmaTab "Nat"
 DisabledTactic simp
 
