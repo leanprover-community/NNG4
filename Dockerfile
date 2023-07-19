@@ -14,14 +14,15 @@ COPY . ./game
 
 WORKDIR /game
 RUN lake update
-# && lake exe cache get
-# # TODO: cache is currently only in mathlib, add it once its in Std
 
+# Build the GameServer
 WORKDIR /game/lake-packages/GameServer/server/
 RUN lake clean && lake build
 
+# Build the Game
+# Remove `lake exe cache get` if your game does not depend on `mathlib`
 WORKDIR /game
-RUN lake clean && lake build
+RUN lake clean && lake exe cache get && lake build
 
 WORKDIR /game/lake-packages/GameServer/server/build/bin/
 
