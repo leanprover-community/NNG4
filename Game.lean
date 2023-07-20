@@ -59,4 +59,6 @@ If you delete it, your progress will be lost!
 
 "
 
+Path Proposition → AdvProposition
+
 MakeGame
