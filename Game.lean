@@ -59,6 +59,8 @@ If you delete it, your progress will be lost!
 
 "
 
-Path Proposition → AdvProposition
+-- Add manual paths
+Dependency Proposition → AdvProposition
+Dependency Multiplication → Function
 
 MakeGame
