@@ -8,32 +8,62 @@ Title "The rfl tactic"
 
 Introduction
 "
-Each level in this game involves proving a mathematical statement. In this first level
-you have three natural numbers $x, y, z$ (listed under \"Objects\") and you want to prove
-$xy + z = xy + z$ (displayed under \"Goal\").
+Each level in this game involves proving a mathematical theorem (the \"Goal\").
+In this first level we're going to learn how to prove that $37x + q = 37x + q$.
+Here $x$ and $q$ are secret numbers (you can see them listed under \"Objects\"))
+and $37$ is a non-secret number (not listed).
 
-You can modify the Goal using *Tactics* until you can close it (i.e. prove it).
+You're going to prove the theorems using *Tactics*, and the first tactic we're
+going to learn is called `rfl`, which is short for \"reflexivity of equality\",
+an intimidating way of saying that $X = X$ is always true.
 
-The first tactic is called `rfl`, which stands for \"reflexivity\",
-a fancy way of saying that it will prove any goal of the form `A = A`. It doesn't matter how
-complicated `A` is, all that matters is that the left hand side is exactly equal to the right hand
-side. I really mean \"press the same buttons
-on your computer in the same order\" equal. For example, `x * y + z = x * y + z` can be proved by `rfl`,
-but `x + y = y + x` cannot.
+Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
 "
 
 Statement
-"For all natural numbers $x, y$ and $z$, we have $xy + z = xy + z$."
-    (x y z : ℕ) : x * y + z = x * y + z := by
+"If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$"
+    (x q : ℕ) : 37 * x + q = 37 * x + q := by
   Hint "In order to use the tactic `rfl` you can enter it above and hit \"Execute\"."
   rfl
 
+TacticDoc rfl "
+## Summary
+
+`rfl` proves goals of the form `X = X`.
+
+## Details
+
+The `rfl` tactic will close any goal of the form `A = B` if `A` and `B` are
+*exactly the same thing*.
+
+## Example:
+
+If the goal looks like this:
+
+```
+⊢ x^37+691*y^24+1=x^37+691*y^24+1
+```
+
+then `rfl` will close it. But if it looks like `0 + x = x` then it won't.
+"
 NewTactic rfl
+DefinitionDoc MyNat as "Nat" "The natural numbers, defined as an inductive type, with two constructors:
+
+* `0 : Nat`
+* `succ (n : Nat) : Nat`
+"
 NewDefinition MyNat
 
 Conclusion
 "
 Congratulations! You completed your first verified proof!
+
+Most of the levels in this game aren't as easy as that one. One thing it is important to
+learn about `rfl` is that it will *not* prove theorems such as `x + y = y + x`. We all
+*know* that `x + y = y + x`, but `rfl` doesn't work like that. `rfl` will prove a theorem
+of the form `X = Y` only if `X` and `Y` are *syntactically equal*, i.e. made by pressing
+the same buttons on your keyboard in the same order.
+
 
 If you want to be reminded about the `rfl` tactic, your inventory on the right contains useful
 information about things you've learned.

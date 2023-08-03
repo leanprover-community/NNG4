@@ -10,10 +10,19 @@ open MyNat
 
 Introduction
 "
-Peano defined addition $a + b$ by induction on $b$, or, more precisely, by *recursion* on $b$.
-He first explained how to add $0$ to a number: this is the base case.
+Peano defined addition $a + b$ by adding two axioms to his system.
+Peano's first axiom was called `add_zero`. Here it is:
 
-* `add_zero (a : ℕ) : a + 0 = a`
+* `add_zero : ∀ (a : ℕ), a + 0 = a`
+
+An axiom is just a theorem with a secret proof. The *statement* of the theorem
+is `∀ (a : ℕ), a + 0 = a`, and the *proof* is `add_zero`. You can't unfold
+`add_zero` any more: it's an axiom.
+
+
+induction on $b$, or, more precisely, by *recursion* on $b$.
+In other words, he introduced two axiomsHe first explained how to add $0$ to a number: this is the base case.
+
 
 We will call this theorem `add_zero`.
 More precisely, `add_zero` is the name of the *proof* of the
