@@ -1,4 +1,4 @@
-import Game.Levels.Addition.Level_6 -- makes simps work?
+import Game.Levels.Tutorial.L02rw-- makes simps work?
 import Mathlib.Tactic
 namespace MyNat
 
@@ -138,3 +138,9 @@ match a with
       match instDecidableEq p q with
       | isTrue h => isTrue <| by simp_all
       | isFalse h => isFalse <| by simp_all
+
+theorem one_eq_succ_zero : 1 = succ 0 := by decide
+theorem two_eq_succ_one : 2 = succ 1 := by decide
+theorem three_eq_succ_two : 3 = succ 2 := by decide
+theorem four_eq_succ_three : 4 = succ 3 := by decide
+theorem five_eq_succ_four : 5 = succ 4 := by decide

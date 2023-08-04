@@ -1,12 +1,15 @@
 import Game.Metadata
 import Game.MyNat.Definition
-
+import Game.MyNat.DecidableEq
 
 World "Tutorial"
-Level 3
+Level 4
 Title "Peano axioms"
 
-open MyNat
+namespace MyNat
+
+LemmaDoc MyNat.one_eq_succ_zero as "foobar" in "bazqux" "`one_eq_succ_zero is a proof of `1 = succ 0`."
+NewLemma MyNat.one_eq_succ_zero
 
 Introduction
 "
@@ -37,18 +40,23 @@ Statement
   writing a small `←` (`\\l`, i.e. backslash + small letter L + space)
   before `h` like this: `rw [← h]`."
   Branch
-    simp? -- TODO: `simp` should not make progress.
-  Branch
     rw [← one_eq_succ_zero]
-    Hint (hidden := true) "Now both sides are identical…"
-  rw [h]
+    Hint (hidden := true) "Now both sides are identical."
+    rfl
+  rw [one_eq_succ_zero]
   Hint (hidden := true) "Now both sides are identical…"
   rfl
 
 Conclusion
 "
-You may also be wondering why we keep writing `succ b` instead of `b + 1`.
-This is because we haven't defined addition yet!
-On the next level, the final level of Tutorial World,
-we will introduce addition, and then we'll be ready to enter Addition World.
+We can now go on to define `2`, `3`, `4` and `5` and create associated
+proofs called `two_eq_succ_one`, `three_eq_succ_two`, `four_eq_succ_three`.
+
+Why did we call the lemma `one_eq_succ_zero : 1 = succ 0` and not
+`succ_zero_eq_one : succ 0 = 1`? There is a reason. At this point
+in our development of numbers it's very helpful to have a \"normal form\"
+for each number. The normal form we are using for a number `n` is
+`succ (succ (succ (... (succ 0)))...)` with `n` `succ`s. The number
+`1` is not in this form. The lemma changes `1` into its normal form.
+Similarly `three_eq_succ_two` directs `3` towards its normal form.
 "
