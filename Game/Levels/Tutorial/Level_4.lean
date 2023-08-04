@@ -17,7 +17,19 @@ Peano's first axiom was called `add_zero`. Here it is:
 
 An axiom is just a theorem with a secret proof. The *statement* of the theorem
 is `∀ (a : ℕ), a + 0 = a`, and the *proof* is `add_zero`. You can't unfold
-`add_zero` any more: it's an axiom.
+`add_zero` any more: it's an axiom. In Lean, every provable theorem has
+*exactly one proof*, and it's an \"atom\", just like if $G$ is a group
+then the elements of $G$ are atoms. The set theory provers (Mizar, Metamath etc)
+tell us that those atoms, if you look closely enough, are themselves sets.
+Let me coin a phrase for the simple type theorists such as Isabelle/HOL
+and he dependent type theorists such as Coq and Lean: let me call them the \"lower type theorists\".
+Whether or are dependent or simple depends on how seriously you care about category theory; it
+is not a coincidence that Hales' proof of Kepler had no category theory in it at all.
+
+The *lower type theorist*  a term which I coin to mean the both the simple type theorists
+such as Isabelle/HOL and the dependent type theorists such as Coq and Lean
+that is, the simple type theorist ()
+simply doesn't care.
 
 
 induction on $b$, or, more precisely, by *recursion* on $b$.
