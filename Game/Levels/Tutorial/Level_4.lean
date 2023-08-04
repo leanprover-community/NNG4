@@ -79,12 +79,14 @@ Statement
   Hint (hidden := true) "Explicitely, type `rw [add_zero]`!"
   Branch
     simp? -- TODO
-  rw [add_zero]
+  rw [MyNat.add_zero]
   Hint (hidden := true) "Finally both sides are identical."
   rfl
 
 NewLemma MyNat.add_succ MyNat.add_zero
 NewDefinition Add
+
+#check add_zero
 
 Conclusion
 "
