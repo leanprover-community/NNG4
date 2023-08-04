@@ -1,7 +1,7 @@
-import Game.Levels.Tutorial.01_rfl
-import Game.Levels.Tutorial.02_rw
-import Game.Levels.Tutorial.03_rw_practice
-import Game.Levels.Tutorial.04_zero_succ_one
+import Game.Levels.Tutorial.L01rfl
+import Game.Levels.Tutorial.L02rw
+import Game.Levels.Tutorial.L03rw_practice
+import Game.Levels.Tutorial.L04zero_succ_one
 
 
 World "Tutorial"
