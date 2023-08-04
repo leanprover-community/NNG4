@@ -11,9 +11,9 @@ Introduction
 Each level in this game involves proving a mathematical theorem (the \"Goal\").
 In this first level we're going to learn how to prove that $37x + q = 37x + q$.
 Here $x$ and $q$ are secret numbers (you can see them listed under \"Objects\"))
-and $37$ is a non-secret number (not listed).
+and $37$ is a non-secret number.
 
-You're going to prove the theorems using *Tactics*, and the first tactic we're
+We're going to prove the theorems using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which is short for \"reflexivity of equality\",
 an intimidating way of saying that $X = X$ is always true.
 
@@ -44,7 +44,7 @@ If the goal looks like this:
 ⊢ x^37+691*y^24+1=x^37+691*y^24+1
 ```
 
-then `rfl` will close it. But if it looks like `0 + x = x` then it won't.
+then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even though $0+x$ is *equal* to $x$, it is not *exactly the same thing* as *x*. The only thing which is exactly the same as `0 + x` is `0 + x`.
 "
 NewTactic rfl
 DefinitionDoc MyNat as "Nat" "The natural numbers, defined as an inductive type, with two constructors:
@@ -61,7 +61,7 @@ Congratulations! You completed your first verified proof!
 Most of the levels in this game aren't as easy as that one. One thing it is important to
 learn about `rfl` is that it will *not* prove theorems such as `x + y = y + x`. We all
 *know* that `x + y = y + x`, but `rfl` doesn't work like that. `rfl` will prove a theorem
-of the form `X = Y` only if `X` and `Y` are *syntactically equal*, i.e. made by pressing
+of the form `X = Y` if `X` and `Y` are *syntactically equal*, i.e. made by pressing
 the same buttons on your keyboard in the same order.
 
 

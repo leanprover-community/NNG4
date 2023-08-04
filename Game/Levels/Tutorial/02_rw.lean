@@ -10,20 +10,23 @@ Introduction
 "
 In this level we make your life easier by giving you an *Assumption*. Here we have
 two secret numbers $x$ and $y$, but I will also give you a hypothesis `h` stating
-that `y = x + 7`. You can think of `y = x + 7` as being the statement of a theorem,
-and `h` being its secret proof.
+that `y = x + 7`. You can think about `h` as follows: `y = x + 7` is a true/false statement,
+and `h` is a secret proof of this statement. It is important in games like this to distinguish
+between true/false statements (which cannot be used to do anything), and theorem proofs
+(which can be used to apply theorems).
 
-`h` is the proof of an equality, and the *rewrite* tactic `rw` consumes lists
-of equality proofs. Rewriting is the way that we \"substitute in\" the value of
-a variable. Let's see the rewrite tactic in action.
+The goal of this level is to prove that $2y=2(x+7)$. We want to prove this
+by replacing `y` by `x + 7` and then using `rfl`. The tactic which we use to
+do this kind of "substituting in" is called the *rewrite* tactic `rw`.
+The tactic `rw [h]` will replace all occurences of the left hand side $y$ of `h`
+in the goal, with the right hand side $x+7$.
+
 "
 
 Statement
 "If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$."
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
   Hint "You can use `rw [h]` to replace the `{y}` with `x + 7`."
---  Note that the assumption `h` is written
---  inside square brackets: `[h]`."
   rw [h]
   Hint "Not all hints are directly shown. If you are stuck and need more help
   finishing the proof, click on \"More Help\" below!"
