@@ -1,5 +1,6 @@
 --import Mathlib.Tactic
-import Game.Levels.Addition
+import Game.MyNat.Addition
+import Game.Levels.Addition.Level_6 -- makes simps work?
 --import Mathlib.Util.WhatsNew
 
 namespace MyNat
