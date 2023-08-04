@@ -41,8 +41,6 @@ If you ever see `… + succ …` in your goal, you should be able to use
 `rw [add_succ]` to make progress.
 "
 
-attribute [simp] MyNat.add_zero
-
 LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 "One of the two axioms defining addition. It says `n + (succ m) = succ (n + m)`."
 

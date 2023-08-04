@@ -33,8 +33,6 @@ If you have written `rw le_iff_exists_add` below, then just put two minus signs 
 before it and comment it out. See that the proof still compiles.
 "
 
-#check le_iff_exists_add
-
 axiom TMP.add_comm (a b : ℕ) : a + b = b + a
 
 Statement --one_add_le_self
