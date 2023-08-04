@@ -12,11 +12,12 @@ instance : Add MyNat where
   add := MyNat.add
 
 /--
-This theorem proves that if you add zero to a MyNat you get back the same number.
+If `a` is a natural number, then `add_zero a` is the proof that `a + 0 = a`.
 -/
 theorem add_zero (a : MyNat) : a + 0 = a := by rfl
 
 /--
-This theorem proves that (a + (d + 1)) = ((a + d) + 1) for a,d in MyNat.
+If `a` and `d` are natural numbers, then `add_succ a d` is the proof that
+`a + succ d = succ (a + d)`.
 -/
 theorem add_succ (a d : MyNat) : a + (succ d) = succ (a + d) := by rfl
