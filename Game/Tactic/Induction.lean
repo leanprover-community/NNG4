@@ -1,6 +1,11 @@
-import Game.Tactic.LeanExprBasic
 import Lean.Elab.Tactic.Basic
+import Lean.Elab.Tactic.Induction
+import Std.Tactic.OpenPrivate
+import Std.Data.List.Basic
 import Game.MyNat.Definition
+
+import Mathlib.Lean.Expr.Basic
+
 
 namespace MyNat
 

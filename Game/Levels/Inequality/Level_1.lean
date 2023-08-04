@@ -33,7 +33,9 @@ If you have written `rw le_iff_exists_add` below, then just put two minus signs 
 before it and comment it out. See that the proof still compiles.
 "
 
-axiom add_comm (a b : ℕ) : a + b = b + a
+#check le_iff_exists_add
+
+axiom TMP.add_comm (a b : ℕ) : a + b = b + a
 
 Statement --one_add_le_self
 "If $x$ is a natural number, then $x\\le 1+x$.
@@ -43,7 +45,7 @@ Statement --one_add_le_self
   The goal below is to prove $x\\le 1+x$ for any natural number $x$.
   First let's turn the goal explicitly into an existence problem with
   `rw [le_iff_exists_add]`."
-  rw [le_iff_exists_add]
+  rw [MyNat.le_iff_exists_add]
   Hint "
   Clearly this statement now is true,
   and the proof is that $c=1$ will work (we also
@@ -63,7 +65,7 @@ Statement --one_add_le_self
   -- which is a powerful AI which will solve any equality in algebra which can
   -- be proved using the standard rules of addition and multiplication. Now
   -- look at your proof. We're going to remove a line.
-  rw [add_comm]
+  rw [TMP.add_comm]
   rfl
 
 NewTactic use -- ring

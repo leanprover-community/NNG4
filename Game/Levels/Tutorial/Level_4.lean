@@ -41,6 +41,8 @@ If you ever see `… + succ …` in your goal, you should be able to use
 `rw [add_succ]` to make progress.
 "
 
+attribute [simp] MyNat.add_zero
+
 LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 "One of the two axioms defining addition. It says `n + (succ m) = succ (n + m)`."
 
@@ -58,12 +60,14 @@ Statement
   Hint (hidden := true) "Explicitely, type `rw [add_zero]`!"
   Branch
     simp? -- TODO
-  rw [add_zero]
+  rw [MyNat.add_zero]
   Hint (hidden := true) "Finally both sides are identical."
   rfl
 
 NewLemma MyNat.add_succ MyNat.add_zero
 NewDefinition Add
+
+#check add_zero
 
 Conclusion
 "
