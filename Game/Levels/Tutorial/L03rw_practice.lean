@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.MyNat.Multiplication
 import Game.MyNat.Power
 
 
@@ -13,7 +14,7 @@ Use the `rw` tactic to prove that $ab + 2c^3 + 7 = pq + 2r^3 + 7$. Here are some
 
 * `rw` can take more than one proof at a time. For example try `rw [hap, hcr]`.
 
-* If `h` is a proof of `X = Y`, then `rw [h]` changes all `X`s in the goal to `Y`s. If you want to change all `Y`s to `X`s, then try `rw [←h]`. Get the back-arrow by typing `\l` (`l` for left). 
+* If `h` is a proof of `X = Y`, then `rw [h]` changes all `X`s in the goal to `Y`s. If you want to change all `Y`s to `X`s, then try `rw [←h]`. Get the back-arrow by typing `\\l` (`l` for left).
 "
 
 Statement
@@ -23,11 +24,9 @@ Statement
   rw [hap, hbq, hcr]
   rfl
 
-NewTactic rw
-
 Conclusion
 "
-In editor mode,you can click around the proof and see the state of Lean's brain at any point in the proof. 
+In editor mode,you can click around the proof and see the state of Lean's brain at any point in the proof.
 You can also edit your proof and experiment more with it.
 
 Note that Lean is sensitive to indentation: there must be no spaces before any of the tactics.
