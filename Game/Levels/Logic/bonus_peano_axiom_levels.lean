@@ -118,6 +118,11 @@ lemma succ_inj''' (a b : ℕ) : succ a = succ b → a = b :=
 congrArg pred
 
 -/
+@[simp] theorem succ_eq_succ_iff : succ a = succ b ↔ a = b := by
+  constructor
+  · exact succ_inj a b
+  · simp
+
 /-
 ## zero_ne_succ
 
