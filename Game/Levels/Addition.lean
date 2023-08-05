@@ -1,4 +1,8 @@
-import Game.Levels.Addition.Level_6
+import Game.Levels.Addition.L01two_add_one
+import Game.Levels.Addition.L02one_add_one
+import Game.Levels.Addition.L03two_add_two
+import Game.Levels.Addition.L04decide
+
 
 
 World "Addition"
