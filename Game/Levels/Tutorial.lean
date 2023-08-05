@@ -1,7 +1,7 @@
 import Game.Levels.Tutorial.L01rfl
 import Game.Levels.Tutorial.L02rw
 import Game.Levels.Tutorial.L03rw_practice
-import Game.Levels.Tutorial.L04zero_succ_one
+import Game.Levels.Tutorial.L04one
 
 
 World "Tutorial"

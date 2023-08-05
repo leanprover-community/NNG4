@@ -50,7 +50,7 @@ Statement
 Conclusion
 "
 We can now go on to define `2`, `3`, `4` and `5` and create associated
-proofs called `two_eq_succ_one`, `three_eq_succ_two`, `four_eq_succ_three`.
+proofs called `two_eq_succ_one`, `three_eq_succ_two` and so on.
 
 Why did we call the lemma `one_eq_succ_zero : 1 = succ 0` and not
 `succ_zero_eq_one : succ 0 = 1`? There is a reason. At this point
