@@ -5,7 +5,7 @@ inductive MyNat where
 -- deriving BEq, DecidableEq, Inhabited
 
 @[inherit_doc]
-notation "ℕ" => MyNat
+notation (name := MyNatNotation) (priority := 1000000) "ℕ" => MyNat
 -- Note: as long as we do not import `Mathlib.Init.Data.Nat.Notation` this is fine.
 
 namespace MyNat
