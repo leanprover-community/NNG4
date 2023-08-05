@@ -23,7 +23,11 @@ Let me show you how to use Lean's simplifier `simp`
 to do a lot of work for us."
 
 LemmaDoc MyNat.add_zero as "add_zero" in "Add"
-"One of the two axioms defining addition. It says `n + 0 = n`."
+"`add_zero n` is a proof that `n + 0 = n`.
+
+This is one of the two axioms for addition."
+
+NewLemma MyNat.add_zero
 
 namespace MyNat
 
@@ -45,7 +49,8 @@ NewTactic simp -- TODO: Do we want it to be unlocked here?
 Statement
 "$(a+(0+0)+(0+0+0)=a.$"
   (a : ℕ)  : (a + (0 + 0)) + (0 + 0 + 0) = a := by
-  Hint "I want this to say \"Walkthrough\".
+  Hint "I will walk you through this level so I can show you some
+  techniques which will speed up your proving.
 
   This is an annoying goal. One of rw [add_zero a]` amd `rw [add_zero 0]`
   will work, but not the other. Can you figure out which? Try the one
@@ -54,25 +59,25 @@ Statement
     rw [add_zero 0]
     Hint "Walkthrough: Now `rw [add_zero a]` will work, so try that next."
     rw [add_zero a]
-    Hint "OK this is getting old really quickly. And if we have to type
+    Hint "OK this is getting old really quickly. And if we end up having to type
     weird stuff like `rw [add_zero (a + 0)]` it will be even worse.
     Fortunately `rw` can do smart rewriting. Go back to the very start
-    of this proof with \"undo\" and try `repeat rw [add_zero]`
+    of this proof by clicking \"Delete\" to remove all the moves you've
+    made so far and then try `rw [add_zero]` few times. Then delete all of
+    these and try `repeat rw [add_zero]`.
     "
   Branch
     repeat rw [add_zero]
-    Hint "`rw` can rewrite proofs of the form `? + 0 = ?`
-    where `?` is arbitrary, and it will just use the
+    Hint "`rw [add_zero]` will change `? + 0` into `?`
+    where `?` is arbitrary; `rw` will use the
     first solution which matches for `?`.
 
-    The rest of he proof is easy, but don't finish yet, there's more.
+    We can now just finish with `rfl`, but don't do that yet, there's more.
 
-    Lean's simplifier is a tool which does repeated
+    Lean's *simplifier* is a tool which does repeated
     rewriting. And `add_zero` is a `simp` lemma. So go back to the
-    start again and just try `simp`."
+    start once more, and this time just try `simp`."
   simp
-
-NewLemma MyNat.add_zero
 
 DefinitionDoc Add as "Add" "`Add a b`, with notation `a + b`, is
 the usual sum of natural numbers. Internally it is defined by
@@ -82,8 +87,7 @@ All you need to know is that `add_zero` and `zero_add` are both theorems."
 NewDefinition Add
 
 Conclusion
-"
-  The simplifier atempts to solve goals by using *repeated rewriting* of
+" The simplifier atempts to solve goals by using *repeated rewriting* of
   *equalities* and *iff statements*, and then trying `rfl` at the end.
 
   Let's now learn about Peano's second axiom for addition, `add_succ`.

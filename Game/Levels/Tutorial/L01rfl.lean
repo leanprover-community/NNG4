@@ -9,11 +9,11 @@ Title "The rfl tactic"
 Introduction
 "
 Each level in this game involves proving a mathematical theorem (the \"Goal\").
-In this first level we're going to learn how to prove that $37x + q = 37x + q$.
+In this first level we're going to learn how to prove the theorem that $37x + q = 37x + q$.
 Here $x$ and $q$ are secret numbers (you can see them listed under \"Objects\"))
 and $37$ is a non-secret number.
 
-We're going to prove the theorems using *Tactics*, and the first tactic we're
+We prove theorems using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which is short for \"reflexivity of equality\",
 an intimidating way of saying that $X = X$ is always true.
 

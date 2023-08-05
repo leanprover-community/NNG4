@@ -22,15 +22,18 @@ namespace MyNat
 LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 "`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
 
+NewLemma MyNat.add_succ
+
 Statement
 "For all natural numbers $a$, we have $a + \\operatorname{succ}(0) = \\operatorname{succ}(a)$."
     : a + succ 0 = succ a := by
   Hint "You find `{a} + succ …` in the goal, so you can use `rw` and `add_succ`
   to make progress."
-  Hint (hidden := true) "Explicitely, type `rw [add_succ]`!"
+  Hint (hidden := true) "Explicitely, you can type `rw [add_succ a 0]`
+  if you want to be precise, or just `rw [add_succ]` if you want Lean to figure
+  out the inputs to this function."
   rw [add_succ]
-  Hint "Now you see a term of the form `… + 0`, so you can use `add_zero`."
-  Hint (hidden := true) "Explicitely, type `rw [add_zero]`!"
+  Hint (hidden := true) "Now you see a term of the form `… + 0`, so you can use `add_zero`."
   rw [add_zero]
   Hint (hidden := true) "Finally both sides are identical."
   rfl

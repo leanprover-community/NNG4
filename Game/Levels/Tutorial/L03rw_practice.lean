@@ -28,6 +28,4 @@ Conclusion
 "
 In editor mode,you can click around the proof and see the state of Lean's brain at any point in the proof.
 You can also edit your proof and experiment more with it.
-
-Note that Lean is sensitive to indentation: there must be no spaces before any of the tactics.
 "

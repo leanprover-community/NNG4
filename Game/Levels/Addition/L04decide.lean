@@ -2,7 +2,7 @@ import Game.Metadata
 import Game.MyNat.Addition
 import Game.MyNat.DecidableEq
 World "Addition"
-Level 3
+Level 4
 Title "Two add two is four."
 
 --namespace MyNat

@@ -60,7 +60,7 @@ If you delete it, your progress will be lost!
 "
 
 -- Add manual paths
-Dependency Proposition → AdvProposition
-Dependency Multiplication → Function
+-- Dependency Proposition → AdvProposition
+-- Dependency Multiplication → Function
 
 MakeGame
