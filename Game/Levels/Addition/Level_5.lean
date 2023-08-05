@@ -1,4 +1,5 @@
 import Game.Levels.Addition.Level_4
+import Game.MyNat.DecidableEq
 
 
 World "Addition"
@@ -6,9 +7,6 @@ Level 5
 Title "succ_eq_add_one"
 
 open MyNat
-
--- NOTE: this was `one_eq_succ_zero` but we need it earlier.
-axiom MyNat.one_eq_succ_zero' : (1 : ℕ) = succ 0
 
 Introduction
 "

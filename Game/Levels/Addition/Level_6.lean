@@ -76,7 +76,6 @@ $a + b + c = a + c + b$."
   rfl
 
 LemmaTab "Add"
-NewTactic simp -- TODO: Do we want it to be unlocked here?
 
 Conclusion
 "

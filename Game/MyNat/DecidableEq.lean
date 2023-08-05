@@ -1,4 +1,4 @@
-import Game.Levels.Tutorial.L02rw-- makes simps work?
+import Game.MyNat.Addition-- makes simps work?
 import Mathlib.Tactic
 namespace MyNat
 
@@ -51,7 +51,7 @@ We need to learn how to deal wiht a goal of the form `P → Q`
 
 -/
 
-theorem succ_inj (a b : ℕ) (h : succ a = succ b) : a = b := by
+theorem succ_inj {a b : ℕ} (h : succ a = succ b) : a = b := by
   apply_fun pred at h
   simpa
 
@@ -90,7 +90,7 @@ congrArg pred
 -/
 @[simp] theorem succ_eq_succ_iff : succ a = succ b ↔ a = b := by
   constructor
-  · exact succ_inj a b
+  · exact succ_inj
   · simp
 
 /-
