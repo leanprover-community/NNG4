@@ -1,0 +1,7 @@
+stdout:
+./././Game.lean:66:0: warning: Could not find a docstring for tactic decide, consider adding one using `TacticDoc decide "some doc"`
+./././Game.lean:66:0: warning: No world introducing MyNat.add_succ, but required by Tutorial
+./././Game.lean:66:0: warning: No world introducing MyNat.two_eq_succ_one, but required by Addition
+./././Game.lean:66:0: warning: No world introducing MyNat.add_succ, but required by Addition
+./././Game.lean:66:0: warning: No world introducing nth_rewrite, but required by Addition
+./././Game.lean:66:0: warning: No world introducing MyNat.three_eq_succ_two, but required by Addition
