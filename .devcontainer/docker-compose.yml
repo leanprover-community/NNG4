@@ -2,10 +2,10 @@ version: "3.9"
 
 services:
   game:
+    user: root
     build:
       context: .
       dockerfile: Dockerfile
-    command: bash -c "(cd /game && lake update && lake build) && npm start"
     volumes:
       - ..:/game
     ports:

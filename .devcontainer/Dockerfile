@@ -22,4 +22,10 @@ RUN git clone https://github.com/leanprover-community/lean4game.git
 WORKDIR /lean4game
 RUN npm install
 
+# For some reason `node:node` results in 1000:1000, but user `node` has UID 30000...??
+# TODO: This alone takes 2min for me. can we refactor this so that `npm install` is already
+# run as the `node` user
+WORKDIR /
+RUN chown -R 30000:30003 /lean4game
+
 EXPOSE 3000

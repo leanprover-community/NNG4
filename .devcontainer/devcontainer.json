@@ -3,6 +3,16 @@
   "service": "game",
   "workspaceFolder": "/game",
   "forwardPorts": [3000],
+  // These settings make sure that the created files (lake-packages etc.) are owned
+  // by the user and not `root`.
+  // see also https://containers.dev/implementors/json_reference/
+  // // and https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+  "remoteUser": "node",
+  "overrideCommand": true,
+  "updateRemoteUserUID": true,
+  // TODO: A problem with this setup is that the cache file is downloaded newly every time
+  // can we use the global cache storage? or already download it when creating the docker image?
+  "postAttachCommand": "(cd /game && lake update && lake exe cache get && lake build) && (cd /lean4game && npm start)",
   "customizations": {
     "vscode": {
       "settings": {
