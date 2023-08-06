@@ -16,7 +16,7 @@ Introduction
 "
 # Natural Number Game
 
-##### version 3.0.2
+##### version 4.0.1
 
 *(note that this ported version of the NNG is still a bit rough around the edges
 and will experience some more love soon.)*
