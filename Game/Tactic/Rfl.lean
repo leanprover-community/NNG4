@@ -16,7 +16,7 @@ open Lean Meta Elab Tactic
 
 `rfl` closes goals of the form `A = A`.
 
-Note that teh version for this game is somewhat weaker than the real one. -/
+Note that the version for this game is somewhat weaker than the real one. -/
 syntax (name := rfl) "rfl" : tactic
 
 @[tactic MyNat.rfl] def evalRfl : Tactic := fun _ =>
