@@ -2,11 +2,10 @@ version: "3.9"
 
 services:
   game:
-    user: root
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ..:/game
+      - ..:/home/node/game
     ports:
       - "3000:3000"
