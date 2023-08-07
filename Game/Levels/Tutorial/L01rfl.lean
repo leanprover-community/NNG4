@@ -10,7 +10,7 @@ Introduction
 "
 Each level in this game involves proving a mathematical theorem (the \"Goal\").
 In this first level we're going to learn how to prove the theorem that $37x + q = 37x + q$.
-Here $x$ and $q$ are secret numbers (you can see them listed under \"Objects\"))
+Here $x$ and $q$ are secret numbers (you can see them listed under \"Objects\")
 and $37$ is a non-secret number.
 
 We prove theorems using *Tactics*, and the first tactic we're
