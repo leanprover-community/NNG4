@@ -18,6 +18,7 @@ on `MyNat` in `Game.MyNat.DecidableEq`. The implementation
 is not at all optimised: I just wanted to get something which could beat
 humans easily.
 "
+
 NewTactic decide
 
 example : (20 : ℕ) + 20 = 40 := by
@@ -25,17 +26,16 @@ example : (20 : ℕ) + 20 = 40 := by
 
 Introduction
 "
-Oh did I mention there was a new tactic? Find it in the blah blah blah.
+Oh did I mention there was a new tactic? Find it highlighted in your inventory.
 "
-/-- $29+35=64. -/
-Statement
-    : (29 : ℕ) + 35 = 64 := by
+
+/-- $29+35=64$. -/
+Statement : (29 : ℕ) + 35 = 64 := by
   decide
 
 LemmaTab "Add"
 
 Conclusion
 "
-  The `decide` tactic destroys sub-bosses such as `2 + 2 = 4`.
-
+The `decide` tactic destroys sub-bosses such as `2 + 2 = 4`.
 "

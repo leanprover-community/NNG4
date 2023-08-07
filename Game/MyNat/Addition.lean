@@ -17,7 +17,8 @@ If `a` is a natural number, then `add_zero a` is the proof that `a + 0 = a`.
 `add_zero` is a `simp` lemma, because if you see `a + 0`
 you usually want to simplify it to `a`.
 -/
-@[simp] theorem add_zero (a : MyNat) : a + 0 = a := by rfl
+@[simp]
+theorem add_zero (a : MyNat) : a + 0 = a := by rfl
 
 /--
 If `a` and `d` are natural numbers, then `add_succ a d` is the proof that

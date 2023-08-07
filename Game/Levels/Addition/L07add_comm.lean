@@ -15,12 +15,13 @@ Look in your inventory to see the proofs you have available.
 These should be enough.
 "
 
-LemmaDoc MyNat.add_comm as "add_comm" in "MyNat" "`add_comm x y` is a proof of `x + y = y + x`."
+LemmaDoc MyNat.add_comm as "add_comm" in "Add"
+"`add_comm x y` is a proof of `x + y = y + x`."
+
 /-- On the set of natural numbers, addition is commutative.
 In other words, if `a` and `b` are arbitrary natural numbers, then
 $a + b = b + a$. -/
-Statement add_comm
-    (a b : ℕ) : a + b = b + a := by
+Statement add_comm (a b : ℕ) : a + b = b + a := by
   Hint (hidden := true) "Induction on `a` or `b` -- it's all the same in this one."
   Branch
     induction a with d hd
@@ -29,6 +30,9 @@ Statement add_comm
   induction b with d hd
   · simp
   · simp_all [succ_add, add_succ]
+
+-- Adding this instance to make `ac_rfl` work.
+instance : Lean.IsCommutative (α := ℕ) (·+·) := ⟨add_comm⟩
 
 LemmaTab "Add"
 

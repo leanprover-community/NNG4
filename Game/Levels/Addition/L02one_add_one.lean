@@ -5,7 +5,6 @@ World "Addition"
 Level 2
 Title "One add one is two."
 
---namespace MyNat
 namespace MyNat
 
 Introduction
@@ -16,8 +15,7 @@ strategy.
 "
 
 /-- $1+1=2$. -/
-Statement
-    : (1 : ℕ) + 1 = 2 := by
+Statement : (1 : ℕ) + 1 = 2 := by
   Hint "Go ahead and start with `rw [one_eq_succ_zero]`. Do you see what it does?"
   Branch
     rw [one_eq_succ_zero]
@@ -39,5 +37,5 @@ LemmaTab "Add"
 
 Conclusion
 "
-  Are you now up for the first sub-boss `2 + 2 = 4`?
+Are you now up for the first sub-boss `2 + 2 = 4`?
 "

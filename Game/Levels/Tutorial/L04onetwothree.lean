@@ -8,7 +8,9 @@ Title "Peano axioms"
 
 namespace MyNat
 
-LemmaDoc MyNat.one_eq_succ_zero as "foobar" in "bazqux" "`one_eq_succ_zero is a proof of `1 = succ 0`."
+LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "ℕ"
+"`one_eq_succ_zero is a proof of `1 = succ 0`."
+
 NewLemma MyNat.one_eq_succ_zero
 
 Introduction
@@ -35,7 +37,8 @@ function `succ` taking numbers to numbers. We could apply the function to the nu
 We could define `2` to either be `succ 1` or `succ (succ 0)`. Are these two choices definitely
 equal? Let's see if we can prove it.
 "
-/-- $\\operatorname{succ}(1)=\\operatorname{succ}(\\operatorname{succ}(0))$. -/
+
+/-- $\operatorname{succ}(1)=\operatorname{succ}(\operatorname{succ}(0))$. -/
 Statement
     : succ 1 = succ (succ 0) := by
   Hint "You can use `rw` and `one_eq_succ_zero` your assumption `h` to substitute `succ a` with `b`.
@@ -54,6 +57,8 @@ Statement
   rw [one_eq_succ_zero]
   Hint (hidden := true) "Now both sides are identical…"
   rfl
+
+NewLemma MyNat.one_eq_succ_zero
 
 Conclusion
 "

@@ -24,9 +24,8 @@ LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 
 NewLemma MyNat.add_succ
 
-/-- For all natural numbers $a$, we have $a + \\operatorname{succ}(0) = \\operatorname{succ}(a)$. -/
-Statement
-    : a + succ 0 = succ a := by
+/-- For all natural numbers $a$, we have $a + \operatorname{succ}(0) = \operatorname{succ}(a)$. -/
+Statement : a + succ 0 = succ a := by
   Hint "You find `{a} + succ …` in the goal, so you can use `rw` and `add_succ`
   to make progress."
   Hint (hidden := true) "Explicitely, you can type `rw [add_succ a 0]`
