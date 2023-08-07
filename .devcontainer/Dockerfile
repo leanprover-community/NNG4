@@ -1,8 +1,25 @@
-FROM mcr.microsoft.com/devcontainers/base:jammy
+FROM node:20
 
-USER vscode
-WORKDIR /home/vscode
+WORKDIR /
 
-RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --default-toolchain none
+ENV ELAN_HOME=/usr/local/elan \
+  PATH=/usr/local/elan/bin:$PATH \
+  LEAN_VERSION=leanprover/lean4:nightly-2023-08-03
+  # TODO: read toolchain from `lean-toolchain`
 
-ENV PATH="/home/vscode/.elan/bin:${PATH}"
+SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
+
+RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --no-modify-path --default-toolchain $LEAN_VERSION; \
+  chmod -R a+w $ELAN_HOME; \
+  elan --version; \
+  lean --version; \
+  leanc --version; \
+  lake --version;
+
+WORKDIR /
+RUN git clone https://github.com/leanprover-community/lean4game.git
+
+WORKDIR /lean4game
+RUN npm install
+
+EXPOSE 3000
