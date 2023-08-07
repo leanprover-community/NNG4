@@ -12,7 +12,9 @@ See the [documentation](https://github.com/leanprover-community/lean4game/blob/m
 
 ## Codespaces and Gitpod
 
-You can edit this repository using Gitpod : [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hhu-adam/NNG4) or Github codespaces (click "Code" and then "Codespaces" and then "create codespace on main").
+You can work on this repository using Gitpod : [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hhu-adam/NNG4)
+
+You can also work on it using Github codespaces (click "Code" and then "Codespaces" and then "create codespace on main").
 
 ### Creating a new game
 
