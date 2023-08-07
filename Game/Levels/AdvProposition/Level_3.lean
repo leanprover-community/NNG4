@@ -37,8 +37,8 @@ $Q\\land R$ together imply $P\\land R$."
   intro hqr
   rcases hqr with ⟨q', r⟩
   constructor
-  assumption
-  assumption
+  exact p
+  exact r
 
 Conclusion
 "

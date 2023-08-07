@@ -7,7 +7,10 @@
     "vscode": {
       "settings": {
         "remote.autoForwardPorts": false
-      }
+      },
+      "extensions": [
+        "leanprover.lean4"
+      ]
     }
   }
 }

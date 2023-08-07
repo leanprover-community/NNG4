@@ -13,6 +13,7 @@ Introduction
 The logical symbol `∧` means \"and\". If $P$ and $Q$ are propositions, then
 $P\\land Q$ is the proposition \"$P$ and $Q$\".
 "
+namespace MySet
 
 Statement
 "If $P$ and $Q$ are true, then $P\\land Q$ is true."

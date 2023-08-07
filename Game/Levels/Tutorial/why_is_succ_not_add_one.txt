@@ -1,0 +1,5 @@
+
+You may also be wondering why we keep writing `succ b` instead of `b + 1`.
+This is because we haven't defined addition yet!
+On the next level, the final level of Tutorial World,
+we will introduce addition, and then we'll be ready to enter Addition World.

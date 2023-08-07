@@ -62,11 +62,11 @@ Statement --iff_trans
   Hint "Now you can directly `apply {hqr}.1`"
   apply hqr.1
   apply hpq.1
-  assumption
+  exact p
   intro r
   apply hpq.2
   apply hqr.2
-  assumption
+  exact r
 
 DisabledTactic rcases
 

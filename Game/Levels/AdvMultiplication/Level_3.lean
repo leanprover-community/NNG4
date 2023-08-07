@@ -23,10 +23,10 @@ Statement
   intro hab
   rcases hab with hab | hab
   rw [hab]
-  rw [zero_mul]
+  rw [MyNat.zero_mul]
   rfl
   rw [hab]
-  rw [mul_zero]
+  rw [MyNat.mul_zero]
   rfl
 
 

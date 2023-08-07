@@ -1,4 +1,4 @@
-import Game.Tactic.LeanExprBasic
+import Lean.Meta.Tactic.Refl
 import Lean.Elab.Tactic.Basic
 
 /-! # `rfl` tactic

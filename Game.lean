@@ -2,13 +2,13 @@ import GameServer.Commands
 
 import Game.Levels.Tutorial
 import Game.Levels.Addition
-import Game.Levels.Multiplication
-import Game.Levels.Power
-import Game.Levels.Function
-import Game.Levels.Proposition
-import Game.Levels.AdvProposition
-import Game.Levels.AdvAddition
-import Game.Levels.AdvMultiplication
+--import Game.Levels.Multiplication
+--import Game.Levels.Power
+--import Game.Levels.Function
+--import Game.Levels.Proposition
+--import Game.Levels.AdvProposition
+--import Game.Levels.AdvAddition
+--import Game.Levels.AdvMultiplication
 --import Game.Levels.Inequality
 
 Title "Natural Number Game"
@@ -59,8 +59,8 @@ If you delete it, your progress will be lost!
 
 "
 
-Path Tutorial → Addition → Function → Proposition → AdvProposition → AdvAddition → AdvMultiplication
-Path Addition → Multiplication → AdvMultiplication -- → Inequality
-Path Multiplication → Power
+-- Add manual paths
+-- Dependency Proposition → AdvProposition
+-- Dependency Multiplication → Function
 
 MakeGame

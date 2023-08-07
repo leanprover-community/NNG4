@@ -1,4 +1,14 @@
-import Game.Levels.Addition.Level_6
+import Game.Levels.Addition.L01two_add_one
+import Game.Levels.Addition.L02one_add_one
+import Game.Levels.Addition.L03two_add_two
+import Game.Levels.Addition.L04decide
+import Game.Levels.Addition.L05zero_add
+import Game.Levels.Addition.L06succ_add
+import Game.Levels.Addition.L07add_comm
+import Game.Levels.Addition.L08add_assoc
+import Game.Levels.Addition.L09add_left_comm
+import Game.Levels.Addition.L10annoying
+import Game.Levels.Addition.L11ac_rfl
 
 
 World "Addition"
@@ -32,5 +42,7 @@ a reminder of the things you're now equipped with which we'll need in this world
   * `induction n with d hd` : we're going to learn this right now.
 
 
-You will also find all this information in your Inventory to read the documentation.
+You will also find all this information in your Inventory on the right hand side of the screen.
+Be sure to click around so that you know which tools you have available to you
+at any time.
 "

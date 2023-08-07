@@ -5,16 +5,19 @@ namespace MyNat
 open MyNat
 
 def add : MyNat → MyNat → MyNat
-  | a, 0   => a
+  | a, zero  => a
   | a, MyNat.succ b => MyNat.succ (MyNat.add a b)
 
-instance : Add MyNat where
+instance instAdd : Add MyNat where
   add := MyNat.add
 
 /--
-This theorem proves that if you add zero to a MyNat you get back the same number.
+`add_zero a` is a proof of `a + 0 = a`.
+
+`add_zero` is a `simp` lemma, because if you see `a + 0`
+you usually want to simplify it to `a`.
 -/
-theorem add_zero (a : MyNat) : a + 0 = a := by rfl
+@[simp] theorem add_zero (a : MyNat) : a + 0 = a := by rfl
 
 /--
 This theorem proves that (a + (d + 1)) = ((a + d) + 1) for a,d in MyNat.
