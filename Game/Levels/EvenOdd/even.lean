@@ -2,42 +2,10 @@
 Copyright Ivan
 Authors Kevin Buzzard and Ivan
 -/
-import Game.Levels.Addition.Level_5
-import Game.Tactic.Use
-import Game.Levels.Logic.bonus_peano_axiom_levels
+import Game.Levels.Addition.L11ac_rfl
+import Game.MyNat.DecidableEq
 
 namespace MyNat
-
--- this should be in logic
-instance instDecidableEq : DecidableEq MyNat := fun (a b : MyNat) =>
-match a with
-| 0 => match b with
-  | 0 => isTrue (by simp)
-  | succ q => isFalse (by simp [zero_ne_succ])
-| succ p => match b with
-  | 0 => isFalse (by simp [succ_ne_zero])
-  | succ q =>
-      match instDecidableEq p q with
-      | isTrue h => isTrue <| by simp_all
-      | isFalse h => isFalse <| by simp_all
-
-  -- this should be somewhere else
--- first the important lemma
--- this should be in addition world after associativity
--- Stress that now you have commutativity and associativity, you don't need
--- to do any more induction, it's all about rewriting.
--- `add_left_comm` is part of a great algorithm which will prove boring identities
-theorem add_left_comm (a b c : ℕ) : a + (b + c) = b + (a + c) := by
-  rw [← add_assoc, add_comm a, add_assoc]
-  rfl
-
--- no need for this now
-theorem add_add_add_comm (a b c d : ℕ) : (a + b) + (c + d) = (a + c) + (b + d) := by
-  simp only [add_assoc, add_left_comm, add_comm]
-
-example (a b c d e f g h : ℕ) :
-    (b + (f + e)) + (a + c + (h + g + d)) = a + b + c + d + e + f + g + h := by
-  simp only [add_assoc, add_left_comm, add_comm]
 
 def IsEven (n : ℕ) := ∃ (t : ℕ), t + t = n
 
@@ -62,7 +30,7 @@ theorem not_isEven_one : ¬ IsEven 1 := by -- ¬ is new
   decide
   clear hd
   by_contra h
-  rw [one_eq_succ_zero, add_succ, succ_eq_succ_iff] at h
+  rw [one_eq_succ_zero, add_succ, succ_eq_succ_iff, succ_add] at h
   simp_all [succ_ne_zero]
 
 theorem isEven_add_isEven (a b : ℕ) (ha : IsEven a) (hb : IsEven b) : IsEven (a + b) := by
@@ -89,6 +57,11 @@ theorem isOdd_one : IsOdd 1 := by
   rw [isOdd_def]
   use 0
   decide
+
+-- this needs to be moved into addition world
+lemma succ_eq_add_one (a : ℕ) : succ a = a + 1 := by
+  rw [one_eq_succ_zero, add_succ, add_zero]
+  rfl
 
 theorem not_isOdd_zero : ¬ IsOdd 0 := by
   by_contra h
@@ -140,12 +113,11 @@ theorem isEven_or_isOdd (n : ℕ) : IsEven n ∨ IsOdd n := by
 theorem not_isEven_and_isOdd (n : ℕ) : ¬ (IsEven n ∧ IsOdd n) := by
   induction n with d hd
   · by_contra h
-    rcases h with ⟨h0E, h0O⟩
+    rcases h with ⟨-, h0O⟩
     revert h0O
     exact not_isOdd_zero
   · simp
-    -- desperately need tauto
-    sorry
+    tauto
 
 theorem isOdd_add_isOdd {a b : ℕ} (ha : IsOdd a) (hb : IsOdd b) : IsEven (a + b) := by
   rw [isOdd_def, isEven_def] at *
