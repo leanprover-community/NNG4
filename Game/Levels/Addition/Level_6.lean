@@ -57,6 +57,8 @@ $a + b + c = a + c + b$."
   additions of the form `a + _`, and `rw [add_comm a b]` will only
   swap additions of the form `a + b`."
   Branch
+    ac_rfl
+  Branch
     rw [add_comm]
     Hint "`rw [add_comm]` just rewrites to first instance of `_ + _` it finds, which
     is not what you want to do here. Instead you can provide the arguments explicitely:

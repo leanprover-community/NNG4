@@ -53,5 +53,8 @@ $ (a + b) + c = a + (b + c). $"
   rw [hc]
   rfl
 
+-- Adding this instance to make `ac_rfl` work.
+instance : Lean.IsAssociative (α := ℕ) (·+·) := ⟨MyNat.add_assoc⟩
+
 NewLemma MyNat.zero_add
 LemmaTab "Add"
