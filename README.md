@@ -10,6 +10,10 @@ If you want to contribute to the Natural Number Game, it is probably best if you
 
 See the [documentation](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md) for an explanation of the game commands.
 
+## Codespaces and Gitpod
+
+You can edit this repository using Gitpod : [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hhu-adam/NNG4) or Github codespaces (click "Code" and then "Codespaces" and then "create codespace on main").
+
 ### Creating a new game
 
 In order to create a new game, click "use this template"  above to create your own game. That way there is a github action that can build a docker image from your `main` branch which can be used to add the game to the server at [adam.math.hhu.de](https://adam.math.hhu.de).
