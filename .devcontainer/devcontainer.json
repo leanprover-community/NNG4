@@ -1,16 +1,15 @@
 {
-  "dockerComposeFile": "./docker-compose.yml",
-  "service": "game",
-  "workspaceFolder": "/game",
-  "forwardPorts": [3000],
+  "name": "NNG4 dev container",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "onCreateCommand": "lake exe cache get!",
+
   "customizations": {
-    "vscode": {
-      "settings": {
-        "remote.autoForwardPorts": false
-      },
-      "extensions": [
-        "leanprover.lean4"
-      ]
+    "vscode" : {
+      "extensions" : [ "leanprover.lean4" ]
     }
   }
 }
