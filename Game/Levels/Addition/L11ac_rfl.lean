@@ -16,12 +16,14 @@ numbers. Let's now write a tactic which automates this.
 **TODO** ac_rfl tactic
 "
 
+macro_rules | `(tactic| ac_rfl) => `(tactic| simp only [add_assoc, add_left_comm, add_comm])
+
 
 Statement
 "If $a, b,\\ldots h$ are arbitrary natural numbers, we have
 $(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
     (a b c d e f g h : ℕ) : (d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h := by
-  simp only [add_assoc, add_left_comm, add_comm]
+  ac_rfl
 LemmaTab "Add"
 
 Conclusion
