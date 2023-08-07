@@ -6,6 +6,8 @@ Title "harder goals"
 
 namespace MyNat
 
+--**TODO** introduce `repeat` somehow (not sure how)
+
 Introduction
 "
 Sometimes Lean wants us to solve much messier addition goals,
