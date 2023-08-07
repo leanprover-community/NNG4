@@ -18,8 +18,9 @@ In order to create a new game, click "use this template"  above to create your o
 
 ### Installation
 
-Note that the setup is currently still in development and will likely see changes
-and improvements in the next few months.
+The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally).
+In particular, the recommended setup is to have `docker` installed on your computer
+and then click on the pop-up "Reopen in Container" which is shown when
+opening this project in VSCode.
 
-To run a local version of the game on your `localhost`, follow the
-instructions "[Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally)".
+The game is then accessible at [localhost:3000/#/g/local/game](http://localhost:3000/#/g/local/game).
