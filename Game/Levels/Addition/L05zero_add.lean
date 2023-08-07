@@ -47,7 +47,11 @@ because we have formulas for adding `0` and adding successors. See if you
 can do your first induction proof in Lean.
 "
 
-Statement MyNat.zero_add
+LemmaDoc MyNat.zero_add as "zero_add" in "MyNat" "`zero_add x` is the proof that `0 + x = x`. It's
+a `simp` lemma, because replacing `0 + x` by `x` is almost always what you want
+to do if you're simplifying. "
+
+Statement zero_add
 "For all natural numbers $n$, we have $0 + n = n$."
     (n : ℕ) : 0 + n = n := by
   Hint "You can start a proof by induction over `n` by typing:
@@ -64,19 +68,61 @@ Statement MyNat.zero_add
     `{hd} : 0 + {d} = {d}` and you need to prove the statement for `succ {d}`."
     Hint (hidden := true) "look at `add_succ`."
     rw [add_succ]
-    Branch
-      simp? -- TODO
     Hint (hidden := true) "At this point you see the term `0 + {d}`, so you can use the
     induction hypothesis with `rw [{hd}]`."
     rw [hd]
     rfl
 
+attribute [simp] zero_add
+
+TacticDoc induction "
+## Summary
+
+if `n : MyNat` is in our assumptions, then `induction n with d hd`
+attempts to prove the goal by induction on `n`, with the inductive
+variable in the `succ` case being `d`, and the inductive hypothesis being `hd`.
+
+## Details
+
+If you have a natural number `n : MyNat` in your assumptions
+then `induction n with d hd` turns your
+goal into two goals, a base case with `n = 0` and
+an inductive step where `hd` is a proof of the `n = d`
+case and your goal is the `n = succ d` case.
+
+### Example:
+If this is our local context:
+```
+n : mynat
+⊢ 2 * n = n + n
+```
+
+then
+
+`induction n with d hd`
+
+will give us two goals:
+
+```
+⊢ 2 * 0 = 0 + 0
+```
+
+and
+```
+d : mynat,
+hd : 2 * d = d + d
+⊢ 2 * succ d = succ d + succ d
+```
+
+-/
+
+"
 NewTactic induction
 LemmaTab "Add"
 
 Conclusion
 "
-## Now venture off on your own.
+## Now venture off on your own for a while.
 
 Those three tactics:
 
@@ -85,12 +131,12 @@ Those three tactics:
 * `rfl`
 
 will get you quite a long way through this game. Using only these tactics
-you can beat Addition World level 4 (the boss level of Addition World),
-all of Multiplication World including the boss level `a * b = b * a`,
+you can beat the next sub-boss, level 7 of addition world: `add_comm x y : x + y = y + x`.
+You can also beat much of Multiplication World including the boss `a * b = b * a`,
 and even all of Power World including the fiendish final boss. This route will
 give you a good grounding in these three basic tactics; after that, if you
-are still interested, there are other worlds to master, where you can learn
-more tactics.
+are still interested, there are other worlds to master like advanced addition
+world, where you can learn more tactics.
 
 But we're getting ahead of ourselves, you still have to beat the rest of Addition World.
 We're going to stop explaining stuff carefully now. If you get stuck or want

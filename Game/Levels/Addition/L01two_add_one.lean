@@ -15,7 +15,7 @@ Remember Peano's axioms:
 * `add_zero x : x + 0 = x`
 * `add_succ a b : a + succ b = succ (a + b)
 
-If you don't need precision about exactly what to rewrite you can skip the
+If you don't need precision about exactly what to rewrite, then you can skip the
 variables `x` and `a`, `b` when rewriting.
 
 Remember also the definitions of numbers:
@@ -27,7 +27,7 @@ etc up to 5.
 Can you prove `2 + 1 = 3`?
 "
 
-Statement MyNat.two_add_one
+Statement
 "$2+1=3$."
     : (2 : ℕ) + 1 = 3 := by
   Hint "Which one of Peano's axioms do we ultimately want to use to rewrite that addition?"
