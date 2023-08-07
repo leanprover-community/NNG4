@@ -15,8 +15,8 @@ Multiplication World and take a look -- you won't lose any of your
 proofs.
 "
 
+/-- For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$. -/
 Statement MyNat.mul_pow
-"For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$."
     (a b n : ℕ) : (a * b) ^ n = a ^ n * b ^ n := by
   induction n with t Ht
   · rw [pow_zero, pow_zero, pow_zero, mul_one]

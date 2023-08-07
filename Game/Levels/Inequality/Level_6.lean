@@ -14,8 +14,8 @@ Introduction
 
 "
 
+/--  -/
 Statement
-""
     : true := by
   trivial
 

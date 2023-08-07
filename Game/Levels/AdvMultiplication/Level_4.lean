@@ -54,10 +54,10 @@ to be impossible (judging by the comments I've had about it!)
 -- generalizing b` as the first line of the proof.
 
 
-Statement MyNat.mul_left_cancel
-"If $a \\neq 0$, $b$ and $c$ are natural numbers such that
+/-- If $a \\neq 0$, $b$ and $c$ are natural numbers such that
 $ ab = ac, $
-then $b = c$."
+then $b = c$. -/
+Statement MyNat.mul_left_cancel
     (a b c : ℕ) (ha : a ≠ 0) : a * b = a * c → b = c := by
   Hint "NOTE: As is, this level is probably too hard and contains no hints yet.
   Good luck!

@@ -19,10 +19,10 @@ nowhere to be found, it's neither an assumption or a goal when we start
 this level. You can make it with `have` or you can use `apply`.
 "
 
-Statement
-"For all naturals $a$ and $b$, if we assume
+/-- For all naturals $a$ and $b$, if we assume
 $\\operatorname{succ}(\\operatorname{succ}(a))=\\operatorname{succ}(\\operatorname{succ}(b))$,
-then we can deduce $a=b$. "
+then we can deduce $a=b$.  -/
+Statement
     {a b : ℕ} (h : succ (succ a) = succ (succ b)) : a = b := by
   Branch
     simp at h

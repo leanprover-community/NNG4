@@ -34,8 +34,8 @@ $$
 and so it's clear how to make the element of $U$ from the element of $P$.
 "
 
+/-- Given an element of $P$ we can define an element of $U$. -/
 Statement
-"Given an element of $P$ we can define an element of $U$."
     (P Q R S T U: Type) (p : P) (h : P → Q) (i : Q → R) (j : Q → T) (k : S → T) (l : T → U) :
     U := by
   Hint "Indeed, we could solve this level in one move by typing

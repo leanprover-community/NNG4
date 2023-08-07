@@ -23,9 +23,9 @@ Let's start with a simpler one. Can you do it in three rewrites?
 
 LemmaDoc MyNat.add_left_comm as "add_left_comm" in "MyNat" "`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`."
 
+/-- If $a, b$ and $c$ are arbitrary natural numbers, we have
+$a + (b + c) = b + (a + c)$. -/
 Statement add_left_comm
-"If $a, b$ and $c$ are arbitrary natural numbers, we have
-$a + (b + c) = b + (a + c)$."
     (a b c : ℕ) : a + (b + c) = b + (a + c) := by
   Hint "Don't use induction; `add_assoc` and `add_comm` are all the tools you need.
     Remember that to rewrite `h : X = Y` backwards (i.e. to change `Y`s to `X`s

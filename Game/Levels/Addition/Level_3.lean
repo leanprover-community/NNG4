@@ -27,9 +27,9 @@ that `a + succ(b) = succ(a + b)`. The tactic `rw [add_succ]` just says to Lean \
 what the variables are\".
 "
 
+/-- For all natural numbers $a, b$, we have
+$ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$. -/
 Statement MyNat.succ_add
-"For all natural numbers $a, b$, we have
-$ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$."
     (a b : ℕ) : succ a + b = succ (a + b)  := by
   Hint (hidden := true) "You might again want to start by induction
   on the right-most variable."

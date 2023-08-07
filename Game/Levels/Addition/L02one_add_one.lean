@@ -15,8 +15,8 @@ more with `1 + 1 = 2` to see if you can spot a minor problem with our
 strategy.
 "
 
+/-- $1+1=2$. -/
 Statement
-"$1+1=2$."
     : (1 : ℕ) + 1 = 2 := by
   Hint "Go ahead and start with `rw [one_eq_succ_zero]`. Do you see what it does?"
   Branch

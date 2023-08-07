@@ -27,8 +27,8 @@ to $Q$ to $T$ to $U$. Using the `apply` tactic we can instead construct
 the path backwards, moving from $U$ to $T$ to $Q$ to $P$.
 "
 
+/-- We can solve a maze. -/
 Statement
-"We can solve a maze."
     (P Q R S T U: Prop) (p : P) (h : P → Q) (i : Q → R)
     (j : Q → T) (k : S → T) (l : T → U) : U := by
   Hint "Our goal is to prove $U$. But $l:T\\implies U$ is

@@ -20,8 +20,8 @@ an intimidating way of saying that $X = X$ is always true.
 Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
 "
 
+/-- If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$ -/
 Statement
-"If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$"
     (x q : ℕ) : 37 * x + q = 37 * x + q := by
   Hint "In order to use the tactic `rfl` you can enter it above and hit \"Execute\"."
   rfl

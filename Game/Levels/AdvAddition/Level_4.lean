@@ -13,9 +13,9 @@ Here is an `iff` goal. You can split it into two goals (the implications in both
 directions) using the `constructor` tactic, which is how you're going to have to start.
 "
 
+/-- Two natural numbers are equal if and only if their successors are equal.
+ -/
 Statement
-"Two natural numbers are equal if and only if their successors are equal.
-"
     (a b : ℕ) : succ a = succ b ↔ a = b := by
   Branch
     simp

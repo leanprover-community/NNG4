@@ -27,8 +27,8 @@ attribute [simp] MyNat.succ_mul
 attribute [simp] MyNat.mul_one
 attribute [simp] MyNat.one_mul
 
+/-- For all natural numbers $a$ $b$ and $c$, we have $a(bc)=b(ac)$. -/
 Statement MyNat.mul_left_comm
-"For all natural numbers $a$ $b$ and $c$, we have $a(bc)=b(ac)$."
     (a b c : ℕ) : a * (b * c) = b * (a * c) := by
   Branch
     induction c

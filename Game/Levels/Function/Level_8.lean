@@ -14,10 +14,10 @@ set $F$ with the empty set $\\emptyset$. The same proof will work (after all, ou
 previous proof worked for all sets, and the empty set is a set).
 "
 
-Statement
-"Whatever the sets $P$ and $Q$ are, we
+/-- Whatever the sets $P$ and $Q$ are, we
 make an element of $\\operatorname{Hom}(\\operatorname{Hom}(P,Q),
-\\operatorname{Hom}(\\operatorname{Hom}(Q,\\emptyset),\\operatorname{Hom}(P,\\emptyset)))$."
+\\operatorname{Hom}(\\operatorname{Hom}(Q,\\emptyset),\\operatorname{Hom}(P,\\emptyset)))$. -/
+Statement
     (P Q : Type) : (P → Q) → ((Q → Empty) → (P → Empty)) := by
   Hint (hidden := true) "Maybe start again with `intro`."
   intro f h p

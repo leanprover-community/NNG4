@@ -46,8 +46,8 @@ use of `simp` can make for very slow code.
 "
 NewTactic simp -- TODO: Do we want it to be unlocked here?
 
+/-- $(a+(0+0)+(0+0+0)=a.$ -/
 Statement
-"$(a+(0+0)+(0+0+0)=a.$"
   (a : ℕ)  : (a + (0 + 0)) + (0 + 0 + 0) = a := by
   Hint "I will walk you through this level so I can show you some
   techniques which will speed up your proving.

@@ -10,8 +10,8 @@ open MyNat
 
 Introduction ""
 
+/-- From $P\\implies Q$ and $Q\\implies R$ we can deduce $P\\implies R$. -/
 Statement
-"From $P\\implies Q$ and $Q\\implies R$ we can deduce $P\\implies R$."
     (P Q R : Prop) : (P → Q) → ((Q → R) → (P → R)) := by
   Hint (hidden := true)"If you start with `intro hpq` and then `intro hqr`
   the dust will clear a bit."

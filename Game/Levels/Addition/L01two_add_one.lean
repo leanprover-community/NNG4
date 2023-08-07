@@ -27,8 +27,8 @@ etc up to 5.
 Can you prove `2 + 1 = 3`?
 "
 
+/-- $2+1=3$. -/
 Statement
-"$2+1=3$."
     : (2 : ℕ) + 1 = 3 := by
   Hint "Which one of Peano's axioms do we ultimately want to use to rewrite that addition?"
   Hint (hidden := true) "change `1` to `succ 0` with a rewrite, and then

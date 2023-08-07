@@ -17,8 +17,8 @@ but I would recommend you hold on to them, sometimes it's convenient
 to have exactly the right tools to do a job.
 "
 
+/-- Multiplication is commutative. -/
 Statement MyNat.mul_comm
-"Multiplication is commutative."
     (a b : ℕ) : a * b = b * a := by
   induction b with d hd
   · rw [zero_mul]

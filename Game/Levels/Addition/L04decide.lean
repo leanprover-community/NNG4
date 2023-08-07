@@ -27,8 +27,8 @@ Introduction
 "
 Oh did I mention there was a new tactic? Find it in the blah blah blah.
 "
+/-- $29+35=64. -/
 Statement
-"$29+35=64."
     : (29 : ℕ) + 35 = 64 := by
   decide
 

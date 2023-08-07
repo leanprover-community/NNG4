@@ -18,10 +18,10 @@ say that these two terms are *definitionally equal*.
 The following lemma, $a+b=0\\implies b=0$, will be useful in inequality world.
 "
 
-Statement MyNat.add_left_eq_zero
-"If $a$ and $b$ are natural numbers such that
+/-- If $a$ and $b$ are natural numbers such that
 $$ a + b = 0, $$
-then $b = 0$."
+then $b = 0$. -/
+Statement MyNat.add_left_eq_zero
     {a b : ℕ} (h : a + b = 0) : b = 0 := by
   Hint "
   You want to start of by making a distinction `b = 0` or `b = succ d` for some
