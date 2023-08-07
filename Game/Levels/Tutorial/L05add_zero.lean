@@ -4,7 +4,7 @@ import Game.MyNat.Addition
 
 World "Tutorial"
 Level 5
-Title "addition"
+Title "Adding zero"
 
 open MyNat
 
@@ -52,7 +52,7 @@ Statement
   Hint "I will walk you through this level so I can show you some
   techniques which will speed up your proving.
 
-  This is an annoying goal. One of rw [add_zero a]` amd `rw [add_zero 0]`
+  This is an annoying goal. One of `rw [add_zero a]` and `rw [add_zero 0]`
   will work, but not the other. Can you figure out which? Try the one
   that works."
   Branch

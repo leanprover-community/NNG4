@@ -8,7 +8,7 @@ Title "Peano axioms"
 
 namespace MyNat
 
-LemmaDoc MyNat.one_eq_succ_zero as "foobar" in "bazqux" "`one_eq_succ_zero is a proof of `1 = succ 0`."
+LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "numerals" "`one_eq_succ_zero is a proof of `1 = succ 0`."
 NewLemma MyNat.one_eq_succ_zero
 
 Introduction
