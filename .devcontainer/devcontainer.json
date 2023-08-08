@@ -1,18 +1,20 @@
 {
   "dockerComposeFile": "./docker-compose.yml",
   "service": "game",
-  "workspaceFolder": "/game",
+  "workspaceFolder": "/home/node/game",
   "forwardPorts": [3000],
   // These settings make sure that the created files (lake-packages etc.) are owned
   // by the user and not `root`.
   // see also https://containers.dev/implementors/json_reference/
-  // // and https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+  // and https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
   "remoteUser": "node",
-  "overrideCommand": true,
   "updateRemoteUserUID": true,
-  // TODO: A problem with this setup is that the cache file is downloaded newly every time
-  // can we use the global cache storage? or already download it when creating the docker image?
-  "postAttachCommand": "(cd /game && lake update && lake exe cache get && lake build) && (cd /lean4game && npm start)",
+  // I don't know why I need this, but I did...
+  "overrideCommand": true,
+  // TODO: `lake` and `npm install` could run simultaneously using `&`
+  // the only reason I didn't do it is because the output gets mixed.
+  "postCreateCommand": "(cd ~/lean4game && npm install) && (cd ~/game && lake update && lake exe cache get && lake build)",
+  "postAttachCommand": "cd ~/lean4game && npm start",
   "customizations": {
     "vscode": {
       "settings": {
