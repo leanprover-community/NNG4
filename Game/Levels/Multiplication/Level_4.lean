@@ -36,7 +36,7 @@ $t(a + b) = ta + tb$."
     rw [add_zero, mul_zero, add_zero]
     rfl
   · Branch
-      simp[mul_succ, add_assoc, hd]
+      simp [mul_succ, add_assoc, hd]
     rw [add_succ]
     rw [mul_succ]
     rw [hd]
