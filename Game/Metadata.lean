@@ -10,6 +10,7 @@ import Mathlib.Tactic
 import Game.Tactic.Induction
 import Game.Tactic.Rfl
 import Game.Tactic.Rw
+import Game.Tactic.Apply
 -- import Std.Tactic.RCases
 -- import Game.Tactic.Have
 -- import Game.Tactic.LeftRight

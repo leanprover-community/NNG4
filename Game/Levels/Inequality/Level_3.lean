@@ -42,9 +42,9 @@ Now use `use` wisely and you're home.
 
 "
 
+/-- For all naturals $a$, $b$, if $a\\leq b$ then $a\\leq \\operatorname{succ}(b)$.
+ -/
 Statement
-"For all naturals $a$, $b$, if $a\\leq b$ then $a\\leq \\operatorname{succ}(b)$.
-"
     (a b : ℕ) : a ≤ b → a ≤ (succ b) := by
   intro h
   rcases h with ⟨c, hc⟩

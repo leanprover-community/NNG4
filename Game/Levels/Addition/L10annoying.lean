@@ -17,9 +17,9 @@ an algorithm which will work for an arbitrary such problem. Let's
 prove `a + b + (c + d) = a + c + d + b`.
 
 "
+/-- If $a, b$, $c$ and $d$ are arbitrary natural numbers, we have
+$(a + b) + (c + d) = ((a + c) + d) + b.$ -/
 Statement
-"If $a, b$, $c$ and $d$ are arbitrary natural numbers, we have
-$(a + b) + (c + d) = ((a + c) + d) + b.$"
     (a b c d : ℕ) : a + d + (b + c) = a + b + c + d := by
   Hint "We no longer have to use inducion; `add_assoc` and `add_comm` are
     all the tools we need.

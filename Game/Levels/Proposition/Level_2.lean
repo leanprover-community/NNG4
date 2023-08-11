@@ -38,8 +38,8 @@ then `intro p`, meaning \"assume $p$ is a proof of $P$\", will make progress.
 
 "
 
+/-- If $P$ is a proposition then $P\\implies P$. -/
 Statement
-"If $P$ is a proposition then $P\\implies P$."
     {P : Prop} : P → P := by
   Hint "
   To solve this goal, you have to come up with a function from

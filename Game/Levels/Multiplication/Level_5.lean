@@ -17,10 +17,10 @@ You can do `repeat rw [mul_succ]` to repeat a tactic as often as possible.
 
 "
 
-Statement MyNat.mul_assoc
-"Multiplication is associative.
+/-- Multiplication is associative.
 In other words, for all natural numbers $a$, $b$ and $c$, we have
-$(ab)c = a(bc)$."
+$(ab)c = a(bc)$. -/
+Statement MyNat.mul_assoc
     (a b c : ℕ) : (a * b) * c = a * (b * c)  := by
   induction c with d hd
   · repeat rw [mul_zero]

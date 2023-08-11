@@ -17,8 +17,8 @@ which could solve this sort of level in Lean.
 You can of course work both forwards and backwards, or you could crack and draw a picture.
 "
 
+/-- Given a bunch of functions, we can define another one. -/
 Statement
-"Given a bunch of functions, we can define another one."
     (A B C D E F G H I J K L : Type)
     (f1 : A → B) (f2 : B → E) (f3 : E → D) (f4 : D → A) (f5 : E → F)
     (f6 : F → C) (f7 : B → C) (f8 : F → G) (f9 : G → J) (f10 : I → J)

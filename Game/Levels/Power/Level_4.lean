@@ -8,8 +8,8 @@ Title "one_pow"
 
 open MyNat
 
+/-- For all naturals $m$, $1 ^ m = 1$. -/
 Statement MyNat.one_pow
-"For all naturals $m$, $1 ^ m = 1$."
     (m : ℕ) : (1 : ℕ) ^ m = 1 := by
   induction m with t ht
   · rw [pow_zero]

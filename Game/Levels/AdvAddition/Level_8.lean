@@ -14,10 +14,10 @@ The lemma you're about to prove will be useful when we want to prove that $\\leq
 There are some wrong paths that you can take with this one.
 "
 
-Statement MyNat.eq_zero_of_add_right_eq_self
-"If $a$ and $b$ are natural numbers such that
+/-- If $a$ and $b$ are natural numbers such that
 $$ a + b = a, $$
-then $b = 0$."
+then $b = 0$. -/
+Statement MyNat.eq_zero_of_add_right_eq_self
     {a b : ℕ} : a + b = a → b = 0 := by
   intro h
   Hint (hidden := true) "Look at `add_left_cancel`."

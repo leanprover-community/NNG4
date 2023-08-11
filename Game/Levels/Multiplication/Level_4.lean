@@ -25,10 +25,10 @@ I think `mul_add` is much easier to remember than \"`left_distrib`\",
 an alternative name for the proof of this lemma.
 "
 
-Statement MyNat.mul_add
-"Multiplication is distributive over addition.
+/-- Multiplication is distributive over addition.
 In other words, for all natural numbers $a$, $b$ and $t$, we have
-$t(a + b) = ta + tb$."
+$t(a + b) = ta + tb$. -/
+Statement MyNat.mul_add
     (t a b : ℕ) : t * (a + b) = t * a + t * b := by
   induction b with d hd
   · Branch

@@ -38,9 +38,9 @@ you cannot rewrite one-way implications, but you can rewrite two-way implication
 -- ### Another trick
 -- `cc` works on this sort of goal too.
 
+/-- If $P$, $Q$ and $R$ are true/false statements, then `P ↔ Q` and `Q ↔ R` together imply `P ↔ R`.
+ -/
 Statement --iff_trans
-"If $P$, $Q$ and $R$ are true/false statements, then `P ↔ Q` and `Q ↔ R` together imply `P ↔ R`.
-"
     (P Q R : Prop) : (P ↔ Q) → (Q ↔ R) → (P ↔ R) := by
   intro hpq hqr
   Hint "Make a choice and continue either with `constructor` or `rw`.

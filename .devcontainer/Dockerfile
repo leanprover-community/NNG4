@@ -16,10 +16,7 @@ RUN curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -
   leanc --version; \
   lake --version;
 
-WORKDIR /
+USER node
+
+WORKDIR /home/node
 RUN git clone https://github.com/leanprover-community/lean4game.git
-
-WORKDIR /lean4game
-RUN npm install
-
-EXPOSE 3000

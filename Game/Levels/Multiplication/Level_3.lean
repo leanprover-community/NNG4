@@ -25,8 +25,8 @@ with `add_zero` and `zero_add`).
 -- fix when we port
 axiom succ_eq_add_one (a : ℕ) : succ a = a + 1
 
+/-- For any natural number $m$, we have $ 1 \\cdot m = m$. -/
 Statement MyNat.one_mul
-"For any natural number $m$, we have $ 1 \\cdot m = m$."
     (m : ℕ): 1 * m = m := by
   induction m with d hd
   · rw [mul_zero]

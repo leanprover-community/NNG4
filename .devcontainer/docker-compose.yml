@@ -5,8 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: bash -c "(cd /game && lake update && lake build) && npm start"
     volumes:
-      - ..:/game
+      - ..:/home/node/game
     ports:
       - "3000:3000"

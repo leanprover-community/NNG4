@@ -19,11 +19,11 @@ that addition, as defined the way we've defined it, is associative.
 See if you can prove associativity of addition.
 "
 
+/-- On the set of natural numbers, addition is associative.
+In other words, for all natural numbers $a, b$ and $c$, we have
+$ (a + b) + c = a + (b + c). $ -/
 Statement MyNat.add_assoc
 
-"On the set of natural numbers, addition is associative.
-In other words, for all natural numbers $a, b$ and $c$, we have
-$ (a + b) + c = a + (b + c). $"
     (a b c : ℕ) : (a + b) + c = a + (b + c) := by
   Hint "Because addition was defined by recursion on the right-most variable,
   use induction on the right-most variable (try other variables at your peril!).
@@ -52,6 +52,9 @@ $ (a + b) + c = a + (b + c). $"
   Hint (hidden := true) "Now you can use the induction hypothesis."
   rw [hc]
   rfl
+
+-- Adding this instance to make `ac_rfl` work.
+instance : Lean.IsAssociative (α := ℕ) (·+·) := ⟨MyNat.add_assoc⟩
 
 NewLemma MyNat.zero_add
 LemmaTab "Add"

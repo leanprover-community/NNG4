@@ -26,10 +26,10 @@ that `(a + b) + c = a + (b + c)`. Note that in Lean `(a + b) + c` prints
 as `a + b + c`, because the notation for addition is defined to be left
 associative. "
 
-Statement add_assoc
-"On the set of natural numbers, addition is associative.
+/-- On the set of natural numbers, addition is associative.
 In other words, if $a, b$ and $c$ are arbitrary natural numbers, we have
-$ (a + b) + c = a + (b + c). $"
+$ (a + b) + c = a + (b + c). $ -/
+Statement add_assoc
     (a b c : ℕ) : (a + b) + c = a + (b + c) := by
   Hint "Note that when Lean writes `a + b + c`, it means `(a + b) + c`. If it wants to talk
   about `a + (b + c)` it will put the brackets in explictly."

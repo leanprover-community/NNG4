@@ -51,8 +51,8 @@ LemmaDoc MyNat.zero_add as "zero_add" in "MyNat" "`zero_add x` is the proof that
 a `simp` lemma, because replacing `0 + x` by `x` is almost always what you want
 to do if you're simplifying. "
 
+/-- For all natural numbers $n$, we have $0 + n = n$. -/
 Statement zero_add
-"For all natural numbers $n$, we have $0 + n = n$."
     (n : ℕ) : 0 + n = n := by
   Hint "You can start a proof by induction over `n` by typing:
   `induction n with d hd`."

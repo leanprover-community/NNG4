@@ -14,9 +14,9 @@ Introduction
 Here's a nice easy one.
 "
 
+/-- The $\\le$ relation is reflexive. In other words, if $x$ is a natural number,
+then $x\\le x$. -/
 Statement
-"The $\\le$ relation is reflexive. In other words, if $x$ is a natural number,
-then $x\\le x$."
     (x : ℕ) : x ≤ x := by
   use 0
   rw [add_zero]

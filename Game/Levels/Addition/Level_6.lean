@@ -33,9 +33,9 @@ attribute [simp] MyNat.succ_add
 -- TODO: like this, `simp` does not do assoc. and comm. and
 -- I don't think it does IRL either, does it?
 
+/-- For all natural numbers $a, b$ and $c$, we have
+$a + b + c = a + c + b$. -/
 Statement MyNat.add_right_comm
-"For all natural numbers $a, b$ and $c$, we have
-$a + b + c = a + c + b$."
     (a b c : ℕ) : a + b + c = a + c + b := by
   Hint (hidden := true) "You want to change your goal to `a + (b + c) = _`
   so that you can then use commutativity."
@@ -56,6 +56,8 @@ $a + b + c = a + c + b$."
   additions like this: `rw [add_comm a]` will swap around
   additions of the form `a + _`, and `rw [add_comm a b]` will only
   swap additions of the form `a + b`."
+  Branch
+    ac_rfl
   Branch
     rw [add_comm]
     Hint "`rw [add_comm]` just rewrites to first instance of `_ + _` it finds, which

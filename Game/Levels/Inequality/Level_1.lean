@@ -35,9 +35,9 @@ before it and comment it out. See that the proof still compiles.
 
 axiom TMP.add_comm (a b : ℕ) : a + b = b + a
 
+/-- If $x$ is a natural number, then $x\\le 1+x$.
+ -/
 Statement --one_add_le_self
-"If $x$ is a natural number, then $x\\le 1+x$.
-"
     (x : ℕ) : x ≤ 1 + x := by
   Hint "
   The goal below is to prove $x\\le 1+x$ for any natural number $x$.

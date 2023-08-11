@@ -21,8 +21,8 @@ automatisation ;)
 -- "Lean's "congruence closure" tactic `cc` is good at mazes. You might want to try it now.
 -- Perhaps I should have mentioned it earlier."
 
+/-- There is a way through the following maze. -/
 Statement
-"There is a way through the following maze."
     (A B C D E F G H I J K L : Prop)
     (f1 : A → B) (f2 : B → E) (f3 : E → D) (f4 : D → A) (f5 : E → F)
     (f6 : F → C) (f7 : B → C) (f8 : F → G) (f9 : G → J) (f10 : I → J)

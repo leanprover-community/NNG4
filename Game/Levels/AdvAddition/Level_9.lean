@@ -24,8 +24,8 @@ $X\\ne Y$ is *defined to mean* $X = Y\\implies{\\tt False}$, similar to how `¬A
 -- In particular, you can prove `succ_ne_zero` below by first using
 -- `symmetry` and then `exact zero_ne_succ a`.
 
+/-- Zero is not the successor of any natural number. -/
 Statement MyNat.succ_ne_zero
-"Zero is not the successor of any natural number."
     (a : ℕ) : succ a ≠ 0 := by
   Hint "You have several options how to start. One would be to recall that `≠` is defined as
   `(· = ·) → False` and start with `intro`. Or do `rw [Ne, Not]` to explicitely remove the

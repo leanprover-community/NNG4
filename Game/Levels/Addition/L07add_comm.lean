@@ -16,10 +16,10 @@ These should be enough.
 "
 
 LemmaDoc MyNat.add_comm as "add_comm" in "MyNat" "`add_comm x y` is a proof of `x + y = y + x`."
-Statement add_comm
-"On the set of natural numbers, addition is commutative.
+/-- On the set of natural numbers, addition is commutative.
 In other words, if `a` and `b` are arbitrary natural numbers, then
-$a + b = b + a$."
+$a + b = b + a$. -/
+Statement add_comm
     (a b : ℕ) : a + b = b + a := by
   Hint (hidden := true) "Induction on `a` or `b` -- it's all the same in this one."
   Branch
