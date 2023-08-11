@@ -41,17 +41,29 @@ The `rfl` tactic will close any goal of the form `A = B` if `A` and `B` are
 If the goal looks like this:
 
 ```
-⊢ x^37+691*y^24+1=x^37+691*y^24+1
+x ^ 37 + 69 * y + 1 = x ^ 37 + 69 * y + 1
 ```
 
 then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even though $0+x$ is *equal* to $x$, it is not *exactly the same thing* as *x*. The only thing which is exactly the same as `0 + x` is `0 + x`.
-"
-NewTactic rfl
-DefinitionDoc MyNat as "Nat" "The natural numbers, defined as an inductive type, with two constructors:
 
-* `0 : Nat`
-* `succ (n : Nat) : Nat`
+## Game Implementation
+
+*Note that our `rfl` is weaker than the real version.*
 "
+
+DefinitionDoc MyNat as "ℕ" "The natural numbers, defined as an inductive type, with two constructors:
+
+* `0 : ℕ`
+* `succ (n : ℕ) : ℕ`
+
+## Game Implementation
+
+*The game uses its own copy of the natural numbers, called `MyNat` or `ℕ`.
+If you ever see `Nat`, then you probably need to use `(1 : ℕ)` instead of `1` somewhere to tell Lean
+to work in `MyNat`.*
+"
+
+NewTactic rfl
 NewDefinition MyNat
 
 Conclusion

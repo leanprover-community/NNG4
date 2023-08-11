@@ -29,8 +29,9 @@ require mathlib from git
 
 
 package Game where
-  moreLeanArgs := #["-Dtactic.hygienic=false"]
-  moreServerArgs := #["-Dtactic.hygienic=false"]
+  moreLeanArgs := #["-Dtactic.hygienic=false", "--quiet"]
+  moreServerArgs := #["-Dtactic.hygienic=false", "--quiet"]
+  weakLeanArgs := #["--quiet"]
 
 @[default_target]
 lean_lib Game

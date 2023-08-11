@@ -33,6 +33,8 @@ Statement
   if you want to be precise, or just `rw [add_succ]` if you want Lean to figure
   out the inputs to this function."
   rw [add_succ]
+  Branch
+    simp?
   Hint (hidden := true) "Now you see a term of the form `… + 0`, so you can use `add_zero`."
   rw [add_zero]
   Hint (hidden := true) "Finally both sides are identical."
