@@ -7,18 +7,6 @@ Title "Two add one is three."
 
 namespace MyNat
 
-LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals" "`two_eq_succ_one is a proof of `2 = succ 1`."
-NewLemma MyNat.two_eq_succ_one
-
-LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals" "`three_eq_succ_two is a proof of `3 = succ 2`."
-NewLemma MyNat.three_eq_succ_two
-
-LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals" "`four_eq_succ_three is a proof of `4 = succ 3`."
-NewLemma MyNat.four_eq_succ_three
-
-LemmaDoc MyNat.five_eq_succ_four as "five_eq_succ_four" in "numerals" "`five_eq_succ_four is a proof of `5 = succ 4`."
-NewLemma MyNat.five_eq_succ_four
-
 Introduction
 "
 Remember Peano's axioms:
@@ -49,9 +37,21 @@ Statement : (2 : ℕ) + 1 = 3 := by
   rw [three_eq_succ_two]
   rfl
 
+LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals"
+"`two_eq_succ_one is a proof of `2 = succ 1`."
+
+LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals"
+"`three_eq_succ_two is a proof of `3 = succ 2`."
+
+LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
+"`four_eq_succ_three is a proof of `4 = succ 3`."
+
+LemmaDoc MyNat.five_eq_succ_four as "five_eq_succ_four" in "numerals"
+"`five_eq_succ_four is a proof of `5 = succ 4`."
+
 NewLemma MyNat.two_eq_succ_one MyNat.three_eq_succ_two
   MyNat.four_eq_succ_three MyNat.five_eq_succ_four
-LemmaTab "Add"
+LemmaTab "numerals"
 
 Conclusion
 "

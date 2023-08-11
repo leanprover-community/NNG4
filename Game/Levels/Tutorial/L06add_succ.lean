@@ -19,11 +19,6 @@ your way to a proof of this.
 "
 namespace MyNat
 
-LemmaDoc MyNat.add_succ as "add_succ" in "Add"
-"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
-
-NewLemma MyNat.add_succ
-
 /-- For all natural numbers $a$, we have $a + \operatorname{succ}(0) = \operatorname{succ}(a)$. -/
 Statement : a + succ 0 = succ a := by
   Hint "You find `{a} + succ …` in the goal, so you can use `rw` and `add_succ`
@@ -38,6 +33,13 @@ Statement : a + succ 0 = succ a := by
   rw [add_zero]
   Hint (hidden := true) "Finally both sides are identical."
   rfl
+
+
+LemmaDoc MyNat.add_succ as "add_succ" in "Add"
+"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
+
+NewLemma MyNat.add_succ
+LemmaTab "Add"
 
 Conclusion
 "

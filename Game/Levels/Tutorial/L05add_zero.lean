@@ -24,22 +24,7 @@ to do a lot of work for us."
 
 namespace MyNat
 
-TacticDoc simp "The simplifier. `rw` on steroids.
-
-A bunch of lemmas like `add_zero : ∀ a, a + 0 = a`
-are tagged with the `@[simp]` tag. If the `simp` tactic
-is run by the user, the simplifier will try and rewrite
-as many of the lemmas tagged `@[simp]` as it can.
-
-`simp` is a *finishing tactic*. After you run `simp`,
-the goal should be closed. If it is not, it is best
-practice to write `simp?` instead and then replace the
-output with the appropriate `simp only` call. Inappropriate
-use of `simp` can make for very slow code.
-"
-NewTactic simp -- TODO: Do we want it to be unlocked here?
-
-/-- $(a+(0+0)+(0+0+0)=a.$ -/
+/-- $a+(0+0)+(0+0+0)=a.$ -/
 Statement (a : ℕ)  : (a + (0 + 0)) + (0 + 0 + 0) = a := by
   Hint "I will walk you through this level so I can show you some
   techniques which will speed up your proving.
@@ -98,6 +83,7 @@ All you need to know is that `add_zero` and `zero_add` are both theorems."
 NewLemma MyNat.add_zero
 NewTactic simp «repeat» -- TODO: Do we want it to be unlocked here?
 NewDefinition Add
+LemmaTab "Add"
 
 Conclusion
 "

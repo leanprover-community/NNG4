@@ -27,7 +27,7 @@ Statement (a b c d : ℕ) : a + d + (b + c) = a + b + c + d := by
   Hint "Now use targetted `rw [add_comm x y]` and `rw [add_left_comm x y]` to
   switch consecutive variables `x` and `y` on the left hand side until everything
   is in the right order. The point is that `add_comm` switches the last two,
-  and `add_left-comm` can be used to switch any oher pair of consecutive
+  and `add_left_comm` can be used to switch any oher pair of consecutive
   variables."
   Hint (hidden := true) "Start with `add_left_comm d b`, which will switch
   `d` and `b` on the left hand side."
