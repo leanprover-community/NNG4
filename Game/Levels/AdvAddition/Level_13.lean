@@ -13,9 +13,9 @@ The last level in Advanced Addition World is the statement
 that $n\\not=\\operatorname{succ}(n)$.
 "
 
+/-- For any natural number $n$, we have
+$$ n \\neq \\operatorname{succ}(n). $$ -/
 Statement --ne_succ_self
-"For any natural number $n$, we have
-$$ n \\neq \\operatorname{succ}(n). $$"
      (n : ℕ) : n ≠ succ n := by
   Hint (hidden := true) "I would start a proof by induction on `n`."
   induction n with d hd

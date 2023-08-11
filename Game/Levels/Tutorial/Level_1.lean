@@ -22,8 +22,8 @@ on your computer in the same order\" equal. For example, `x * y + z = x * y + z`
 but `x + y = y + x` cannot.
 "
 
+/-- For all natural numbers $x, y$ and $z$, we have $xy + z = xy + z$. -/
 Statement
-"For all natural numbers $x, y$ and $z$, we have $xy + z = xy + z$."
     (x y z : ℕ) : x * y + z = x * y + z := by
   Hint "In order to use the tactic `rfl` you can enter it above and hit \"Execute\"."
   rfl

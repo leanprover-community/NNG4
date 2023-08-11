@@ -47,8 +47,8 @@ LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 LemmaDoc MyNat.add_zero as "add_zero" in "Add"
 "One of the two axioms defining addition. It says `n + 0 = n`."
 
+/-- For all natural numbers $a$, we have $a + \\operatorname{succ}(0) = \\operatorname{succ}(a)$. -/
 Statement
-"For all natural numbers $a$, we have $a + \\operatorname{succ}(0) = \\operatorname{succ}(a)$."
     : a + succ 0 = succ a := by
   Hint "You find `{a} + succ …` in the goal, so you can use `rw` and `add_succ`
   to make progress."
