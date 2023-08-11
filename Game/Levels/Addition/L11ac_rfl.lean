@@ -18,18 +18,19 @@ numbers. Let's now write a tactic which automates this.
 
 macro_rules | `(tactic| ac_rfl) => `(tactic| simp only [add_assoc, add_left_comm, add_comm])
 
-
-/-- If $a, b,\\ldots h$ are arbitrary natural numbers, we have
+/-- If $a, b,\ldots h$ are arbitrary natural numbers, we have
 $(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$. -/
-Statement
-    (a b c d e f g h : ℕ) : (d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h := by
+Statement (a b c d e f g h : ℕ) :
+    (d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h := by
   ac_rfl
+
+NewTactic ac_rfl
 LemmaTab "Add"
 
 Conclusion
 "
-  Congratulations! You finished addition world. Now go back to the overworld by clicking the
-  home button in the top left. If you want to press on to the final boss
-  of the game then go to Multiplication world next. If you are in no hurry, and would like
-  to learn some more tactics, then you can try Advanced Addition World.
+Congratulations! You finished addition world. Now go back to the overworld by clicking the
+home button in the top left. If you want to press on to the final boss
+of the game then go to Multiplication world next. If you are in no hurry, and would like
+to learn some more tactics, then you can try Advanced Addition World.
 "

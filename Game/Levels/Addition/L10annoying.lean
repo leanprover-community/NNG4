@@ -15,12 +15,11 @@ where the order of the variables needs to be changed
 and the brackets need to be moved around. In this level we learn
 an algorithm which will work for an arbitrary such problem. Let's
 prove `a + b + (c + d) = a + c + d + b`.
-
 "
+
 /-- If $a, b$, $c$ and $d$ are arbitrary natural numbers, we have
-$(a + b) + (c + d) = ((a + c) + d) + b.$ -/
-Statement
-    (a b c d : ℕ) : a + d + (b + c) = a + b + c + d := by
+$(a + b) + (c + d) = ((a + c) + d) + b. -/
+Statement (a b c d : ℕ) : a + d + (b + c) = a + b + c + d := by
   Hint "We no longer have to use inducion; `add_assoc` and `add_comm` are
     all the tools we need.
     Start with `repeat rw [add_assoc]` to push all the brackets to the right."
@@ -34,10 +33,11 @@ Statement
   `d` and `b` on the left hand side."
   rw [add_left_comm d b, add_comm d c]
   rfl
+
 LemmaTab "Add"
 
 Conclusion
 "
-  In the last level we use automation to perform this algorithm
-  automatically.
+In the last level we use automation to perform this algorithm
+automatically.
 "

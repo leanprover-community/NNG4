@@ -18,14 +18,15 @@ Use the `rw` tactic to prove that $ab + 2c^3 + 7 = pq + 2r^3 + 7$. Here are some
 "
 
 /-- If $a=p$, $b=q$ and $c=r$, then $ab+2c^3+7=pq+2r^3+7.$ -/
-Statement
-    (a b c p q r : ℕ) (hap : a = p) (hbq : b = q) (hcr : c = r) : a * b + 2 * c ^ 3 + 7 = p * q + 2 * r ^ 3 + 7 := by
+Statement (a b c p q r : ℕ) (hap : a = p) (hbq : b = q) (hcr : c = r) :
+    a * b + 2 * c ^ 3 + 7 = p * q + 2 * r ^ 3 + 7 := by
   Hint "Switch to editor mode to make it easier to experiment with the `rw` tactic. Note that each tactic needs to start at the beginning of a line."
   rw [hap, hbq, hcr]
   rfl
 
 Conclusion
 "
-In editor mode,you can click around the proof and see the state of Lean's brain at any point in the proof.
+In editor mode,you can click around the proof and see the state of Lean's brain at
+any point in the proof.
 You can also edit your proof and experiment more with it.
 "

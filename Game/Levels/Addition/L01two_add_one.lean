@@ -5,7 +5,6 @@ World "Addition"
 Level 1
 Title "Two add one is three."
 
---namespace MyNat
 namespace MyNat
 
 LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals" "`two_eq_succ_one is a proof of `2 = succ 1`."
@@ -40,8 +39,7 @@ Can you prove `2 + 1 = 3`?
 "
 
 /-- $2+1=3$. -/
-Statement
-    : (2 : ℕ) + 1 = 3 := by
+Statement : (2 : ℕ) + 1 = 3 := by
   Hint "Which one of Peano's axioms do we ultimately want to use to rewrite that addition?"
   Hint (hidden := true) "change `1` to `succ 0` with a rewrite, and then
   think about Peano's axioms."
@@ -51,9 +49,11 @@ Statement
   rw [three_eq_succ_two]
   rfl
 
+NewLemma MyNat.two_eq_succ_one MyNat.three_eq_succ_two
+  MyNat.four_eq_succ_three MyNat.five_eq_succ_four
 LemmaTab "Add"
 
 Conclusion
 "
-  Are you up for `2 + 2 = 4`?
+Are you up for `2 + 2 = 4`?
 "

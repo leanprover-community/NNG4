@@ -28,11 +28,14 @@ that `a + succ(b) = succ(a + b)`. The tactic `rw [add_succ]` just says to Lean \
 what the variables are\".
 "
 
-LemmaDoc MyNat.succ_add as "succ_add" in "MyNat" "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
-/-- For all natural numbers $a, b$, we have
-$ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$. -/
-Statement succ_add
-    (a b : ℕ) : succ a + b = succ (a + b)  := by
+LemmaDoc MyNat.succ_add as "succ_add" in "Add"
+"`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
+
+/--
+For all natural numbers $a, b$, we have
+$ \operatorname{succ}(a) + b = \operatorname{succ}(a + b)$.
+-/
+Statement succ_add (a b : ℕ) : succ a + b = succ (a + b)  := by
   Hint (hidden := true) "You might want to think about whether induction
   on `a` or `b` is the best idea."
   Branch
