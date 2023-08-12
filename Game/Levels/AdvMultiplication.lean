@@ -1,7 +1,5 @@
-import Game.Levels.AdvMultiplication.Level_1
-import Game.Levels.AdvMultiplication.Level_2
-import Game.Levels.AdvMultiplication.Level_3
-import Game.Levels.AdvMultiplication.Level_4
+import Game.Levels.Multiplication
+import Game.Levels.AdvAddition
 
 
 

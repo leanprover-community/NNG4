@@ -2,13 +2,17 @@ import GameServer.Commands
 
 import Game.Levels.Tutorial
 import Game.Levels.Addition
---import Game.Levels.Multiplication
---import Game.Levels.Power
---import Game.Levels.Function
---import Game.Levels.Proposition
---import Game.Levels.AdvProposition
---import Game.Levels.AdvAddition
---import Game.Levels.AdvMultiplication
+import Game.Levels.Multiplication
+import Game.Levels.Power
+import Game.Levels.AdvAddition
+import Game.Levels.AdvMultiplication
+import Game.Levels.EvenOdd
+import Game.Levels.Inequality
+import Game.Levels.Prime
+import Game.Levels.StrongInduction
+import Game.Levels.Hard
+
+
 --import Game.Levels.Inequality
 
 Title "Natural Number Game"

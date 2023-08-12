@@ -1,13 +1,4 @@
-import Game.Levels.Multiplication.Level_1
-import Game.Levels.Multiplication.Level_2
-import Game.Levels.Multiplication.Level_3
-import Game.Levels.Multiplication.Level_4
-import Game.Levels.Multiplication.Level_5
-import Game.Levels.Multiplication.Level_6
-import Game.Levels.Multiplication.Level_7
-import Game.Levels.Multiplication.Level_8
-import Game.Levels.Multiplication.Level_9
-
+import Game.Levels.Addition
 
 
 World "Multiplication"
@@ -15,6 +6,9 @@ Title "Multiplication World"
 
 Introduction
 "
+  We define multiplication, and prove that the naturals are a commutative semiring.
+
+
 In this world you start with the definition of multiplication on `ℕ`. It is
 defined by recursion, just like addition was. So you get two new axioms:
 

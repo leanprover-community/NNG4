@@ -1,4 +1,4 @@
-import Game.Levels.Power.Level_8
+import Game.Levels.Multiplication
 
 
 World "Power"
