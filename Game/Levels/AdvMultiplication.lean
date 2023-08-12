@@ -1,7 +1,5 @@
 import Game.Levels.Multiplication
 import Game.Levels.AdvAddition
-import Game.Levels.AdvMultiplication.placeholder
-
 
 World "AdvMultiplication"
 Title "Advanced Multiplication World"

@@ -1,1 +1,7 @@
-import Game.Levels.Hard.placeholder
+import GameServer.Commands
+
+World "Hard"
+Title "Impossible World"
+
+Introduction
+""

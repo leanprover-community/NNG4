@@ -1,5 +1,4 @@
 import Game.Levels.Multiplication
-import Game.Levels.Power.placeholder
 
 World "Power"
 Title "Power World"

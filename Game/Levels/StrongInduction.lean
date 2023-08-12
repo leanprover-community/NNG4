@@ -1,2 +1,7 @@
 import Game.Levels.Inequality
-import Game.Levels.StrongInduction.placeholder
+
+World "StrongInduction"
+Title "Strong Induction World"
+
+Introduction
+""

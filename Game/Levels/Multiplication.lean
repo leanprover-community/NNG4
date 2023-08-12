@@ -1,5 +1,4 @@
 import Game.Levels.Addition
-import Game.Levels.Multiplication.placeholder
 
 World "Multiplication"
 Title "Multiplication World"

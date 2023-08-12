@@ -1,6 +1,4 @@
 import Game.Levels.Addition
-import Game.Levels.AdvAddition.placeholder
-
 
 World "AdvAddition"
 Title "Advanced Addition World"
