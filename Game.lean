@@ -65,6 +65,9 @@ If you delete it, your progress will be lost!
 
 -- Add manual paths
 -- Dependency Proposition → AdvProposition
--- Dependency Multiplication → Function
+Dependency Addition → Multiplication → Power
+Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
+Dependency Multiplication → AdvMultiplication
+Dependency AdvAddition → Evendd → Inequality → StrongInduction
 
 MakeGame
