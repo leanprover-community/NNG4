@@ -13,9 +13,9 @@ Introduction
 Now you have `eq_zero_or_eq_zero_of_mul_eq_zero` this is pretty straightforward.
 "
 
+/-- $ab = 0$, if and only if at least one of $a$ or $b$ is equal to zero.
+ -/
 Statement
-"$ab = 0$, if and only if at least one of $a$ or $b$ is equal to zero.
-"
     {a b : ℕ} : a * b = 0 ↔ a = 0 ∨ b = 0 := by
   constructor
   intro h

@@ -20,8 +20,8 @@ The levels in proposition world are \"back to normal\", we're proving
 theorems, not constructing elements of sets. Or are we?
 "
 
+/-- If $P$ is true, and $P\\implies Q$ is also true, then $Q$ is true. -/
 Statement
-"If $P$ is true, and $P\\implies Q$ is also true, then $Q$ is true."
     (P Q : Prop) (p : P) (h : P → Q) : Q := by
 Hint
 "

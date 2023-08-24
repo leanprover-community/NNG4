@@ -1,5 +1,4 @@
-import Game.Levels.AdvAddition.Level_13
-
+import Game.Levels.Addition
 
 World "AdvAddition"
 Title "Advanced Addition World"

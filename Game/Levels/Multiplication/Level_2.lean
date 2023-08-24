@@ -19,8 +19,8 @@ begin to prove a couple of lemmas about how `1` behaves
 with respect to multiplication.
 "
 
+/-- For any natural number $m$, we have $ m \\cdot 1 = m$. -/
 Statement MyNat.mul_one
-"For any natural number $m$, we have $ m \\cdot 1 = m$."
     (m : ℕ) : m * 1 = m := by
 rw [one_eq_succ_zero]
 rw [mul_succ]

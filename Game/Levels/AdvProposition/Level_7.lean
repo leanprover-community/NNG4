@@ -13,9 +13,9 @@ Introduction
 Proving that $(P\\lor Q)\\implies(Q\\lor P)$ involves an element of danger.
 "
 
+/-- If $P$ and $Q$ are true/false statements, then
+$$P\\lor Q\\implies Q\\lor P.$$  -/
 Statement --or_symm
-"If $P$ and $Q$ are true/false statements, then
-$$P\\lor Q\\implies Q\\lor P.$$ "
     (P Q : Prop) : P ∨ Q → Q ∨ P := by
   Hint "`intro h` is the obvious start."
   intro h

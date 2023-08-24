@@ -33,8 +33,8 @@ i.e. you have a formula for it, then you can just write `exact <formula>`
 and this will close the goal.
 "
 
+/-- If $P$ is true, and $P\\implies Q$ is also true, then $Q$ is true. -/
 Statement
-"If $P$ is true, and $P\\implies Q$ is also true, then $Q$ is true."
     (P Q : Prop) (p : P) (h : P → Q) : Q := by
   Hint
   "In this situation, we have sets $P$ and $Q$ (but Lean calls them types),

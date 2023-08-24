@@ -13,11 +13,11 @@ The theorem `add_left_cancel` is the theorem that you can cancel on the left
 when you're doing addition -- if `t + a = t + b` then `a = b`.
 "
 
-Statement MyNat.add_left_cancel
-"On the set of natural numbers, addition has the left cancellation property.
+/-- On the set of natural numbers, addition has the left cancellation property.
 In other words, if there are natural numbers $a, b$ and $t$ such that
 $$ t + a = t + b, $$
-then we have $a = b$."
+then we have $a = b$. -/
+Statement MyNat.add_left_cancel
     (t a b : ℕ) : t + a = t + b → a = b := by
   Branch
     induction t

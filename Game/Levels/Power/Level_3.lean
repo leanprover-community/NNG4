@@ -7,8 +7,8 @@ Title "pow_one"
 
 open MyNat
 
+/-- For all naturals $a$, $a ^ 1 = a$. -/
 Statement MyNat.pow_one
-"For all naturals $a$, $a ^ 1 = a$."
     (a : ℕ) : a ^ 1 = a  := by
   rw [one_eq_succ_zero]
   rw [pow_succ]

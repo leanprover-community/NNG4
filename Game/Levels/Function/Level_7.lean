@@ -19,10 +19,10 @@ know it as contravariance of $\\operatorname{Hom}(\\cdot,F)$
 functor.
 "
 
-Statement
-"Whatever the sets $P$ and $Q$ and $F$ are, we
+/-- Whatever the sets $P$ and $Q$ and $F$ are, we
 make an element of $\\operatorname{Hom}(\\operatorname{Hom}(P,Q),
-\\operatorname{Hom}(\\operatorname{Hom}(Q,F),\\operatorname{Hom}(P,F)))$."
+\\operatorname{Hom}(\\operatorname{Hom}(Q,F),\\operatorname{Hom}(P,F)))$. -/
+Statement
     (P Q F : Type) : (P → Q) → ((Q → F) → (P → F)) := by
   intro f
   intro h

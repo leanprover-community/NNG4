@@ -23,9 +23,9 @@ some theorems about $0$ (`zero_add`, `add_zero`), but, other than `1 = succ 0`,
 no theorems at all which mention $1$. Let's prove one now.
 "
 
+/-- For any natural number $n$, we have
+$ \\operatorname{succ}(n) = n+1$ . -/
 Statement MyNat.succ_eq_add_one
-"For any natural number $n$, we have
-$ \\operatorname{succ}(n) = n+1$ ."
     (n : ℕ) : succ n = n + 1 := by
   rw [one_eq_succ_zero]
   rw [add_succ]

@@ -24,11 +24,10 @@ by replacing `y` by `x + 7` and then using `rfl`. The tactic which we use to
 do this kind of \"substituting in\" is called the *rewrite* tactic `rw`.
 The tactic `rw [h]` will replace all occurences of the left hand side $y$ of `h`
 in the goal, with the right hand side $x+7$. Try it and see.
-
 "
 
+/-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
-"If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$."
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
   Hint "You can use `rw [h]` to replace the `{y}` with `x + 7`."
   rw [h]
@@ -108,6 +107,7 @@ h2 : 2 * y = x
 then `rw h1 at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
 -/
 "
+
 NewTactic rw
 
 Conclusion

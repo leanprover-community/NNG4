@@ -8,7 +8,7 @@ def LocalGameServer : Dependency := {
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" "5072dacf947d4f682e14a56816eb10f9e46d7203" "server"
+  src := Source.git "https://github.com/leanprover-community/lean4game.git" "25f2f0830935aa18bcb5ae3ca7c0c4e4f9613bc9" "server"
 }
 
 /- Choose dependency depending on the environment variable NODE_ENV -/
@@ -29,8 +29,9 @@ require mathlib from git
 
 
 package Game where
-  moreLeanArgs := #["-Dtactic.hygienic=false"]
-  moreServerArgs := #["-Dtactic.hygienic=false"]
+  moreLeanArgs := #["-Dtactic.hygienic=false", "--quiet"]
+  moreServerArgs := #["-Dtactic.hygienic=false", "--quiet"]
+  weakLeanArgs := #["--quiet"]
 
 @[default_target]
 lean_lib Game

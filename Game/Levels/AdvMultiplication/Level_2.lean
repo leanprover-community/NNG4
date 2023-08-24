@@ -12,8 +12,8 @@ Introduction
 A variant on the previous level.
 "
 
+/-- If $ab = 0$, then at least one of $a$ or $b$ is equal to zero. -/
 Statement MyNat.eq_zero_or_eq_zero_of_mul_eq_zero
-"If $ab = 0$, then at least one of $a$ or $b$ is equal to zero."
     (a b : ℕ) (h : a * b = 0) :
   a = 0 ∨ b = 0 := by
   induction a with d hd

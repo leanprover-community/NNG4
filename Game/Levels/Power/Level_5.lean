@@ -8,8 +8,8 @@ Title "pow_add"
 
 open MyNat
 
+/-- For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$. -/
 Statement MyNat.pow_add
-"For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$."
     (a m n : ℕ) : a ^ (m + n) = a ^ m * a ^ n := by
   induction n with t ht
   · rw [add_zero, pow_zero, mul_one]

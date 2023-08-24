@@ -21,16 +21,15 @@ See if you can prove associativity of addition. Note that now we have
 it probably doesn't matter which variable we induct on. Take your pick!
 "
 
-LemmaDoc MyNat.add_assoc as "add_assoc" in "MyNat" "`add_assoc a b c` is a proof
+LemmaDoc MyNat.add_assoc as "add_assoc" in "Add" "`add_assoc a b c` is a proof
 that `(a + b) + c = a + (b + c)`. Note that in Lean `(a + b) + c` prints
 as `a + b + c`, because the notation for addition is defined to be left
 associative. "
 
-Statement add_assoc
-"On the set of natural numbers, addition is associative.
+/-- On the set of natural numbers, addition is associative.
 In other words, if $a, b$ and $c$ are arbitrary natural numbers, we have
-$ (a + b) + c = a + (b + c). $"
-    (a b c : ℕ) : (a + b) + c = a + (b + c) := by
+$ (a + b) + c = a + (b + c). $ -/
+Statement add_assoc (a b c : ℕ) : (a + b) + c = a + (b + c) := by
   Hint "Note that when Lean writes `a + b + c`, it means `(a + b) + c`. If it wants to talk
   about `a + (b + c)` it will put the brackets in explictly."
   Branch
@@ -45,7 +44,9 @@ $ (a + b) + c = a + (b + c). $"
   simp
   simp [hc, succ_add, add_succ]
 
-NewLemma MyNat.add_assoc
+-- Adding this instance to make `ac_rfl` work.
+instance : Lean.IsAssociative (α := ℕ) (·+·) := ⟨add_assoc⟩
+
 LemmaTab "Add"
 
 Conclusion

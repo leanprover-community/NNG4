@@ -25,8 +25,8 @@ to $Q$ to $T$ to $U$. Using the `apply` tactic we can instead construct
 the path backwards, moving from $U$ to $T$ to $Q$ to $P$.
 "
 
+/-- Given an element of $P$ we can define an element of $U$. -/
 Statement
-"Given an element of $P$ we can define an element of $U$."
     (P Q R S T U: Type)
 (p : P)
 (h : P → Q)

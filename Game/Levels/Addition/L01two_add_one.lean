@@ -5,20 +5,7 @@ World "Addition"
 Level 1
 Title "Two add one is three."
 
---namespace MyNat
 namespace MyNat
-
-LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals" "`two_eq_succ_one is a proof of `2 = succ 1`."
-NewLemma MyNat.two_eq_succ_one
-
-LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals" "`three_eq_succ_two is a proof of `3 = succ 2`."
-NewLemma MyNat.three_eq_succ_two
-
-LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals" "`four_eq_succ_three is a proof of `4 = succ 3`."
-NewLemma MyNat.four_eq_succ_three
-
-LemmaDoc MyNat.five_eq_succ_four as "five_eq_succ_four" in "numerals" "`five_eq_succ_four is a proof of `5 = succ 4`."
-NewLemma MyNat.five_eq_succ_four
 
 Introduction
 "
@@ -39,9 +26,8 @@ etc up to 5.
 Can you prove `2 + 1 = 3`?
 "
 
-Statement
-"$2+1=3$."
-    : (2 : ℕ) + 1 = 3 := by
+/-- $2+1=3$. -/
+Statement : (2 : ℕ) + 1 = 3 := by
   Hint "Which one of Peano's axioms do we ultimately want to use to rewrite that addition?"
   Hint (hidden := true) "change `1` to `succ 0` with a rewrite, and then
   think about Peano's axioms."
@@ -51,9 +37,23 @@ Statement
   rw [three_eq_succ_two]
   rfl
 
-LemmaTab "Add"
+LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals"
+"`two_eq_succ_one is a proof of `2 = succ 1`."
+
+LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals"
+"`three_eq_succ_two is a proof of `3 = succ 2`."
+
+LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
+"`four_eq_succ_three is a proof of `4 = succ 3`."
+
+LemmaDoc MyNat.five_eq_succ_four as "five_eq_succ_four" in "numerals"
+"`five_eq_succ_four is a proof of `5 = succ 4`."
+
+NewLemma MyNat.two_eq_succ_one MyNat.three_eq_succ_two
+  MyNat.four_eq_succ_three MyNat.five_eq_succ_four
+LemmaTab "numerals"
 
 Conclusion
 "
-  Are you up for `2 + 2 = 4`?
+Are you up for `2 + 2 = 4`?
 "

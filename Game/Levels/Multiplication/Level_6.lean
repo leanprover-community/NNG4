@@ -27,9 +27,9 @@ of rewrites of `add_assoc` and `add_comm`. Use if
 you're getting lazy!
 "
 
+/-- For all natural numbers $a$ and $b$, we have
+$\\operatorname{succ}(a) \\cdot b = ab + b$. -/
 Statement MyNat.succ_mul
-"For all natural numbers $a$ and $b$, we have
-$\\operatorname{succ}(a) \\cdot b = ab + b$."
     (a b : ℕ) : succ a * b = a * b + b := by
   induction b with d hd
   · rw [mul_zero]

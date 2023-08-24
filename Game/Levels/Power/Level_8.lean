@@ -26,9 +26,9 @@ of thing in the way that will magically disappear
 but only when you've beaten the boss.
 "
 
+/-- For all naturals $a$ and $b$, we have
+$$(a+b)^2=a^2+b^2+2ab.$$ -/
 Statement MyNat.add_squared
-"For all naturals $a$ and $b$, we have
-$$(a+b)^2=a^2+b^2+2ab.$$"
   (a b : ℕ) : (a + b) ^ 2 = a ^ 2 + b ^ 2 + 2 * a * b := by
   Branch
     simp? [two_eq_succ_one]

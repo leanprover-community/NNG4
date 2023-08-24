@@ -14,11 +14,11 @@ The theorem `add_right_cancel` is the theorem that you can cancel on the right
 when you're doing addition -- if `a + t = b + t` then `a = b`.
 "
 
-Statement MyNat.add_right_cancel
-"On the set of natural numbers, addition has the right cancellation property.
+/-- On the set of natural numbers, addition has the right cancellation property.
 In other words, if there are natural numbers $a, b$ and $c$ such that
 $$ a + t = b + t, $$
-then we have $a = b$."
+then we have $a = b$. -/
+Statement MyNat.add_right_cancel
     (a t b : ℕ) : a + t = b + t → a = b := by
   Hint (hidden := true) "You can either start with `induction t` or with
   `intro` and you will have to do the other one afterwards."
