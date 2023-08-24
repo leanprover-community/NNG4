@@ -1,4 +1,4 @@
-/-- Our copy of the natural numbers called `MyNat`. -/
+/-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where
 | zero : MyNat
 | succ : MyNat → MyNat

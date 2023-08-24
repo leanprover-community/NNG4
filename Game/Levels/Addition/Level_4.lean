@@ -39,6 +39,9 @@ $a + b = b + a$."
     rw [succ_add]
     rfl
 
+-- Adding this instance to make `ac_rfl` work.
+instance : Lean.IsCommutative (α := ℕ) (·+·) := ⟨MyNat.add_comm⟩
+
 LemmaTab "Add"
 
 Conclusion
