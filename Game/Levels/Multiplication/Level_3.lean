@@ -1,11 +1,13 @@
 import Game.Levels.Multiplication.Level_2
-
+--import Game.Levels.Addition.Level_5
 
 World "Multiplication"
 Level 3
 Title "one_mul"
 
-open MyNat
+namespace MyNat
+
+axiom succ_eq_add_one (n : ℕ) : succ n = n + 1
 
 Introduction
 "
@@ -23,7 +25,7 @@ with `add_zero` and `zero_add`).
 "
 
 /-- For any natural number $m$, we have $ 1 \\cdot m = m$. -/
-Statement MyNat.one_mul
+Statement one_mul
     (m : ℕ): 1 * m = m := by
   induction m with d hd
   · rw [mul_zero]

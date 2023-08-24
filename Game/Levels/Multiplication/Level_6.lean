@@ -27,6 +27,8 @@ of rewrites of `add_assoc` and `add_comm`. Use if
 you're getting lazy!
 "
 
+axiom MyNat.add_right_comm (a b c : ℕ) : a + b + c = a + c + b
+
 /-- For all natural numbers $a$ and $b$, we have
 $\\operatorname{succ}(a) \\cdot b = ab + b$. -/
 Statement MyNat.succ_mul
