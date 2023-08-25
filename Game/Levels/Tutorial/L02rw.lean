@@ -9,20 +9,23 @@ Title "the rw tactic"
 Introduction
 "
 In this level we make your life easier by giving you an *Assumption*. Here we have
-two secret numbers $x$ and $y$, but I will also give you a hypothesis `h` stating
+two secret numbers $x$ and $y$, but I will also give you a hypothesis `h`
 that `y = x + 7`. You can see `h` listed in your Assumptions just above the
 statment of the goal.
 
-You can think about `h` as follows: `y = x + 7` is a true/false statement,
-and `h` is a secret proof of this statement. It is important in games like this
+You can think about `h` as follows: `y = x + 7` is a statement,
+and `h` is a secret proof of this statement (in kind of the same way that `x` is
+a secret number). It is important in games like this
 to have a clear separation in your mind about the difference between the
-*statement* of a theorem and its *proof*. Here, for example, the statement
-is `y = x + 7` and the proof is `h`.
+*statement* of a theorem and its *proof*. The statement is
+`y = x + 7`, and the proof is `h`, and the notation is `h : y = x + 7`.
 
-The goal of this level is to prove that $2y=2(x+7)$. We want to prove this
-by replacing `y` by `x + 7` and then using `rfl`. The tactic which we use to
+The goal of this level is to prove, assuming hypothesis `h`,
+that $2y=2(x+7)$. Now `rfl` won't work directly.
+We want to prove this theorem by first using `h` to *replace* `y` in the goal with `x + 7` and
+*then* using `rfl`. The tactic which we use to
 do this kind of \"substituting in\" is called the *rewrite* tactic `rw`.
-The tactic `rw [h]` will replace all occurences of the left hand side $y$ of `h`
+The spell `rw [h]` will replace all occurences of the left hand side $y$ of `h`
 in the goal, with the right hand side $x+7$. Try it and see.
 "
 
@@ -31,8 +34,10 @@ Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
   Hint "You can use `rw [h]` to replace the `{y}` with `x + 7`."
   rw [h]
-  Hint "Not all hints are directly shown. If you are stuck and need more help
-  finishing the proof, click on \"Show more help!\" below."
+  Hint "From now on, not all hints will be directly shown.
+  If you are stuck and need more help
+  finishing the proof, click on \"Show more help!\" below.
+  The system does not keep track of what hints you click on"
   Hint (hidden := true)
   "Now both sides are identical, so you can use `rfl` to close the goal."
   rfl
@@ -47,6 +52,8 @@ all `X`s in the goal to `Y`s. Variants: `rw ← h` (changes
 of the goal).
 
 ## Details
+
+**TODO** this needs rewriting when addition world has stabilised
 
 The `rw` tactic is a way to do \"substituting in\". There
 are two distinct situations where use this tactics.
