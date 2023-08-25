@@ -21,21 +21,17 @@ Say `x` and `y` are numbers. How are we going to define `x + y`?
 This is where Peano's third axiom comes in. \"That's it\" means
 that if you want to define how to add `y` to something, you only have
 to say how to do it in the two ways that numbers can be born.
-So firstly you have to say how to add `0` to something.
-And secondly, imagine you've already said how to add `d` to something.
-Then you have to explain how to add `succ d` to something. Once you've explained
-those two things, \"That's it!\", or the principle of mathematical recursion,
-says that you've defined how to add `y` to something for all natural numbers `y`.
+More explicitly, you have to explain how to add zero to something, and how to add
+a successor to something. So let's start with adding zero.
 
-So we now have two jobs to do, and let's do the simplest one in this level:
-let's decide how to define `x + 0`. If we want addition to agree with our intuition
-we should define this to be `x`. So let's throw in a new axiom or hypothesis
-or however you want to think about it, saying this:
+We need to decide how to define `x + 0`. We want addition to agree with our intuition,
+so we should define `x + 0` to be `x`. Let's throw in a new axiom or hypothesis
+or proof or however you want to think about it, saying this:
 
 * `add_zero (a : ℕ) : a + 0 = a`
 
 In fact `add_zero` is a *family* of proofs. For example `add_zero 37` is a proof
-that `37 + 0 = 37`, and `add_zero (p * q + r)` is a proof that `p * q + r + 0 = p * q + r`.
+that `37 + 0 = 37`, and `add_zero (p * q)` is a proof that `p * q + 0 = p * q`.
 Mathematicians might encourage you to think of `add_zero` as just one proof:
 
 * `add_zero : ∀ (a : ℕ), a + 0 = a`

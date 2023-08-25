@@ -82,8 +82,8 @@ Conclusion
 "
 Congratulations! You completed your first verified proof!
 
-If you ever want information about the `rfl` tactic, just click on `rfl`
-in the inventory on the right.
+Remember that `rfl` is a *tactic*. If you ever want information about the `rfl` tactic,
+just click on the `rfl` box in the inventory on the right. **TODO** make more precise.
 
 Now click on \"Next\" to continue the journey.
 "
