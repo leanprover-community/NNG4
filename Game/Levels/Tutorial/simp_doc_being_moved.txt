@@ -1,0 +1,14 @@
+
+TacticDoc simp "The simplifier. `rw` on steroids.
+
+A bunch of lemmas like `add_zero : ∀ a, a + 0 = a`
+are tagged with the `@[simp]` tag. If the `simp` tactic
+is run by the user, the simplifier will try and rewrite
+as many of the lemmas tagged `@[simp]` as it can.
+
+`simp` is a *finishing tactic*. After you run `simp`,
+the goal should be closed. If it is not, it is best
+practice to write `simp?` instead and then replace the
+output with the appropriate `simp only` call. Inappropriate
+use of `simp` can make for very slow code.
+"

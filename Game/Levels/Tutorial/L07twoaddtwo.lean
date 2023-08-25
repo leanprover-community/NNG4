@@ -31,13 +31,41 @@ Statement : (2 : ℕ) + 2 = 4 := by
   rw [four_eq_succ_three]
   rfl
 
+/-- $2+2=4$. -/
+Statement foo : (2 : ℕ) + 2 = 4 := by
+  rw [two_eq_succ_one, add_succ, one_eq_succ_zero, add_succ, add_zero, four_eq_succ_three,
+    three_eq_succ_two, two_eq_succ_one, one_eq_succ_zero]
+  rfl
+
 Conclusion
 "
+
+  Here are some example proofs. Copy and paste them into editor mode if you want
+  to inspect how they work.
+
+```
+  nth_rewrite 2 [two_eq_succ_one]
+  rw [add_succ]
+  rw [two_add_one_eq_three]
+  rw [four_eq_succ_three]
+  rfl
+```
+
+```
+  rw [four_eq_succ_three]
+  rw [← two_add_one_eq_three]
+  rw [← add_succ]
+  rw [← two_eq_succ_one]
+  rfl
+```
+
+```
+  rw [two_eq_succ_one, add_succ, one_eq_succ_zero, add_succ, add_zero, four_eq_succ_three,
+    three_eq_succ_two, two_eq_succ_one, one_eq_succ_zero]
+  rfl
+```
+
+
 You have finished tutorial world! If you're happy, let's move onto Addition World,
 and learn about proof by induction.
-
-## Inspection time
-
-If you want to examine your proofs, toggle \"Editor mode\" and click somewhere
-inside the proof to see the state of Lean's brain at that point.
 "
