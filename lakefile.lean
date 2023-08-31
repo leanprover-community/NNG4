@@ -8,7 +8,7 @@ def LocalGameServer : Dependency := {
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" "25f2f0830935aa18bcb5ae3ca7c0c4e4f9613bc9" "server"
+  src := Source.git "https://github.com/leanprover-community/lean4game.git" "6437013479f57d442d55216fe2e69e9b6644c147" "server"
 }
 
 /- Choose dependency depending on the environment variable NODE_ENV -/
@@ -24,7 +24,7 @@ open Lean in
 
 -- `Game` fix:
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4" @ "b04c509ef69fc7939b5f67715a635e15743dbe3c"
+  "https://github.com/leanprover-community/mathlib4" @ "658235826386f03bfb2b231fa42ead956567ce60"
 
 
 
