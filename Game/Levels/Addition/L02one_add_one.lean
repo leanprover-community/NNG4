@@ -24,11 +24,18 @@ Statement : (1 : ℕ) + 1 = 2 := by
     is a step in the wrong direction. Count the number of rewrites. Now go into editor
     mode and change `rw [one_eq_succ_zero]` to `nth_rewrite 2 [one_eq_succ_zero].
     This tells Lean to only change the second `1` into a `succ 0`."
-  nth_rewrite 2 [one_eq_succ_zero]
-  Hint "With this revised opening you should be able to solve the level in
-    three more rewrites rather than four more."
-  rw [add_succ]
-  rw [add_zero]
+  Branch
+    nth_rewrite 2 [one_eq_succ_zero]
+    Hint "With this revised opening you should be able to solve the level in
+      three more rewrites rather than four more."
+  Template
+    nth_rewrite 2 [one_eq_succ_zero]
+    Hint ""
+    rw [add_succ]
+    Hole
+      rw [add_zero]
+    Branch
+      simp
   rw [two_eq_succ_one]
   Hint "Nice! Nearly there."
   rfl

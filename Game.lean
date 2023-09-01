@@ -15,17 +15,11 @@ import Game.Levels.Hard
 
 --import Game.Levels.Inequality
 
-Title "Natural Number Game"
+Title "NNG"
 Introduction
 "
-# Natural Number Game
-
-##### version 4.0.1
-
-*(note that this ported version of the NNG is still a bit rough around the edges
-and will experience some more love soon.)*
-
-Welcome to the natural number game -- a game which shows the power of induction.
+# Welcome to the Natural Number Game
+#### A game which shows the power of induction
 
 In this game, you get own version of the natural numbers, in an interactive
 theorem prover called Lean. Your version of the natural numbers satisfies something called
@@ -42,24 +36,45 @@ will take you through some of these tactics. During your proofs, the assistant s
 
 Click on the blue \"Tutorial World\" to start your journey!
 
-## Save progress
+## More
 
-The game stores your progress locally in your browser storage.
+Open the \"Game Info\" in the menu for resources, links, and infos about the game.
+"
+
+Info "
+##### Game version: 4.0.2
+
+## Progress saving
+
+The game stores your progress in your local browser storage.
 If you delete it, your progress will be lost!
 
-(usually the *website data* gets deleted together with cookies.)
+Warning: In most browsers, deleting cookies will also clear the local storage
+(or \"local site data\"). Make sure to download your game progress first!
 
 ## Credits
 
+* **Creators:** Kevin Buzzard, […?], Jon Eugster
 * **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar
-* **Content adaptation**: Jon Eugster
 * **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
 
 ## Resources
 
 * The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum
 * [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/)
-* [A textbook-style (lean4) version of the NN-game](https://lovettsoftware.com/NaturalNumbers/TutorialWorld/Level1.lean.html)
+
+## Problems?
+
+Please ask any questions about this game in the
+[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in
+the stream \"New Members\". The community will happily help.
+
+Alternatively, if you experience issues / bugs you can also open github issues:
+
+* For issues with the game engine, please open an
+[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.
+* For issues about the game's content, please open an
+[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo.
 
 "
 
