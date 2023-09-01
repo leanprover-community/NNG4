@@ -15,7 +15,7 @@ import Game.Levels.Hard
 
 --import Game.Levels.Inequality
 
-Title "NNG"
+Title "Natural Number Game"
 Introduction
 "
 # Welcome to the Natural Number Game
