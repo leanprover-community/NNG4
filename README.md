@@ -8,6 +8,18 @@ The game was initially designed for lean3 and has been adapted for lean4. [See l
 
 There are multiple ways to run the game locally:
 
+### Codespaces
+
+You can work on it using Github codespaces (click "Code" and then "Codespaces" and then "create codespace on main"). It it should run the game locally in the background. You can open it for for example under "Ports" and clicking on
+"Open in Browser".
+
+Note: You have to wait until `npm` started properly.
+In particular, this is after a message like
+`[client] webpack 5.81.0 compiled successfully in 38119 ms` appears in the terminal, which might take a good while.
+
+As with devcontainers, you need to run `lake build` after changing any lean files and then reload the browser.
+
+
 ### Local setup
 
 ### VSCode Devcontainer
@@ -22,17 +34,6 @@ You can then open [localhost:3000](http://localhost:3000) in a browser.
 After making changes to the code, you need to run `lake build` in a terminal and
 reload the web page inside the "Simple Browser".
 
-### Codespaces
-
-If you open the repository in codespaces, it it should run the game locally in the background. You can open it for for example under "Ports" and clicking on
-"Open in Browser".
-
-
-Note: You have to wait until `npm` started properly.
-In particular, this is after a message like
-`[client] webpack 5.81.0 compiled successfully in 38119 ms` appears. This might take a good while.
-
-As with devcontainers, you need to run `lake build` after changing any lean files and then reload the browser.
 
 ### Gitpod
 
@@ -45,11 +46,11 @@ If you want to contribute to the Natural Number Game, it is probably best if you
 
 See the [documentation](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md) for an explanation of the game commands.
 
-## Codespaces and Gitpod
+## Gitpod
 
 You can work on this repository using Gitpod : [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hhu-adam/NNG4)
 
-You can also work on it using Github codespaces (click "Code" and then "Codespaces" and then "create codespace on main").
+
 
 ### Creating a new game
 
