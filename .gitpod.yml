@@ -9,6 +9,4 @@ tasks:
   - before: |
       cd /workspace && git clone https://github.com/leanprover-community/lean4game.git && cd /workspace/lean4game && npm install
   - init: |
-      (lake update && lake exe cache get && lake build)
-  - command: |
-      cd /workspace/lean4game && export LEAN4GAME_SINGLE_GAME=true && npm start
+      lake update && lake exe cache get && lake build
