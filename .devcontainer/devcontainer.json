@@ -23,6 +23,9 @@
       "extensions": [
         "leanprover.lean4"
       ]
+    },
+    "codespaces": {
+      "openFiles": ["Game.lean"]
     }
   }
 }
