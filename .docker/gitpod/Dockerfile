@@ -37,6 +37,7 @@ ENV VSCODE_API_VERSION="1.50.0"
 RUN ssh -o StrictHostKeyChecking=no github.com || true
 
 # Lean4game specific stuff
+RUN mkdir -p /workspace
 WORKDIR /workspace
 RUN git clone https://github.com/leanprover-community/lean4game.git
 WORKDIR /workspace/lean4game
