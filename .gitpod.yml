@@ -6,7 +6,7 @@ vscode:
     - leanprover.lean4
 
 tasks:
-  - before: |
-      cd /workspace && git clone https://github.com/leanprover-community/lean4game.git && cd /workspace/lean4game && npm install
   - init: |
-      lake update && lake exe cache get && lake build
+      lake exe cache get
+  - command: |
+      sudo apt-get --assume-yes install gcc
