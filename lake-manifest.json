@@ -20,10 +20,10 @@
   {"git":
    {"url": "https://github.com/leanprover-community/mathlib4",
     "subDir?": null,
-    "rev": "658235826386f03bfb2b231fa42ead956567ce60",
+    "rev": "7d308680dc444730e84a86c72357ad9a7aea9c4b",
     "opts": {},
     "name": "mathlib",
-    "inputRev?": "658235826386f03bfb2b231fa42ead956567ce60",
+    "inputRev?": "7d308680dc444730e84a86c72357ad9a7aea9c4b",
     "inherited": false}},
   {"git":
    {"url": "https://github.com/gebner/quote4",
@@ -44,15 +44,15 @@
   {"git":
    {"url": "https://github.com/leanprover-community/lean4game.git",
     "subDir?": "server",
-    "rev": "73b80e714dd4712f11675a59d67980e3815b53c9",
+    "rev": "87cb299b1f264a3e604b533f9e0854c1a948fee0",
     "opts": {},
     "name": "GameServer",
-    "inputRev?": "73b80e714dd4712f11675a59d67980e3815b53c9",
+    "inputRev?": "87cb299b1f264a3e604b533f9e0854c1a948fee0",
     "inherited": false}},
   {"git":
    {"url": "https://github.com/leanprover/std4",
     "subDir?": null,
-    "rev": "dd3a248c2a22c37644ad21029ecfa38f6a36d813",
+    "rev": "e8c27f7d90ee71470558efd1bc197fe55068c748",
     "opts": {},
     "name": "std",
     "inputRev?": "main",
