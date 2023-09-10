@@ -17,18 +17,22 @@ In particular, the recommended setup is to have `docker` installed on your compu
 and then click on the pop-up "Reopen in Container" which is shown when
 opening this project in VSCode.
 
-The game is then accessible at [localhost:3000/#/g/local/game](http://localhost:3000/#/g/local/game).
+You can then open [localhost:3000](http://localhost:3000) in a browser.
+
+After making changes to the code, you need to run `lake build` in a terminal and
+reload the web page inside the "Simple Browser".
 
 ### Codespaces
 
-If you open the repository in codespaces, it should open a
-"Simple Browser" which displays the game.
+If you open the repository in codespaces, it it should run the game locally in the background. You can open it for for example under "Ports" and clicking on
+"Open in Browser".
 
-#### Simple Browser
 
-To update the game, you have to run `lake build` in a terminal (make sure to be inside `~/game`).
+Note: You have to wait until `npm` started properly.
+In particular, this is after a message like
+`[client] webpack 5.81.0 compiled successfully in 38119 ms` appears. This might take a good while.
 
-Afterwards you can reload the "Simple Browser". Unfortunately this seems to be extremely limited and will always put you back to the starting page.
+As with devcontainers, you need to run `lake build` after changing any lean files and then reload the browser.
 
 ### Gitpod
 

@@ -15,9 +15,9 @@
       "label": "game: open browser",
       "command": "${input:openSimpleBrowser}",
       "problemMatcher": [],
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
     },
   ],
   "inputs": [
