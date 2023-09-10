@@ -37,9 +37,9 @@ ENV VSCODE_API_VERSION="1.50.0"
 RUN ssh -o StrictHostKeyChecking=no github.com || true
 
 # Lean4game specific stuff
-WORKDIR /home/gitpod
+WORKDIR /workspace
 RUN git clone https://github.com/leanprover-community/lean4game.git
-WORKDIR /home/gitpod/lean4game
+WORKDIR /workspace/lean4game
 RUN npm install
 
 # run sudo once to suppress usage info
