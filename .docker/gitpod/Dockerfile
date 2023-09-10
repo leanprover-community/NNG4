@@ -7,8 +7,8 @@ FROM ubuntu:22.04
 USER root
 
 RUN apt-get update
-RUN apt-get install sudo git curl git bash-completion python3 -y
-RUN apt-get install gcc npm
+RUN apt-get --assume-yes install sudo git curl git bash-completion python3 -y
+RUN apt-get --assume-yes install gcc npm
 RUN apt-get clean
 
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
