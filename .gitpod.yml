@@ -7,8 +7,8 @@ vscode:
 
 tasks:
   - before: |
-      cd /workspace && git clone https://github.com/leanprover-community/lean4game.git && cd lean4game && npm install
+      cd /workspace && git clone https://github.com/leanprover-community/lean4game.git
   - init: |
-      lake update && lake exe cache get && lake build
+      (cd /workspace/lean4game && npm install) & (lake update && lake exe cache get && lake build)
   - command: |
       cd /workspace/lean4game && export LEAN4GAME_SINGLE_GAME=true && npm start
