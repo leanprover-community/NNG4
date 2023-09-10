@@ -11,12 +11,11 @@
   "updateRemoteUserUID": true,
   // I don't know why I need this, but I did...
   "overrideCommand": true,
-  // TODO: `lake` and `npm install` could run simultaneously using `&`
-  // the only reason I didn't do it is because the output gets mixed.
-  "initializeCommand": "",
-  "onCreateCommand": "",
-  // "postCreateCommand": "(cd ~/lean4game && npm install) && (cd ~/game && lake update && lake exe cache get && lake build)",
-  // "postAttachCommand": "cd ~/lean4game && npm start",
+  "onCreateCommand": {
+    "npm_install": "(cd ~/lean4game && npm install)",
+    "lake_build": "(cd ~/game && lake clean && lake exe cache get && lake build)"
+  },
+  "postAttachCommand": "cd ~/lean4game && npm start",
   "customizations": {
     "vscode": {
       "settings": {
