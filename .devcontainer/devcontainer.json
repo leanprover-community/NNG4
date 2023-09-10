@@ -15,7 +15,7 @@
     "npm_install": "(cd ~/lean4game && npm install)",
     "lake_build": "(cd ~/game && lake clean && lake exe cache get && lake build)"
   },
-  "postAttachCommand": "cd ~/lean4game && npm start",
+  "postStartCommand": "cd ~/lean4game && export LEAN4GAME_SINGLE_GAME=true && npm start",
   "customizations": {
     "vscode": {
       "settings": {
