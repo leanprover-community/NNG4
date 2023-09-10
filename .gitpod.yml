@@ -1,12 +1,13 @@
 image:
-  file: ./Dockerfile
+  file: .devcontainer/Dockerfile
 
 vscode:
   extensions:
     - leanprover.lean4
 
 tasks:
+  - before: |
+      sudo apt-get --assume-yes install gcc
   - init: |
       lake exe cache get
-  - command: |
-      sudo apt-get --assume-yes install gcc
+  -

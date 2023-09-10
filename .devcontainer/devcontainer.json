@@ -13,8 +13,10 @@
   "overrideCommand": true,
   // TODO: `lake` and `npm install` could run simultaneously using `&`
   // the only reason I didn't do it is because the output gets mixed.
-  "postCreateCommand": "(cd ~/lean4game && npm install) && (cd ~/game && lake update && lake exe cache get && lake build)",
-  "postAttachCommand": "cd ~/lean4game && npm start",
+  "initializeCommand": "",
+  "onCreateCommand": "",
+  // "postCreateCommand": "(cd ~/lean4game && npm install) && (cd ~/game && lake update && lake exe cache get && lake build)",
+  // "postAttachCommand": "cd ~/lean4game && npm start",
   "customizations": {
     "vscode": {
       "settings": {

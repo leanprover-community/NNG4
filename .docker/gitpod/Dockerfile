@@ -2,12 +2,13 @@
 
 # gitpod doesn't support multiple FROM statements, (or rather, you can't copy from one to another)
 # so we just install everything in one go
-FROM ubuntu:jammy
+FROM ubuntu:22.04
 
 USER root
 
 RUN apt-get update
 RUN apt-get install sudo git curl git bash-completion python3 -y
+RUN apt-get install npm
 RUN apt-get clean
 
 RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
@@ -34,6 +35,14 @@ ENV VSCODE_API_VERSION="1.50.0"
 
 # ssh to github once to bypass the unknown fingerprint warning
 RUN ssh -o StrictHostKeyChecking=no github.com || true
+
+# Lean4game specific stuff
+WORKDIR /workspace
+RUN git clone https://github.com/leanprover-community/lean4game.git
+WORKDIR /workspace/lean4game
+RUN npm install
+RUN npm start
+
 
 # run sudo once to suppress usage info
 RUN sudo echo finished

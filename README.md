@@ -4,6 +4,37 @@ This is the lean4 version of the classical *Natural Number Game*. It uses the [L
 
 The game was initially designed for lean3 and has been adapted for lean4. [See lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/).
 
+## Getting Started
+
+There are multiple ways to run the game locally:
+
+### Local setup
+
+### VSCode Devcontainer
+
+The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally).
+In particular, the recommended setup is to have `docker` installed on your computer
+and then click on the pop-up "Reopen in Container" which is shown when
+opening this project in VSCode.
+
+The game is then accessible at [localhost:3000/#/g/local/game](http://localhost:3000/#/g/local/game).
+
+### Codespaces
+
+If you open the repository in codespaces, it should open a
+"Simple Browser" which displays the game.
+
+#### Simple Browser
+
+To update the game, you have to run `lake build` in a terminal (make sure to be inside `~/game`).
+
+Afterwards you can reload the "Simple Browser". Unfortunately this seems to be extremely limited and will always put you back to the starting page.
+
+### Gitpod
+
+Not verified to work yet.
+
+
 ## Contributing
 
 If you want to contribute to the Natural Number Game, it is probably best if you ask us for access and push on a non-`main` branch in this repo. That way a github-action will build the game automatically.
