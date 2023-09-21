@@ -28,16 +28,20 @@ we will prove that `2 + 2 = 4`, and later on we will prove
 that `x + y = y + x`. We will do this by solving levels of a computer
 puzzle game called `Lean`.
 
-Click on the blue \"Tutorial World\" to learn what these puzzles
-look like, and how to solve them.
+To learn more about these puzzles, click on \"Tutorial World\".
+(**TODO** ensure they can't click on level 1 directly)
+
+The petals are the individual levels.
 
 ## More
 
-Open the \"Game Info\" in the menu (in the burger on the right, **TODO** at least on port 3000) for resources, links, and more information about the game.
+Open the \"Game Info\" in the menu (in the burger on the
+right, **TODO** at least on port 3000) for resources,
+links, and more information about the game and the Lean community.
 "
 
 Info "
-##### Game version: 4.1
+##### Game version: 4.1 -- complete level rewrite
 
 ## Progress saving
 
