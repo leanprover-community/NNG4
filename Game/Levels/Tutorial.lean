@@ -13,18 +13,20 @@ import Game.Levels.Tutorial.L07twoaddtwo
 
 This file defines Tutorial World. Like all worlds, this world
 has a name, a title, an introduction, and most importantly
-a finite set of levels (imported above). Each level has a weighting
-and this determines the order of the levels.
+a finite set of levels (imported above). Each level has an
+associated level number defined in it, and that's what determines
+the order of the levels.
 -/
 World "Tutorial"
 Title "Tutorial World"
 
 Introduction
-"
-In this world we introduce two basic tactics (`rfl` and `rw`).
-We also introduce several mathematical concepts: the (natural) numbers `ℕ`,
-explicit examples of numbers such as 0 and 3, and addition of two numbers.
-The final boss is to prove that `2 + 2 = 4`. Good luck!
+"In Tutorial World, you're going to learn how to prove theorems about numbers.
+The boss level of this world is to prove that `2 + 2 = 4`.
 
-Click on \"Next\" to begin your quest.
+You prove theorems like this using tools called *tactics*. Each
+tactic performs a certain logical idea, and the puzzle is to
+prove the theorem by applying the tactics in the right order.
+
+Let's start by learning some basic tactics. Click on \"Next\" to begin your quest.
 "
