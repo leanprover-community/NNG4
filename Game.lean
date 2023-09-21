@@ -1,5 +1,8 @@
+-- Here's the import to make Lean know about things called `Game`s
 import GameServer.Commands
 
+-- Here are the imports defining many worlds for the game `Game`.
+-- Each world consists of a finite totally ordered set of levels.
 import Game.Levels.Tutorial
 import Game.Levels.Addition
 import Game.Levels.Multiplication
@@ -12,37 +15,29 @@ import Game.Levels.Prime
 import Game.Levels.StrongInduction
 import Game.Levels.Hard
 
-
---import Game.Levels.Inequality
-
+-- Here's what we'll put on the title screen
 Title "Natural Number Game"
 Introduction
 "
 # Welcome to the Natural Number Game
-#### A game which shows the power of induction
+#### An introduction to the concept of a mathematical proof.
 
-In this game, you get own version of the natural numbers, in an interactive
-theorem prover called Lean. Your version of the natural numbers satisfies something called
-the principle of mathematical induction, and a couple of other things too (Peano's axioms).
-Unfortunately, nobody has proved any theorems about these
-natural numbers yet! For example, addition will be defined for you,
-but nobody has proved that `x + y = y + x` yet. This is your job. You're going to
-prove mathematical theorems using the Lean theorem prover. In other words, you're going to solve
-levels in a computer game.
+In this game, we will define the natural numbers `{0,1,2,3,4,…}`
+from scratch, and then build up their theory. For example
+we will prove that `2 + 2 = 4`, and later on we will prove
+that `x + y = y + x`. We will do this by solving levels of a computer
+puzzle game called `Lean`.
 
-You're going to prove these theorems using *tactics*. The introductory world, Tutorial World,
-will take you through some of these tactics. During your proofs, the assistant shows your
-\"goal\" (i.e. what you're supposed to be proving) and keeps track of the state of your proof.
-
-Click on the blue \"Tutorial World\" to start your journey!
+Click on the blue \"Tutorial World\" to learn what these puzzles
+look like, and how to solve them.
 
 ## More
 
-Open the \"Game Info\" in the menu for resources, links, and infos about the game.
+Open the \"Game Info\" in the menu (in the burger on the right, **TODO** at least on port 3000) for resources, links, and more information about the game.
 "
 
 Info "
-##### Game version: 4.0.2
+##### Game version: 4.1
 
 ## Progress saving
 
@@ -54,20 +49,21 @@ Warning: In most browsers, deleting cookies will also clear the local storage
 
 ## Credits
 
-* **Creators:** Kevin Buzzard, […?], Jon Eugster
+* **Creators:** Kevin Buzzard, Jon Eugster
 * **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar
 * **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
+* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.
 
 ## Resources
 
 * The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum
-* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/)
+* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) (no longer maintained)
 
 ## Problems?
 
 Please ask any questions about this game in the
 [Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in
-the stream \"New Members\". The community will happily help.
+the stream \"New Members\". The community will happily help. This is a professional research forum. Please use your full real name there, stay on topic, and be nice.
 
 Alternatively, if you experience issues / bugs you can also open github issues:
 
@@ -78,7 +74,7 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 
 "
 
--- Add manual paths
+-- Here's where we show how to glue the worlds together
 Dependency Addition → Multiplication → Power
 Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
 Dependency Multiplication → AdvMultiplication
