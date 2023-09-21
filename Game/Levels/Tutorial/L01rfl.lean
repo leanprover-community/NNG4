@@ -69,7 +69,7 @@ is a number, we just don't know which one.
 In this first level we're going to prove the theorem that $37x + q = 37x + q$,
 by solving the goal `37 * x + q = 37 * x + q`.
 You can tell that `x` and `q` are numbers in that goal, because it says `x q : ℕ`
-in the list of \"Objects\".
+in the list of *Objects*.
 
 We prove theorems in Lean using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which is short for \"reflexivity of equality\",
