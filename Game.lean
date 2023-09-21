@@ -34,9 +34,8 @@ To learn more about these puzzles, click on \"Tutorial World\".
 
 ## More
 
-Open the \"Game Info\" in the menu (in the burger on the
-right, **TODO** at least on port 3000) for resources,
-links, and more information about the game and the Lean community.
+Open the \"Game Info\" in the burger menu on the top right for resources,
+links, resources, and ways to interact with the Lean community.
 "
 
 Info "
@@ -56,6 +55,9 @@ Warning: In most browsers, deleting cookies will also clear the local storage
 * **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar
 * **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot
 * **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.
+* **Additional thanks:** All the student beta testers, all the schools
+who invited Kevin to speak, and all the schoolkids who asked him questions
+about the material.
 
 ## Resources
 
@@ -66,7 +68,8 @@ Warning: In most browsers, deleting cookies will also clear the local storage
 
 Please ask any questions about this game in the
 [Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in
-the stream \"New Members\". The community will happily help. This is a professional research forum. Please use your full real name there, stay on topic, and be nice.
+the stream \"New Members\". The community will happily help. This is a professional research forum.
+Please use your full real name there, stay on topic, and be nice.
 
 Alternatively, if you experience issues / bugs you can also open github issues:
 
