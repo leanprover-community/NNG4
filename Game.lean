@@ -35,7 +35,7 @@ To learn more about these puzzles, click on \"Tutorial World\".
 ## More
 
 Open the \"Game Info\" in the burger menu on the top right for resources,
-links, resources, and ways to interact with the Lean community.
+links, and ways to interact with the Lean community.
 "
 
 Info "
