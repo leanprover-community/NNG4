@@ -8,62 +8,65 @@ Title "the rw tactic"
 
 Introduction
 "
-In this level we make your life easier by giving you an *Assumption*. Here we have
-two secret numbers $x$ and $y$, but I will also give you a hypothesis `h`
-that `y = x + 7`. You can see `h` listed in your Assumptions just above the
-statment of the goal.
+In this level we're going to prove the theorem $2y=2(x+7)$, assuming only that $y=x+7$.
 
-You can think about `h` as follows: `y = x + 7` is a statement,
-and `h` is a secret proof of this statement (in kind of the same way that `x` is
-a secret number). It is important in games like this
-to have a clear separation in your mind about the difference between the
-*statement* of a theorem and its *proof*. The statement is
-`y = x + 7`, the proof is `h`, and the notation is `h : y = x + 7`.
+In this level the *goal* is `2 * y = 2 * (x + 7)` but to help us we're going to
+have the *assumption* that `y = x + 7`. The name of the assumption is `h`.
 
-The goal of this level is to prove, assuming hypothesis `h`,
-that $2y=2(x+7)$. Now `rfl` won't work directly.
-We want to prove this theorem by first using `h` to *replace* `y` in the goal with `x + 7`, and
-then `rfl` gets us home. The tactic which we use to
-do this kind of \"substituting in\" is called the *rewrite* tactic `rw`.
-The spell `rw [h]` will replace all occurences of the left hand side $y$ of `h`
-in the goal, with the right hand side $x+7$. Try it and see.
+Here's one way to think about it. `y = x + 7` is a *proposition*,
+and `h` is a secret *proof* of that proposition, in the same kind of
+way that `x` and `y` are secret numbers.
+
+Before we can use `rfl`, we have to \"sub in for $y$\".
+We do this in Lean by *rewriting* with the hypothesis `h`.
 "
 
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "You can use `rw [h]` to replace the `{y}` with `x + 7`."
+  Hint "You can use `rw [h]` to replace the `y` with `x + 7`."
   rw [h]
-  Hint "From now on, not all hints will be directly shown.
-  If you are stuck and need more help
-  finishing the proof, click on \"Show more help!\" below.
-  The system does not keep track of what hints you click on"
-  Hint (hidden := true)
-  "Now both sides are identical, so you can use `rfl` to close the goal."
+  Hint "Now `rfl` will work."
   rfl
 
 TacticDoc rw "
 ## Summary
 
-If `h` is a proof of `X = Y`, then `rw h,` will change
-all `X`s in the goal to `Y`s. Variants: `rw ← h` (changes
-`Y` to `X`) and
-`rw h at h2` (changes `X` to `Y` in hypothesis `h2` instead
-of the goal).
+If `h` is a proof of `X = Y`, then `rw [h]` will change
+all `X`s in the goal to `Y`s.
+
+## Variants
+
+`rw [←h]` (changes `Y` to `X`)
+`rw [h1, h2]` (a sequence of rewrites)
+`rw [h] at h2` (changes `X` to `Y` in hypothesis `h2`)
+`rw [h] at h1 h2 ⊢ (rewrite at two hypotheses and the goal)
 
 ## Details
 
-**TODO** this needs rewriting when addition world has stabilised
-
 The `rw` tactic is a way to do \"substituting in\". There
-are two distinct situations where use this tactics.
+are two distinct situations where you can use this tactic.
 
-1) If `h : A = B` is a hypothesis (i.e., a proof of `A = B`)
-in your local context (the box in the top right)
-and if your goal contains one or more `A`s, then `rw h`
-will change them all to `B`'s.
+1) Basic usage: if `h : A = B` is an assumption,
+and if the goal contains one or more `A`s, then `rw h`
+will change them all to `B`'s. The tactic will error
+if there are no `A`s in the goal.
 
-2) The `rw` tactic will also work with proofs of theorems
+2) Advanced usage: Assumptions coming from *theorems*
+often have missing pieces. For example `add_zero`
+is a proof that `? + 0 = ?` because `add_zero` really a function,
+and we didn't give it enough inputs yet.
+In this situation `rw` will look through the term
+for any subterm of the form `x + 0` and the moment it
+finds one it fixes `?` to be `x` then changes all `x + 0`s to `x`s.
+
+Exercise: think about why `rw [add_zero]` changes the term
+`(0 + 0) + (x + 0) + (0 + 0) + (x + 0)` to
+`0 + (x + 0) + 0 + (x + 0)`
+
+**** UP TO HERE *****
+
+. The `rw` tactic will also work with proofs of theorems
 which are equalities (look for them in the drop down
 menu on the left, within Theorem Statements).
 For example, in world 1 level 4

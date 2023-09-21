@@ -71,7 +71,7 @@ by solving the goal `37 * x + q = 37 * x + q`.
 You can tell that `x` and `q` are numbers in that goal, because it says `x q : ℕ`
 in the list of *Objects*.
 
-We prove theorems in Lean using *Tactics*, and the first tactic we're
+We solve goals in Lean using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which is short for \"reflexivity of equality\",
 an intimidating way of explaining that it proves all theorems of the form $X = X$.
 
