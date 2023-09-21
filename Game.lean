@@ -39,7 +39,7 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1 -- complete level rewrite
+##### Game version: 4.1 -- all game levels rewritten from scratch, new worlds
 
 ## Progress saving
 

@@ -28,5 +28,5 @@ You prove theorems like this using tools called *tactics*. Each
 tactic performs a certain logical idea, and the puzzle is to
 prove the theorem by applying the tactics in the right order.
 
-Let's start by learning some basic tactics. Click on \"Next\" to begin your quest.
+Let's start by learning some basic tactics. Click on \"Start\" below to begin your quest.
 "
