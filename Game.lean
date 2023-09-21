@@ -22,16 +22,15 @@ Introduction
 # Welcome to the Natural Number Game
 #### An introduction to the concept of a mathematical proof.
 
-In this game, we will define the natural numbers `{0,1,2,3,4,…}`
-from scratch, and then build up their theory. For example
-we will prove that `2 + 2 = 4`, and later on we will prove
-that `x + y = y + x`. We will do this by solving levels of a computer
-puzzle game called `Lean`.
+In this game, we will build the basic theory of the natural
+numbers `{0,1,2,3,4,...}` from scratch. Our first goal is to prove
+that `2 + 2 = 4`. After that we'll prove that `x + y = y + x`.
+And at the end we'll see if we can prove Fermat's Last Theorem.
+**TODO** link to github repo if I get funded
+We'll do this by solving levels of a computer puzzle game called `Lean`.
 
 To learn more about these puzzles, click on \"Tutorial World\".
 (**TODO** ensure they can't click on level 1 directly)
-
-The petals are the individual levels.
 
 ## More
 
