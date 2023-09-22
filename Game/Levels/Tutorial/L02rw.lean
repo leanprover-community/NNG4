@@ -18,13 +18,14 @@ and `h` is a secret *proof* of that proposition, in the same kind of
 way that `x` and `y` are secret numbers.
 
 Before we can use `rfl`, we have to \"sub in for $y$\".
-We do this in Lean by *rewriting* with the hypothesis `h`.
+We do this in Lean by *rewriting* the hypothesis `h`,
+using the `rw` tactic.
 "
 
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "You can use `rw [h]` to replace the `y` with `x + 7`."
+  Hint "You can execute `rw [h]` to replace the `y` with `x + 7`."
   rw [h]
   Hint "Now `rfl` will work."
   rfl
@@ -37,84 +38,69 @@ all `X`s in the goal to `Y`s.
 
 ## Variants
 
-`rw [←h]` (changes `Y` to `X`)
+`rw [←h]` (changes `Y` to `X`, get the back arrow by typing `\\left ` or `\\l `.)
 `rw [h1, h2]` (a sequence of rewrites)
-`rw [h] at h2` (changes `X` to `Y` in hypothesis `h2`)
-`rw [h] at h1 h2 ⊢ (rewrite at two hypotheses and the goal)
+`rw [h] at h2` (changes `X`s to `Y`s in hypothesis `h2`)
+`rw [h] at h1 h2 ⊢ (rewrites at two hypotheses and the goal)
 
 ## Details
 
 The `rw` tactic is a way to do \"substituting in\". There
 are two distinct situations where you can use this tactic.
 
-1) Basic usage: if `h : A = B` is an assumption,
-and if the goal contains one or more `A`s, then `rw h`
+1) Basic usage: if `h : A = B` is an assumption or
+the proof of a theorem, and if the goal contains one or more `A`s, then `rw [h]`
 will change them all to `B`'s. The tactic will error
 if there are no `A`s in the goal.
 
-2) Advanced usage: Assumptions coming from *theorems*
+2) Advanced usage: Assumptions coming from theorems
 often have missing pieces. For example `add_zero`
-is a proof that `? + 0 = ?` because `add_zero` really a function,
+is a proof that `? + 0 = ?` because `add_zero` really is a function,
 and we didn't give it enough inputs yet.
-In this situation `rw` will look through the term
-for any subterm of the form `x + 0` and the moment it
+In this situation `rw` will look through the goal
+for any subterm of the form `x + 0`, and the moment it
 finds one it fixes `?` to be `x` then changes all `x + 0`s to `x`s.
 
 Exercise: think about why `rw [add_zero]` changes the term
 `(0 + 0) + (x + 0) + (0 + 0) + (x + 0)` to
 `0 + (x + 0) + 0 + (x + 0)`
 
-**** UP TO HERE *****
-
-. The `rw` tactic will also work with proofs of theorems
-which are equalities (look for them in the drop down
-menu on the left, within Theorem Statements).
-For example, in world 1 level 4
-we learn about `add_zero x : x + 0 = x`, and `rw add_zero`
-will change `x + 0` into `x` in your goal (or fail with
-an error if Lean cannot find `x + 0` in the goal).
+If you can't remember the name of an equality lemma, look it up in
+the list of lemmas on the right.
 
 Important note: if `h` is not a proof of the form `A = B`
 or `A ↔ B` (for example if `h` is a function, an implication,
 or perhaps even a proposition itself rather than its proof),
 then `rw` is not the tactic you want to use. For example,
-`rw (P = Q)` is never correct: `P = Q` is the true-false
-statement itself, not the proof.
-If `h : P = Q` is its proof, then `rw h` will work.
+`rw (P = Q)` is never correct: `P = Q` is the theorem *statement*,
+not the proof. If `h : P = Q` is the proof, then `rw [h]` will work.
 
-Pro tip 1: If `h : A = B` and you want to change
-`B`s to `A`s instead, try `rw ←h` (get the arrow with `\\l` and
-note that this is a small letter L, not a number 1).
 
 ### Example:
-If it looks like this in the top right hand box:
+If you have the assumption `h : x = y + y` and your goal is
 ```
-x y : mynat
-h : x = y + y
-⊢ succ (x + 0) = succ (y + y)
+succ (x + 0) = succ (y + y)
 ```
 
 then
 
-`rw add_zero,`
+`rw [add_zero]`
 
-will change the goal into `⊢ succ x = succ (y + y)`, and then
+will change the goal into `succ x = succ (y + y)`, and then
 
-`rw h,`
+`rw [h]`
 
-will change the goal into `⊢ succ (y + y) = succ (y + y)`, which
-can be solved with `refl,`.
+will change the goal into `succ (y + y) = succ (y + y)`, which
+can be solved with `rfl,`.
 
 ### Example:
 You can use `rw` to change a hypothesis as well.
-For example, if your local context looks like this:
+For example, if you have two hypotheses
 ```
-x y : mynat
 h1 : x = y + 3
 h2 : 2 * y = x
-⊢ y = 3
 ```
-then `rw h1 at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
+then `rw [h1] at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
 -/
 "
 
@@ -122,7 +108,7 @@ NewTactic rw
 
 Conclusion
 "
-If you want to inspect the proof you created, toggle \"Editor mode\" by clicking
+If you want to inspect the proof you just created, toggle \"Editor mode\" by clicking
 on the `</>` button in the top right. In editor mode,
 you can click around the proof and see the state of Lean's brain at any point.
 If you want to go back to interactive mode with hints, click the button again.

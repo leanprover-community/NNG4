@@ -10,81 +10,108 @@ open MyNat
 
 Introduction
 "
-We have defined all the numbers up to 4 (note that in this game, by \"number\"
-  I *always* mean \"natural number\"), but we still cannot state
-  the theorem that `2 + 2 = 4` because we have not yet defined addition.
-  Let's now fix this.
+We have defined all the numbers up to 4, but we still cannot *state*
+  the theorem that `2 + 2 = 4` because we haven't yet defined addition.
+  Before we do this, we need to informally introduce the final axiom
+  used in this game.
+
+# \"There's only two ways to make numbers\"
+
+  Peano's third axiom, informally, says that `0` and `succ` are *the
+  only ways to make numbers*. More precisely: if we want to do something
+  for *every number*, then all we have to do is two things:
+
+  * Do it for `0`.
+
+  * Assuming we've done it for `n`, do it for `succ n`.
+
+  The axiom then guarantees that we've done it for all numbers.
 
 # The definition of addition
 
-Say `x` and `y` are numbers. How are we going to define `x + y`?
-This is where Peano's third axiom comes in. \"That's it\" means
-that if you want to define how to add `y` to something, you only have
-to say how to do it in the two ways that numbers can be born.
-More explicitly, you have to explain how to add zero to something, and how to add
-a successor to something. So let's start with adding zero.
+Let's try and define the function which adds `37` to a number, using
+this principle. We have to do two things.
 
-We need to decide how to define `x + 0`. We want addition to agree with our intuition,
-so we should define `x + 0` to be `x`. Let's throw in a new axiom or hypothesis
-or proof or however you want to think about it, saying this:
+* We must define `37 + 0`.
 
-* `add_zero (a : ℕ) : a + 0 = a`
+* If we already know what `37 + n` is, we must define `37 + succ n`.
 
-In fact `add_zero` is a *family* of proofs. For example `add_zero 37` is a proof
-that `37 + 0 = 37`, and `add_zero (p * q)` is a proof that `p * q + 0 = p * q`.
-Mathematicians might encourage you to think of `add_zero` as just one proof:
+# Adding 0
 
-* `add_zero : ∀ (a : ℕ), a + 0 = a`
+To make addition agree with our intuition, we should define `37 + 0`
+to be `37`. More generally, we should define `x + 0` to be `x` for
+any number `x`. The name of this hypothesis in Lean is `add_zero x`.
 
-but here it is very helpful to invoke the principle coming from computer science
-(not always true, but true here) that a proof is the same as a function. Lean
-is a functional programming language and you should think of `add_zero` as a function
-which eats a number and spits out a proof.
+`add_zero 37 : 37 + 0 = 37`
+
+`add_zero x : x + 0 = x`
+
+You can think of `add_zero` as a function which eats a number, and spits
+out a proof about that number.
 "
 
 namespace MyNat
 
-/-- $a+(0+0)+(0+0+0)=a.$ -/
-Statement (a : ℕ) : (a + (0 + 0)) + (0 + 0 + 0) = a := by
-  Hint "I will walk you through this level so I can show you some
-  techniques which will speed up your proving.
-
-  This is an annoying goal. One of `rw [add_zero a]` and `rw [add_zero 0]`
-  will work, but not the other. Can you figure out which? Try the one
-  that works."
-  Branch
-    rw [add_zero 0]
-    Hint "Walkthrough: Now `rw [add_zero a]` will work, so try that next."
-    rw [add_zero a]
-    Hint "OK this is getting old really quickly. And if we end up with more complex
-    goals and have to type weird stuff like `rw [add_zero (a + 0)]` it will be
-    even worse.
-
-    Fortunately `rw` can do smart rewriting. Go back to the very start
-    of this proof by clicking \"Delete\" to remove all the moves you've
-    made so far and then try `rw [add_zero]` few times. Then delete all of
-    these and try `repeat rw [add_zero]`.
-    "
-  repeat rw [add_zero]
-  Hint "`rw [add_zero]` will change `? + 0` into `?`
-    where `?` is arbitrary; `rw` will use the
-    first solution which matches for `?`."
+/-- $a+(b+0)+(c+0)=a+b+c.$ -/
+Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
+  Hint "`rw [add_zero b]` will change `b + 0` into `b`."
+  repeat rw [add_zero b]
+  Hint "`rw [add_zero]` will change `? + 0` into `?` for the first value of `?` which works."
+  rw [add_zero]
   rfl
+
+Conclusion "Those of you interested in speedrunning the game may want to know
+that `repeat rw [add_zero]` will do both rewrites at once."
+
+
+
+DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
+the usual sum of natural numbers. Internally it is defined by
+recursion on b, with the two \"equation lemmas\" being
+
+* `add_zero a : a + 0 = a`
+
+* `add_succ a b : a + succ b = succ (a + b)
+
+Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved
+by induction from these two basic theorems."
+
+NewDefinition Add
+
+LemmaTab "Add"
 
 LemmaDoc MyNat.add_zero as "add_zero" in "Add"
 "`add_zero n` is a proof that `n + 0 = n`.
 
-This is one of the two axioms for addition."
+You can think of `add_zero` as a function, which
+eats a number, and returns a proof of a theorem
+about that number. For example `add_zero 37` is
+a proof that `37 + 0 = 37`.
 
-DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
-the usual sum of natural numbers. Internally it is defined by
-induction on one of the variables, but that is an implementation issue;
-All you need to know is that `add_zero` and `zero_add` are both theorems."
+A mathematician sometimes thinks of `add_zero`
+as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$$`."
 
 NewLemma MyNat.add_zero
+
+TacticDoc «repeat» "
+## Summary
+
+`repeat t` repeatedly applies the tactic `t`
+to the goal.
+
+## Example
+
+`repeat rw [add_zero]` will turn the goal
+`⊢ a + 0 + (0 + (0 + 0)) = b + 0 + 0`
+into the goal
+`⊢ a = b`
+
+## Variant
+
+`repeat' t` applies `t` to all subgoals
+more reliably.
+"
 NewTactic «repeat» -- TODO: Do we want it to be unlocked here?
-NewDefinition Add
-LemmaTab "Add"
 
 Conclusion
 "

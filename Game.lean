@@ -24,17 +24,15 @@ Introduction
 
 In this game, we will build the basic theory of the natural
 numbers `{0,1,2,3,4,...}` from scratch. Our first goal is to prove
-that `2 + 2 = 4`. After that we'll prove that `x + y = y + x`.
+that `2 + 2 = 4`. Next we'll prove that `x + y = y + x`.
 And at the end we'll see if we can prove Fermat's Last Theorem.
-**TODO** link to github repo if I get funded
 We'll do this by solving levels of a computer puzzle game called `Lean`.
 
 To learn more about these puzzles, click on \"Tutorial World\".
-(**TODO** ensure they can't click on level 1 directly)
 
 ## More
 
-Open the \"Game Info\" in the burger menu on the top right for resources,
+Open \"Game Info\" in the burger menu on the top right for resources,
 links, and ways to interact with the Lean community.
 "
 

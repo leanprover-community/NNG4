@@ -8,17 +8,16 @@ Title "The rfl tactic"
 
 DefinitionDoc MyNat as "ℕ"
 "
-The natural numbers, defined as an inductive type, with two constructors:
+`ℕ` is the natural numbers, defined as an inductive type, with two constructors:
 
 * `0 : ℕ`
 * `succ (n : ℕ) : ℕ`
 
 ## Game Implementation
 
-*The game uses its own copy of the natural numbers, called `MyNat` or `ℕ`.
-If you ever see `Nat`, then you probably need to use `(1 : ℕ)` instead of `1` somewhere to tell Lean
-to work in `MyNat`.*
-"
+*The game uses its own copy of the natural numbers, called `MyNat` with notation `ℕ`.
+It is distinct from the Lean natural numbers `Nat`, which should hopefully
+never leak into the natural number game.*"
 
 NewDefinition MyNat
 
@@ -94,5 +93,5 @@ Congratulations! You completed your first verified proof!
 Remember that `rfl` is a *tactic*. If you ever want information about the `rfl` tactic,
 just click on `rfl` in the list of tactics on the right.
 
-Now click on \"Next\" to continue the journey.
+Now click on \"Next\" to learn about the `rw` tactic.
 "
