@@ -10,6 +10,22 @@
         "kind": "build",
         "isDefault": true
       },
+    },
+    {
+      "label": "game: open browser",
+      "command": "${input:openSimpleBrowser}",
+      "problemMatcher": [],
+      // "runOptions": {
+      //   "runOn": "folderOpen"
+      // }
+    },
+  ],
+  "inputs": [
+    {
+      "id": "openSimpleBrowser",
+      "type": "command",
+      "command": "simpleBrowser.show",
+      "args": ["http://localhost:3000"]
     }
   ]
 }
