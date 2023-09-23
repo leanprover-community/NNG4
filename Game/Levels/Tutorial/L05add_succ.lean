@@ -9,7 +9,8 @@ open MyNat
 
 Introduction
 "
-We need to figure out how to add successors. Let's say we know the
+Every number in Lean is either 0 or a successor. We know how to add $0$,
+but we need to figure out how to add successors. Let's say we already know the
 answer to `x + d`. What should the answer to `x + succ d` be? Well,
 `succ d` is one bigger than `d`, so `x + succ d` should be one bigger
 than `x + d`.
@@ -19,7 +20,8 @@ than `x + d`.
 If you ever see `... + succ ...` in your goal, `rw [add_succ]` should
 make progress.
 
-Let's now prove that `succ n = n + 1`. Use the Add and Numeral tabs to
+Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into
+the picture, and then `rw [add_succ]`. Use the Add and Numeral tabs to
 switch between lemmas so you can see what you can rewrite.
 "
 namespace MyNat

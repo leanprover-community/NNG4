@@ -17,11 +17,8 @@ because we haven't yet defined addition.
 
 How are we going to add $37$ to an arbitrary number $x$? Well,
 there are only two ways to make numbers in this game: $0$
-and successors. So to define `37 + x` we need to do two things:
-
-* We must define `37 + 0`.
-
-* If we already know what `37 + n` is, we must define `37 + succ n`.
+and successors. So to define `37 + x` we will definitely need
+to know what `37 + 0` is.
 
 ### Adding 0
 
