@@ -1,9 +1,7 @@
-import Game.MyNat.Multiplication
-import Game.Levels.Addition
-
+import Game.Levels.Multiplication.L01mul_one
 
 World "Multiplication"
-Level 1
+Level 2
 Title "zero_mul"
 
 open MyNat

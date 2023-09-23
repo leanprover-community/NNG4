@@ -1,13 +1,10 @@
-import Game.Levels.Multiplication.Level_2
---import Game.Levels.Addition.Level_5
+import Game.Levels.Multiplication.L04mul_comm
 
 World "Multiplication"
-Level 3
+Level 5
 Title "one_mul"
 
 namespace MyNat
-
-axiom succ_eq_add_one (n : ℕ) : succ n = n + 1
 
 Introduction
 "

@@ -1,8 +1,8 @@
-import Game.Levels.Multiplication.Level_7
+import Game.Levels.Multiplication.L03succ_mul
 
 
 World "Multiplication"
-Level 8
+Level 4
 Title "mul_comm"
 
 open MyNat

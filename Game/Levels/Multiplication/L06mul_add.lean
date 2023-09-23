@@ -1,8 +1,7 @@
-import Game.Levels.Multiplication.Level_3
-
+import Game.Levels.Multiplication.L05one_mul
 
 World "Multiplication"
-Level 4
+Level 6
 Title "mul_add"
 
 open MyNat

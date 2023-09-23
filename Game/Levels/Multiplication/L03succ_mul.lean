@@ -1,8 +1,8 @@
-import Game.Levels.Multiplication.Level_5
+import Game.Levels.Multiplication.L02zero_mul
 
 
 World "Multiplication"
-Level 6
+Level 3
 Title "succ_mul"
 
 open MyNat
@@ -27,8 +27,6 @@ of rewrites of `add_assoc` and `add_comm`. Use if
 you're getting lazy!
 "
 
-axiom MyNat.add_right_comm (a b c : ℕ) : a + b + c = a + c + b
-
 /-- For all natural numbers $a$ and $b$, we have
 $\\operatorname{succ}(a) \\cdot b = ab + b$. -/
 Statement MyNat.succ_mul
@@ -41,8 +39,6 @@ Statement MyNat.succ_mul
   · rw [mul_succ]
     rw [mul_succ]
     rw [hd]
-    Branch
-      simp [add_right_comm]
     rw [add_succ]
     rw [add_succ]
     rw [add_right_comm]

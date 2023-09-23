@@ -2,7 +2,7 @@ import Game.Levels.Addition.L01zero_add
 import Game.Levels.Addition.L02succ_add
 import Game.Levels.Addition.L03add_comm
 import Game.Levels.Addition.L04add_assoc
-import Game.Levels.Addition.L05add_left_comm
+import Game.Levels.Addition.L05add_right_comm
 
 World "Addition"
 Title "Addition World"
