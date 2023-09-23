@@ -6,20 +6,31 @@ World "Tutorial"
 Level 1
 Title "The rfl tactic"
 
-DefinitionDoc MyNat as "ℕ"
+Introduction
 "
-`ℕ` is the natural numbers, defined as an inductive type, with two constructors:
+Each level in this game involves proving a mathematical theorem (the \"Goal\").
+The goal will be a statement about *numbers*. Some numbers in this game have known values.
+Those numbers have names like $37$. Other numbers will be secret. They're called things
+like $x$ and $q$. We know $x$ is a number, we just don't know which one.
 
-* `0 : ℕ`
-* `succ (n : ℕ) : ℕ`
+In this first level we're going to prove the theorem that $37x + q = 37x + q$,
+by solving the goal `37 * x + q = 37 * x + q`.
+You can tell that `x` and `q` are numbers in that goal, because it says `x q : ℕ`
+in the list of *Objects*, and `ℕ` is the notation for numbers.
 
-## Game Implementation
+We solve goals in Lean using *Tactics*, and the first tactic we're
+going to learn is called `rfl`, which is short for \"reflexivity of equality\",
+an intimidating way of explaining that it proves all theorems of the form $X = X$.
 
-*The game uses its own copy of the natural numbers, called `MyNat` with notation `ℕ`.
-It is distinct from the Lean natural numbers `Nat`, which should hopefully
-never leak into the natural number game.*"
+Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
+"
 
-NewDefinition MyNat
+/-- If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$ -/
+Statement
+    (x q : ℕ) : 37 * x + q = 37 * x + q := by
+  Hint "In order to use the tactic `rfl` you can enter it in the text box
+  under the goal and hit \"Execute\"."
+  rfl
 
 TacticDoc rfl
 "
@@ -54,37 +65,6 @@ as mathematicians are concerned, who cares what the definition of addition is).*
 "
 
 NewTactic rfl
-
-Introduction
-"
-Each level in this game involves proving a mathematical theorem (the \"Goal\").
-The goal will be a statement about *numbers*. The notation `ℕ` means
-the collection of all numbers.
-
-Some numbers in the theorems have known values. Those numbers have names like `37`.
-Other numbers will be secret. They're called things like `x` and `q`. We know `x`
-is a number, we just don't know which one.
-
-In this first level we're going to prove the theorem that $37x + q = 37x + q$,
-by solving the goal `37 * x + q = 37 * x + q`.
-You can tell that `x` and `q` are numbers in that goal, because it says `x q : ℕ`
-in the list of *Objects*.
-
-We solve goals in Lean using *Tactics*, and the first tactic we're
-going to learn is called `rfl`, which is short for \"reflexivity of equality\",
-an intimidating way of explaining that it proves all theorems of the form $X = X$.
-
-Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
-"
-
-/-- If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$ -/
-Statement
-    (x q : ℕ) : 37 * x + q = 37 * x + q := by
-  Hint "In order to use the tactic `rfl` you can enter it in the text box
-  under the goal and hit \"Execute\"."
-  rfl
-
-
 
 Conclusion
 "
