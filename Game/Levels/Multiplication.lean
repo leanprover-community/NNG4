@@ -1,4 +1,3 @@
-import Game.Levels.Addition
 import Game.Levels.Multiplication.L01mul_one
 import Game.Levels.Multiplication.L02zero_mul
 import Game.Levels.Multiplication.L03succ_mul

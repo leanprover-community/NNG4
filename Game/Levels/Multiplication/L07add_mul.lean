@@ -1,7 +1,7 @@
 import Game.Levels.Multiplication.L06mul_add
 
 World "Multiplication"
-Level 6
+Level 7
 Title "add_mul"
 
 open MyNat
