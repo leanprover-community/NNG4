@@ -23,12 +23,12 @@ to know what `37 + 0` is.
 ### Adding 0
 
 To make addition agree with our intuition, we should define `37 + 0`
-to be `37`. More generally, we should define `x + 0` to be `x` for
-any number `x`. The name of this hypothesis in Lean is `add_zero x`.
+to be `37`. More generally, we should define `a + 0` to be `a` for
+any number `a`. The name of this hypothesis in Lean is `add_zero a`.
 
 * `add_zero 37 : 37 + 0 = 37`
 
-* `add_zero x : x + 0 = x`
+* `add_zero a : a + 0 = a`
 
 You can think of `add_zero` as a function which eats a number, and spits
 out a proof about that number.
