@@ -1,48 +1,22 @@
-import Game.Levels.Addition.L01two_add_one
-import Game.Levels.Addition.L02one_add_one
-import Game.Levels.Addition.L03two_add_two
-import Game.Levels.Addition.L04decide
-import Game.Levels.Addition.L05zero_add
-import Game.Levels.Addition.L06succ_add
-import Game.Levels.Addition.L07add_comm
-import Game.Levels.Addition.L08add_assoc
-import Game.Levels.Addition.L09add_left_comm
-import Game.Levels.Addition.L10annoying
-import Game.Levels.Addition.L11ac_rfl
-
+import Game.Levels.Addition.L01zero_add
+import Game.Levels.Addition.L02succ_add
+import Game.Levels.Addition.L03add_comm
+import Game.Levels.Addition.L04add_assoc
+import Game.Levels.Addition.L05add_left_comm
 
 World "Addition"
 Title "Addition World"
 
 Introduction
 "
-Welcome to Addition World. If you've done all four levels in tutorial world
-and know about `rw` and `rfl`, then you're in the right place. Here's
-a reminder of the things you're now equipped with which we'll need in this world.
+Welcome to Addition World! In this world we'll learn the `induction` tactic.
+This will enable us to defeat the boss level of this world, namely `x + y = y + x`.
 
-## Data:
+The tactics `rw`, `rfl` and `induction` are the only tactics you'll need to
+beat all the levels in Addition World, Multiplication World, and Power World.
+Power World contains the final boss of the game.
 
-  * a type called `ℕ` or `MyNat`.
-  * a term `0 : ℕ`, interpreted as the number zero.
-  * a function `succ : ℕ → ℕ`, with `succ n` interpreted as \"the number after `n`\".
-  * Usual numerical notation `0,1,2` etc. (although `2` onwards will be of no use to us until much later ;-) ).
-  * Addition (with notation `a + b`).
-
-## Theorems:
-
-  * `add_zero (a : ℕ) : a + 0 = a`. Use with `rw [add_zero]`.
-  * `add_succ (a b : ℕ) : a + succ(b) = succ(a + b)`. Use with `rw [add_succ]`.
-  * The principle of mathematical induction. Use with `induction` (which we learn about in this chapter).
-
-
-## Tactics:
-
-  * `rfl` :  proves goals of the form `X = X`.
-  * `rw [h]` : if `h` is a proof of `A = B`, changes all `A`'s in the goal to `B`'s.
-  * `induction n with d hd` : we're going to learn this right now.
-
-
-You will also find all this information in your Inventory on the right hand side of the screen.
-Be sure to click around so that you know which tools you have available to you
-at any time.
+There are plenty more tactics in this game, but you'll only need to know them if you
+decide you want to explore the game further (for example if you want to 100%
+the game).
 "

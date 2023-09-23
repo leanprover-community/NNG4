@@ -1,8 +1,8 @@
-import Game.Levels.Addition.L06succ_add
+import Game.Levels.Addition.L02succ_add
 
 
 World "Addition"
-Level 7
+Level 3
 Title "`add_comm` (sub-boss)"
 
 namespace MyNat
@@ -23,24 +23,13 @@ In other words, if `a` and `b` are arbitrary natural numbers, then
 $a + b = b + a$. -/
 Statement add_comm (a b : ℕ) : a + b = b + a := by
   Hint (hidden := true) "Induction on `a` or `b` -- it's all the same in this one."
-  Branch
-    induction a with d hd
-    · simp
-    · simp [succ_add, add_succ, hd]
   induction b with d hd
-  · simp
-  · simp_all [succ_add, add_succ]
+  · rw [add_zero, zero_add]
+    rfl
+  · rw [add_succ, succ_add, hd]
+    rfl
 
 -- Adding this instance to make `ac_rfl` work.
 instance : Lean.IsCommutative (α := ℕ) (·+·) := ⟨add_comm⟩
 
 LemmaTab "Add"
-
-Conclusion
-"
-If you got this far -- nice! There is one more lemma which you will need
-from this world, which is the next one: `(a + b) + c = a + (b + c)`, otherwise
-known as associativity of addition (note that this is not obvious, for
-example subtraction isn't associative). After that you will have to make
-a choice.
-"

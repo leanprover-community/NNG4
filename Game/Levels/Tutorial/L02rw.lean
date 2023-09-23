@@ -34,10 +34,13 @@ all `X`s in the goal to `Y`s.
 
 ## Variants
 
-`rw [←h]` (changes `Y` to `X`, get the back arrow by typing `\\left ` or `\\l `.)
-`rw [h1, h2]` (a sequence of rewrites)
-`rw [h] at h2` (changes `X`s to `Y`s in hypothesis `h2`)
-`rw [h] at h1 h2 ⊢ (rewrites at two hypotheses and the goal)
+* `rw [←h]` (changes `Y` to `X`, get the back arrow by typing `\\left ` or `\\l `.)
+
+* `rw [h1, h2]` (a sequence of rewrites)
+
+* `rw [h] at h2` (changes `X`s to `Y`s in hypothesis `h2`)
+
+* `rw [h] at h1 h2 ⊢ (rewrites at two hypotheses and the goal)
 
 ## Details
 
@@ -64,7 +67,16 @@ Exercise: think about why `rw [add_zero]` changes the term
 If you can't remember the name of an equality lemma, look it up in
 the list of lemmas on the right.
 
-Important note: if `h` is not a proof of the form `A = B`
+## Targetted usage
+
+If your goal is `a + b + c = b + (a + c)` and you want to rewrite `a + b`
+to `b + a`, then `rw [add_comm]` will not work because Lean finds another
+addition first and rewrites that instead. Use `rw [add_comm a b]` to guarantee
+that Lean rewrites `a + b` to `b + a`.
+
+## Common errors
+
+If `h` is not a proof of the form `A = B`
 or `A ↔ B` (for example if `h` is a function, an implication,
 or perhaps even a proposition itself rather than its proof),
 then `rw` is not the tactic you want to use. For example,
