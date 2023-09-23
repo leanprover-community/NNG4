@@ -1,30 +1,31 @@
 import Game.Levels.Addition
+import Game.Levels.Multiplication.L01mul_one
+import Game.Levels.Multiplication.L02zero_mul
+import Game.Levels.Multiplication.L03succ_mul
+import Game.Levels.Multiplication.L04mul_comm
+import Game.Levels.Multiplication.L05one_mul
+import Game.Levels.Multiplication.L06mul_add
+import Game.Levels.Multiplication.L07add_mul
+import Game.Levels.Multiplication.L08mul_assoc
+
 
 World "Multiplication"
 Title "Multiplication World"
 
 Introduction
-"
-  We define multiplication, and prove that the naturals are a commutative semiring.
+" How should we define `37 * x`? Just like addition, we need to give definitions
+when $x=0$ and when $x$ is a successor.
 
+The zero case is easy: we define `37 * 0` to be `0`. Now say we know
+`37 * d`. What should `37 * succ d` be? Well, that's $d+1$ $37$s,
+it should be `37 * d + 37`.
 
-In this world you start with the definition of multiplication on `ℕ`. It is
-defined by recursion, just like addition was. So you get two new axioms:
+Here are the definitions in Lean.
 
-  * `mul_zero (a : ℕ) : a * 0 = 0`
-  * `mul_succ (a b : ℕ) : a * succ b = a * b + a`
+  * `mul_zero a : a * 0 = 0`
+  * `mul_succ a d : a * succ d = a * d + a`
 
-In words, we define multiplication by \"induction on the second variable\",
-with `a * 0` defined to be `0` and, if we know `a * b`, then `a` times
-the number after `b` is defined to be `a * b + a`.
-
-You can keep all the theorems you proved about addition, but
-for multiplication, those two results above are what you've got right now.
-
-So what's going on in multiplication world? Like addition, we need to go
-for the proofs that multiplication
-is commutative and associative, but as well as that we will
-need to prove facts about the relationship between multiplication
-and addition, for example `a * (b + c) = a * b + a * c`, so now
-there is a lot more to do. Good luck!
+In this world, we must not only prove facts about multiplication like `a * b = b * a`,
+we must also prove facts about how multiplication interacts with addition, like `a * (b + c) = a * b + a * c`.
+Let's get started.
 "
