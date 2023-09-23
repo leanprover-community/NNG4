@@ -45,8 +45,8 @@ Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
   rfl
 
 DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
-the usual sum of natural numbers. Internally it is defined by
-recursion on b, with the two axioms
+the usual sum of natural numbers. Internally it is defined
+via the following two facts:
 
 * `add_zero a : a + 0 = a`
 

@@ -8,28 +8,26 @@ open MyNat
 
 Introduction
 "
-As a side note, the lemmas about addition are still available in your inventory
-in the lemma tab \"Add\" while the new lemmas about multiplication appear in the
-tab \"Mul\".
+We're going for `mul_comm x y : x * y = y * x`,
+and we want to prove it by induction. The zero
+case will need `mul_zero` (which we have)
+and `zero_mul` (which we don't), so let's
+start there.
+"
 
-We are given `mul_zero`, and the first thing to prove is `zero_mul`.
-Like `zero_add`, we of course prove it by induction.
+LemmaDoc MyNat.zero_mul as "zero_mul" in "Mul" "
+`zero_mul x` is the proof that `0 * x = x`.
+
+Note: `zero_mul` is a `simp` lemma.
 "
 
 /-- For all natural numbers $m$, we have $ 0 \\cdot m = 0$. -/
 Statement MyNat.zero_mul
     (m : ℕ) : 0 * m = 0 := by
-  induction m
+  induction m with d hd
   · rw [mul_zero]
     rfl
   · rw [mul_succ]
-    rw [n_ih]
-    Branch
-      simp
+    rw [hd]
     rw [add_zero]
     rfl
-
-NewTactic simp
-NewLemma MyNat.mul_zero MyNat.mul_succ
-NewDefinition Mul
-LemmaTab "Mul"
