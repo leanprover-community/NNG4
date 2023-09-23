@@ -13,7 +13,7 @@ Every number in Lean is either 0 or a successor. We know how to add $0$,
 but we need to figure out how to add successors. Let's say we already know the
 answer to `x + d`. What should the answer to `x + succ d` be? Well,
 `succ d` is one bigger than `d`, so `x + succ d` should be one bigger
-than `x + d`.
+than `x + d`. Let's add this as a theorem.
 
 * `add_succ x d : x + succ d = succ (x + d)`
 

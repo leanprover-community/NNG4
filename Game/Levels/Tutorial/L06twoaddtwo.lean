@@ -49,15 +49,17 @@ Conclusion
 "
 
   Here is an example proof showing off various techniques. You can copy
-  and paste it directly into Lean if you switch into the right editor mode.
-  Click on `</>` and `>_` in the top right to switch between modes.
+  and paste it directly into Lean if you switch into editor mode, and then
+  you can inspect it by clicking around within the proof.
+  Click on `</>` and `>_` in the top right to switch between editor mode
+  and command line mode.
 
-```
+```lean
 nth_rewrite 2 [two_eq_succ_one]
 rw [add_succ]
 rw [one_eq_succ_zero]
-rw [add_succ, add_zero]
-rw [← three_eq_succ_two]
+rw [add_succ, add_zero] -- two rewrites at once
+rw [← three_eq_succ_two] -- change `succ 2` to `3`
 rw [← four_eq_succ_three]
 rfl
 ```
