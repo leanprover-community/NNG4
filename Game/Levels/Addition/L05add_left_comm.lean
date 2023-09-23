@@ -34,7 +34,12 @@ Statement add_left_comm (a b c : ℕ) : a + (b + c) = b + (a + c) := by
   rfl
 LemmaTab "Add"
 
-Conclusion
+Conclusion "
+You've now seen all the tactics you need to beat the final boss of the game.
+You can begin the journey towards this boss by entering Multiplication
+World. Or you can go off the beaten track and learn some new tactics in Advanced
+Addition World. These tactics let you prove more facts about addition, such as
+how to deduce `a = b` from `x + a = x + b`.
+"
 
-"Now you have a choice. You can press on to multiplication world and the
-final boss, "
+-- **TODO** choose a better example from advanced addition world once it's written
