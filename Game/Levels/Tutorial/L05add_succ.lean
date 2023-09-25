@@ -41,8 +41,6 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   rw [add_zero]
   rfl
 
-NewLemma MyNat.succ_eq_add_one
-
 LemmaTab "Add"
 
 Conclusion
