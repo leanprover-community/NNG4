@@ -28,9 +28,10 @@ as `a + b + c = a + c + b`."
 $(a + b) + c = (a + c) + b$. -/
 Statement add_right_comm (a b c : ℕ) : a + b + c = a + c + b := by
   rw [add_assoc]
-  Hint (hidden := true) "Remember that you can do more targetted rewrites by
+  Hint "Remember that you can do more targetted rewrites by
   adding explicit variables as inputs to theorems. For example `rw [add_comm b]`
-  will only do rewrites of the form `b + ? = ? + b`."
+  will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`
+  will only do rewrites of the form `b + c = c + b`."
   rw [add_comm b, add_assoc]
   rfl
 

@@ -5,7 +5,6 @@ World "Addition"
 Level 1
 Title "zero_add"
 
---namespace MyNat
 namespace MyNat
 
 Introduction
@@ -87,6 +86,7 @@ the second has an assumption `hd : 0 + d = d` and goal
 
 "
 NewTactic induction
+
 LemmaTab "Add"
 
 Conclusion
