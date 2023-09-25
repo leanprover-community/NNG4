@@ -1,6 +1,10 @@
 import Game.Metadata
 import Game.MyNat.Addition
-import Game.Levels.Tutorial.L05add_succ
+import Game.MyNat.DecidableEq
+
+-- try to fix tutorial world entry page text issue
+-- import Game.Levels.Tutorial.L05add_succ
+
 World "Addition"
 Level 1
 Title "zero_add"

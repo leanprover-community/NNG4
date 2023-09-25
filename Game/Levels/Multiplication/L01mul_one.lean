@@ -35,20 +35,16 @@ NewDefinition Mul
 
 LemmaDoc MyNat.mul_zero as "mul_zero" in "Mul"
 "
-
 `mul_zero m` is the proof that `m * 0 = 0`."
 
 LemmaDoc MyNat.mul_succ as "mul_succ" in "Mul"
 "
-
 `mul_succ a b` is the proof that `a * succ b = a * b + a`.
 "
 
 NewLemma MyNat.mul_zero MyNat.mul_succ
 
 LemmaDoc MyNat.mul_one as "mul_one" in "Mul" "
-`mul_one m : m * 1 = m`
-
 `mul_one m` is the proof that `m * 1 = m`.
 "
 

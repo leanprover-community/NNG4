@@ -78,6 +78,7 @@ LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
 
 NewLemma MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two
   MyNat.four_eq_succ_three
+
 LemmaTab "numerals"
 
 Conclusion
