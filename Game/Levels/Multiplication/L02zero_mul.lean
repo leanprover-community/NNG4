@@ -4,7 +4,7 @@ World "Multiplication"
 Level 2
 Title "zero_mul"
 
-open MyNat
+namespace MyNat
 
 Introduction
 "
@@ -21,8 +21,8 @@ LemmaDoc MyNat.zero_mul as "zero_mul" in "Mul" "
 Note: `zero_mul` is a `simp` lemma.
 "
 
-/-- For all natural numbers $m$, we have $ 0 \\cdot m = 0$. -/
-Statement MyNat.zero_mul
+/-- For all natural numbers $m$, we have $ 0 \times m = 0$. -/
+Statement zero_mul
     (m : ℕ) : 0 * m = 0 := by
   induction m with d hd
   · rw [mul_zero]

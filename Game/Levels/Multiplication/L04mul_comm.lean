@@ -5,20 +5,23 @@ World "Multiplication"
 Level 4
 Title "mul_comm"
 
-open MyNat
+namespace MyNat
 
 Introduction
 "
-Finally, the boss level of multiplication world. But (assuming you
-didn't cheat) you are well-prepared for it -- you have `zero_mul`
-and `mul_zero`, as well as `succ_mul` and `mul_succ`. After this
-level you can of course throw away one of each pair if you like,
-but I would recommend you hold on to them, sometimes it's convenient
-to have exactly the right tools to do a job.
+When you've proved this theorem you will have \"spare\" proofs
+such as `zero_mul`, which is now easily deducible from `mul_zero`.
+But we keep hold of these theorems anyway, because often it's convenient
+to have exactly the right tool for a job.
+"
+
+LemmaDoc MyNat.mul_comm as "mul_comm" in "Mul" "
+`mul_comm` is the proof that multiplication is commutative. More precisely,
+`mul_comm a b` is the proof that `a * b = b * a`.
 "
 
 /-- Multiplication is commutative. -/
-Statement MyNat.mul_comm
+Statement mul_comm
     (a b : ℕ) : a * b = b * a := by
   induction b with d hd
   · rw [zero_mul]
@@ -30,17 +33,3 @@ Statement MyNat.mul_comm
     rfl
 
 LemmaTab "Mul"
-
-Conclusion
-"
-You've now proved that the natural numbers are a commutative semiring!
-That's the last collectible in Multiplication World.
-
-* `CommSemiring ℕ`
-
-But don't leave multiplication just yet -- prove `mul_left_comm`, the last
-level of the world, and then we can beef up the power of `simp`.
-"
-
--- TODO: collectible
--- instance mynat.comm_semiring : comm_semiring mynat := by structure_helper

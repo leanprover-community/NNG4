@@ -5,16 +5,11 @@ World "Multiplication"
 Level 8
 Title "mul_assoc"
 
-open MyNat
+namespace MyNat
 
 Introduction
 "
 We now have enough to prove that multiplication is associative.
-
-## Random tactic hint
-
-You can do `repeat rw [mul_succ]` to repeat a tactic as often as possible.
-
 "
 
 /-- Multiplication is associative.
@@ -23,7 +18,7 @@ $(ab)c = a(bc)$. -/
 Statement MyNat.mul_assoc
     (a b c : ℕ) : (a * b) * c = a * (b * c)  := by
   induction c with d hd
-  · repeat rw [mul_zero]
+  · rw [mul_zero, mul_zero, mul_zero]
     rfl
   · rw [mul_succ]
     rw [mul_succ]
@@ -31,8 +26,9 @@ Statement MyNat.mul_assoc
     rw [mul_add]
     rfl
 
-NewTactic «repeat»
 LemmaTab "Mul"
 
--- TODO: old version introduced `rwa` here, but it would need to be modified
--- as our `rw` does not call `rfl` at the end.
+Conclusion "
+  A passing mathematician notes that you've proved
+  that the natural numbers are a commutative semiring.
+"

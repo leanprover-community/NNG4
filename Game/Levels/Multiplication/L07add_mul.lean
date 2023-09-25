@@ -4,27 +4,26 @@ World "Multiplication"
 Level 7
 Title "add_mul"
 
-open MyNat
+namespace MyNat
 
 Introduction
 "
-We proved `mul_add` already, but because we don't have commutativity yet
-we also need to prove `add_mul`. We have a bunch of tools now, so this won't
-be too hard. You know what -- you can do this one by induction on any of
-the variables. Try them all! Which works best? If you can't face
-doing all the commutativity and associativity, remember the high-powered
-`simp` tactic mentioned at the bottom of Addition World level 6,
-which will solve any puzzle which needs only commutativity
-and associativity. If your goal looks like `a + (b + c) = c + b + a` or something,
-don't mess around doing it explicitly with `add_comm` and `add_assoc`,
-just try `simp`.
+`add_mul` is just as fiddly to prove by induction; the proof using
+`add_comm` is easier.
+
+Don't forget that `add_comm` just changes the first `x + y` which it
+sees to `y + x`. If you want to be more targetted, `add_comm b c`
+only changes `b + c` to `c + b`.
 "
 
+LemmaDoc MyNat.add_mul as "add_mul" in "Mul" "
+`add_mul a b c` is a proof that $(a+b)c=ac+bc$.
+"
 /-- Addition is distributive over multiplication.
-In other words, for all natural numbers $a$, $b$ and $t$, we have
-$(a + b) \\cdot t = at + bt$. -/
-Statement MyNat.add_mul
-    (a b t : ℕ) : (a + b) * t = a * t + b * t := by
+In other words, for all natural numbers $a$, $b$ and $c$, we have
+$(a + b) \times c = ac + bc$. -/
+Statement add_mul
+    (a b c : ℕ) : (a + b) * c = a * c + b * c := by
   induction b with d hd
   · rw [zero_mul]
     rw [add_zero]

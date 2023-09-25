@@ -5,32 +5,18 @@ World "Multiplication"
 Level 1
 Title "mul_one"
 
-open MyNat
+namespace MyNat
 
 Introduction
 "
 
 See the new \"Mul\" tab in your lemmas, containing `mul_zero` and `mul_succ`.
+Right now these are the only facts we know about multiplication.
+Let's prove eight more.
 
 Let's start with a warm-up: no induction needed for this one,
 because we know `1` is a successor.
 "
-
-LemmaDoc MyNat.mul_one as "mul_one" in "Mul" "foobar"
-
-/-- For any natural number $m$, we have $ m \\cdot 1 = m$. -/
-Statement MyNat.mul_one (m : ℕ) : m * 1 = m := by
-  rw [one_eq_succ_zero]
-  rw [mul_succ]
-  rw [mul_zero]
-  rw [zero_add]
-  rfl
-
-LemmaDoc MyNat.mul_zero as "mul_zero" in "Mul"
-"hi"
-LemmaDoc MyNat.mul_succ as "mul_succ" in "Mul"
-"hithere"
-NewLemma MyNat.mul_zero MyNat.mul_succ
 
 DefinitionDoc Mul as "*" "
   `Mul a b`, with notation `a * b`, is the usual
@@ -46,5 +32,32 @@ are proved by induction from these two basic theorems.
 "
 
 NewDefinition Mul
+
+LemmaDoc MyNat.mul_zero as "mul_zero" in "Mul"
+"
+
+`mul_zero m` is the proof that `m * 0 = 0`."
+
+LemmaDoc MyNat.mul_succ as "mul_succ" in "Mul"
+"
+
+`mul_succ a b` is the proof that `a * succ b = a * b + a`.
+"
+
+NewLemma MyNat.mul_zero MyNat.mul_succ
+
+LemmaDoc MyNat.mul_one as "mul_one" in "Mul" "
+`mul_one m : m * 1 = m`
+
+`mul_one m` is the proof that `m * 1 = m`.
+"
+
+/-- For any natural number $m$, we have $ m \times 1 = m$. -/
+Statement mul_one (m : ℕ) : m * 1 = m := by
+  rw [one_eq_succ_zero]
+  rw [mul_succ]
+  rw [mul_zero]
+  rw [zero_add]
+  rfl
 
 LemmaTab "Mul"

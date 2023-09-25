@@ -2,8 +2,6 @@ import Game.MyNat.Addition
 
 namespace MyNat
 
-open MyNat
-
 def mul : MyNat → MyNat → MyNat
   | _, 0   => 0
   | a, b + 1 => (MyNat.mul a b) + a
