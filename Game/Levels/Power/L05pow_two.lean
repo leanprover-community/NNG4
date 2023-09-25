@@ -12,7 +12,7 @@ LemmaDoc MyNat.pow_two as "pow_two" in "Pow" "
 `pow_two a` says that `a ^ 2 = a * a`.
 "
 
-/-- For all naturals $a$, $a ^ 2 = a * a$. -/
+/-- For all naturals $a$, $a ^ 2 = a \times a$. -/
 Statement pow_two
     (a : ℕ) : a ^ 2 = a * a := by
   rw [two_eq_succ_one]
