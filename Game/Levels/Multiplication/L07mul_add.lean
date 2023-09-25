@@ -1,7 +1,7 @@
-import Game.Levels.Multiplication.L05one_mul
+import Game.Levels.Multiplication.L06two_mul
 
 World "Multiplication"
-Level 6
+Level 7
 Title "mul_add"
 
 namespace MyNat

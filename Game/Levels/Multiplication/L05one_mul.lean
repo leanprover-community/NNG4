@@ -8,8 +8,9 @@ namespace MyNat
 
 Introduction
 "
-You can prove this one in two ways. Either by induction, or by using
-commutativity. Which do you think is quickest?
+You can prove this one in at least three ways.
+Either by induction, or by using `succ_mul`, or
+by using commutativity. Which do you think is quickest?
 "
 
 LemmaDoc MyNat.one_mul as "one_mul" in "Mul" "
