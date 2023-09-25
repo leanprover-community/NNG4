@@ -26,11 +26,12 @@ count, and name a few small numbers.
 ## Counting to four.
 
 `0` is a number, so `succ 0` is a number. Let's call this new number `1`.
-Similarly let's set `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
+Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
 This gives us plenty of numbers to be getting along with.
 
 You can think of a statement like `3 = succ 2` as an axiom or hypothesis or
 theorem, and the proof of this theorem is called `three_eq_succ_two`.
+You can see the names of these theorems in the list of \"lemmas\" on the right.
 
 Use the `rw` tactic to prove that $3$ is the number after the number after
 the number after $0$.
@@ -39,8 +40,9 @@ the number after $0$.
 /-- $3=\operatorname{succ}(\operatorname{succ}(\operatorname{succ}(0)))$. -/
 Statement
     : 3 = succ (succ (succ 0)) := by
-  Hint "Use the lemmas in the *numerals* section on the right to break `3` down into
+  Hint "Rewrite the lemmas in the *numerals* section on the right to break `3` down into
   basic pieces."
+  Hint (hidden := true) "Start with `rw [three_eq_succ_two]`"
   rw [three_eq_succ_two]
   rw [two_eq_succ_one]
   rw [one_eq_succ_zero]

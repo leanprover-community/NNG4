@@ -23,7 +23,7 @@ of proving theorems. The boss level of this world
 is the theorem `2 + 2 = 4`.
 
 You prove theorems by solving puzzles using tools called *tactics*.
-The puzzle is to prove the theorem by applying tactics
+The aim is to prove the theorem by applying tactics
 in the right order.
 
 Let's learn some basic tactics. Click on \"Start\" below

@@ -13,7 +13,7 @@ In this level we're going to prove the theorem $2y=2(x+7)$, assuming only that $
 In this level the *goal* is `2 * y = 2 * (x + 7)` but to help us we're going to
 have the *assumption* that `y = x + 7`. The name of the assumption is `h`.
 
-Before we can use `rfl`, we have to \"sub in for $y$\".
+Before we can use `rfl`, we have to \"substitute in for $y$\".
 We do this in Lean by *rewriting* the hypothesis `h`,
 using the `rw` tactic.
 "
@@ -116,10 +116,12 @@ NewTactic rw
 
 Conclusion
 "
-You can now press on by clicking \"Next\", but if you want to inspect the proof you just created, toggle \"Editor mode\" by clicking
+You can now press on by clicking \"Next\", but if you want to inspect the
+proof you just created, toggle \"Editor mode\" by clicking
 on the `</>` button in the top right. In editor mode,
 you can click around the proof and see the state of Lean's brain at any point.
-If you want to go back to interactive mode with hints, click the button again.
+If you want to go back to the default (command line) mode with hints,
+click the button again.
 
 In editor mode, note that each tactic is written on a new line and Lean is sensitive
 to indentation (i.e. there must be no spaces before any of the tactics).

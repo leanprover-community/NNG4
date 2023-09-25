@@ -10,15 +10,17 @@ open MyNat
 
 Introduction
 "
-We'd like to prove `2 + 2 = 4` but we can't even *state* it
+We'd like to prove `2 + 2 = 4` but right now
+we can't even *state* it
 because we haven't yet defined addition.
 
 ## Defining addition.
 
 How are we going to add $37$ to an arbitrary number $x$? Well,
 there are only two ways to make numbers in this game: $0$
-and successors. So to define `37 + x` we will definitely need
-to know what `37 + 0` is.
+and successors. So to define `37 + x` we will need
+to know what `37 + 0` is and what `37 + succ x` is.
+Let's start with adding `0`.
 
 ### Adding 0
 
@@ -77,7 +79,8 @@ TacticDoc «repeat» "
 ## Summary
 
 `repeat t` repeatedly applies the tactic `t`
-to the goal.
+to the goal. You don't need to use this
+tactic, it just speeds things up sometimes.
 
 ## Example
 

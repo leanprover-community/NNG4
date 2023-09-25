@@ -71,7 +71,7 @@ Conclusion
 Congratulations! You completed your first verified proof!
 
 Remember that `rfl` is a *tactic*. If you ever want information about the `rfl` tactic,
-just click on `rfl` in the list of tactics on the right.
+you can click on `rfl` in the list of tactics on the right.
 
 Now click on \"Next\" to learn about the `rw` tactic.
 "
