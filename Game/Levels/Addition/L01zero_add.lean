@@ -1,5 +1,8 @@
 import Game.Metadata
 import Game.MyNat.Addition
+-- uncommenting this next line makes the text from Game/Levels/Tutorial.lean
+-- magically disappear from `http://localhost:3000/#/g/hhu-adam/NNG4/world/Tutorial/level/0`
+-- import Game.Levels.Tutorial.L05add_succ
 
 World "Addition"
 Level 1
