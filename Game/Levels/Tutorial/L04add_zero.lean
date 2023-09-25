@@ -6,8 +6,6 @@ World "Tutorial"
 Level 4
 Title "Adding zero"
 
-open MyNat
-
 Introduction
 "
 We'd like to prove `2 + 2 = 4` but right now

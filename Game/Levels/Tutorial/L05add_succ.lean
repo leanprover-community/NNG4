@@ -5,8 +5,6 @@ World "Tutorial"
 Level 5
 Title "add_succ"
 
-open MyNat
-
 Introduction
 "
 Every number in Lean is either 0 or a successor. We know how to add $0$,
@@ -26,6 +24,11 @@ switch between lemmas so you can see what you can rewrite.
 "
 namespace MyNat
 
+LemmaDoc MyNat.add_succ as "add_succ" in "Add"
+"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
+
+NewLemma MyNat.add_succ
+
 LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
 "`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 
@@ -38,11 +41,8 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   rw [add_zero]
   rfl
 
-LemmaDoc MyNat.add_succ as "add_succ" in "Add"
-"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
+NewLemma MyNat.succ_eq_add_one
 
-
-NewLemma MyNat.add_succ MyNat.succ_eq_add_one
 LemmaTab "Add"
 
 Conclusion

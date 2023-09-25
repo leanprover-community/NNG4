@@ -6,8 +6,6 @@ World "Tutorial"
 Level 6
 Title "2+2=4"
 
-open MyNat
-
 Introduction
 " Good luck!
 
