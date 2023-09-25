@@ -3,9 +3,10 @@ import Game.Levels.Multiplication.L02zero_mul
 import Game.Levels.Multiplication.L03succ_mul
 import Game.Levels.Multiplication.L04mul_comm
 import Game.Levels.Multiplication.L05one_mul
-import Game.Levels.Multiplication.L06mul_add
-import Game.Levels.Multiplication.L07add_mul
-import Game.Levels.Multiplication.L08mul_assoc
+import Game.Levels.Multiplication.L06two_mul
+import Game.Levels.Multiplication.L07mul_add
+import Game.Levels.Multiplication.L08add_mul
+import Game.Levels.Multiplication.L09mul_assoc
 
 
 World "Multiplication"

@@ -10,8 +10,9 @@ Introduction
 "
 Our next goal is \"left and right distributivity\",
 meaning $a(b+c)=ab+ac$ and $(b+c)a=ba+ca$. Rather than
-these slightly pompous names, the name of the proof
-of `a * (b + c) = a * b + a * c` in Lean is `mul_add`.
+these slightly pompous names, the name of the proofs
+of the proof in Lean are descriptive. Let's start with
+`mul_add a b c`, the proof of `a * (b + c) = a * b + a * c`.
 Note that the left hand side contains a multiplication
 and then an addition.
 "
@@ -22,7 +23,7 @@ over addition on the left.
 `mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."
 
 /-- Multiplication is distributive over addition on the left.
-In other words, for all natural numbers $a$, $b$ and $t$, we have
+In other words, for all natural numbers $a$, $b$ and $c$, we have
 $a(b + c) = ab + ac$. -/
 Statement mul_add
     (a b c : ℕ) : a * (b + c) = a * b + a * c := by

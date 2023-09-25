@@ -42,5 +42,5 @@ Conclusion "
 A passing mathematician notes that you've proved
 that the natural numbers are a commutative semiring.
 
-If you want to make your way to the final boss, head for Power World.
+If you want to begin your journey to the final boss, head for Power World.
 "
