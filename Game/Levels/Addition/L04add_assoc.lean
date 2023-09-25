@@ -30,7 +30,9 @@ $ (a + b) + c = a + (b + c). $ -/
 Statement add_assoc (a b c : ℕ) : a + b + c = a + (b + c) := by
   Hint "Remember that when Lean writes `a + b + c`, it means `(a + b) + c`.
   If you are not sure where the brackets are in an expression, just hover
-  your cursor over it and look at what gets highlighted."
+  your cursor over it and look at what gets highlighted. For example,
+  hover over both `+` symbols on the left hand side of the goal and
+  you'll see where the invisible brackets are."
   induction c with d hd
   · rw [add_zero, add_zero]
     rfl
