@@ -1,15 +1,21 @@
-import Game.Levels.Power.Level_4
+import Game.Levels.Power.L05pow_two
 
-
+Introduction "Let's now begin our approch to the final boss,
+by proving some more subtle facts about powers."
 
 World "Power"
-Level 5
+Level 6
 Title "pow_add"
 
-open MyNat
+namespace MyNat
+
+LemmaDoc MyNat.pow_add as "pow_add" in "Pow" "
+
+`pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$
+"
 
 /-- For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$. -/
-Statement MyNat.pow_add
+Statement pow_add
     (a m n : ℕ) : a ^ (m + n) = a ^ m * a ^ n := by
   induction n with t ht
   · rw [add_zero, pow_zero, mul_one]

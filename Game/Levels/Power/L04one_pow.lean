@@ -1,15 +1,16 @@
-import Game.Levels.Power.Level_3
-
-
+import Game.Levels.Power.L03pow_one
 
 World "Power"
 Level 4
 Title "one_pow"
 
-open MyNat
+namespace MyNat
 
+LemmaDoc MyNat.one_pow as "one_pow" in "Pow" "
+`one_pow n` is a proof that $1^n=1$.
+"
 /-- For all naturals $m$, $1 ^ m = 1$. -/
-Statement MyNat.one_pow
+Statement one_pow
     (m : ℕ) : (1 : ℕ) ^ m = 1 := by
   induction m with t ht
   · rw [pow_zero]
