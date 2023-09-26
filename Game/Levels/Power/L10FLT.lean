@@ -22,16 +22,15 @@ but the shortest solution known to humans would translate into
 many millions of lines of Lean code. The author of this game,
 Kevin Buzzard, is working on translating the proof by Wiles
 and Taylor into Lean, although this task will take many years.
-You can see the current state of his efforts at ...?
-
-**TODO** add info if I get funded.
 
 ## CONGRATULATIONS!
 
 You've finished the main quest of the natural number game!
 If you would like to learn more about how to use Lean to
-prove theorems in mathematics, then **TODO** put link to
-Mathematics In Lean when I'm not in the eurotunnel.
+prove theorems in mathematics, then take a look
+at [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),
+an interactive textbook which you can read in your browser,
+and which explains how to work with many more mathematical concepts in Lean.
 "
 
 /-- For all naturals $a$ $b$ $c$ and $n$, we have

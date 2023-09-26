@@ -9,12 +9,9 @@ namespace MyNat
 Introduction
 "
 [final boss music]
-
-You see something written on the stone dungeon wall:
-it seems to say that the ring hack in NNG3 doesn't work any more :-(
-
-**TODO** fix this
 "
+
+-- **TODO** get the `ring` hack working again.
 
 LemmaDoc MyNat.add_sq as "add_sq" in "Pow" "
 `add_sq a b` is the statment that $(a+b)^2=a^2+b^2+2ab.$
@@ -36,16 +33,16 @@ LemmaTab "Pow"
 
 Conclusion
 "
-In NNG3 the `ring` tactic did this level immediately. **TODO** make this work
-in Lean 4!
-
 It's all over! You have proved a theorem which has tripped up
-schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$).
-If you did it using rewrites, how many did you use? I can do it in 12.
-**TODO** link to source code?
+schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$:
+this is \"the freshman's dream\").
 
-If you didn't play the other worlds like even/odd world yet,
-then feel free to try these next.
+How many rewrites did you use? I can do it in 12.
+**DEPLOY_TODO** link to source code when I have stable internet
 
 But wait! This boss is stirring...and mutating into a second more powerful form!
 "
+
+-- *TODO* add something like this when the new worlds are written
+-- If you didn't play the other worlds like even/odd world yet,
+-- then feel free to try these next.

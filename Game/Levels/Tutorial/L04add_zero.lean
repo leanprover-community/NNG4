@@ -86,18 +86,9 @@ tactic, it just speeds things up sometimes.
 `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
 into the goal
 `a = b`.
-
-## Example
-
-If the goal contains `a + b`, then
-`repeat rw [add_comm]` will make Lean hang,
-because it will swap `a + b` to `b + a`
-and back all day long.
-
-**TODO** check this
-
-**TODO** hide `repeat` tactic from the user.
 "
+
+-- **DEPLOY_TODO** hide `repeat` from the user if possible?
 NewTactic «repeat»
 
 Conclusion "Those of you interested in speedrunning the game may want to know

@@ -40,9 +40,13 @@ LemmaTab "Add"
 Conclusion "
 You've now seen all the tactics you need to beat the final boss of the game.
 You can begin the journey towards this boss by entering Multiplication
-World. Or you can go off the beaten track and learn some new tactics in Advanced
-Addition World. These tactics let you prove more facts about addition, such as
-how to deduce `a = b` from `x + a = x + b`.
+World.
 "
+
+/-
+Or you can go off the beaten track and learn some new tactics in Advanced
+Addition World (except that ). These tactics let you prove more facts about addition, such as
+how to deduce `a = b` from `x + a = x + b`.
+-/
 
 -- **TODO** choose a better example from advanced addition world once it's written
