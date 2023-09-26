@@ -29,11 +29,9 @@ count, and name a few small numbers.
 Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
 This gives us plenty of numbers to be getting along with.
 
-You can think of a statement like `3 = succ 2` as an axiom or hypothesis or
-theorem, and the proof of this theorem is called `three_eq_succ_two`.
-You can see the names of these theorems in the list of \"lemmas\" on the right.
-
-Use the `rw` tactic to prove that $3$ is the number after the number after
+The *proof* that `3 = succ 2` is called `three_eq_succ_two`.
+Check out the \"numerals\" tab in the list of lemmas on the right,
+and rewrite these proofs to deduce that $3$ is the number after the number after
 the number after $0$.
 
 "
@@ -44,8 +42,10 @@ Statement
   basic pieces."
   Hint (hidden := true) "Start with `rw [three_eq_succ_two]`"
   rw [three_eq_succ_two]
+  Hint (hidden := true) "If you're in a hurry, try `rw [two_eq_succ_one, one_eq_succ_zero]`."
   rw [two_eq_succ_one]
   rw [one_eq_succ_zero]
+  Hint (hidden := true) "Now finish the job with `rfl`."
   rfl
 
 DefinitionDoc MyNat as "ℕ"
@@ -83,6 +83,10 @@ LemmaTab "numerals"
 
 Conclusion
 "
+Note that you can do
+`rw [three_eq_succ_two, two_eq_succ_one, one_eq_succ_zero]`
+and then `rfl` to solve this level in two lines.
+
 Why did we not just define `succ n` to be `n + 1`? Because we have not
 even *defined* addition yet! We'll do that in the next level.
 "

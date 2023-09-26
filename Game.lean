@@ -66,8 +66,11 @@ about the material.
 
 Please ask any questions about this game in the
 [Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in
-the stream \"New Members\". The community will happily help. This is a professional research forum.
-Please use your full real name there, stay on topic, and be nice.
+the stream \"New Members\". The community will happily help. Note that
+the Lean Zulip chat is a professional research forum.
+Please use your full real name there, stay on topic, and be nice. If you
+want to post natural number game memes, or want to remain anonymous,
+then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).
 
 Alternatively, if you experience issues / bugs you can also open github issues:
 

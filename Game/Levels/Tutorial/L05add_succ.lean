@@ -11,7 +11,8 @@ Every number in Lean is either 0 or a successor. We know how to add $0$,
 but we need to figure out how to add successors. Let's say we already know the
 answer to `37 + d`. What should the answer to `37 + succ d` be? Well,
 `succ d` is one bigger than `d`, so `37 + succ d` should be one bigger
-than `37 + d`. More generally `x + succ d` should be `succ (x + d)`. Let's add this as a theorem.
+than `37 + d`. More generally `x + succ d` should be `succ (x + d)`.
+Let's add this as a hypothesis.
 
 * `add_succ x d : x + succ d = succ (x + d)`
 
@@ -20,7 +21,7 @@ make progress.
 
 Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into
 the picture, and then `rw [add_succ]`. Use the Add and Numeral tabs to
-switch between lemmas so you can see what you can rewrite.
+switch between lemmas so you can see which proofs you can rewrite.
 "
 namespace MyNat
 
@@ -44,4 +45,4 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
 LemmaTab "Add"
 
 Conclusion
-"[dramatic music]. Now are you ready to face the boss?"
+"[dramatic music]. Now are you ready to face the first boss of the game?"

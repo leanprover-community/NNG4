@@ -48,7 +48,7 @@ The `rfl` tactic will close any goal of the form `A = B` if `A` and `B` are
 If the goal looks like this:
 
 ```
-x ^ 37 + 42 * y + 1 = x ^ 37 + 42 * y + 1
+x + 37 = x + 37
 ```
 
 then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even
@@ -61,7 +61,7 @@ The only term which is identical to `0 + x` is `0 + x`.
 for pedagogical purposes; mathematicians do not distinguish between propositional
 and definitional equality because they think about definitions in a different way
 to type theorists (`zero_add` and `add_zero` are both axioms as far
-as mathematicians are concerned, who cares what the definition of addition is).*
+as mathematicians are concerned, and who cares what the definition of addition is).*
 "
 
 NewTactic rfl

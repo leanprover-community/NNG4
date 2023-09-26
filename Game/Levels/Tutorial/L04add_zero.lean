@@ -22,7 +22,7 @@ Let's start with adding `0`.
 
 ### Adding 0
 
-To make addition agree with our intuition, we should define `37 + 0`
+To make addition agree with our intuition, we should *define* `37 + 0`
 to be `37`. More generally, we should define `a + 0` to be `a` for
 any number `a`. The name of this hypothesis in Lean is `add_zero a`.
 
@@ -46,21 +46,21 @@ Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
 
 DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
 the usual sum of natural numbers. Internally it is defined
-via the following two facts:
+via the following two hypotheses:
 
 * `add_zero a : a + 0 = a`
 
 * `add_succ a b : a + succ b = succ (a + b)`
 
 Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved
-by induction from these two basic theorems."
+by induction using these two basic theorems."
 
 NewDefinition Add
 
 LemmaTab "Add"
 
 LemmaDoc MyNat.add_zero as "add_zero" in "Add"
-"`add_zero n` is a proof that `n + 0 = n`.
+"`add_zero a` is a proof that `a + 0 = a`.
 
 You can think of `add_zero` as a function, which
 eats a number, and returns a proof of a theorem
@@ -85,7 +85,7 @@ tactic, it just speeds things up sometimes.
 `repeat rw [add_zero]` will turn the goal
 `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
 into the goal
-`a = b`
+`a = b`.
 
 ## Example
 
@@ -93,6 +93,10 @@ If the goal contains `a + b`, then
 `repeat rw [add_comm]` will make Lean hang,
 because it will swap `a + b` to `b + a`
 and back all day long.
+
+**TODO** check this
+
+**TODO** hide `repeat` tactic from the user.
 "
 NewTactic «repeat»
 
