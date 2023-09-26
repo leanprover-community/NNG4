@@ -15,8 +15,10 @@ This will enable us to defeat the boss level of this world, namely `x + y = y + 
 The tactics `rw`, `rfl` and `induction` are the only tactics you'll need to
 beat all the levels in Addition World, Multiplication World, and Power World.
 Power World contains the final boss of the game.
-
-There are plenty more tactics in this game, but you'll only need to know them if you
-want to explore the game further (for example if you decide to 100%
-the game).
 "
+
+-- **TODO** put this comment back
+-- There are plenty more tactics in this game, but you'll only need to know them if you
+-- want to explore the game further (for example if you decide to 100%
+-- the game).
+-- "

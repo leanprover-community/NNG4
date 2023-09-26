@@ -1,4 +1,4 @@
-import Game.Levels.Addition.L05add_right_comm
+import Game.Levels.Addition
 import Game.MyNat.Multiplication
 
 World "Multiplication"
