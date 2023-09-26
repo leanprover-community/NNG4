@@ -7,13 +7,13 @@ import Game.Levels.Tutorial
 import Game.Levels.Addition
 import Game.Levels.Multiplication
 import Game.Levels.Power
-import Game.Levels.AdvAddition
-import Game.Levels.AdvMultiplication
-import Game.Levels.EvenOdd
-import Game.Levels.Inequality
-import Game.Levels.Prime
-import Game.Levels.StrongInduction
-import Game.Levels.Hard
+--import Game.Levels.AdvAddition
+--import Game.Levels.AdvMultiplication
+--import Game.Levels.EvenOdd
+--import Game.Levels.Inequality
+--import Game.Levels.Prime
+--import Game.Levels.StrongInduction
+--import Game.Levels.Hard
 
 -- Here's what we'll put on the title screen
 Title "Natural Number Game"
@@ -37,7 +37,7 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1 -- all game levels rewritten from scratch, new worlds
+##### Game version: 4.1 -- rewrite of tutorial, addition, multiplication and power world.
 
 ## Progress saving
 
@@ -68,9 +68,9 @@ Please ask any questions about this game in the
 [Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in
 the stream \"New Members\". The community will happily help. Note that
 the Lean Zulip chat is a professional research forum.
-Please use your full real name there, stay on topic, and be nice. If you
-want to post natural number game memes, or want to remain anonymous,
-then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).
+Please use your full real name there, stay on topic, and be nice. If you're
+looking for somewhere less formal (e.g. you want to post natural number
+game memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).
 
 Alternatively, if you experience issues / bugs you can also open github issues:
 
@@ -83,8 +83,8 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 
 -- Here's where we show how to glue the worlds together
 Dependency Addition → Multiplication → Power
-Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
-Dependency Multiplication → AdvMultiplication
-Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
+--Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
+--Dependency Multiplication → AdvMultiplication
+--Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
 
 MakeGame
