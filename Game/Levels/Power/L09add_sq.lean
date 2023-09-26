@@ -17,7 +17,7 @@ LemmaDoc MyNat.add_sq as "add_sq" in "Pow" "
 `add_sq a b` is the statment that $(a+b)^2=a^2+b^2+2ab.$
 "
 
-/-- For all naturals $a$ and $b$, we have
+/-- For all numbers $a$ and $b$, we have
 $$(a+b)^2=a^2+b^2+2ab.$$ -/
 Statement add_sq
     (a b : ℕ) : (a + b) ^ 2 = a ^ 2 + b ^ 2 + 2 * a * b := by
