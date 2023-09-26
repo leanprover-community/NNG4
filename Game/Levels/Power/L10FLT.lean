@@ -8,8 +8,6 @@ namespace MyNat
 
 Introduction
 "
-Second stage!
-
 We now have enough to state mathematically accurate, but slightly
 clunky, version of Fermat's Last Theorem.
 
@@ -27,6 +25,13 @@ and Taylor into Lean, although this task will take many years.
 You can see the current state of his efforts at ...?
 
 **TODO** add info if I get funded.
+
+## CONGRATULATIONS!
+
+You've finished the main quest of the natural number game!
+If you would like to learn more about how to use Lean to
+prove theorems in mathematics, then **TODO** put link to
+Mathematics In Lean when I'm not in the eurotunnel.
 "
 
 /-- For all naturals $a$ $b$ $c$ and $n$, we have
@@ -39,5 +44,5 @@ LemmaTab "Pow"
 
 Conclusion
 "
-Congratulations! You proved Fermat's Last Theorem!
+Congratulations! You have proved Fermat's Last Theorem!
 "

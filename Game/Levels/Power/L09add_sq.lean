@@ -42,6 +42,7 @@ in Lean 4!
 It's all over! You have proved a theorem which has tripped up
 schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$).
 If you did it using rewrites, how many did you use? I can do it in 12.
+**TODO** link to source code?
 
 If you didn't play the other worlds like even/odd world yet,
 then feel free to try these next.

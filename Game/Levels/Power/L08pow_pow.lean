@@ -8,9 +8,9 @@ namespace MyNat
 
 Introduction
 "
-One of the best named levels in the game, a savage `pow_pow` appears
-as the music reaches a frenzy. Could this be the final boss? What
-else could there be to prove about powers?
+One of the best named levels in the game, a savage `pow_pow`
+sub-boss appears as the music reaches a frenzy. What
+else could there be to prove about powers after this?
 "
 
 LemmaDoc MyNat.pow_pow as "pow_pow" in "Pow" "
@@ -39,9 +39,11 @@ Conclusion
 "
 The music dies down. Is that it?
 
+Course it isn't, you can
+clearly see that there are two worlds left.
+
 A passing mathematician says that mathematicians don't have a name
 for the structure you just constructed. You feel cheated.
 
-Suddenly the music starts up again, and this time you know:
-the final level of power world is next, including the final boss.
+Suddenly the music starts up again. This really is the final boss.
 "

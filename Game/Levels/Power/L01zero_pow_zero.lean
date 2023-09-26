@@ -10,7 +10,10 @@ namespace MyNat
 
 Introduction "Mathematicians sometimes debate what `0 ^ 0` is;
 the answer depends, of course, on your definitions. In this
-game, `0 ^ 0 = 1`. See if you can prove it."
+game, `0 ^ 0 = 1`. See if you can prove it.
+
+Check out the *Pow* tab in your list of theorems
+to see the new proofs which are available."
 
 DefinitionDoc Pow as "^" "
   `Pow a b`, with notation `a ^ b`, is the usual
