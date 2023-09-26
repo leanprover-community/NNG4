@@ -9,9 +9,11 @@ namespace MyNat
 
 Introduction
 "
-When you've proved this theorem you will have \"spare\" proofs
+The first sub-boss of Multiplication World is `mul_comm x y : x * y = y * x`.
+
+When you've proved this theorem we will have \"spare\" proofs
 such as `zero_mul`, which is now easily deducible from `mul_zero`.
-But we keep hold of these theorems anyway, because often it's convenient
+But we'll keep hold of these proofs anyway, because it's convenient
 to have exactly the right tool for a job.
 "
 

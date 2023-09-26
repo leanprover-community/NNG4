@@ -28,7 +28,8 @@ $a(b + c) = ab + ac$. -/
 Statement mul_add
     (a b c : ℕ) : a * (b + c) = a * b + a * c := by
   Hint "You can do induction on any of the three variables. Some choices
-  are harder to push through than others."
+  are harder to push through than others. Can you do the inductive step in
+  5 rewrites only?"
   Hint (hidden := true) "Induction on `a` is the most troublesome, then `b`,
   and `c` is the easiest."
   induction c with d hd

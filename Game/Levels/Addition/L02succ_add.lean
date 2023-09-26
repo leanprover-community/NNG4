@@ -10,10 +10,10 @@ namespace MyNat
 Introduction
 "
 Oh no! On the way to `add_comm`, a wild `succ_add` appears. `succ_add a b`
-is the proof that `succ(a) + b = succ(a + b)` for `a` and `b` numbers.
+is the proof that `(succ a) + b = succ (a + b)` for `a` and `b` numbers.
 This result is what's standing in the way of `x + y = y + x`. Again
 we have the problem that we are adding `b` to things, so we need
-to split into the cases where `b = 0` and `b` is a successor.
+to use induction to split into the cases where `b = 0` and `b` is a successor.
 "
 
 LemmaDoc MyNat.succ_add as "succ_add" in "Add"
@@ -35,7 +35,9 @@ Statement succ_add (a b : ℕ) : succ a + b = succ (a + b)  := by
   · rw [add_zero]
     rw [add_zero]
     rfl
-  · rw [add_succ, add_succ, hd]
+  · Hint "Note that `succ a + {d}` means `(succ a) + {d}`. Put your cursor
+  on any `succ` in the goal to see what exactly it's eating."
+    rw [add_succ, add_succ, hd]
     rfl
 
 LemmaTab "Add"

@@ -1,9 +1,10 @@
 import Game.Metadata
 import Game.MyNat.Addition
-import Game.MyNat.DecidableEq
-
--- try to fix tutorial world entry page text issue
+import Game.Levels.Tutorial
+-- note that
 -- import Game.Levels.Tutorial.L05add_succ
+-- breaks the game server -- text disappears from
+-- tutorial world intro level!
 
 World "Addition"
 Level 1
@@ -43,7 +44,8 @@ Statement zero_add (n : ℕ) : 0 + n = n := by
   · Hint "Now you have two goals. Once you proved the first, you will jump to the second one.
     This first goal is the base case $n = 0$.
 
-    Recall that you can use all lemmas that are visible in your inventory."
+    Recall that you can rewrite the proof of any lemma which is visible
+    in your inventory, or of any assumption displayed above the goal."
     Hint (hidden := true) "try rewriting `add_zero`."
     rw [add_zero]
     rfl
@@ -65,16 +67,8 @@ If `n : ℕ` is an object, and the goal mentions `n`, then `induction n with d h
 attempts to prove the goal by induction on `n`, with the inductive
 variable in the successor case being `d`, and the inductive hypothesis being `hd`.
 
-## Details
-
-If you have a natural number `n : ℕ` in your assumptions
-then `induction n with d hd` turns your
-goal into two goals, a base case with `n = 0` and
-an inductive step where `hd` is a proof of the `n = d`
-case and your goal is the `n = succ d` case.
-
 ### Example:
-If our goal is
+If the goal is
 ```
 0 + n = n
 ```
@@ -83,11 +77,12 @@ then
 
 `induction n with d hd`
 
-will turn it into two goals. The first is `0 + 0 = 0`, and
+will turn it into two goals. The first is `0 + 0 = 0`;
 the second has an assumption `hd : 0 + d = d` and goal
 `0 + succ d = succ d`.
--/
 
+Note that you must prove the first
+goal before being able to access the second one.
 "
 NewTactic induction
 
@@ -99,5 +94,5 @@ Conclusion
   is called `add_comm` and it is *true*, but unfortunately its proof *uses* both
   `add_zero` and `zero_add`!
 
-  Let's continue on our journey to `add_comm`.
+  Let's continue on our journey to `add_comm`, the proof of `x + y = y + x`.
 "

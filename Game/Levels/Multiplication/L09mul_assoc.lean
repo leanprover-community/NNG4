@@ -9,7 +9,8 @@ namespace MyNat
 
 Introduction
 "
-We now have enough to prove that multiplication is associative.
+We now have enough to prove that multiplication is associative,
+the boss level of multiplication world. Good luck!
 "
 
 LemmaDoc MyNat.mul_assoc as "mul_assoc" in "Mul" "

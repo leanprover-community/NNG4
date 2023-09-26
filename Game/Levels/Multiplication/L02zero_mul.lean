@@ -8,11 +8,11 @@ namespace MyNat
 
 Introduction
 "
-We're going for `mul_comm x y : x * y = y * x`,
+Our first challenge is `mul_comm x y : x * y = y * x`,
 and we want to prove it by induction. The zero
 case will need `mul_zero` (which we have)
 and `zero_mul` (which we don't), so let's
-start there.
+start with this.
 "
 
 LemmaDoc MyNat.zero_mul as "zero_mul" in "Mul" "

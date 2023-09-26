@@ -1,6 +1,6 @@
 import Game.Metadata
 import Game.MyNat.Definition
-import Game.MyNat.DecidableEq
+import Game.MyNat.TutorialLemmas
 
 World "Tutorial"
 Level 3

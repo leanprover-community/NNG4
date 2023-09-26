@@ -12,7 +12,7 @@ Introduction
 
 See the new \"Mul\" tab in your lemmas, containing `mul_zero` and `mul_succ`.
 Right now these are the only facts we know about multiplication.
-Let's prove eight more.
+Let's prove nine more.
 
 Let's start with a warm-up: no induction needed for this one,
 because we know `1` is a successor.

@@ -9,15 +9,14 @@ namespace MyNat
 
 Introduction
 "
-We are on the journey to `mul_comm`, the proof that `a * b = b * a`.
-We'll get there in the next level. Until we're there, it is frustrating
-but true that we cannot assume commutativity. We have `mul_succ`
+Similarly we have `mul_succ`
 but we're going to need `succ_mul` (guess what it says -- maybe you
 are getting the hang of Lean's naming conventions).
 
-Remember also that we have tools from addition world like
-
-* `add_right_comm a b c : a + b + c = a + c + b`
+The last level from addition world might help you in this level.
+If you can't remember what it is, you can go back to the
+home screen by clicking the house icon and then taking a look.
+You won't lose any progress.
 "
 
 LemmaDoc MyNat.succ_mul as "succ_mul" in "Mul" "
@@ -28,7 +27,7 @@ would be circular because the proof of `mul_comm` uses `mul_succ`.
 "
 
 /-- For all natural numbers $a$ and $b$, we have
-$\operatorname{succ}(a) \times b = a\times b + b$. -/
+$(\operatorname{succ}\ a) \times b = a\times b + b$. -/
 Statement succ_mul
     (a b : ℕ) : succ a * b = a * b + b := by
   induction b with d hd
