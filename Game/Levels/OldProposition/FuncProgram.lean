@@ -1,5 +1,10 @@
+/-
+
+Ideas for functional program world.
+
+
+-/
 import Mathlib.Tactic
-import Nng4.NNG
 
 /-
 
@@ -17,22 +22,22 @@ succ_inj (a b : ℕ) :
 
 zero_ne_succ (a : ℕ) :
   zero ≠ succ a
-  
+
 In Lean we don't need these axioms though, because they
 follow from Lean's principles of reduction and recursion.
 
 Principle of recursion: if two things are true:
 * I know how to do it for 0
-* Assuming (only) that I know how to do it for n. 
+* Assuming (only) that I know how to do it for n.
   I know how to do it for n+1.
 
-Note the "only". 
+Note the "only".
 
 -/
 
 #check Nat.succ
 -- example of a definition by recursion
-def double : ℕ → ℕ 
+def double : ℕ → ℕ
 | 0 => 0
 | (n + 1) => 2 + double n
 
@@ -43,7 +48,7 @@ theorem double_eq_two_mul (n : ℕ) : double n = 2 * n := by
   show 2 + double d = 2 * d.succ
   rw [hd]
   rw [Nat.succ_eq_add_one] -- `ring` should do this
-  ring-- 
+  ring--
 
 -- So you're happy that this is a definition by recursion
 def f : ℕ → ℕ
@@ -55,7 +60,7 @@ def pred : ℕ → ℕ
 | 0 => 37
 | (n + 1) => n
 
-lemma pred_succ : pred (n.succ) = n := 
+lemma pred_succ : pred (n.succ) = n :=
 rfl -- true by definition
 /-
 
@@ -63,15 +68,15 @@ rfl -- true by definition
 
 pred(x)=x-1, at least when x > 0. If x=0 then there's no
 answer so we just let the answer be a junk value because
-it's the simplest way of dealing with this case. 
+it's the simplest way of dealing with this case.
 If a mathematician asks us what pred of 0 is, we tell
-them that it's a stupid question by saying 37, it's 
+them that it's a stupid question by saying 37, it's
 like a poo emoji. But Peano was a cultured mathematician
 and this proof of `succ_inj` will only use `pred` on
 positive naturals, just like today's cultured mathematician
 never divides by zero.
 
-We need to learn how to deal wiht a goal of the form `P → Q` 
+We need to learn how to deal wiht a goal of the form `P → Q`
 
 -/
 
@@ -105,7 +110,7 @@ lemma succ_inj'' (a b : ℕ) : a.succ = b.succ → a = b := by
 -- functional programming point of view: the proof is just
 -- a function applied to a function whose output
 -- is another function.
-lemma succ_inj''' (a b : ℕ) : a.succ = b.succ → a = b := 
+lemma succ_inj''' (a b : ℕ) : a.succ = b.succ → a = b :=
 congrArg pred
 
 
@@ -116,7 +121,7 @@ Poss boring
 unsafe def collatz : ℕ → ℕ
 | 0 => 37
 | 1 => 37
-| m => if m % 2 = 0 then collatz (m / 2) else collatz (3 * m + 1)     
+| m => if m % 2 = 0 then collatz (m / 2) else collatz (3 * m + 1)
 
 
 -- theorem proof_of_collatz_conjecture : ∀ n, ∃ (t : ℕ), collatz ^ t n = 1 := by
@@ -124,10 +129,10 @@ unsafe def collatz : ℕ → ℕ
 
 Here is a crank proof I was sent of the 3n+1
 problem. Explanaiton of problem. Proof: By induction.
-Define f(1)=stop. 
+Define f(1)=stop.
 Got to prove that for all n, it terminates.
 
-For even numbers this is obvious so they're all done. 
+For even numbers this is obvious so they're all done.
 For odd numbers, if n is odd then 3n+1 is even, but
 as we already observed it's obvious for all even numbers,
 so we're done.
@@ -152,13 +157,6 @@ lemma is_zero_succ : is_zero (n + 1) = false := rfl
 
 lemma zero_ne_succ (n : ℕ) : 0 ≠ n.succ := by
   by_contra h
-  
-  intro this
-  apply_fun is_zero at this
-  rw [is_zero_zero, is_zero_succ] at this
-  cases this -- splits into all the cases where this is true
-
-
-
-
-
+  apply_fun is_zero at h
+  rw [is_zero_zero, is_zero_succ] at h
+  cases h -- splits into all the cases where this is true
