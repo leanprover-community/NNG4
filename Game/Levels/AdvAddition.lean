@@ -1,27 +1,16 @@
 import Game.Levels.Addition
+import Game.MyNat.AdvAddition -- `zero_ne_succ` and `succ_inj`
+import Game.Levels.AdvAddition.L01succ_inj
 
 World "AdvAddition"
 Title "Advanced Addition World"
 
 Introduction
 "
-Peano's original collection of axioms for the natural numbers contained two further
-assumptions, which have not yet been mentioned in the game:
+In this world we'll learn the `apply` tactic,
+enabling us to argue both forwards and backwards.
+We'll use this technique to prove that $2+2\\not=5$
+and much more.
 
-```
-succ_inj (a b : ℕ) :
-  succ a = succ b → a = b
-
-zero_ne_succ (a : ℕ) :
-  zero ≠ succ a
-```
-
-The reason they have not been used yet is that they are both implications,
-that is,
-of the form $P\\implies Q$. This is clear for `succ_inj a b`, which
-says that for all $a$ and $b$ we have $\\operatorname{succ}(a)=\\operatorname{succ}(b)\\implies a=b$.
-For `zero_ne_succ` the trick is that $X\\ne Y$ is *defined to mean*
-$X = Y\\implies{\\tt False}$. If you have played through proposition world,
-you now have the required Lean skills (i.e., you know the required
-tactics) to work with these implications.
+Click on \"start\" to proceed.
 "
