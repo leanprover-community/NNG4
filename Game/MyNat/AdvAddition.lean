@@ -10,6 +10,6 @@ attribute [-simp] MyNat.succ.injEq
 --   simp
 --   sorry
 
-theorem succ_inj {a b : ℕ} : succ a = succ b → a = b := by rintro ⟨h⟩; rfl
+theorem succ_inj (a b : ℕ) : succ a = succ b → a = b := by rintro ⟨h⟩; rfl
 
 theorem zero_ne_succ (a : ℕ) : 0 ≠ succ a := by rintro ⟨h⟩
