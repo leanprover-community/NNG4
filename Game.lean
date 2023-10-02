@@ -30,6 +30,10 @@ We'll do this by solving levels of a computer puzzle game called Lean.
 
 To learn more about these puzzles, click on \"Tutorial World\".
 
+Note: this is a preliminary new Lean 4 version of the game; new versions
+of inequality and advanced addition/multiplication worlds are in preparation.
+Other brand new worlds will also be appearing during October 2023.
+
 ## More
 
 Open \"Game Info\" in the burger menu on the top right for resources,
@@ -37,7 +41,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1 -- rewrite of tutorial, addition, multiplication and power world.
+##### Game version: 4.1
+
+#### Recent changes: rewrite of tutorial, addition, multiplication and power world.
 
 ## Progress saving
 

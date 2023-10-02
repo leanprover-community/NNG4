@@ -17,7 +17,7 @@ beat all the levels in Addition World, Multiplication World, and Power World.
 Power World contains the final boss of the game.
 "
 
--- **TODO** put this comment back
+-- **TODO** put this comment back when it becomes true
 -- There are plenty more tactics in this game, but you'll only need to know them if you
 -- want to explore the game further (for example if you decide to 100%
 -- the game).

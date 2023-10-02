@@ -22,7 +22,7 @@ using the `rw` tactic.
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "You can execute `rw [h]` to replace the `y` with `x + 7`."
+  Hint "You can execute `rw [h]` to replace the `y` in the goal with `x + 7`."
   rw [h]
   Hint (hidden := true) "Now `rfl` will work."
   rfl
@@ -44,6 +44,10 @@ all `X`s in the goal to `Y`s.
 * `rw [h] at h1 h2 ⊢` (changes `X`s to `Y`s in two hypotheses and the goal;
 get the `⊢` symbol with `\\|-`.)
 
+* `repeat rw [add_zero]` will keep changing `? + 0` to `?`
+until there are no more matches for `? + 0`.
+
+* `nth_rewrite 2 [h] will change only the second `X` in the goal to `Y`.
 
 ## Details
 
@@ -72,18 +76,21 @@ the list of lemmas on the right.
 
 ## Targetted usage
 
-If your goal is `a + b + c = b + (a + c)` and you want to rewrite `a + b`
-to `b + a`, then `rw [add_comm]` will not work because Lean finds another
-addition first and rewrites that instead. Use `rw [add_comm a b]` to guarantee
-that Lean rewrites `a + b` to `b + a`.
+If your goal is `b + c + a = b + (a + c)` and you want to rewrite `a + c`
+to `c + a`, then `rw [add_comm]` will not work because Lean finds another
+addition first and swaps those inputs instead. Use `rw [add_comm a c]` to
+guarantee that Lean rewrites `a + c` to `c + a`.
+
+If `h : X = Y` then `rw [h]` will turn all `X`s into `Y`s.
+If you only want to change the 37th occurrence of `X`
+to `Y` then do `nth_rewrite 37 [h]`.
 
 ## Common errors
 
 * You need the square brackets. `rw h` is never correct.
 
-* If `h` is not a proof of the form `A = B`
-or `A ↔ B` (for example if `h` is a function, an implication,
-or perhaps even a proposition itself rather than its proof),
+* If `h` is not a *proof* of an *equality* (a statement of the form `A = B`),
+for example if `h` is a function or an implication,
 then `rw` is not the tactic you want to use. For example,
 `rw [P = Q]` is never correct: `P = Q` is the theorem *statement*,
 not the proof. If `h : P = Q` is the proof, then `rw [h]` will work.
@@ -104,7 +111,7 @@ will change the goal into `succ x = succ (y + y)`, and then
 `rw [h]`
 
 will change the goal into `succ (y + y) = succ (y + y)`, which
-can be solved with `rfl`..
+can be solved with `rfl`.
 
 ### Example:
 
@@ -119,6 +126,38 @@ then `rw [h1] at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
 "
 
 NewTactic rw
+
+TacticDoc «repeat» "
+## Summary
+
+`repeat t` repeatedly applies the tactic `t`
+to the goal. You don't need to use this
+tactic, it just speeds things up sometimes.
+
+## Example
+
+`repeat rw [add_zero]` will turn the goal
+`a + 0 + (0 + (0 + 0)) = b + 0 + 0`
+into the goal
+`a = b`.
+"
+
+NewTactic «repeat»
+
+TacticDoc nth_rewrite "
+## Summary
+
+If `h : X = Y` and there are several `X`s in the goal, then
+`nth_rewrite 3 [h]` will just change the third `X` to a `Y`.
+
+## Example
+
+If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`
+will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
+will change the goal to `succ 1 + succ 1 = 4`.
+"
+
+NewTactic nth_rewrite
 
 Conclusion
 "

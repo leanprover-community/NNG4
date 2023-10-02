@@ -73,23 +73,6 @@ This is just a different way of thinking about the same concept."
 
 NewLemma MyNat.add_zero
 
-TacticDoc «repeat» "
-## Summary
-
-`repeat t` repeatedly applies the tactic `t`
-to the goal. You don't need to use this
-tactic, it just speeds things up sometimes.
-
-## Example
-
-`repeat rw [add_zero]` will turn the goal
-`a + 0 + (0 + (0 + 0)) = b + 0 + 0`
-into the goal
-`a = b`.
-"
-
-NewHiddenTactic «repeat»
-
 Conclusion "Those of you interested in speedrunning the game may want to know
 that `repeat rw [add_zero]` will do both rewrites at once.
 
