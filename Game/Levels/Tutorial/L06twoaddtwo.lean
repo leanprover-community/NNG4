@@ -6,6 +6,8 @@ World "Tutorial"
 Level 6
 Title "2+2=4"
 
+LemmaTab "numerals"
+
 Introduction
 " Good luck!
 
