@@ -8,7 +8,7 @@ def LocalGameServer : Dependency := {
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" "c50517b5e6d411d1b7947df8505326b8d70fcb5b" "server"
+  src := Source.git "https://github.com/leanprover-community/lean4game.git" "5c919fb983250909e83f5454ed19693b099c090e" "server"
 }
 
 /- Choose dependency depending on the environment variable NODE_ENV -/

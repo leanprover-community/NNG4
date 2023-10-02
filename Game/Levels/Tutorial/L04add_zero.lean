@@ -88,8 +88,7 @@ into the goal
 `a = b`.
 "
 
--- **DEPLOY_TODO** hide `repeat` from the user if possible?
-NewTactic «repeat»
+NewHiddenTactic «repeat»
 
 Conclusion "Those of you interested in speedrunning the game may want to know
 that `repeat rw [add_zero]` will do both rewrites at once.
