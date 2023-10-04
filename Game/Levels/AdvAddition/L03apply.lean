@@ -32,7 +32,7 @@ but Lean is smart enough to figure out the inputs to `succ_inj`.
 ### Example
 
 If the goal is `a * b = 7`, then `apply succ_inj` will turn the
-goal into `succ (a * b) = succ 7`
+goal into `succ (a * b) = succ 7`.
 "
 NewTactic apply
 
