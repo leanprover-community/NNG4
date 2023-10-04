@@ -30,10 +30,7 @@ Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
 This gives us plenty of numbers to be getting along with.
 
 The *proof* that `3 = succ 2` is called `three_eq_succ_two`.
-Check out the \"numerals\" tab in the list of lemmas on the right,
-and rewrite these proofs to deduce that $3$ is the number after the number after
-the number after $0$.
-
+Check out the \"numerals\" tab in the list of lemmas on the right.
 "
 /-- $3=\operatorname{succ}(\operatorname{succ}(\operatorname{succ}(0)))$. -/
 Statement
