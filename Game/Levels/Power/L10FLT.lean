@@ -8,7 +8,7 @@ namespace MyNat
 
 Introduction
 "
-We now have enough to state mathematically accurate, but slightly
+We now have enough to state a mathematically accurate, but slightly
 clunky, version of Fermat's Last Theorem.
 
 Fermat's Last Theorem states that if $x,y,z>0$ and $m \\geq 3$ then $x^m+y^m\\not =z^m$.

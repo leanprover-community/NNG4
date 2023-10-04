@@ -10,7 +10,7 @@ Introduction
 " Good luck!
 
   One last hint. If `h : X = Y` then `rw [h]` will change *all* `X`s into `Y`s.
-  If you only want to one of them, say the 3rd one, then use
+  If you only want to change one of them, say the 3rd one, then use
   `nth_rewrite 3 [h]`.
 "
 namespace MyNat
