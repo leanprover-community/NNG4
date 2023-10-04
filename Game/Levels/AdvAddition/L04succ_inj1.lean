@@ -2,7 +2,7 @@ import Game.Levels.Addition
 import Game.MyNat.AdvAddition
 
 World "AdvAddition"
-Level 3
+Level 4
 Title "succ_inj : the successor function is injective"
 
 namespace MyNat
@@ -62,8 +62,7 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   rw [←succ_eq_add_one] at h
   Hint "Now let's `apply` our new theorem. Cast `apply succ_inj at h`
   to change `h` to a proof of `x = 3`."
-  replace h := succ_inj _ _ h
---  apply succ_inj at h **TODO** help!
+  apply succ_inj at h
   Hint "Now finish in one line."
   Hint (hidden := true) "And now we've deduced what we wanted to prove: the goal is one of our assumptions.
   Finish the level with `assumption`."
