@@ -9,6 +9,7 @@ import Mathlib.Tactic
 
 import Game.Tactic.Induction
 import Game.Tactic.Rfl
+import Game.Tactic.Assumption
 import Game.Tactic.Rw
 import Game.Tactic.Apply
 -- import Std.Tactic.RCases
