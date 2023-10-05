@@ -16,9 +16,10 @@ that `succ a = succ b` implies `a = b`. Click on this theorem in the *Peano*
 tab for more information.
 
 Peano had this theorem as an axiom, but in Functional Programming World
-we will show how to prove it. Right now let's just assume it,
-and let's solve an equation using it. We will solve the equation
-by manipulating our hypothesis until it becomes the goal.
+we will show how to prove it in Lean. Right now let's just assume it,
+and let's solve an equation using it. Again, we will proceed
+by manipulating our hypothesis until it becomes the goal. I will
+walk you through this level.
 "
 
 LemmaDoc MyNat.succ_inj as "succ_inj" in "Peano" "
@@ -40,7 +41,7 @@ $ (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
 You can think of `succ_inj` itself as a proof; it is the proof
 that `succ` is an injective function. In other words,
 `succ_inj` is a proof of
-$\\forall a b\\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
+$\\forall a, b\\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
 
 `succ_inj` was postulated as an axiom by Peano, but
 in Lean it can be proved using `pred`, a mathematically

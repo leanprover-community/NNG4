@@ -16,7 +16,7 @@ If `t : P → Q` is a proof that $P\\implies Q$, and `h : P` is a proof of `P`,
 then `apply t at h` will change `h` to a proof of `Q`. The idea is that if
 you know `P` is true, then you can deduce from `t` that `Q` is true.
 
-If the goal is `Q`, then `apply t` will \"argue backwards\" and change the
+If the *goal* is `Q`, then `apply t` will \"argue backwards\" and change the
 goal to `P`. The idea here is that if you want to prove `Q`, then by `t`
 it suffices to prove `P`, so you can reduce the goal to proving `P`.
 
@@ -43,8 +43,8 @@ hypothesis with the `apply` tactic.
 "
 
 /-- If $x=37$ and we know that $x=37\implies y=42$ then we can deduce $y=42$. -/
-Statement (x y : ℕ) (hx : x = 37) (h : x = 37 → y = 42) : y = 42 := by
-  Hint "Start with `apply h at hx`."
-  apply h at hx
+Statement (x y : ℕ) (h : x = 37) (imp : x = 37 → y = 42) : y = 42 := by
+  Hint "Start with `apply imp at h`. This will change `h` to `y = 42`."
+  apply imp at h
   Hint "Now finish with `assumption`."
   assumption

@@ -12,7 +12,9 @@ Introduction
   In the last level, we manipulated the hypothesis `x + 1 = 4`
   until it became the goal `x = 3`. In this level we'll manipulate
   the goal until it becomes our hypothesis! In other words, we
-  will \"argue backwards\".
+  will \"argue backwards\". The `apply` tactic can do this too.
+  Again I will walk you through this one (assuming you're in
+  command line mode).
 "
 
 /-- If $x+1=4$ then $x=3$. -/

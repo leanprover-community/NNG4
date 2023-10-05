@@ -32,5 +32,5 @@ one of our hypotheses.
 
 /-- Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$. -/
 Statement (x y z : ℕ) (h1 : x + y = 37) (h2 : 3 * x + z = 42) : x + y = 37 := by
-  Hint "The goal is `h1`. Solve the goal by casting `assumption`."
+  Hint "The goal is one of our hypotheses. Solve the goal by casting `assumption`."
   assumption
