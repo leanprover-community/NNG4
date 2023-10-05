@@ -30,35 +30,3 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
 
 Conclusion "Many people find `apply t at h` easy, but some find `apply t` confusing.
 If you find it confusing, then just argue forwards."
-
--- **TODO** more levels! Put them elsewhere.
--- next: intro intro level.
-theorem t1 (x y t : ℕ) : x + t = y + t → x = y := by
-  induction t with d hd
-  intro h
-  rw [add_zero, add_zero] at h
-  assumption
-  intro h
-  rw [add_succ, add_succ] at h
-  apply succ_inj at h
-  apply hd at h
-  assumption
-
-example (x y : ℕ) : x + t = t → x = 0 := by
-  intro h
-  nth_rewrite 2 [← zero_add t] at h
-  apply t1 at h
-  assumption
-
-axiom succ_ne_zero (x : ℕ) : succ x ≠ 0
-
-example (x y : ℕ) : x + y = 0 → x = 0 := by
-  induction y with d hd
-  intro h
-  rw [add_zero] at h
-  assumption
-  clear hd
-  rw [add_succ]
-  intro h
-  apply succ_ne_zero at h
-  contradiction

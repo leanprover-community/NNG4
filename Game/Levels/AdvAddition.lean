@@ -5,6 +5,7 @@ import Game.Levels.AdvAddition.L02more_assumption
 import Game.Levels.AdvAddition.L03apply
 import Game.Levels.AdvAddition.L04succ_inj1
 import Game.Levels.AdvAddition.L05succ_inj2
+import Game.Levels.AdvAddition.L06intro
 
 World "AdvAddition"
 Title "Advanced Addition World"

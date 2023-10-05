@@ -1,6 +1,0 @@
-What about levels like:
-h1 : 3x+4y=7
-h2 : x+5y=6
-⊢ x=1
-
-?
