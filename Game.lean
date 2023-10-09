@@ -1,8 +1,9 @@
 -- Here's the import to make Lean know about things called `Game`s
 import GameServer.Commands
 
--- Here are the imports defining many worlds for the game `Game`.
--- Each world consists of a finite totally ordered set of levels.
+-- Here are the imports defining many worlds for the game `Game` (the natural number game,
+-- in this case). Each world consists of a finite number of levels, and levels
+-- are numbered 1,2,3,4... inside the level files.
 import Game.Levels.Tutorial
 import Game.Levels.Addition
 import Game.Levels.Multiplication
@@ -28,7 +29,13 @@ that `2 + 2 = 4`. Next we'll prove that `x + y = y + x`.
 And at the end we'll see if we can prove Fermat's Last Theorem.
 We'll do this by solving levels of a computer puzzle game called Lean.
 
-To learn more about these puzzles, click on \"Tutorial World\".
+# Read this.
+
+Learning how to use an interactive theorem prover takes time.
+Tests show that the people who get the most out of this game are
+those who read the help texts like this one.
+
+To start, click on \"Tutorial World\".
 
 ## More
 
