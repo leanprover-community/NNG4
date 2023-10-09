@@ -28,9 +28,8 @@ out that `_` is supposed to be `3 * x + 2 * y + 1`.
 -- namely the cases `b = 0` and `b = succ n`. So `cases` here is like
 -- a weaker version of induction (you don't get the inductive hypothesis).
 
-
+/-- The product of two non-zero natural numbers is non-zero. -/
 Statement
-"The product of two non-zero natural numbers is non-zero."
     (a b : ℕ) : a ≠ 0 → b ≠ 0 → a * b ≠ 0 := by
   intro ha hb
   intro hab

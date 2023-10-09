@@ -19,10 +19,9 @@ succ_inj (a b : ℕ) :
 ```
 "
 
--- NOTE:
+/-- For all naturals $a$ and $b$, if we assume $\operatorname{succ}(a)=\operatorname{succ}(b)$,
+then we can deduce $a=b$. -/
 Statement -- MyNat.succ_inj'
-"For all naturals $a$ and $b$, if we assume $\\operatorname{succ}(a)=\\operatorname{succ}(b)$,
-then we can deduce $a=b$."
     {a b : ℕ} (hs : succ a = succ b) :  a = b := by
   Hint "You should know a couple
   of ways to prove the below -- one directly using an `exact`,

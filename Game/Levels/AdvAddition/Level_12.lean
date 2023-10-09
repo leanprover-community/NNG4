@@ -19,9 +19,9 @@ succ_eq_add_one (n : ℕ) : succ n = n + 1
 but sometimes the other way is also convenient.
 "
 
+/-- For any natural number $d$, we have
+$$ d+1 = \operatorname{succ}(d). $$ -/
 Statement MyNat.add_one_eq_succ
-"For any natural number $d$, we have
-$$ d+1 = \\operatorname{succ}(d). $$"
     (d : ℕ) : d + 1 = succ d := by
   rw [succ_eq_add_one]
   rfl

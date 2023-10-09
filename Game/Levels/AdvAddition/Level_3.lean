@@ -14,8 +14,8 @@ We are going to prove something completely obvious: if $a=b$ then
 $\\operatorname{succ}(a)=\\operatorname{succ}(b)$. This is *not* `succ_inj`!
 "
 
+/-- For all naturals $a$ and $b$, $a=b\implies \operatorname{succ}(a)=\operatorname{succ}(b)$. -/
 Statement MyNat.succ_eq_succ_of_eq
-"For all naturals $a$ and $b$, $a=b\\implies \\operatorname{succ}(a)=\\operatorname{succ}(b)$."
     {a b : ℕ} : a = b → succ a = succ b := by
   Hint "This is trivial -- we can just rewrite our proof of `a=b`.
   But how do we get to that proof? Use the `intro` tactic."

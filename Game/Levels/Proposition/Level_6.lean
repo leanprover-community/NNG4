@@ -16,11 +16,11 @@ that you can do things like `have j : Q → R := f p` if `f : P → (Q → R)`
 and `p : P`.
 "
 
-Statement
-"If $P$ and $Q$ and $R$ are true/false statements, then
+/--If $P$ and $Q$ and $R$ are true/false statements, then
 $$
-(P\\implies(Q\\implies R))\\implies((P\\implies Q)\\implies(P\\implies R)).
-$$"
+(P\implies(Q\implies R))\implies((P\implies Q)\implies(P\implies R)).
+$$-/
+Statement
     (P Q R : Prop) : (P → (Q → R)) → ((P → Q) → (P → R)) := by
   Hint "I recommend that you start with `intro f` rather than `intro p`
   because even though the goal starts `P → ...`, the brackets mean that

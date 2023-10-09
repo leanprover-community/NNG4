@@ -21,10 +21,10 @@ don't mess around doing it explicitly with `add_comm` and `add_assoc`,
 just try `simp`.
 "
 
-Statement MyNat.add_mul
-"Addition is distributive over multiplication.
+/-- Addition is distributive over multiplication.
 In other words, for all natural numbers $a$, $b$ and $t$, we have
-$(a + b) \\cdot t = at + bt$."
+$(a + b) \cdot t = at + bt$. -/
+Statement MyNat.add_mul
     (a b t : ℕ) : (a + b) * t = a * t + b * t := by
   induction b with d hd
   · rw [zero_mul]

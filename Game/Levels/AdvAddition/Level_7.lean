@@ -14,10 +14,10 @@ of theorems like `add_right_cancel`. Remember that you can use `constructor`
 to split an `↔` goal into the `→` goal and the `←` goal.
 "
 
+/-- For all naturals $a$, $b$ and $t$,
+$$ a + t = b + t\iff a=b. $$
+ -/
 Statement MyNat.add_right_cancel_iff
-"For all naturals $a$, $b$ and $t$,
-$$ a + t = b + t\\iff a=b. $$
-"
     (t a b : ℕ) :  a + t = b + t ↔ a = b := by
   Branch
     induction t

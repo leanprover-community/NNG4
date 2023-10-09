@@ -18,8 +18,8 @@ We are given `mul_zero`, and the first thing to prove is `zero_mul`.
 Like `zero_add`, we of course prove it by induction.
 "
 
+/-- For all natural numbers $m$, we have $ 0 \cdot m = 0$. -/
 Statement MyNat.zero_mul
-"For all natural numbers $m$, we have $ 0 \\cdot m = 0$."
     (m : ℕ) : 0 * m = 0 := by
   induction m
   · rw [mul_zero]

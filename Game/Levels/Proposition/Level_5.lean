@@ -22,9 +22,9 @@ We don't know whether $P$, $Q$ are true or false, so initially
 this seems like a bit of a tall order. But let's give it a go.
 "
 
+/--For any propositions $P$ and $Q$, we always have
+$P\implies(Q\implies P)$.-/
 Statement
-"For any propositions $P$ and $Q$, we always have
-$P\\implies(Q\\implies P)$."
     (P Q : Prop) : P → (Q → P) := by
   Hint "Our goal is `P → X` for some true/false statement $X$, and if our
   goal is to construct an implication then we almost always want to use the

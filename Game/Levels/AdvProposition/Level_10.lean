@@ -17,10 +17,9 @@ constructive logic).
 
 "
 
+/--If $P$ and $Q$ are true/false statements, then
+$$(\lnot Q\implies \lnot P)\implies(P\implies Q).$$-/
 Statement
-"If $P$ and $Q$ are true/false statements, then
-$$(\\lnot Q\\implies \\lnot P)\\implies(P\\implies Q).$$
-"
     (P Q : Prop) : (¬ Q → ¬ P) → (P → Q) := by
   Hint "For example, you could start as always with
 

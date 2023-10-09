@@ -26,8 +26,8 @@ element $x\\in X$ and then, perhaps using $x$, make an element of $Y$.
 The Lean tactic for \"let $x\\in X$ be arbitrary\" is `intro x`.
 "
 
+/--We define a function from ℕ to ℕ.-/
 Statement
-"We define a function from ℕ to ℕ."
     : ℕ → ℕ := by
   Hint "To solve this goal,
   you have to come up with a function from `ℕ`

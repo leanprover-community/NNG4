@@ -15,10 +15,10 @@ Look in your inventory to see the proofs you have available.
 These should be enough.
 "
 
-Statement MyNat.add_comm
-"On the set of natural numbers, addition is commutative.
+/-- On the set of natural numbers, addition is commutative.
 In other words, for all natural numbers $a$ and $b$, we have
-$a + b = b + a$."
+$a + b = b + a$. -/
+Statement MyNat.add_comm
     (a b : ℕ) : a + b = b + a := by
   Hint (hidden := true) "You might want to start by induction."
   Branch

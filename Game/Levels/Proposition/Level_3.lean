@@ -37,8 +37,8 @@ and so it's clear how to deduce $U$ from $P$.
 
 "
 
+/--In the maze of logical implications above, if $P$ is true then so is $U$.-/
 Statement
-"In the maze of logical implications above, if $P$ is true then so is $U$."
     (P Q R S T U: Prop) (p : P) (h : P → Q) (i : Q → R)
     (j : Q → T) (k : S → T) (l : T → U) : U := by
   Hint "Indeed, we could solve this level in one move by typing

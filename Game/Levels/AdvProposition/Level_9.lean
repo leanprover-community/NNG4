@@ -19,9 +19,9 @@ then after `rw not_iff_imp_false at h,` you can `apply h,` to make progress.
 Try solving this level without using `cc` or `tauto`, but using `exfalso` instead.
 "
 
+/--If $P$ and $Q$ are true/false statements, then
+$$(P\land(\lnot P))\implies Q.$$-/
 Statement --contra
-"If $P$ and $Q$ are true/false statements, then
-$$(P\\land(\\lnot P))\\implies Q.$$"
   (P Q : Prop) : (P ∧ ¬ P) → Q := by
   Hint "Start as usual with `intro ⟨p, np⟩`."
   Branch

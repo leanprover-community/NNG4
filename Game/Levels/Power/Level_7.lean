@@ -12,8 +12,8 @@ Introduction
 Boss level! What will the collectible be?
 "
 
+/-- For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$. -/
 Statement MyNat.pow_pow
-"For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$."
     (a m n : ℕ) : (a ^ m) ^ n = a ^ (m * n) := by
   induction n with t Ht
   · rw [mul_zero, pow_zero, pow_zero]
