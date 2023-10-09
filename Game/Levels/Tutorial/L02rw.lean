@@ -22,8 +22,9 @@ using the `rw` tactic.
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "You can execute `rw [h]` to replace the `y` with `x + 7`."
+  Hint "First execute `rw [h]` to replace the `y` with `x + 7`."
   rw [h]
+  Hint "Can you take it from here? Click on \"Show more help!\" if you need a hint."
   Hint (hidden := true) "Now `rfl` will work."
   rfl
 
@@ -121,7 +122,9 @@ then `rw [h1] at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
 NewTactic rw
 
 Conclusion
+"You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey.
 "
+/-
 You can now press on by clicking \"Next\", but if you want to inspect the
 proof you just created, toggle \"Editor mode\" by clicking
 on the `</>` button in the top right. In editor mode,
@@ -131,4 +134,4 @@ click the button again (it now displays `>_`).
 
 In editor mode, note that each tactic is written on a new line and Lean is sensitive
 to indentation (i.e. there must be no spaces before any of the tactics).
-"
+-/

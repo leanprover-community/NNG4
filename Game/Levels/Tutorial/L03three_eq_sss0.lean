@@ -10,9 +10,6 @@ namespace MyNat
 
 Introduction
 "
-
-Now you know some tactics, let's begin the game.
-
 ## The birth of number.
 
 Numbers in Lean are defined by two rules.
@@ -32,12 +29,10 @@ This gives us plenty of numbers to be getting along with.
 The *proof* that `3 = succ 2` is called `three_eq_succ_two`.
 Check out the \"numerals\" tab in the list of lemmas on the right.
 "
-/-- $3=\operatorname{succ}(\operatorname{succ}(\operatorname{succ}(0)))$. -/
+/-- $3$ is the number after the number after the number after $0$. -/
 Statement
     : 3 = succ (succ (succ 0)) := by
-  Hint "Rewrite the lemmas in the *numerals* section on the right to break `3` down into
-  basic pieces."
-  Hint (hidden := true) "Start with `rw [three_eq_succ_two]`"
+  Hint "Start with `rw [three_eq_succ_two]` to begin to break `3` down."
   rw [three_eq_succ_two]
   Hint (hidden := true) "If you're in a hurry, try `rw [two_eq_succ_one, one_eq_succ_zero]`."
   rw [two_eq_succ_one]

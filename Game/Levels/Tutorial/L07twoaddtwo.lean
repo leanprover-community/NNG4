@@ -1,9 +1,9 @@
 import Game.Metadata
 import Game.MyNat.Addition
-import Game.Levels.Tutorial.L05add_succ
+import Game.Levels.Tutorial.L06add_succ
 
 World "Tutorial"
-Level 6
+Level 7
 Title "2+2=4"
 
 Introduction
@@ -41,7 +41,7 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
-NewTactic nth_rewrite
+NewHiddenTactic nth_rewrite
 
 Conclusion
 "

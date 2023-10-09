@@ -2,8 +2,9 @@ import Game.Levels.Tutorial.L01rfl
 import Game.Levels.Tutorial.L02rw
 import Game.Levels.Tutorial.L03three_eq_sss0
 import Game.Levels.Tutorial.L04add_zero
-import Game.Levels.Tutorial.L05add_succ
-import Game.Levels.Tutorial.L06twoaddtwo
+import Game.Levels.Tutorial.L05add_zero2
+import Game.Levels.Tutorial.L06add_succ
+import Game.Levels.Tutorial.L07twoaddtwo
 /-!
 
 # Tutorial world

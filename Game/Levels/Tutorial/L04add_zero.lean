@@ -1,7 +1,6 @@
 import Game.Metadata
 import Game.MyNat.Addition
 
-
 World "Tutorial"
 Level 4
 Title "Adding zero"
@@ -24,23 +23,22 @@ Let's start with adding `0`.
 
 To make addition agree with our intuition, we should *define* `37 + 0`
 to be `37`. More generally, we should define `a + 0` to be `a` for
-any number `a`. The name of this hypothesis in Lean is `add_zero a`.
+any number `a`. The name of this proof in Lean is `add_zero a`.
 
 * `add_zero 37 : 37 + 0 = 37`
 
 * `add_zero a : a + 0 = a`
 
-You can think of `add_zero` as a function which eats a number, and spits
-out a proof about that number.
+*` add_zero : ? + 0 = ?`
 "
 
 namespace MyNat
 
 /-- $a+(b+0)+(c+0)=a+b+c.$ -/
 Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
-  Hint "`rw [add_zero b]` will change `b + 0` into `b`."
-  repeat rw [add_zero b]
-  Hint "`rw [add_zero]` will change `? + 0` into `?` for the first value of `?` which works."
+  Hint "`rw [add_zero]` will change `b + 0` into `b`."
+  rw [add_zero b]
+  Hint "Now `rw [add_zero]` will change `c + 0` into `c`."
   rw [add_zero]
   rfl
 
@@ -62,14 +60,23 @@ LemmaTab "Add"
 LemmaDoc MyNat.add_zero as "add_zero" in "Add"
 "`add_zero a` is a proof that `a + 0 = a`.
 
-You can think of `add_zero` as a function, which
+## Summary
+
+`add_zero` is really a function, which
 eats a number, and returns a proof of a theorem
 about that number. For example `add_zero 37` is
 a proof that `37 + 0 = 37`.
 
+The `rw` tactic will accept `rw [add_zero]`
+and will try to figure out which number you omitted
+to input.
+
+## Details
+
 A mathematician sometimes thinks of `add_zero`
 as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$.
-This is just a different way of thinking about the same concept."
+This is just another way of saying that it's a function which
+can eat any number n and will return a proof that `n + 0 = n`."
 
 NewLemma MyNat.add_zero
 
@@ -88,11 +95,8 @@ into the goal
 `a = b`.
 "
 
--- **DEPLOY_TODO** hide `repeat` from the user if possible?
-NewTactic «repeat»
+NewHiddenTactic «repeat»
 
 Conclusion "Those of you interested in speedrunning the game may want to know
 that `repeat rw [add_zero]` will do both rewrites at once.
-
-Let's now learn about Peano's second axiom for addition, `add_succ`.
 "

@@ -1,8 +1,9 @@
 import Game.Metadata
 import Game.MyNat.Addition
 import Game.Levels.Tutorial.L03three_eq_sss0
+
 World "Tutorial"
-Level 5
+Level 6
 Title "add_succ"
 
 Introduction
@@ -16,8 +17,8 @@ Let's add this as a hypothesis.
 
 * `add_succ x d : x + succ d = succ (x + d)`
 
-If you ever see `... + succ ...` in your goal, `rw [add_succ]` should
-make progress.
+If you ever see `... + succ ...` in your goal, `rw [add_succ]` is
+normally a good idea.
 
 Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into
 the picture, and then `rw [add_succ]`. Use the Add and Numeral tabs to
@@ -39,7 +40,9 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   rw [one_eq_succ_zero]
   Hint (hidden := true) "Now you can `rw [add_succ]`"
   rw [add_succ]
+  Hint (hidden := true) "And now `rw [add_zero]`"
   rw [add_zero]
+  Hint (hidden := true) "And finally `rfl`."
   rfl
 
 LemmaTab "Add"
