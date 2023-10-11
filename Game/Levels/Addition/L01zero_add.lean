@@ -82,7 +82,7 @@ the second has an assumption `hd : 0 + d = d` and goal
 `0 + succ d = succ d`.
 
 Note that you must prove the first
-goal before being able to access the second one.
+goal before you can access the second one.
 "
 NewTactic induction
 

@@ -33,9 +33,9 @@ i.e. you have a formula for it, then you can just write `exact <formula>`
 and this will close the goal.
 "
 
-/-- If $P$ is true, and $P\\implies Q$ is also true, then $Q$ is true. -/
+/-- Given an element of $P$, and a function from $P$ to $Q$, one can get an element of $Q$. -/
 Statement
-    (P Q : Prop) (p : P) (h : P → Q) : Q := by
+    (P Q : Type) (p : P) (h : P → Q) : Q := by
   Hint
   "In this situation, we have sets $P$ and $Q$ (but Lean calls them types),
   and an element $p$ of $P$ (written `p : P`

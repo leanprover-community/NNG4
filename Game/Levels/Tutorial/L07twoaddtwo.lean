@@ -6,6 +6,8 @@ World "Tutorial"
 Level 7
 Title "2+2=4"
 
+LemmaTab "numerals"
+
 Introduction
 " Good luck!
 
@@ -48,9 +50,11 @@ Conclusion
 
   Here is an example proof showing off various techniques. You can copy
   and paste it directly into Lean if you switch into editor mode, and then
-  you can inspect it by clicking around within the proof.
+  you can inspect it by clicking around within the proof or moving your cursor
+  down the lines.
   Click on `</>` and `>_` in the top right to switch between editor mode
-  and command line mode.
+  and command line mode. Switch back to command line mode
+  when you've finished, if you prefer to see hints.
 
 ```lean
 nth_rewrite 2 [two_eq_succ_one]
