@@ -9,13 +9,15 @@ c) If x + z = y + z then x = y and comm version
 ## Algorithm world
 
 Optional. Learn about automating proofs with `simp` and/or `ac_rfl`.
+
 Note : `add_add_add_comm` is needed for isEven_add_isEven
 and also in power world with pow_add I think it was,
 and also if you choose a lousy variable
 to induct on in one of mul_add/add_mul (the
 one you don't prove via comm)
 
-But we should make `ac_rfl`.
+Where does a reduction tactic which turns all numerals
+into succ succ succ 0 live? Here or functional program world?
 
 **TODO** Aesop levels. Tutorial about how to get aesop proving...something.
 

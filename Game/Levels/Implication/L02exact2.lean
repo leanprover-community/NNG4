@@ -1,9 +1,8 @@
-import Game.Levels.Addition
-import Game.MyNat.AdvAddition
+import Game.Levels.Implication.L01exact
 
-World "AdvAddition"
+World "Implication"
 Level 2
-Title "`assumption` practice."
+Title "`exact` practice."
 
 namespace MyNat
 
@@ -14,6 +13,13 @@ use rewrites to fix things up."
 Statement (x : ℕ) (h : 0 + x = 0 + y + 2) : x = y + 2 := by
   Hint "Rewrite `zero_add` at `h` twice, to change `h` into the goal."
   repeat rw [zero_add] at h
-  Hint "Now you could finish with `rw [h]` then `rfl`, but `assumption`
+  Hint "Now you could finish with `rw [h]` then `rfl`, but `exact h`
   does it in one line."
-  assumption
+  exact h
+
+Conclusion "Here's a two-line proof:
+```
+repeat rw [zero_add] at h
+exact h
+```
+"

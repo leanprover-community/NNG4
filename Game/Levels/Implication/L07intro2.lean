@@ -1,7 +1,6 @@
-import Game.Levels.Addition
-import Game.MyNat.AdvAddition
+import Game.Levels.Implication.L06intro
 
-World "AdvAddition"
+World "Implication"
 Level 7
 Title "intro practice"
 
@@ -21,8 +20,5 @@ Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
   repeat rw [← succ_eq_add_one] at h
   Hint (hidden := true) "Now `apply succ_inj at h` to cancel the `succ`s."
   apply succ_inj at h
-  Hint (hidden := true) "Now `rw [h]` then `rfl` works, but `assumption` is quicker."
-  assumption
-
-Conclusion "These worlds have been a tutorial on our new tactics. Now let's use them
-to prove some more fundamental facts about the naturals which we will need in later worlds."
+  Hint (hidden := true) "Now `rw [h]` then `rfl` works, but `exact h` is quicker."
+  exact h

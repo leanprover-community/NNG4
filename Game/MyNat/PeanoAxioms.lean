@@ -1,4 +1,4 @@
-import Game.MyNat.Addition
+import Game.MyNat.Definition
 import Mathlib.Tactic
 
 namespace MyNat

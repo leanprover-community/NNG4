@@ -1,7 +1,6 @@
-import Game.Levels.Addition
-import Game.MyNat.AdvAddition
+import Game.Levels.Implication.L02exact2
 
-World "AdvAddition"
+World "Implication"
 Level 3
 Title "The `apply` tactic."
 
@@ -46,5 +45,5 @@ hypothesis with the `apply` tactic.
 Statement (x y : ℕ) (h : x = 37) (imp : x = 37 → y = 42) : y = 42 := by
   Hint "Start with `apply imp at h`. This will change `h` to `y = 42`."
   apply imp at h
-  Hint "Now finish with `assumption`."
-  assumption
+  Hint "Now finish using `exact`."
+  exact h

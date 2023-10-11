@@ -1,9 +1,10 @@
-import Game.Levels.Addition
-import Game.MyNat.AdvAddition
+import Game.Levels.Implication.L04succ_inj
 
-World "AdvAddition"
+World "Implication"
 Level 5
 Title "Arguing backwards"
+
+LemmaTab "Peano"
 
 namespace MyNat
 
@@ -27,8 +28,11 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   Hint "Now rewrite `four_eq_succ_three` backwards to make the goal
   equal to the hypothesis."
   rw [← four_eq_succ_three]
-  Hint "You can now finish with `assumption`."
-  assumption
+  Hint "You can now finish with `exact h`."
+  exact h
 
 Conclusion "Many people find `apply t at h` easy, but some find `apply t` confusing.
-If you find it confusing, then just argue forwards."
+If you find it confusing, then just argue forwards.
+
+You can read more about the `apply` tactic in its documentation, which you can view by
+clicking on the tactic in the list on the right."

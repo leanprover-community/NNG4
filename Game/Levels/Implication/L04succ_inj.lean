@@ -1,7 +1,6 @@
-import Game.Levels.Addition
-import Game.MyNat.AdvAddition
+import Game.Levels.Implication.L03apply
 
-World "AdvAddition"
+World "Implication"
 Level 4
 Title "succ_inj : the successor function is injective"
 
@@ -66,7 +65,7 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   apply succ_inj at h
   Hint "Now finish in one line."
   Hint (hidden := true) "And now we've deduced what we wanted to prove: the goal is one of our assumptions.
-  Finish the level with `assumption`."
-  assumption
+  Finish the level with `exact h`."
+  exact h
 
 Conclusion "In the next level, we'll do the same proof but backwards."

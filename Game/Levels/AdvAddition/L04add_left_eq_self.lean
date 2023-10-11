@@ -1,7 +1,7 @@
-import Game.Levels.AdvAddition.L09add_left_cancel
+import Game.Levels.AdvAddition.L03add_left_cancel
 
 World "AdvAddition"
-Level 10
+Level 4
 Title "add_left_eq_self"
 
 namespace MyNat
@@ -25,18 +25,19 @@ Statement add_left_eq_self (x y : ℕ) : x + y = y → x = 0 := by
   intro h
   nth_rewrite 2 [← zero_add y] at h
   apply add_right_cancel at h
-  assumption
+  exact h
 
 Conclusion "Did you use induction on `y`?
 Here's a proof of `add_left_eq_self` which uses `add_right_cancel`.
 If you want to inspect it, you can go into editor mode by clicking `</>` in the top right
 and then just cut and paste the proof and move your cursor around it
-(although you'll lose your own proof this way if you're not careful). Click `>_` to get
+to see the hypotheses and goal at any given point
+(although you'll lose your own proof this way). Click `>_` to get
 back to command line mode.
 ```
 intro h
 nth_rewrite 2 [← zero_add y] at h
 apply add_right_cancel at h
-assumption
+exact h
 ```
 "
