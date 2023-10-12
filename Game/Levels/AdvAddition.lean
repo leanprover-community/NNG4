@@ -13,7 +13,7 @@ Title "Advanced Addition World"
 Introduction
 "
 In Advanced Addition World we will prove some basic
-addition facts such as $x+y=x\implies y=0$. They will
+addition facts such as $x+y=x\\implies y=0$. They will
 all involve implications.
 
 Click on \"Start\" to proceed.
