@@ -16,6 +16,8 @@ import Game.Levels.AdvAddition
 --import Game.Levels.Prime
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
+--import Game.Levels.FunctionalProgram
+--import Game.Levels.Algorithm
 
 -- Here's what we'll put on the title screen
 Title "Natural Number Game"
