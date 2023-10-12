@@ -1,4 +1,3 @@
-import Game.Levels.Implication
 import Game.Levels.AdvAddition.L01ne_succ_self
 import Game.Levels.AdvAddition.L02add_right_cancel
 import Game.Levels.AdvAddition.L03add_left_cancel

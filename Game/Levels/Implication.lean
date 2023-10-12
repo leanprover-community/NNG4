@@ -1,5 +1,3 @@
-import Game.Levels.Addition
-import Game.MyNat.PeanoAxioms -- `zero_ne_succ` and `succ_inj`
 import Game.Levels.Implication.L01exact
 import Game.Levels.Implication.L02exact2
 import Game.Levels.Implication.L03apply

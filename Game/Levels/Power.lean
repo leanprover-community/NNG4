@@ -1,4 +1,3 @@
-import Game.Levels.Multiplication
 import Game.Levels.Power.L01zero_pow_zero
 import Game.Levels.Power.L02zero_pow_succ
 import Game.Levels.Power.L03pow_one
