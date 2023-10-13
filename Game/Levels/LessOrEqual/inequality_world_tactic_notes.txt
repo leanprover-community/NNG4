@@ -14,7 +14,7 @@ leevl 8 not P = P -> false (no explanation of false?)
 Advanced Prop world ;
 level 1 split
 level 2 rcases
-(for and) 
+(for and)
 (note that level 1 is now consructor)
 level 6 left and right
 level 9 exfalso (because \not is involved)
@@ -22,3 +22,11 @@ level 10 by_cases
 
 Advanced addition world: start with level 0 exact
 level 1 apply
+
+TODO in this game:
+have
+split
+rcases
+left
+right
+by_cases? exfalso?

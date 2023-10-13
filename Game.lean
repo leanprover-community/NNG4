@@ -10,9 +10,9 @@ import Game.Levels.Multiplication
 import Game.Levels.Power
 import Game.Levels.Implication
 import Game.Levels.AdvAddition
+import Game.Levels.LessOrEqual
 --import Game.Levels.AdvMultiplication
 --import Game.Levels.EvenOdd
---import Game.Levels.Inequality
 --import Game.Levels.Prime
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
@@ -102,5 +102,5 @@ Dependency Addition → Multiplication → Power
 --Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
 --Dependency Multiplication → AdvMultiplication
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
-Dependency Addition → Implication → AdvAddition
+Dependency Addition → Implication → AdvAddition → LessOrEqual
 MakeGame
