@@ -14,8 +14,11 @@ how to prove `a ≤ b` is to `use b - a`. See how you get on with this level,
 which proves that every number in the game is at least 0.
 "
 
-/-- If $x$ is a number, then $0 \\le x$. -/
-Statement le_refl (x : ℕ) : 0 ≤ x := by
+LemmaDoc MyNat.zero_le as "zero_le" in "≤" "
+`zero_le x` is a proof that `0 ≤ x`."
+
+/-- If $x$ is a number, then $0 \le x$. -/
+Statement zero_le (x : ℕ) : 0 ≤ x := by
   use x
   rw [zero_add]
   rfl
