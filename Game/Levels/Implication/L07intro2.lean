@@ -22,3 +22,12 @@ Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
   apply succ_inj at h
   Hint (hidden := true) "Now `rw [h]` then `rfl` works, but `exact h` is quicker."
   exact h
+
+Conclusion "Here's a completely backwards proof:
+```
+intro h
+repeat rw [succ_eq_add_one]
+apply succ_inj
+exact h
+```
+"

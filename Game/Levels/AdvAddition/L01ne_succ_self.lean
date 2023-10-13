@@ -1,4 +1,4 @@
-import Game.Levels.Implication.L11two_add_two_ne_five
+import Game.Levels.Implication
 
 World "AdvAddition"
 Level 1

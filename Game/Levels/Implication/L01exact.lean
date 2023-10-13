@@ -21,9 +21,16 @@ then `exact h` will solve the goal.
 
 If the goal is `x + 0 = x` then `exact add_zero x` will close the goal.
 
-Note that `exact add_zero` will *not work*; the proof has to be exactly
-a proof of the goal. `add_zero` is a proof of `∀ n, n + 0 = n` or, if you like,
-a proof of `? + 0 = ?` where `?` is yet to be supplied.
+### Exact needs to be exactly right
+
+Note that `exact add_zero` will *not work* in the previous example;
+for `exact h` to work, `h` has to be *exactly* a proof of the goal.
+`add_zero` is a proof of `∀ n, n + 0 = n` or, if you like,
+a proof of `? + 0 = ?` where `?` needs to be supplied by the user.
+This is in contrast to `rw` and `apply`, which will \"guess the inputs\"
+if necessary. If the goal is `x + 0 = x` then `rw [add_zero]`
+and `rw [add_zero x]` will both change the goal to `x = x`,
+because `rw` guesses the input to the function `add_zero`.
 "
 
 NewTactic exact

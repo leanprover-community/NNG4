@@ -21,17 +21,15 @@ The `contradiction` tactic will solve any goal, if you have a hypothesis `h : Fa
 "
 NewTactic contradiction
 
-LemmaDoc MyNat.eq_zero_of_add_eq_zero_right as "eq_zero_of_add_eq_zero_right" in "Add" "
+LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in "Add" "
   A proof that $a+b=0 \\implies a=0$.
 "
-
--- **TODO** `symm` tactic
 
 -- **TODO** why `add_eq_zero_right` and not `add_right_eq_zero`?
 -- https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/eq_zero_of_add_eq_zero_right/near/395716874
 
 /-- If $a+b=0$ then $a=0$. -/
-Statement eq_zero_of_add_eq_zero_right (a b : ℕ) : a + b = 0 → a = 0 := by
+Statement eq_zero_of_add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
   Hint "We want to deal with the cases `b = 0` and `b ≠ 0` separately, so start with `induction b with d hd`
   but just ignore the inductive hypothesis in the `succ d` case :-)"
   induction b with d _ -- don't even both naming inductive hypo

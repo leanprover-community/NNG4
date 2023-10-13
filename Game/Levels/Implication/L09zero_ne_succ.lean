@@ -34,8 +34,10 @@ NewLemma MyNat.zero_ne_succ MyNat.zero_ne_one
 Statement zero_ne_one : (0 : ℕ) ≠ 1 := by
   Hint "Start with `intro h`."
   intro h
+  Hint "Now change `1` to `succ 0` in `h`."
   rw [one_eq_succ_zero] at h  -- **TODO** this line is not needed :-/
+  Hint "Now you can `apply zero_ne_succ at h`."
   apply zero_ne_succ at h -- **TODO** cripple `apply`.
   exact h
 
-Conclusion "Remember, `x ≠ y` is *notation* for `x = y → false`"
+Conclusion "Nice!"

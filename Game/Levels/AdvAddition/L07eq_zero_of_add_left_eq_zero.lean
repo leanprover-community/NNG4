@@ -4,7 +4,7 @@ World "AdvAddition"
 Level 7
 Title "eq_zero_of_add_left_eq_zero"
 
-LemmaTab "Peano"
+LemmaTab "Add"
 
 namespace MyNat
 
@@ -13,22 +13,20 @@ Introduction
 of using it.
 "
 
-LemmaDoc MyNat.eq_zero_of_add_eq_zero_left as "eq_zero_of_add_eq_zero_left" in "Add" "
+LemmaDoc MyNat.eq_zero_of_add_left_eq_zero as "eq_zero_of_add_left_eq_zero" in "Add" "
   A proof that $a+b=0 \\implies b=0$.
 "
 
--- **TODO** why `add_eq_zero_right` and not `add_right_eq_zero`?
-
 /-- If $a+b=0$ then $b=0$. -/
-Statement eq_zero_of_add_eq_zero_left (a b : ℕ) : a + b = 0 → b = 0 := by
+Statement eq_zero_of_add_left_eq_zero (a b : ℕ) : a + b = 0 → b = 0 := by
   rw [add_comm]
-  exact eq_zero_of_add_eq_zero_right b a
+  exact eq_zero_of_add_right_eq_zero b a
 
 Conclusion "How about this for a proof:
 
 ```
 rw [add_comm]
-exact eq_zero_of_add_eq_zero_right b a
+exact eq_zero_of_add_left_eq_zero b a
 ```
 
 You're now ready for LessThanOrEqual World.

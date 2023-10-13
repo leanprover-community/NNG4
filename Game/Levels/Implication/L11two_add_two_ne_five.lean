@@ -9,9 +9,9 @@ LemmaTab "Peano"
 namespace MyNat
 
 Introduction
-" 2 + 2 ≠ 5 is really boring to prove, given the tools we have. To make it a lot less
-painful, I have unfolded all of the numerals. See if you can use `zero_ne_succ` and
-`succ_inj` to prove this.
+" 2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.
+To make it a bit less painful, I have unfolded all of the numerals for you.
+See if you can use `zero_ne_succ` and `succ_inj` to prove this.
 "
 
 /-- $2+2≠5$. -/

@@ -16,7 +16,7 @@ tab for more information.
 
 Peano had this theorem as an axiom, but in Functional Programming World
 we will show how to prove it in Lean. Right now let's just assume it,
-and let's solve an equation using it. Again, we will proceed
+and let's prove $x+1=4 \\implies x=3$ using it. Again, we will proceed
 by manipulating our hypothesis until it becomes the goal. I will
 walk you through this level.
 "
@@ -51,7 +51,7 @@ NewLemma MyNat.succ_inj
 
 /-- If $x+1=4$ then $x=3$. -/
 Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
-  Hint "Let's first get `h` into the form `succ x = succ 3.` so we can
+  Hint "Let's first get `h` into the form `succ x = succ 3` so we can
   apply `succ_inj`. First rewrite
   `four_eq_succ_three` at `h` to change the 4 on the right hand side."
   rw [four_eq_succ_three] at h
@@ -60,7 +60,7 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   Hint (hidden := true) "`rw [← succ_eq_add_one] at h`. Look at the
   docs for `rw` for an explanation. Type `←` with `\\l`."
   rw [←succ_eq_add_one] at h
-  Hint "Now let's `apply` our new theorem. Cast `apply succ_inj at h`
+  Hint "Now let's `apply` our new theorem. Execute `apply succ_inj at h`
   to change `h` to a proof of `x = 3`."
   apply succ_inj at h
   Hint "Now finish in one line."

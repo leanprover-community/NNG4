@@ -18,10 +18,10 @@ Introduction
 We've proved that $2+2=4$; in Implication World we'll learn
 how to prove $2+2\\neq 5$.
 
-In Addition World we proved *equalities* like `x + y = y + x`.
+In Addition World we proved *equalities* like $x + y = y + x$.
 In this second tutorial world we'll learn some new tactics,
 enabling us to prove *implications*
-like $x+1=4 \\implies x=3.
+like $x+1=4 \\implies x=3.$
 
 We'll also learn two new fundamental facts about
 natural numbers, which Peano introduced as axioms.

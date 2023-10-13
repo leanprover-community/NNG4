@@ -26,3 +26,11 @@ Statement add_left_cancel (a b n : ℕ) : n + a = n + b → a = b := by
   intro h
   apply add_right_cancel at h
   exact h
+
+Conclusion
+"How about this for a proof:
+```
+repeat rw [add_comm n]
+exact add_right_cancel a b n
+```
+"
