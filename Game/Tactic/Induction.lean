@@ -3,6 +3,10 @@ import Lean.Elab.Tactic.Induction
 import Std.Tactic.OpenPrivate
 import Std.Data.List.Basic
 import Game.MyNat.Definition
+import Lean
+import Std.Tactic.OpenPrivate
+import Std.Data.List.Basic
+import Mathlib.Lean.Expr.Basic
 
 import Mathlib.Lean.Expr.Basic
 
@@ -81,4 +85,33 @@ elab (name := _root_.MyNat.induction) "induction " tgts:(casesTarget,+)
         (numGeneralized := fvarIds.size) (toClear := targetFVarIds)
       setGoals <| (subgoals ++ result.others).toList ++ gs
 
-end Lean.Parser.Tactic
+open private getElimNameInfo generalizeTargets generalizeVars from Lean.Elab.Tactic.Induction
+
+/--
+Modified `cases` tactic for this game.
+
+Usage: `cases n with d` if `n : ℕ`; `cases h with h1 h2` if `h : P ∨ Q`; `cases h with c hc`
+if `h : a ≤ b`.
+
+*(This mimics Lean 3 `cases`. The Lean 4 `cases` tactic has a more complex syntax)*
+-/
+elab (name := _root_.MyNat.cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" using " ident)?)
+  withArg:((" with" (ppSpace colGt binderIdent)+)?) : tactic => do
+  let targets ← elabCasesTargets tgts.1.getSepArgs
+  let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
+  g.withContext do
+    let elimInfo ← getElimNameInfo usingArg targets (induction := false)
+    -- I think I might want to say something like "if elimInfo = Mynat.rec then change it to MyNat.rec'"
+    let targets ← addImplicitTargets elimInfo targets
+    let result ← withRef tgts <| ElimApp.mkElimApp elimInfo targets (← g.getTag)
+    let elimArgs := result.elimApp.getAppArgs
+    let targets ← elimInfo.targetsPos.mapM (instantiateMVars elimArgs[·]!)
+    let motive := elimArgs[elimInfo.motivePos]!
+    let g ← generalizeTargetsEq g (← inferType motive) targets
+    let (targetsNew, g) ← g.introN targets.size
+    g.withContext do
+      ElimApp.setMotiveArg g motive.mvarId! targetsNew
+      g.assign result.elimApp
+      let subgoals ← ElimApp.evalNames.MyNat elimInfo result.alts withArg
+         (numEqs := targets.size) (toClear := targetsNew)
+      setGoals <| subgoals.toList ++ gs
