@@ -1,4 +1,5 @@
 import Game.Levels.AdvAddition.L05add_right_eq_self
+import Game.Tactic.Cases
 
 World "AdvAddition"
 Level 6
@@ -67,9 +68,8 @@ LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in
 Statement eq_zero_of_add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
   Hint "We want to deal with the cases `b = 0` and `b ≠ 0` separately, but so start with `induction b with d hd`
   but just ignore the inductive hypothesis in the `succ d` case :-)"
-  cases b with d -- zero not 0
+  cases b with d
   intro h
-  change a + 0 = 0 at h -- **TODO** fix this
   rw [add_zero] at h
   exact h
   intro h
