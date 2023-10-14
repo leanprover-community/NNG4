@@ -3,11 +3,6 @@ import Lean.Elab.Tactic.Induction
 import Std.Tactic.OpenPrivate
 import Std.Data.List.Basic
 import Game.MyNat.Definition
-import Lean
-import Std.Tactic.OpenPrivate
-import Std.Data.List.Basic
-import Mathlib.Lean.Expr.Basic
-
 import Mathlib.Lean.Expr.Basic
 
 
