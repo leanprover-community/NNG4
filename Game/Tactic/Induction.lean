@@ -4,6 +4,7 @@ import Std.Tactic.OpenPrivate
 import Std.Data.List.Basic
 import Game.MyNat.Definition
 import Mathlib.Lean.Expr.Basic
+import Mathlib.Tactic.Cases
 
 namespace MyNat
 
@@ -26,27 +27,9 @@ def rec' {P : ℕ → Prop} (zero : P 0)
 
 end MyNat
 
-namespace Lean.Parser.Tactic
+open Lean Parser Tactic
 open Meta Elab Elab.Tactic
-
-open private getAltNumFields in evalCases ElimApp.evalAlts.go in
-def ElimApp.evalNames.MyNat (elimInfo : ElimInfo) (alts : Array ElimApp.Alt) (withArg : Syntax)
-    (numEqs := 0) (numGeneralized := 0) (toClear : Array FVarId := #[]) :
-    TermElabM (Array MVarId) := do
-  let mut names : List Syntax := withArg[1].getArgs |>.toList
-  let mut subgoals := #[]
-  for { name := altName, mvarId := g, .. } in alts do
-    let numFields ← getAltNumFields elimInfo altName
-    let (altVarNames, names') := names.splitAtD numFields (Unhygienic.run `(_))
-    names := names'
-    let (fvars, g) ← g.introN numFields <| altVarNames.map (getNameOfIdent' ·[0])
-    let some (g, subst) ← Cases.unifyEqs? numEqs g {} | pure ()
-    let (_, g) ← g.introNP numGeneralized
-    let g ← liftM $ toClear.foldlM (·.tryClear) g
-    for fvar in fvars, stx in altVarNames do
-      g.withContext <| (subst.apply <| .fvar fvar).addLocalVarInfoForBinderIdent ⟨stx⟩
-    subgoals := subgoals.push g
-  pure subgoals
+open Mathlib.Tactic
 
 open private getElimNameInfo generalizeTargets generalizeVars in evalInduction in
 
@@ -57,24 +40,50 @@ Usage: `induction n with d hd`.
 
 *(The actual `induction` tactic has a more complex `with`-argument that works differently)*
 -/
-elab (name := _root_.MyNat.induction) "induction " tgts:(casesTarget,+)
-    withArg:((" with " (colGt binderIdent)+)?)
-    : tactic => do
+elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
+    usingArg:((" using " ident)?)
+    withArg:((" with" (ppSpace colGt binderIdent)+)?)
+    genArg:((" generalizing" (ppSpace colGt ident)+)?) : tactic => do
   let targets ← elabCasesTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
-    let elimInfo ← getElimInfo `MyNat.rec'
+    let elimInfo ← getElimNameInfo usingArg targets (induction := true)
+    -- Edit: If `elimInfo.name` is `MyNat.rec` we want to use `MyNat.rec'` instead.
+    -- TODO: This seems extremely hacky. Especially that we need to get the `elimInfo` twice.
+    -- Please improve this.
+    let elimInfo ← match elimInfo.name with
+    | `MyNat.rec =>
+      let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
+        match usingArg.raw with
+        | .node info kind #[] =>
+          -- TODO: How do you construct syntax in a semi-userfriendly way??
+          .node info kind #[.atom info "using", .ident info "MyNat.rec'".toSubstring `MyNat.rec' []]
+        | other => other ⟩
+      let newElimInfo ← getElimNameInfo modifiedUsingArgs targets (induction := false)
+      pure newElimInfo
+    | _ => pure elimInfo
+
     let targets ← addImplicitTargets elimInfo targets
     evalInduction.checkTargets targets
     let targetFVarIds := targets.map (·.fvarId!)
     g.withContext do
+      let genArgs ← if genArg.1.isNone then pure #[] else getFVarIds genArg.1[1].getArgs
       let forbidden ← mkGeneralizationForbiddenSet targets
       let mut s ← getFVarSetToGeneralize targets forbidden
+      for v in genArgs do
+        if forbidden.contains v then
+          throwError ("variable cannot be generalized " ++
+            "because target depends on it{indentExpr (mkFVar v)}")
+        if s.contains v then
+          throwError ("unnecessary 'generalizing' argument, " ++
+            "variable '{mkFVar v}' is generalized automatically")
+        s := s.insert v
       let (fvarIds, g) ← g.revert (← sortFVarIds s.toArray)
-      let result ← withRef tgts <| ElimApp.mkElimApp elimInfo targets (← g.getTag)
-      let elimArgs := result.elimApp.getAppArgs
-      ElimApp.setMotiveArg g elimArgs[elimInfo.motivePos]!.mvarId! targetFVarIds
-      g.assign result.elimApp
-      let subgoals ← ElimApp.evalNames.MyNat elimInfo result.alts withArg
-        (numGeneralized := fvarIds.size) (toClear := targetFVarIds)
-      setGoals <| (subgoals ++ result.others).toList ++ gs
+      g.withContext do
+        let result ← withRef tgts <| ElimApp.mkElimApp elimInfo targets (← g.getTag)
+        let elimArgs := result.elimApp.getAppArgs
+        ElimApp.setMotiveArg g elimArgs[elimInfo.motivePos]!.mvarId! targetFVarIds
+        g.assign result.elimApp
+        let subgoals ← ElimApp.evalNames elimInfo result.alts withArg
+          (numGeneralized := fvarIds.size) (toClear := targetFVarIds)
+        setGoals <| (subgoals ++ result.others).toList ++ gs

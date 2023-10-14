@@ -36,7 +36,7 @@ elab (name := cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" us
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := false)
 
-    -- Edit: If `elimInfo.name` is `MyNat.casesOn` we want to use `MyNat.rec'` instead.
+    -- Edit: If `elimInfo.name` is `MyNat.casesOn` we want to use `MyNat.casesOn'` instead.
     -- TODO: This seems extremely hacky. Especially that we need to get the `elimInfo` twice.
     -- Please improve this.
     let elimInfo ← match elimInfo.name with
@@ -45,7 +45,7 @@ elab (name := cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" us
         match usingArg.raw with
         | .node info kind #[] =>
           -- TODO: How do you construct syntax in a semi-userfriendly way??
-          .node info kind #[.atom info "using", .ident info "MyNat.rec'".toSubstring `MyNat.casesOn' []]
+          .node info kind #[.atom info "using", .ident info "MyNat.casesOn'".toSubstring `MyNat.casesOn' []]
         | other => other ⟩
       let newElimInfo ← getElimNameInfo modifiedUsingArgs targets (induction := false)
       pure newElimInfo
