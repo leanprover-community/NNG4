@@ -1,0 +1,7 @@
+./././Game.lean:106:0: warning: No world introducing right, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing MyNat.succ, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing left, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing MyNat.rfl, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing rcases, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing change, but required by LessOrEqual
+./././Game.lean:106:0: warning: No world introducing sorry, but required by Power
