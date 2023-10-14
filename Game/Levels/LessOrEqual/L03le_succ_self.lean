@@ -10,13 +10,23 @@ LemmaDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
 `le_succ_self x` is a proof that `x ≤ succ x`.
 "
 
-/-- If $x$ is a number, then $x \\le \\mathoperator{succ}(x)$. -/
-Statement le_succ_self (x : ℕ) : x ≤ succ x := by
+/-- If $x$ is a number, then $x \le \operatorname{succ}(x)$. -/
+Statement (x : ℕ) : x ≤ succ x := by
   use 1
   rw [succ_eq_add_one]
   rfl
 
 LemmaTab "≤"
+
+Conclusion "
+Here's a two-liner:
+```
+use 1
+exact succ_eq_add_one x
+```
+
+This works because `succ_eq_add_one x` is a proof of `succ x = x + 1`.
+"
 
 /-
 Introduction
