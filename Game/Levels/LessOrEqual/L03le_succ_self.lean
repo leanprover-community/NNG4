@@ -6,6 +6,10 @@ Title "x ≤ succ x"
 
 namespace MyNat
 
+LemmaDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
+`le_succ_self x` is a proof that `x ≤ succ x`.
+"
+
 /-- If $x$ is a number, then $x \\le \\mathoperator{succ}(x)$. -/
 Statement le_succ_self (x : ℕ) : x ≤ succ x := by
   use 1
