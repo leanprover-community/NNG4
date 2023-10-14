@@ -10,6 +10,8 @@ LemmaDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
 `le_succ_self x` is a proof that `x ≤ succ x`.
 "
 
+NewLemma MyNat.le_succ_self
+
 /-- If $x$ is a number, then $x \le \operatorname{succ}(x)$. -/
 Statement (x : ℕ) : x ≤ succ x := by
   use 1

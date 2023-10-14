@@ -26,6 +26,8 @@ LemmaDoc MyNat.le_total as "le_total" in "≤" "
 `le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
 "
 
+NewLemma MyNat.le_total
+
 /-- If $x \leq y$ and $y \leq z$, then $x \leq z$. -/
 Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   induction y with d hd
