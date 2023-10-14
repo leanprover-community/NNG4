@@ -42,8 +42,8 @@ hypothesis with the `apply` tactic.
 "
 
 /-- If $x=37$ and we know that $x=37\implies y=42$ then we can deduce $y=42$. -/
-Statement (x y : ℕ) (h : x = 37) (imp : x = 37 → y = 42) : y = 42 := by
-  Hint "Start with `apply imp at h`. This will change `h` to `y = 42`."
-  apply imp at h
+Statement (x y : ℕ) (h1 : x = 37) (h2 : x = 37 → y = 42) : y = 42 := by
+  Hint "Start with `apply h2 at h1`. This will change `h1` to `y = 42`."
+  apply h2 at h1
   Hint "Now finish using `exact`."
-  exact h
+  exact h1
