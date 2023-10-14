@@ -15,6 +15,9 @@ which is a warm-up to see if you remember `zero_ne_succ`
 and `succ_inj`, and how to use the `apply` tactic.
 "
 
+LemmaDoc MyNat.ne_succ_self as "ne_succ_self" in "≤" "
+`ne_succ_self n` is the proof that `n ≠ succ n`."
+
 /-- $n\neq\operatorname{succ}(n)$. -/
 Statement ne_succ_self (n : ℕ) : n ≠ succ n := by
   Hint "Start with `induction`."
