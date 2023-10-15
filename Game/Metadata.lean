@@ -8,9 +8,11 @@ import Game.Doc.Tactics
 import Mathlib.Tactic
 
 import Game.Tactic.Induction
+import Game.Tactic.Cases
 import Game.Tactic.Rfl
 import Game.Tactic.Rw
 import Game.Tactic.Apply
+import Game.Tactic.IGiveUp
 -- import Std.Tactic.RCases
 -- import Game.Tactic.Have
 -- import Game.Tactic.LeftRight
