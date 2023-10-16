@@ -8,7 +8,8 @@ import Game.Levels.Addition
 import Game.Levels.Multiplication
 import Game.Levels.Power
 --import Game.Levels.AdvAddition
---import Game.Levels.AdvMultiplication
+import Game.Levels.AdvMultiplication
+import Game.Levls.Division
 --import Game.Levels.EvenOdd
 --import Game.Levels.Inequality
 --import Game.Levels.Prime
@@ -90,7 +91,7 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 -- Here's where we show how to glue the worlds together
 Dependency Addition → Multiplication → Power
 --Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
---Dependency Multiplication → AdvMultiplication
+Dependency Multiplication → AdvMultiplication → Division
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
 
 MakeGame
