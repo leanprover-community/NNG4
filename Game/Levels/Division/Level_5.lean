@@ -1,3 +1,5 @@
+import Game.Levels.AdvMultiplication
+
 World "Division"
 Level 5
 Title "div_a_div_ab"
@@ -19,5 +21,5 @@ Statement
 
 Conclusion
 "
-  
+
 "

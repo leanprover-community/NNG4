@@ -1,3 +1,5 @@
+import Game.Levels.AdvMultiplication
+
 World "Division"
 Level 6
 Title "div_add_right"
