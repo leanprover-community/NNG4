@@ -51,9 +51,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1
+*Game version: 4.1*
 
-#### Recent changes: rewrite of tutorial, addition, multiplication and power world.
+*Recent changes: rewrite of tutorial, addition, multiplication and power world.*
 
 ## Progress saving
 
@@ -97,10 +97,15 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 
 "
 
--- Here's where we show how to glue the worlds together
-Dependency Addition → Multiplication → Power
---Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
---Dependency Multiplication → AdvMultiplication
---Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
-Dependency Addition → Implication → AdvAddition
+-- Here we could add additional connections between the worlds
+-- The game automatically computes connections between worlds based on introduced
+-- tactics and theorems, but for example it cannot detect introduced definitions
+
+-- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
+
+-- Future plan for the game:
+-- Dependency AdvAddition → AdvMultiplication → Inequality → Prime → Hard
+-- Dependency Multiplication → AdvMultiplication
+-- Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
+
 MakeGame
