@@ -57,8 +57,9 @@ Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   rw [four_eq_succ_three] at h
   Hint "Now rewrite `succ_eq_add_one` backwards at `h`
   to get the right hand side."
-  Hint (hidden := true) "`rw [← succ_eq_add_one] at h`. Look at the
-  docs for `rw` for an explanation. Type `←` with `\\l`."
+  Hint "You can put a `←` in front of any theorem provided to `rw` to rewrite
+  the other way around. Look at the docs for `rw` for an explanation. Type `←` with `\\l`."
+  Hint (hidden := true) "Concretely: `rw [← succ_eq_add_one] at h`."
   rw [←succ_eq_add_one] at h
   Hint "Now let's `apply` our new theorem. Execute `apply succ_inj at h`
   to change `h` to a proof of `x = 3`."
