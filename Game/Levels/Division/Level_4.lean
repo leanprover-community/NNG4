@@ -20,12 +20,15 @@ NewLemma MyNat.div_trans
 
 Statement
     (a b c : ℕ) (hab : a ∣ b) (hbc : b ∣ c) : a ∣ c := by
-  match hab, hbc with
-  |⟨k₁, hk₁⟩, ⟨k₂, hk₂⟩ =>
-  -- b = k₁a, c = k₂b
-  rewrite hk₁ at hk₁
-  -- c = k₂k₁a
-  use (k₂ * k₁)
+  Hint "Here, like the last level, you may find `rcases` helpful."
+  rcases hbc with ⟨m, hm⟩
+  rcases hab with ⟨n, rfl⟩
+
+  -- b = na, c = mb
+  -- c = mna
+  Hint "Now, since we are looking show `a ∣ c`, which is an existience hypothesis, a `use` tactic
+  would be a good choice."
+  use (m * n)
   assumption
 
 LemmaTab "∣"

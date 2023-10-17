@@ -20,6 +20,7 @@ NewLemma MyNat.div_refl
 
 Statement
     (n : ℕ) : n ∣ n := by
+  Hint "This is true because `n = n * 1`"
   use 1
   rfl
 
