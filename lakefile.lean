@@ -8,7 +8,7 @@ def LocalGameServer : Dependency := {
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" "6970f10e30f70ecede1042201e9bd1d838ad1934" "server"
+  src := Source.git "https://github.com/leanprover-community/lean4game.git" "main" "server"
 }
 
 /- Choose dependency depending on the environment variable NODE_ENV -/
@@ -26,12 +26,13 @@ open Lean in
 require mathlib from git
   "https://github.com/leanprover-community/mathlib4" @ "7d308680dc444730e84a86c72357ad9a7aea9c4b"
 
-
-
+-- NOTE: We abuse the `trace.debug` option to toggle messages in VSCode on and
+-- off when calling `lake build`. Ideally there would be a better way using `logInfo` and
+-- an option like `lean4game.verbose`.
 package Game where
-  moreLeanArgs := #["-Dtactic.hygienic=false", "--quiet"]
-  moreServerArgs := #["-Dtactic.hygienic=false", "--quiet"]
-  weakLeanArgs := #["--quiet"]
+  moreLeanArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=false", "-Dtrace.debug=false"]
+  moreServerArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=true", "-Dtrace.debug=true"]
+  weakLeanArgs := #[]
 
 @[default_target]
 lean_lib Game
