@@ -19,19 +19,17 @@ open Lean in
   modifyEnv (fun env => Lake.packageDepAttr.ext.addEntry env gameServerName)
    : Elab.Command.CommandElabM Unit)
 
--- require mathlib from git
---   "https://github.com/leanprover-community/mathlib4" @ "88e129706828e01b7622d6635af1ca6667e25bac"
-
--- `Game` fix:
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4" @ "7d308680dc444730e84a86c72357ad9a7aea9c4b"
+  "https://github.com/leanprover-community/mathlib4" @ "v4.1.0"
 
 -- NOTE: We abuse the `trace.debug` option to toggle messages in VSCode on and
 -- off when calling `lake build`. Ideally there would be a better way using `logInfo` and
 -- an option like `lean4game.verbose`.
 package Game where
-  moreLeanArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=false", "-Dtrace.debug=false"]
-  moreServerArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=true", "-Dtrace.debug=true"]
+  moreLeanArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=false",
+    "-Dtrace.debug=false"]
+  moreServerArgs := #["-Dtactic.hygienic=false", "-Dlinter.unusedVariables.funArgs=true",
+    "-Dtrace.debug=true"]
   weakLeanArgs := #[]
 
 @[default_target]
