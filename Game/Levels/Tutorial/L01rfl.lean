@@ -26,8 +26,7 @@ Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
 "
 
 /-- If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$ -/
-Statement
-    (x q : ℕ) : 37 * x + q = 37 * x + q := by
+Statement (x q : ℕ) : 37 * x + q = 37 * x + q := by
   Hint "In order to use the tactic `rfl` you can enter it in the text box
   under the goal and hit \"Execute\"."
   rfl

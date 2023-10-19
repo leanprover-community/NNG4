@@ -21,6 +21,10 @@ using the `rw` tactic.
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
 Statement
     (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
+  Branch
+    nth_rewrite 1 [h]
+  Branch
+    repeat rw [h]
   Hint "First execute `rw [h]` to replace the `y` with `x + 7`."
   rw [h]
   Hint "Can you take it from here? Click on \"Show more help!\" if you need a hint."
@@ -126,8 +130,6 @@ If you only want to change the 37th occurrence of `X`
 to `Y` then do `nth_rewrite 37 [h]`.
 "
 
-NewTactic rw
-
 TacticDoc «repeat» "
 ## Summary
 
@@ -156,6 +158,7 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
+NewTactic rw
 NewHiddenTactic «repeat» nth_rewrite
 
 Conclusion

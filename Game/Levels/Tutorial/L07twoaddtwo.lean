@@ -43,8 +43,6 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
-NewHiddenTactic nth_rewrite
-
 Conclusion
 "
 
