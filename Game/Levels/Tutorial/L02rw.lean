@@ -143,8 +143,6 @@ into the goal
 `a = b`.
 "
 
-NewHiddenTactic «repeat»
-
 TacticDoc nth_rewrite "
 ## Summary
 
@@ -158,7 +156,7 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
-NewHiddenTactic nth_rewrite
+NewHiddenTactic «repeat» nth_rewrite
 
 Conclusion
 "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey.
