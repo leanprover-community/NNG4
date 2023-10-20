@@ -1,4 +1,5 @@
 import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
 
 World "Division"
 Level 7

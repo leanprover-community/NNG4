@@ -1,4 +1,5 @@
 import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
 
 World "Division"
 Level 2
@@ -22,6 +23,7 @@ Statement
     (n : ℕ) : n ∣ n := by
   Hint "This is true because `n = n * 1`"
   use 1
+  rw [mul_one]
   rfl
 
 LemmaTab "∣"

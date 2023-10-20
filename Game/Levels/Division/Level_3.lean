@@ -1,4 +1,5 @@
 import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
 
 World "Division"
 Level 3
@@ -21,12 +22,14 @@ Statement
     (a b : ℕ) (h1 : a ∣ b) (h2 : b ∣ a): a = b := by
   Hint "You will need to expand what `h1` and `h2` atually mean. You may find `rcases` helpful"
   rcases h1 with ⟨c, hc⟩
-  rcases h2 with ⟨d , rfl⟩
+  rcases h2 with ⟨d, hd⟩
   -- need to cancel b's:
-  have : 1 = c * d
-  -- need the fact that if 1 = cd, c = d = 1
-  have : 1 = c
-  rw [this] at hd -- hc : a = b
-  exact hd
+  have hcd : b = b * d * c := by sorry
+  have h1dc : 1 = d * c := by sorry
+  -- need the fact that if 1 = dc, c = d = 1
+  have h1c : 1 = c := by sorry
+  rw [← h1c] at hc -- hc : a = b
+  rw [mul_one] at hc
+  exact Eq.symm hc
 
 LemmaTab "∣"

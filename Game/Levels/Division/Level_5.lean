@@ -1,4 +1,5 @@
 import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
 
 World "Division"
 Level 5
@@ -27,9 +28,7 @@ Statement
   Hint "The goal is pretty trivial now, you just need to figure out the correct sequence of
   rewrites to finish the job."
   rw [hk]
-  rw [mul_assoc k b d]
-  rw [mul_comm b d]
-  rw [mul_assoc k d b]
+  rw [mul_assoc]
   rfl
 
 LemmaTab "∣"

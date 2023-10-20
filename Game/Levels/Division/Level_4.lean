@@ -1,4 +1,5 @@
 import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
 
 World "Division"
 Level 4
@@ -23,12 +24,15 @@ Statement
   Hint "Here, like the last level, you may find `rcases` helpful."
   rcases hbc with ⟨m, hm⟩
   rcases hab with ⟨n, rfl⟩
-
   -- b = na, c = mb
   -- c = mna
   Hint "Now, since we are looking show `a ∣ c`, which is an existience hypothesis, a `use` tactic
   would be a good choice."
   use (m * n)
-  assumption
+  Hint "Now the goal is clear, its just a case of finding the correct rewrites."
+  rw [hm]
+  rw [mul_assoc]
+  rw [mul_comm n m]
+  rfl
 
 LemmaTab "∣"
