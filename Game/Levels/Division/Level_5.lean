@@ -17,16 +17,19 @@ LemmaDoc MyNat.div_a_div_ab as "div_a_div_ab" in "∣" "
 
 NewLemma MyNat.div_a_div_ab
 
+
 Statement
     (d a b : ℕ) (hd : d ∣ a) : d ∣ (a * b) := by
   Hint "You are probably getting the hang of the start of these proofs by now! Try `rcases`."
   rcases hd with ⟨k, hk⟩
-  -- a = kd
   Hint "Since the Goal is an exists statment, `use` will be a good choice."
   use (k * b)
-
+  Hint "The goal is pretty trivial now, you just need to figure out the correct sequence of
+  rewrites to finish the job."
   rw [hk]
-  rw [Nat.add_comm d b]
+  rw [mul_assoc k b d]
+  rw [mul_comm b d]
+  rw [mul_assoc k d b]
   rfl
 
 LemmaTab "∣"

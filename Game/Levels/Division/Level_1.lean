@@ -1,5 +1,5 @@
 import Game.Levels.AdvMultiplication
-
+import Game.MyNat.Division
 
 World "Division"
 Level 1
@@ -22,9 +22,12 @@ LemmaDoc MyNat.one_div as "one_div" in "∣" "
 NewLemma MyNat.one_div
 
 Statement
-    (n : ℕ) : 1 ∣ n := by
+    (n : ℕ) :  1 ∣ n := by
   Hint "The reason `1 ∣ n` is because `n = n * 1`, so you should
   start this proof with `use n`."
   use n
+  Hint "Now "
+  rw [one_mul]
+  rfl
 
 LemmaTab "∣"
