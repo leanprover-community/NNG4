@@ -26,7 +26,7 @@ into `2`.
 Statement : 2 = succ (succ 0) := by
   Hint "Try `rw [← one_eq_succ_zero]` to change `succ 0` into `1`."
   rw [← one_eq_succ_zero]
-  Hint "What next?"
+  Hint "Can you now change the goal into `2 = 2`?"
   Hint (hidden := true) "Now `rw [← two_eq_succ_one]` will change `succ 1` into `2`."
   rw [← two_eq_succ_one]
   rfl
