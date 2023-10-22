@@ -11,10 +11,12 @@ namespace MyNat
 LemmaDoc MyNat.add_succ as "add_succ" in "Add"
 "`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
 
+NewLemma MyNat.add_succ
+
 LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
 "`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 
-NewLemma MyNat.add_succ MyNat.succ_eq_add_one
+NewLemma MyNat.succ_eq_add_one
 
 Introduction
 "
@@ -45,8 +47,6 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   rw [add_zero]
   Hint (hidden := true) "And finally `rfl`."
   rfl
-
-NewLemma MyNat.succ_eq_add_one
 
 LemmaTab "numerals"
 
