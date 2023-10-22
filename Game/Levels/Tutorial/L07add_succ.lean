@@ -6,6 +6,8 @@ World "Tutorial"
 Level 7
 Title "add_succ"
 
+LemmaTab "numerals"
+
 namespace MyNat
 
 LemmaDoc MyNat.add_succ as "add_succ" in "Add"
@@ -47,8 +49,6 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   rw [add_zero]
   Hint (hidden := true) "And finally `rfl`."
   rfl
-
-LemmaTab "numerals"
 
 Conclusion
 "[dramatic music]. Now are you ready to face the first boss of the game?"
