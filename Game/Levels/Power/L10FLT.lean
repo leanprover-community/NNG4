@@ -37,7 +37,7 @@ and which explains how to work with many more mathematical concepts in Lean.
 $$(a+1)^{n+3}+(b+1)^{n+3}\not=(c+1)^{n+3}.$$ -/
 Statement
     (a b c n : ℕ) : (a + 1) ^ (n + 3) + (b + 1) ^ (n + 3) ≠ (c + 1) ^ (n + 3) := by
-  sorry
+  IGiveUp
 
 --NewHiddenTactic IGiveUp
 LemmaTab "Pow"
