@@ -8,10 +8,7 @@ namespace MyNat
 
 Introduction
 "
-Although subtraction doesn't make sense for general numbers in this game
-(because there are no negative numbers in this game), one way of thinking about
-how to prove `a ≤ b` is to `use b - a`. See how you get on with this level,
-which proves that every number in the game is at least 0.
+To solve this level, you need to `use` a number `c` such that `x = 0 + c`.
 "
 
 LemmaDoc MyNat.zero_le as "zero_le" in "≤" "

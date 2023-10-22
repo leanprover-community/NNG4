@@ -2,45 +2,10 @@ import Game.Metadata
 import Game.MyNat.Addition
 
 World "Tutorial"
-Level 4
+Level 5
 Title "Adding zero"
 
-Introduction
-"
-We'd like to prove `2 + 2 = 4` but right now
-we can't even *state* it
-because we haven't yet defined addition.
-
-## Defining addition.
-
-How are we going to add $37$ to an arbitrary number $x$? Well,
-there are only two ways to make numbers in this game: $0$
-and successors. So to define `37 + x` we will need
-to know what `37 + 0` is and what `37 + succ x` is.
-Let's start with adding `0`.
-
-### Adding 0
-
-To make addition agree with our intuition, we should *define* `37 + 0`
-to be `37`. More generally, we should define `a + 0` to be `a` for
-any number `a`. The name of this proof in Lean is `add_zero a`.
-
-* `add_zero 37 : 37 + 0 = 37`
-
-* `add_zero a : a + 0 = a`
-
-*` add_zero : ? + 0 = ?`
-"
-
 namespace MyNat
-
-/-- $a+(b+0)+(c+0)=a+b+c.$ -/
-Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
-  Hint "`rw [add_zero]` will change `b + 0` into `b`."
-  rw [add_zero b]
-  Hint "Now `rw [add_zero]` will change `c + 0` into `c`."
-  rw [add_zero]
-  rfl
 
 DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
 the usual sum of natural numbers. Internally it is defined
@@ -96,6 +61,41 @@ into the goal
 "
 
 NewHiddenTactic «repeat»
+
+Introduction
+"
+We'd like to prove `2 + 2 = 4` but right now
+we can't even *state* it
+because we haven't yet defined addition.
+
+## Defining addition.
+
+How are we going to add $37$ to an arbitrary number $x$? Well,
+there are only two ways to make numbers in this game: $0$
+and successors. So to define `37 + x` we will need
+to know what `37 + 0` is and what `37 + succ x` is.
+Let's start with adding `0`.
+
+### Adding 0
+
+To make addition agree with our intuition, we should *define* `37 + 0`
+to be `37`. More generally, we should define `a + 0` to be `a` for
+any number `a`. The name of this proof in Lean is `add_zero a`.
+
+* `add_zero 37 : 37 + 0 = 37`
+
+* `add_zero a : a + 0 = a`
+
+*` add_zero : ? + 0 = ?`
+"
+
+/-- $a+(b+0)+(c+0)=a+b+c.$ -/
+Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
+  Hint "`rw [add_zero]` will change `b + 0` into `b`."
+  rw [add_zero]
+  Hint "Now `rw [add_zero]` will change `c + 0` into `c`."
+  rw [add_zero]
+  rfl
 
 Conclusion "Those of you interested in speedrunning the game may want to know
 that `repeat rw [add_zero]` will do both rewrites at once.

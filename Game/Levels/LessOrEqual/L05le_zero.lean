@@ -1,7 +1,7 @@
-import Game.Levels.LessOrEqual.L03le_succ_self
+import Game.Levels.LessOrEqual.L04le_trans
 
 World "LessOrEqual"
-Level 4
+Level 5
 Title "x ≤ 0 → x = 0"
 
 namespace MyNat
@@ -11,8 +11,9 @@ LemmaDoc MyNat.le_zero as "le_zero" in "≤" "
 "
 
 Introduction "
-In this level, our inequality is a *hypothesis*. We have not seen this before.
-The `rcases` tactic can be used to take `hx` apart.
+It's \"intuitively obvious\" that there are no numbers less than zero,
+but to prove it you will need a result which you showed in advanced
+addition world.
 "
 
 LemmaDoc MyNat.le_zero as "le_zero" in "≤"
@@ -20,8 +21,6 @@ LemmaDoc MyNat.le_zero as "le_zero" in "≤"
 
 /-- If $x \leq 0$, then $x=0$. -/
 Statement le_zero (x : ℕ) (hx : x ≤ 0) : x = 0 := by
-  Hint "Start with `cases hx with y hy`. You can get the funny pointy brackets with `\\<` and
-  `\\>`, or `\\<>` will give you both at once."
   cases hx with y hy
   Hint "Now `y` is what you have to add to `x` to get `0`, and `hy` is the proof of this."
   Hint (hidden := true) "You want to use `eq_zero_of_add_right_eq_zero`, which you already

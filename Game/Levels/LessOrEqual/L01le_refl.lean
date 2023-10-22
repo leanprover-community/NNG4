@@ -42,7 +42,7 @@ The reason for the name is that this lemma is \"reflexivity of $\\le$\"
 
 NewLemma MyNat.le_refl
 
-/-- If $x$ is a number, then $x \\le x$. -/
+/-- If $x$ is a number, then $x \le x$. -/
 Statement le_refl (x : ℕ) : x ≤ x := by
   Hint "The reason `x ≤ x` is because `x = x + 0`.
   So you should start this proof with `use 0`."

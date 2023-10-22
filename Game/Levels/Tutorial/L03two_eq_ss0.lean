@@ -8,38 +8,6 @@ Title "Numbers"
 
 namespace MyNat
 
-Introduction
-"
-## The birth of number.
-
-Numbers in Lean are defined by two rules.
-
-* `0` is a number.
-* If `n` is a number, then the *successor* `succ n` of `n` is a number.
-
-The successor of `n` means the number after `n`. Let's learn to
-count, and name a few small numbers.
-
-## Counting to four.
-
-`0` is a number, so `succ 0` is a number. Let's call this new number `1`.
-Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
-This gives us plenty of numbers to be getting along with.
-
-The *proof* that `3 = succ 2` is called `three_eq_succ_two`.
-Check out the \"numerals\" tab in the list of lemmas on the right.
-"
-/-- $3$ is the number after the number after the number after $0$. -/
-Statement
-    : 3 = succ (succ (succ 0)) := by
-  Hint "Start with `rw [three_eq_succ_two]` to begin to break `3` down."
-  rw [three_eq_succ_two]
-  Hint (hidden := true) "If you're in a hurry, try `rw [two_eq_succ_one, one_eq_succ_zero]`."
-  rw [two_eq_succ_one]
-  rw [one_eq_succ_zero]
-  Hint (hidden := true) "Now finish the job with `rfl`."
-  rfl
-
 DefinitionDoc MyNat as "ℕ"
 "
 `ℕ` is the natural numbers, just called \"numbers\" in this game. It's
@@ -71,14 +39,44 @@ LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
 NewLemma MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two
   MyNat.four_eq_succ_three
 
+Introduction
+"
+## The birth of number.
+
+Numbers in Lean are defined by two rules.
+
+* `0` is a number.
+* If `n` is a number, then the *successor* `succ n` of `n` is a number.
+
+The successor of `n` means the number after `n`. Let's learn to
+count, and name a few small numbers.
+
+## Counting to four.
+
+`0` is a number, so `succ 0` is a number. Let's call this new number `1`.
+Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
+This gives us plenty of numbers to be getting along with.
+
+The *proof* that `2 = succ 1` is called `two_eq_succ_one`.
+Check out the \"numerals\" tab in the list of lemmas on the right.
+
+Let's prove that $2$ is the number after the number after zero.
+"
+/-- $2$ is the number after the number after $0$. -/
+Statement
+    : 2 = succ (succ 0) := by
+  Hint "Start with `rw [two_eq_succ_one]` to begin to break `2` down into its definition."
+  rw [two_eq_succ_one]
+  Hint "Can you take it from here?"
+  Hint (hidden := true) "Next turn `1` into `succ 0` with `rw [one_eq_succ_zero]`."
+  rw [one_eq_succ_zero]
+  Hint (hidden := true) "Now finish the job with `rfl`."
+  rfl
+
 LemmaTab "numerals"
 
 Conclusion
 "
-Note that you can do
-`rw [three_eq_succ_two, two_eq_succ_one, one_eq_succ_zero]`
+Note that you can do `rw [two_eq_succ_one, one_eq_succ_zero]`
 and then `rfl` to solve this level in two lines.
-
-Why did we not just define `succ n` to be `n + 1`? Because we have not
-even *defined* addition yet! We'll do that in the next level.
 "

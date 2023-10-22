@@ -12,6 +12,9 @@ LemmaDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
 
 NewLemma MyNat.le_succ_self
 
+Introduction "If you `use` the wrong number, you get stuck with a goal you can't prove.
+What number will you `use` here?"
+
 /-- If $x$ is a number, then $x \le \operatorname{succ}(x)$. -/
 Statement le_succ_self (x : ℕ) : x ≤ succ x := by
   use 1

@@ -6,26 +6,9 @@ World "Tutorial"
 Level 2
 Title "the rw tactic"
 
-Introduction
-"
-In this level the *goal* is $2y=2(x+7)$ but to help us we
-have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` in
-your list of assumptions. Lean thinks of `h` as being a secret proof of the
-assumption, rather like `x` is a secret number.
+LemmaTab "numerals"
 
-Before we can use `rfl`, we have to \"substitute in for $y$\".
-We do this in Lean by *rewriting* the proof `h`,
-using the `rw` tactic.
-"
-
-/-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
-Statement
-    (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "First execute `rw [h]` to replace the `y` with `x + 7`."
-  rw [h]
-  Hint "Can you take it from here? Click on \"Show more help!\" if you need a hint."
-  Hint (hidden := true) "Now `rfl` will work."
-  rfl
+namespace MyNat
 
 TacticDoc rw "
 ## Summary
@@ -160,10 +143,34 @@ will change the goal to `succ 1 + succ 1 = 4`.
 
 NewHiddenTactic nth_rewrite
 
+Introduction
+"
+In this level the *goal* is $2y=2(x+7)$ but to help us we
+have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` in
+your list of assumptions. Lean thinks of `h` as being a secret proof of the
+assumption, rather like `x` is a secret number.
+
+Before we can use `rfl`, we have to \"substitute in for $y$\".
+We do this in Lean by *rewriting* the proof `h`,
+using the `rw` tactic.
+"
+
+/-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
+Statement
+    (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
+  Hint "First execute `rw [h]` to replace the `y` with `x + 7`."
+  rw [h]
+  Hint "Can you take it from here? Click on \"Show more help!\" if you need a hint."
+  Hint (hidden := true) "Now `rfl` will work."
+  rfl
+
 Conclusion
 "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey.
 "
 /-
+
+**TODO** where to put this? Not this early.
+
 You can now press on by clicking \"Next\", but if you want to inspect the
 proof you just created, toggle \"Editor mode\" by clicking
 on the `</>` button in the top right. In editor mode,

@@ -1,10 +1,20 @@
 import Game.Metadata
 import Game.MyNat.Addition
-import Game.Levels.Tutorial.L03three_eq_sss0
+import Game.Levels.Tutorial.L03two_eq_ss0
 
 World "Tutorial"
-Level 6
+Level 7
 Title "add_succ"
+
+namespace MyNat
+
+LemmaDoc MyNat.add_succ as "add_succ" in "Add"
+"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
+
+LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
+"`succ_eq_add_one n` is the proof that `succ n = n + 1`."
+
+NewLemma MyNat.add_succ MyNat.succ_eq_add_one
 
 Introduction
 "
@@ -24,15 +34,6 @@ Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into
 the picture, and then `rw [add_succ]`. Use the Add and Numerals tabs to
 switch between lemmas so you can see which proofs you can rewrite.
 "
-namespace MyNat
-
-LemmaDoc MyNat.add_succ as "add_succ" in "Add"
-"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
-
-NewLemma MyNat.add_succ
-
-LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
-"`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 
 /-- For all natural numbers $a$, we have $\operatorname{succ}(a) = a+1$. -/
 Statement succ_eq_add_one n : succ n = n + 1 := by
@@ -45,7 +46,9 @@ Statement succ_eq_add_one n : succ n = n + 1 := by
   Hint (hidden := true) "And finally `rfl`."
   rfl
 
-LemmaTab "Add"
+NewLemma MyNat.succ_eq_add_one
+
+LemmaTab "numerals"
 
 Conclusion
 "[dramatic music]. Now are you ready to face the first boss of the game?"

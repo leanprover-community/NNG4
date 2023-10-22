@@ -2,8 +2,8 @@ import GameServer.Commands
 import Game.Levels.LessOrEqual.L01le_refl
 import Game.Levels.LessOrEqual.L02zero_le
 import Game.Levels.LessOrEqual.L03le_succ_self
-import Game.Levels.LessOrEqual.L04le_zero
-import Game.Levels.LessOrEqual.L05le_trans
+import Game.Levels.LessOrEqual.L04le_trans
+import Game.Levels.LessOrEqual.L05le_zero
 import Game.Levels.LessOrEqual.L06le_antisymm
 import Game.Levels.LessOrEqual.L07le_total
 

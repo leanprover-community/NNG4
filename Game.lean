@@ -46,7 +46,7 @@ Other brand new worlds will also be appearing during October 2023.
 
 ## More
 
-Open \"Game Info\" in the burger menu on the top right for resources,
+Click on the three lines in the top right and select \"Game Info\" for resources,
 links, and ways to interact with the Lean community.
 "
 

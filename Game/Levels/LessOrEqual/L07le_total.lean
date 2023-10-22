@@ -6,6 +6,12 @@ Title "x ≤ y or y ≤ x"
 
 namespace MyNat
 
+LemmaDoc MyNat.le_total as "le_total" in "≤" "
+`le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
+"
+
+NewLemma MyNat.le_total
+
 Introduction "
 This is I think the toughest level yet. We haven't talked about \"or\" at all,
 but here's everything you need to know.
@@ -18,31 +24,26 @@ progress: `left` and `right`. But don't choose a direction unless your
 hypotheses guarantee that it's the right one.
 
 3) If you have an \"or\" statement as a *hypothesis* `h`, then
-`rcases h with (h1 | h2)` will create two goals, one where you went left,
+`cases h with h1 h2` will create two goals, one where you went left,
 and the other where you went right.
 "
-
-LemmaDoc MyNat.le_total as "le_total" in "≤" "
-`le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
-"
-
-NewLemma MyNat.le_total
 
 /-- If $x \leq y$ and $y \leq z$, then $x \leq z$. -/
 Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   induction y with d hd
   right
   exact zero_le x
-  rcases hd with (h1 | h2)
+  cases hd with h1 h2
   left
-  rcases h1 with ⟨e, rfl⟩
+  cases h1 with e h1
+  rw [h1]
   use e + 1
   rw [succ_eq_add_one, add_assoc]
   rfl
-  rcases h2 with ⟨e, rfl⟩
-  rcases e with ⟨f⟩
+  cases h2 with e h2
+  rw [h2]
+  cases e with a
   left
-  change d + 0 ≤ succ d
   rw [add_zero]
   use 1
   exact succ_eq_add_one d

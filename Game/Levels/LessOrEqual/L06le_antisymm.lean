@@ -1,4 +1,4 @@
-import Game.Levels.LessOrEqual.L05le_trans
+import Game.Levels.LessOrEqual.L05le_zero
 
 World "LessOrEqual"
 Level 6
@@ -18,9 +18,10 @@ It's the trickiest one so far. Good luck!
 
 /-- If $x \leq y$ and $y \leq x$, then $x = y$. -/
 Statement le_antisymm (x y : ℕ) (hxy : x ≤ y) (hyx : y ≤ x) : x = y := by
-  rcases hxy with ⟨a, rfl⟩
-  rcases hyx with ⟨b, hb⟩
-  rw [add_assoc] at hb
+  cases hxy with a ha
+  cases hyx with b hb
+  rw [ha]
+  rw [ha, add_assoc] at hb
   symm at hb
   apply add_right_eq_self at hb
   apply eq_zero_of_add_right_eq_zero at hb
@@ -32,9 +33,10 @@ LemmaTab "≤"
 Conclusion "
 Here's my proof:
 ```
-rcases hxy with ⟨a, rfl⟩
-rcases hyx with ⟨b, hb⟩
-rw [add_assoc] at hb
+cases hxy with a ha
+cases hyx with b hb
+rw [ha]
+rw [ha, add_assoc] at hb
 symm at hb
 apply add_right_eq_self at hb
 apply eq_zero_of_add_right_eq_zero at hb

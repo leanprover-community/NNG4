@@ -10,7 +10,7 @@ LemmaTab "Peano"
 namespace MyNat
 
 Introduction
-" We have still not proved that if `a + b = 0` then `a = 0` and `b = 0`. Let's finish this
+" We have still not proved that if `a + b = 0` then `a = 0` and also `b = 0`. Let's finish this
 world by proving one of these in this level, and the other in the next.
 
 ## Two new tactics
@@ -66,8 +66,8 @@ LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in
 
 /-- If $a+b=0$ then $a=0$. -/
 Statement eq_zero_of_add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
-  Hint "We want to deal with the cases `b = 0` and `b ≠ 0` separately, but so start with `induction b with d hd`
-  but just ignore the inductive hypothesis in the `succ d` case :-)"
+  Hint "We want to deal with the cases `b = 0` and `b ≠ 0` separately,
+  so start with `cases b with d`."
   cases b with d
   intro h
   rw [add_zero] at h
