@@ -18,8 +18,6 @@ NewLemma MyNat.add_succ
 LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
 "`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 
-NewLemma MyNat.succ_eq_add_one
-
 Introduction
 "
 Every number in Lean is either 0 or a successor. We know how to add $0$,

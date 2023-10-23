@@ -48,13 +48,7 @@ Statement : (2 : ℕ) + 2 = 4 := by
 
 Conclusion
 "
-Below is an example proof showing off various techniques. You can copy
-and paste it directly into Lean if you switch into editor mode, and then
-you can inspect it by clicking around within the proof or moving your cursor
-down the lines.
-Click on `</>` and `>_` in the top right to switch between editor mode
-and command line mode. Switch back to command line mode
-when you've finished, if you prefer to see hints.
+Here is an example proof of 2+2=4 showing off various techniques.
 
 ```lean
 nth_rewrite 2 [two_eq_succ_one] -- only change the second `2` to `succ 1`.
@@ -65,6 +59,14 @@ rw [← three_eq_succ_two] -- change `succ 2` to `3`
 rw [← four_eq_succ_three]
 rfl
 ```
+
+Optional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking
+on the `</>` button in the top right. You can now see your proof
+written as several lines of code. Move your cursor between lines to see
+the goal state at any point. Now cut and paste your code elsewhere if you
+want to save it, and paste the above proof in instead. Move your cursor
+around to investigate. When you've finished, click the `>_` button to
+move back into command line mode.
 
 You have finished tutorial world! Now let's move onto Addition World,
 and learn the `induction` tactic.

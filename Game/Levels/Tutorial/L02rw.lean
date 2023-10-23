@@ -167,22 +167,3 @@ Statement
 Conclusion
 "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey.
 "
-/-
-
-**TODO** where to put this? Not this early.
-
-You can now press on by clicking \"Next\", but if you want to inspect the
-proof you just created, toggle \"Editor mode\" by clicking
-on the `</>` button in the top right. In editor mode,
-you can click or move your cursor around the proof to see the state of Lean's brain at any point.
-If you want to go back to the default (command line) mode with hints,
-click the button again (it now displays `>_`).
-
-In editor mode, note that each tactic is written on a new line and Lean is sensitive
-to indentation (i.e. there must be no spaces before any of the tactics).
-
-If you are just learning the game, I would recommend staying in command
-line mode in general, because you do not get hints during a level
-in editor mode, and hints are used to teach new tactics.
-"
--/
