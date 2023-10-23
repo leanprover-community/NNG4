@@ -36,7 +36,7 @@ Statement succ_add (a b : ℕ) : succ a + b = succ (a + b)  := by
     rw [add_zero]
     rfl
   · Hint "Note that `succ a + {d}` means `(succ a) + {d}`. Put your cursor
-  on any `succ` in the goal to see what exactly it's eating."
+  on any `succ` in the goal or assumptions to see what exactly it's eating."
     rw [add_succ, add_succ, hd]
     rfl
 

@@ -15,8 +15,6 @@ LemmaDoc MyNat.zero_le as "zero_le" in "≤" "
 `zero_le x` is a proof that `0 ≤ x`.
 "
 
-NewLemma MyNat.zero_le
-
 /-- If $x$ is a number, then $0 \le x$. -/
 Statement zero_le (x : ℕ) : 0 ≤ x := by
   use x

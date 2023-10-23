@@ -77,3 +77,5 @@ Statement eq_zero_of_add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
   symm at h
   apply zero_ne_succ at h
   contradiction
+
+Conclusion "Well done!"

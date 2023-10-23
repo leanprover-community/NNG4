@@ -35,7 +35,7 @@ If `h : 2 + 2 ≠ 5` then `symm at h` will change `h` to `5 ≠ 2 + 2`.
 
 NewTactic symm
 
-/-- $0\neq1$. -/
+/-- $1\neq0$. -/
 Statement : (1 : ℕ) ≠ 0 := by
   symm
   exact zero_ne_one

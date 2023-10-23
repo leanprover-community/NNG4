@@ -40,8 +40,6 @@ LemmaDoc MyNat.le_refl as "le_refl" in "≤" "
 The reason for the name is that this lemma is \"reflexivity of $\\le$\"
 "
 
-NewLemma MyNat.le_refl
-
 /-- If $x$ is a number, then $x \le x$. -/
 Statement le_refl (x : ℕ) : x ≤ x := by
   Hint "The reason `x ≤ x` is because `x = x + 0`.

@@ -22,9 +22,8 @@ LemmaDoc MyNat.le_zero as "le_zero" in "≤"
 /-- If $x \leq 0$, then $x=0$. -/
 Statement le_zero (x : ℕ) (hx : x ≤ 0) : x = 0 := by
   cases hx with y hy
-  Hint "Now `y` is what you have to add to `x` to get `0`, and `hy` is the proof of this."
   Hint (hidden := true) "You want to use `eq_zero_of_add_right_eq_zero`, which you already
-  proved, but you'll have to start with `symm at hy`."
+  proved, but you'll have to start with `symm at` your hypothesis."
   symm at hy
   apply eq_zero_of_add_right_eq_zero at hy
   exact hy

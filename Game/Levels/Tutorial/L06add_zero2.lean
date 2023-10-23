@@ -25,7 +25,7 @@ Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
   rw [add_zero c]
   Hint "`add_zero c` is a proof of `c + 0 = c` so that was what got rewritten.
   You can now change `b + 0` to `b` with `rw [add_zero]` or `rw [add_zero b]`. You
-  can usually stick to `add_zero` unless you need real precision."
+  can usually stick to `rw [add_zero]` unless you need real precision."
   rw [add_zero]
   rfl
 

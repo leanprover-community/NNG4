@@ -10,8 +10,6 @@ LemmaDoc MyNat.le_total as "le_total" in "≤" "
 `le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
 "
 
-NewLemma MyNat.le_total
-
 Introduction "
 This is I think the toughest level yet.
 "
@@ -30,7 +28,7 @@ Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   use e + 1
   rw [succ_eq_add_one, add_assoc]
   rfl
-  Hint (hidden := true) "Now `cases h2 with e h2`."
+  Hint (hidden := true) "Now `cases h2 with e he`."
   cases h2 with e h2
   Hint (hidden := true) "You still don't know which way to go, so do `cases e with a`."
   cases e with a
@@ -48,9 +46,15 @@ Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
 LemmaTab "≤"
 
 Conclusion "
+Very well done.
+
 A passing mathematician remarks that with you've just proved that `ℕ` is totally
 ordered.
+
+The next step in the development of order theory is to develop
+the theory of the interplay between `≤` and multiplication.
+If you've already done multiplication world, step into
+advanced multiplication world (once I've written it...)
 "
 
--- **TODO** add "if you want to prove it's a totally ordered ring, go
--- to advanced mult world"
+-- **TODO** fix this

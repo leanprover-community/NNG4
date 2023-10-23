@@ -45,5 +45,5 @@ hypothesis with the `apply` tactic.
 Statement (x y : ℕ) (h1 : x = 37) (h2 : x = 37 → y = 42) : y = 42 := by
   Hint "Start with `apply h2 at h1`. This will change `h1` to `y = 42`."
   apply h2 at h1
-  Hint "Now finish using `exact`."
+  Hint "Now finish using the `exact` tactic."
   exact h1

@@ -80,12 +80,11 @@ Let's start with adding `0`.
 To make addition agree with our intuition, we should *define* `37 + 0`
 to be `37`. More generally, we should define `a + 0` to be `a` for
 any number `a`. The name of this proof in Lean is `add_zero a`.
+For example `add_zero 37` is a proof of `37 + 0 = 37`,
+`add_zero x` is a proof of `x + 0 = x`, and `add_zero` is a proof
+of `? + 0 = ?`.
 
-* `add_zero 37 : 37 + 0 = 37`
-
-* `add_zero a : a + 0 = a`
-
-*` add_zero : ? + 0 = ?`
+We write `add_zero x : x + 0 = x`, so `proof : statement`.
 "
 
 /-- $a+(b+0)+(c+0)=a+b+c.$ -/

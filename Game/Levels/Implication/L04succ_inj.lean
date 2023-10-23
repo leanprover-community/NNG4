@@ -52,8 +52,8 @@ NewLemma MyNat.succ_inj
 /-- If $x+1=4$ then $x=3$. -/
 Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by
   Hint "Let's first get `h` into the form `succ x = succ 3` so we can
-  apply `succ_inj`. First rewrite
-  `four_eq_succ_three` at `h` to change the 4 on the right hand side."
+  apply `succ_inj`. First execute `rw [four_eq_succ_three] at h`
+  to change the 4 on the right hand side."
   rw [four_eq_succ_three] at h
   Hint "Now rewrite `succ_eq_add_one` backwards at `h`
   to get the right hand side."

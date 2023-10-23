@@ -26,8 +26,8 @@ Conclusion "How about this for a proof:
 
 ```
 rw [add_comm]
-exact eq_zero_of_add_left_eq_zero b a
+exact eq_zero_of_add_right_eq_zero b a
 ```
 
-You're now ready for LessThanOrEqual World.
+You're now ready for `≤` World.
 "
