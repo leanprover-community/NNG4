@@ -47,6 +47,7 @@ rfl
 A passing mathematician remarks that with antisymmetry as well,
 you have proved that `≤` is a *partial order* on `ℕ`.
 
-The next level, the boss level of this world, is to prove
-that `≤` is a total order.
+The boss level of this world is to prove
+that `≤` is a total order. Let's learn two more easy tactics
+first.
 "
