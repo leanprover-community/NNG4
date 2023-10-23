@@ -13,8 +13,6 @@ LemmaDoc MyNat.add_left_eq_self as "add_left_eq_self" in "Add" "
 `add_left_eq_self x y` is the theorem that $x + y = y\\implies x=0.$
 "
 
-NewLemma MyNat.add_left_eq_self
-
 Introduction
 "
 `add_left_eq_self x y` is the theorem that $x + y = y\\implies x=0.$

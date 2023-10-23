@@ -109,8 +109,6 @@ If you only want to change the 37th occurrence of `X`
 to `Y` then do `nth_rewrite 37 [h]`.
 "
 
-NewTactic rw
-
 TacticDoc «repeat» "
 ## Summary
 
@@ -126,8 +124,6 @@ into the goal
 `a = b`.
 "
 
-NewHiddenTactic «repeat»
-
 TacticDoc nth_rewrite "
 ## Summary
 
@@ -141,7 +137,8 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
-NewHiddenTactic nth_rewrite
+NewTactic rw
+NewHiddenTactic «repeat» nth_rewrite
 
 Introduction
 "

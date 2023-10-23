@@ -26,8 +26,8 @@ Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
 Conclusion "Here's a completely backwards proof:
 ```
 intro h
-repeat rw [succ_eq_add_one]
 apply succ_inj
+repeat rw [succ_eq_add_one]
 exact h
 ```
 "

@@ -13,8 +13,6 @@ LemmaDoc MyNat.add_left_cancel as "add_left_cancel" in "Add" "
 `add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$
 "
 
-NewLemma MyNat.add_left_cancel
-
 Introduction
 "`add_left_cancel a b n` is the theorem that $n+a=n+b\\implies a=b$.
 You can prove it by induction on `n` or you can deduce it from `add_right_cancel`.

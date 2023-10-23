@@ -43,7 +43,6 @@ as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$.
 This is just another way of saying that it's a function which
 can eat any number n and will return a proof that `n + 0 = n`."
 
-NewLemma MyNat.add_zero
 
 TacticDoc «repeat» "
 ## Summary
@@ -60,7 +59,7 @@ into the goal
 `a = b`.
 "
 
-NewHiddenTactic «repeat»
+NewLemma MyNat.add_zero
 
 Introduction
 "

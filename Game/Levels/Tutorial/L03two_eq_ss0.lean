@@ -22,7 +22,6 @@ defined via two rules:
 It is distinct from the Lean natural numbers `Nat`, which should hopefully
 never leak into the natural number game.*"
 
-NewDefinition MyNat
 
 LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "numerals"
 "`one_eq_succ_zero` is a proof of `1 = succ 0`."
@@ -36,6 +35,7 @@ LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals"
 LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
 "`four_eq_succ_three` is a proof of `4 = succ 3`."
 
+NewDefinition MyNat
 NewLemma MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two
   MyNat.four_eq_succ_three
 

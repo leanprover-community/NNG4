@@ -51,9 +51,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1
+*Game version: 4.1*
 
-#### Recent changes: rewrite of tutorial, addition, multiplication and power world.
+*Recent changes: rewrite of tutorial, addition, multiplication and power world.*
 
 ## Progress saving
 
@@ -103,4 +103,9 @@ Dependency Addition → Multiplication → Power
 --Dependency Multiplication → AdvMultiplication
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
 Dependency Addition → Implication → AdvAddition → LessOrEqual
+-- The game automatically computes connections between worlds based on introduced
+-- tactics and theorems, but for example it cannot detect introduced definitions
+
+-- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
+
 MakeGame
