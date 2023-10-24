@@ -14,7 +14,7 @@ Introduction "
 This is I think the toughest level yet.
 "
 
-/-- If $x \leq y$ and $y \leq z$, then $x \leq z$. -/
+/-- If $x$ and $y$ are numbers, then either $x \leq y$ or $y \leq x$. -/
 Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   Hint (hidden := true) "Start with `induction y with d hd`."
   induction y with d hd
