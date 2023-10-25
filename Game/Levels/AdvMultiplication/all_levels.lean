@@ -3,6 +3,27 @@ import Game.Levels.LessOrEqual
 
 namespace MyNat
 
+-- should we be using `succ` any more????
+lemma eq_succ_of_ne_zero (a : ℕ) (ha : a ≠ 0) : ∃ n, a = succ n := by
+  cases a with d
+  contradiction
+  use d
+  -- WTF????? **TODO** `use` shouldn't try `rfl`
+
+lemma mul_ne_zero (a b : ℕ) (ha : a ≠ 0) (hb : b ≠ 0) : a * b ≠ 0 := by
+  apply eq_succ_of_ne_zero at ha
+  apply eq_succ_of_ne_zero at hb
+  cases ha with c hc
+  cases hb with d hd
+  rw [hc, hd]
+  rw [mul_succ, add_succ]
+  symm
+  apply zero_ne_succ
+
+lemma mul_eq_zero (a b : ℕ) (h : a * b = 0) : a = 0 ∨ b = 0 := by
+  have hab := mul_ne_zero a b
+  tauto
+
 lemma mul_right_ne_zero (a b : ℕ) (h : a * b ≠ 0) : a ≠ 0 := by
   intro h1
   apply h
@@ -22,7 +43,6 @@ lemma one_le_of_zero_ne (a : ℕ) (ha : a ≠ 0) : 1 ≤ a := by
     rw [add_comm]
     rfl
 
--- it's not called this
 lemma mul_le_mul_right (a b t : ℕ) (h : a ≤ b) : a * t ≤ b * t := by
   cases h with d hd
   use d * t
