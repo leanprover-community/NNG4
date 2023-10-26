@@ -28,6 +28,7 @@ Statement dvd_add_right
     rw [zero_add] at he
     exact he
   · have : 1 ≤ succ d := by sorry
+
     sorry
 
 --    obtain ⟨n, rfl⟩ := Nat.le.dest (Nat. le_of_mul_le_mul_left (Nat. le.intro hm) this) use n
