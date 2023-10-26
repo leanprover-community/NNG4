@@ -72,7 +72,7 @@ lemma le_one (a : ℕ) (ha : a ≤ 1) : a = 0 ∨ a = 1 := by
       apply zero_ne_succ at hx
       contradiction
 
-example (c d : ℕ) (h : c * d = 1) : c = 1 := by
+lemma eq_one_of_mul_right_eq_one (c d : ℕ) (h : c * d = 1) : c = 1 := by
   have foo : c ≤ 1 := by
     rw [← h]
     apply le_mul_right
@@ -103,10 +103,14 @@ lemma mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c :
       rw [foo]
       rfl
 
-example (a b : ℕ) (h : b = a * b) (hb : b ≠ 0) : a = 1 := by
+lemma self_eq_mul_left (a b : ℕ) (h : b = a * b) (hb : b ≠ 0) : a = 1 := by
   rw [mul_comm] at h
   nth_rewrite 1 [← mul_one b] at h
   apply mul_left_cancel at h
   rw [h]
   rfl
   exact hb
+
+lemma self_eq_mul_right (a b : ℕ) (h : b = b * a) (hb : b ≠ 0) : a = 1 := by
+  rw [mul_comm] at h
+  exact self_eq_mul_left _ _ h hb

@@ -11,11 +11,11 @@ Introduction
   In this section, we will prove that if d ∣ a, then d ∣ ab.
 "
 
-LemmaDoc MyNat.div_a_div_ab as "div_a_div_ab" in "∣" "
+LemmaDoc MyNat.dvd_mul_right as "div_a_div_ab" in "∣" "
 `div_a_div_ab d a b` is a proof that `d ∣ a → d ∣ a * b`.
 "
 
-Statement div_a_div_ab
+Statement dvd_mul_right
     (d a b : ℕ) (hd : d ∣ a) : d ∣ (a * b) := by
   Hint "You are probably getting the hang of the start of these proofs by now! Try `rcases`."
   rcases hd with ⟨k, hk⟩

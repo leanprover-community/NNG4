@@ -1,4 +1,5 @@
 import Game.Levels.Division.Level_2
+import Game.Levels.AdvMultiplication.all_levels
 
 World "Division"
 Level 3
@@ -21,12 +22,16 @@ Statement div_antisymm
   rcases h1 with ⟨c, hc⟩
   rcases h2 with ⟨d, hd⟩
   -- need to cancel b's:
-  have hcd : b = b * d * c := by sorry
-  have h1dc : 1 = d * c := by sorry
-  -- need the fact that if 1 = dc, c = d = 1
-  have h1c : 1 = c := by sorry
-  rw [← h1c] at hc -- hc : a = b
-  rw [mul_one] at hc
-  exact Eq.symm hc
+  rw [hd] at hc
+  by_cases hb : b = 0
+  · rw [hb] at hd
+    rw [zero_mul] at hd
+    rw [hd, hb]
+    rfl
+  rw [mul_assoc] at hc
+  have := self_eq_mul_right _ _ hc hb
+  apply eq_one_of_mul_right_eq_one at this
+  rw [this, mul_one] at hd
+  exact hd
 
 LemmaTab "∣"
