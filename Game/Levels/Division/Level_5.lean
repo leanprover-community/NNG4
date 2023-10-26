@@ -1,5 +1,4 @@
-import Game.Levels.AdvMultiplication
-import Game.MyNat.Division
+import Game.Levels.Division.Level_4
 
 World "Division"
 Level 5
@@ -16,10 +15,7 @@ LemmaDoc MyNat.div_a_div_ab as "div_a_div_ab" in "∣" "
 `div_a_div_ab d a b` is a proof that `d ∣ a → d ∣ a * b`.
 "
 
-NewLemma MyNat.div_a_div_ab
-
-
-Statement
+Statement div_a_div_ab
     (d a b : ℕ) (hd : d ∣ a) : d ∣ (a * b) := by
   Hint "You are probably getting the hang of the start of these proofs by now! Try `rcases`."
   rcases hd with ⟨k, hk⟩

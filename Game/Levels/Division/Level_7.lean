@@ -1,5 +1,4 @@
-import Game.Levels.AdvMultiplication
-import Game.MyNat.Division
+import Game.Levels.Division.Level_6
 
 World "Division"
 Level 7
@@ -16,9 +15,7 @@ LemmaDoc MyNat.ndiv_succ as "ndiv_succt" in "∣" "
 `ndiv_succ a b` is a proof that `if a ≠ 1 and a ∣ b, then ¬ a ∣ succ b`.
 "
 
-NewLemma MyNat.ndiv_succ
-
-Statement
+Statement ndiv_succ
     (a b : ℕ) (ha : a ≠ 1) (hab : a ∣ b) : ¬ a ∣ succ b := by
     sorry
 

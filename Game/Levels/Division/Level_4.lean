@@ -1,5 +1,4 @@
-import Game.Levels.AdvMultiplication
-import Game.MyNat.Division
+import Game.Levels.Division.Level_3
 
 World "Division"
 Level 4
@@ -17,9 +16,7 @@ LemmaDoc MyNat.div_trans as "div_trans" in "∣" "
 `div_trans a b c` is a proof that `a ∣ b ∧ b ∣ c → a ∣ c`.
 "
 
-NewLemma MyNat.div_trans
-
-Statement
+Statement div_trans
     (a b c : ℕ) (hab : a ∣ b) (hbc : b ∣ c) : a ∣ c := by
   Hint "Here, like the last level, you may find `rcases` helpful."
   rcases hbc with ⟨m, hm⟩

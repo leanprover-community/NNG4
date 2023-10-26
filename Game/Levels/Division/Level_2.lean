@@ -1,9 +1,10 @@
-import Game.Levels.AdvMultiplication
-import Game.MyNat.Division
+import Game.Levels.Division.Level_1
 
 World "Division"
 Level 2
 Title "div_refl"
+
+LemmaTab "∣"
 
 namespace MyNat
 
@@ -17,13 +18,9 @@ LemmaDoc MyNat.div_refl as "div_refl" in "∣" "
 `div_refl x` is a proof that `x ∣ x`.
 "
 
-NewLemma MyNat.div_refl
-
-Statement
+Statement div_refl
     (n : ℕ) : n ∣ n := by
   Hint "This is true because `n = n * 1`"
   use 1
   rw [mul_one]
   rfl
-
-LemmaTab "∣"

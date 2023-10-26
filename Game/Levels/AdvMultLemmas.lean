@@ -1,4 +1,4 @@
-import Game.Levels.AdvMultiplication
+-- import Game.Levels.AdvMultiplication
 
 
 namespace MyNat

@@ -1,4 +1,4 @@
-import Game.Levels.AdvMultiplication.Level_1
+-- import Game.Levels.AdvMultiplication.Level_1
 
 
 World "AdvMultiplication"

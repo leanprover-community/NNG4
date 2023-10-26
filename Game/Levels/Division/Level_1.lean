@@ -1,4 +1,4 @@
-import Game.Levels.AdvMultiplication
+import Game.Levels.Multiplication
 import Game.MyNat.Division
 
 World "Division"
@@ -19,9 +19,7 @@ LemmaDoc MyNat.one_div as "one_div" in "∣" "
 `one_div x` is a proof that `1 ∣ x`.
 "
 
-NewLemma MyNat.one_div
-
-Statement
+Statement one_div
     (n : ℕ) :  1 ∣ n := by
   Hint "The reason `1 ∣ n` is because `n = n * 1`, so you should
   start this proof with `use n`."
