@@ -24,7 +24,7 @@ Statement --and_trans
   intro h
   rcases h with ⟨p, q⟩
   ```
-  i.e. introducing a new assumption and then immediately take it appart.
+  i.e. introducing a new assumption and then immediately take it apart.
 
   In that case you could do that in a single step:
 
