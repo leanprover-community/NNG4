@@ -3,7 +3,9 @@ import Game.MyNat.Division
 
 World "Division"
 Level 1
-Title "one_div"
+Title "one_dvd"
+
+LemmaTab "∣"
 
 namespace MyNat
 
@@ -15,11 +17,11 @@ Introduction
 
 "
 
-LemmaDoc MyNat.one_div as "one_div" in "∣" "
+LemmaDoc MyNat.one_dvd as "one_dvd" in "∣" "
 `one_div x` is a proof that `1 ∣ x`.
 "
 
-Statement one_div
+Statement one_dvd
     (n : ℕ) :  1 ∣ n := by
   Hint "The reason `1 ∣ n` is because `n = n * 1`, so you should
   start this proof with `use n`."
@@ -27,5 +29,3 @@ Statement one_div
   Hint "Now "
   rw [one_mul]
   rfl
-
-LemmaTab "∣"

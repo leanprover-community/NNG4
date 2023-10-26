@@ -2,7 +2,7 @@ import Game.Levels.Division.Level_1
 
 World "Division"
 Level 2
-Title "div_refl"
+Title "dvd_refl"
 
 LemmaTab "∣"
 
@@ -14,11 +14,11 @@ Introduction
   a reflexive relation on the natural numebrs.
 "
 
-LemmaDoc MyNat.div_refl as "div_refl" in "∣" "
+LemmaDoc MyNat.dvd_refl as "dvd_refl" in "∣" "
 `div_refl x` is a proof that `x ∣ x`.
 "
 
-Statement div_refl
+Statement dvd_refl
     (n : ℕ) : n ∣ n := by
   Hint "This is true because `n = n * 1`"
   use 1

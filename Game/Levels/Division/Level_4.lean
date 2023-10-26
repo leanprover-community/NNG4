@@ -2,7 +2,7 @@ import Game.Levels.Division.Level_3
 
 World "Division"
 Level 4
-Title "div_trans"
+Title "dvd_trans"
 
 namespace MyNat
 
@@ -12,11 +12,11 @@ Introduction
   partial order on ℕ.
 "
 
-LemmaDoc MyNat.div_trans as "div_trans" in "∣" "
+LemmaDoc MyNat.dvd_trans as "dvd_trans" in "∣" "
 `div_trans a b c` is a proof that `a ∣ b ∧ b ∣ c → a ∣ c`.
 "
 
-Statement div_trans
+Statement dvd_trans
     (a b c : ℕ) (hab : a ∣ b) (hbc : b ∣ c) : a ∣ c := by
   Hint "Here, like the last level, you may find `rcases` helpful."
   rcases hbc with ⟨m, hm⟩

@@ -2,7 +2,9 @@ import Game.Levels.Division.Level_4
 
 World "Division"
 Level 5
-Title "div_a_div_ab"
+Title "dvd_mul_right"
+
+LemmaTab "∣"
 
 namespace MyNat
 
@@ -11,7 +13,7 @@ Introduction
   In this section, we will prove that if d ∣ a, then d ∣ ab.
 "
 
-LemmaDoc MyNat.dvd_mul_right as "div_a_div_ab" in "∣" "
+LemmaDoc MyNat.dvd_mul_right as "dvd_mul_right" in "∣" "
 `div_a_div_ab d a b` is a proof that `d ∣ a → d ∣ a * b`.
 "
 
@@ -26,5 +28,3 @@ Statement dvd_mul_right
   rw [hk]
   rw [mul_assoc]
   rfl
-
-LemmaTab "∣"
