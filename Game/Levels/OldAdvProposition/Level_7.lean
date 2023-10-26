@@ -51,5 +51,5 @@ Well done! Note that the syntax for `rcases` is different whether it's an \"or\"
 * `rcases h with ⟨p, q⟩` splits an \"and\" in the assumptions into two parts. You get two assumptions
 but still only one goal.
 * `rcases h with p | q` splits an \"or\" in the assumptions. You get **two goals** which have different
-assumptions, once assumping the lefthand-side of the dismantled \"or\"-assumption, once the righthand-side.
+assumptions, once assuming the lefthand-side of the dismantled \"or\"-assumption, once the righthand-side.
 "
