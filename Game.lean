@@ -9,7 +9,7 @@ import Game.Levels.Multiplication
 import Game.Levels.Power
 --import Game.Levels.AdvAddition
 import Game.Levels.AdvMultiplication
-import Game.Levls.Division
+import Game.Levels.Division
 --import Game.Levels.EvenOdd
 --import Game.Levels.Inequality
 --import Game.Levels.Prime
