@@ -6,6 +6,48 @@ World "Tutorial"
 Level 1
 Title "The rfl tactic"
 
+LemmaTab "numerals"
+
+namespace MyNat
+
+TacticDoc rfl
+"
+## Summary
+
+`rfl` proves goals of the form `X = X`.
+
+In other words, the `rfl` tactic will close any goal of the
+form `A = B` if `A` and `B` are *identical*.
+
+`rfl` is short for \"reflexivity (of equality)\".
+
+## Example:
+
+If the goal looks like this:
+
+```
+x + 37 = x + 37
+```
+
+then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even
+though $0+x$ and $x$ are always equal as *numbers*, they are not equal as *terms*.
+The only term which is identical to `0 + x` is `0 + x`.
+
+## Details
+
+`rfl` is short for \"reflexivity of equality\".
+
+## Game Implementation
+
+*Note that our `rfl` is weaker than the version used in core Lean and `mathlib`,
+for pedagogical purposes; mathematicians do not distinguish between propositional
+and definitional equality because they think about definitions in a different way
+to type theorists (`zero_add` and `add_zero` are both \"facts\" as far
+as mathematicians are concerned, and who cares what the definition of addition is).*
+"
+
+NewTactic rfl
+
 Introduction
 "
 # Read this first
@@ -22,7 +64,7 @@ are numbers.
 We solve goals in Lean using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which proves all theorems of the form $X = X$.
 
-Prove that $37x+q=37x+q$ by casting the `rfl` tactic.
+Prove that $37x+q=37x+q$ by executing the `rfl` tactic.
 "
 
 /-- If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$ -/
@@ -31,42 +73,6 @@ Statement
   Hint "In order to use the tactic `rfl` you can enter it in the text box
   under the goal and hit \"Execute\"."
   rfl
-
-TacticDoc rfl
-"
-## Summary
-
-`rfl` proves goals of the form `X = X`.
-
-## Details
-
-The `rfl` tactic will close any goal of the form `A = B` if `A` and `B` are
-*identical*.
-
-`rfl` is short for \"reflexivity (of equality)\".
-
-## Example:
-
-If the goal looks like this:
-
-```
-x + 37 = x + 37
-```
-
-then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even
-though $0+x$ and $x$ are always equal as *numbers*, they are not equal as *terms*.
-The only term which is identical to `0 + x` is `0 + x`.
-
-## Implementation details
-
-*Note that our `rfl` is weaker than the version used in core Lean and `mathlib`,
-for pedagogical purposes; mathematicians do not distinguish between propositional
-and definitional equality because they think about definitions in a different way
-to type theorists (`zero_add` and `add_zero` are both \"facts\" as far
-as mathematicians are concerned, and who cares what the definition of addition is).*
-"
-
-NewTactic rfl
 
 Conclusion
 "

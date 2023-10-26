@@ -1,20 +1,24 @@
 -- Here's the import to make Lean know about things called `Game`s
 import GameServer.Commands
 
--- Here are the imports defining many worlds for the game `Game`.
--- Each world consists of a finite totally ordered set of levels.
+-- Here are the imports defining many worlds for the game `Game` (the natural number game,
+-- in this case). Each world consists of a finite number of levels, and levels
+-- are numbered 1,2,3,4... inside the level files.
 import Game.Levels.Tutorial
 import Game.Levels.Addition
 import Game.Levels.Multiplication
 import Game.Levels.Power
---import Game.Levels.AdvAddition
 import Game.Levels.AdvMultiplication
 import Game.Levels.Division
+import Game.Levels.Implication
+import Game.Levels.AdvAddition
+import Game.Levels.LessOrEqual
 --import Game.Levels.EvenOdd
---import Game.Levels.Inequality
 --import Game.Levels.Prime
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
+--import Game.Levels.FunctionalProgram
+--import Game.Levels.Algorithm
 
 -- Here's what we'll put on the title screen
 Title "Natural Number Game"
@@ -29,7 +33,13 @@ that `2 + 2 = 4`. Next we'll prove that `x + y = y + x`.
 And at the end we'll see if we can prove Fermat's Last Theorem.
 We'll do this by solving levels of a computer puzzle game called Lean.
 
-To learn more about these puzzles, click on \"Tutorial World\".
+# Read this.
+
+Learning how to use an interactive theorem prover takes time.
+Tests show that the people who get the most out of this game are
+those who read the help texts like this one.
+
+To start, click on \"Tutorial World\".
 
 Note: this is a preliminary new Lean 4 version of the game; new versions
 of inequality and advanced addition/multiplication worlds are in preparation.
@@ -37,14 +47,14 @@ Other brand new worlds will also be appearing during October 2023.
 
 ## More
 
-Open \"Game Info\" in the burger menu on the top right for resources,
+Click on the three lines in the top right and select \"Game Info\" for resources,
 links, and ways to interact with the Lean community.
 "
 
 Info "
-##### Game version: 4.1
+*Game version: 4.1*
 
-#### Recent changes: rewrite of tutorial, addition, multiplication and power world.
+*Recent changes: rewrite of tutorial, addition, multiplication and power world.*
 
 ## Progress saving
 
@@ -93,5 +103,10 @@ Dependency Addition → Multiplication → Power
 --Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
 Dependency Multiplication → AdvMultiplication → Division
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
+Dependency Addition → Implication → AdvAddition → LessOrEqual
+-- The game automatically computes connections between worlds based on introduced
+-- tactics and theorems, but for example it cannot detect introduced definitions
+
+-- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
 
 MakeGame

@@ -6,26 +6,9 @@ World "Tutorial"
 Level 2
 Title "the rw tactic"
 
-Introduction
-"
-In this level the *goal* is $2y=2(x+7)$ but to help us we
-have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` in
-your list of assumptions. Lean thinks of `h` as being a secret proof of the
-assumption, rather like `x` is a secret number.
+LemmaTab "numerals"
 
-Before we can use `rfl`, we have to \"substitute in for $y$\".
-We do this in Lean by *rewriting* the proof `h`,
-using the `rw` tactic.
-"
-
-/-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
-Statement
-    (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
-  Hint "You can execute `rw [h]` to replace the `y` in the goal with `x + 7`."
-  rw [h]
-  Hint "Now you should know what to do."
-  Hint (hidden := true) "Now `rfl` will work."
-  rfl
+namespace MyNat
 
 TacticDoc rw "
 ## Summary
@@ -126,8 +109,6 @@ If you only want to change the 37th occurrence of `X`
 to `Y` then do `nth_rewrite 37 [h]`.
 "
 
-NewTactic rw
-
 TacticDoc «repeat» "
 ## Summary
 
@@ -143,8 +124,6 @@ into the goal
 `a = b`.
 "
 
-NewHiddenTactic «repeat»
-
 TacticDoc nth_rewrite "
 ## Summary
 
@@ -158,21 +137,30 @@ will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 "
 
-NewHiddenTactic nth_rewrite
+NewTactic rw
+NewHiddenTactic «repeat» nth_rewrite
+
+Introduction
+"
+In this level the *goal* is $2y=2(x+7)$ but to help us we
+have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` in
+your list of assumptions. Lean thinks of `h` as being a secret proof of the
+assumption, rather like `x` is a secret number.
+
+Before we can use `rfl`, we have to \"substitute in for $y$\".
+We do this in Lean by *rewriting* the proof `h`,
+using the `rw` tactic.
+"
+
+/-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
+Statement
+    (x y : ℕ) (h : y = x + 7) : 2 * y = 2 * (x + 7) := by
+  Hint "First execute `rw [h]` to replace the `y` with `x + 7`."
+  rw [h]
+  Hint "Can you take it from here? Click on \"Show more help!\" if you need a hint."
+  Hint (hidden := true) "Now `rfl` will work."
+  rfl
 
 Conclusion
-"
-You can now press on by clicking \"Next\", but if you want to inspect the
-proof you just created, toggle \"Editor mode\" by clicking
-on the `</>` button in the top right. In editor mode,
-you can click or move your cursor around the proof to see the state of Lean's brain at any point.
-If you want to go back to the default (command line) mode with hints,
-click the button again (it now displays `>_`).
-
-In editor mode, note that each tactic is written on a new line and Lean is sensitive
-to indentation (i.e. there must be no spaces before any of the tactics).
-
-If you are just learning the game, I would recommend staying in command
-line mode in general, because you do not get hints during a level
-in editor mode, and hints are used to teach new tactics.
+"You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey.
 "

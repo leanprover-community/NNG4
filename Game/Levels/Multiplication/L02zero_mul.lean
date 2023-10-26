@@ -16,7 +16,7 @@ start with this.
 "
 
 LemmaDoc MyNat.zero_mul as "zero_mul" in "Mul" "
-`zero_mul x` is the proof that `0 * x = x`.
+`zero_mul x` is the proof that `0 * x = 0`.
 
 Note: `zero_mul` is a `simp` lemma.
 "

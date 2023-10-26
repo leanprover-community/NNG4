@@ -1,27 +1,19 @@
-import Game.Levels.Addition
+import Game.Levels.AdvAddition.L01ne_succ_self
+import Game.Levels.AdvAddition.L02add_right_cancel
+import Game.Levels.AdvAddition.L03add_left_cancel
+import Game.Levels.AdvAddition.L04add_left_eq_self
+import Game.Levels.AdvAddition.L05add_right_eq_self
+import Game.Levels.AdvAddition.L06eq_zero_of_add_right_eq_zero
+import Game.Levels.AdvAddition.L07eq_zero_of_add_left_eq_zero
 
 World "AdvAddition"
 Title "Advanced Addition World"
 
 Introduction
 "
-Peano's original collection of axioms for the natural numbers contained two further
-assumptions, which have not yet been mentioned in the game:
+In Advanced Addition World we will prove some basic
+addition facts such as $x+y=x\\implies y=0$. They will
+all involve implications.
 
-```
-succ_inj (a b : ℕ) :
-  succ a = succ b → a = b
-
-zero_ne_succ (a : ℕ) :
-  zero ≠ succ a
-```
-
-The reason they have not been used yet is that they are both implications,
-that is,
-of the form $P\\implies Q$. This is clear for `succ_inj a b`, which
-says that for all $a$ and $b$ we have $\\operatorname{succ}(a)=\\operatorname{succ}(b)\\implies a=b$.
-For `zero_ne_succ` the trick is that $X\\ne Y$ is *defined to mean*
-$X = Y\\implies{\\tt False}$. If you have played through proposition world,
-you now have the required Lean skills (i.e., you know the required
-tactics) to work with these implications.
+Click on \"Start\" to proceed.
 "

@@ -8,7 +8,7 @@ namespace MyNat
 
 Introduction
 "
-We now have enough to state mathematically accurate, but slightly
+We now have enough to state a mathematically accurate, but slightly
 clunky, version of Fermat's Last Theorem.
 
 Fermat's Last Theorem states that if $x,y,z>0$ and $m \\geq 3$ then $x^m+y^m\\not =z^m$.
@@ -33,15 +33,24 @@ an interactive textbook which you can read in your browser,
 and which explains how to work with many more mathematical concepts in Lean.
 "
 
+TacticDoc xyzzy "
+`xyzzy` is an ancient magic spell, believed to be the origin of the
+modern word `sorry`. The game won't complain - or notice - if you
+prove anything with `xyzzy`.
+"
 /-- For all naturals $a$ $b$ $c$ and $n$, we have
 $$(a+1)^{n+3}+(b+1)^{n+3}\not=(c+1)^{n+3}.$$ -/
 Statement
     (a b c n : ℕ) : (a + 1) ^ (n + 3) + (b + 1) ^ (n + 3) ≠ (c + 1) ^ (n + 3) := by
-  sorry
+  xyzzy
+
+NewHiddenTactic xyzzy
 
 LemmaTab "Pow"
 
 Conclusion
 "
 Congratulations! You have proved Fermat's Last Theorem!
+
+Either that, or you used magic...
 "

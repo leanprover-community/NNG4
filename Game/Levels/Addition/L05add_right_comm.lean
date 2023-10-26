@@ -16,6 +16,11 @@ is no `b + c` term *directly* in the goal.
 Use associativity and commutativity to prove `add_right_comm`.
 You don't need induction. `add_assoc` moves brackets around,
 and `add_comm` moves variables around.
+
+Remember that you can do more targetted rewrites by
+adding explicit variables as inputs to theorems. For example `rw [add_comm b]`
+will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`
+will only do rewrites of the form `b + c = c + b`.
 "
 
 LemmaDoc MyNat.add_right_comm as "add_right_comm" in "Add"
@@ -28,10 +33,6 @@ as `a + b + c = a + c + b`."
 $(a + b) + c = (a + c) + b$. -/
 Statement add_right_comm (a b c : ℕ) : a + b + c = a + c + b := by
   rw [add_assoc]
-  Hint "Remember that you can do more targetted rewrites by
-  adding explicit variables as inputs to theorems. For example `rw [add_comm b]`
-  will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`
-  will only do rewrites of the form `b + c = c + b`."
   rw [add_comm b, add_assoc]
   rfl
 
@@ -39,14 +40,9 @@ LemmaTab "Add"
 
 Conclusion "
 You've now seen all the tactics you need to beat the final boss of the game.
-You can begin the journey towards this boss by entering Multiplication
-World.
+You can begin the journey towards this boss by entering Multiplication World.
+
+Or you can go off the beaten track and learn some new tactics in Implication
+World. These tactics let you prove more facts about addition, such as
+how to deduce `a = 0` from `x + a = x`.
 "
-
-/-
-Or you can go off the beaten track and learn some new tactics in Advanced
-Addition World (except that ). These tactics let you prove more facts about addition, such as
-how to deduce `a = b` from `x + a = x + b`.
--/
-
--- **TODO** choose a better example from advanced addition world once it's written

@@ -38,7 +38,6 @@ schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$:
 this is \"the freshman's dream\").
 
 How many rewrites did you use? I can do it in 12.
-**DEPLOY_TODO** link to source code when I have stable internet
 
 But wait! This boss is stirring...and mutating into a second more powerful form!
 "
