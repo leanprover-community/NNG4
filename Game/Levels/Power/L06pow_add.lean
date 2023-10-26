@@ -6,7 +6,7 @@ Title "pow_add"
 
 namespace MyNat
 
-Introduction "Let's now begin our approch to the final boss,
+Introduction "Let's now begin our approach to the final boss,
 by proving some more subtle facts about powers."
 
 LemmaDoc MyNat.pow_add as "pow_add" in "Pow" "
