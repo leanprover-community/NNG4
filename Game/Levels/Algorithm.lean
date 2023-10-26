@@ -1,4 +1,5 @@
-import Game.Levels.Algorithm.L01
+import Game.Levels.Algorithm.L01add_left_comm
+import Game.Levels.Algorithm.L02add_algo1
 
 World "Algorithm"
 Title "Algorithm World"
