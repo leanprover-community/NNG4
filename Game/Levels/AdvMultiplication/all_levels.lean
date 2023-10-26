@@ -16,7 +16,7 @@ lemma mul_left_ne_zero (a b : ℕ) (h : a * b ≠ 0) : b ≠ 0 := by
 
 lemma one_le_of_zero_ne (a : ℕ) (ha : a ≠ 0) : 1 ≤ a := by
   cases a with n
-  · contradiction
+  · tauto
   · use n
     rw [succ_eq_add_one]
     rw [add_comm]
@@ -50,7 +50,7 @@ lemma le_one (a : ℕ) (ha : a ≤ 1) : a = 0 ∨ a = 1 := by
       rw [one_eq_succ_zero] at hx
       apply succ_inj at hx
       apply zero_ne_succ at hx
-      contradiction
+      tauto
 
 example (c d : ℕ) (h : c * d = 1) : c = 1 := by
   have foo : c ≤ 1 := by
@@ -63,7 +63,7 @@ example (c d : ℕ) (h : c * d = 1) : c = 1 := by
   cases foo with h0 h1
   · rw [h0, zero_mul] at h
     apply zero_ne_succ at h
-    contradiction
+    tauto
   exact h1
 
 lemma mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c := by
@@ -74,7 +74,7 @@ lemma mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c :
   · cases c with c
     · rw [mul_succ, mul_zero] at h
       apply eq_zero_of_add_left_eq_zero at h
-      contradiction
+      tauto
     · rw [mul_succ, mul_succ] at h
       apply add_right_cancel at h
       have foo : d = c := by
