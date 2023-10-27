@@ -70,8 +70,9 @@ LemmaDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano" "
 
 /-- If $a \neq b$ then $\operatorname{succ}(a) \neq\operatorname{succ}(b)$. -/
 Statement succ_ne_succ (m n : ℕ) (h : m ≠ n) : succ m ≠ succ n := by
-  Hint "Start by adding `succ a = succ b → a = b` to our list of hypotheses,
-  with `have h2 := succ_inj m n`."
+  Hint "Start by adding `succ m = succ n → m = n` to our list of hypotheses,
+  with `have h2 := succ_inj m n`. Read about the `have` tactic in the
+  documentation on the top right."
   have := succ_inj m n
   Hint "Now the goal can be solved by pure logic, so use a logic tactic."
   Hint (hidden := true) "Use `tauto`."

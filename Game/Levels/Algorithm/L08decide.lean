@@ -18,7 +18,7 @@ can run to solve it.
 ## Example
 
 A term of type `DecidableEq ℕ` is an algorithm to decide whether two naturals
-are equal or difference. Hence, once this term is made and made into an `instance`,
+are equal or different. Hence, once this term is made and made into an `instance`,
 the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`.
 "
 
@@ -58,3 +58,6 @@ between two naturals. Run it with the `decide` tactic.
 /-- $20+20=40$. -/
 Statement : (20 : ℕ) + 20 = 40 := by
   decide
+
+Conclusion "You can read more about the `decide` tactic by clicking
+on it in the top right."

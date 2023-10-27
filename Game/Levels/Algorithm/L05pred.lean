@@ -24,8 +24,9 @@ pred 0 := 37
 pred (succ n) := n
 ```
 
-We cannot subtract one from 0, so we just return a junk value. A new lemma `pred_succ`
-says that `pred (succ n) = n`. Let's use it to prove `succ_inj`, the theorem which
+We cannot subtract one from 0, so we just return a junk value. As well as this
+definition, we also create a new lemma `pred_succ`, which says that `pred (succ n) = n`.
+Let's use this lemma to prove `succ_inj`, the theorem which
 Peano assumed as an axiom and which we have already used extensively without justification.
 "
 
@@ -45,5 +46,7 @@ Statement (a b : ℕ) (h : succ a = succ b) : a = b := by
   rfl
 
 Conclusion
-"Let's now prove Peano's other axiom, that successors can't be $0$.
+"
+Nice! You've proved `succ_inj`!
+Let's now prove Peano's other axiom, that successors can't be $0$.
 "
