@@ -39,9 +39,5 @@ Statement (a b c d e f g h : ℕ) :
 
 Conclusion
 "
-You can even make your own tactics. For example the Lean code
-```
-macro_rules | `(tactic| simp_add) => `(tactic| simp only [add_assoc, add_left_comm, add_comm])
-```
-will create a new tactic `simp_add` which solves this level and any others of this form.
+Let's now make our own tactic to do this.
 "

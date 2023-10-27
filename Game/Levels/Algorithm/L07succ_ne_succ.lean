@@ -1,7 +1,7 @@
-import Game.Levels.Algorithm.L05is_zero
+import Game.Levels.Algorithm.L06is_zero
 
 World "Algorithm"
-Level 6
+Level 7
 Title "An algorithm for equality"
 
 LemmaTab "Peano"

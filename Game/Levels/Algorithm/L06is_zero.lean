@@ -1,7 +1,7 @@
-import Game.Levels.Algorithm.L04pred
+import Game.Levels.Algorithm.L05pred
 
 World "Algorithm"
-Level 5
+Level 6
 Title "is_zero"
 
 LemmaTab "Peano"

@@ -1,8 +1,8 @@
-import Game.Levels.Algorithm.L06succ_ne_succ
+import Game.Levels.Algorithm.L07succ_ne_succ
 import Game.MyNat.DecidableEq
 
 World "Algorithm"
-Level 7
+Level 8
 Title "decide"
 
 LemmaTab "Peano"

@@ -1,7 +1,7 @@
-import Game.Levels.Algorithm.L07decide
+import Game.Levels.Algorithm.L08decide
 
 World "Algorithm"
-Level 8
+Level 9
 Title "decide again"
 
 LemmaTab "Peano"
