@@ -14,7 +14,7 @@ In some later worlds, we're going to see some much nastier levels,
 like `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`.
 Brackets need to be moved around, and variables need to be swapped.
 
-In this level, `(a + b) + (c + d) = ((a + c) + b) + d`,
+In this level, `(a + b) + (c + d) = ((a + c) + d) + b`,
 let's forget about the brackets and just think about
 the variable order.
 To turn `a+b+c+d` into `a+c+d+b` we need to swap `b` and `c`,
