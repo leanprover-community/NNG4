@@ -45,5 +45,5 @@ Statement (a b : ℕ) (h : succ a = succ b) : a = b := by
   rfl
 
 Conclusion
-"Let's now prove Peano's other axiom, `zero_ne_succ`.
+"Let's now prove Peano's other axiom, that successors can't be $0$.
 "

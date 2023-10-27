@@ -52,7 +52,3 @@ Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   rw [h]
   rw [is_zero_zero]
   tauto
-
-Conclusion
-"Let's now use these lemmas to prove
-"

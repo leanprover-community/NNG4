@@ -14,14 +14,16 @@ Every natural is either `0` or `succ n` for some `n`. Here is an algorithm
 which, given two naturals `a` and `b`, returns the answer to \"does `a = b`?\"
 
 *) If they're both `0`, return \"yes\".
+
 *) If one is `0` and the other is `succ n`, return \"no\".
+
 *) If `a = succ m` and `b = succ n`, then return the answer to \"does `m = n`?\"
 
 Let's prove that this algorithm always gives the correct answer. The proof that
 `0 = 0` is `rfl`. The proof that `0 ≠ succ n` is `zero_ne_succ n`, and the proof
 that `succ m ≠ 0` is `succ_ne_zero m`. The proof that if `h : m = n` then
 `succ m = succ n` is `rw [h]` and then `rfl`. The next level is a proof of the one
-remaining case.
+remaining case: if `a ≠ b` then `succ a ≠ succ b`.
 "
 
 TacticDoc «have» "

@@ -58,5 +58,3 @@ between two naturals. Run it with the `decide` tactic.
 /-- $20+20=40$. -/
 Statement : (20 : ℕ) + 20 = 40 := by
   decide
-
--- need tacticdoc
