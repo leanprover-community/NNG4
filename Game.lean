@@ -16,8 +16,7 @@ import Game.Levels.LessOrEqual
 --import Game.Levels.Prime
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
---import Game.Levels.FunctionalProgram
---import Game.Levels.Algorithm
+import Game.Levels.Algorithm
 
 -- Here's what we'll put on the title screen
 Title "Natural Number Game"
@@ -103,6 +102,7 @@ Dependency Addition → Multiplication → Power
 --Dependency Multiplication → AdvMultiplication
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
 Dependency Addition → Implication → AdvAddition → LessOrEqual
+Dependency AdvAddition → Algorithm
 -- The game automatically computes connections between worlds based on introduced
 -- tactics and theorems, but for example it cannot detect introduced definitions
 

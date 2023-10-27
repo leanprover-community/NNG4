@@ -20,9 +20,9 @@ by induction using these two basic theorems."
 
 NewDefinition Add
 
-LemmaTab "Add"
+LemmaTab "+"
 
-LemmaDoc MyNat.add_zero as "add_zero" in "Add"
+LemmaDoc MyNat.add_zero as "add_zero" in "+"
 "`add_zero a` is a proof that `a + 0 = a`.
 
 ## Summary

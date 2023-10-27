@@ -6,16 +6,16 @@ World "Tutorial"
 Level 7
 Title "add_succ"
 
-LemmaTab "numerals"
+LemmaTab "012"
 
 namespace MyNat
 
-LemmaDoc MyNat.add_succ as "add_succ" in "Add"
+LemmaDoc MyNat.add_succ as "add_succ" in "+"
 "`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
 
 NewLemma MyNat.add_succ
 
-LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "Add"
+LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "+"
 "`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 
 Introduction

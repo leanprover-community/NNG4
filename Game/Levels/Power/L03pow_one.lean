@@ -6,7 +6,7 @@ Title "pow_one"
 
 namespace MyNat
 
-LemmaDoc MyNat.pow_one as "pow_one" in "Pow" "
+LemmaDoc MyNat.pow_one as "pow_one" in "^" "
 `pow_one a` says that `a ^ 1 = a`.
 
 Note that this is not quite true by definition: `a ^ 1` is
@@ -22,4 +22,4 @@ Statement pow_one
   rw [one_mul]
   rfl
 
-LemmaTab "Pow"
+LemmaTab "^"

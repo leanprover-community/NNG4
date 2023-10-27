@@ -16,7 +16,7 @@ we have the problem that we are adding `b` to things, so we need
 to use induction to split into the cases where `b = 0` and `b` is a successor.
 "
 
-LemmaDoc MyNat.succ_add as "succ_add" in "Add"
+LemmaDoc MyNat.succ_add as "succ_add" in "+"
 "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
 
 /--
@@ -40,7 +40,7 @@ Statement succ_add (a b : ℕ) : succ a + b = succ (a + b)  := by
     rw [add_succ, add_succ, hd]
     rfl
 
-LemmaTab "Add"
+LemmaTab "+"
 
 Conclusion "
 Well done! You now have enough tools to tackle the main boss of this level.

@@ -13,7 +13,7 @@ sub-boss appears as the music reaches a frenzy. What
 else could there be to prove about powers after this?
 "
 
-LemmaDoc MyNat.pow_pow as "pow_pow" in "Pow" "
+LemmaDoc MyNat.pow_pow as "pow_pow" in "^" "
 `pow_pow a m n` is a proof that $(a^m)^n=a^{mn}.$
 "
 
@@ -26,7 +26,7 @@ Statement pow_pow
   · rw [pow_succ, Ht, mul_succ, pow_add]
     rfl
 
-LemmaTab "Pow"
+LemmaTab "^"
 
 -- **TODO** if these are `simp` then they should be `simp`ed at source.
 attribute [simp] MyNat.pow_zero

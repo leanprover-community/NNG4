@@ -10,6 +10,25 @@ attribute [-simp] MyNat.succ.injEq
 --   simp
 --   sorry
 
-theorem succ_inj (a b : ℕ) : succ a = succ b → a = b := by rintro ⟨h⟩; rfl
+def pred : ℕ → ℕ
+| 0 => 37
+| succ n => n
 
-theorem zero_ne_succ (a : ℕ) : 0 ≠ succ a := by rintro ⟨h⟩
+lemma pred_succ (n : ℕ) : pred (succ n) = n := rfl
+
+theorem succ_inj (a b : ℕ) (h : succ a = succ b) : a = b := by
+  rw [← pred_succ a, h, pred_succ]
+
+def is_zero : ℕ → Prop
+| 0 => True
+| succ n => False
+
+lemma is_zero_zero : is_zero 0 = True := rfl
+lemma is_zero_succ (n : ℕ) : is_zero (succ n) = False := rfl
+
+theorem zero_ne_succ (a : ℕ) : 0 ≠ succ a := by
+  intro h
+  rw [← is_zero_succ a]
+  rw [← h]
+  rw [is_zero_zero]
+  trivial

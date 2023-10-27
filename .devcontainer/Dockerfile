@@ -4,7 +4,7 @@ WORKDIR /
 
 ENV ELAN_HOME=/usr/local/elan \
   PATH=/usr/local/elan/bin:$PATH \
-  LEAN_VERSION=leanprover/lean4:v4.0.0-rc4
+  LEAN_VERSION=leanprover/lean4:v4.1.0
   # TODO: read toolchain from `lean-toolchain`
 
 SHELL ["/bin/bash", "-euxo", "pipefail", "-c"]
