@@ -1,9 +1,20 @@
-import Game.MyNat.Addition-- makes simps work?
-import Game.MyNat.PeanoAxioms
 import Game.Levels.Algorithm.L06succ_ne_succ
-import Mathlib.Tactic
+import Game.MyNat.DecidableEq
+
+World "Algorithm"
+Level 7
+Title "decide"
+
+LemmaTab "Peano"
+
 namespace MyNat
 
+Introduction
+"
+Implementing the algorithm for equality of naturals, and the proof that it is correct,
+looks like this:
+
+```
 instance instDecidableEq : DecidableEq MyNat
 | 0, 0 => isTrue <| by
   show 0 = 0
@@ -23,3 +34,12 @@ instance instDecidableEq : DecidableEq MyNat
   | isFalse (h : m ≠ n) => isFalse <| by
     show succ m ≠ succ n
     exact succ_ne_succ m n h
+```
+
+This Lean code is a formally verified algorithm for deciding equality
+between two naturals. Run it with the `decide` tactic.
+"
+
+/-- $20+20=40$. -/
+Statement : (20 : ℕ) + 20 = 40 := by
+  decide
