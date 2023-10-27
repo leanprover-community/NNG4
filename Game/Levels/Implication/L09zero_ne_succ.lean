@@ -26,7 +26,7 @@ introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.
 To learn about this result, click on it in the list of lemmas on the right.
 "
 
-LemmaDoc MyNat.zero_ne_one as "zero_ne_one" in "numerals" "
+LemmaDoc MyNat.zero_ne_one as "zero_ne_one" in "012" "
 `zero_ne_one` is a proof of `0 ≠ 1`.
 "
 

@@ -17,7 +17,7 @@ Note that the left hand side contains a multiplication
 and then an addition.
 "
 
-LemmaDoc MyNat.mul_add as "mul_add" in "Mul" "Multiplication distributes
+LemmaDoc MyNat.mul_add as "mul_add" in "*" "Multiplication distributes
 over addition on the left.
 
 `mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."
@@ -38,4 +38,4 @@ Statement mul_add
   rw [add_succ, mul_succ, hd, mul_succ, add_assoc]
   rfl
 
-LemmaTab "Mul"
+LemmaTab "*"

@@ -33,7 +33,7 @@ Oh did I mention there was a new tactic? Find it highlighted in your inventory.
 Statement : (29 : ℕ) + 35 = 64 := by
   decide
 
-LemmaTab "Add"
+LemmaTab "+"
 
 Conclusion
 "

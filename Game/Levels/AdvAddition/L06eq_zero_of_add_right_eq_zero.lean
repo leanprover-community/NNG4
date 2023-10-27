@@ -82,7 +82,7 @@ hypothesis `hq : Q`.
 "
 NewTactic tauto cases
 
-LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in "Add" "
+LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in "+" "
   A proof that $a+b=0 \\implies a=0$.
 "
 

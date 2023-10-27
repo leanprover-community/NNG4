@@ -5,6 +5,7 @@ import Game.Levels.Algorithm.L04pred
 import Game.Levels.Algorithm.L05is_zero
 import Game.Levels.Algorithm.L06succ_ne_succ
 import Game.Levels.Algorithm.L07decide
+import Game.Levels.Algorithm.L08decide2
 
 World "Algorithm"
 Title "Algorithm World"

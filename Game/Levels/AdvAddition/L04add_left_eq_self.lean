@@ -6,9 +6,9 @@ Title "add_left_eq_self"
 
 namespace MyNat
 
-LemmaTab "Add"
+LemmaTab "+"
 
-LemmaDoc MyNat.add_left_eq_self as "add_left_eq_self" in "Add" "
+LemmaDoc MyNat.add_left_eq_self as "add_left_eq_self" in "+" "
 
 `add_left_eq_self x y` is the theorem that $x + y = y\\implies x=0.$
 "

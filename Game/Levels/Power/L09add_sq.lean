@@ -13,7 +13,7 @@ Introduction
 
 -- **TODO** get the `ring` hack working again.
 
-LemmaDoc MyNat.add_sq as "add_sq" in "Pow" "
+LemmaDoc MyNat.add_sq as "add_sq" in "^" "
 `add_sq a b` is the statment that $(a+b)^2=a^2+b^2+2ab.$
 "
 
@@ -29,7 +29,7 @@ Statement add_sq
   rw [← add_assoc, ← add_assoc]
   rfl
 
-LemmaTab "Pow"
+LemmaTab "^"
 
 Conclusion
 "

@@ -35,7 +35,7 @@ Statement (a b c d : ℕ) : a + b + (c + d) = a + c + d + b := by
   rw [add_comm b d]
   rfl
 
-LemmaTab "Add"
+LemmaTab "+"
 
 Conclusion
 "
