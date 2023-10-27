@@ -2,7 +2,7 @@ import Game.Levels.Algorithm.L04add_algo3
 import Game.Levels.Implication
 
 World "Algorithm"
-Level 4
+Level 5
 Title "pred"
 
 LemmaTab "Peano"

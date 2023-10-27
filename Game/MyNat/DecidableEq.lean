@@ -1,6 +1,6 @@
 import Game.MyNat.Addition-- makes simps work?
 import Game.MyNat.PeanoAxioms
-import Game.Levels.Algorithm.L06succ_ne_succ
+import Game.Levels.Algorithm.L07succ_ne_succ
 import Mathlib.Tactic
 namespace MyNat
 
