@@ -60,6 +60,8 @@ then you will get a new goal `a = 0` to prove, and after you've proved
 it you will have a new hypothesis `h : a = 0` in your original goal.
 "
 
+NewTactic «have»
+
 LemmaDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano" "
 `succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`.
 "

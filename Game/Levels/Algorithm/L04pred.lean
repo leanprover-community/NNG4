@@ -29,10 +29,12 @@ says that `pred (succ n) = n`. Let's use it to prove `succ_inj`, the theorem whi
 Peano assumed as an axiom and which we have already used extensively without justification.
 "
 
-LemmaDoc pred_succ as "pred_succ" in "Peano"
+LemmaDoc MyNat.pred_succ as "pred_succ" in "Peano"
 "
 `pred_succ n` is a proof of `pred (succ n) = n`.
 "
+
+NewLemma MyNat.pred_succ
 
 /-- If $\operatorname{succ}(a)=\operatorname{succ}(b)$ then $a=b$. -/
 Statement (a b : ℕ) (h : succ a = succ b) : a = b := by

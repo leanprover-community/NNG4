@@ -40,15 +40,7 @@ LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 `succ_ne_zero a` is a proof of `succ a ≠ 0`.
 "
 
-TacticDoc tauto "
-# Summary
-
-The `tauto` tactic proves pure logic goals, which can be resolved by truth tables.
-
-## Example
-
-If the goal is `True` then `tauto` will solve it.
-"
+NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
 
 /-- If $\operatorname{succ}(a)=\operatorname{succ}(b)$ then $a=b$. -/
 Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by

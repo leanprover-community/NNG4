@@ -9,13 +9,28 @@ LemmaTab "Peano"
 
 namespace MyNat
 
+TacticDoc decide "
+# Summary
+
+`decide` will attempt to solve a goal if it can find an algorithm which it
+can run to solve it.
+
+## Example
+
+A term of type `DecidableEq ℕ` is an algorithm to decide whether two naturals
+are equal or difference. Hence, once this term is made and made into an `instance`,
+the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`.
+"
+
+NewTactic decide
+
 Introduction
 "
 Implementing the algorithm for equality of naturals, and the proof that it is correct,
 looks like this:
 
 ```
-instance instDecidableEq : DecidableEq MyNat
+instance instDecidableEq : DecidableEq ℕ
 | 0, 0 => isTrue <| by
   show 0 = 0
   rfl
@@ -43,3 +58,5 @@ between two naturals. Run it with the `decide` tactic.
 /-- $20+20=40$. -/
 Statement : (20 : ℕ) + 20 = 40 := by
   decide
+
+-- need tacticdoc

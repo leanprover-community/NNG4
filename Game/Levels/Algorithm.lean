@@ -1,5 +1,10 @@
 import Game.Levels.Algorithm.L01add_left_comm
 import Game.Levels.Algorithm.L02add_algo1
+import Game.Levels.Algorithm.L03add_algo2
+import Game.Levels.Algorithm.L04pred
+import Game.Levels.Algorithm.L05is_zero
+import Game.Levels.Algorithm.L06succ_ne_succ
+import Game.Levels.Algorithm.L07decide
 
 World "Algorithm"
 Title "Algorithm World"
