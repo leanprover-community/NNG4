@@ -29,7 +29,7 @@ Statement (a b c : ℕ) : a + (b + 0) + (c + 0) = a + b + c := by
   rw [add_zero]
   rfl
 
-LemmaTab "Add"
+LemmaTab "+"
 
 Conclusion "
 Let's now learn about Peano's second axiom for addition, `add_succ`.

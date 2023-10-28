@@ -19,7 +19,7 @@ home screen by clicking the house icon and then taking a look.
 You won't lose any progress.
 "
 
-LemmaDoc MyNat.succ_mul as "succ_mul" in "Mul" "
+LemmaDoc MyNat.succ_mul as "succ_mul" in "*" "
 `succ_mul a b` is the proof that `succ a * b = a * b + b`.
 
 It could be deduced from `mul_succ` and `mul_comm`, however this argument
@@ -43,4 +43,4 @@ Statement succ_mul
     rw [add_right_comm]
     rfl
 
-LemmaTab "Mul"
+LemmaTab "*"

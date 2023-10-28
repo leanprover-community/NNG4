@@ -4,7 +4,7 @@ World "AdvAddition"
 Level 7
 Title "eq_zero_of_add_left_eq_zero"
 
-LemmaTab "Add"
+LemmaTab "+"
 
 namespace MyNat
 
@@ -13,7 +13,7 @@ Introduction
 of using it.
 "
 
-LemmaDoc MyNat.eq_zero_of_add_left_eq_zero as "eq_zero_of_add_left_eq_zero" in "Add" "
+LemmaDoc MyNat.eq_zero_of_add_left_eq_zero as "eq_zero_of_add_left_eq_zero" in "+" "
   A proof that $a+b=0 \\implies b=0$.
 "
 

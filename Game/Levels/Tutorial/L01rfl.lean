@@ -6,7 +6,7 @@ World "Tutorial"
 Level 1
 Title "The rfl tactic"
 
-LemmaTab "numerals"
+LemmaTab "012"
 
 namespace MyNat
 

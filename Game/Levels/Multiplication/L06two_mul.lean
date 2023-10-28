@@ -12,7 +12,7 @@ This level is more important than you think; it plays
 a useful role when battling a big boss later on.
 "
 
-LemmaDoc MyNat.two_mul as "two_mul" in "Mul" "
+LemmaDoc MyNat.two_mul as "two_mul" in "*" "
   `two_mul m` is the proof that `2 * m = m + m`.
 "
 
@@ -22,4 +22,4 @@ Statement two_mul
   rw [two_eq_succ_one, succ_mul, one_mul]
   rfl
 
-LemmaTab "Mul"
+LemmaTab "*"
