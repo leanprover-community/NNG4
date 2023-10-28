@@ -58,7 +58,8 @@ Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
 This gives us plenty of numbers to be getting along with.
 
 The *proof* that `2 = succ 1` is called `two_eq_succ_one`.
-Check out the \"numerals\" tab in the list of lemmas on the right.
+Check out the \"012\" tab in the list of lemmas on the right
+for this and other proofs.
 
 Let's prove that $2$ is the number after the number after zero.
 "
