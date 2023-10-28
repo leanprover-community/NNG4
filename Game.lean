@@ -52,9 +52,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-*Game version: 4.1*
+*Game version: 4.2*
 
-*Recent changes: rewrite of tutorial, addition, multiplication and power world.*
+*Recent additions: Inequality world, algorithm world*
 
 ## Progress saving
 
