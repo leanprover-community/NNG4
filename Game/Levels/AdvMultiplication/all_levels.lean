@@ -1,4 +1,5 @@
-import Game.Levels.AdvMultiplication.L05le_one
+import Game.Levels.AdvMultiplication.L06mul_right_eq_one
+
 namespace MyNat
 
 -- -- good level 1; used in the important `le_mul_right`
@@ -42,20 +43,20 @@ namespace MyNat
 --       apply zero_ne_succ at hx
 --       tauto
 
--- Archie needs this
-lemma mul_right_eq_one (c d : ℕ) (h : c * d = 1) : c = 1 := by
-  have foo : c ≤ 1 := by
-    rw [← h]
-    apply le_mul_right
-    rw [h]
-    symm
-    apply zero_ne_succ
-  apply le_one at foo
-  cases foo with h0 h1
-  · rw [h0, zero_mul] at h
-    apply zero_ne_succ at h
-    tauto
-  exact h1
+-- -- Archie needs this
+-- lemma mul_right_eq_one (c d : ℕ) (h : c * d = 1) : c = 1 := by
+--   have foo : c ≤ 1 := by
+--     rw [← h]
+--     apply le_mul_right
+--     rw [h]
+--     symm
+--     apply zero_ne_succ
+--   apply le_one at foo
+--   cases foo with h0 h1
+--   · rw [h0, zero_mul] at h
+--     apply zero_ne_succ at h
+--     tauto
+--   exact h1
 
 -- used in `mul_ne_zero`, which is used in `mul_eq_zero`, which is used in `mul_left_cancel`
 lemma eq_succ_of_ne_zero (a : ℕ) (ha : a ≠ 0) : ∃ n, a = succ n := by
@@ -77,8 +78,9 @@ lemma mul_ne_zero (a b : ℕ) (ha : a ≠ 0) (hb : b ≠ 0) : a * b ≠ 0 := by
 
 -- used in `mul_left_cancel`
 lemma mul_eq_zero (a b : ℕ) (h : a * b = 0) : a = 0 ∨ b = 0 := by
-  have hab := mul_ne_zero a b
+  have foo := mul_ne_zero a b
   tauto
+
 
 -- very natural goal; challenging. Also used in `mul_left_eq_self`, which Archie needs.
 lemma mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c := by
