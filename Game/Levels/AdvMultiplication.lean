@@ -1,5 +1,8 @@
 import Game.Levels.AdvMultiplication.L01mul_le_mul_right
-
+import Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+import Game.Levels.AdvMultiplication.L03one_le_of_zero_ne
+import Game.Levels.AdvMultiplication.L04le_mul_right
+import Game.Levels.AdvMultiplication.L05le_one
 World "AdvMultiplication"
 Title "Advanced Multiplication World"
 
