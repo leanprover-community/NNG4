@@ -26,43 +26,28 @@ that `succ m ≠ 0` is `succ_ne_zero m`. The proof that if `h : m = n` then
 remaining case: if `a ≠ b` then `succ a ≠ succ b`.
 "
 
-TacticDoc «have» "
+TacticDoc contrapose "
 # Summary
 
-The `have` tactic can be used to add new hypotheses to a level, but of course
-you have to prove them.
+If you have a hypothesis
 
-## Example
+`h : a ≠ b`
 
-If you already have naturals `a` and `b` in your context, then
+and goal
 
-`have h2 : succ a = succ b → a = b := succ_inj a b`
+`c ≠ d`
 
-will explicitly add a new hypothesis `h2 : succ a = succ b → a = b`
-to the context, because you just supplied the proof of it (`succ_inj a b`).
+then `contrapose! h` replaces the set-up with its so-called \"contrapositive\":
+a hypothesis
 
-## Example
+`h : c = d`
 
-If you don't state which statement you are proving, then Lean can
-usually work it out anyway. For example
+and goal
 
-`have h2 := succ_inj a b`
-
-will add the hypothesis `h2 : succ a = succ b → a = b` to your context.
-
-## Example
-
-If you don't supply a proof of the hypothesis you are claiming, then
-Lean will simply create another goal for you to prove. For example
-if you have `a` in your context and you execute
-
-`have h : a = 0`
-
-then you will get a new goal `a = 0` to prove, and after you've proved
-it you will have a new hypothesis `h : a = 0` in your original goal.
+`a = b`.
 "
 
-NewTactic «have»
+NewTactic contrapose
 
 LemmaDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano" "
 `succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`.
@@ -70,10 +55,10 @@ LemmaDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano" "
 
 /-- If $a \neq b$ then $\operatorname{succ}(a) \neq\operatorname{succ}(b)$. -/
 Statement succ_ne_succ (m n : ℕ) (h : m ≠ n) : succ m ≠ succ n := by
-  Hint "Start by adding `succ m = succ n → m = n` to our list of hypotheses,
-  with `have h2 := succ_inj m n`. Read about the `have` tactic in the
-  documentation on the top right."
-  have := succ_inj m n
-  Hint "Now the goal can be solved by pure logic, so use a logic tactic."
-  Hint (hidden := true) "Use `tauto`."
-  tauto
+  Hint "Start with `contrapose! h`, to change the goal into its
+  contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = n`."
+  contrapose! h
+  Hint "Can you take it from here? (note: if you try `contrapose! h` again, it will
+  take you back to where you started!)"
+  apply succ_inj at h
+  exact h

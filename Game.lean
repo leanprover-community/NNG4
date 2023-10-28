@@ -39,9 +39,11 @@ those who read the help texts like this one.
 
 To start, click on \"Tutorial World\".
 
-Note: this is a preliminary new Lean 4 version of the game; new versions
-of inequality and advanced addition/multiplication worlds are in preparation.
-Other brand new worlds will also be appearing during October 2023.
+Note: this is a new Lean 4 version of the game containing several
+worlds which were not present in the old Lean 3 version. A new version
+of Advanced Multiplication World is in preparation, and worlds
+such as Prime Number World and more will be appearing during October and
+November 2023.
 
 ## More
 
@@ -50,9 +52,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-*Game version: 4.1*
+*Game version: 4.2*
 
-*Recent changes: rewrite of tutorial, addition, multiplication and power world.*
+*Recent additions: Inequality world, algorithm world*
 
 ## Progress saving
 
