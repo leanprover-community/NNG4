@@ -42,7 +42,7 @@ LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 
 NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
 
-/-- If $\operatorname{succ}(a)=\operatorname{succ}(b)$ then $a=b$. -/
+/-- $\operatorname{succ}(a) \neq 0$. -/
 Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   Hint "Start with `intro h` (remembering that `X ≠ Y` is just notation
   for `X = Y → False`)."
