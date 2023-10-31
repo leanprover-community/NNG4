@@ -23,3 +23,6 @@ instance instDecidableEq : DecidableEq MyNat
   | isFalse (h : m ≠ n) => isFalse <| by
     show succ m ≠ succ n
     exact succ_ne_succ m n h
+
+example : (0 : ℕ) + 0 = 0 := by
+  decide -- currently fails because of addition
