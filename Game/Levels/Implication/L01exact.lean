@@ -38,7 +38,7 @@ NewTactic exact
 Introduction
 "
 In this world we'll learn how to prove theorems of the form $P\\implies Q$.
-In othey words, how to prove theorems of the form \"if $P$ is true, then $Q$ is true.\"
+In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ is true.\"
 To do that we need to learn some more tactics.
 
 The `exact` tactic can be used to close a goal which is exactly one of
