@@ -57,7 +57,8 @@ between two naturals. Run it with the `decide` tactic.
 
 /-- $20+20=40$. -/
 Statement : (20 : ℕ) + 20 = 40 := by
-  sorry -- decide
+  try simp only [MyNat_decide]
+  try decide
 
 Conclusion "You can read more about the `decide` tactic by clicking
 on it in the top right."
