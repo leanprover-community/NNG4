@@ -15,8 +15,7 @@ We gave a pretty unsatisfactory proof of `2 + 2 ≠ 5` earlier on; now give a ni
 
 /-- $2+2 \neq 5.$ -/
 Statement : (2 : ℕ) + 2 ≠ 5 := by
-  try simp only [MyNat_decide]
-  try decide
+  MyDecide
 
 Conclusion "Congratulations! You've finished Algorithm World. These algorithms
 will be helpful for you in Even-Odd World."
