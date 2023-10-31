@@ -2,11 +2,7 @@ import Game.MyNat.Definition
 
 namespace MyNat
 
-open MyNat
-
-def add : MyNat → MyNat → MyNat
-  | a, zero  => a
-  | a, MyNat.succ b => MyNat.succ (MyNat.add a b)
+opaque add : MyNat → MyNat → MyNat
 
 instance instAdd : Add MyNat where
   add := MyNat.add
@@ -18,10 +14,10 @@ instance instAdd : Add MyNat where
 you usually want to simplify it to `a`.
 -/
 @[simp]
-theorem add_zero (a : MyNat) : a + 0 = a := by rfl
+axiom add_zero (a : MyNat) : a + 0 = a
 
 /--
 If `a` and `d` are natural numbers, then `add_succ a d` is the proof that
 `a + succ d = succ (a + d)`.
 -/
-theorem add_succ (a d : MyNat) : a + (succ d) = succ (a + d) := by rfl
+axiom add_succ (a d : MyNat) : a + (succ d) = succ (a + d)

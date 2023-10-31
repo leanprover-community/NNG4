@@ -2,13 +2,11 @@ import Game.MyNat.Addition
 
 namespace MyNat
 
-def mul : MyNat → MyNat → MyNat
-  | _, 0   => 0
-  | a, b + 1 => (MyNat.mul a b) + a
+opaque mul : MyNat → MyNat → MyNat
 
 instance : Mul MyNat where
   mul := MyNat.mul
 
-theorem mul_zero (a : MyNat) : a * 0 = 0 := by rfl
+axiom mul_zero (a : MyNat) : a * 0 = 0
 
-theorem mul_succ (a b : MyNat) : a * (succ b) = a * b + a := by rfl
+axiom mul_succ (a b : MyNat) : a * (succ b) = a * b + a
