@@ -26,6 +26,5 @@ Statement one_dvd
   Hint "The reason `1 ∣ n` is because `n = n * 1`, so you should
   start this proof with `use n`."
   use n
-  Hint "Now "
   rw [one_mul]
   rfl
