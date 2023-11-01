@@ -102,6 +102,7 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 Dependency Addition → Multiplication → Power
 --Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
 Dependency Multiplication → AdvMultiplication → Division
+Dependency Multiplication → AdvMultiplication → Division → Prime
 --Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
 Dependency Addition → Implication → AdvAddition → LessOrEqual
 -- The game automatically computes connections between worlds based on introduced
