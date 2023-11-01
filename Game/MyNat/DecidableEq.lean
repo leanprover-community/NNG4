@@ -6,6 +6,9 @@ import Game.Levels.Algorithm.L07succ_ne_succ
 import Mathlib.Tactic
 namespace MyNat
 
+@[MyNat_decide]
+lemma ofNat_succ : (OfNat.ofNat (Nat.succ n) : ℕ) = MyNat.succ (OfNat.ofNat n) := _root_.rfl
+
 macro "MyDecide" : tactic => `(tactic|(
   try simp only [MyNat_decide]
   try decide
@@ -40,6 +43,7 @@ example : 4 ≠ 5 := by
 example : (0 : ℕ) + 0 = 0 := by
   MyDecide
 
+set_option pp.all true in
 example : (2 : ℕ) + 2 = 4 := by
   MyDecide
 
@@ -58,9 +62,10 @@ example : (2 : ℕ) * 2 ≠ 5 := by
 example : (3 : ℕ) ^ 2 ≠ 37 := by
   MyDecide
 
-example : (2 : ℕ) ≤ 3 := by
-  MyDecide
+-- **TODO** uncomment test when decidableLE instance is created
+-- example : (2 : ℕ) ≤ 3 := by
+--   MyDecide
 
--- **TODO** uncomment test when Divisibility World hits
+-- **TODO** uncomment test when Divisibility World hits and decidableDvd instance is created
 -- example : (2 : ℕ) ∣ 4 := by MyDecide
 --
