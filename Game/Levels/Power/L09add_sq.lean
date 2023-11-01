@@ -14,7 +14,7 @@ Introduction
 -- **TODO** get the `ring` hack working again.
 
 LemmaDoc MyNat.add_sq as "add_sq" in "^" "
-`add_sq a b` is the statment that $(a+b)^2=a^2+b^2+2ab.$
+`add_sq a b` is the statement that $(a+b)^2=a^2+b^2+2ab.$
 "
 
 /-- For all numbers $a$ and $b$, we have
