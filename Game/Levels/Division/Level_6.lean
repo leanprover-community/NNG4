@@ -1,4 +1,5 @@
 import Game.Levels.Division.Level_5
+import Game.Levels.AdvMultiplication.all_levels
 
 World "Division"
 Level 6
@@ -33,7 +34,7 @@ Statement dvd_add_right
 
 
 example (a b c d : ℕ) (h : a * c + b = a * d) : a ∣ b := by
-  sorry
+
 
 
 --    obtain ⟨n, rfl⟩ := Nat.le.dest (Nat. le_of_mul_le_mul_left (Nat. le.intro hm) this) use n
