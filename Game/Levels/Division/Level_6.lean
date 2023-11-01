@@ -31,5 +31,10 @@ Statement dvd_add_right
 
     sorry
 
+
+example (a b c d : ℕ) (h : a * c + b = a * d) : a ∣ b := by
+  sorry
+
+
 --    obtain ⟨n, rfl⟩ := Nat.le.dest (Nat. le_of_mul_le_mul_left (Nat. le.intro hm) this) use n
 --    rw [Nat. mul_add] at hm exact Nat. add_left_cancel hm
