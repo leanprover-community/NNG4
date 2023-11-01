@@ -15,7 +15,7 @@ Look in your inventory to see the proofs you have available.
 These should be enough.
 "
 
-LemmaDoc MyNat.add_comm as "add_comm" in "Add"
+LemmaDoc MyNat.add_comm as "add_comm" in "+"
 "`add_comm x y` is a proof of `x + y = y + x`."
 
 /-- On the set of natural numbers, addition is commutative.
@@ -32,4 +32,4 @@ Statement add_comm (a b : ℕ) : a + b = b + a := by
 -- Adding this instance to make `ac_rfl` work.
 instance : Lean.IsCommutative (α := ℕ) (· + ·) := ⟨add_comm⟩
 
-LemmaTab "Add"
+LemmaTab "+"

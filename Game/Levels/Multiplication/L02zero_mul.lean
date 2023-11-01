@@ -15,7 +15,7 @@ and `zero_mul` (which we don't), so let's
 start with this.
 "
 
-LemmaDoc MyNat.zero_mul as "zero_mul" in "Mul" "
+LemmaDoc MyNat.zero_mul as "zero_mul" in "*" "
 `zero_mul x` is the proof that `0 * x = 0`.
 
 Note: `zero_mul` is a `simp` lemma.

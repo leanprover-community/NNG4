@@ -1,33 +1,25 @@
-/-
-Copied from mathlib!
--/
-import Lean
+import Mathlib.Tactic.Use
 
 /-!
 Defines the `use` tactic.
 
-TODO: This does not match the full functionality of `use` from mathlib3.
-See failing tests in `test/Use.lean`.
+## Implementation notes
+
+This simply calls `use` from Mathlib with no discharger.
 -/
 
-open Lean.Elab.Tactic
+open Lean Elab Tactic Mathlib.Tactic
 
-/--
-`use e₁, e₂, ⋯` applies the tactic `refine ⟨e₁, e₂, ⋯, ?_⟩` and then tries
-to close the goal with `with_reducible rfl` (which may or may not close it). It's
-useful, for example, to advance on existential goals, for which terms as
-well as proofs of some claims about them are expected.
+/-- For goals of the form `∃ (n : ℕ), P n` the tactic `use` can be used to provide a `n` which
+will satisfy `P n`. For multiple constructors like `∃ (n m : ℕ), P n`, you can provide
+comma-separated values: `use 2, 3`.
 
-Examples:
-
-```lean
-example : ∃ x : Nat, x = x := by use 42
-
-example : ∃ x : Nat, ∃ y : Nat, x = y := by use 42, 42
-
-example : ∃ x : String × String, x.1 = x.2 := by use ("forty-two", "forty-two")
-```
+Note that the version for this game is somewhat weaker than the real one. For example,
+`use` in Mathlib
+automatically tries to apply `rfl` afterwards.
 -/
--- TODO extend examples in doc-string once mathlib3 parity is achieved.
-macro "use " es:term,+ : tactic =>
-  `(tactic|(refine ⟨$es,*, ?_⟩; try with_reducible rfl))
+-- @[inherit_doc Mathlib.Tactic.useSyntax]
+elab (name := MyNat.useSyntax) "use" ppSpace args:term,+ : tactic => do
+  -- use Mathlib's `use` without any discharger
+  let discharger := evalTactic (← `(tactic|skip))
+  runUse false discharger args.getElems.toList

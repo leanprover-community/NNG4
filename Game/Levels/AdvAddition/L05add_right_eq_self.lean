@@ -4,11 +4,11 @@ World "AdvAddition"
 Level 5
 Title "add_right_eq_self"
 
-LemmaTab "Add"
+LemmaTab "+"
 
 namespace MyNat
 
-LemmaDoc MyNat.add_right_eq_self as "add_right_eq_self" in "Add" "
+LemmaDoc MyNat.add_right_eq_self as "add_right_eq_self" in "+" "
 
 `add_right_eq_self x y` is the theorem that $x + y = x\\implies y=0.$
 "

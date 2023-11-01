@@ -23,16 +23,16 @@ It is distinct from the Lean natural numbers `Nat`, which should hopefully
 never leak into the natural number game.*"
 
 
-LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "numerals"
+LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "012"
 "`one_eq_succ_zero` is a proof of `1 = succ 0`."
 
-LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "numerals"
+LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "012"
 "`two_eq_succ_one` is a proof of `2 = succ 1`."
 
-LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "numerals"
+LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "012"
 "`three_eq_succ_two` is a proof of `3 = succ 2`."
 
-LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "numerals"
+LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "012"
 "`four_eq_succ_three` is a proof of `4 = succ 3`."
 
 NewDefinition MyNat
@@ -58,7 +58,8 @@ Similarly let's define `2 = succ 1`, `3 = succ 2` and `4 = succ 3`.
 This gives us plenty of numbers to be getting along with.
 
 The *proof* that `2 = succ 1` is called `two_eq_succ_one`.
-Check out the \"numerals\" tab in the list of lemmas on the right.
+Check out the \"012\" tab in the list of lemmas on the right
+for this and other proofs.
 
 Let's prove that $2$ is the number after the number after zero.
 "
@@ -73,7 +74,7 @@ Statement
   Hint (hidden := true) "Now finish the job with `rfl`."
   rfl
 
-LemmaTab "numerals"
+LemmaTab "012"
 
 Conclusion
 "

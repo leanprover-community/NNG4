@@ -6,7 +6,7 @@ World "Tutorial"
 Level 8
 Title "2+2=4"
 
-LemmaTab "numerals"
+LemmaTab "012"
 
 namespace MyNat
 

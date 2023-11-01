@@ -6,7 +6,7 @@ World "Tutorial"
 Level 2
 Title "the rw tactic"
 
-LemmaTab "numerals"
+LemmaTab "012"
 
 namespace MyNat
 

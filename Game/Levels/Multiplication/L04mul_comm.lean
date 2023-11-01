@@ -17,7 +17,7 @@ But we'll keep hold of these proofs anyway, because it's convenient
 to have exactly the right tool for a job.
 "
 
-LemmaDoc MyNat.mul_comm as "mul_comm" in "Mul" "
+LemmaDoc MyNat.mul_comm as "mul_comm" in "*" "
 `mul_comm` is the proof that multiplication is commutative. More precisely,
 `mul_comm a b` is the proof that `a * b = b * a`.
 "
@@ -34,4 +34,4 @@ Statement mul_comm
     rw [mul_succ]
     rfl
 
-LemmaTab "Mul"
+LemmaTab "*"

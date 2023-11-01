@@ -23,7 +23,7 @@ will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`
 will only do rewrites of the form `b + c = c + b`.
 "
 
-LemmaDoc MyNat.add_right_comm as "add_right_comm" in "Add"
+LemmaDoc MyNat.add_right_comm as "add_right_comm" in "+"
 "`add_right_comm a b c` is a proof that `(a + b) + c = (a + c) + b`.
 
 In Lean, `a + b + c` means `(a + b) + c`, so this result gets displayed
@@ -36,7 +36,7 @@ Statement add_right_comm (a b c : ℕ) : a + b + c = a + c + b := by
   rw [add_comm b, add_assoc]
   rfl
 
-LemmaTab "Add"
+LemmaTab "+"
 
 Conclusion "
 You've now seen all the tactics you need to beat the final boss of the game.

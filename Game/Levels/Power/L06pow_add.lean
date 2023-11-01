@@ -9,7 +9,7 @@ namespace MyNat
 Introduction "Let's now begin our approach to the final boss,
 by proving some more subtle facts about powers."
 
-LemmaDoc MyNat.pow_add as "pow_add" in "Pow" "
+LemmaDoc MyNat.pow_add as "pow_add" in "^" "
 
 `pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$
 "
@@ -23,4 +23,4 @@ Statement pow_add
   · rw [add_succ, pow_succ, pow_succ, ht, mul_assoc]
     rfl
 
-LemmaTab "Pow"
+LemmaTab "^"
