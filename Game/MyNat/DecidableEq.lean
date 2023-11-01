@@ -43,7 +43,6 @@ example : 4 ≠ 5 := by
 example : (0 : ℕ) + 0 = 0 := by
   MyDecide
 
-set_option pp.all true in
 example : (2 : ℕ) + 2 = 4 := by
   MyDecide
 

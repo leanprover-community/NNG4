@@ -33,11 +33,8 @@ instance instofNat {n : Nat} : OfNat MyNat n where
 instance : ToString MyNat where
   toString p := toString (toNat p)
 
-@[simp]
-theorem zero_eq_0 : MyNat.zero = 0 := rfl
-
 @[MyNat_decide]
-theorem zero_eq_zero : (0 : ℕ) = MyNat.zero := rfl
+theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
 def one : MyNat := MyNat.succ 0
 
