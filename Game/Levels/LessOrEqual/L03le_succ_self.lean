@@ -34,7 +34,7 @@ This works because `succ_eq_add_one x` is a proof of `succ x = x + 1`.
 /-
 Introduction
 "
-Because constanly rewriting `zero_add` and `add_zero` is a bit dull,
+Because constantly rewriting `zero_add` and `add_zero` is a bit dull,
 let's unlock the `ring` tactic. This will prove any goal which is \"true
 in the language of ring theory\", for example `a + b + c = c + b + a`.
 It doesn't understand `succ` though, so use `succ_eq_add_one` in this
