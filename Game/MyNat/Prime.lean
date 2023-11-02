@@ -5,8 +5,6 @@ import Game.MyNat.LE
 
 namespace MyNat
 
-def Prime (n : ℕ) := (2 ≤ n) ∧ ∀ (a b : ℕ), n ∣ a * b → n ∣ a ∨ n ∣ b
-
-
+def Prime (n : ℕ) := (2 ≤ n) ∧ ∀ (a : ℕ), a ∣ n → a = 1 ∨ a = n
 
 end MyNat
