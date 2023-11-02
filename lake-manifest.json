@@ -2,20 +2,20 @@
  "packagesDir": "lake-packages",
  "packages":
  [{"git":
-   {"url": "https://github.com/leanprover-community/lean4game.git",
-    "subDir?": "server",
-    "rev": "918151ade519a4dd29c7735dcae62b6c23948598",
-    "opts": {},
-    "name": "GameServer",
-    "inputRev?": "main",
-    "inherited": false}},
-  {"git":
    {"url": "https://github.com/leanprover-community/mathlib4",
     "subDir?": null,
     "rev": "f203f2e0caf1d9ea25b7f2e4b8c2afebd2c6967b",
     "opts": {},
     "name": "mathlib",
     "inputRev?": "v4.1.0",
+    "inherited": false}},
+  {"git":
+   {"url": "https://github.com/leanprover-community/lean4game.git",
+    "subDir?": "server",
+    "rev": "bda1f98693ac3f143c5757e61b30892dc26d4c95",
+    "opts": {},
+    "name": "GameServer",
+    "inputRev?": "main",
     "inherited": false}},
   {"git":
    {"url": "https://github.com/mhuisi/lean4-cli.git",
