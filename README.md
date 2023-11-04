@@ -10,7 +10,7 @@ There are multiple ways to run the game while developing it:
 
 ### VSCode Devcontainer
 
-The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally).
+The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/doc/DOCUMENTATION.md#running-games-locally).
 In particular, the recommended setup is to have `docker` installed on your computer
 and then click on the pop-up "Reopen in Container" which is shown when
 opening this project in VSCode.
@@ -33,7 +33,7 @@ As with devcontainers, you need to run `lake build` after changing any lean file
 
 ### Local setup
 
-The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/DOCUMENTATION.md#running-games-locally).
+The full instructions are at [Running games locally](https://github.com/leanprover-community/lean4game/blob/main/doc/DOCUMENTATION.md#running-games-locally).
 In particular, the recommended setup is to have `docker` installed on your computer
 and then click on the pop-up "Reopen in Container" which is shown when
 opening this project in VSCode.
