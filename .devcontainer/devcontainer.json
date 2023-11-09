@@ -13,9 +13,9 @@
   "overrideCommand": true,
   "onCreateCommand": {
     "npm_install": "(cd ~/lean4game && npm install)",
-    "lake_build": "(cd ~/game && lake update && lake exe cache get && lake build)"
+    "lake_build": "(cd ~/game && lake clean && lake exe cache get && lake build)"
   },
-  "postStartCommand": "cd ~/lean4game && export LEAN4GAME_SINGLE_GAME=true && npm start",
+  "postStartCommand": "cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start",
   "customizations": {
     "vscode": {
       "settings": {

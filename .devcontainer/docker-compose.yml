@@ -3,8 +3,8 @@ version: "3.9"
 services:
   game:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
     volumes:
       - ..:/home/node/game
     ports:
