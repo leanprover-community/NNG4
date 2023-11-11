@@ -29,13 +29,14 @@ Introduction
 LemmaDoc MyNat.prime_two as "prime_two" in "Prime" "
 `prime_two` is a proof that 2 is prime.
 "
+
 lemma succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   have := zero_ne_succ a
   by_contra h
   have h' : 0 = succ a := by exact (Eq.symm h)
   contradiction
 
-example (a : ℕ) (h : a ∣ 2) : a ≤ 2 := by
+lemma dvd_two_leq_two (a : ℕ) (h : a ∣ 2) : a ≤ 2 := by
   match h with
   |⟨k, e⟩=>
   rw [e]
@@ -45,30 +46,28 @@ example (a : ℕ) (h : a ∣ 2) : a ≤ 2 := by
   rw [two_eq_succ_one]
   exact succ_ne_zero 1
 
-
-
-
-
-
-
+lemma le_two (a : ℕ) (h : a ≤ 2) : a = 0 ∨ a = 1 ∨ a = 2 := by
+  apply Or.elim (Classical.em (a = 2))
+  · intro
+    right
+    right
+    assumption
+  · intro
+    have h' : a ≤ 1 := by {
+      sorry
+    }
+    have := le_one a h'
+    apply Or.elim this
+    · intro
+      left
+      assumption
+    · intro
+      right
+      left
+      assumption
 
 
   sorry
-
-#check Nat.le_of_dvd
-example (a n : ℕ) (h : 0 < n) : a ∣ n → a ≤ n := by
-  intro
-  |⟨k, e⟩ =>
-  have hk : 1 ≤ k := by {
-    sorry
-  }
-  have hak : a * k ≠ 0 := by {
-    rw [← e]
-    sorry
-  }
-  rw [e]
-  have := le_mul_right a k hak
-  assumption
 
 Statement prime_two :
   Prime 2 := by
@@ -78,7 +77,7 @@ Statement prime_two :
   rw [add_zero]
   rfl
   intros a ha
-  have : a ≤ 2 := by sorry
+  have : a ≤ 2 := by exact dvd_two_leq_two a ha
   have h : a = 0 ∨ a = 1 ∨ a = 2 := by sorry
   rcases h with ⟨h1, h2⟩
   · exfalso

@@ -114,3 +114,5 @@ lemma self_eq_mul_left (a b : ℕ) (h : b = a * b) (hb : b ≠ 0) : a = 1 := by
 lemma self_eq_mul_right (a b : ℕ) (h : b = b * a) (hb : b ≠ 0) : a = 1 := by
   rw [mul_comm] at h
   exact self_eq_mul_left _ _ h hb
+
+
