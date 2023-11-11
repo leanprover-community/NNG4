@@ -19,4 +19,5 @@ instance : LE MyNat := ⟨MyNat.le⟩
 
 theorem le_iff_exists_add (a b : ℕ) : a ≤ b ↔ ∃ (c : ℕ), b = a + c := Iff.rfl
 
+
 end MyNat
