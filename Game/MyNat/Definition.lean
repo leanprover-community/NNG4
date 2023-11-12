@@ -41,7 +41,3 @@ def one : MyNat := MyNat.succ 0
 -- TODO: Why does this not work here??
 -- We do not want `simp` to be able to do anything unless we unlock it manually.
 attribute [-simp] MyNat.succ.injEq
-
-theorem eq_toNat_eq : ∀ (m n : MyNat), m.toNat = n.toNat → m = n
-  | zero, zero, _ => rfl
-  | succ m, succ n, h => congrArg succ $ eq_toNat_eq m n (Nat.succ.inj h)

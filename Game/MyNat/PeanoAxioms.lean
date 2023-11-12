@@ -21,7 +21,7 @@ theorem succ_inj (a b : ℕ) (h : succ a = succ b) : a = b := by
 
 def is_zero : ℕ → Prop
 | 0 => True
-| succ n => False
+| succ _ => False
 
 lemma is_zero_zero : is_zero 0 = True := rfl
 lemma is_zero_succ (n : ℕ) : is_zero (succ n) = False := rfl
