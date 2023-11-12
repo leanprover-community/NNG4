@@ -1,4 +1,5 @@
 import Game.MyNat.DecidableEq
+import Game.MyNat.Power
 
 example : 4 = 4 := by
   decide
