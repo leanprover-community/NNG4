@@ -45,16 +45,3 @@ attribute [-simp] MyNat.succ.injEq
 theorem eq_toNat_eq : ∀ (m n : MyNat), m.toNat = n.toNat → m = n
   | zero, zero, _ => rfl
   | succ m, succ n, h => congrArg succ $ eq_toNat_eq m n (Nat.succ.inj h)
-
---@[MyNat_decide]
---theorem eq_iff_eq_toNat (m n : MyNat) : m = n ↔ m.toNat = n.toNat := by
---  refine ⟨by simp_all, eq_toNat_eq _ _⟩
-
---@[MyNat_decide]
---theorem ne_iff_ne_toNat (m n : MyNat) : m ≠ n ↔ m.toNat ≠ n.toNat := by
---  simp [MyNat_decide]
-
---@[MyNat_decide]
---theorem toNat_ofNat : ∀ (n : Nat), (MyNat.ofNat n).toNat = n
---  | .zero => rfl
---  | .succ n => congrArg Nat.succ (toNat_ofNat n)
