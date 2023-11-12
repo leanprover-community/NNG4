@@ -31,7 +31,7 @@ instance instDecidableLe : DecidableRel (α := ℕ) (· ≤ ·)
     apply succ_inj at ha
     exact ha
 
-example : (2 : ℕ) ≤ 3 := by
+example : (20 : ℕ) ≤ 30 := by
   MyDecide
 
 example : ¬ ((30 : ℕ) ≤ 20) := by

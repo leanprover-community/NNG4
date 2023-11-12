@@ -60,7 +60,3 @@ example : (2 : ℕ) * 2 ≠ 5 := by
 
 example : (3 : ℕ) ^ 2 ≠ 37 := by
   MyDecide
-
--- **TODO** uncomment test when Divisibility World hits and decidableDvd instance is created
--- example : (2 : ℕ) ∣ 4 := by MyDecide
---
