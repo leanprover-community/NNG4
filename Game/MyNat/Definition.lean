@@ -1,5 +1,5 @@
-import Game.Tactic.LabelAttr
-import Mathlib.Tactic
+import Game.Tactic.LabelAttr -- MyNat_decide attribute
+
 /-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where
 | zero : MyNat
