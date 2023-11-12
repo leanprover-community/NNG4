@@ -1,5 +1,4 @@
 import Game.MyNat.Multiplication
---import Mathlib.Tactic
 
 namespace MyNat
 
