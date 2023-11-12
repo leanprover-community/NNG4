@@ -46,28 +46,38 @@ lemma dvd_two_leq_two (a : ℕ) (h : a ∣ 2) : a ≤ 2 := by
   rw [two_eq_succ_one]
   exact succ_ne_zero 1
 
+lemma le_cancel (a b t : ℕ) (h : a + t ≤ b + t) : a ≤ b := by
+  match h with
+  |⟨k, hk⟩ =>
+  rw [add_assoc, add_comm t k, ← add_assoc] at hk
+  have : b = a + k := by exact add_right_cancel b (a + k) t hk
+  use k
+  assumption
+
+example (a : ℕ) (h : a + 1 ≤ 2) : a ≤ 1 := by
+  rw [← succ_eq_add_one] at h
+  rw [succ_eq_add_one] at h
+  apply le_cancel a 1 1
+  match h with
+  |⟨k, e⟩ =>
+  use k
+  rw [two_eq_succ_one, succ_eq_add_one] at e
+  assumption
+
 lemma le_two (a : ℕ) (h : a ≤ 2) : a = 0 ∨ a = 1 ∨ a = 2 := by
-  apply Or.elim (Classical.em (a = 2))
-  · intro
-    right
-    right
-    assumption
-  · intro
-    have h' : a ≤ 1 := by {
-      sorry
-    }
-    have := le_one a h'
-    apply Or.elim this
-    · intro
-      left
-      assumption
-    · intro
-      right
-      left
-      assumption
-
-
-  sorry
+  cases a with a
+  · left; rfl
+  · rw [succ_eq_add_one] at *
+    rw [two_eq_succ_one, succ_eq_add_one] at h
+    have := le_cancel a 1 1 h
+    cases (le_one a this) with h1 h2
+    · right; left
+      rw [h1, zero_add]
+      rfl
+    · right; right
+      rw [h2]
+      rw [two_eq_succ_one, succ_eq_add_one]
+      rfl
 
 Statement prime_two :
   Prime 2 := by
@@ -78,7 +88,7 @@ Statement prime_two :
   rfl
   intros a ha
   have : a ≤ 2 := by exact dvd_two_leq_two a ha
-  have h : a = 0 ∨ a = 1 ∨ a = 2 := by sorry
+  have h : a = 0 ∨ a = 1 ∨ a = 2 := by exact le_two a this
   rcases h with ⟨h1, h2⟩
   · exfalso
     rcases ha with ⟨b, hb⟩
