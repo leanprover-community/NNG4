@@ -1,14 +1,9 @@
-import Game.MyNat.Addition-- makes simps work?
 import Game.MyNat.PeanoAxioms
-import Game.Levels.Algorithm.L07succ_ne_succ
+import Game.Levels.Algorithm.L07succ_ne_succ -- succ_ne_succ
 import Mathlib.Tactic
 import Game.Tactic.decide
 
 namespace MyNat
-
--- to get numerals of type MyNat to reduce to MyNat.succ (MyNat.succ ...)
-@[MyNat_decide]
-lemma ofNat_succ : (OfNat.ofNat (Nat.succ n) : ℕ) = MyNat.succ (OfNat.ofNat n) := _root_.rfl
 
 instance instDecidableEq : DecidableEq MyNat
 | 0, 0 => isTrue <| by
