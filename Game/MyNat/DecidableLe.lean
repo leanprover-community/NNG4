@@ -32,7 +32,7 @@ instance instDecidableLe : DecidableRel (α := ℕ) (· ≤ ·)
     exact ha
 
 example : (20 : ℕ) ≤ 30 := by
-  MyDecide
+  decide
 
 example : ¬ ((30 : ℕ) ≤ 20) := by
-  MyDecide
+  decide
