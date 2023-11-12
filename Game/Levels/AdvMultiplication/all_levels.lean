@@ -1,5 +1,6 @@
 import Game.Levels.Multiplication
 import Game.Levels.LessOrEqual
+import Game.MyNat.Division
 
 namespace MyNat
 
@@ -116,3 +117,53 @@ lemma self_eq_mul_right (a b : ℕ) (h : b = b * a) (hb : b ≠ 0) : a = 1 := by
   exact self_eq_mul_left _ _ h hb
 
 
+-- Extra for Prime World
+
+lemma succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
+  have := zero_ne_succ a
+  by_contra h
+  have h' : 0 = succ a := by exact (Eq.symm h)
+  contradiction
+
+lemma dvd_two_leq_two (a : ℕ) (h : a ∣ 2) : a ≤ 2 := by
+  match h with
+  |⟨k, e⟩=>
+  rw [e]
+  have := le_mul_right a k ?_
+  assumption
+  rw [← e]
+  rw [two_eq_succ_one]
+  exact succ_ne_zero 1
+
+lemma le_cancel (a b t : ℕ) (h : a + t ≤ b + t) : a ≤ b := by
+  match h with
+  |⟨k, hk⟩ =>
+  rw [add_assoc, add_comm t k, ← add_assoc] at hk
+  have : b = a + k := by exact add_right_cancel b (a + k) t hk
+  use k
+  assumption
+
+example (a : ℕ) (h : a + 1 ≤ 2) : a ≤ 1 := by
+  rw [← succ_eq_add_one] at h
+  rw [succ_eq_add_one] at h
+  apply le_cancel a 1 1
+  match h with
+  |⟨k, e⟩ =>
+  use k
+  rw [two_eq_succ_one, succ_eq_add_one] at e
+  assumption
+
+lemma le_two (a : ℕ) (h : a ≤ 2) : a = 0 ∨ a = 1 ∨ a = 2 := by
+  cases a with a
+  · left; rfl
+  · rw [succ_eq_add_one] at *
+    rw [two_eq_succ_one, succ_eq_add_one] at h
+    have := le_cancel a 1 1 h
+    cases (le_one a this) with h1 h2
+    · right; left
+      rw [h1, zero_add]
+      rfl
+    · right; right
+      rw [h2]
+      rw [two_eq_succ_one, succ_eq_add_one]
+      rfl
