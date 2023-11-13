@@ -22,43 +22,32 @@ LemmaDoc MyNat.Colatz as "Collatz" in "Hard" "
 `Collatz` is the proof of disproof of the Collatz conjecture.
 "
 
-#check Nat.div
-#check Nat.sub
-#check Nat.lt
-#check Nat.mod
+def even (n : ℕ) : Prop
+  | zero => true
+  | succ a => ¬ (even a)
 
-
-def pred : ℕ → ℕ
+def half (n : ℕ) :=
   | zero => zero
-  | succ a => a
+  | succ a =>
+  match even a with
+  | true => half a + 1
+  | false => half a
 
-def sub : ℕ → ℕ → ℕ
-  | a, zero => a
-  | a, succ b => pred (sub a b)
-
-def lt (m n : ℕ) : Prop :=
-  MyNat.le (succ n) m
-
-instance : LT MyNat where
-  lt := MyNat.lt
-
-instance : Sub MyNat where
-  sub := MyNat.sub
-
-def mod : ℕ → ℕ → ℕ
-  | 0, _ => 0
-  | a@(_ + 1), b => mod a b
-
-#eval mod 4 3
-
-def div (x y : ℕ) : ℕ :=
-  if 0 < y ∧ y ≤ x then
-    div (x - y) y + 1
-  else
-    0
-
-
+-- 'collatz function'
 def f (x : ℕ) :=
-  match x % 2 with
-  |0 => x / 2
-  |1 => 3 * x + 1
+  match even x with
+  | true => half n
+  | false => 3 * n + 1
+
+-- kᵗʰ collatz term stariting at n
+def collatz (n k : ℕ) :=
+  match k with
+  | zero => f n
+  | succ b => f (collatz n b)
+
+
+Statment Collatz : ∀ (n : ℕ), ∃ (k : ℕ), collatz n k = 1 := by
+  sorry
+
+
+#eval half 4
