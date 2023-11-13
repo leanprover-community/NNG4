@@ -22,16 +22,11 @@ LemmaDoc MyNat.Colatz as "Collatz" in "Hard" "
 `Collatz` is the proof of disproof of the Collatz conjecture.
 "
 
-def even (n : ℕ) : Prop
-  | zero => true
-  | succ a => ¬ (even a)
-
+-- halving used for the sequence
 def half (n : ℕ) :=
-  | zero => zero
-  | succ a =>
-  match even a with
-  | true => half a + 1
-  | false => half a
+  | 0 => 0
+  | 1 => 0
+  | (a + 2) => half a + 1
 
 -- 'collatz function'
 def f (x : ℕ) :=
