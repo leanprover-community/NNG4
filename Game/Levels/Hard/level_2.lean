@@ -1,4 +1,7 @@
 import Game.Levels.Hard.level_1
+import Game.MyNat.Multiplication
+
+
 
 
 World "Hard"
@@ -23,16 +26,24 @@ LemmaDoc MyNat.Colatz as "Collatz" in "Hard" "
 "
 
 -- halving used for the sequence
-def half (n : ℕ) :=
+def half (n : ℕ) : ℕ :=
+match n with
+  |0 => 0
+  |1 => 0
+  |(a + 2) => half a + 1
+
+def even (n : ℕ) :=
+match n with
   | 0 => 0
-  | 1 => 0
-  | (a + 2) => half a + 1
+  | 1 => 1
+  | (a + 2) => even a
 
 -- 'collatz function'
 def f (x : ℕ) :=
-  match even x with
-  | true => half n
-  | false => 3 * n + 1
+  if (even x == 1) then
+    3 * x + 1
+  else
+    (half x)
 
 -- kᵗʰ collatz term stariting at n
 def collatz (n k : ℕ) :=
@@ -41,8 +52,5 @@ def collatz (n k : ℕ) :=
   | succ b => f (collatz n b)
 
 
-Statment Collatz : ∀ (n : ℕ), ∃ (k : ℕ), collatz n k = 1 := by
+Statement Collatz : ∀ (n : ℕ), ∃ (k : ℕ), collatz n k = 1 := by
   sorry
-
-
-#eval half 4
