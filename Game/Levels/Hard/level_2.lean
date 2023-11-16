@@ -1,7 +1,6 @@
 import Game.Levels.Hard.level_1
 
 
-
 World "Hard"
 Level 2
 Title "Collatz"
@@ -20,7 +19,7 @@ Introduction
 "
 
 LemmaDoc MyNat.Colatz as "Collatz" in "Hard" "
-`Collatz` is the proof of disproof of the Collatz conjecture.
+`Collatz` is the proof of the Collatz conjecture.
 "
 
 -- halving used for the sequence

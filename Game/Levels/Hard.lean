@@ -3,6 +3,8 @@ import Game.Levels.LessOrEqual
 import Game.Levels.Power
 import Game.MyNat.Addition
 import Game.MyNat.Multiplication
+import Game.MyNat.Prime
+
 
 
 

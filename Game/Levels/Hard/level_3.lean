@@ -17,8 +17,8 @@ Introduction
 "
 
 LemmaDoc MyNat.Golbach as "Golbach" in "Hard" "
-`Golbach` is the proof of disproof of the Golbach conjecture.
+`Golbach` is the proof of the Golbach conjecture.
 "
 
-Statement Golbach : (∀ n : ℕ), n ≥ 2 → (∃ a b : ℕ), (Prime a) ∧ (Prime b) ∧ (n = a + b) := by
+Statement Golbach : ∀ (n : ℕ), n ≥ 2 → ∃ (a b : ℕ), (Prime a) ∧ (Prime b) ∧ (n = a + b) := by
   sorry

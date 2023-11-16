@@ -16,9 +16,8 @@ Introduction
 "
 
 LemmaDoc MyNat.Twin_Prime as "Twin_Prime" in "Hard" "
-`Twin_Prime` is the proof of disproof of the Twin Prime conjecture.
+`Twin_Prime` is the proof of the Twin Prime conjecture.
 "
 
 Statement Twin_Prime :
   (∀ M : ℕ), (∃ a b : ℕ), (a ≥ M) ∧ (b ≥ M) ∧ (a + 2 = b) ∧ (Prime a) ∧ (Prime b) := by sorry
-
