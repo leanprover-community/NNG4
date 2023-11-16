@@ -1,6 +1,4 @@
 import Game.Levels.Hard.level_1
-import Game.MyNat.Multiplication
-
 
 
 
