@@ -9,15 +9,56 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v2
+      - name: install elan
+        run: |
+          set -o pipefail
+          curl -sSfL https://github.com/leanprover/elan/releases/download/v3.0.0/elan-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          ./elan-init -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - name: build docker image
-        run: docker build . --file Dockerfile --tag game:latest
+      - uses: actions/checkout@v4
 
-      - name: Store docker container as an artifact
-        uses: ishworkh/docker-image-artifact-upload@v1
+      - name: print lean and lake versions
+        run: |
+          lean --version
+          lake --version
+
+      - name: get mathlib cache
+        continue-on-error: true
+        run: |
+          lake exe cache clean
+          # We've been seeing many failures at this step recently because of network errors.
+          # As a band-aid, we try twice.
+          # The 'sleep 1' is small pause to let the network recover.
+          lake exe cache get || (sleep 1; lake exe cache get)
+
+      - name: create timestamp file
+        run: touch tmp_timestamp
+
+      - name: building game
+        run: env LEAN_ABORT_ON_PANIC=1 lake build
+
+      - name: delete unused mathlib cache
+        continue-on-error: true
+        run: find ./lake-packages/mathlib/build/lib -type f \( -name "*.olean" -o -name "*.olean.hash" \) \! -neweraa ./tmp_timestamp -delete -print
+
+      - name: delete timestamp file
+        run: rm ./tmp_timestamp
+
+      - name: compress built game
+        run: tar -czvf ../game.tar.gz .
+        # run: zip game.zip ./* -r
+
+      - name: hack. move compressed artifact back
+        run: mv ../game.tar.gz ./game.tar.gz
+        # run: zip game.zip ./* -r
+
+      - name: upload compressed game folder
+        uses: actions/upload-artifact@v3
         with:
-          image: "game:latest"
+          name: build-for-server-import
+          path: |
+            game.tar.gz
 
-      - name: What next?
-        run: echo "To export the game to the Game Server, open https://adam.math.hhu.de/import/trigger/${GITHUB_REPOSITORY,,} \n Afterwards, you can play the game at https://adam.math.hhu.de/#/g/${GITHUB_REPOSITORY,,}"
+      # - name: What next?
+      #   run: echo "To export the game to the Game Server, open https://adam.math.hhu.de/import/trigger/${GITHUB_REPOSITORY,,} \n Afterwards, you can play the game at https://adam.math.hhu.de/#/g/${GITHUB_REPOSITORY,,}"

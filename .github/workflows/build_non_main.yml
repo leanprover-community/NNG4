@@ -10,7 +10,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/checkout@v2
+      - name: install elan
+        run: |
+          set -o pipefail
+          curl -sSfL https://github.com/leanprover/elan/releases/download/v3.0.0/elan-x86_64-unknown-linux-gnu.tar.gz | tar xz
+          ./elan-init -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - name: build docker image
-        run: docker build . --file Dockerfile --tag game:latest
+      - uses: actions/checkout@v4
+
+      - name: print lean and lake versions
+        run: |
+          lean --version
+          lake --version
+
+      - name: get mathlib cache
+        continue-on-error: true
+        run: |
+          lake exe cache clean
+          # We've been seeing many failures at this step recently because of network errors.
+          # As a band-aid, we try twice.
+          # The 'sleep 1' is small pause to let the network recover.
+          lake exe cache get || (sleep 1; lake exe cache get)
+
+      - name: building game
+        run: env LEAN_ABORT_ON_PANIC=1 lake build

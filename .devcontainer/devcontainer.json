@@ -13,7 +13,7 @@
   "overrideCommand": true,
   "onCreateCommand": {
     "npm_install": "(cd ~/lean4game && npm install)",
-    "lake_build": "(cd ~/game && lake clean && lake exe cache get && lake build)"
+    "lake_build": "(cd ~/game && lake update -R && lake exe cache get && lake build)"
   },
   "postStartCommand": "cd ~/lean4game && export VITE_LEAN4GAME_SINGLE=true && npm start",
   "customizations": {

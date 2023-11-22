@@ -17,11 +17,8 @@ def RemoteGameServer : Dependency := {
 /- Choose GameServer dependency depending on the environment variable `LEAN4GAME`. -/
 open Lean in
 #eval (do
-  let gameServerName := match (← IO.getEnv "LEAN4GAME") with
-    | none => ``RemoteGameServer
-    | some "" => ``RemoteGameServer
-    | some "local" => ``LocalGameServer
-    | some _ => panic "env var LEAN4GAME must be 'local' or unset."
+  let gameServerName := if get_config? lean4game.local |>.isSome then
+    ``LocalGameServer else ``RemoteGameServer
   modifyEnv (fun env => Lake.packageDepAttr.ext.addEntry env gameServerName)
   : Elab.Command.CommandElabM Unit)
 
