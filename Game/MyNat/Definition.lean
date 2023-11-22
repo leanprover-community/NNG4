@@ -1,3 +1,5 @@
+import Game.Tactic.LabelAttr -- MyNat_decide attribute
+
 /-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where
 | zero : MyNat
@@ -13,22 +15,25 @@ namespace MyNat
 instance : Inhabited MyNat where
   default := MyNat.zero
 
-def myNatFromNat (x : Nat) : MyNat :=
+@[MyNat_decide]
+def ofNat (x : Nat) : MyNat :=
   match x with
   | Nat.zero   => MyNat.zero
-  | Nat.succ b => MyNat.succ (myNatFromNat b)
+  | Nat.succ b => MyNat.succ (ofNat b)
 
-def natFromMyNat (x : MyNat) : Nat :=
+@[MyNat_decide]
+def toNat (x : MyNat) : Nat :=
   match x with
   | MyNat.zero   => Nat.zero
-  | MyNat.succ b => Nat.succ (natFromMyNat b)
+  | MyNat.succ b => Nat.succ (toNat b)
 
-instance ofNat {n : Nat} : OfNat MyNat n where
-  ofNat := myNatFromNat n
+instance instofNat {n : Nat} : OfNat MyNat n where
+  ofNat := ofNat n
 
 instance : ToString MyNat where
-  toString p := toString (natFromMyNat p)
+  toString p := toString (toNat p)
 
+@[MyNat_decide]
 theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
 def one : MyNat := MyNat.succ 0
