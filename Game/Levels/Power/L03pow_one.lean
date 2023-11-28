@@ -14,8 +14,7 @@ defined to be `a ^ 0 * a` so it's `1 * a`, and to prove
 that this is equal to `a` you need to use induction somewhere.
 "
 /-- For all naturals $a$, $a ^ 1 = a$. -/
-Statement pow_one
-    (a : ℕ) : a ^ 1 = a  := by
+Statement pow_one (a : ℕ) : a ^ 1 = a  := by
   rw [one_eq_succ_zero]
   rw [pow_succ]
   rw [pow_zero]

@@ -37,7 +37,3 @@ instance : ToString MyNat where
 theorem zero_eq_0 : MyNat.zero = 0 := rfl
 
 def one : MyNat := MyNat.succ 0
-
--- TODO: Why does this not work here??
--- We do not want `simp` to be able to do anything unless we unlock it manually.
-attribute [-simp] MyNat.succ.injEq
