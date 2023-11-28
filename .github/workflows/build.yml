@@ -40,7 +40,7 @@ jobs:
 
       - name: delete unused mathlib cache
         continue-on-error: true
-        run: find ./.lake/ -type f \! \( -name "*.olean" -o -name "*.ilean" \) -delete -print && find ./.lake/ -type f \( -name "*.olean" \) \! -neweraa ./tmp_timestamp -delete -print
+        run: find ./.lake/ -type f \( -name "*.c" -o -name "*.hash" -o -name "*.trace" \) -delete -print && find ./.lake/ -type f \( -name "*.olean" \) \! -neweraa ./tmp_timestamp -delete -print
 
       - name: delete timestamp file
         run: rm ./tmp_timestamp
