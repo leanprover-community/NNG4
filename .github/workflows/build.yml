@@ -40,18 +40,14 @@ jobs:
 
       - name: delete unused mathlib cache
         continue-on-error: true
-        run: find ./lake-packages/mathlib/build/lib -type f \( -name "*.olean" -o -name "*.olean.hash" \) \! -neweraa ./tmp_timestamp -delete -print
+        run: find ./.lake/packages/mathlib/.lake/build/lib -type f \( -name "*.olean" -o -name "*.olean.hash" \) \! -neweraa ./tmp_timestamp -delete -print
 
       - name: delete timestamp file
         run: rm ./tmp_timestamp
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
-        run: zip game.zip ./* -r
-
-      # - name: hack. move compressed artifact back
-      #   run: mv ../game.tar.gz ./game.tar.gz
-      #   # run: zip game.zip ./* -r
+        run: zip game.zip * .lake/ -r
 
       - name: upload compressed game folder
         uses: actions/upload-artifact@v3
