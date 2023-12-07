@@ -10,7 +10,7 @@ namespace MyNat
 
 Introduction
 "
-  In this section, we will prove that if d ∣ a, then d ∣ ab.
+  In this level, we will prove that if d ∣ a, then d ∣ ab.
 "
 
 LemmaDoc MyNat.dvd_mul_right as "dvd_mul_right" in "∣" "

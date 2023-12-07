@@ -10,8 +10,9 @@ namespace MyNat
 
 Introduction
 "
-  In this section, we will prove that n ∣ n for any natural number n. In other words, 'divides' is
-  a reflexive relation on the natural numebrs.
+  In this level, we will prove that n ∣ n for any natural number n.
+  In other words, 'divides' is a reflexive relation on the natural
+  numebrs.
 "
 
 LemmaDoc MyNat.dvd_refl as "dvd_refl" in "∣" "
@@ -20,7 +21,13 @@ LemmaDoc MyNat.dvd_refl as "dvd_refl" in "∣" "
 
 Statement dvd_refl
     (n : ℕ) : n ∣ n := by
-  Hint "This is true because `n = n * 1`"
+  Hint "This is true because `n = n * 1`."
   use 1
   rw [mul_one]
   rfl
+
+Conclusion
+"
+  Well Done, this was the first step in proving that `∣` is a partial order. We
+  will prove the other properties in the next few levels.
+"

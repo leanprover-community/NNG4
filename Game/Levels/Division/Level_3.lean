@@ -11,7 +11,8 @@ namespace MyNat
 
 Introduction
 "
-
+  In this level, we will prove that `divides` is antisymmetric. i.e the
+  only way that we can have `a | b` and `b | a ` is if a = b.
 "
 
 LemmaDoc MyNat.dvd_antisymm as "dvd_antisymm" in "∣" "
@@ -20,10 +21,9 @@ LemmaDoc MyNat.dvd_antisymm as "dvd_antisymm" in "∣" "
 
 Statement dvd_antisymm
     (a b : ℕ) (h1 : a ∣ b) (h2 : b ∣ a): a = b := by
-  Hint "You will need to expand what `h1` and `h2` actually mean. You may find `rcases` helpful"
+  Hint "You will need to expand what `h1` and `h2` actually mean. You may find `rcases` helpful."
   rcases h1 with ⟨c, hc⟩
   rcases h2 with ⟨d, hd⟩
-  -- need to cancel b's:
   rw [hd] at hc
   by_cases hb : b = 0
   · rw [hb] at hd

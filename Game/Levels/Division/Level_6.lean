@@ -25,7 +25,7 @@ Statement dvd_add_right
   cases d with d
   · use 0
     rw [zero_mul] at *
-    rw[zero_mul] at he
+    rw [zero_mul] at he
     rw [zero_add] at he
     exact he
   · have : 1 ≤ succ d := by sorry

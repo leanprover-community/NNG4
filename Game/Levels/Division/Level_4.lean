@@ -8,8 +8,9 @@ namespace MyNat
 
 Introduction
 "
-  In this section, we will prove that ∣ is transitive. This will complete the proof that ∣ is a
-  partial order on ℕ.
+  In this level, we will prove that ∣ is transitive. That is, if
+  `a ∣ b` and `b ∣ c`, then `a ∣c ` This will complete the proof
+  that ∣ is a partial order on ℕ.
 "
 
 LemmaDoc MyNat.dvd_trans as "dvd_trans" in "∣" "
@@ -21,15 +22,18 @@ Statement dvd_trans
   Hint "Here, like the last level, you may find `rcases` helpful."
   rcases hbc with ⟨m, hm⟩
   rcases hab with ⟨n, rfl⟩
-  -- b = na, c = mb
-  -- c = mna
-  Hint "Now, since we are looking show `a ∣ c`, which is an existience hypothesis, a `use` tactic
-  would be a good choice."
+  Hint "Now, since we are looking show `a ∣ c`, which is an existience hypothesis, the `use`
+  tactic would be a good choice."
   use (m * n)
   Hint "Now the goal is clear, its just a case of finding the correct rewrites."
   rw [hm]
   rw [mul_assoc]
   rw [mul_comm n m]
   rfl
+
+Conclusion
+"
+  Great work. We have succedfully proven that `∣` is a partial order on ℕ.
+"
 
 LemmaTab "∣"

@@ -24,11 +24,15 @@ LemmaDoc MyNat.prime_two as "prime_two" in "Prime" "
 
 Statement prime_two :
   Prime 2 := by
+  Hint "You may want to know what `Prime 2` actually means. For this, you can use
+  `unfold Prime`."
   unfold Prime
+  Hint "Use `constructor` to split up the `∧` statment into two goals."
   constructor
   use 0
   rw [add_zero]
   rfl
+  Hint "You have done the easy half, now for the tough part."
   intros a ha
   have : a ≤ 2 := by exact dvd_two_leq_two a ha
   have h : a = 0 ∨ a = 1 ∨ a = 2 := by exact le_two a this
@@ -38,5 +42,6 @@ Statement prime_two :
     rw [zero_mul] at hb
     cases hb
   · exact h
+
 
 end MyNat
