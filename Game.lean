@@ -98,16 +98,16 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 
 "
 
--- Here's where we show how to glue the worlds together
-Dependency Addition → Multiplication → Power
---Dependency Addition → AdvAddition → AdvMultiplication → Inequality → Prime → Hard
---Dependency Multiplication → AdvMultiplication
---Dependency AdvAddition → EvenOdd → Inequality → StrongInduction
-Dependency Addition → Implication → AdvAddition → LessOrEqual
-Dependency AdvAddition → Algorithm
--- The game automatically computes connections between worlds based on introduced
--- tactics and theorems, but for example it cannot detect introduced definitions
-
 -- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
 
+/-! Information to be displayed on the servers landing page. -/
+Languages "English"
+CaptionShort "The classical introduction game for Lean."
+CaptionLong "In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano axioms,
+learning the basics about theorem proving in Lean.
+
+This is a good first introduction to Lean!"
+CoverImage "images/cover.png"
+
+/-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame
