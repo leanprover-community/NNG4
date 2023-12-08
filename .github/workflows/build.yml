@@ -23,6 +23,7 @@ jobs:
           lean --version
           lake --version
 
+        # Note: this would also happen in the lake post-update-hook
       - name: get mathlib cache
         continue-on-error: true
         run: |
@@ -34,6 +35,10 @@ jobs:
 
       - name: create timestamp file
         run: touch tmp_timestamp
+
+        # Note: this would also happen in the lake post-update-hook
+      - name: build gameserver executable
+        run: env LEAN_ABORT_ON_PANIC=1 lake build gameserver
 
       - name: building game
         run: env LEAN_ABORT_ON_PANIC=1 lake build
