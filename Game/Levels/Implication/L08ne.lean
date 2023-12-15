@@ -31,4 +31,6 @@ Statement (x y : ℕ) (h1 : x = y) (h2 : x ≠ y) : False := by
   apply h2 at h1
   exact h1
 
+NewDefinition Ne
+
 Conclusion "Remember, `x ≠ y` is *notation* for `x = y → False`."

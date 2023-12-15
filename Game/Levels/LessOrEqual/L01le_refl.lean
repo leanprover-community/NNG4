@@ -22,6 +22,7 @@ number which is morally `b - a`.
 "
 
 NewTactic use
+NewDefinition LE
 
 Introduction
 "
