@@ -10,7 +10,7 @@ instance : Pow ℕ ℕ where
   pow := pow
 
 -- Note: since v4.2.0-rc2
-macro_rules | `($x ^ $y)   => `(Pow.pow $x ($y : MyNat))
+macro_rules | `($x ^ $y)   => `(HPow.hPow ($x : MyNat) ($y : MyNat))
 
 @[MyNat_decide]
 axiom pow_zero (m : ℕ) : m ^ 0 = 1
