@@ -8,7 +8,7 @@ LemmaTab "Peano"
 namespace MyNat
 
 Introduction "
-We know `succ_ne_zero n` is a proof of `0 = succ n → false` -- but what
+We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what
 if we have a hypothesis `succ n = 0`? It's the wrong way around!
 
 The `symm` tactic changes a goal `x = y` to `y = x`, and a goal `x ≠ y`
