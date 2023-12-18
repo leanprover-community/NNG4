@@ -45,7 +45,8 @@ Statement zero_add (n : ℕ) : 0 + n = n := by
     This first goal is the base case $n = 0$.
 
     Recall that you can rewrite the proof of any lemma which is visible
-    in your inventory, or of any assumption displayed above the goal."
+    in your inventory, or of any assumption displayed above the goal,
+    as long as it is of the form `X = Y`."
     Hint (hidden := true) "try rewriting `add_zero`."
     rw [add_zero]
     rfl
