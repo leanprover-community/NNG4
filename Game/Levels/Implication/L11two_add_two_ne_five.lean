@@ -31,7 +31,9 @@ apply zero_ne_succ at h
 exact h
 ```
 
-Right now we have not developed enough material to make Lean an adequate calculator.
-In the forthcoming algorithm and functional programming worlds we will develop machinery
-which makes questions like this much easier, and questions like 20 + 20 ≠ 41 feasible.
-Until I've written them, why not press on to Advanced Addition World."
+Even though Lean is a theorem prover, right now it's pretty clear that we have not
+developed enough material to make it an adequate calculator. In Algorithm
+World we will develop machinery which makes questions like this much easier,
+and goals like $20 + 20 ≠ 41$ feasible. But to get to Algorithm World you'll
+have to make it through Advanced Addition World. Click \"Leave World\" to
+go there."
