@@ -22,7 +22,7 @@ NewTactic simp_add
 
 Introduction
 "
-You can even make your own tactics in Lean.
+You can make your own tactics in Lean.
 This code here
 ```
 macro \"simp_add\" : tactic => `(tactic|(
