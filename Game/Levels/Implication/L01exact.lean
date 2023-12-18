@@ -52,5 +52,5 @@ unused variable `h2` [linter.unusedVariables]
 but I want `h2` to be there.
 -/
 Statement (x y z : ℕ) (h1 : x + y = 37) (h2 : 3 * x + z = 42) : x + y = 37 := by
-  Hint "The goal is one of our hypotheses. Solve the goal by executing `exact h1`."
+  Hint "The goal in this level is one of our hypotheses. Solve the goal by executing `exact h1`."
   exact h1
