@@ -22,6 +22,18 @@ number which is morally `b - a`.
 "
 
 NewTactic use
+
+DefinitionDoc LE as "≤" "
+`a ≤ b` is *notation* for `∃ c, b = a + c`.
+
+Because this game doesn't have negative numbers, this definition
+is mathematically valid.
+
+This means that if you have a goal of the form `a ≤ b` you can
+make progress with the `use` tactic, and if you have a hypothesis
+`h : a ≤ b`, you can make progress with `cases h with c hc`.
+"
+
 NewDefinition LE
 
 Introduction
