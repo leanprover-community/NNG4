@@ -22,7 +22,7 @@ and `is_zero (succ n) = False`. Let's use these lemmas to prove `succ_ne_zero`, 
 Last Axiom. Actually, we have been using `zero_ne_succ` before, but it's handy to have
 this opposite version too, which can be proved in the same way.
 
-If you can turn your goal into `True`, then the `tauto` tactic will solve it.
+If you can turn your goal into `True`, then the `triv` tactic will solve it.
 "
 
 LemmaDoc MyNat.is_zero_zero as "is_zero_zero" in "Peano"
@@ -42,6 +42,15 @@ LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 
 NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
 
+TacticDoc triv "
+# Summary
+
+`triv` will solve any goal of the form `True`.
+
+"
+
+NewTactic triv
+
 /-- $\operatorname{succ}(a) \neq 0$. -/
 Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   Hint "Start with `intro h` (remembering that `X ≠ Y` is just notation
@@ -52,4 +61,4 @@ Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   rw [← is_zero_succ a]
   rw [h]
   rw [is_zero_zero]
-  tauto
+  triv

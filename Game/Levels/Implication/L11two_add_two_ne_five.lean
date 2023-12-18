@@ -33,7 +33,8 @@ exact h
 
 Even though Lean is a theorem prover, right now it's pretty clear that we have not
 developed enough material to make it an adequate calculator. In Algorithm
-World we will develop machinery which makes questions like this much easier,
-and goals like $20 + 20 ≠ 41$ feasible. But to get to Algorithm World you'll
-have to make it through Advanced Addition World. Click \"Leave World\" to
-go there."
+World, a more computer-sciency world, we will develop machinery which makes
+questions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.
+Alternatively you can do more mathematics in Advanced Addition World, where we prove
+the lemmas needed to get a working theory of inequalities. Click \"Leave World\" and
+decide your route."
