@@ -45,7 +45,7 @@ NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
 TacticDoc triv "
 # Summary
 
-`triv` will solve any goal of the form `True`.
+`triv` will solve the goal `True`.
 
 "
 
