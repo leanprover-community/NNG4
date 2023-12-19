@@ -52,7 +52,9 @@ instance instDecidableEq : DecidableEq ℕ
 ```
 
 This Lean code is a formally verified algorithm for deciding equality
-between two naturals. Run it with the `decide` tactic.
+between two naturals. I've typed it in already, behind the scenes.
+Because the algorithm is formally verified to be correct, we can
+use it in Lean proofs. You can run the algorithm with the `decide` tactic.
 "
 
 /-- $20+20=40$. -/
