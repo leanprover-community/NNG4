@@ -3,7 +3,7 @@ World "Implication"
 Level 10
 Title "1 ≠ 0"
 
-LemmaTab "Peano"
+LemmaTab "012"
 
 namespace MyNat
 
