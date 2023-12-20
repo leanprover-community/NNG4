@@ -15,8 +15,7 @@ def le (a b : ℕ) :=  ∃ (c : ℕ), b = a + c
 -- notation
 instance : LE MyNat := ⟨MyNat.le⟩
 
---@[leakage] theorem le_def' : MyNat.le = (≤) := rfl
-
-theorem le_iff_exists_add (a b : ℕ) : a ≤ b ↔ ∃ (c : ℕ), b = a + c := Iff.rfl
+-- We don't use this any more; I tell the users `≤` is *notation*
+-- theorem le_iff_exists_add (a b : ℕ) : a ≤ b ↔ ∃ (c : ℕ), b = a + c := Iff.rfl
 
 end MyNat

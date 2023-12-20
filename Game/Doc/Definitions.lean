@@ -13,7 +13,7 @@ import GameServer.Commands
 -- This notation is for our own version of the natural numbers, called `MyNat`.
 -- The natural numbers implemented in Lean's core are called `Nat`.
 
--- If you end up getting someting of type `Nat` in this game, you probably
+-- If you end up getting something of type `Nat` in this game, you probably
 -- need to write `(4 : ℕ)` to force it to be of type `MyNat`.
 
 -- *Write with `\\N`.*

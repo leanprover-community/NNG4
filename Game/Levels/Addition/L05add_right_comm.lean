@@ -45,4 +45,6 @@ You can begin the journey towards this boss by entering Multiplication World.
 Or you can go off the beaten track and learn some new tactics in Implication
 World. These tactics let you prove more facts about addition, such as
 how to deduce `a = 0` from `x + a = x`.
+
+Click \"Leave World\" and make your choice.
 "

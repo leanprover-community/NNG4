@@ -22,15 +22,15 @@ NewTactic simp_add
 
 Introduction
 "
-You can even make your own tactics in Lean.
+You can make your own tactics in Lean.
 This code here
 ```
 macro \"simp_add\" : tactic => `(tactic|(
   simp only [add_assoc, add_left_comm, add_comm]))
 ```
-creates a new tactic `simp_add`, which runs
+was used to create a new tactic `simp_add`, which runs
 `simp only [add_assoc, add_left_comm, add_comm]`.
-Try it!
+Try running `simp_add` to solve this level!
 "
 
 

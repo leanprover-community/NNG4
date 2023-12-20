@@ -20,9 +20,11 @@ is_zero (succ n) := False
 We also create two lemmas, `is_zero_zero` and `is_zero_succ n`, saying that `is_zero 0 = True`
 and `is_zero (succ n) = False`. Let's use these lemmas to prove `succ_ne_zero`, Peano's
 Last Axiom. Actually, we have been using `zero_ne_succ` before, but it's handy to have
-this opposite version too, which can be proved in the same way.
+this opposite version too, which can be proved in the same way. Note: you can
+cheat here by using `zero_ne_succ` but the point of this world is to show
+you how to *prove* results like that.
 
-If you can turn your goal into `True`, then the `tauto` tactic will solve it.
+If you can turn your goal into `True`, then the `triv` tactic will solve it.
 "
 
 LemmaDoc MyNat.is_zero_zero as "is_zero_zero" in "Peano"
@@ -42,14 +44,25 @@ LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 
 NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
 
-/-- If $\operatorname{succ}(a)=\operatorname{succ}(b)$ then $a=b$. -/
+TacticDoc triv "
+# Summary
+
+`triv` will solve the goal `True`.
+
+"
+
+NewTactic triv
+
+/-- $\operatorname{succ}(a) \neq 0$. -/
 Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   Hint "Start with `intro h` (remembering that `X ≠ Y` is just notation
   for `X = Y → False`)."
   intro h
-  Hint "We're going to change that `False` into `True`. Start by changing it into `is_zero (succ a)`."
-  Hint (hidden := true) "Try `rw [← is_zero_succ a]`."
+  Hint "We're going to change that `False` into `True`. Start by changing it into
+  `is_zero (succ a)` by executing `rw [← is_zero_succ a]`."
   rw [← is_zero_succ a]
+  Hint "See if you can take it from here. Look at the new lemmas and tactic
+  available on the right."
   rw [h]
   rw [is_zero_zero]
-  tauto
+  triv

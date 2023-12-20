@@ -35,9 +35,9 @@ What about succ m ≤ succ n ↔ m ≤ n? This was a lost level (but not about <
 
 If a ≤ b then a + x ≤ b + x. And iff version?
 
-## Advanced Multiplication world: you can cancel muliplication
+## Advanced Multiplication world: you can cancel multiplication
 by nonzero x. ad+bc=ac+bd -> a=b or c=d? This should be preparation
-for divisilibity world.
+for divisibility world.
 
 ## Divisibility world
 

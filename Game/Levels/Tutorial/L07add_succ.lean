@@ -33,8 +33,9 @@ If you ever see `... + succ ...` in your goal, `rw [add_succ]` is
 normally a good idea.
 
 Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into
-the picture, and then `rw [add_succ]`. Use the Add and Numerals tabs to
-switch between lemmas so you can see which proofs you can rewrite.
+the picture, and then `rw [add_succ]`. Switch between the `+` (addition) and
+`012` (numerals) tabs under \"Theorems\" on the right to
+see which proofs you can rewrite.
 "
 
 /-- For all natural numbers $a$, we have $\operatorname{succ}(a) = a+1$. -/

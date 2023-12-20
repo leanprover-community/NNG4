@@ -1,7 +1,7 @@
-import Game.MyNat.Addition-- makes simps work?
 import Game.MyNat.PeanoAxioms
-import Game.Levels.Algorithm.L07succ_ne_succ
-import Mathlib.Tactic
+import Game.Levels.Algorithm.L07succ_ne_succ -- succ_ne_succ
+import Game.Tactic.decide -- modified decide tactic
+
 namespace MyNat
 
 instance instDecidableEq : DecidableEq MyNat

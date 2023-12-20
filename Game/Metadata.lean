@@ -13,6 +13,7 @@ import Game.Tactic.Rfl
 import Game.Tactic.Rw
 import Game.Tactic.Apply
 import Game.Tactic.Use
+import Game.Tactic.Ne
 import Game.Tactic.Xyzzy
 -- import Std.Tactic.RCases
 -- import Game.Tactic.Have

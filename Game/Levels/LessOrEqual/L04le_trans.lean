@@ -23,7 +23,7 @@ and $Q\\implies R$.
 "
 
 Introduction "
-In this level, we inequalities as *hypotheses*. We have not seen this before.
+In this level, we see inequalities as *hypotheses*. We have not seen this before.
 The `cases` tactic can be used to take `hxy` apart.
 "
 

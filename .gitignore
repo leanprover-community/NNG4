@@ -1,4 +1,4 @@
 build/
 lake-packages/
-lakefile.olean
+.lake/
 **/.DS_Store

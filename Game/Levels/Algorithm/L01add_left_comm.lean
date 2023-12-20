@@ -17,7 +17,7 @@ associativity is very tedious. We start by reminding you of this. `add_left_comm
 is a key component in the first algorithm which we'll explain, but we need
 to prove it manually.
 
-Remember that you do precision commutativity rewriting
+Remember that you can do precision commutativity rewriting
 with things like `rw [add_comm b c]`. And remember that
 `a + b + c` means `(a + b) + c`.
 "
