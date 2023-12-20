@@ -10,8 +10,8 @@ LemmaTab "Peano"
 namespace MyNat
 
 Introduction
-" We have still not proved that if `a + b = 0` then `a = 0` and `b = 0`. Let's finish this
-world by proving one of these in this level, and the other in the next.
+"The next result we'll need in Less or Equal World is that if `a + b = 0` then `a = 0` and `b = 0`.
+Let's prove one of these facts in this level, and the other in the next.
 
 ## A new tactic: `cases`
 
