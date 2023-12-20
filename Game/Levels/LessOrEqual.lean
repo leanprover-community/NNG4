@@ -7,6 +7,9 @@ import Game.Levels.LessOrEqual.L05le_zero
 import Game.Levels.LessOrEqual.L06le_antisymm
 import Game.Levels.LessOrEqual.L07or_symm
 import Game.Levels.LessOrEqual.L08le_total
+import Game.Levels.LessOrEqual.L09le_of_succ_le_succ
+import Game.Levels.LessOrEqual.L10le_one
+import Game.Levels.LessOrEqual.L11le_two
 
 World "LessOrEqual"
 Title "≤ World"
