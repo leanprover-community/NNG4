@@ -3,8 +3,8 @@ import Game.Levels.AdvAddition.L02add_right_cancel
 import Game.Levels.AdvAddition.L03add_left_cancel
 import Game.Levels.AdvAddition.L04add_left_eq_self
 import Game.Levels.AdvAddition.L05add_right_eq_self
-import Game.Levels.AdvAddition.L06eq_zero_of_add_right_eq_zero
-import Game.Levels.AdvAddition.L07eq_zero_of_add_left_eq_zero
+import Game.Levels.AdvAddition.L06add_right_eq_zero
+import Game.Levels.AdvAddition.L07add_left_eq_zero
 
 World "AdvAddition"
 Title "Advanced Addition World"

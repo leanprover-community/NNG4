@@ -3,7 +3,7 @@ import Game.Tactic.Cases
 
 World "AdvAddition"
 Level 6
-Title "eq_zero_of_add_right_eq_zero"
+Title "add_right_eq_zero"
 
 LemmaTab "Peano"
 
@@ -66,7 +66,7 @@ and a proof `hc : b = a + c`. This is because the *definition* of `a ≤ b` is
 "
 NewTactic cases
 
-LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in "+" "
+LemmaDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+" "
   A proof that $a+b=0 \\implies a=0$.
 "
 
@@ -74,7 +74,7 @@ LemmaDoc MyNat.eq_zero_of_add_right_eq_zero as "eq_zero_of_add_right_eq_zero" in
 -- https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/eq_zero_of_add_eq_zero_right/near/395716874
 
 /-- If $a+b=0$ then $a=0$. -/
-Statement eq_zero_of_add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
+Statement add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
   Hint "Here we want to deal with the cases `b = 0` and `b ≠ 0` separately,
   so start with `cases b with d`."
   cases b with d

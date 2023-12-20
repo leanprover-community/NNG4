@@ -24,7 +24,7 @@ Statement le_antisymm (x y : ℕ) (hxy : x ≤ y) (hyx : y ≤ x) : x = y := by
   rw [ha, add_assoc] at hb
   symm at hb
   apply add_right_eq_self at hb
-  apply eq_zero_of_add_right_eq_zero at hb
+  apply add_right_eq_zero at hb
   rw [hb, add_zero]
   rfl
 
@@ -39,7 +39,7 @@ rw [ha]
 rw [ha, add_assoc] at hb
 symm at hb
 apply add_right_eq_self at hb
-apply eq_zero_of_add_right_eq_zero at hb
+apply add_right_eq_zero at hb
 rw [hb, add_zero]
 rfl
 ```
