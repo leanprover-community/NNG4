@@ -28,8 +28,6 @@ This level is not a level which you want to solve by hand.
 Get the simplifier to solve it for you.
 "
 
---macro_rules | `(tactic| ac_rfl) => `(tactic| simp only [add_assoc, add_left_comm, add_comm])
-
 /-- If $a, b,\ldots h$ are arbitrary natural numbers, we have
 $(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$. -/
 Statement (a b c d e f g h : ℕ) :
