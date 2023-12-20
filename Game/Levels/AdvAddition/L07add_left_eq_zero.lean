@@ -29,5 +29,5 @@ rw [add_comm]
 exact add_right_eq_zero b a
 ```
 
-You're now ready for `≤` World.
+We've now proved all the theorems you'll need for `≤` World.
 "

@@ -10,7 +10,7 @@ LemmaTab "Peano"
 namespace MyNat
 
 Introduction
-"The next result we'll need in Less or Equal World is that if `a + b = 0` then `a = 0` and `b = 0`.
+"The next result we'll need in `≤` World is that if `a + b = 0` then `a = 0` and `b = 0`.
 Let's prove one of these facts in this level, and the other in the next.
 
 ## A new tactic: `cases`
