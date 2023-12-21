@@ -1,4 +1,4 @@
-import Game.Levels.AdvMultiplication.L04one_le_of_zero_ne
+import Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 
 World "AdvMultiplication"
 Level 5

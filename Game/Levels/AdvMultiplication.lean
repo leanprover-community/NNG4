@@ -1,9 +1,13 @@
 import Game.Levels.AdvMultiplication.L01mul_le_mul_right
 import Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-import Game.Levels.AdvMultiplication.L03one_le_of_zero_ne
-import Game.Levels.AdvMultiplication.L04le_mul_right
-import Game.Levels.AdvMultiplication.L05le_one
+import Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+import Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+import Game.Levels.AdvMultiplication.L05le_mul_right
 import Game.Levels.AdvMultiplication.L06mul_right_eq_one
+import Game.Levels.AdvMultiplication.L07mul_ne_zero
+import Game.Levels.AdvMultiplication.L08mul_eq_zero
+import Game.Levels.AdvMultiplication.L09mul_left_cancel
+import Game.Levels.AdvMultiplication.L10mul_right_eq_self
 
 World "AdvMultiplication"
 Title "Advanced Multiplication World"

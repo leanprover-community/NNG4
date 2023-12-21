@@ -58,12 +58,12 @@ namespace MyNat
 --     tauto
 --   exact h1
 
--- used in `mul_ne_zero`, which is used in `mul_eq_zero`, which is used in `mul_left_cancel`
-lemma eq_succ_of_ne_zero (a : ℕ) (ha : a ≠ 0) : ∃ n, a = succ n := by
-  cases a with d
-  tauto
-  use d
-  rfl
+-- -- used in `mul_ne_zero`, which is used in `mul_eq_zero`, which is used in `mul_left_cancel`
+-- lemma eq_succ_of_ne_zero (a : ℕ) (ha : a ≠ 0) : ∃ n, a = succ n := by
+--   cases a with d
+--   tauto
+--   use d
+--   rfl
 
 -- used in `mul_eq_zero`, which is used in `mul_left_cancel`
 lemma mul_ne_zero (a b : ℕ) (ha : a ≠ 0) (hb : b ≠ 0) : a * b ≠ 0 := by
@@ -94,7 +94,7 @@ lemma mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c :
       rfl
   · cases c with c
     · rw [mul_succ, mul_zero] at h
-      apply eq_zero_of_add_left_eq_zero at h
+      apply add_left_eq_zero at h
       tauto
     · rw [mul_succ, mul_succ] at h
       apply add_right_cancel at h
