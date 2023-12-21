@@ -35,8 +35,11 @@ If `h : 2 + 2 ≠ 5` then `symm at h` will change `h` to `5 ≠ 2 + 2`.
 
 NewTactic symm
 
+LemmaDoc MyNat.one_ne_zero as "one_ne_zero" in "012" "
+`one_ne_zero` is a proof that `1 ≠ 0`."
+
 /-- $1\neq0$. -/
-Statement : (1 : ℕ) ≠ 0 := by
+Statement one_ne_zero : (1 : ℕ) ≠ 0 := by
   symm
   exact zero_ne_one
 
