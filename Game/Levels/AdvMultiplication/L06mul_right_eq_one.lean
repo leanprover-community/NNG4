@@ -1,4 +1,4 @@
-import Game.Levels.AdvMultiplication.L05le_one
+import Game.Levels.AdvMultiplication.L05le_mul_right
 
 World "AdvMultiplication"
 Level 6
@@ -53,8 +53,11 @@ LemmaDoc MyNat.mul_right_eq_one as "mul_right_eq_one" in "*" "
 
 Introduction
 "
-This is the multiplicative analogue of Advanced Addition World's `x + y = 0 → x = 0`.
-We'll prove it using a new tactic called `have`.
+This level proves `x * y = 1 → x = 1`, the multiplicative analogue of Advanced Addition
+World's `x + y = 0 → x = 0`. The strategy is to prove that `x ≤ 1` and then use the
+lemma `le_one` from `≤` world.
+
+We'll prove it using a new and very useful tactic called `have`.
 "
 
 Statement mul_right_eq_one (x y : ℕ) (h : x * y = 1) : x = 1 := by
@@ -63,9 +66,8 @@ Statement mul_right_eq_one (x y : ℕ) (h : x * y = 1) : x = 1 := by
   prove it, and then you'll have a new hypothesis which you can apply
   `le_mul_right` to."
   have hx : x * y ≠ 0
-  rw [h, one_eq_succ_zero]
-  symm
-  apply zero_ne_succ
+  rw [h]
+  exact one_ne_zero
   Hint (hidden := true) "Now you can `apply le_mul_right at hx`."
   apply le_mul_right at hx
   Hint (hidden := true) "Now `rw [h] at hx` so you can `apply le_one at hx`."
@@ -75,6 +77,6 @@ Statement mul_right_eq_one (x y : ℕ) (h : x * y = 1) : x = 1 := by
   cases separately."
   cases hx with h0 h1
   · rw [h0, zero_mul] at h
-    apply zero_ne_succ at h
+    Hint (hidden := true) "`tauto` is good enough to solve this goal."
     tauto
-  exact h1
+  · exact h1
