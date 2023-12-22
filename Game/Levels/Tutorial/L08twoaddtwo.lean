@@ -68,6 +68,8 @@ want to save it, and paste the above proof in instead. Move your cursor
 around to investigate. When you've finished, click the `>_` button in the top right to
 move back into command line mode.
 
-You have finished tutorial world! Now let's move onto Addition World,
-and learn the `induction` tactic.
+You have finished tutorial world!
+Click \"Leave World\" to go back to the
+overworld, and select Addition World, where you will learn
+about the `induction` tactic.
 "

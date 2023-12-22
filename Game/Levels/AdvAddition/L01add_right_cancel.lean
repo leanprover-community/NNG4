@@ -1,7 +1,7 @@
-import Game.Levels.AdvAddition.L01ne_succ_self
+import Game.Levels.Implication
 
 World "AdvAddition"
-Level 2
+Level 1
 Title "add_right_cancel"
 
 namespace MyNat
@@ -14,7 +14,9 @@ LemmaDoc MyNat.add_right_cancel as "add_right_cancel" in "+" "
 "
 
 Introduction
-"`add_right_cancel a b n` is the theorem that $a+n=b+n\\implies a=b$.
+"In this world I will mostly leave you on your own.
+
+`add_right_cancel a b n` is the theorem that $a+n=b+n\\implies a=b$.
 "
 
 /-- $a+n=b+n\implies a=b$. -/

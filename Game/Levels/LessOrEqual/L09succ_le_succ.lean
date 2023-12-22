@@ -8,17 +8,18 @@ LemmaTab "≤"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_of_succ_le_succ as "le_of_succ_le_succ" in "≤" "
-`le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.
+LemmaDoc MyNat.succ_le_succ as "succ_le_succ" in "≤" "
+`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.
 "
 
 Introduction "
-The last goal in this world is to prove which numbers are `≤ 2`.
-This lemma will be helpful for that.
+We've proved that `x ≤ 0` implies `x = 0`. The last two levels
+in this world will prove which numbers are `≤ 1` and `≤ 2`.
+This lemma will be helpful for them.
 "
 
 /-- If $\operatorname{succ}(x) \leq \operatorname{succ}(y)$ then $x \leq y$. -/
-Statement le_of_succ_le_succ (x y : ℕ) (hx : succ x ≤ succ y) : x ≤ y := by
+Statement succ_le_succ (x y : ℕ) (hx : succ x ≤ succ y) : x ≤ y := by
   cases hx with d hd
   use d
   rw [succ_add] at hd
@@ -34,6 +35,4 @@ rw [succ_add] at hd
 apply succ_inj at hd
 exact hd
 ```
-
-This lemma can be helpful for the next two levels.
 "

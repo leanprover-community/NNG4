@@ -20,7 +20,7 @@ LemmaDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "+"
 
 Introduction
 "
-Every number in Lean is either 0 or a successor. We know how to add $0$,
+Every number in Lean is either $0$ or a successor. We know how to add $0$,
 but we need to figure out how to add successors. Let's say we already know
 that `37 + d = q`. What should the answer to `37 + succ d` be? Well,
 `succ d` is one bigger than `d`, so `37 + succ d` should be `succ q`,
@@ -40,7 +40,8 @@ see which proofs you can rewrite.
 
 /-- For all natural numbers $a$, we have $\operatorname{succ}(a) = a+1$. -/
 Statement succ_eq_add_one n : succ n = n + 1 := by
-  Hint (hidden := true) "First unravel the `1`."
+  Hint "Start by unravelling the `1`."
+  Hint (hidden := true) "`rw [one_eq_succ_zero]` will do this."
   rw [one_eq_succ_zero]
   Hint (hidden := true) "Now you can `rw [add_succ]`"
   rw [add_succ]

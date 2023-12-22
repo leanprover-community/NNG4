@@ -24,3 +24,11 @@ Statement one_mul
   rfl
 
 LemmaTab "*"
+
+Conclusion "
+Here's my solution:
+```
+rw [mul_comm, mul_one]
+rfl
+```
+"

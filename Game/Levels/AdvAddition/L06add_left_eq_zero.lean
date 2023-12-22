@@ -1,7 +1,7 @@
-import Game.Levels.AdvAddition.L06add_right_eq_zero
+import Game.Levels.AdvAddition.L05add_right_eq_zero
 
 World "AdvAddition"
-Level 7
+Level 6
 Title "add_left_eq_zero"
 
 LemmaTab "+"
@@ -29,5 +29,6 @@ rw [add_comm]
 exact add_right_eq_zero b a
 ```
 
-We've now proved all the theorems you'll need for `≤` World.
+That's the end of Advanced Addition World! You'll need these theorems
+for the next world, `≤` World. Click on \"Leave World\" to access it.
 "

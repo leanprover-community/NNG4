@@ -37,7 +37,7 @@ one.
 NewTactic left right
 
 Introduction "
-Totality of `≤` is the last level in this world. It says that
+Totality of `≤` is the boss level of this world, and it's coming up next. It says that
 if `a` and `b` are naturals then either `a ≤ b` or `b ≤ a`.
 But we haven't talked about `or` at all. Here's a run-through.
 
@@ -68,5 +68,5 @@ Statement (x y : ℕ) (h : x = 37 ∨ y = 42) : y = 42 ∨ x = 37 := by
 LemmaTab "≤"
 
 Conclusion "
-Ready for the final boss of this world?
+Ready for the boss level of this world?
 "

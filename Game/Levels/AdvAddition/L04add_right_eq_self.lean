@@ -1,7 +1,7 @@
-import Game.Levels.AdvAddition.L04add_left_eq_self
+import Game.Levels.AdvAddition.L03add_left_eq_self
 
 World "AdvAddition"
-Level 5
+Level 4
 Title "add_right_eq_self"
 
 LemmaTab "+"

@@ -1,4 +1,4 @@
-import Game.Levels.LessOrEqual.L09le_of_succ_le_succ
+import Game.Levels.LessOrEqual.L09succ_le_succ
 World "LessOrEqual"
 Level 10
 Title "x ≤ 1"
@@ -22,7 +22,7 @@ Statement le_one (x : ℕ) (hx : x ≤ 1) : x = 0 ∨ x = 1 := by
   left
   rfl
   rw [one_eq_succ_zero] at hx ⊢
-  apply le_of_succ_le_succ at hx
+  apply succ_le_succ at hx
   apply le_zero at hx
   rw [hx]
   right
@@ -35,7 +35,7 @@ cases x with y
 left
 rfl
 rw [one_eq_succ_zero] at hx ⊢
-apply le_of_succ_le_succ at hx
+apply succ_le_succ at hx
 apply le_zero at hx
 rw [hx]
 right
