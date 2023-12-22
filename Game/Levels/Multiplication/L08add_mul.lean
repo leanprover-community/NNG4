@@ -20,7 +20,17 @@ In other words, for all natural numbers $a$, $b$ and $c$, we have
 $(a + b) \times c = ac + bc$. -/
 Statement add_mul
     (a b c : ℕ) : (a + b) * c = a * c + b * c := by
-  rw [mul_comm, mul_add, mul_comm, mul_comm c]
+  rw [mul_comm, mul_add]
+  repeat rw [mul_comm c]
   rfl
 
 LemmaTab "*"
+
+Conclusion "
+Here's my proof:
+```
+rw [mul_comm, mul_add]
+repeat rw [mul_comm c]
+rfl
+```
+"
