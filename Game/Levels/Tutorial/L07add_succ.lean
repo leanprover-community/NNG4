@@ -40,7 +40,8 @@ see which proofs you can rewrite.
 
 /-- For all natural numbers $a$, we have $\operatorname{succ}(a) = a+1$. -/
 Statement succ_eq_add_one n : succ n = n + 1 := by
-  Hint (hidden := true) "First unravel the `1`."
+  Hint "Start by unravelling the `1`."
+  Hint (hidden := true) "`rw [one_eq_succ_zero]` will do this."
   rw [one_eq_succ_zero]
   Hint (hidden := true) "Now you can `rw [add_succ]`"
   rw [add_succ]
