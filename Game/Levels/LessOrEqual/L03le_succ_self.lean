@@ -19,7 +19,7 @@ Statement le_succ_self (x : ℕ) : x ≤ succ x := by
   rw [succ_eq_add_one]
   rfl
 
-LemmaTab "≤"
+LemmaTab "+"
 
 Conclusion "
 Here's a two-liner:
