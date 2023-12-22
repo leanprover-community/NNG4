@@ -10,7 +10,7 @@ namespace MyNat
 Introduction
 "
 
-See the new \"Mul\" tab in your lemmas, containing `mul_zero` and `mul_succ`.
+See the new \"*\" tab in your lemmas, containing `mul_zero` and `mul_succ`.
 Right now these are the only facts we know about multiplication.
 Let's prove nine more.
 
