@@ -1,7 +1,7 @@
-import Game.Levels.AdvAddition.L03add_left_cancel
+import Game.Levels.AdvAddition.L02add_left_cancel
 
 World "AdvAddition"
-Level 4
+Level 3
 Title "add_left_eq_self"
 
 namespace MyNat

@@ -1,8 +1,8 @@
-import Game.Levels.AdvAddition.L05add_right_eq_self
+import Game.Levels.AdvAddition.L04add_right_eq_self
 import Game.Tactic.Cases
 
 World "AdvAddition"
-Level 6
+Level 5
 Title "add_right_eq_zero"
 
 LemmaTab "Peano"
