@@ -16,6 +16,7 @@ We'll need this lemma to prove that two is prime!
 
 You'll need to know that `∨` is right associative. This means that
 `x = 0 ∨ x = 1 ∨ x = 2` actually means `x = 0 ∨ (x = 1 ∨ x = 2)`.
+This affects how `left` and `right` work.
 "
 
 /-- If $x \leq 2$ then $x = 0$ or $1$ or $2$. -/
