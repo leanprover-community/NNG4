@@ -29,8 +29,8 @@ Statement le_two (x : ℕ) (hx : x ≤ 2) : x = 0 ∨ x = 1 ∨ x = 2 := by
   rw [one_eq_succ_zero]
   rfl
   rw [two_eq_succ_one, one_eq_succ_zero] at hx ⊢
-  apply le_of_succ_le_succ at hx
-  apply le_of_succ_le_succ at hx
+  apply succ_le_succ at hx
+  apply succ_le_succ at hx
   apply le_zero at hx
   rw [hx]
   right
