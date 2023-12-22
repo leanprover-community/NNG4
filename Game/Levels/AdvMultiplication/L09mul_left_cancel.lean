@@ -21,7 +21,7 @@ mathematical induction a little better.
 
 Starting with `induction b with d hd` is too naive, because in the inductive step
 the hypothesis is `a * d = a * c → d = c` but what we know is `a * succ d = a * c`,
-hence the induction hypothesis does not apply!
+so the induction hypothesis does not apply!
 
 Assume `a ≠ 0` is fixed. The actual statement we want to prove by induction on `b` is
 \"for all `c`, if `a * b = a * c` then `b = c`. This *can* be proved by induction,
@@ -40,7 +40,7 @@ Statement mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b =
     · tauto
     · rw [h2]
       rfl
-  · Hint "The inductive hypothesis `hd` is \"For all natural numbers `c`, a * d = a * c → d = c`\".
+  · Hint "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * c → d = c`\".
     You can `apply` it `at` any hypothesis of the form `a * d = a * ?`. "
     Hint (hidden := true) "Split into cases `c = 0` and `c = succ e` with `cases c with e`."
     cases c with e

@@ -18,7 +18,7 @@ has to be at most that number.
 Introduction
 "
 In Prime Number World we will be proving that $2$ is prime.
-To do this, we will have to rule out things like $2 ≠ 323846224 \times 3453453459182.$
+To do this, we will have to rule out things like $2 ≠ 37 × 42.$
 We will do this by proving that any factor of $2$ is at most $2$,
 which we will do using this lemma. The proof I have in mind manipulates the hypothesis
 until it becomes the goal, using pretty much everything which we've proved in this world so far.

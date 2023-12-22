@@ -62,7 +62,7 @@ We'll prove it using a new and very useful tactic called `have`.
 
 Statement mul_right_eq_one (x y : ℕ) (h : x * y = 1) : x = 1 := by
   Hint "We want to use `le_mul_right`, but we need a hypothesis `x * y ≠ 0`
-  which we don't have. Yet. Try `have h2 : x * y ≠ 0`. You'll be asked to
+  which we don't have. Yet. Execute `have h2 : x * y ≠ 0`. You'll be asked to
   prove it, and then you'll have a new hypothesis which you can apply
   `le_mul_right` to."
   have hx : x * y ≠ 0

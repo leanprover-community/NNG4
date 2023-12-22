@@ -51,7 +51,8 @@ Introduction
 "Multiplication usually makes a number bigger, but multiplication by zero can make
 it smaller. Thus many lemmas about inequalities and multiplication need the
 hypothesis `a ≠ 0`. Here is a key lemma enables us to use this hypothesis.
-To help us with the proof, we can use the `tauto` tactic.
+To help us with the proof, we can use the `tauto` tactic. Click on the tactic's name
+on the right to see what it does.
 "
 
 Statement eq_succ_of_ne_zero (a : ℕ) (ha : a ≠ 0) : ∃ n, a = succ n := by
