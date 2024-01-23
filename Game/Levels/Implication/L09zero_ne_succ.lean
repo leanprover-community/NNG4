@@ -4,7 +4,7 @@ World "Implication"
 Level 9
 Title "zero_ne_succ"
 
-LemmaTab "012"
+LemmaTab "Peano"
 
 namespace MyNat
 
