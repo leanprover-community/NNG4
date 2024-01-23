@@ -44,6 +44,6 @@ Nice!
 
 The next step in the development of order theory is to develop
 the theory of the interplay between `≤` and multiplication.
-If you've already done Multiplication World, step into
-Advanced Multiplication World (once I've written it...)
+If you've already done Multiplication World, you're now ready for
+Advanced Multiplication World. Click on \"Leave World\" to access it.
 "

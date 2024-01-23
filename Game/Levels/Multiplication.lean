@@ -17,8 +17,8 @@ Introduction
 when $x=0$ and when $x$ is a successor.
 
 The zero case is easy: we define `37 * 0` to be `0`. Now say we know
-`37 * d`. What should `37 * succ d` be? Well, that's $d+1$ $37$s,
-it should be `37 * d + 37`.
+`37 * d`. What should `37 * succ d` be? Well, that's $(d+1)$ $37$s,
+so it should be `37 * d + 37`.
 
 Here are the definitions in Lean.
 
