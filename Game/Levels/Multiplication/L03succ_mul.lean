@@ -19,12 +19,13 @@ home screen by clicking the house icon and then taking a look.
 You won't lose any progress.
 "
 
-TheoremDoc MyNat.succ_mul as "succ_mul" in "*" "
+/--
 `succ_mul a b` is the proof that `succ a * b = a * b + b`.
 
 It could be deduced from `mul_succ` and `mul_comm`, however this argument
 would be circular because the proof of `mul_comm` uses `mul_succ`.
-"
+-/
+TheoremDoc MyNat.succ_mul as "succ_mul" in "*"
 
 /-- For all natural numbers $a$ and $b$, we have
 $(\operatorname{succ}\ a) \times b = a\times b + b$. -/

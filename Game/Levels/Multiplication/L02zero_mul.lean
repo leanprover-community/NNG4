@@ -15,11 +15,12 @@ and `zero_mul` (which we don't), so let's
 start with this.
 "
 
-TheoremDoc MyNat.zero_mul as "zero_mul" in "*" "
+/--
 `zero_mul x` is the proof that `0 * x = 0`.
 
 Note: `zero_mul` is a `simp` lemma.
-"
+-/
+TheoremDoc MyNat.zero_mul as "zero_mul" in "*"
 
 /-- For all natural numbers $m$, we have $ 0 \times m = 0$. -/
 Statement zero_mul

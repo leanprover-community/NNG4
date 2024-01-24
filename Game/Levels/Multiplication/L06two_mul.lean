@@ -12,9 +12,10 @@ This level is more important than you think; it plays
 a useful role when battling a big boss later on.
 "
 
-TheoremDoc MyNat.two_mul as "two_mul" in "*" "
-  `two_mul m` is the proof that `2 * m = m + m`.
-"
+/--
+`two_mul m` is the proof that `2 * m = m + m`.
+-/
+TheoremDoc MyNat.two_mul as "two_mul" in "*"
 
 /-- For any natural number $m$, we have $ 2 \times m = m+m$. -/
 Statement two_mul

@@ -18,7 +18,7 @@ Let's start with a warm-up: no induction needed for this one,
 because we know `1` is a successor.
 "
 
-DefinitionDoc Mul as "*" "
+/--
   `Mul a b`, with notation `a * b`, is the usual
   product of natural numbers. Internally it is
   via two axioms:
@@ -29,24 +29,21 @@ DefinitionDoc Mul as "*" "
 
 Other theorems about naturals, such as `zero_mul`,
 are proved by induction from these two basic theorems.
-"
+-/
+DefinitionDoc Mul as "*"
 
 NewDefinition Mul
 
+/-- `mul_zero m` is the proof that `m * 0 = 0`. -/
 TheoremDoc MyNat.mul_zero as "mul_zero" in "*"
-"
-`mul_zero m` is the proof that `m * 0 = 0`."
 
+/-- `mul_succ a b` is the proof that `a * succ b = a * b + a`. -/
 TheoremDoc MyNat.mul_succ as "mul_succ" in "*"
-"
-`mul_succ a b` is the proof that `a * succ b = a * b + a`.
-"
 
 NewTheorem MyNat.mul_zero MyNat.mul_succ
 
-TheoremDoc MyNat.mul_one as "mul_one" in "*" "
-`mul_one m` is the proof that `m * 1 = m`.
-"
+/-- `mul_one m` is the proof that `m * 1 = m`. -/
+TheoremDoc MyNat.mul_one as "mul_one" in "*"
 
 /-- For any natural number $m$, we have $ m \times 1 = m$. -/
 Statement mul_one (m : ℕ) : m * 1 = m := by

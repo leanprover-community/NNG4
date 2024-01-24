@@ -12,9 +12,11 @@ Introduction
 which avoids it. Can you spot it?
 "
 
-TheoremDoc MyNat.add_mul as "add_mul" in "*" "
+/--
 `add_mul a b c` is a proof that $(a+b)c=ac+bc$.
-"
+-/
+TheoremDoc MyNat.add_mul as "add_mul" in "*"
+
 /-- Addition is distributive over multiplication.
 In other words, for all natural numbers $a$, $b$ and $c$, we have
 $(a + b) \times c = ac + bc$. -/

@@ -13,7 +13,7 @@ We now have enough to prove that multiplication is associative,
 the boss level of multiplication world. Good luck!
 "
 
-TheoremDoc MyNat.mul_assoc as "mul_assoc" in "*" "
+/--
 `mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.
 
 Note that when Lean says `a * b * c` it means `(a * b) * c`.
@@ -21,7 +21,8 @@ Note that when Lean says `a * b * c` it means `(a * b) * c`.
 Note that `(a * b) * c = a * (b * c)` cannot be proved by \"pure thought\":
 for example subtraction is not associative, as `(6 - 2) - 1` is not
 equal to `6 - (2 - 1)`.
-"
+-/
+TheoremDoc MyNat.mul_assoc as "mul_assoc" in "*"
 
 /-- Multiplication is associative.
 In other words, for all natural numbers $a$, $b$ and $c$, we have

@@ -13,9 +13,8 @@ Either by induction, or by using `succ_mul`, or
 by using commutativity. Which do you think is quickest?
 "
 
-TheoremDoc MyNat.one_mul as "one_mul" in "*" "
-  `one_mul m` is the proof `1 * m = m`.
-"
+/--  `one_mul m` is the proof `1 * m = m`. -/
+TheoremDoc MyNat.one_mul as "one_mul" in "*"
 
 /-- For any natural number $m$, we have $ 1 \times m = m$. -/
 Statement one_mul
