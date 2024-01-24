@@ -38,12 +38,13 @@ TheoremDoc MyNat.pow_zero as "pow_zero" in "^"
 
 NewTheorem MyNat.pow_zero
 
-TheoremDoc MyNat.zero_pow_zero as "zero_pow_zero" in "^" "
+/--
 Mathematicians sometimes argue that `0 ^ 0 = 0` is also
 a good convention. But it is not a good convention in this
 game; all the later levels come out beautifully with the
 convention that `0 ^ 0 = 1`.
-"
+-/
+TheoremDoc MyNat.zero_pow_zero as "zero_pow_zero" in "^"
 
 /-- $0 ^ 0 = 1$ -/
 Statement zero_pow_zero : (0 : ℕ) ^ 0 = 1 := by
