@@ -8,8 +8,7 @@ Title "Numbers"
 
 namespace MyNat
 
-DefinitionDoc MyNat as "ℕ"
-"
+/--
 `ℕ` is the natural numbers, just called \"numbers\" in this game. It's
 defined via two rules:
 
@@ -20,20 +19,22 @@ defined via two rules:
 
 *The game uses its own copy of the natural numbers, called `MyNat` with notation `ℕ`.
 It is distinct from the Lean natural numbers `Nat`, which should hopefully
-never leak into the natural number game.*"
+never leak into the natural number game.*
+-/
+DefinitionDoc MyNat as "ℕ"
 
 
+/-- `one_eq_succ_zero` is a proof of `1 = succ 0`." -/
 TheoremDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "012"
-"`one_eq_succ_zero` is a proof of `1 = succ 0`."
 
+/-- `two_eq_succ_one` is a proof of `2 = succ 1`. -/
 TheoremDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "012"
-"`two_eq_succ_one` is a proof of `2 = succ 1`."
 
+/-- `three_eq_succ_two` is a proof of `3 = succ 2`. -/
 TheoremDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "012"
-"`three_eq_succ_two` is a proof of `3 = succ 2`."
 
+/-- `four_eq_succ_three` is a proof of `4 = succ 3`. -/
 TheoremDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "012"
-"`four_eq_succ_three` is a proof of `4 = succ 3`."
 
 NewDefinition MyNat
 NewTheorem MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two

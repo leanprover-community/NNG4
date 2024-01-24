@@ -10,7 +10,7 @@ TheoremTab "012"
 
 namespace MyNat
 
-TacticDoc rw "
+/--
 ## Summary
 
 If `h` is a proof of an equality `X = Y`, then `rw [h]` will change
@@ -59,7 +59,6 @@ h1 : x = y + 3
 h2 : 2 * y = x
 ```
 then `rw [h1] at h2` will turn `h2` into `h2 : 2 * y = y + 3`.
--/
 
 ## Common errors
 
@@ -107,9 +106,10 @@ that `a + ? = ? + a`, and `add_comm a c` is a proof that `a + c = c + a`.
 If `h : X = Y` then `rw [h]` will turn all `X`s into `Y`s.
 If you only want to change the 37th occurrence of `X`
 to `Y` then do `nth_rewrite 37 [h]`.
-"
+-/
+TacticDoc rw
 
-TacticDoc «repeat» "
+/--
 ## Summary
 
 `repeat t` repeatedly applies the tactic `t`
@@ -135,9 +135,11 @@ If `h : X = Y` and there are several `X`s in the goal, then
 If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`
 will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
-"
+-/
+TacticDoc «repeat»
 
 NewTactic rw
+
 NewHiddenTactic «repeat» nth_rewrite
 
 Introduction

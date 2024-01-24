@@ -10,8 +10,7 @@ TheoremTab "012"
 
 namespace MyNat
 
-TacticDoc rfl
-"
+/--
 ## Summary
 
 `rfl` proves goals of the form `X = X`.
@@ -44,7 +43,8 @@ for pedagogical purposes; mathematicians do not distinguish between propositiona
 and definitional equality because they think about definitions in a different way
 to type theorists (`zero_add` and `add_zero` are both \"facts\" as far
 as mathematicians are concerned, and who cares what the definition of addition is).*
-"
+-/
+TacticDoc rfl
 
 NewTactic rfl
 
