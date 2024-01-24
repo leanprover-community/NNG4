@@ -7,7 +7,7 @@ Title "The `exact` tactic"
 
 namespace MyNat
 
-TacticDoc exact "
+/--
 ## Summary
 
 If the goal is a statement `P`, then `exact h` will close the goal if `h` is a proof of `P`.
@@ -31,7 +31,8 @@ This is in contrast to `rw` and `apply`, which will \"guess the inputs\"
 if necessary. If the goal is `x + 0 = x` then `rw [add_zero]`
 and `rw [add_zero x]` will both change the goal to `x = x`,
 because `rw` guesses the input to the function `add_zero`.
-"
+-/
+TacticDoc exact
 
 NewTactic exact
 
@@ -45,12 +46,8 @@ The `exact` tactic can be used to close a goal which is exactly one of
 the hypotheses.
 "
 
+set_option linter.unusedVariables false in
 /-- Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$. -/
-/-
-When buildint this generates a warning
-unused variable `h2` [linter.unusedVariables]
-but I want `h2` to be there.
--/
 Statement (x y z : ℕ) (h1 : x + y = 37) (h2 : 3 * x + z = 42) : x + y = 37 := by
   Hint "The goal in this level is one of our hypotheses. Solve the goal by executing `exact h1`."
   exact h1

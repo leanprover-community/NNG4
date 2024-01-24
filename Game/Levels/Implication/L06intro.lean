@@ -6,7 +6,7 @@ Title "intro"
 
 namespace MyNat
 
-TacticDoc intro "
+/--
 ## Summary
 
 If the goal is `P → Q`, then `intro h` will introduce `h : P` as a hypothesis,
@@ -18,7 +18,9 @@ we can assume $P$ and then prove $Q$.
 If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1\\implies x=y$)
 then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal
 will change to $x=y$.
-"
+-/
+TacticDoc intro
+
 NewTactic intro
 
 

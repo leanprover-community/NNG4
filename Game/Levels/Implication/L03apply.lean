@@ -8,7 +8,7 @@ namespace MyNat
 
 TheoremTab "Peano"
 
-TacticDoc apply "
+/--
 ## Summary
 
 If `t : P → Q` is a proof that $P\\implies Q$, and `h : P` is a proof of `P`,
@@ -32,7 +32,9 @@ but Lean is smart enough to figure out the inputs to `succ_inj`.
 
 If the goal is `a * b = 7`, then `apply succ_inj` will turn the
 goal into `succ (a * b) = succ 7`.
-"
+-/
+TacticDoc apply
+
 NewTactic apply
 
 Introduction

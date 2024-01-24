@@ -17,7 +17,7 @@ does the same for a hypothesis `h`. We've proved $0 \\neq 1$ and called
 the proof `zero_ne_one`; now try proving $1 \\neq 0$.
 "
 
-TacticDoc symm "
+/--
 ## Summary
 
 The `symm` tactic will change a goal or hypothesis of
@@ -31,12 +31,13 @@ If the goal is `2 + 2 = 4` then `symm` will change it to `4 = 2 + 2`.
 ### Example
 
 If `h : 2 + 2 ≠ 5` then `symm at h` will change `h` to `5 ≠ 2 + 2`.
-"
+-/
+TacticDoc symm
 
 NewTactic symm
 
-TheoremDoc MyNat.one_ne_zero as "one_ne_zero" in "012" "
-`one_ne_zero` is a proof that `1 ≠ 0`."
+/-- `one_ne_zero` is a proof that `1 ≠ 0`. -/
+TheoremDoc MyNat.one_ne_zero as "one_ne_zero" in "012"
 
 /-- $1\neq0$. -/
 Statement one_ne_zero : (1 : ℕ) ≠ 0 := by

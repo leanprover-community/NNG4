@@ -8,15 +8,15 @@ TheoremTab "Peano"
 
 namespace MyNat
 
-TheoremDoc MyNat.zero_ne_succ as "zero_ne_succ" in "Peano" "
-
+/--
 `zero_ne_succ n` is the proof that `0 ≠ succ n`.
 
 In Lean, `a ≠ b` is *defined to mean* `a = b → False`. Hence
 `zero_ne_succ n` is really a proof of `0 = succ n → False`.
 Here `False` is a generic false statement. This means that
 you can `apply zero_ne_succ at h` if `h` is a proof of `0 = succ n`.
-"
+-/
+TheoremDoc MyNat.zero_ne_succ as "zero_ne_succ" in "Peano"
 
 NewTheorem MyNat.zero_ne_succ
 
@@ -26,9 +26,8 @@ introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.
 To learn about this result, click on it in the list of lemmas on the right.
 "
 
-TheoremDoc MyNat.zero_ne_one as "zero_ne_one" in "012" "
-`zero_ne_one` is a proof of `0 ≠ 1`.
-"
+/-- `zero_ne_one` is a proof of `0 ≠ 1`. -/
+TheoremDoc MyNat.zero_ne_one as "zero_ne_one" in "012"
 
 /-- $0\neq1$. -/
 Statement zero_ne_one : (0 : ℕ) ≠ 1 := by

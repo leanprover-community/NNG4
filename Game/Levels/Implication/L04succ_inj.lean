@@ -21,8 +21,7 @@ by manipulating our hypothesis until it becomes the goal. I will
 walk you through this level.
 "
 
-TheoremDoc MyNat.succ_inj as "succ_inj" in "Peano" "
-
+/--
 # Statement
 
 If $a$ and $b$ are numbers, then
@@ -45,7 +44,8 @@ $\\forall a, b\\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(
 `succ_inj` was postulated as an axiom by Peano, but
 in Lean it can be proved using `pred`, a mathematically
 pathological function.
-"
+-/
+TheoremDoc MyNat.succ_inj as "succ_inj" in "Peano"
 
 NewTheorem MyNat.succ_inj
 
