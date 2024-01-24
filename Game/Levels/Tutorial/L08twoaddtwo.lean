@@ -10,22 +10,6 @@ TheoremTab "012"
 
 namespace MyNat
 
-/--
-## Summary
-
-If `h : X = Y` and there are several `X`s in the goal, then
-`nth_rewrite 3 [h]` will just change the third `X` to a `Y`.
-
-## Example
-
-If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`
-will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
-will change the goal to `succ 1 + succ 1 = 4`.
--/
-TacticDoc nth_rewrite
-
-NewHiddenTactic nth_rewrite
-
 Introduction
 " Good luck!
 
