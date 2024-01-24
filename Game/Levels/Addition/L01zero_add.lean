@@ -29,8 +29,8 @@ will ask us to show that if `0 + d = d` then `0 + succ d = succ d`. Because
 
 See if you can do your first induction proof in Lean.
 
-By the way, if you are still in the editor mode from the last world, you can swap
-back to typewriter mode by clicking the `>_` button.
+(By the way, if you are still in the \"Editor mode\" from the last world, you can swap
+back to \"Typewriter mode\" by clicking the `>_` button in the top right.)
 "
 
 /--
