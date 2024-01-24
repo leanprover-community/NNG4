@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_trans as "le_trans" in "≤" "
+TheoremDoc MyNat.le_trans as "le_trans" in "≤" "
 `le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.
 More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,
 If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.

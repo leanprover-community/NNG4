@@ -8,7 +8,7 @@ TheoremTab "*"
 
 namespace MyNat
 
-LemmaDoc MyNat.mul_left_ne_zero as "mul_left_ne_zero" in "*" "
+TheoremDoc MyNat.mul_left_ne_zero as "mul_left_ne_zero" in "*" "
 `mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`.
 "
 

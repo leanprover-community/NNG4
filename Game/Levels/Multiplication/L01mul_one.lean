@@ -33,18 +33,18 @@ are proved by induction from these two basic theorems.
 
 NewDefinition Mul
 
-LemmaDoc MyNat.mul_zero as "mul_zero" in "*"
+TheoremDoc MyNat.mul_zero as "mul_zero" in "*"
 "
 `mul_zero m` is the proof that `m * 0 = 0`."
 
-LemmaDoc MyNat.mul_succ as "mul_succ" in "*"
+TheoremDoc MyNat.mul_succ as "mul_succ" in "*"
 "
 `mul_succ a b` is the proof that `a * succ b = a * b + a`.
 "
 
 NewLemma MyNat.mul_zero MyNat.mul_succ
 
-LemmaDoc MyNat.mul_one as "mul_one" in "*" "
+TheoremDoc MyNat.mul_one as "mul_one" in "*" "
 `mul_one m` is the proof that `m * 1 = m`.
 "
 

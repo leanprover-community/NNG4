@@ -16,7 +16,7 @@ because `rw [mul_comm]` swaps the wrong multiplication,
 then read the documentation of `rw` for tips on how to fix this.
 "
 
-LemmaDoc MyNat.mul_pow as "mul_pow" in "^" "
+TheoremDoc MyNat.mul_pow as "mul_pow" in "^" "
 `mul_pow a b n` is a proof that $(ab)^n=a^nb^n.$
 "
 

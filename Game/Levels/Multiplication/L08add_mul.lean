@@ -12,7 +12,7 @@ Introduction
 which avoids it. Can you spot it?
 "
 
-LemmaDoc MyNat.add_mul as "add_mul" in "*" "
+TheoremDoc MyNat.add_mul as "add_mul" in "*" "
 `add_mul a b c` is a proof that $(a+b)c=ac+bc$.
 "
 /-- Addition is distributive over multiplication.

@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_mul_right as "le_mul_right" in "≤" "
+TheoremDoc MyNat.le_mul_right as "le_mul_right" in "≤" "
 `le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.
 
 It's one way of saying that a divisor of a positive number

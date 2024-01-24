@@ -16,7 +16,7 @@ we have the problem that we are adding `b` to things, so we need
 to use induction to split into the cases where `b = 0` and `b` is a successor.
 "
 
-LemmaDoc MyNat.succ_add as "succ_add" in "+"
+TheoremDoc MyNat.succ_add as "succ_add" in "+"
 "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
 
 /--

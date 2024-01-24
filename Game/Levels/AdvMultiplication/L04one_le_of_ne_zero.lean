@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-LemmaDoc MyNat.one_le_of_ne_zero as "one_le_of_ne_zero" in "≤" "
+TheoremDoc MyNat.one_le_of_ne_zero as "one_le_of_ne_zero" in "≤" "
 `one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`.
 "
 

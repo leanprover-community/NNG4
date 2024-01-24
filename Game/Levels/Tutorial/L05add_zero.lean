@@ -7,7 +7,7 @@ Title "Adding zero"
 
 namespace MyNat
 
-DefinitionDoc Add as "+" "`Add a b`, with notation `a + b`, is
+/-- `Add a b`, with notation `a + b`, is
 the usual sum of natural numbers. Internally it is defined
 via the following two hypotheses:
 
@@ -17,12 +17,14 @@ via the following two hypotheses:
 
 Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved
 by induction using these two basic theorems."
+-/
+DefinitionDoc Add as "+"
 
 NewDefinition Add
 
 TheoremTab "+"
 
-LemmaDoc MyNat.add_zero as "add_zero" in "+"
+TheoremDoc MyNat.add_zero as "add_zero" in "+"
 "`add_zero a` is a proof that `a + 0 = a`.
 
 ## Summary

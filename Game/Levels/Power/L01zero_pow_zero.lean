@@ -29,14 +29,14 @@ Note in particular that `0 ^ 0 = 1`.
 
 NewDefinition Pow
 
-LemmaDoc MyNat.pow_zero as "pow_zero" in "^" "
+TheoremDoc MyNat.pow_zero as "pow_zero" in "^" "
 `pow_zero a : a ^ 0 = 1` is one of the two axioms
 defining exponentiation in this game.
 "
 
 NewLemma MyNat.pow_zero
 
-LemmaDoc MyNat.zero_pow_zero as "zero_pow_zero" in "^" "
+TheoremDoc MyNat.zero_pow_zero as "zero_pow_zero" in "^" "
 Mathematicians sometimes argue that `0 ^ 0 = 0` is also
 a good convention. But it is not a good convention in this
 game; all the later levels come out beautifully with the

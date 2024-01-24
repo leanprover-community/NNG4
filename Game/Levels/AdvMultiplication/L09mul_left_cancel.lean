@@ -8,7 +8,7 @@ TheoremTab "*"
 
 namespace MyNat
 
-LemmaDoc MyNat.mul_left_cancel as "mul_left_cancel" in "*" "
+TheoremDoc MyNat.mul_left_cancel as "mul_left_cancel" in "*" "
 `mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then `b = c`.
 "
 

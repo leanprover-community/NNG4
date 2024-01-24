@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-LemmaDoc MyNat.succ_le_succ as "succ_le_succ" in "≤" "
+TheoremDoc MyNat.succ_le_succ as "succ_le_succ" in "≤" "
 `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.
 "
 

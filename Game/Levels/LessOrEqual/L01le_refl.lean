@@ -47,7 +47,7 @@ To *prove* an \"exists\" statement, use the `use` tactic.
 Let's see an example.
 "
 
-LemmaDoc MyNat.le_refl as "le_refl" in "≤" "
+TheoremDoc MyNat.le_refl as "le_refl" in "≤" "
 `le_refl x` is a proof of `x ≤ x`.
 
 The reason for the name is that this lemma is \"reflexivity of $\\le$\"

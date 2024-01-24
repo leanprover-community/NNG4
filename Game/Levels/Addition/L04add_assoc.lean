@@ -19,7 +19,7 @@ Introduction
   That's true, but we didn't prove it yet. Let's prove it now by induction.
 "
 
-LemmaDoc MyNat.add_assoc as "add_assoc" in "+" "`add_assoc a b c` is a proof
+TheoremDoc MyNat.add_assoc as "add_assoc" in "+" "`add_assoc a b c` is a proof
 that `(a + b) + c = a + (b + c)`. Note that in Lean `(a + b) + c` prints
 as `a + b + c`, because the notation for addition is defined to be left
 associative. "

@@ -23,16 +23,16 @@ It is distinct from the Lean natural numbers `Nat`, which should hopefully
 never leak into the natural number game.*"
 
 
-LemmaDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "012"
+TheoremDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "012"
 "`one_eq_succ_zero` is a proof of `1 = succ 0`."
 
-LemmaDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "012"
+TheoremDoc MyNat.two_eq_succ_one as "two_eq_succ_one" in "012"
 "`two_eq_succ_one` is a proof of `2 = succ 1`."
 
-LemmaDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "012"
+TheoremDoc MyNat.three_eq_succ_two as "three_eq_succ_two" in "012"
 "`three_eq_succ_two` is a proof of `3 = succ 2`."
 
-LemmaDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "012"
+TheoremDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "012"
 "`four_eq_succ_three` is a proof of `4 = succ 3`."
 
 NewDefinition MyNat

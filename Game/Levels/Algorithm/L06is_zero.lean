@@ -27,17 +27,17 @@ you how to *prove* results like that.
 If you can turn your goal into `True`, then the `triv` tactic will solve it.
 "
 
-LemmaDoc MyNat.is_zero_zero as "is_zero_zero" in "Peano"
+TheoremDoc MyNat.is_zero_zero as "is_zero_zero" in "Peano"
 "
 `is_zero_zero` is a proof of `is_zero 0 = True`.
 "
 
-LemmaDoc MyNat.is_zero_succ as "is_zero_succ" in "Peano"
+TheoremDoc MyNat.is_zero_succ as "is_zero_succ" in "Peano"
 "
 `is_zero_succ a` is a proof of `is_zero (succ a) = False`.
 "
 
-LemmaDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
+TheoremDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 "
 `succ_ne_zero a` is a proof of `succ a ≠ 0`.
 "

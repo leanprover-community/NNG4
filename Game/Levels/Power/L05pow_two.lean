@@ -8,7 +8,7 @@ namespace MyNat
 
 Introduction "Note: this lemma will be useful for the final boss!"
 
-LemmaDoc MyNat.pow_two as "pow_two" in "^" "
+TheoremDoc MyNat.pow_two as "pow_two" in "^" "
 `pow_two a` says that `a ^ 2 = a * a`.
 "
 

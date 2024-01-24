@@ -30,7 +30,7 @@ will ask us to show that if `0 + d = d` then `0 + succ d = succ d`. Because
 See if you can do your first induction proof in Lean.
 "
 
-LemmaDoc MyNat.zero_add as "zero_add" in "+" "
+TheoremDoc MyNat.zero_add as "zero_add" in "+" "
 `zero_add x` is the proof of `0 + x = x`.
 
 `zero_add` is a `simp` lemma, because replacing `0 + x` by `x`

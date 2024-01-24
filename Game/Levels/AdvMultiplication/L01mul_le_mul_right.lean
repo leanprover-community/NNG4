@@ -9,7 +9,7 @@ TheoremTab "*"
 
 namespace MyNat
 
-LemmaDoc MyNat.mul_le_mul_right as "mul_le_mul_right" in "*" "
+TheoremDoc MyNat.mul_le_mul_right as "mul_le_mul_right" in "*" "
 `mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`.
 "
 

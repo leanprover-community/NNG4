@@ -6,7 +6,7 @@ Title "x ≤ y or y ≤ x"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_total as "le_total" in "≤" "
+TheoremDoc MyNat.le_total as "le_total" in "≤" "
 `le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
 "
 

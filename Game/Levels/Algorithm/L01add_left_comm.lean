@@ -8,7 +8,7 @@ TheoremTab "+"
 
 namespace MyNat
 
-LemmaDoc MyNat.add_left_comm as "add_left_comm" in "+" "
+TheoremDoc MyNat.add_left_comm as "add_left_comm" in "+" "
 `add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`.
 "
 

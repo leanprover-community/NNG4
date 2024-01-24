@@ -13,7 +13,7 @@ Introduction
 of using it.
 "
 
-LemmaDoc MyNat.add_left_eq_zero as "add_left_eq_zero" in "+" "
+TheoremDoc MyNat.add_left_eq_zero as "add_left_eq_zero" in "+" "
   A proof that $a+b=0 \\implies b=0$.
 "
 

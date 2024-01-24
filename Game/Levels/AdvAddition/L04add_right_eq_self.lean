@@ -8,7 +8,7 @@ TheoremTab "+"
 
 namespace MyNat
 
-LemmaDoc MyNat.add_right_eq_self as "add_right_eq_self" in "+" "
+TheoremDoc MyNat.add_right_eq_self as "add_right_eq_self" in "+" "
 
 `add_right_eq_self x y` is the theorem that $x + y = x\\implies y=0.$
 "

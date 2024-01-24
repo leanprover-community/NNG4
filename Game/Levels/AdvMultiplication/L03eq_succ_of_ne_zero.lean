@@ -43,7 +43,7 @@ If you switch the goal and hypothesis in this example, `tauto` would solve it to
 
 NewTactic tauto
 
-LemmaDoc MyNat.eq_succ_of_ne_zero as "eq_succ_of_ne_zero" in "≤" "
+TheoremDoc MyNat.eq_succ_of_ne_zero as "eq_succ_of_ne_zero" in "≤" "
 `eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`.
 "
 

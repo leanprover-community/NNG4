@@ -8,7 +8,7 @@ namespace MyNat
 
 TheoremTab "+"
 
-LemmaDoc MyNat.add_left_cancel as "add_left_cancel" in "+" "
+TheoremDoc MyNat.add_left_cancel as "add_left_cancel" in "+" "
 
 `add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$
 "

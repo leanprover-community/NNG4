@@ -6,7 +6,7 @@ Title "x ≤ succ x"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
+TheoremDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
 `le_succ_self x` is a proof that `x ≤ succ x`.
 "
 

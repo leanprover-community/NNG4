@@ -17,7 +17,7 @@ Note that the left hand side contains a multiplication
 and then an addition.
 "
 
-LemmaDoc MyNat.mul_add as "mul_add" in "*" "Multiplication distributes
+TheoremDoc MyNat.mul_add as "mul_add" in "*" "Multiplication distributes
 over addition on the left.
 
 `mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."

@@ -47,7 +47,7 @@ will add `h2 : succ a = succ b → a = b` as a hypothesis.
 
 NewTactic «have»
 
-LemmaDoc MyNat.mul_right_eq_one as "mul_right_eq_one" in "*" "
+TheoremDoc MyNat.mul_right_eq_one as "mul_right_eq_one" in "*" "
 `mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`.
 "
 

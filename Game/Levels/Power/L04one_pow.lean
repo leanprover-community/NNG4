@@ -6,7 +6,7 @@ Title "one_pow"
 
 namespace MyNat
 
-LemmaDoc MyNat.one_pow as "one_pow" in "^" "
+TheoremDoc MyNat.one_pow as "one_pow" in "^" "
 `one_pow n` is a proof that $1^n=1$.
 "
 /-- For all naturals $m$, $1 ^ m = 1$. -/

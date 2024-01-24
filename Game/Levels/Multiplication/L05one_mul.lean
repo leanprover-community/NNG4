@@ -13,7 +13,7 @@ Either by induction, or by using `succ_mul`, or
 by using commutativity. Which do you think is quickest?
 "
 
-LemmaDoc MyNat.one_mul as "one_mul" in "*" "
+TheoremDoc MyNat.one_mul as "one_mul" in "*" "
   `one_mul m` is the proof `1 * m = m`.
 "
 

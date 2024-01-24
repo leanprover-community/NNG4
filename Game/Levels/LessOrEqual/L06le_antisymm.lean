@@ -6,7 +6,7 @@ Title "x ≤ y and y ≤ x implies x = y"
 
 namespace MyNat
 
-LemmaDoc MyNat.le_antisymm as "le_antisymm" in "≤" "
+TheoremDoc MyNat.le_antisymm as "le_antisymm" in "≤" "
 `le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`.
 "
 

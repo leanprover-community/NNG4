@@ -66,7 +66,7 @@ and a proof `hc : b = a + c`. This is because the *definition* of `a ≤ b` is
 "
 NewTactic cases
 
-LemmaDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+" "
+TheoremDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+" "
   A proof that $a+b=0 \\implies a=0$.
 "
 

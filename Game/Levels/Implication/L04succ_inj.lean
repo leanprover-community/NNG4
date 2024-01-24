@@ -21,7 +21,7 @@ by manipulating our hypothesis until it becomes the goal. I will
 walk you through this level.
 "
 
-LemmaDoc MyNat.succ_inj as "succ_inj" in "Peano" "
+TheoremDoc MyNat.succ_inj as "succ_inj" in "Peano" "
 
 # Statement
 
