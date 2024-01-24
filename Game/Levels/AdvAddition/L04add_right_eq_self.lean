@@ -4,7 +4,7 @@ World "AdvAddition"
 Level 4
 Title "add_right_eq_self"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 

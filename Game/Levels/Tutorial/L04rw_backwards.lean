@@ -5,7 +5,7 @@ World "Tutorial"
 Level 4
 Title "rewriting backwards"
 
-LemmaTab "012"
+TheoremTab "012"
 
 namespace MyNat
 

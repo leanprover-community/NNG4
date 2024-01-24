@@ -29,7 +29,7 @@ Statement add_sq
   rw [← add_assoc, ← add_assoc]
   rfl
 
-LemmaTab "^"
+TheoremTab "^"
 
 Conclusion
 "

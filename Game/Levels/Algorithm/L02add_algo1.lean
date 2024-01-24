@@ -4,7 +4,7 @@ World "Algorithm"
 Level 2
 Title "making life easier"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 
@@ -35,7 +35,7 @@ Statement (a b c d : ℕ) : a + b + (c + d) = a + c + d + b := by
   rw [add_comm b d]
   rfl
 
-LemmaTab "+"
+TheoremTab "+"
 
 Conclusion
 "

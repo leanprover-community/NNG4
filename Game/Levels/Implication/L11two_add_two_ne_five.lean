@@ -4,7 +4,7 @@ World "Implication"
 Level 11
 Title "2 + 2 ≠ 5"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

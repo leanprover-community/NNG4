@@ -5,7 +5,7 @@ World "Algorithm"
 Level 5
 Title "pred"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

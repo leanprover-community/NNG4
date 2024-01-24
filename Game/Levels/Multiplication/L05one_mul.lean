@@ -23,7 +23,7 @@ Statement one_mul
   rw [mul_comm, mul_one]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 Conclusion "
 Here's my solution:

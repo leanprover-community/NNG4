@@ -56,4 +56,4 @@ Statement mul_one (m : ℕ) : m * 1 = m := by
   rw [zero_add]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"

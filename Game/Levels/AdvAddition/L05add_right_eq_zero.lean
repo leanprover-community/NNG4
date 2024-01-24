@@ -5,7 +5,7 @@ World "AdvAddition"
 Level 5
 Title "add_right_eq_zero"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

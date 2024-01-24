@@ -3,7 +3,7 @@ World "LessOrEqual"
 Level 10
 Title "x ≤ 1"
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 namespace MyNat
 

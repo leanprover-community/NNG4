@@ -49,4 +49,4 @@ Statement --contra
 -- TODO: `contradiction`?
 NewTactic exfalso
 -- DisabledTactic cc
-LemmaTab "Prop"
+TheoremTab "Prop"

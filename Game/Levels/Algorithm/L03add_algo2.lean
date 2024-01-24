@@ -4,7 +4,7 @@ World "Algorithm"
 Level 3
 Title "making life simple"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 

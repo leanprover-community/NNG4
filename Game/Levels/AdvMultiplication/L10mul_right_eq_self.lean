@@ -4,7 +4,7 @@ World "AdvMultiplication"
 Level 10
 Title "mul_right_eq_self"
 
-LemmaTab "*"
+TheoremTab "*"
 
 namespace MyNat
 

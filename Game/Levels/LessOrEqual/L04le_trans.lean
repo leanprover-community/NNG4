@@ -4,7 +4,7 @@ World "LessOrEqual"
 Level 4
 Title "x ≤ y and y ≤ z implies x ≤ z"
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 namespace MyNat
 
@@ -39,7 +39,7 @@ Statement le_trans (x y z : ℕ) (hxy : x ≤ y) (hyz : y ≤ z) : x ≤ z := by
   rw [hb, ha]
   exact add_assoc x a b
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 Conclusion "
 A passing mathematician remarks that with reflexivity and transitivity out of the way,

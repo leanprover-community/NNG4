@@ -4,7 +4,7 @@ World "AdvMultiplication"
 Level 4
 Title "one_le_of_ne_zero"
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 namespace MyNat
 

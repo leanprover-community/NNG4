@@ -87,7 +87,7 @@ goal before you can access the second one.
 "
 NewTactic induction
 
-LemmaTab "+"
+TheoremTab "+"
 
 Conclusion
 "

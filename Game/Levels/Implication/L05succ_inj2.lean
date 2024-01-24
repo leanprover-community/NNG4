@@ -4,7 +4,7 @@ World "Implication"
 Level 5
 Title "Arguing backwards"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

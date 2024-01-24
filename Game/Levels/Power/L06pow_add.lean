@@ -23,4 +23,4 @@ Statement pow_add
   · rw [add_succ, pow_succ, pow_succ, ht, mul_assoc]
     rfl
 
-LemmaTab "^"
+TheoremTab "^"

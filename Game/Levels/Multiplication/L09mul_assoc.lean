@@ -37,7 +37,7 @@ Statement mul_assoc
     rw [mul_add]
     rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 Conclusion "
 A passing mathematician notes that you've proved

@@ -26,7 +26,7 @@ Statement pow_pow
   · rw [pow_succ, Ht, mul_succ, pow_add]
     rfl
 
-LemmaTab "^"
+TheoremTab "^"
 
 -- **TODO** if these are `simp` then they should be `simp`ed at source.
 attribute [simp] MyNat.pow_zero

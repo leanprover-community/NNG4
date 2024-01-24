@@ -6,7 +6,7 @@ World "Tutorial"
 Level 7
 Title "add_succ"
 
-LemmaTab "012"
+TheoremTab "012"
 
 namespace MyNat
 

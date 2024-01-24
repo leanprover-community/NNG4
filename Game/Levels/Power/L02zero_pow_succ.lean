@@ -28,4 +28,4 @@ Statement zero_pow_succ
   rw [mul_zero]
   rfl
 
-LemmaTab "^"
+TheoremTab "^"

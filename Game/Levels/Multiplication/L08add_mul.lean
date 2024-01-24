@@ -24,7 +24,7 @@ Statement add_mul
   repeat rw [mul_comm c]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 Conclusion "
 Here's my proof:

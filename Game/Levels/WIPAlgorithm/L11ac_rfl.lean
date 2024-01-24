@@ -25,7 +25,7 @@ Statement (a b c d e f g h : ℕ) :
   ac_rfl
 
 NewTactic ac_rfl
-LemmaTab "+"
+TheoremTab "+"
 
 Conclusion
 "

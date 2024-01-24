@@ -4,7 +4,7 @@ World "AdvMultiplication"
 Level 2
 Title "mul_left_ne_zero"
 
-LemmaTab "*"
+TheoremTab "*"
 
 namespace MyNat
 

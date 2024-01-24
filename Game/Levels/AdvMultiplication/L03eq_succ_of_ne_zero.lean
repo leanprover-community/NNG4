@@ -4,7 +4,7 @@ World "AdvMultiplication"
 Level 3
 Title "eq_succ_of_ne_zero"
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 namespace MyNat
 

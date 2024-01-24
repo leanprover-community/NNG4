@@ -5,7 +5,7 @@ Title "le_two"
 
 namespace MyNat
 
-LemmaTab "012"
+TheoremTab "012"
 
 LemmaDoc MyNat.le_two as "le_two" in "≤" "
 `le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`.

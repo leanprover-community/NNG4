@@ -6,7 +6,7 @@ Title "add_left_cancel"
 
 namespace MyNat
 
-LemmaTab "+"
+TheoremTab "+"
 
 LemmaDoc MyNat.add_left_cancel as "add_left_cancel" in "+" "
 

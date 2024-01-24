@@ -20,4 +20,4 @@ Statement one_pow
     rw [mul_one]
     rfl
 
-LemmaTab "^"
+TheoremTab "^"

@@ -46,7 +46,7 @@ Statement
 
 NewHiddenTactic xyzzy
 
-LemmaTab "^"
+TheoremTab "^"
 
 Conclusion
 "

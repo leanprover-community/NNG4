@@ -38,7 +38,7 @@ Statement mul_add
   rw [add_succ, mul_succ, hd, mul_succ, add_assoc]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 Conclusion "
 Here's my solution:

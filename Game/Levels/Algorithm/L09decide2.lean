@@ -4,7 +4,7 @@ World "Algorithm"
 Level 9
 Title "decide again"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

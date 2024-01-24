@@ -6,7 +6,7 @@ Title "The `apply` tactic."
 
 namespace MyNat
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 TacticDoc apply "
 ## Summary

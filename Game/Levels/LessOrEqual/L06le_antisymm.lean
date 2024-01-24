@@ -28,7 +28,7 @@ Statement le_antisymm (x y : ℕ) (hxy : x ≤ y) (hyx : y ≤ x) : x = y := by
   rw [hb, add_zero]
   rfl
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 Conclusion "
 Here's my proof:

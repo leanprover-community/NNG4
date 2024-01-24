@@ -49,7 +49,7 @@ Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   rw [succ_add]
   exact h2
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 Conclusion "
 Very well done.

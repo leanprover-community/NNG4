@@ -21,4 +21,4 @@ Statement zero_le (x : ℕ) : 0 ≤ x := by
   rw [zero_add]
   rfl
 
-LemmaTab "≤"
+TheoremTab "≤"

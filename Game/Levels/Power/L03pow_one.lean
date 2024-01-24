@@ -21,4 +21,4 @@ Statement pow_one (a : ℕ) : a ^ 1 = a  := by
   rw [one_mul]
   rfl
 
-LemmaTab "^"
+TheoremTab "^"

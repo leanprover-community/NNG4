@@ -4,7 +4,7 @@ World "Algorithm"
 Level 6
 Title "is_zero"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

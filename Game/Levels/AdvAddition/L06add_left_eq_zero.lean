@@ -4,7 +4,7 @@ World "AdvAddition"
 Level 6
 Title "add_left_eq_zero"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 

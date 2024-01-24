@@ -4,7 +4,7 @@ World "Algorithm"
 Level 4
 Title "the simplest approach"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 

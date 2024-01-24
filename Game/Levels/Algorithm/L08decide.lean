@@ -5,7 +5,7 @@ World "Algorithm"
 Level 8
 Title "decide"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

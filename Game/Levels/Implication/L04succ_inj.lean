@@ -6,7 +6,7 @@ Title "succ_inj : the successor function is injective"
 
 namespace MyNat
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 Introduction
 "

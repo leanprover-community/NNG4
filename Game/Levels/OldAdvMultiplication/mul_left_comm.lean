@@ -41,7 +41,7 @@ Statement MyNat.mul_left_comm
   rw [mul_assoc]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 -- TODO: make simp work:
 -- attribute [simp] mul_assoc mul_comm mul_left_comm

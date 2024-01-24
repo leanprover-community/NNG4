@@ -36,7 +36,7 @@ Statement add_right_comm (a b c : ℕ) : a + b + c = a + c + b := by
   rw [add_comm b, add_assoc]
   rfl
 
-LemmaTab "+"
+TheoremTab "+"
 
 Conclusion "
 You've now seen all the tactics you need to beat the final boss of the game.

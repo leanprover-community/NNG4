@@ -4,7 +4,7 @@ World "Implication"
 Level 8
 Title "≠"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

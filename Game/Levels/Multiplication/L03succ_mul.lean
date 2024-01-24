@@ -43,4 +43,4 @@ Statement succ_mul
     rw [add_right_comm]
     rfl
 
-LemmaTab "*"
+TheoremTab "*"

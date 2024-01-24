@@ -4,7 +4,7 @@ World "Algorithm"
 Level 7
 Title "An algorithm for equality"
 
-LemmaTab "Peano"
+TheoremTab "Peano"
 
 namespace MyNat
 

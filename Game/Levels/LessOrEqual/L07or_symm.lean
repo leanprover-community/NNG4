@@ -6,7 +6,7 @@ Title "Dealing with `or`"
 
 namespace MyNat
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 TacticDoc left "
 # Summary
@@ -65,7 +65,7 @@ Statement (x y : ℕ) (h : x = 37 ∨ y = 42) : y = 42 ∨ x = 37 := by
   left
   exact hy
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 Conclusion "
 Ready for the boss level of this world?

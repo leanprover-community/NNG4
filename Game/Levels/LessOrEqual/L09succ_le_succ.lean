@@ -4,7 +4,7 @@ World "LessOrEqual"
 Level 9
 Title "succ x ≤ succ y → x ≤ y"
 
-LemmaTab "≤"
+TheoremTab "≤"
 
 namespace MyNat
 

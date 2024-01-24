@@ -74,7 +74,7 @@ Statement
   Hint (hidden := true) "Now finish the job with `rfl`."
   rfl
 
-LemmaTab "012"
+TheoremTab "012"
 
 Conclusion
 "

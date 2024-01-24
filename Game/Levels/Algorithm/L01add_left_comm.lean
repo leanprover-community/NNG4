@@ -4,7 +4,7 @@ World "Algorithm"
 Level 1
 Title "add_left_comm"
 
-LemmaTab "+"
+TheoremTab "+"
 
 namespace MyNat
 

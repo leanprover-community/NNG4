@@ -6,7 +6,7 @@ Title "add_left_eq_self"
 
 namespace MyNat
 
-LemmaTab "+"
+TheoremTab "+"
 
 LemmaDoc MyNat.add_left_eq_self as "add_left_eq_self" in "+" "
 

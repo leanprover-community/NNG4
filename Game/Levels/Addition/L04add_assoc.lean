@@ -42,7 +42,7 @@ Statement add_assoc (a b c : ℕ) : a + b + c = a + (b + c) := by
 -- Adding this instance to make `ac_rfl` work.
 instance : Lean.IsAssociative (α := ℕ) (· + ·) := ⟨add_assoc⟩
 
-LemmaTab "+"
+TheoremTab "+"
 
 Conclusion
 "

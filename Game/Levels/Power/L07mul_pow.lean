@@ -32,4 +32,4 @@ Statement mul_pow
     rw [mul_comm a (_ * b), mul_assoc, mul_comm b a]
     rfl
 
-LemmaTab "^"
+TheoremTab "^"

@@ -5,7 +5,7 @@ World "AdvMultiplication"
 Level 1
 Title "mul_le_mul_right"
 
-LemmaTab "*"
+TheoremTab "*"
 
 namespace MyNat
 

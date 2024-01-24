@@ -4,7 +4,7 @@ World "AdvMultiplication"
 Level 9
 Title "mul_left_cancel"
 
-LemmaTab "*"
+TheoremTab "*"
 
 namespace MyNat
 

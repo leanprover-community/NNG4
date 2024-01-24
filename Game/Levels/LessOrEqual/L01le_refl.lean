@@ -63,4 +63,4 @@ Statement le_refl (x : ℕ) : x ≤ x := by
   rfl
 
 
-LemmaTab "≤"
+TheoremTab "≤"

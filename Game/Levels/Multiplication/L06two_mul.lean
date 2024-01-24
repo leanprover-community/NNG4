@@ -22,7 +22,7 @@ Statement two_mul
   rw [two_eq_succ_one, succ_mul, one_mul]
   rfl
 
-LemmaTab "*"
+TheoremTab "*"
 
 Conclusion "
 Here's my solution:

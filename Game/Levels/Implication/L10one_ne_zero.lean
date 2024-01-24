@@ -3,7 +3,7 @@ World "Implication"
 Level 10
 Title "1 ≠ 0"
 
-LemmaTab "012"
+TheoremTab "012"
 
 namespace MyNat
 
