@@ -11,12 +11,13 @@ namespace MyNat
 macro "simp_add" : tactic => `(tactic|(
   simp only [add_assoc, add_left_comm, add_comm]))
 
-TacticDoc simp_add "
+/--
 # Overview
 
 Our home-made tactic `simp_add` will solve arbitrary goals of
 the form `a + (b + c) + (d + e) = e + (d + (c + b)) + a`.
-"
+-/
+TacticDoc simp_add
 
 NewTactic simp_add
 

@@ -8,14 +8,15 @@ TheoremTab "+"
 
 namespace MyNat
 
-TacticDoc simp "
+/--
 # Overview
 
 Lean's simplifier, `simp`, will rewrite every lemma
 tagged with `simp` and every lemma fed to it by the user, as much as it can.
 Furthermore, it will attempt to order variables into an internal order if fed
 lemmas such as `add_comm`, so that it does not go into an infinite loop.
-"
+-/
+TacticDoc simp
 
 NewTactic simp
 

@@ -9,7 +9,7 @@ TheoremTab "Peano"
 
 namespace MyNat
 
-TacticDoc decide "
+/--
 # Summary
 
 `decide` will attempt to solve a goal if it can find an algorithm which it
@@ -20,7 +20,8 @@ can run to solve it.
 A term of type `DecidableEq ℕ` is an algorithm to decide whether two naturals
 are equal or different. Hence, once this term is made and made into an `instance`,
 the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`.
-"
+-/
+TacticDoc decide
 
 NewTactic decide
 

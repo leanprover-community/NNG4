@@ -30,7 +30,7 @@ that `succ m ≠ 0` is `succ_ne_zero m`. The proof that if `h : m = n` then
 remaining job we have to do: if `a ≠ b` then `succ a ≠ succ b`.
 "
 
-TacticDoc contrapose "
+/--
 # Summary
 
 If you have a hypothesis
@@ -49,13 +49,13 @@ a hypothesis
 and goal
 
 `a = b`.
-"
+-/
+TacticDoc contrapose
 
 NewTactic contrapose
 
-TheoremDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano" "
-`succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`.
-"
+/-- `succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`. -/
+TheoremDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano"
 
 /-- If $a \neq b$ then $\operatorname{succ}(a) \neq\operatorname{succ}(b)$. -/
 Statement succ_ne_succ (m n : ℕ) (h : m ≠ n) : succ m ≠ succ n := by

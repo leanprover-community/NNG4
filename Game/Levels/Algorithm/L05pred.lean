@@ -30,10 +30,8 @@ Let's use this lemma to prove `succ_inj`, the theorem which
 Peano assumed as an axiom and which we have already used extensively without justification.
 "
 
+/-- `pred_succ n` is a proof of `pred (succ n) = n`. -/
 TheoremDoc MyNat.pred_succ as "pred_succ" in "Peano"
-"
-`pred_succ n` is a proof of `pred (succ n) = n`.
-"
 
 NewTheorem MyNat.pred_succ
 

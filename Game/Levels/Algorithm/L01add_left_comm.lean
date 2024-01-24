@@ -8,9 +8,8 @@ TheoremTab "+"
 
 namespace MyNat
 
-TheoremDoc MyNat.add_left_comm as "add_left_comm" in "+" "
-`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`.
-"
+/-- `add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`. -/
+TheoremDoc MyNat.add_left_comm as "add_left_comm" in "+"
 
 Introduction "Having to rearrange variables manually using commutativity and
 associativity is very tedious. We start by reminding you of this. `add_left_comm`
