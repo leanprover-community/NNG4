@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-TacticDoc tauto "
+/--
 # Summary
 
 The `tauto` tactic will solve any goal which can be solved purely by logic (that is, by
@@ -39,13 +39,13 @@ If you have one hypothesis `h : a ≠ a` then `tauto` will solve the goal becaus
 If you have a hypothesis of the form `a = 0 → a * b = 0` and your goal is `a * b ≠ 0 → a ≠ 0`, then
 `tauto` will solve the goal, because the goal is logically equivalent to the hypothesis.
 If you switch the goal and hypothesis in this example, `tauto` would solve it too.
-"
+-/
+TacticDoc tauto
 
 NewTactic tauto
 
-TheoremDoc MyNat.eq_succ_of_ne_zero as "eq_succ_of_ne_zero" in "≤" "
-`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`.
-"
+/-- `eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`. -/
+TheoremDoc MyNat.eq_succ_of_ne_zero as "eq_succ_of_ne_zero" in "≤"
 
 Introduction
 "Multiplication usually makes a number bigger, but multiplication by zero can make

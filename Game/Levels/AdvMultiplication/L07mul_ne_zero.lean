@@ -8,9 +8,8 @@ TheoremTab "*"
 
 namespace MyNat
 
-TheoremDoc MyNat.mul_ne_zero as "mul_ne_zero" in "*" "
-`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`.
-"
+/-- `mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. -/
+TheoremDoc MyNat.mul_ne_zero as "mul_ne_zero" in "*"
 
 Introduction
 "

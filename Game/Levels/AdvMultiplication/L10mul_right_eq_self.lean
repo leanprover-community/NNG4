@@ -8,9 +8,8 @@ TheoremTab "*"
 
 namespace MyNat
 
-TheoremDoc MyNat.mul_right_eq_self as "mul_right_eq_self" in "*" "
-`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`.
-"
+/-- `mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`. -/
+TheoremDoc MyNat.mul_right_eq_self as "mul_right_eq_self" in "*"
 
 Introduction
 "The lemma proved in the final level of this world will be helpful

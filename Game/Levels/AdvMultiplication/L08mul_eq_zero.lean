@@ -8,9 +8,8 @@ TheoremTab "*"
 
 namespace MyNat
 
-TheoremDoc MyNat.mul_eq_zero as "mul_eq_zero" in "*" "
-`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`.
-"
+/-- `mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`. -/
+TheoremDoc MyNat.mul_eq_zero as "mul_eq_zero" in "*"
 
 Introduction
 "

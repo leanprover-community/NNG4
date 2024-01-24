@@ -8,7 +8,7 @@ TheoremTab "*"
 
 namespace MyNat
 
-TacticDoc «have» "
+/--
 # Summary
 
 The `have` tactic can be used to add new hypotheses to a level, but of course
@@ -43,13 +43,16 @@ are proving. example
 `have h2 := succ_inj a b`
 
 will add `h2 : succ a = succ b → a = b` as a hypothesis.
-"
+-/
+TacticDoc «have»
+
+/--
+`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`.
+-/
+TheoremDoc MyNat.mul_right_eq_one as "mul_right_eq_one" in "*"
 
 NewTactic «have»
 
-TheoremDoc MyNat.mul_right_eq_one as "mul_right_eq_one" in "*" "
-`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`.
-"
 
 Introduction
 "
