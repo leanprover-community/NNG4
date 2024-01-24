@@ -28,6 +28,9 @@ will ask us to show that if `0 + d = d` then `0 + succ d = succ d`. Because
 `0` and successor are the only way to make numbers, this will cover all the cases.
 
 See if you can do your first induction proof in Lean.
+
+By the way, if you are still in the editor mode from the last world, you can swap
+back to typewriter mode by clicking the `>_` button.
 "
 
 /--
