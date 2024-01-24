@@ -15,7 +15,7 @@ game, `0 ^ 0 = 1`. See if you can prove it.
 Check out the *Pow* tab in your list of theorems
 to see the new proofs which are available."
 
-DefinitionDoc Pow as "^" "
+/--
   `Pow a b`, with notation `a ^ b`, is the usual
   exponentiation of natural numbers. Internally it is
   defined via two axioms:
@@ -25,14 +25,16 @@ DefinitionDoc Pow as "^" "
   * `pow_succ a b : a ^ succ b = a ^ b * a`
 
 Note in particular that `0 ^ 0 = 1`.
-"
+-/
+DefinitionDoc Pow as "^"
 
 NewDefinition Pow
 
-TheoremDoc MyNat.pow_zero as "pow_zero" in "^" "
+/--
 `pow_zero a : a ^ 0 = 1` is one of the two axioms
 defining exponentiation in this game.
-"
+-/
+TheoremDoc MyNat.pow_zero as "pow_zero" in "^"
 
 NewTheorem MyNat.pow_zero
 

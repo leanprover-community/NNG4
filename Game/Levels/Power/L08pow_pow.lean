@@ -13,9 +13,8 @@ sub-boss appears as the music reaches a frenzy. What
 else could there be to prove about powers after this?
 "
 
-TheoremDoc MyNat.pow_pow as "pow_pow" in "^" "
-`pow_pow a m n` is a proof that $(a^m)^n=a^{mn}.$
-"
+/-- `pow_pow a m n` is a proof that $(a^m)^n=a^{mn}.$ -/
+TheoremDoc MyNat.pow_pow as "pow_pow" in "^"
 
 /-- For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$. -/
 Statement pow_pow

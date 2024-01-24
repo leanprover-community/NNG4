@@ -8,9 +8,8 @@ namespace MyNat
 
 Introduction "Note: this lemma will be useful for the final boss!"
 
-TheoremDoc MyNat.pow_two as "pow_two" in "^" "
-`pow_two a` says that `a ^ 2 = a * a`.
-"
+/-- `pow_two a` says that `a ^ 2 = a * a`. -/
+TheoremDoc MyNat.pow_two as "pow_two" in "^"
 
 /-- For all naturals $a$, $a ^ 2 = a \times a$. -/
 Statement pow_two

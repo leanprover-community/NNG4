@@ -16,9 +16,8 @@ because `rw [mul_comm]` swaps the wrong multiplication,
 then read the documentation of `rw` for tips on how to fix this.
 "
 
-TheoremDoc MyNat.mul_pow as "mul_pow" in "^" "
-`mul_pow a b n` is a proof that $(ab)^n=a^nb^n.$
-"
+/-- `mul_pow a b n` is a proof that $(ab)^n=a^nb^n.$ -/
+TheoremDoc MyNat.mul_pow as "mul_pow" in "^"
 
 /-- For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$. -/
 Statement mul_pow

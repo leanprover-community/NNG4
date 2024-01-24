@@ -9,10 +9,8 @@ namespace MyNat
 Introduction "Let's now begin our approach to the final boss,
 by proving some more subtle facts about powers."
 
-TheoremDoc MyNat.pow_add as "pow_add" in "^" "
-
-`pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$
-"
+/-- `pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$ -/
+TheoremDoc MyNat.pow_add as "pow_add" in "^"
 
 /-- For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$. -/
 Statement pow_add
