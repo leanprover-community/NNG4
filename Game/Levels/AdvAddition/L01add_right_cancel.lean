@@ -9,10 +9,8 @@ namespace MyNat
 
 TheoremTab "+"
 
-TheoremDoc MyNat.add_right_cancel as "add_right_cancel" in "+" "
-
-`add_right_cancel a b n` is the theorem that $a+n=b+n \\implies a=b.$
-"
+/-- `add_right_cancel a b n` is the theorem that $a+n=b+n \\implies a=b.$ -/
+TheoremDoc MyNat.add_right_cancel as "add_right_cancel" in "+"
 
 Introduction
 "In this world I will mostly leave you on your own.

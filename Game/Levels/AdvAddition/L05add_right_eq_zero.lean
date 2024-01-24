@@ -30,7 +30,7 @@ make a proof of `False`! So you will end up with no goals, meaning you have prov
 
 "
 
-TacticDoc cases "
+/--
 ## Summary
 
 If `n` is a number, then `cases n with d` will break the goal into two goals,
@@ -63,12 +63,13 @@ you have finished the level.
 If `h : a ≤ b` is a hypothesis, then `cases h with c hc` will create a new number `c`
 and a proof `hc : b = a + c`. This is because the *definition* of `a ≤ b` is
 `∃ c, b = a + c`.
-"
+-/
+TacticDoc cases
+
 NewTactic cases
 
-TheoremDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+" "
-  A proof that $a+b=0 \\implies a=0$.
-"
+/--  A proof that $a+b=0 \\implies a=0$. -/
+TheoremDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+"
 
 -- **TODO** why `add_eq_zero_right` and not `add_right_eq_zero`?
 -- https://leanprover.zulipchat.com/#narrow/stream/348111-std4/topic/eq_zero_of_add_eq_zero_right/near/395716874
