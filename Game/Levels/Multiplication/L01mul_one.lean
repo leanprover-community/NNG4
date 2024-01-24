@@ -42,7 +42,7 @@ TheoremDoc MyNat.mul_succ as "mul_succ" in "*"
 `mul_succ a b` is the proof that `a * succ b = a * b + a`.
 "
 
-NewLemma MyNat.mul_zero MyNat.mul_succ
+NewTheorem MyNat.mul_zero MyNat.mul_succ
 
 TheoremDoc MyNat.mul_one as "mul_one" in "*" "
 `mul_one m` is the proof that `m * 1 = m`.

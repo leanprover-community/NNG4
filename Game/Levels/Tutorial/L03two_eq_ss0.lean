@@ -36,7 +36,7 @@ TheoremDoc MyNat.four_eq_succ_three as "four_eq_succ_three" in "012"
 "`four_eq_succ_three` is a proof of `4 = succ 3`."
 
 NewDefinition MyNat
-NewLemma MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two
+NewTheorem MyNat.one_eq_succ_zero MyNat.two_eq_succ_one MyNat.three_eq_succ_two
   MyNat.four_eq_succ_three
 
 Introduction

@@ -34,7 +34,7 @@ TheoremDoc MyNat.pow_zero as "pow_zero" in "^" "
 defining exponentiation in this game.
 "
 
-NewLemma MyNat.pow_zero
+NewTheorem MyNat.pow_zero
 
 TheoremDoc MyNat.zero_pow_zero as "zero_pow_zero" in "^" "
 Mathematicians sometimes argue that `0 ^ 0 = 0` is also

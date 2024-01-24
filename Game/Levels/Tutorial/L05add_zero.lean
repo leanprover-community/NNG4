@@ -24,8 +24,8 @@ NewDefinition Add
 
 TheoremTab "+"
 
-TheoremDoc MyNat.add_zero as "add_zero" in "+"
-"`add_zero a` is a proof that `a + 0 = a`.
+/--
+`add_zero a` is a proof that `a + 0 = a`.
 
 ## Summary
 
@@ -43,10 +43,12 @@ to input.
 A mathematician sometimes thinks of `add_zero`
 as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$.
 This is just another way of saying that it's a function which
-can eat any number n and will return a proof that `n + 0 = n`."
+can eat any number n and will return a proof that `n + 0 = n`.
+-/
+TheoremDoc MyNat.add_zero as "add_zero" in "+"
 
 
-TacticDoc «repeat» "
+/--
 ## Summary
 
 `repeat t` repeatedly applies the tactic `t`
@@ -59,9 +61,10 @@ tactic, it just speeds things up sometimes.
 `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
 into the goal
 `a = b`.
-"
+-/
+TacticDoc «repeat»
 
-NewLemma MyNat.add_zero
+NewTheorem MyNat.add_zero
 
 Introduction
 "

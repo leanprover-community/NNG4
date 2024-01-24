@@ -18,7 +18,7 @@ Here `False` is a generic false statement. This means that
 you can `apply zero_ne_succ at h` if `h` is a proof of `0 = succ n`.
 "
 
-NewLemma MyNat.zero_ne_succ
+NewTheorem MyNat.zero_ne_succ
 
 Introduction "
 As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to

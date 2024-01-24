@@ -30,11 +30,13 @@ will ask us to show that if `0 + d = d` then `0 + succ d = succ d`. Because
 See if you can do your first induction proof in Lean.
 "
 
-TheoremDoc MyNat.zero_add as "zero_add" in "+" "
+/--
 `zero_add x` is the proof of `0 + x = x`.
 
 `zero_add` is a `simp` lemma, because replacing `0 + x` by `x`
-is almost always what you want to do if you're simplifying an expression."
+is almost always what you want to do if you're simplifying an expression.
+-/
+TheoremDoc MyNat.zero_add as "zero_add" in "+"
 
 /-- For all natural numbers $n$, we have $0 + n = n$. -/
 Statement zero_add (n : ℕ) : 0 + n = n := by
@@ -61,7 +63,7 @@ Statement zero_add (n : ℕ) : 0 + n = n := by
 
 attribute [simp] zero_add
 
-TacticDoc induction "
+/--
 ## Summary
 
 If `n : ℕ` is an object, and the goal mentions `n`, then `induction n with d hd`
@@ -96,4 +98,5 @@ Conclusion
   `add_zero` and `zero_add`!
 
   Let's continue on our journey to `add_comm`, the proof of `x + y = y + x`.
-"
+-/
+TacticDoc induction

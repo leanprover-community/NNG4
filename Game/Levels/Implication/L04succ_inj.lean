@@ -47,7 +47,7 @@ in Lean it can be proved using `pred`, a mathematically
 pathological function.
 "
 
-NewLemma MyNat.succ_inj
+NewTheorem MyNat.succ_inj
 
 /-- If $x+1=4$ then $x=3$. -/
 Statement (x : ℕ) (h : x + 1 = 4) : x = 3 := by

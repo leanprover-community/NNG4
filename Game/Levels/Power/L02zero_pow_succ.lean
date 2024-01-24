@@ -14,7 +14,7 @@ TheoremDoc MyNat.pow_succ as "pow_succ" in "^" "
 two axioms defining exponentiation in this game.
 "
 
-NewLemma MyNat.pow_succ
+NewTheorem MyNat.pow_succ
 
 TheoremDoc MyNat.zero_pow_succ as "zero_pow_succ" in "^" "
 Although $0^0=1$ in this game, $0^n=0$ if $n>0$, i.e., if

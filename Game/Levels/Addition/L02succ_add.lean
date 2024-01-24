@@ -16,8 +16,10 @@ we have the problem that we are adding `b` to things, so we need
 to use induction to split into the cases where `b = 0` and `b` is a successor.
 "
 
+/--
+`succ_add a b` is a proof that `succ a + b = succ (a + b)`.
+-/
 TheoremDoc MyNat.succ_add as "succ_add" in "+"
-"`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
 
 /--
 For all natural numbers $a, b$, we have

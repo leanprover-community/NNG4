@@ -42,7 +42,7 @@ TheoremDoc MyNat.succ_ne_zero as "succ_ne_zero" in "Peano"
 `succ_ne_zero a` is a proof of `succ a ≠ 0`.
 "
 
-NewLemma MyNat.is_zero_zero MyNat.is_zero_succ
+NewTheorem MyNat.is_zero_zero MyNat.is_zero_succ
 
 TacticDoc triv "
 # Summary

@@ -10,10 +10,10 @@ TheoremTab "012"
 
 namespace MyNat
 
+/-- `add_succ a b` is the proof of `a + succ b = succ (a + b)`. -/
 TheoremDoc MyNat.add_succ as "add_succ" in "+"
-"`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
 
-NewLemma MyNat.add_succ
+NewTheorem MyNat.add_succ
 
 TheoremDoc MyNat.succ_eq_add_one as "succ_eq_add_one" in "+"
 "`succ_eq_add_one n` is the proof that `succ n = n + 1`."

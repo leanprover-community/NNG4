@@ -67,7 +67,7 @@ Statement --one_add_le_self
   rfl
 
 NewTactic use -- ring
-NewLemma MyNat.le_iff_exists_add
+NewTheorem MyNat.le_iff_exists_add
 TheoremTab "Inequality"
 
 Conclusion "Now look at your proof. We're going to remove a line.
