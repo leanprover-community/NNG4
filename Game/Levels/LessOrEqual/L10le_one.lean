@@ -7,9 +7,8 @@ TheoremTab "≤"
 
 namespace MyNat
 
-TheoremDoc MyNat.le_one as "le_one" in "≤" "
-`le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`.
-"
+/-- `le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`. -/
+TheoremDoc MyNat.le_one as "le_one" in "≤"
 
 Introduction "
 We've seen `le_zero`, the proof that if `x ≤ 0` then `x = 0`.

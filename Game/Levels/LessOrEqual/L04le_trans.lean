@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-TheoremDoc MyNat.le_trans as "le_trans" in "≤" "
+/--
 `le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.
 More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,
 If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.
@@ -20,7 +20,8 @@ In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. Howev
 exactly that `≤` is transitive. This is different to how mathematicians use
 $P\\implies Q\\implies R$; for them, this usually means that $P\\implies Q$
 and $Q\\implies R$.
-"
+-/
+TheoremDoc MyNat.le_trans as "le_trans" in "≤"
 
 Introduction "
 In this level, we see inequalities as *hypotheses*. We have not seen this before.

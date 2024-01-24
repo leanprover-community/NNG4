@@ -8,9 +8,8 @@ TheoremTab "≤"
 
 namespace MyNat
 
-TheoremDoc MyNat.succ_le_succ as "succ_le_succ" in "≤" "
-`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.
-"
+/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+TheoremDoc MyNat.succ_le_succ as "succ_le_succ" in "≤"
 
 Introduction "
 We've proved that `x ≤ 0` implies `x = 0`. The last two levels

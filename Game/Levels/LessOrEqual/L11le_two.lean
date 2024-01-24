@@ -7,9 +7,8 @@ namespace MyNat
 
 TheoremTab "012"
 
-TheoremDoc MyNat.le_two as "le_two" in "≤" "
-`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`.
-"
+/-- `le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`. -/
+TheoremDoc MyNat.le_two as "le_two" in "≤"
 
 Introduction "
 We'll need this lemma to prove that two is prime!

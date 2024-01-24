@@ -6,9 +6,8 @@ Title "x ≤ succ x"
 
 namespace MyNat
 
-TheoremDoc MyNat.le_succ_self as "le_succ_self" in "≤" "
-`le_succ_self x` is a proof that `x ≤ succ x`.
-"
+/-- `le_succ_self x` is a proof that `x ≤ succ x`. -/
+TheoremDoc MyNat.le_succ_self as "le_succ_self" in "≤"
 
 Introduction "If you `use` the wrong number, you get stuck with a goal you can't prove.
 What number will you `use` here?"

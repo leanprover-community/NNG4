@@ -6,9 +6,8 @@ Title "x ≤ y or y ≤ x"
 
 namespace MyNat
 
-TheoremDoc MyNat.le_total as "le_total" in "≤" "
-`le_total x y` is a proof that `x ≤ y` or `y ≤ x`.
-"
+/-- `le_total x y` is a proof that `x ≤ y` or `y ≤ x`. -/
+TheoremDoc MyNat.le_total as "le_total" in "≤"
 
 Introduction "
 This is I think the toughest level yet. Tips: if `a` is a number

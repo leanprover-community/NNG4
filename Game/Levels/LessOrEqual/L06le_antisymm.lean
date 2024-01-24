@@ -6,9 +6,8 @@ Title "x ≤ y and y ≤ x implies x = y"
 
 namespace MyNat
 
-TheoremDoc MyNat.le_antisymm as "le_antisymm" in "≤" "
-`le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`.
-"
+/-- `le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`. -/
+TheoremDoc MyNat.le_antisymm as "le_antisymm" in "≤"
 
 Introduction "
 This level asks you to prove *antisymmetry* of $\\leq$.

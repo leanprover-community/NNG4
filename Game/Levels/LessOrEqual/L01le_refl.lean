@@ -9,7 +9,7 @@ Title "The `use` tactic"
 
 namespace MyNat
 
-TacticDoc use "
+/--
 ## Summary
 
 The `use` tactic makes progress with goals which claim something *exists*.
@@ -19,11 +19,12 @@ that `x = 37` will work, then `use 37` will make progress.
 Because `a ≤ b` is notation for \"there exists `c` such that `b = a + c`\",
 you can make progress on goals of the form `a ≤ b` by `use`ing the
 number which is morally `b - a`.
-"
+-/
+TacticDoc use
 
 NewTactic use
 
-DefinitionDoc LE as "≤" "
+/--
 `a ≤ b` is *notation* for `∃ c, b = a + c`.
 
 Because this game doesn't have negative numbers, this definition
@@ -32,7 +33,8 @@ is mathematically valid.
 This means that if you have a goal of the form `a ≤ b` you can
 make progress with the `use` tactic, and if you have a hypothesis
 `h : a ≤ b`, you can make progress with `cases h with c hc`.
-"
+-/
+DefinitionDoc LE as "≤"
 
 NewDefinition LE
 
@@ -47,11 +49,12 @@ To *prove* an \"exists\" statement, use the `use` tactic.
 Let's see an example.
 "
 
-TheoremDoc MyNat.le_refl as "le_refl" in "≤" "
+/--
 `le_refl x` is a proof of `x ≤ x`.
 
 The reason for the name is that this lemma is \"reflexivity of $\\le$\"
-"
+-/
+TheoremDoc MyNat.le_refl as "le_refl" in "≤"
 
 /-- If $x$ is a number, then $x \le x$. -/
 Statement le_refl (x : ℕ) : x ≤ x := by

@@ -8,7 +8,7 @@ namespace MyNat
 
 TheoremTab "≤"
 
-TacticDoc left "
+/--
 # Summary
 The `left` tactic changes a goal of `P ∨ Q` into a goal of `P`.
 Use it when your hypotheses guarantee that the reason that `P ∨ Q`
@@ -19,9 +19,10 @@ saying that $P\\implies P\\lor Q.$
 
 Note that this tactic can turn a solvable goal into an unsolvable
 one.
-"
+-/
+TacticDoc left
 
-TacticDoc right "
+/--
 # Summary
 The `right` tactic changes a goal of `P ∨ Q` into a goal of `Q`.
 Use it when your hypotheses guarantee that the reason that `P ∨ Q`
@@ -32,7 +33,9 @@ saying that $Q\\implies P\\lor Q.$
 
 Note that this tactic can turn a solvable goal into an unsolvable
 one.
-"
+-/
+TacticDoc right
+
 
 NewTactic left right
 
