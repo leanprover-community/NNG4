@@ -6,7 +6,7 @@ import GameServer.Commands
 
 -- * `(0 : ℕ)`, an element called zero.
 -- * `(succ : ℕ → ℕ)`, the successor function , i.e. one is `succ 0` and two is `succ (succ 0)`.
--- * `induction` (or `rcases`), tactics to treat the cases $n = 0$ and `n = m + 1` seperately.
+-- * `induction` (or `rcases`), tactics to treat the cases $n = 0$ and `n = m + 1` separately.
 
 -- ## Game Modifications
 
