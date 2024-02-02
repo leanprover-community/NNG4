@@ -51,7 +51,7 @@ written as several lines of code. Move your cursor between lines to see
 the goal state at any point. Now cut and paste your code elsewhere if you
 want to save it, and paste the above proof in instead. Move your cursor
 around to investigate. When you've finished, click the `>_` button in the top right to
-move back into command line mode.
+move back into \"Typewriter mode\".
 
 You have finished tutorial world!
 Click \"Leave World\" to go back to the
