@@ -43,6 +43,8 @@ Statement (a b : ℕ) (h : succ a = succ b) : a = b := by
   rw [pred_succ]
   rfl
 
+DisabledTheorem MyNat.succ_inj
+
 Conclusion
 "
 Nice! You've proved `succ_inj`!
