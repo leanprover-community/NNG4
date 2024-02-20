@@ -1,6 +1,6 @@
 import Mathlib.Lean.Expr.Basic
 import Lean.Elab.Tactic.Basic
--- import Lean.Elab.Tactic.Rewrite
+import Lean.Elab.Tactic.Rewrite
 
 /-!
 # Modified `rw`
