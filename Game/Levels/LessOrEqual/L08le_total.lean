@@ -33,7 +33,7 @@ Statement le_total (x y : ℕ) : x ≤ y ∨ y ≤ x := by
   use e + 1
   rw [succ_eq_add_one, add_assoc]
   rfl
-  Hint (hidden := true) "Now `cases h2 with e he`."
+  Hint (hidden := true) "Now `cases h2 with e h2`."
   cases h2 with e h2
   Hint (hidden := true) "You still don't know which way to go, so do `cases e with a`."
   cases e with a
