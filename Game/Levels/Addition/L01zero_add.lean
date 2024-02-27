@@ -90,6 +90,9 @@ the second has an assumption `hd : 0 + d = d` and goal
 Note that you must prove the first
 goal before you can access the second one.
 "
+-/
+TacticDoc induction
+
 NewTactic induction
 
 TheoremTab "+"
@@ -101,5 +104,4 @@ Conclusion
   `add_zero` and `zero_add`!
 
   Let's continue on our journey to `add_comm`, the proof of `x + y = y + x`.
--/
-TacticDoc induction
+"
