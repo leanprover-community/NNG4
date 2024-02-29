@@ -31,16 +31,14 @@ Usage: `cases n with d` if `n : ℕ`; `cases h with h1 h2` if `h : P ∨ Q`; `ca
 -/
 elab (name := cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" using " ident)?)
     withArg:((" with" (ppSpace colGt binderIdent)+)?) : tactic => do
-  let targets ← elabCasesTargets tgts.1.getSepArgs
+  let (targets, toTag) ← elabCasesTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := false)
 
-    -- Edit: If `elimInfo.name` is `MyNat.casesOn` we want to use `MyNat.casesOn'` instead.
-    -- TODO: This seems extremely hacky. Especially that we need to get the `elimInfo` twice.
-    -- Please improve this.
-    let elimInfo ← match elimInfo.name with
-    | `MyNat.casesOn =>
+    -- Edit: If `MyNat.casesOn` is used, we want to use `MyNat.casesOn` instead.
+    let elimInfo ← match elimInfo.elimExpr.getAppFn.constName? with
+    | some `MyNat.casesOn =>
       let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
         match usingArg.raw with
         | .node info kind #[] =>
@@ -62,7 +60,9 @@ elab (name := cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" us
       ElimApp.setMotiveArg g motive.mvarId! targetsNew
       g.assign result.elimApp
       let subgoals ← ElimApp.evalNames elimInfo result.alts withArg
-         (numEqs := targets.size) (toClear := targetsNew)
+         (numEqs := targets.size) (toClear := targetsNew) (toTag := toTag)
       setGoals <| subgoals.toList ++ gs
+
+
 
 end MyNat

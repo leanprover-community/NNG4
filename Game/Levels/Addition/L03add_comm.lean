@@ -30,6 +30,6 @@ Statement add_comm (a b : ℕ) : a + b = b + a := by
     rfl
 
 -- Adding this instance to make `ac_rfl` work.
-instance : Lean.IsCommutative (α := ℕ) (· + ·) := ⟨add_comm⟩
+instance : Std.Commutative (α := ℕ) (· + ·) := ⟨add_comm⟩
 
 TheoremTab "+"

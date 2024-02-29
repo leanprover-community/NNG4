@@ -17,6 +17,10 @@ to support the lean3-style `with` keyword.
 This is mainly copied and modified from the mathlib-tactic `induction'`.
 -/
 
+/--
+Custom induction principial for the tactics `induction`.
+Used to show `0` instead of `MyNat.zero` in the base case.
+-/
 def rec' {P : ℕ → Prop} (zero : P 0)
     (succ : (n : ℕ) → (n_ih : P n) → P (succ n)) (t : ℕ) : P t := by
   induction t with
@@ -44,15 +48,14 @@ elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
     usingArg:((" using " ident)?)
     withArg:((" with" (ppSpace colGt binderIdent)+)?)
     genArg:((" generalizing" (ppSpace colGt ident)+)?) : tactic => do
-  let targets ← elabCasesTargets tgts.1.getSepArgs
+  let (targets, toTag) ← elabCasesTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := true)
-    -- Edit: If `elimInfo.name` is `MyNat.rec` we want to use `MyNat.rec'` instead.
-    -- TODO: This seems extremely hacky. Especially that we need to get the `elimInfo` twice.
-    -- Please improve this.
-    let elimInfo ← match elimInfo.name with
-    | `MyNat.rec =>
+
+    -- Edit: If `MyNat.rec` is used, we want to use `MyNat.rec'` instead.
+    let elimInfo ← match elimInfo.elimExpr.getAppFn.constName? with
+    | some `MyNat.rec =>
       let modifiedUsingArgs : TSyntax Name.anonymous := ⟨
         match usingArg.raw with
         | .node info kind #[] =>
@@ -72,11 +75,11 @@ elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
       let mut s ← getFVarSetToGeneralize targets forbidden
       for v in genArgs do
         if forbidden.contains v then
-          throwError ("variable cannot be generalized " ++
-            "because target depends on it{indentExpr (mkFVar v)}")
+          throwError "variable cannot be generalized \
+            because target depends on it{indentExpr (mkFVar v)}"
         if s.contains v then
-          throwError ("unnecessary 'generalizing' argument, " ++
-            "variable '{mkFVar v}' is generalized automatically")
+          throwError "unnecessary 'generalizing' argument, \
+            variable '{mkFVar v}' is generalized automatically"
         s := s.insert v
       let (fvarIds, g) ← g.revert (← sortFVarIds s.toArray)
       g.withContext do
@@ -85,5 +88,5 @@ elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
         ElimApp.setMotiveArg g elimArgs[elimInfo.motivePos]!.mvarId! targetFVarIds
         g.assign result.elimApp
         let subgoals ← ElimApp.evalNames elimInfo result.alts withArg
-          (numGeneralized := fvarIds.size) (toClear := targetFVarIds)
+          (generalized := fvarIds) (toClear := targetFVarIds) (toTag := toTag)
         setGoals <| (subgoals ++ result.others).toList ++ gs

@@ -5,17 +5,36 @@ namespace MyNat
 
 example (P Q : Prop) (h : P ∨ Q) : False := by
   cases h with hp hq
-  · sorry -- hp : P
-  · sorry -- hq : Q
+  · /-
+    case inl
+    P Q : Prop
+    hp : P
+    ⊢ False
+    -/
+    sorry
+  · /-
+    case inr
+    P Q : Prop
+    hq : Q
+    ⊢ False
+    -/
+    sorry
 
 example (a b : ℕ) (h : a ≤ b) : False := by
   cases h with c hc
-  -- hc: b = a + c
+  /-
+  case intro
+  a b c : ℕ
+  hc : b = a + c
+  ⊢ False
+  -/
   sorry
 
--- not working yet
 example (a : ℕ) : a = a := by
   cases a with d
-  -- get MyNat.zero because we used rec not rec' :-(
-  · sorry
+  · /-
+    case zero
+    ⊢ 0 = 0
+    -/
+    sorry
   · sorry
