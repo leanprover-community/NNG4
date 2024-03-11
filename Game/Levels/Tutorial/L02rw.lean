@@ -18,14 +18,14 @@ all `X`s in the goal to `Y`s. It's the way to \"substitute in\".
 
 ## Variants
 
-* `rw [← h]` (changes `Y`s to `X`s; get the back arrow by typing `\\left ` or `\\l`.)
+* `rw [← h]` (changes `Y`s to `X`s; get the back arrow by typing `\left ` or `\l`.)
 
 * `rw [h1, h2]` (a sequence of rewrites)
 
 * `rw [h] at h2` (changes `X`s to `Y`s in hypothesis `h2`)
 
 * `rw [h] at h1 h2 ⊢` (changes `X`s to `Y`s in two hypotheses and the goal;
-get the `⊢` symbol with `\\|-`.)
+get the `⊢` symbol with `\|-`.)
 
 * `repeat rw [add_zero]` will keep changing `? + 0` to `?`
 until there are no more matches for `? + 0`.

@@ -68,7 +68,7 @@ TacticDoc cases
 
 NewTactic cases
 
-/--  A proof that $a+b=0 \\implies a=0$. -/
+/--  A proof that $a+b=0 \implies a=0$. -/
 TheoremDoc MyNat.add_right_eq_zero as "add_right_eq_zero" in "+"
 
 -- **TODO** why `add_eq_zero_right` and not `add_right_eq_zero`?

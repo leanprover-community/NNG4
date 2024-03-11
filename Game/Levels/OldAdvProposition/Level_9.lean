@@ -20,7 +20,7 @@ Try solving this level without using `cc` or `tauto`, but using `exfalso` instea
 "
 
 /-- If $P$ and $Q$ are true/false statements, then
-$$(P\\land(\\lnot P))\\implies Q.$$ -/
+$$(P \land(\lnot P))\implies Q.$$ -/
 Statement --contra
   (P Q : Prop) : (P ∧ ¬ P) → Q := by
   Hint "Start as usual with `intro ⟨p, np⟩`."

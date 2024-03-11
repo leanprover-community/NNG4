@@ -21,7 +21,7 @@ We don't know anything at all about the sets $P$ and $Q$, so initially
 this seems like a bit of a tall order. But let's give it a go.
 "
 
-/-- We define an element of $\\operatorname{Hom}(P,\\operatorname{Hom}(Q,P))$. -/
+/-- We define an element of $\operatorname{Hom}(P,\operatorname{Hom}(Q,P))$. -/
 Statement
     (P Q : Type) : P → (Q → P) := by
   Hint "Our goal is `P → X` for some set $X=\\operatorname\{Hom}(Q,P)$, and if our

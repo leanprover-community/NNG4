@@ -10,12 +10,12 @@ namespace MyNat
 ## Summary
 
 If the goal is `P → Q`, then `intro h` will introduce `h : P` as a hypothesis,
-and change the goal to `Q`. Mathematically, it says that to prove $P\\implies Q$,
+and change the goal to `Q`. Mathematically, it says that to prove $P \implies Q$,
 we can assume $P$ and then prove $Q$.
 
 ### Example:
 
-If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1\\implies x=y$)
+If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1 \implies x=y$)
 then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal
 will change to $x=y$.
 -/

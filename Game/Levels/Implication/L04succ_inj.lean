@@ -26,7 +26,7 @@ walk you through this level.
 
 If $a$ and $b$ are numbers, then
 `succ_inj a b` is the proof that
-$ (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
+$ (\operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.
 
 ## More technical details
 
@@ -34,12 +34,12 @@ There are other ways to think about `succ_inj`.
 
 You can think about `succ_inj` itself as a function which takes two
 numbers $$a$$ and $$b$$ as input, and outputs a proof of
-$ (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
+$ ( \operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.
 
 You can think of `succ_inj` itself as a proof; it is the proof
 that `succ` is an injective function. In other words,
 `succ_inj` is a proof of
-$\\forall a, b\\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.
+$\forall a, b \in  \mathbb{N}, ( \operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.
 
 `succ_inj` was postulated as an axiom by Peano, but
 in Lean it can be proved using `pred`, a mathematically

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb 29 17:11:36 2024\n"
+"POT-Creation-Date: Mon Mar 11 19:04:55 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -426,7 +426,7 @@ msgid "`add_zero a` is a proof that `a + 0 = a`.\n"
 "## Details\n"
 "\n"
 "A mathematician sometimes thinks of `add_zero`\n"
-"as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$.\n"
+"as \"one thing\", namely a proof of $\forall n ∈ ℕ, n + 0 = n$.\n"
 "This is just another way of saying that it's a function which\n"
 "can eat any number n and will return a proof that `n + 0 = n`."
 msgstr ""
@@ -1651,7 +1651,7 @@ msgstr ""
 #: Game.Levels.Implication.L03apply
 msgid "## Summary\n"
 "\n"
-"If `t : P → Q` is a proof that $P\\implies Q$, and `h : P` is a proof of `P`,\n"
+"If `t : P → Q` is a proof that $P \implies Q$, and `h : P` is a proof of `P`,\n"
 "then `apply t at h` will change `h` to a proof of `Q`. The idea is that if\n"
 "you know `P` is true, then you can deduce from `t` that `Q` is true.\n"
 "\n"
@@ -1716,7 +1716,7 @@ msgid "# Statement\n"
 "\n"
 "If $a$ and $b$ are numbers, then\n"
 "`succ_inj a b` is the proof that\n"
-"$ (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.\n"
+"$ (\operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.\n"
 "\n"
 "## More technical details\n"
 "\n"
@@ -1724,12 +1724,12 @@ msgid "# Statement\n"
 "\n"
 "You can think about `succ_inj` itself as a function which takes two\n"
 "numbers $$a$$ and $$b$$ as input, and outputs a proof of\n"
-"$ (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.\n"
+"$ ( \operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.\n"
 "\n"
 "You can think of `succ_inj` itself as a proof; it is the proof\n"
 "that `succ` is an injective function. In other words,\n"
 "`succ_inj` is a proof of\n"
-"$\\forall a, b\\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b$.\n"
+"$\forall a, b \in  \mathbb{N}, ( \operatorname{succ}(a) = \operatorname{succ}(b)) \implies a=b$.\n"
 "\n"
 "`succ_inj` was postulated as an axiom by Peano, but\n"
 "in Lean it can be proved using `pred`, a mathematically\n"
@@ -1831,12 +1831,12 @@ msgstr ""
 msgid "## Summary\n"
 "\n"
 "If the goal is `P → Q`, then `intro h` will introduce `h : P` as a hypothesis,\n"
-"and change the goal to `Q`. Mathematically, it says that to prove $P\\implies Q$,\n"
+"and change the goal to `Q`. Mathematically, it says that to prove $P \implies Q$,\n"
 "we can assume $P$ and then prove $Q$.\n"
 "\n"
 "### Example:\n"
 "\n"
-"If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1\\implies x=y$)\n"
+"If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1 \implies x=y$)\n"
 "then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal\n"
 "will change to $x=y$."
 msgstr ""
@@ -1872,7 +1872,7 @@ msgid " Let's see if you can use the tactics we've learnt to prove $x+1=y+1\impl
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
-msgid "$x+1=y+1\implies x=y$."
+msgid "$x+1=y+1 \implies x=y$."
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
@@ -2521,7 +2521,7 @@ msgid "add_right_cancel"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
-msgid "`add_right_cancel a b n` is the theorem that $a+n=b+n \\implies a=b.$"
+msgid "`add_right_cancel a b n` is the theorem that $a+n=b+n \implies a=b.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
@@ -2548,7 +2548,7 @@ msgid "add_left_cancel"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
-msgid "`add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$"
+msgid "`add_left_cancel a b n` is the theorem that $n+a=n+b \implies a=b.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
@@ -2575,7 +2575,7 @@ msgid "add_left_eq_self"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
-msgid "`add_left_eq_self x y` is the theorem that $x + y = y\\implies x=0.$"
+msgid "`add_left_eq_self x y` is the theorem that $x + y = y \implies x=0.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
@@ -2608,7 +2608,7 @@ msgid "add_right_eq_self"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
-msgid "`add_right_eq_self x y` is the theorem that $x + y = x\\implies y=0.$"
+msgid "`add_right_eq_self x y` is the theorem that $x + y = x \implies y=0.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
@@ -2716,7 +2716,7 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-msgid "A proof that $a+b=0 \\implies a=0$."
+msgid "A proof that $a+b=0 \implies a=0$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
@@ -2743,7 +2743,7 @@ msgid "You can just mimic the previous proof to do this one -- or you can figure
 msgstr ""
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
-msgid "A proof that $a+b=0 \\implies b=0$."
+msgid "A proof that $a+b=0 \implies b=0$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
@@ -2820,7 +2820,7 @@ msgstr ""
 #: Game.Levels.LessOrEqual.L01le_refl
 msgid "`le_refl x` is a proof of `x ≤ x`.\n"
 "\n"
-"The reason for the name is that this lemma is \"reflexivity of $\\le$\""
+"The reason for the name is that this lemma is "reflexivity of $\le$""
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
@@ -2890,15 +2890,15 @@ msgstr ""
 #: Game.Levels.LessOrEqual.L04le_trans
 msgid "`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
 "More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
-"If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.\n"
+"If $x \le y$ then (pause) if $y \le z$ then $x \le z$.\n"
 "\n"
 "## A note on associativity\n"
 "\n"
 "In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. However\n"
 "`→` is right associative. This means that `x ≤ y → y ≤ z → x ≤ z` in Lean means\n"
 "exactly that `≤` is transitive. This is different to how mathematicians use\n"
-"$P\\implies Q\\implies R$; for them, this usually means that $P\\implies Q$\n"
-"and $Q\\implies R$."
+"$P \implies Q \implies R$; for them, this usually means that $P \implies Q$\n"
+"and $Q \implies R$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
@@ -3016,7 +3016,7 @@ msgid "# Summary\n"
 "is true is because in fact `P` is true.\n"
 "\n"
 "Internally this tactic is just `apply`ing a theorem\n"
-"saying that $P\\implies P\\lor Q.$\n"
+"saying that $P \implies P \lor Q.$\n"
 "\n"
 "Note that this tactic can turn a solvable goal into an unsolvable\n"
 "one."
@@ -3029,7 +3029,7 @@ msgid "# Summary\n"
 "is true is because in fact `Q` is true.\n"
 "\n"
 "Internally this tactic is just `apply`ing a theorem\n"
-"saying that $Q\\implies P\\lor Q.$\n"
+"saying that $Q \implies P \lor Q.$\n"
 "\n"
 "Note that this tactic can turn a solvable goal into an unsolvable\n"
 "one."

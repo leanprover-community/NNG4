@@ -41,7 +41,7 @@ to input.
 ## Details
 
 A mathematician sometimes thinks of `add_zero`
-as \"one thing\", namely a proof of $\\forall n ∈ ℕ, n + 0 = n$.
+as \"one thing\", namely a proof of $\forall n ∈ ℕ, n + 0 = n$.
 This is just another way of saying that it's a function which
 can eat any number n and will return a proof that `n + 0 = n`.
 -/

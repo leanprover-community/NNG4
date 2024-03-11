@@ -15,7 +15,7 @@ But what if `P ∧ Q` is a hypothesis? In this case, the `rcases` tactic will en
 us to extract proofs of `P` and `Q` from this hypothesis.
 "
 
-/-- If $P$ and $Q$ are true/false statements, then $P\\land Q\\implies Q\\land P$. -/
+/-- If $P$ and $Q$ are true/false statements, then $P \land Q \implies Q \land P$. -/
 Statement -- and_symm
     (P Q : Prop) : P ∧ Q → Q ∧ P :=  by
   Hint "The lemma below asks us to prove `P ∧ Q → Q ∧ P`, that is,

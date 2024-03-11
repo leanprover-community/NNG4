@@ -15,7 +15,7 @@ $P\\land Q$ is the proposition \"$P$ and $Q$\".
 "
 namespace MySet
 
-/-- If $P$ and $Q$ are true, then $P\\land Q$ is true. -/
+/-- If $P$ and $Q$ are true, then $P \land Q$ is true. -/
 Statement
     (P Q : Prop) (p : P) (q : Q) : P ∧ Q := by
   Hint "If your *goal* is `P ∧ Q` then

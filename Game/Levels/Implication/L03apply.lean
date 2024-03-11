@@ -11,7 +11,7 @@ TheoremTab "Peano"
 /--
 ## Summary
 
-If `t : P → Q` is a proof that $P\\implies Q$, and `h : P` is a proof of `P`,
+If `t : P → Q` is a proof that $P \implies Q$, and `h : P` is a proof of `P`,
 then `apply t at h` will change `h` to a proof of `Q`. The idea is that if
 you know `P` is true, then you can deduce from `t` that `Q` is true.
 

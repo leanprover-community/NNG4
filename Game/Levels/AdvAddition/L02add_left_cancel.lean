@@ -8,7 +8,7 @@ namespace MyNat
 
 TheoremTab "+"
 
-/-- `add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$ -/
+/-- `add_left_cancel a b n` is the theorem that $n+a=n+b \implies a=b.$ -/
 TheoremDoc MyNat.add_left_cancel as "add_left_cancel" in "+"
 
 Introduction

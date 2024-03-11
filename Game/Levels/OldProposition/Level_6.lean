@@ -18,7 +18,7 @@ and `p : P`.
 
 /-- If $P$ and $Q$ and $R$ are true/false statements, then
 $$
-(P\\implies(Q\\implies R))\\implies((P\\implies Q)\\implies(P\\implies R)).
+(P \implies(Q \implies R)) \implies((P \implies Q) \implies(P \implies R)).
 $$ -/
 Statement
     (P Q R : Prop) : (P → (Q → R)) → ((P → Q) → (P → R)) := by

@@ -11,7 +11,7 @@ Introduction
 Try this one by yourself; if you need help then click on \"Show more help!\".
 "
 
-/-- $x+1=y+1\implies x=y$. -/
+/-- $x+1=y+1 \implies x=y$. -/
 Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
   Hint (hidden := true) "Start with `intro h` to assume the hypothesis."
   intro h

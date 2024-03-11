@@ -20,7 +20,7 @@ goal to `P`, and `right` changes it to `Q`.
 -- After the `intro`, one of `left` and `right` leads
 -- to an impossible goal, the other to an easy finish.
 
-/-- If $P$ and $Q$ are true/false statements, then $Q\\implies(P\\lor Q)$. -/
+/-- If $P$ and $Q$ are true/false statements, then $Q \implies(P \lor Q)$. -/
 Statement
     (P Q : Prop) : Q → (P ∨ Q) := by
   Hint (hidden := true) "Let's start with an initial `intro` again."

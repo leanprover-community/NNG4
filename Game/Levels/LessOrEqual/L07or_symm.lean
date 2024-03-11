@@ -15,7 +15,7 @@ Use it when your hypotheses guarantee that the reason that `P ∨ Q`
 is true is because in fact `P` is true.
 
 Internally this tactic is just `apply`ing a theorem
-saying that $P\\implies P\\lor Q.$
+saying that $P \implies P \lor Q.$
 
 Note that this tactic can turn a solvable goal into an unsolvable
 one.
@@ -29,7 +29,7 @@ Use it when your hypotheses guarantee that the reason that `P ∨ Q`
 is true is because in fact `Q` is true.
 
 Internally this tactic is just `apply`ing a theorem
-saying that $Q\\implies P\\lor Q.$
+saying that $Q \implies P \lor Q.$
 
 Note that this tactic can turn a solvable goal into an unsolvable
 one.

@@ -23,8 +23,8 @@ what we actually expect it to be.
 "
 
 /-- Whatever the sets $P$ and $Q$ and $R$ are, we
-make an element of $\\operatorname{Hom}(\\operatorname{Hom}(P,\\operatorname{Hom}(Q,R)),
-\\operatorname{Hom}(\\operatorname{Hom}(P,Q),\\operatorname{Hom}(P,R)))$. -/
+make an element of $operatorname{Hom}(\operatorname{Hom}(P,\operatorname{Hom}(Q,R)),
+\operatorname{Hom}(\operatorname{Hom}(P,Q),\operatorname{Hom}(P,R)))$. -/
 Statement
     (P Q R : Type) : (P → (Q → R)) → ((P → Q) → (P → R)) := by
   Hint "I recommend that you start with `intro f` rather than `intro p`

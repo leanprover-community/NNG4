@@ -54,7 +54,7 @@ to be impossible (judging by the comments I've had about it!)
 -- generalizing b` as the first line of the proof.
 
 
-/-- If $a \\neq 0$, $b$ and $c$ are natural numbers such that
+/-- If $a \neq 0$, $b$ and $c$ are natural numbers such that
 $ ab = ac, $
 then $b = c$. -/
 Statement MyNat.mul_left_cancel

@@ -11,15 +11,15 @@ namespace MyNat
 /--
 `le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.
 More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,
-If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.
+If $x \le y$ then (pause) if $y \le z$ then $x \le z$.
 
 ## A note on associativity
 
 In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. However
 `→` is right associative. This means that `x ≤ y → y ≤ z → x ≤ z` in Lean means
 exactly that `≤` is transitive. This is different to how mathematicians use
-$P\\implies Q\\implies R$; for them, this usually means that $P\\implies Q$
-and $Q\\implies R$.
+$P \implies Q \implies R$; for them, this usually means that $P \implies Q$
+and $Q \implies R$.
 -/
 TheoremDoc MyNat.le_trans as "le_trans" in "≤"
 

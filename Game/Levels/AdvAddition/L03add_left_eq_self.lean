@@ -8,7 +8,7 @@ namespace MyNat
 
 TheoremTab "+"
 
-/-- `add_left_eq_self x y` is the theorem that $x + y = y\\implies x=0.$ -/
+/-- `add_left_eq_self x y` is the theorem that $x + y = y \implies x=0.$ -/
 TheoremDoc MyNat.add_left_eq_self as "add_left_eq_self" in "+"
 
 Introduction

@@ -38,7 +38,7 @@ then `intro p`, meaning \"assume $p$ is a proof of $P$\", will make progress.
 
 "
 
-/-- If $P$ is a proposition then $P\\implies P$. -/
+/-- If $P$ is a proposition then $P \implies P$. -/
 Statement
     {P : Prop} : P → P := by
   Hint "

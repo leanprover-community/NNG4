@@ -23,7 +23,7 @@ this seems like a bit of a tall order. But let's give it a go.
 "
 
 /-- For any propositions $P$ and $Q$, we always have
-$P\\implies(Q\\implies P)$. -/
+$P \implies(Q \implies P)$. -/
 Statement
     (P Q : Prop) : P → (Q → P) := by
   Hint "Our goal is `P → X` for some true/false statement $X$, and if our

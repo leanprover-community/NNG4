@@ -17,7 +17,7 @@ over `∨` and `∨` distributes over `∧`. Let's prove one of these.
 "
 
 /-- If $P$. $Q$ and $R$ are true/false statements, then
-$$P\\land(Q\\lor R)\\iff(P\\land Q)\\lor (P\\land R).$$  -/
+$$P \land(Q \lor R) \iff(P \land Q) \lor (P \land R).$$  -/
 Statement --and_or_distrib_left
     (P Q R : Prop) : P ∧ (Q ∨ R) ↔ (P ∧ Q) ∨ (P ∧ R) := by
   constructor

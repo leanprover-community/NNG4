@@ -17,8 +17,8 @@ In lean, this is true *by definition*, so you can view and treat `¬A` as an imp
 `A → False`.
 "
 
-/-- If $P$ and $Q$ are propositions, and $P\\implies Q$, then
-$\\lnot Q\\implies \\lnot P$.  -/
+/-- If $P$ and $Q$ are propositions, and $P \implies Q$, then
+$\lnot Q \implies \lnot P$.  -/
 Statement
     (P Q : Prop) : (P → Q) → (¬ Q → ¬ P) := by
   Hint "However, if you would like to *see* `¬ Q` as `Q → False` because it makes you help

@@ -13,7 +13,7 @@ Introduction
 of using it.
 "
 
-/--  A proof that $a+b=0 \\implies b=0$. -/
+/--  A proof that $a+b=0 \implies b=0$. -/
 TheoremDoc MyNat.add_left_eq_zero as "add_left_eq_zero" in "+"
 
 /-- If $a+b=0$ then $b=0$. -/

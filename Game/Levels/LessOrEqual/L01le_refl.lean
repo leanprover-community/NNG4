@@ -52,7 +52,7 @@ Let's see an example.
 /--
 `le_refl x` is a proof of `x ≤ x`.
 
-The reason for the name is that this lemma is \"reflexivity of $\\le$\"
+The reason for the name is that this lemma is "reflexivity of $\le$"
 -/
 TheoremDoc MyNat.le_refl as "le_refl" in "≤"
 

@@ -17,7 +17,7 @@ to write an `↔` arrow you can do so by typing `\\iff`, but you shouldn't need 
 "
 
 /-- If $P$, $Q$ and $R$ are true/false statements, then
-$P\\iff Q$ and $Q\\iff R$ together imply $P\\iff R$. -/
+$P \iff Q$ and $Q \iff R$ together imply $P \iff R$. -/
 Statement --iff_trans
     (P Q R : Prop) : (P ↔ Q) → (Q ↔ R) → (P ↔ R) := by
   Hint "Similar to \"and\", you can use `intro` and `rcases` to add the `P ↔ Q` to your
