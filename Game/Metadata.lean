@@ -5,7 +5,7 @@ import Game.MyNat.Definition
 import Game.Doc.Definitions
 import Game.Doc.Tactics
 
-import Mathlib.Tactic
+import Game.Tactic.FromMathlib
 
 import Game.Tactic.Induction
 import Game.Tactic.Cases

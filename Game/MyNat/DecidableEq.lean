@@ -1,6 +1,6 @@
 import Game.MyNat.PeanoAxioms
 import Game.Levels.Algorithm.L07succ_ne_succ -- succ_ne_succ
-import Game.Tactic.decide -- modified decide tactic
+import Game.Tactic.Decide -- modified decide tactic
 
 namespace MyNat
 
