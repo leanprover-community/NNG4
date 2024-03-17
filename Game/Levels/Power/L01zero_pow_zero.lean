@@ -1,4 +1,5 @@
 import Game.Levels.Multiplication
+import Game.Levels.Algorithm
 import Game.MyNat.Power
 
 
