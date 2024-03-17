@@ -61,3 +61,5 @@ Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   rw [h]
   rw [is_zero_zero]
   triv
+
+DisabledTheorem MyNat.zero_ne_succ
