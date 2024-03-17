@@ -14,7 +14,7 @@ definition of `≠`. In Lean, `a ≠ b` is *notation* for `a = b → False`.
 Here `False` is a generic false proposition, and `→` is Lean's notation
 for \"implies\". In logic we learn
 that `True → False` is false, but `False → False` is true. Hence
-`X → false` is the logical opposite of `X`.
+`X → False` is the logical opposite of `X`.
 
 Even though `a ≠ b` does not look like an implication,
 you should treat it as an implication. The next two levels will show you how.
