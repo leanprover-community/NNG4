@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Mar 11 19:40:35 2024\n"
+"POT-Creation-Date: Mon Mar 18 16:33:40 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1627,11 +1627,20 @@ msgid "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "Rewrite `zero_add` at `h` twice, to change `h` into the goal."
+msgid "You can use `rw [zero_add] at h` to rewrite at `«{h}»` instead\n"
+"of at the goal."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "Now you could finish with `rw [h]` then `rfl`, but `exact h`\n"
+msgid "Do that again!\n"
+"\n"
+"`rw [zero_add] at «{h}»` tries to fill in\n"
+"the arguments to `zero_add` (finding `«{x}»`) then it replaces all occurences of\n"
+"`0 + «{x}»` it finds. Therefor, it did not rewrite `0 + «{y}»`, yet."
+msgstr ""
+
+#: Game.Levels.Implication.L02exact2
+msgid "Now you could finish with `rw [«{h}»]` then `rfl`, but `exact «{h}»`\n"
 "does it in one line."
 msgstr ""
 
@@ -1913,7 +1922,7 @@ msgid "We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n
 "Here `False` is a generic false proposition, and `→` is Lean's notation\n"
 "for "implies". In logic we learn\n"
 "that `True → False` is false, but `False → False` is true. Hence\n"
-"`X → false` is the logical opposite of `X`.\n"
+"`X → False` is the logical opposite of `X`.\n"
 "\n"
 "Even though `a ≠ b` does not look like an implication,\n"
 "you should treat it as an implication. The next two levels will show you how.\n"
