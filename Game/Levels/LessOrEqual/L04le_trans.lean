@@ -30,10 +30,10 @@ The `cases` tactic can be used to take `hxy` apart.
 
 /-- If $x \leq y$ and $y \leq z$, then $x \leq z$. -/
 Statement le_trans (x y z : ℕ) (hxy : x ≤ y) (hyz : y ≤ z) : x ≤ z := by
-  Hint "Start with `cases hxy with a ha`."
+  Hint "Start with `cases {hxy} with a ha`."
   cases hxy with a ha
-  Hint "Now `ha` is a proof that `y = x + a`, and `hxy` has vanished. Similarly, you can destruct
-  `hyz` into its parts with `cases hyz with b hb`."
+  Hint "Now `{ha}` is a proof that `{y} = {x} + {a}`, and `hxy` has vanished. Similarly, you can destruct
+  `{hyz}` into its parts with `cases {hyz} with b hb`."
   cases hyz with b hb
   Hint "Now you need to figure out which number to `use`. See if you can take it from here."
   use a + b

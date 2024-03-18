@@ -58,7 +58,7 @@ and the other where you went right.
 
 /-- If $x=37$ or $y=42$, then $y=42$ or $x=37$. -/
 Statement (x y : ℕ) (h : x = 37 ∨ y = 42) : y = 42 ∨ x = 37 := by
-  Hint "We don't know whether to go left or right yet. So start with `cases h with hx hy`."
+  Hint "We don't know whether to go left or right yet. So start with `cases {h} with hx hy`."
   cases h with hx hy
   Hint "Now we can prove the `or` statement by proving the statement on the right,
   so use the `right` tactic."
