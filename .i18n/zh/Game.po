@@ -2513,7 +2513,7 @@ msgstr ""
 "\n"
 "你可以把 `succ_inj` 本身看作是一个证明；它是 `succ` 是一个单射函数的证明。换句话说，\n"
 "`succ_inj` 是\n"
-"$ \forall a, b \\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b $ 的证明。\n"
+"$ \\forall a, b \\in \\mathbb{N}, (\\operatorname{succ}(a) = \\operatorname{succ}(b))\\implies a=b $ 的证明。\n"
 "\n"
 "`succ_inj` 被皮亚诺假设为一个公理，但在 Lean 中可以使用 `pred` 来证明，这是一个在数学上有病态的函数。"
 
