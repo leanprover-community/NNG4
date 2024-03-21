@@ -17,6 +17,14 @@ Moreover, there are multiple ways to run the game while developing it, which are
 
 PRs/Issues fixing typos, inconsistencies, missing hints, etc. are very welcome!
 
+### Translations
+ We happily accept translations of the game into different lanugages! You can use `.i18n/Game.pot` and translate it into `.i18n/Game-{lang}.po` where `{lang}` is the ISO language code like `fr` or `en_UK`, using for example POEdit.
+
+ We would like the following requirements for a translation PR:
+
+ - One independent person from the community, who understands the language, gives a review on the PR. You could for example look at the [Lean Community Map](https://leanprover-community.github.io/meet.html) or ask on Zulip. Such a review an be quite generic and does not have to be super detailed.
+ - In the credits, ideally you should add yourself as a translator for this language.
+
 ## Documentation
 
 See [Creating a Game](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md) at
