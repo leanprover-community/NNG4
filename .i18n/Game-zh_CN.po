@@ -1274,7 +1274,7 @@ msgid ""
 "In other words, if $a, b$ and $c$ are arbitrary natural numbers, we have\n"
 "$ (a + b) + c = a + (b + c). $"
 msgstr ""
-"在自然数集上，加法有结合律。\n"
+"在自然数集上，加法服从结合律。\n"
 "换句话说，如果 $a, b$ 和 $c$ 是任意自然数，我们有\n"
 "$ (a + b) + c = a + (b + c)$ 。"
 
