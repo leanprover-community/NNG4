@@ -1583,7 +1583,7 @@ msgid ""
 msgstr ""
 "\n"
 "您可以至少通过三种方式证明 $1\times m=m$。\n"
-"通过感应（归纳法），或使用 `succ_mul`，或\n"
+"通过归纳法，或使用 `succ_mul`，或\n"
 "通过使用交换律。你认为哪个最快？\n"
 
 #: Game.Levels.Multiplication.L05one_mul
