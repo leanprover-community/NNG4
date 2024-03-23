@@ -532,7 +532,7 @@ msgstr "接下来用 `rw [one_eq_succ_zero]` 把 `1` 变成 `succ 0'。"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Now finish the job with `rfl`."
-msgstr "现在用 `rfl` 完成工作。"
+msgstr "现在用 `rfl` 完成证明。"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
