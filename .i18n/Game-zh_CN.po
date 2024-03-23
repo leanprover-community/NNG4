@@ -3580,7 +3580,7 @@ msgstr "你可以通过点击右上角的 `decide` 来了解更多关于 `decide
 
 #: Game.Levels.Algorithm.L09decide2
 msgid "decide again"
-msgstr "再决定"
+msgstr "还是`decide`"
 
 #: Game.Levels.Algorithm.L09decide2
 msgid ""
