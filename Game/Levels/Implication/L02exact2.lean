@@ -11,7 +11,7 @@ use rewrites to fix things up."
 
 /-- Assuming $0+x=(0+y)+2$, we have $x=y+2$. -/
 Statement (x : ℕ) (h : 0 + x = 0 + y + 2) : x = y + 2 := by
-  Hint "You can use `rw [zero_add] at h` to rewrite at `{h}` instead
+  Hint "You can use `rw [zero_add] at {h}` to rewrite at `{h}` instead
   of at the goal."
   rw [zero_add] at h
   Hint (hidden := true) "Do that again!
