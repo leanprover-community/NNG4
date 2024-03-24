@@ -30,6 +30,20 @@ In other words, for all natural numbers $a$, $b$ and $c$, we have
 $a(b + c) = ab + ac$. -/
 Statement mul_add
     (a b c : ℕ) : a * (b + c) = a * b + a * c := by
+  Branch
+    induction b with b hb
+    rw [zero_add, mul_zero, zero_add]
+    rfl
+    rw [succ_add, mul_succ, mul_succ, add_right_comm, hb]
+    rfl
+  Branch
+    induction a with a ha
+    rw [zero_mul, zero_mul, zero_mul, zero_add]
+    rfl
+    rw [succ_mul, succ_mul, succ_mul, ha]
+    repeat rw [add_assoc]
+    rw [← add_assoc (a*c), add_comm _ b, add_assoc]
+    rfl
   Hint "You can do induction on any of the three variables. Some choices
   are harder to push through than others. Can you do the inductive step in
   5 rewrites only?"
@@ -53,5 +67,5 @@ rw [add_succ, mul_succ, hd, mul_succ, add_assoc]
 rfl
 ```
 
-Inducting on `a` or `b` also works, but takes longer.
+Inducting on `a` or `b` also works, but might take longer.
 "
