@@ -11,7 +11,7 @@ Introduction
 Our next goal is \"left and right distributivity\",
 meaning $a(b+c)=ab+ac$ and $(b+c)a=ba+ca$. Rather than
 these slightly pompous names, the name of the proofs
-of the proof in Lean are descriptive. Let's start with
+in Lean are descriptive. Let's start with
 `mul_add a b c`, the proof of `a * (b + c) = a * b + a * c`.
 Note that the left hand side contains a multiplication
 and then an addition.
