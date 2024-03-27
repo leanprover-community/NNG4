@@ -17,6 +17,7 @@ import Game.Levels.AdvMultiplication
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
 import Game.Levels.Algorithm
+import I18n
 
 -- Here's what we'll put on the title screen
 Title "Natural Number Game"
@@ -101,7 +102,7 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 -- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "English"
+Languages "en" "zh"
 CaptionShort "The classical introduction game for Lean."
 CaptionLong "In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano axioms,
 learning the basics about theorem proving in Lean.

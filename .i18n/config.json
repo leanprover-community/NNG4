@@ -1,4 +1,5 @@
 {
   "sourceLang": "en",
-  "translationContactEmail": ""
+  "translationContactEmail": "",
+  "useJson": true
 }
