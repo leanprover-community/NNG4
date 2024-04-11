@@ -24,7 +24,7 @@ this opposite version too, which can be proved in the same way. Note: you can
 cheat here by using `zero_ne_succ` but the point of this world is to show
 you how to *prove* results like that.
 
-If you can turn your goal into `True`, then the `triv` tactic will solve it.
+If you can turn your goal into `True`, then the `trivial` tactic will solve it.
 "
 
 /-- `is_zero_zero` is a proof of `is_zero 0 = True`. -/
@@ -41,12 +41,12 @@ NewTheorem MyNat.is_zero_zero MyNat.is_zero_succ
 /--
 # Summary
 
-`triv` will solve the goal `True`.
+`trivial` will solve the goal `True`.
 -/
-TacticDoc triv
+TacticDoc trivial
 
 
-NewTactic triv
+NewTactic trivial
 
 /-- $\operatorname{succ}(a) \neq 0$. -/
 Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
@@ -60,4 +60,4 @@ Statement succ_ne_zero (a : ℕ) : succ a ≠ 0 := by
   available on the right."
   rw [h]
   rw [is_zero_zero]
-  triv
+  trivial

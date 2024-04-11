@@ -52,7 +52,7 @@ jobs:
 
       - name: compress built game
         #run: tar -czvf ../game.tar.gz .
-        run: zip game.zip * .lake/ -r
+        run: zip game.zip * .lake/ .i18n/ -r
 
       - name: upload compressed game folder
         uses: actions/upload-artifact@v3
