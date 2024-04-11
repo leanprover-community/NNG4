@@ -22,7 +22,7 @@ PRs/Issues fixing typos, inconsistencies, missing hints, etc. are very welcome!
 
  We would like the following requirements for a translation PR:
 
- - One independent person from the community, who understands the language, gives a review on the PR. You could for example look at the [Lean Community Map](https://leanprover-community.github.io/meet.html) or ask on Zulip. Such a review an be quite generic and does not have to be super detailed.
+ - One independent person from the community, who understands the language, gives a review on the PR. You could for example look at the [Lean Community Map](https://leanprover-community.github.io/meet.html) or ask on Zulip. Such a review can be quite generic and does not have to be super detailed.
  - In the credits (i.e. in the string translating them), ideally you should add yourself as a translator for this language.
 
 ## Documentation
