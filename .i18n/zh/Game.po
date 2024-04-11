@@ -577,7 +577,7 @@ msgstr ""
 " `X` 转换为 `Y`s。但如果我们想要\n"
 "将 `Y`s 转换为 `X`s怎么办？我们使用左箭头 `←` 来告诉`rw`策略\n"
 "我们想要这个。输入\n"
-"`\\l` 然后按空格键来这个箭头。\n"
+"`\\l` 然后按空格键来输入这个箭头。\n"
 "\n"
 "我们来证明一下 $2$ 就是 $0$ 之后再之后的数字。请将`succ (succ 0)`\n"
 "重写为 `2`。"
@@ -4859,7 +4859,7 @@ msgstr "mul_right_eq_self"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`."
-msgstr "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`."
+msgstr "`mul_right_eq_self a b` 是命题如果 `a ≠ 0` 且 `a * b = a` 那么 `b = 1` 的证明。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid ""
