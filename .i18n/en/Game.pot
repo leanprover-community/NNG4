@@ -1,12 +1,17 @@
+#, fuzzy
 msgid ""
-msgstr "Project-Id-Version: Game v4.7.0\n"
+msgstr ""
+"Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Apr 11 10:29:14 2024\n"
+"POT-Creation-Date: 2024-04-11 11:25+0800\n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
@@ -25,7 +30,8 @@ msgid "The rfl tactic"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01rfl
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "`rfl` proves goals of the form `X = X`.\n"
 "\n"
@@ -42,8 +48,10 @@ msgid "## Summary\n"
 "x + 37 = x + 37\n"
 "```\n"
 "\n"
-"then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't work, because even\n"
-"though $0+x$ and $x$ are always equal as *numbers*, they are not equal as *terms*.\n"
+"then `rfl` will close it. But if it looks like `0 + x = x` then `rfl` won't "
+"work, because even\n"
+"though $0+x$ and $x$ are always equal as *numbers*, they are not equal as "
+"*terms*.\n"
 "The only term which is identical to `0 + x` is `0 + x`.\n"
 "\n"
 "## Details\n"
@@ -52,27 +60,37 @@ msgid "## Summary\n"
 "\n"
 "## Game Implementation\n"
 "\n"
-"*Note that our `rfl` is weaker than the version used in core Lean and `mathlib`,\n"
-"for pedagogical purposes; mathematicians do not distinguish between propositional\n"
-"and definitional equality because they think about definitions in a different way\n"
+"*Note that our `rfl` is weaker than the version used in core Lean and "
+"`mathlib`,\n"
+"for pedagogical purposes; mathematicians do not distinguish between "
+"propositional\n"
+"and definitional equality because they think about definitions in a "
+"different way\n"
 "to type theorists (`zero_add` and `add_zero` are both \\\"facts\\\" as far\n"
-"as mathematicians are concerned, and who cares what the definition of addition is).*"
+"as mathematicians are concerned, and who cares what the definition of "
+"addition is).*"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01rfl
-msgid "# Read this first\n"
+msgid ""
+"# Read this first\n"
 "\n"
-"Each level in this game involves proving a mathematical theorem (the \"Goal\").\n"
-"The goal will be a statement about *numbers*. Some numbers in this game have known values.\n"
-"Those numbers have names like $37$. Other numbers will be secret. They're called things\n"
+"Each level in this game involves proving a mathematical theorem (the \"Goal"
+"\").\n"
+"The goal will be a statement about *numbers*. Some numbers in this game have "
+"known values.\n"
+"Those numbers have names like $37$. Other numbers will be secret. They're "
+"called things\n"
 "like $x$ and $q$. We know $x$ is a number, we just don't know which one.\n"
 "\n"
-"In this first level we're going to prove the theorem that $37x + q = 37x + q$.\n"
+"In this first level we're going to prove the theorem that $37x + q = 37x + q"
+"$.\n"
 "You can see `x q : ℕ` in the *Objects* below, which means that `x` and `q`\n"
 "are numbers.\n"
 "\n"
 "We solve goals in Lean using *Tactics*, and the first tactic we're\n"
-"going to learn is called `rfl`, which proves all theorems of the form $X = X$.\n"
+"going to learn is called `rfl`, which proves all theorems of the form $X = X"
+"$.\n"
 "\n"
 "Prove that $37x+q=37x+q$ by executing the `rfl` tactic."
 msgstr ""
@@ -82,14 +100,17 @@ msgid "If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$"
 msgstr ""
 
 #: Game.Levels.Tutorial.L01rfl
-msgid "In order to use the tactic `rfl` you can enter it in the text box\n"
+msgid ""
+"In order to use the tactic `rfl` you can enter it in the text box\n"
 "under the goal and hit \"Execute\"."
 msgstr ""
 
 #: Game.Levels.Tutorial.L01rfl
-msgid "Congratulations! You completed your first verified proof!\n"
+msgid ""
+"Congratulations! You completed your first verified proof!\n"
 "\n"
-"Remember that `rfl` is a *tactic*. If you ever want information about the `rfl` tactic,\n"
+"Remember that `rfl` is a *tactic*. If you ever want information about the "
+"`rfl` tactic,\n"
 "you can click on `rfl` in the list of tactics on the right.\n"
 "\n"
 "Now click on \"Next\" to learn about the `rw` tactic."
@@ -100,14 +121,16 @@ msgid "the rw tactic"
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "If `h` is a proof of an equality `X = Y`, then `rw [h]` will change\n"
 "all `X`s in the goal to `Y`s. It's the way to \\\"substitute in\\\".\n"
 "\n"
 "## Variants\n"
 "\n"
-"* `rw [← h]` (changes `Y`s to `X`s; get the back arrow by typing `\\left ` or `\\l`.)\n"
+"* `rw [← h]` (changes `Y`s to `X`s; get the back arrow by typing `\\left ` "
+"or `\\l`.)\n"
 "\n"
 "* `rw [h1, h2]` (a sequence of rewrites)\n"
 "\n"
@@ -153,7 +176,8 @@ msgid "## Summary\n"
 "\n"
 "* You need the square brackets. `rw h` is never correct.\n"
 "\n"
-"* If `h` is not a *proof* of an *equality* (a statement of the form `A = B`),\n"
+"* If `h` is not a *proof* of an *equality* (a statement of the form `A = "
+"B`),\n"
 "for example if `h` is a function or an implication,\n"
 "then `rw` is not the tactic you want to use. For example,\n"
 "`rw [P = Q]` is never correct: `P = Q` is the theorem *statement*,\n"
@@ -165,7 +189,8 @@ msgid "## Summary\n"
 "are two distinct situations where you can use this tactic.\n"
 "\n"
 "1) Basic usage: if `h : A = B` is an assumption or\n"
-"the proof of a theorem, and if the goal contains one or more `A`s, then `rw [h]`\n"
+"the proof of a theorem, and if the goal contains one or more `A`s, then `rw "
+"[h]`\n"
 "will change them all to `B`'s. The tactic will error\n"
 "if there are no `A`s in the goal.\n"
 "\n"
@@ -198,7 +223,8 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "`repeat t` repeatedly applies the tactic `t`\n"
 "to the goal. You don't need to use this\n"
@@ -221,12 +247,14 @@ msgid "## Summary\n"
 "## Example\n"
 "\n"
 "If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`\n"
-"will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`\n"
+"will change the goal to `2 + succ 1 = 4`. In contrast, `rw "
+"[two_eq_succ_one]`\n"
 "will change the goal to `succ 1 + succ 1 = 4`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "If `h : X = Y` and there are several `X`s in the goal, then\n"
 "`nth_rewrite 3 [h]` will just change the third `X` to a `Y`.\n"
@@ -234,13 +262,16 @@ msgid "## Summary\n"
 "## Example\n"
 "\n"
 "If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`\n"
-"will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`\n"
+"will change the goal to `2 + succ 1 = 4`. In contrast, `rw "
+"[two_eq_succ_one]`\n"
 "will change the goal to `succ 1 + succ 1 = 4`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "In this level the *goal* is $2y=2(x+7)$ but to help us we\n"
-"have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` in\n"
+msgid ""
+"In this level the *goal* is $2y=2(x+7)$ but to help us we\n"
+"have an *assumption* `h` saying that $y = x + 7$. Check that you can see `h` "
+"in\n"
 "your list of assumptions. Lean thinks of `h` as being a secret proof of the\n"
 "assumption, rather like `x` is a secret number.\n"
 "\n"
@@ -250,7 +281,8 @@ msgid "In this level the *goal* is $2y=2(x+7)$ but to help us we\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$."
+msgid ""
+"If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
@@ -258,7 +290,8 @@ msgid "First execute `rw [h]` to replace the `y` with `x + 7`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "Can you take it from here? Click on \"Show more help!\" if you need a hint."
+msgid ""
+"Can you take it from here? Click on \"Show more help!\" if you need a hint."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
@@ -266,7 +299,8 @@ msgid "Now `rfl` will work."
 msgstr ""
 
 #: Game.Levels.Tutorial.L02rw
-msgid "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey."
+msgid ""
+"You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey."
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
@@ -274,7 +308,8 @@ msgid "Numbers"
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`ℕ` is the natural numbers, just called \\\"numbers\\\" in this game. It's\n"
+msgid ""
+"`ℕ` is the natural numbers, just called \\\"numbers\\\" in this game. It's\n"
 "defined via two rules:\n"
 "\n"
 "* `0 : ℕ` (zero is a number)\n"
@@ -282,7 +317,8 @@ msgid "`ℕ` is the natural numbers, just called \\\"numbers\\\" in this game. I
 "\n"
 "## Game Implementation\n"
 "\n"
-"*The game uses its own copy of the natural numbers, called `MyNat` with notation `ℕ`.\n"
+"*The game uses its own copy of the natural numbers, called `MyNat` with "
+"notation `ℕ`.\n"
 "It is distinct from the Lean natural numbers `Nat`, which should hopefully\n"
 "never leak into the natural number game.*"
 msgstr ""
@@ -304,7 +340,8 @@ msgid "`four_eq_succ_three` is a proof of `4 = succ 3`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "## The birth of number.\n"
+msgid ""
+"## The birth of number.\n"
 "\n"
 "Numbers in Lean are defined by two rules.\n"
 "\n"
@@ -327,12 +364,14 @@ msgid "## The birth of number.\n"
 "Let's prove that $2$ is the number after the number after zero."
 msgstr ""
 
-#: Game.Levels.Tutorial.L03two_eq_ss0
+#: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Tutorial.L04rw_backwards
 msgid "$2$ is the number after the number after $0$."
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "Start with `rw [two_eq_succ_one]` to begin to break `2` down into its definition."
+msgid ""
+"Start with `rw [two_eq_succ_one]` to begin to break `2` down into its "
+"definition."
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
@@ -348,7 +387,8 @@ msgid "Now finish the job with `rfl`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "Note that you can do `rw [two_eq_succ_one, one_eq_succ_zero]`\n"
+msgid ""
+"Note that you can do `rw [two_eq_succ_one, one_eq_succ_zero]`\n"
 "and then `rfl` to solve this level in two lines."
 msgstr ""
 
@@ -357,7 +397,8 @@ msgid "rewriting backwards"
 msgstr ""
 
 #: Game.Levels.Tutorial.L04rw_backwards
-msgid "If `h` is a proof of `X = Y` then `rw [h]` will\n"
+msgid ""
+"If `h` is a proof of `X = Y` then `rw [h]` will\n"
 "turn `X`s into `Y`s. But what if we want to\n"
 "turn `Y`s into `X`s? To tell the `rw` tactic\n"
 "we want this, we use a left arrow `←`. Type\n"
@@ -366,10 +407,6 @@ msgid "If `h` is a proof of `X = Y` then `rw [h]` will\n"
 "Let's prove that $2$ is the number after the number\n"
 "after $0$ again, this time by changing `succ (succ 0)`\n"
 "into `2`."
-msgstr ""
-
-#: Game.Levels.Tutorial.L04rw_backwards
-msgid "$2$ is the number after the number after $0$."
 msgstr ""
 
 #: Game.Levels.Tutorial.L04rw_backwards
@@ -385,7 +422,8 @@ msgid "Now `rw [← two_eq_succ_one]` will change `succ 1` into `2`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L04rw_backwards
-msgid "Why did we not just define `succ n` to be `n + 1`? Because we have not\n"
+msgid ""
+"Why did we not just define `succ n` to be `n + 1`? Because we have not\n"
 "even *defined* addition yet! We'll do that in the next level."
 msgstr ""
 
@@ -394,7 +432,8 @@ msgid "Adding zero"
 msgstr ""
 
 #: Game.Levels.Tutorial.L05add_zero
-msgid "`Add a b`, with notation `a + b`, is\n"
+msgid ""
+"`Add a b`, with notation `a + b`, is\n"
 "the usual sum of natural numbers. Internally it is defined\n"
 "via the following two hypotheses:\n"
 "\n"
@@ -407,7 +446,8 @@ msgid "`Add a b`, with notation `a + b`, is\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L05add_zero
-msgid "`add_zero a` is a proof that `a + 0 = a`.\n"
+msgid ""
+"`add_zero a` is a proof that `a + 0 = a`.\n"
 "\n"
 "## Summary\n"
 "\n"
@@ -429,7 +469,8 @@ msgid "`add_zero a` is a proof that `a + 0 = a`.\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L05add_zero
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "`repeat t` repeatedly applies the tactic `t`\n"
 "to the goal. You don't need to use this\n"
@@ -444,7 +485,8 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L05add_zero
-msgid "We'd like to prove `2 + 2 = 4` but right now\n"
+msgid ""
+"We'd like to prove `2 + 2 = 4` but right now\n"
 "we can't even *state* it\n"
 "because we haven't yet defined addition.\n"
 "\n"
@@ -468,7 +510,7 @@ msgid "We'd like to prove `2 + 2 = 4` but right now\n"
 "We write `add_zero x : x + 0 = x`, so `proof : statement`."
 msgstr ""
 
-#: Game.Levels.Tutorial.L05add_zero
+#: Game.Levels.Tutorial.L05add_zero Game.Levels.Tutorial.L06add_zero2
 msgid "$a+(b+0)+(c+0)=a+b+c.$"
 msgstr ""
 
@@ -481,7 +523,8 @@ msgid "Now `rw [add_zero]` will change `c + 0` into `c`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L05add_zero
-msgid "Those of you interested in speedrunning the game may want to know\n"
+msgid ""
+"Those of you interested in speedrunning the game may want to know\n"
 "that `repeat rw [add_zero]` will do both rewrites at once."
 msgstr ""
 
@@ -490,7 +533,8 @@ msgid "Precision rewriting"
 msgstr ""
 
 #: Game.Levels.Tutorial.L06add_zero2
-msgid "## Precision rewriting\n"
+msgid ""
+"## Precision rewriting\n"
 "\n"
 "In the last level, there was `b + 0` and `c + 0`,\n"
 "and `rw [add_zero]` changed the first one it saw,\n"
@@ -500,16 +544,14 @@ msgid "## Precision rewriting\n"
 msgstr ""
 
 #: Game.Levels.Tutorial.L06add_zero2
-msgid "$a+(b+0)+(c+0)=a+b+c.$"
-msgstr ""
-
-#: Game.Levels.Tutorial.L06add_zero2
 msgid "Try `rw [add_zero c]`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L06add_zero2
-msgid "`add_zero c` is a proof of `c + 0 = c` so that was what got rewritten.\n"
-"You can now change `b + 0` to `b` with `rw [add_zero]` or `rw [add_zero b]`. You\n"
+msgid ""
+"`add_zero c` is a proof of `c + 0 = c` so that was what got rewritten.\n"
+"You can now change `b + 0` to `b` with `rw [add_zero]` or `rw [add_zero b]`. "
+"You\n"
 "can usually stick to `rw [add_zero]` unless you need real precision."
 msgstr ""
 
@@ -530,7 +572,8 @@ msgid "`succ_eq_add_one n` is the proof that `succ n = n + 1`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L07add_succ
-msgid "Every number in Lean is either $0$ or a successor. We know how to add $0$,\n"
+msgid ""
+"Every number in Lean is either $0$ or a successor. We know how to add $0$,\n"
 "but we need to figure out how to add successors. Let's say we already know\n"
 "that `37 + d = q`. What should the answer to `37 + succ d` be? Well,\n"
 "`succ d` is one bigger than `d`, so `37 + succ d` should be `succ q`,\n"
@@ -543,7 +586,8 @@ msgid "Every number in Lean is either $0$ or a successor. We know how to add $0$
 "normally a good idea.\n"
 "\n"
 "Let's now prove that `succ n = n + 1`. Figure out how to get `+ succ` into\n"
-"the picture, and then `rw [add_succ]`. Switch between the `+` (addition) and\n"
+"the picture, and then `rw [add_succ]`. Switch between the `+` (addition) "
+"and\n"
 "`012` (numerals) tabs under \"Theorems\" on the right to\n"
 "see which proofs you can rewrite."
 msgstr ""
@@ -560,7 +604,7 @@ msgstr ""
 msgid "`rw [one_eq_succ_zero]` will do this."
 msgstr ""
 
-#: Game.Levels.Tutorial.L07add_succ
+#: Game.Levels.Tutorial.L07add_succ Game.Levels.Tutorial.L08twoaddtwo
 msgid "Now you can `rw [add_succ]`"
 msgstr ""
 
@@ -581,9 +625,11 @@ msgid "2+2=4"
 msgstr ""
 
 #: Game.Levels.Tutorial.L08twoaddtwo
-msgid "Good luck!\n"
+msgid ""
+"Good luck!\n"
 "\n"
-"  One last hint. If `h : X = Y` then `rw [h]` will change *all* `X`s into `Y`s.\n"
+"  One last hint. If `h : X = Y` then `rw [h]` will change *all* `X`s into "
+"`Y`s.\n"
 "  If you only want to change one of them, say the 3rd one, then use\n"
 "  `nth_rewrite 3 [h]`."
 msgstr ""
@@ -593,15 +639,14 @@ msgid "$2+2=4$."
 msgstr ""
 
 #: Game.Levels.Tutorial.L08twoaddtwo
-msgid "`nth_rewrite 2 [two_eq_succ_one]` is I think quicker than `rw [two_eq_succ_one]`."
+msgid ""
+"`nth_rewrite 2 [two_eq_succ_one]` is I think quicker than `rw "
+"[two_eq_succ_one]`."
 msgstr ""
 
 #: Game.Levels.Tutorial.L08twoaddtwo
-msgid "Now you can `rw [add_succ]`"
-msgstr ""
-
-#: Game.Levels.Tutorial.L08twoaddtwo
-msgid "Here is an example proof of 2+2=4 showing off various techniques.\n"
+msgid ""
+"Here is an example proof of 2+2=4 showing off various techniques.\n"
 "\n"
 "```lean\n"
 "nth_rewrite 2 [two_eq_succ_one] -- only change the second `2` to `succ 1`.\n"
@@ -613,12 +658,14 @@ msgid "Here is an example proof of 2+2=4 showing off various techniques.\n"
 "rfl\n"
 "```\n"
 "\n"
-"Optional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\n"
+"Optional extra: you can run this proof yourself. Switch the game into "
+"\"Editor mode\" by clicking\n"
 "on the `</>` button in the top right. You can now see your proof\n"
 "written as several lines of code. Move your cursor between lines to see\n"
 "the goal state at any point. Now cut and paste your code elsewhere if you\n"
 "want to save it, and paste the above proof in instead. Move your cursor\n"
-"around to investigate. When you've finished, click the `>_` button in the top right to\n"
+"around to investigate. When you've finished, click the `>_` button in the "
+"top right to\n"
 "move back into \"Typewriter mode\".\n"
 "\n"
 "You have finished tutorial world!\n"
@@ -632,7 +679,8 @@ msgid "Tutorial World"
 msgstr ""
 
 #: Game.Levels.Tutorial
-msgid "Welcome to tutorial world! In this world we learn the basics\n"
+msgid ""
+"Welcome to tutorial world! In this world we learn the basics\n"
 "of proving theorems. The boss level of this world\n"
 "is the theorem `2 + 2 = 4`.\n"
 "\n"
@@ -649,27 +697,35 @@ msgid "zero_add"
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "In this level we're going to prove that $0+n=n$, where $n$ is a secret natural number.\n"
+msgid ""
+"In this level we're going to prove that $0+n=n$, where $n$ is a secret "
+"natural number.\n"
 "\n"
-"Wait, don't we already know that? No! We know that $n+0=n$, but that's `add_zero`.\n"
+"Wait, don't we already know that? No! We know that $n+0=n$, but that's "
+"`add_zero`.\n"
 "This is `zero_add`, which is different.\n"
 "\n"
-"The difficulty with proving `0 + n = n` is that we do not have a *formula* for\n"
+"The difficulty with proving `0 + n = n` is that we do not have a *formula* "
+"for\n"
 "`0 + n` in general, we can only use `add_zero` and `add_succ` once\n"
-"we know whether `n` is `0` or a successor. The `induction` tactic splits into these two cases.\n"
+"we know whether `n` is `0` or a successor. The `induction` tactic splits "
+"into these two cases.\n"
 "\n"
 "The base case will require us to prove `0 + 0 = 0`, and the inductive step\n"
 "will ask us to show that if `0 + d = d` then `0 + succ d = succ d`. Because\n"
-"`0` and successor are the only way to make numbers, this will cover all the cases.\n"
+"`0` and successor are the only way to make numbers, this will cover all the "
+"cases.\n"
 "\n"
 "See if you can do your first induction proof in Lean.\n"
 "\n"
-"(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\n"
+"(By the way, if you are still in the \"Editor mode\" from the last world, "
+"you can swap\n"
 "back to \"Typewriter mode\" by clicking the `>_` button in the top right.)"
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "`zero_add x` is the proof of `0 + x = x`.\n"
+msgid ""
+"`zero_add x` is the proof of `0 + x = x`.\n"
 "\n"
 "`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
 "is almost always what you want to do if you're simplifying an expression."
@@ -680,12 +736,15 @@ msgid "For all natural numbers $n$, we have $0 + n = n$."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "You can start a proof by induction on `n` by typing:\n"
+msgid ""
+"You can start a proof by induction on `n` by typing:\n"
 "`induction n with d hd`."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "Now you have two goals. Once you proved the first, you will jump to the second one.\n"
+msgid ""
+"Now you have two goals. Once you proved the first, you will jump to the "
+"second one.\n"
 "This first goal is the base case $n = 0$.\n"
 "\n"
 "Recall that you can rewrite the proof of any lemma which is visible\n"
@@ -698,8 +757,10 @@ msgid "try rewriting `add_zero`."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "Now for to the second goal. Here you have the induction hypothesis\n"
-"`«{hd}» : 0 + «{d}» = «{d}»`, and you need to prove that `0 + succ «{d}» = succ «{d}»`."
+msgid ""
+"Now for to the second goal. Here you have the induction hypothesis\n"
+"`«{hd}» : 0 + «{d}» = «{d}»`, and you need to prove that `0 + succ «{d}» = "
+"succ «{d}»`."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
@@ -707,16 +768,20 @@ msgid "Use `add_succ`."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "At this point you see the term `0 + «{d}»`, so you can use the\n"
+msgid ""
+"At this point you see the term `0 + «{d}»`, so you can use the\n"
 "induction hypothesis with `rw [«{hd}»]`."
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
-"If `n : ℕ` is an object, and the goal mentions `n`, then `induction n with d hd`\n"
+"If `n : ℕ` is an object, and the goal mentions `n`, then `induction n with d "
+"hd`\n"
 "attempts to prove the goal by induction on `n`, with the inductive\n"
-"variable in the successor case being `d`, and the inductive hypothesis being `hd`.\n"
+"variable in the successor case being `d`, and the inductive hypothesis being "
+"`hd`.\n"
 "\n"
 "### Example:\n"
 "If the goal is\n"
@@ -737,8 +802,11 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
-msgid "This lemma would have been easy if we had known that `x + y = y + x`. That theorem\n"
-"  is called `add_comm` and it is *true*, but unfortunately its proof *uses* both\n"
+msgid ""
+"This lemma would have been easy if we had known that `x + y = y + x`. That "
+"theorem\n"
+"  is called `add_comm` and it is *true*, but unfortunately its proof *uses* "
+"both\n"
 "  `add_zero` and `zero_add`!\n"
 "\n"
 "  Let's continue on our journey to `add_comm`, the proof of `x + y = y + x`."
@@ -749,11 +817,13 @@ msgid "succ_add"
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "Oh no! On the way to `add_comm`, a wild `succ_add` appears. `succ_add a b`\n"
+msgid ""
+"Oh no! On the way to `add_comm`, a wild `succ_add` appears. `succ_add a b`\n"
 "is the proof that `(succ a) + b = succ (a + b)` for `a` and `b` numbers.\n"
 "This result is what's standing in the way of `x + y = y + x`. Again\n"
 "we have the problem that we are adding `b` to things, so we need\n"
-"to use induction to split into the cases where `b = 0` and `b` is a successor."
+"to use induction to split into the cases where `b = 0` and `b` is a "
+"successor."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
@@ -761,27 +831,32 @@ msgid "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "For all natural numbers $a, b$, we have\n"
+msgid ""
+"For all natural numbers $a, b$, we have\n"
 "$ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "You might want to think about whether induction\n"
+msgid ""
+"You might want to think about whether induction\n"
 "on `a` or `b` is the best idea."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "Induction on `a` will not work here. You are still stuck with an `+ b`.\n"
+msgid ""
+"Induction on `a` will not work here. You are still stuck with an `+ b`.\n"
 "I suggest you delete this line and try a different approach."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "Note that `succ a + «{d}»` means `(succ a) + «{d}»`. Put your cursor\n"
+msgid ""
+"Note that `succ a + «{d}»` means `(succ a) + «{d}»`. Put your cursor\n"
 "on any `succ` in the goal or assumptions to see what exactly it's eating."
 msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
-msgid "Well done! You now have enough tools to tackle the main boss of this level."
+msgid ""
+"Well done! You now have enough tools to tackle the main boss of this level."
 msgstr ""
 
 #: Game.Levels.Addition.L03add_comm
@@ -789,7 +864,8 @@ msgid "add_comm (level boss)"
 msgstr ""
 
 #: Game.Levels.Addition.L03add_comm
-msgid "[boss battle music]\n"
+msgid ""
+"[boss battle music]\n"
 "\n"
 "Look in your inventory to see the proofs you have available.\n"
 "These should be enough."
@@ -800,7 +876,8 @@ msgid "`add_comm x y` is a proof of `x + y = y + x`."
 msgstr ""
 
 #: Game.Levels.Addition.L03add_comm
-msgid "On the set of natural numbers, addition is commutative.\n"
+msgid ""
+"On the set of natural numbers, addition is commutative.\n"
 "In other words, if `a` and `b` are arbitrary natural numbers, then\n"
 "$a + b = b + a$."
 msgstr ""
@@ -814,31 +891,36 @@ msgid "add_assoc (associativity of addition)"
 msgstr ""
 
 #: Game.Levels.Addition.L04add_assoc
-msgid "We've been adding up two numbers; in this level we will add up three.\n"
+msgid ""
+"We've been adding up two numbers; in this level we will add up three.\n"
 "\n"
 "  What does $x+y+z$ *mean*? It could either mean $(x+y)+z$, or it\n"
 "  could mean $x+(y+z)$. In Lean, $x+y+z$ means $(x+y)+z$.\n"
 "\n"
-"  But why do we care which one it means; $(x+y)+z$ and $x+(y+z)$ are *equal*!\n"
+"  But why do we care which one it means; $(x+y)+z$ and $x+(y+z)$ are "
+"*equal*!\n"
 "\n"
 "  That's true, but we didn't prove it yet. Let's prove it now by induction."
 msgstr ""
 
 #: Game.Levels.Addition.L04add_assoc
-msgid "`add_assoc a b c` is a proof\n"
+msgid ""
+"`add_assoc a b c` is a proof\n"
 "that `(a + b) + c = a + (b + c)`. Note that in Lean `(a + b) + c` prints\n"
 "as `a + b + c`, because the notation for addition is defined to be left\n"
 "associative."
 msgstr ""
 
 #: Game.Levels.Addition.L04add_assoc
-msgid "On the set of natural numbers, addition is associative.\n"
+msgid ""
+"On the set of natural numbers, addition is associative.\n"
 "In other words, if $a, b$ and $c$ are arbitrary natural numbers, we have\n"
 "$ (a + b) + c = a + (b + c). $"
 msgstr ""
 
 #: Game.Levels.Addition.L04add_assoc
-msgid "Remember that when Lean writes `a + b + c`, it means `(a + b) + c`.\n"
+msgid ""
+"Remember that when Lean writes `a + b + c`, it means `(a + b) + c`.\n"
 "If you are not sure where the brackets are in an expression, just hover\n"
 "your cursor over it and look at what gets highlighted. For example,\n"
 "hover over both `+` symbols on the left hand side of the goal and\n"
@@ -846,7 +928,8 @@ msgid "Remember that when Lean writes `a + b + c`, it means `(a + b) + c`.\n"
 msgstr ""
 
 #: Game.Levels.Addition.L04add_assoc
-msgid "A passing mathematician congratulates you on proving that naturals\n"
+msgid ""
+"A passing mathematician congratulates you on proving that naturals\n"
 "are an additive commutative monoid.\n"
 "\n"
 "Let's practice using `add_assoc` and `add_comm` in one more level,\n"
@@ -858,7 +941,8 @@ msgid "add_right_comm"
 msgstr ""
 
 #: Game.Levels.Addition.L05add_right_comm
-msgid "`add_comm b c` is a proof that `b + c = c + b`. But if your goal\n"
+msgid ""
+"`add_comm b c` is a proof that `b + c = c + b`. But if your goal\n"
 "is `a + b + c = a + c + b` then `rw [add_comm b c]` will not\n"
 "work! Because the goal means `(a + b) + c = (a + c) + b` so there\n"
 "is no `b + c` term *directly* in the goal.\n"
@@ -868,28 +952,35 @@ msgid "`add_comm b c` is a proof that `b + c = c + b`. But if your goal\n"
 "and `add_comm` moves variables around.\n"
 "\n"
 "Remember that you can do more targetted rewrites by\n"
-"adding explicit variables as inputs to theorems. For example `rw [add_comm b]`\n"
+"adding explicit variables as inputs to theorems. For example `rw [add_comm "
+"b]`\n"
 "will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`\n"
 "will only do rewrites of the form `b + c = c + b`."
 msgstr ""
 
 #: Game.Levels.Addition.L05add_right_comm
-msgid "`add_right_comm a b c` is a proof that `(a + b) + c = (a + c) + b`\n"
+msgid ""
+"`add_right_comm a b c` is a proof that `(a + b) + c = (a + c) + b`\n"
 "\n"
 "In Lean, `a + b + c` means `(a + b) + c`, so this result gets displayed\n"
 "as `a + b + c = a + c + b`."
 msgstr ""
 
 #: Game.Levels.Addition.L05add_right_comm
-msgid "If $a, b$ and $c$ are arbitrary natural numbers, we have\n"
+msgid ""
+"If $a, b$ and $c$ are arbitrary natural numbers, we have\n"
 "$(a + b) + c = (a + c) + b$."
 msgstr ""
 
 #: Game.Levels.Addition.L05add_right_comm
-msgid "You've now seen all the tactics you need to beat the final boss of the game.\n"
-"You can begin the journey towards this boss by entering Multiplication World.\n"
+msgid ""
+"You've now seen all the tactics you need to beat the final boss of the "
+"game.\n"
+"You can begin the journey towards this boss by entering Multiplication "
+"World.\n"
 "\n"
-"Or you can go off the beaten track and learn some new tactics in Implication\n"
+"Or you can go off the beaten track and learn some new tactics in "
+"Implication\n"
 "World. These tactics let you prove more facts about addition, such as\n"
 "how to deduce `a = 0` from `x + a = x`.\n"
 "\n"
@@ -901,14 +992,19 @@ msgid "Addition World"
 msgstr ""
 
 #: Game.Levels.Addition
-msgid "Welcome to Addition World! In this world we'll learn the `induction` tactic.\n"
-"This will enable us to defeat the boss level of this world, namely `x + y = y + x`.\n"
+msgid ""
+"Welcome to Addition World! In this world we'll learn the `induction` "
+"tactic.\n"
+"This will enable us to defeat the boss level of this world, namely `x + y = "
+"y + x`.\n"
 "\n"
 "The tactics `rw`, `rfl` and `induction` are the only tactics you'll need to\n"
-"beat all the levels in Addition World, Multiplication World, and Power World.\n"
+"beat all the levels in Addition World, Multiplication World, and Power "
+"World.\n"
 "Power World contains the final boss of the game.\n"
 "\n"
-"There are plenty more tactics in this game, but you'll only need to know them if you\n"
+"There are plenty more tactics in this game, but you'll only need to know "
+"them if you\n"
 "want to explore the game further (for example if you decide to 100%\n"
 "the game)."
 msgstr ""
@@ -918,7 +1014,8 @@ msgid "mul_one"
 msgstr ""
 
 #: Game.Levels.Multiplication.L01mul_one
-msgid "See the new \"*\" tab in your lemmas, containing `mul_zero` and `mul_succ`.\n"
+msgid ""
+"See the new \"*\" tab in your lemmas, containing `mul_zero` and `mul_succ`.\n"
 "Right now these are the only facts we know about multiplication.\n"
 "Let's prove nine more.\n"
 "\n"
@@ -927,7 +1024,8 @@ msgid "See the new \"*\" tab in your lemmas, containing `mul_zero` and `mul_succ
 msgstr ""
 
 #: Game.Levels.Multiplication.L01mul_one
-msgid "`Mul a b`, with notation `a * b`, is the usual\n"
+msgid ""
+"`Mul a b`, with notation `a * b`, is the usual\n"
 "  product of natural numbers. Internally it is\n"
 "  via two axioms:\n"
 "\n"
@@ -960,7 +1058,8 @@ msgid "zero_mul"
 msgstr ""
 
 #: Game.Levels.Multiplication.L02zero_mul
-msgid "Our first challenge is `mul_comm x y : x * y = y * x`,\n"
+msgid ""
+"Our first challenge is `mul_comm x y : x * y = y * x`,\n"
 "and we want to prove it by induction. The zero\n"
 "case will need `mul_zero` (which we have)\n"
 "and `zero_mul` (which we don't), so let's\n"
@@ -968,7 +1067,8 @@ msgid "Our first challenge is `mul_comm x y : x * y = y * x`,\n"
 msgstr ""
 
 #: Game.Levels.Multiplication.L02zero_mul
-msgid "`zero_mul x` is the proof that `0 * x = 0`.\n"
+msgid ""
+"`zero_mul x` is the proof that `0 * x = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
@@ -982,7 +1082,8 @@ msgid "succ_mul"
 msgstr ""
 
 #: Game.Levels.Multiplication.L03succ_mul
-msgid "Similarly we have `mul_succ`\n"
+msgid ""
+"Similarly we have `mul_succ`\n"
 "but we're going to need `succ_mul` (guess what it says -- maybe you\n"
 "are getting the hang of Lean's naming conventions).\n"
 "\n"
@@ -993,14 +1094,16 @@ msgid "Similarly we have `mul_succ`\n"
 msgstr ""
 
 #: Game.Levels.Multiplication.L03succ_mul
-msgid "`succ_mul a b` is the proof that `succ a * b = a * b + b`.\n"
+msgid ""
+"`succ_mul a b` is the proof that `succ a * b = a * b + b`.\n"
 "\n"
 "It could be deduced from `mul_succ` and `mul_comm`, however this argument\n"
 "would be circular because the proof of `mul_comm` uses `mul_succ`."
 msgstr ""
 
 #: Game.Levels.Multiplication.L03succ_mul
-msgid "For all natural numbers $a$ and $b$, we have\n"
+msgid ""
+"For all natural numbers $a$ and $b$, we have\n"
 "$(\\operatorname{succ}\\ a) \\times b = a\\times b + b$."
 msgstr ""
 
@@ -1009,7 +1112,9 @@ msgid "mul_comm"
 msgstr ""
 
 #: Game.Levels.Multiplication.L04mul_comm
-msgid "The first sub-boss of Multiplication World is `mul_comm x y : x * y = y * x`.\n"
+msgid ""
+"The first sub-boss of Multiplication World is `mul_comm x y : x * y = y * "
+"x`.\n"
 "\n"
 "When you've proved this theorem we will have \"spare\" proofs\n"
 "such as `zero_mul`, which is now easily deducible from `mul_zero`.\n"
@@ -1018,7 +1123,8 @@ msgid "The first sub-boss of Multiplication World is `mul_comm x y : x * y = y *
 msgstr ""
 
 #: Game.Levels.Multiplication.L04mul_comm
-msgid "`mul_comm` is the proof that multiplication is commutative. More precisely,\n"
+msgid ""
+"`mul_comm` is the proof that multiplication is commutative. More precisely,\n"
 "`mul_comm a b` is the proof that `a * b = b * a`."
 msgstr ""
 
@@ -1031,7 +1137,8 @@ msgid "one_mul"
 msgstr ""
 
 #: Game.Levels.Multiplication.L05one_mul
-msgid "You can prove $1\\times m=m$ in at least three ways.\n"
+msgid ""
+"You can prove $1\\times m=m$ in at least three ways.\n"
 "Either by induction, or by using `succ_mul`, or\n"
 "by using commutativity. Which do you think is quickest?"
 msgstr ""
@@ -1045,7 +1152,8 @@ msgid "For any natural number $m$, we have $ 1 \\times m = m$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L05one_mul
-msgid "Here's my solution:\n"
+msgid ""
+"Here's my solution:\n"
 "```\n"
 "rw [mul_comm, mul_one]\n"
 "rfl\n"
@@ -1057,7 +1165,8 @@ msgid "two_mul"
 msgstr ""
 
 #: Game.Levels.Multiplication.L06two_mul
-msgid "This level is more important than you think; it plays\n"
+msgid ""
+"This level is more important than you think; it plays\n"
 "a useful role when battling a big boss later on."
 msgstr ""
 
@@ -1070,7 +1179,8 @@ msgid "For any natural number $m$, we have $ 2 \\times m = m+m$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L06two_mul
-msgid "Here's my solution:\n"
+msgid ""
+"Here's my solution:\n"
 "```\n"
 "rw [two_eq_succ_one, succ_mul, one_mul]\n"
 "rfl\n"
@@ -1082,7 +1192,8 @@ msgid "mul_add"
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "Our next goal is \"left and right distributivity\",\n"
+msgid ""
+"Our next goal is \"left and right distributivity\",\n"
 "meaning $a(b+c)=ab+ac$ and $(b+c)a=ba+ca$. Rather than\n"
 "these slightly pompous names, the name of the proofs\n"
 "in Lean are descriptive. Let's start with\n"
@@ -1092,31 +1203,36 @@ msgid "Our next goal is \"left and right distributivity\",\n"
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "Multiplication distributes\n"
+msgid ""
+"Multiplication distributes\n"
 "over addition on the left.\n"
 "\n"
 "`mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "Multiplication is distributive over addition on the left.\n"
+msgid ""
+"Multiplication is distributive over addition on the left.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$a(b + c) = ab + ac$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "You can do induction on any of the three variables. Some choices\n"
+msgid ""
+"You can do induction on any of the three variables. Some choices\n"
 "are harder to push through than others. Can you do the inductive step in\n"
 "5 rewrites only?"
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "Induction on `a` is the most troublesome, then `b`,\n"
+msgid ""
+"Induction on `a` is the most troublesome, then `b`,\n"
 "and `c` is the easiest."
 msgstr ""
 
 #: Game.Levels.Multiplication.L07mul_add
-msgid "Here's my solution:\n"
+msgid ""
+"Here's my solution:\n"
 "```\n"
 "induction c with d hd\n"
 "rw [add_zero, mul_zero, add_zero]\n"
@@ -1133,7 +1249,8 @@ msgid "add_mul"
 msgstr ""
 
 #: Game.Levels.Multiplication.L08add_mul
-msgid "`add_mul` is just as fiddly to prove by induction; but there's a trick\n"
+msgid ""
+"`add_mul` is just as fiddly to prove by induction; but there's a trick\n"
 "which avoids it. Can you spot it?"
 msgstr ""
 
@@ -1142,13 +1259,15 @@ msgid "`add_mul a b c` is a proof that $(a+b)c=ac+bc$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L08add_mul
-msgid "Addition is distributive over multiplication.\n"
+msgid ""
+"Addition is distributive over multiplication.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$(a + b) \\times c = ac + bc$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L08add_mul
-msgid "Here's my proof:\n"
+msgid ""
+"Here's my proof:\n"
 "```\n"
 "rw [mul_comm, mul_add]\n"
 "repeat rw [mul_comm c]\n"
@@ -1161,28 +1280,33 @@ msgid "mul_assoc"
 msgstr ""
 
 #: Game.Levels.Multiplication.L09mul_assoc
-msgid "We now have enough to prove that multiplication is associative,\n"
+msgid ""
+"We now have enough to prove that multiplication is associative,\n"
 "the boss level of multiplication world. Good luck!"
 msgstr ""
 
 #: Game.Levels.Multiplication.L09mul_assoc
-msgid "`mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.\n"
+msgid ""
+"`mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.\n"
 "\n"
 "Note that when Lean says `a * b * c` it means `(a * b) * c`.\n"
 "\n"
-"Note that `(a * b) * c = a * (b * c)` cannot be proved by \\\"pure thought\\\":\n"
+"Note that `(a * b) * c = a * (b * c)` cannot be proved by \\\"pure thought\\"
+"\":\n"
 "for example subtraction is not associative, as `(6 - 2) - 1` is not\n"
 "equal to `6 - (2 - 1)`."
 msgstr ""
 
 #: Game.Levels.Multiplication.L09mul_assoc
-msgid "Multiplication is associative.\n"
+msgid ""
+"Multiplication is associative.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$(ab)c = a(bc)$."
 msgstr ""
 
 #: Game.Levels.Multiplication.L09mul_assoc
-msgid "A passing mathematician notes that you've proved\n"
+msgid ""
+"A passing mathematician notes that you've proved\n"
 "that the natural numbers are a commutative semiring.\n"
 "\n"
 "If you want to begin your journey to the final boss, head for Power World."
@@ -1193,7 +1317,9 @@ msgid "Multiplication World"
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "How should we define `37 * x`? Just like addition, we need to give definitions\n"
+msgid ""
+"How should we define `37 * x`? Just like addition, we need to give "
+"definitions\n"
 "when $x=0$ and when $x$ is a successor.\n"
 "\n"
 "The zero case is easy: we define `37 * 0` to be `0`. Now say we know\n"
@@ -1205,8 +1331,10 @@ msgid "How should we define `37 * x`? Just like addition, we need to give defini
 "  * `mul_zero a : a * 0 = 0`\n"
 "  * `mul_succ a d : a * succ d = a * d + a`\n"
 "\n"
-"In this world, we must not only prove facts about multiplication like `a * b = b * a`,\n"
-"we must also prove facts about how multiplication interacts with addition, like `a * (b + c) = a * b + a * c`.\n"
+"In this world, we must not only prove facts about multiplication like `a * b "
+"= b * a`,\n"
+"we must also prove facts about how multiplication interacts with addition, "
+"like `a * (b + c) = a * b + a * c`.\n"
 "Let's get started."
 msgstr ""
 
@@ -1215,7 +1343,8 @@ msgid "zero_pow_zero"
 msgstr ""
 
 #: Game.Levels.Power.L01zero_pow_zero
-msgid "Mathematicians sometimes debate what `0 ^ 0` is;\n"
+msgid ""
+"Mathematicians sometimes debate what `0 ^ 0` is;\n"
 "the answer depends, of course, on your definitions. In this\n"
 "game, `0 ^ 0 = 1`. See if you can prove it.\n"
 "\n"
@@ -1224,7 +1353,8 @@ msgid "Mathematicians sometimes debate what `0 ^ 0` is;\n"
 msgstr ""
 
 #: Game.Levels.Power.L01zero_pow_zero
-msgid "`Pow a b`, with notation `a ^ b`, is the usual\n"
+msgid ""
+"`Pow a b`, with notation `a ^ b`, is the usual\n"
 "  exponentiation of natural numbers. Internally it is\n"
 "  defined via two axioms:\n"
 "\n"
@@ -1236,12 +1366,14 @@ msgid "`Pow a b`, with notation `a ^ b`, is the usual\n"
 msgstr ""
 
 #: Game.Levels.Power.L01zero_pow_zero
-msgid "`pow_zero a : a ^ 0 = 1` is one of the two axioms\n"
+msgid ""
+"`pow_zero a : a ^ 0 = 1` is one of the two axioms\n"
 "defining exponentiation in this game."
 msgstr ""
 
 #: Game.Levels.Power.L01zero_pow_zero
-msgid "Mathematicians sometimes argue that `0 ^ 0 = 0` is also\n"
+msgid ""
+"Mathematicians sometimes argue that `0 ^ 0 = 0` is also\n"
 "a good convention. But it is not a good convention in this\n"
 "game; all the later levels come out beautifully with the\n"
 "convention that `0 ^ 0 = 1`."
@@ -1256,17 +1388,20 @@ msgid "zero_pow_succ"
 msgstr ""
 
 #: Game.Levels.Power.L02zero_pow_succ
-msgid "We've just seen that `0 ^ 0 = 1`, but if `n`\n"
+msgid ""
+"We've just seen that `0 ^ 0 = 1`, but if `n`\n"
 "is a successor, then `0 ^ n = 0`. We prove that here."
 msgstr ""
 
 #: Game.Levels.Power.L02zero_pow_succ
-msgid "`pow_succ a b : a ^ (succ b) = a ^ b * a` is one of the\n"
+msgid ""
+"`pow_succ a b : a ^ (succ b) = a ^ b * a` is one of the\n"
 "two axioms defining exponentiation in this game."
 msgstr ""
 
 #: Game.Levels.Power.L02zero_pow_succ
-msgid "Although $0^0=1$ in this game, $0^n=0$ if $n>0$, i.e., if\n"
+msgid ""
+"Although $0^0=1$ in this game, $0^n=0$ if $n>0$, i.e., if\n"
 "$n$ is a successor."
 msgstr ""
 
@@ -1279,7 +1414,8 @@ msgid "pow_one"
 msgstr ""
 
 #: Game.Levels.Power.L03pow_one
-msgid "`pow_one a` says that `a ^ 1 = a`.\n"
+msgid ""
+"`pow_one a` says that `a ^ 1 = a`.\n"
 "\n"
 "Note that this is not quite true by definition: `a ^ 1` is\n"
 "defined to be `a ^ 0 * a` so it's `1 * a`, and to prove\n"
@@ -1323,7 +1459,8 @@ msgid "pow_add"
 msgstr ""
 
 #: Game.Levels.Power.L06pow_add
-msgid "Let's now begin our approach to the final boss,\n"
+msgid ""
+"Let's now begin our approach to the final boss,\n"
 "by proving some more subtle facts about powers."
 msgstr ""
 
@@ -1340,7 +1477,8 @@ msgid "mul_pow"
 msgstr ""
 
 #: Game.Levels.Power.L07mul_pow
-msgid "The music gets ever more dramatic, as we explore\n"
+msgid ""
+"The music gets ever more dramatic, as we explore\n"
 "the interplay between exponentiation and multiplication.\n"
 "\n"
 "If you're having trouble exchanging the right `x * y`\n"
@@ -1361,7 +1499,8 @@ msgid "pow_pow"
 msgstr ""
 
 #: Game.Levels.Power.L08pow_pow
-msgid "One of the best named levels in the game, a savage `pow_pow`\n"
+msgid ""
+"One of the best named levels in the game, a savage `pow_pow`\n"
 "sub-boss appears as the music reaches a frenzy. What\n"
 "else could there be to prove about powers after this?"
 msgstr ""
@@ -1375,7 +1514,8 @@ msgid "For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$."
 msgstr ""
 
 #: Game.Levels.Power.L08pow_pow
-msgid "The music dies down. Is that it?\n"
+msgid ""
+"The music dies down. Is that it?\n"
 "\n"
 "Course it isn't, you can\n"
 "clearly see that there are two worlds left.\n"
@@ -1399,18 +1539,21 @@ msgid "`add_sq a b` is the statement that $(a+b)^2=a^2+b^2+2ab.$"
 msgstr ""
 
 #: Game.Levels.Power.L09add_sq
-msgid "For all numbers $a$ and $b$, we have\n"
+msgid ""
+"For all numbers $a$ and $b$, we have\n"
 "$$(a+b)^2=a^2+b^2+2ab.$$"
 msgstr ""
 
 #: Game.Levels.Power.L09add_sq
-msgid "It's all over! You have proved a theorem which has tripped up\n"
+msgid ""
+"It's all over! You have proved a theorem which has tripped up\n"
 "schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$:\n"
 "this is \"the freshman's dream\").\n"
 "\n"
 "How many rewrites did you use? I can do it in 12.\n"
 "\n"
-"But wait! This boss is stirring...and mutating into a second more powerful form!"
+"But wait! This boss is stirring...and mutating into a second more powerful "
+"form!"
 msgstr ""
 
 #: Game.Levels.Power.L10FLT
@@ -1418,10 +1561,12 @@ msgid "Fermat's Last Theorem"
 msgstr ""
 
 #: Game.Levels.Power.L10FLT
-msgid "We now have enough to state a mathematically accurate, but slightly\n"
+msgid ""
+"We now have enough to state a mathematically accurate, but slightly\n"
 "clunky, version of Fermat's Last Theorem.\n"
 "\n"
-"Fermat's Last Theorem states that if $x,y,z>0$ and $m \\geq 3$ then $x^m+y^m\\not =z^m$.\n"
+"Fermat's Last Theorem states that if $x,y,z>0$ and $m \\geq 3$ then $x^m+y^m"
+"\\not =z^m$.\n"
 "If you didn't do inequality world yet then we can't talk about $m \\geq 3$,\n"
 "so we have to resort to the hack of using `n + 3` for `m`,\n"
 "which guarantees it's big enough. Similarly instead of `x > 0` we\n"
@@ -1438,24 +1583,28 @@ msgid "We now have enough to state a mathematically accurate, but slightly\n"
 "You've finished the main quest of the natural number game!\n"
 "If you would like to learn more about how to use Lean to\n"
 "prove theorems in mathematics, then take a look\n"
-"at [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\n"
+"at [Mathematics In Lean](https://leanprover-community.github.io/"
+"mathematics_in_lean/),\n"
 "an interactive textbook which you can read in your browser,\n"
 "and which explains how to work with many more mathematical concepts in Lean."
 msgstr ""
 
 #: Game.Levels.Power.L10FLT
-msgid "`xyzzy` is an ancient magic spell, believed to be the origin of the\n"
+msgid ""
+"`xyzzy` is an ancient magic spell, believed to be the origin of the\n"
 "modern word `sorry`. The game won't complain - or notice - if you\n"
 "prove anything with `xyzzy`."
 msgstr ""
 
 #: Game.Levels.Power.L10FLT
-msgid "For all naturals $a$ $b$ $c$ and $n$, we have\n"
+msgid ""
+"For all naturals $a$ $b$ $c$ and $n$, we have\n"
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 msgstr ""
 
 #: Game.Levels.Power.L10FLT
-msgid "Congratulations! You have proved Fermat's Last Theorem!\n"
+msgid ""
+"Congratulations! You have proved Fermat's Last Theorem!\n"
 "\n"
 "Either that, or you used magic..."
 msgstr ""
@@ -1465,7 +1614,8 @@ msgid "Power World"
 msgstr ""
 
 #: Game.Levels.Power
-msgid "This world introduces exponentiation. If you want to define `37 ^ n`\n"
+msgid ""
+"This world introduces exponentiation. If you want to define `37 ^ n`\n"
 "then, as always, you will need to know what `37 ^ 0` is, and\n"
 "what `37 ^ (succ d)` is, given only `37 ^ d`.\n"
 "\n"
@@ -1487,9 +1637,11 @@ msgid "The `exact` tactic"
 msgstr ""
 
 #: Game.Levels.Implication.L01exact
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
-"If the goal is a statement `P`, then `exact h` will close the goal if `h` is a proof of `P`.\n"
+"If the goal is a statement `P`, then `exact h` will close the goal if `h` is "
+"a proof of `P`.\n"
 "\n"
 "### Example\n"
 "\n"
@@ -1506,15 +1658,18 @@ msgid "## Summary\n"
 "for `exact h` to work, `h` has to be *exactly* a proof of the goal.\n"
 "`add_zero` is a proof of `∀ n, n + 0 = n` or, if you like,\n"
 "a proof of `? + 0 = ?` where `?` needs to be supplied by the user.\n"
-"This is in contrast to `rw` and `apply`, which will \\\"guess the inputs\\\"\n"
+"This is in contrast to `rw` and `apply`, which will \\\"guess the inputs\\"
+"\"\n"
 "if necessary. If the goal is `x + 0 = x` then `rw [add_zero]`\n"
 "and `rw [add_zero x]` will both change the goal to `x = x`,\n"
 "because `rw` guesses the input to the function `add_zero`."
 msgstr ""
 
 #: Game.Levels.Implication.L01exact
-msgid "In this world we'll learn how to prove theorems of the form $P\\implies Q$.\n"
-"In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ is true.\"\n"
+msgid ""
+"In this world we'll learn how to prove theorems of the form $P\\implies Q$.\n"
+"In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ "
+"is true.\"\n"
 "To do that we need to learn some more tactics.\n"
 "\n"
 "The `exact` tactic can be used to close a goal which is exactly one of\n"
@@ -1526,7 +1681,9 @@ msgid "Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$."
 msgstr ""
 
 #: Game.Levels.Implication.L01exact
-msgid "The goal in this level is one of our hypotheses. Solve the goal by executing `exact h1`."
+msgid ""
+"The goal in this level is one of our hypotheses. Solve the goal by executing "
+"`exact h1`."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
@@ -1534,7 +1691,8 @@ msgid "`exact` practice."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "If the goal is not *exactly* a hypothesis, we can sometimes\n"
+msgid ""
+"If the goal is not *exactly* a hypothesis, we can sometimes\n"
 "use rewrites to fix things up."
 msgstr ""
 
@@ -1543,25 +1701,30 @@ msgid "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "You can use `rw [zero_add] at «{h}»` to rewrite at `«{h}»` instead\n"
+msgid ""
+"You can use `rw [zero_add] at «{h}»` to rewrite at `«{h}»` instead\n"
 "of at the goal."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "Do that again!\n"
+msgid ""
+"Do that again!\n"
 "\n"
 "`rw [zero_add] at «{h}»` tries to fill in\n"
-"the arguments to `zero_add` (finding `«{x}»`) then it replaces all occurences of\n"
+"the arguments to `zero_add` (finding `«{x}»`) then it replaces all "
+"occurences of\n"
 "`0 + «{x}»` it finds. Therefor, it did not rewrite `0 + «{y}»`, yet."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "Now you could finish with `rw [«{h}»]` then `rfl`, but `exact «{h}»`\n"
+msgid ""
+"Now you could finish with `rw [«{h}»]` then `rfl`, but `exact «{h}»`\n"
 "does it in one line."
 msgstr ""
 
 #: Game.Levels.Implication.L02exact2
-msgid "Here's a two-line proof:\n"
+msgid ""
+"Here's a two-line proof:\n"
 "```\n"
 "repeat rw [zero_add] at h\n"
 "exact h\n"
@@ -1573,13 +1736,16 @@ msgid "The `apply` tactic."
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
-"If `t : P → Q` is a proof that $P \\implies Q$, and `h : P` is a proof of `P`,\n"
+"If `t : P → Q` is a proof that $P \\implies Q$, and `h : P` is a proof of "
+"`P`,\n"
 "then `apply t at h` will change `h` to a proof of `Q`. The idea is that if\n"
 "you know `P` is true, then you can deduce from `t` that `Q` is true.\n"
 "\n"
-"If the *goal* is `Q`, then `apply t` will \\\"argue backwards\\\" and change the\n"
+"If the *goal* is `Q`, then `apply t` will \\\"argue backwards\\\" and change "
+"the\n"
 "goal to `P`. The idea here is that if you want to prove `Q`, then by `t`\n"
 "it suffices to prove `P`, so you can reduce the goal to proving `P`.\n"
 "\n"
@@ -1599,12 +1765,14 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
-msgid "In this level one of our hypotheses is an *implication*. We can use this\n"
+msgid ""
+"In this level one of our hypotheses is an *implication*. We can use this\n"
 "hypothesis with the `apply` tactic."
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
-msgid "If $x=37$ and we know that $x=37\\implies y=42$ then we can deduce $y=42$."
+msgid ""
+"If $x=37$ and we know that $x=37\\implies y=42$ then we can deduce $y=42$."
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
@@ -1620,8 +1788,10 @@ msgid "succ_inj : the successor function is injective"
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "If `a` and `b` are numbers, then `succ_inj a b` is a proof\n"
-"that `succ a = succ b` implies `a = b`. Click on this theorem in the *Peano*\n"
+msgid ""
+"If `a` and `b` are numbers, then `succ_inj a b` is a proof\n"
+"that `succ a = succ b` implies `a = b`. Click on this theorem in the "
+"*Peano*\n"
 "tab for more information.\n"
 "\n"
 "Peano had this theorem as an axiom, but in Algorithm World\n"
@@ -1632,7 +1802,8 @@ msgid "If `a` and `b` are numbers, then `succ_inj a b` is a proof\n"
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "# Statement\n"
+msgid ""
+"# Statement\n"
 "\n"
 "If $a$ and $b$ are numbers, then\n"
 "`succ_inj a b` is the proof that\n"
@@ -1649,31 +1820,36 @@ msgid "# Statement\n"
 "You can think of `succ_inj` itself as a proof; it is the proof\n"
 "that `succ` is an injective function. In other words,\n"
 "`succ_inj` is a proof of\n"
-"$\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n"
+"$\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = "
+"\\operatorname{succ}(b)) \\implies a=b$.\n"
 "\n"
 "`succ_inj` was postulated as an axiom by Peano, but\n"
 "in Lean it can be proved using `pred`, a mathematically\n"
 "pathological function."
 msgstr ""
 
-#: Game.Levels.Implication.L04succ_inj
+#: Game.Levels.Implication.L04succ_inj Game.Levels.Implication.L05succ_inj2
 msgid "If $x+1=4$ then $x=3$."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "Let's first get `h` into the form `succ x = succ 3` so we can\n"
+msgid ""
+"Let's first get `h` into the form `succ x = succ 3` so we can\n"
 "apply `succ_inj`. First execute `rw [four_eq_succ_three] at h`\n"
 "to change the 4 on the right hand side."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "Now rewrite `succ_eq_add_one` backwards at `h`\n"
+msgid ""
+"Now rewrite `succ_eq_add_one` backwards at `h`\n"
 "to get the right hand side."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "You can put a `←` in front of any theorem provided to `rw` to rewrite\n"
-"the other way around. Look at the docs for `rw` for an explanation. Type `←` with `\\l`."
+msgid ""
+"You can put a `←` in front of any theorem provided to `rw` to rewrite\n"
+"the other way around. Look at the docs for `rw` for an explanation. Type `←` "
+"with `\\l`."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
@@ -1681,7 +1857,8 @@ msgid "Concretely: `rw [← succ_eq_add_one] at h`."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "Now let's `apply` our new theorem. Execute `apply succ_inj at h`\n"
+msgid ""
+"Now let's `apply` our new theorem. Execute `apply succ_inj at h`\n"
 "to change `h` to a proof of `x = 3`."
 msgstr ""
 
@@ -1690,7 +1867,9 @@ msgid "Now finish in one line."
 msgstr ""
 
 #: Game.Levels.Implication.L04succ_inj
-msgid "And now we've deduced what we wanted to prove: the goal is one of our assumptions.\n"
+msgid ""
+"And now we've deduced what we wanted to prove: the goal is one of our "
+"assumptions.\n"
 "Finish the level with `exact h`."
 msgstr ""
 
@@ -1703,7 +1882,8 @@ msgid "Arguing backwards"
 msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
-msgid "In the last level, we manipulated the hypothesis `x + 1 = 4`\n"
+msgid ""
+"In the last level, we manipulated the hypothesis `x + 1 = 4`\n"
 "  until it became the goal `x = 3`. In this level we'll manipulate\n"
 "  the goal until it becomes our hypothesis! In other words, we\n"
 "  will \"argue backwards\". The `apply` tactic can do this too.\n"
@@ -1712,20 +1892,18 @@ msgid "In the last level, we manipulated the hypothesis `x + 1 = 4`\n"
 msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
-msgid "If $x+1=4$ then $x=3$."
-msgstr ""
-
-#: Game.Levels.Implication.L05succ_inj2
 msgid "Start with `apply succ_inj` to apply `succ_inj` to the *goal*."
 msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
-msgid "Applying a proof of $P\\implies Q$ to the *goal* changes $Q$ to $P$.\n"
+msgid ""
+"Applying a proof of $P\\implies Q$ to the *goal* changes $Q$ to $P$.\n"
 "Now try `rw [succ_eq_add_one]` to make the goal more like the hypothesis."
 msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
-msgid "Now rewrite `four_eq_succ_three` backwards to make the goal\n"
+msgid ""
+"Now rewrite `four_eq_succ_three` backwards to make the goal\n"
 "equal to the hypothesis."
 msgstr ""
 
@@ -1734,10 +1912,12 @@ msgid "You can now finish with `exact h`."
 msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
-msgid "Many people find `apply t at h` easy, but some find `apply t` confusing.\n"
+msgid ""
+"Many people find `apply t at h` easy, but some find `apply t` confusing.\n"
 "If you find it confusing, then just argue forwards.\n"
 "\n"
-"You can read more about the `apply` tactic in its documentation, which you can view by\n"
+"You can read more about the `apply` tactic in its documentation, which you "
+"can view by\n"
 "clicking on the tactic in the list on the right."
 msgstr ""
 
@@ -1746,23 +1926,29 @@ msgid "intro"
 msgstr ""
 
 #: Game.Levels.Implication.L06intro
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
-"If the goal is `P → Q`, then `intro h` will introduce `h : P` as a hypothesis,\n"
-"and change the goal to `Q`. Mathematically, it says that to prove $P \\implies Q$,\n"
+"If the goal is `P → Q`, then `intro h` will introduce `h : P` as a "
+"hypothesis,\n"
+"and change the goal to `Q`. Mathematically, it says that to prove $P "
+"\\implies Q$,\n"
 "we can assume $P$ and then prove $Q$.\n"
 "\n"
 "### Example:\n"
 "\n"
-"If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1 \\implies x=y$)\n"
+"If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1 "
+"\\implies x=y$)\n"
 "then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal\n"
 "will change to $x=y$."
 msgstr ""
 
 #: Game.Levels.Implication.L06intro
-msgid "We have seen how to `apply` theorems and assumptions\n"
+msgid ""
+"We have seen how to `apply` theorems and assumptions\n"
 "of the form `P → Q`. But what if our *goal* is of the form `P → Q`?\n"
-"To prove this goal, we need to know how to say \"let's assume `P` and deduce `Q`\"\n"
+"To prove this goal, we need to know how to say \"let's assume `P` and deduce "
+"`Q`\"\n"
 "in Lean. We do this with the `intro` tactic."
 msgstr ""
 
@@ -1783,7 +1969,9 @@ msgid "intro practice"
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
-msgid "Let's see if you can use the tactics we've learnt to prove $x+1=y+1\\implies x=y$.\n"
+msgid ""
+"Let's see if you can use the tactics we've learnt to prove $x+1=y+1\\implies "
+"x=y$.\n"
 "Try this one by yourself; if you need help then click on \"Show more help!\"."
 msgstr ""
 
@@ -1796,7 +1984,8 @@ msgid "Start with `intro h` to assume the hypothesis."
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
-msgid "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
+msgid ""
+"Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
 "change `succ x = succ y`."
 msgstr ""
 
@@ -1809,7 +1998,8 @@ msgid "Now `rw [h]` then `rfl` works, but `exact h` is quicker."
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
-msgid "Here's a completely backwards proof:\n"
+msgid ""
+"Here's a completely backwards proof:\n"
 "```\n"
 "intro h\n"
 "apply succ_inj\n"
@@ -1823,7 +2013,8 @@ msgid "≠"
 msgstr ""
 
 #: Game.Levels.Implication.L08ne
-msgid "We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n"
+msgid ""
+"We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n"
 "definition of `≠`. In Lean, `a ≠ b` is *notation* for `a = b → False`.\n"
 "Here `False` is a generic false proposition, and `→` is Lean's notation\n"
 "for \"implies\". In logic we learn\n"
@@ -1831,9 +2022,11 @@ msgid "We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n
 "`X → False` is the logical opposite of `X`.\n"
 "\n"
 "Even though `a ≠ b` does not look like an implication,\n"
-"you should treat it as an implication. The next two levels will show you how.\n"
+"you should treat it as an implication. The next two levels will show you "
+"how.\n"
 "\n"
-"`False` is a goal which you cannot deduce from a consistent set of assumptions!\n"
+"`False` is a goal which you cannot deduce from a consistent set of "
+"assumptions!\n"
 "So if your goal is `False` then you had better hope that your hypotheses\n"
 "are contradictory, which they are in this level."
 msgstr ""
@@ -1843,12 +2036,14 @@ msgid "If $x=y$ and $x \\neq y$ then we can deduce a contradiction."
 msgstr ""
 
 #: Game.Levels.Implication.L08ne
-msgid "Remember that `h2` is a proof of `x = y → False`. Try\n"
+msgid ""
+"Remember that `h2` is a proof of `x = y → False`. Try\n"
 "`apply`ing `h2` either `at h1` or directly to the goal."
 msgstr ""
 
 #: Game.Levels.Implication.L08ne
-msgid "`a ≠ b` is *notation* for `(a = b) → False`.\n"
+msgid ""
+"`a ≠ b` is *notation* for `(a = b) → False`.\n"
 "\n"
 "The reason this is mathematically\n"
 "valid is that if `P` is a true-false statement then `P → False`\n"
@@ -1872,7 +2067,8 @@ msgid "zero_ne_succ"
 msgstr ""
 
 #: Game.Levels.Implication.L09zero_ne_succ
-msgid "`zero_ne_succ n` is the proof that `0 ≠ succ n`.\n"
+msgid ""
+"`zero_ne_succ n` is the proof that `0 ≠ succ n`.\n"
 "\n"
 "In Lean, `a ≠ b` is *defined to mean* `a = b → False`. Hence\n"
 "`zero_ne_succ n` is really a proof of `0 = succ n → False`.\n"
@@ -1881,7 +2077,8 @@ msgid "`zero_ne_succ n` is the proof that `0 ≠ succ n`.\n"
 msgstr ""
 
 #: Game.Levels.Implication.L09zero_ne_succ
-msgid "As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to\n"
+msgid ""
+"As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to\n"
 "introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.\n"
 "To learn about this result, click on it in the list of lemmas on the right."
 msgstr ""
@@ -1907,6 +2104,7 @@ msgid "Now you can `apply zero_ne_succ at h`."
 msgstr ""
 
 #: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.AdvAddition.L01add_right_cancel
 msgid "Nice!"
 msgstr ""
 
@@ -1915,7 +2113,8 @@ msgid "1 ≠ 0"
 msgstr ""
 
 #: Game.Levels.Implication.L10one_ne_zero
-msgid "We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what\n"
+msgid ""
+"We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what\n"
 "if we have a hypothesis `succ n = 0`? It's the wrong way around!\n"
 "\n"
 "The `symm` tactic changes a goal `x = y` to `y = x`, and a goal `x ≠ y`\n"
@@ -1925,7 +2124,8 @@ msgid "We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what
 msgstr ""
 
 #: Game.Levels.Implication.L10one_ne_zero
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "The `symm` tactic will change a goal or hypothesis of\n"
 "the form `X = Y` to `Y = X`. It will also work on `X ≠ Y`\n"
@@ -1949,7 +2149,8 @@ msgid "$1\\neq0$."
 msgstr ""
 
 #: Game.Levels.Implication.L10one_ne_zero
-msgid "What do you think of this two-liner:\n"
+msgid ""
+"What do you think of this two-liner:\n"
 "```\n"
 "symm\n"
 "exact zero_ne_one\n"
@@ -1964,7 +2165,9 @@ msgid "2 + 2 ≠ 5"
 msgstr ""
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
-msgid "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.\n"
+msgid ""
+"2 + 2 ≠ 5 is boring to prove in full, given only the tools we have "
+"currently.\n"
 "To make it a bit less painful, I have unfolded all of the numerals for you.\n"
 "See if you can use `zero_ne_succ` and `succ_inj` to prove this."
 msgstr ""
@@ -1974,7 +2177,8 @@ msgid "$2+2≠5$."
 msgstr ""
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
-msgid "Here's my proof:\n"
+msgid ""
+"Here's my proof:\n"
 "```\n"
 "intro h\n"
 "rw [add_succ, add_succ, add_zero] at h\n"
@@ -1983,12 +2187,15 @@ msgid "Here's my proof:\n"
 "exact h\n"
 "```\n"
 "\n"
-"Even though Lean is a theorem prover, right now it's pretty clear that we have not\n"
+"Even though Lean is a theorem prover, right now it's pretty clear that we "
+"have not\n"
 "developed enough material to make it an adequate calculator. In Algorithm\n"
 "World, a more computer-sciency world, we will develop machinery which makes\n"
 "questions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.\n"
-"Alternatively you can do more mathematics in Advanced Addition World, where we prove\n"
-"the lemmas needed to get a working theory of inequalities. Click \"Leave World\" and\n"
+"Alternatively you can do more mathematics in Advanced Addition World, where "
+"we prove\n"
+"the lemmas needed to get a working theory of inequalities. Click \"Leave "
+"World\" and\n"
 "decide your route."
 msgstr ""
 
@@ -1997,7 +2204,8 @@ msgid "Implication World"
 msgstr ""
 
 #: Game.Levels.Implication
-msgid "We've proved that $2+2=4$; in Implication World we'll learn\n"
+msgid ""
+"We've proved that $2+2=4$; in Implication World we'll learn\n"
 "how to prove $2+2\\neq 5$.\n"
 "\n"
 "In Addition World we proved *equalities* like $x + y = y + x$.\n"
@@ -2020,8 +2228,10 @@ msgid "`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L01add_left_comm
-msgid "Having to rearrange variables manually using commutativity and\n"
-"associativity is very tedious. We start by reminding you of this. `add_left_comm`\n"
+msgid ""
+"Having to rearrange variables manually using commutativity and\n"
+"associativity is very tedious. We start by reminding you of this. "
+"`add_left_comm`\n"
 "is a key component in the first algorithm which we'll explain, but we need\n"
 "to prove it manually.\n"
 "\n"
@@ -2039,7 +2249,8 @@ msgid "making life easier"
 msgstr ""
 
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "In some later worlds, we're going to see some much nastier levels,\n"
+msgid ""
+"In some later worlds, we're going to see some much nastier levels,\n"
 "like `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`.\n"
 "Brackets need to be moved around, and variables need to be swapped.\n"
 "\n"
@@ -2052,16 +2263,19 @@ msgid "In some later worlds, we're going to see some much nastier levels,\n"
 msgstr ""
 
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "If $a, b$, $c$ and $d$ are numbers, we have\n"
+msgid ""
+"If $a, b$, $c$ and $d$ are numbers, we have\n"
 "$(a + b) + (c + d) = ((a + c) + d) + b.$"
 msgstr ""
 
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "Start with `repeat rw [add_assoc]` to push all the brackets to the right."
+msgid ""
+"Start with `repeat rw [add_assoc]` to push all the brackets to the right."
 msgstr ""
 
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "Now use `rw [add_left_comm b c]` to switch `b` and `c` on the left\n"
+msgid ""
+"Now use `rw [add_left_comm b c]` to switch `b` and `c` on the left\n"
 "hand side."
 msgstr ""
 
@@ -2074,7 +2288,8 @@ msgid "`rw [add_comm b d]`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "So that's the algorithm: now let's use automation to perform it\n"
+msgid ""
+"So that's the algorithm: now let's use automation to perform it\n"
 "automatically."
 msgstr ""
 
@@ -2083,29 +2298,38 @@ msgid "making life simple"
 msgstr ""
 
 #: Game.Levels.Algorithm.L03add_algo2
-msgid "# Overview\n"
+msgid ""
+"# Overview\n"
 "\n"
 "Lean's simplifier, `simp`, will rewrite every lemma\n"
-"tagged with `simp` and every lemma fed to it by the user, as much as it can.\n"
-"Furthermore, it will attempt to order variables into an internal order if fed\n"
+"tagged with `simp` and every lemma fed to it by the user, as much as it "
+"can.\n"
+"Furthermore, it will attempt to order variables into an internal order if "
+"fed\n"
 "lemmas such as `add_comm`, so that it does not go into an infinite loop."
 msgstr ""
 
 #: Game.Levels.Algorithm.L03add_algo2
-msgid "Lean's simplifier, `simp`, is \"`rw` on steroids\". It will rewrite every lemma\n"
-"tagged with `simp` and every lemma fed to it by the user, as much as it can.\n"
+msgid ""
+"Lean's simplifier, `simp`, is \"`rw` on steroids\". It will rewrite every "
+"lemma\n"
+"tagged with `simp` and every lemma fed to it by the user, as much as it "
+"can.\n"
 "\n"
 "This level is not a level which you want to solve by hand.\n"
 "Get the simplifier to solve it for you."
 msgstr ""
 
-#: Game.Levels.Algorithm.L03add_algo2
-msgid "If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
+#: Game.Levels.Algorithm.L03add_algo2 Game.Levels.Algorithm.L04add_algo3
+msgid ""
+"If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
 "$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
 msgstr ""
 
 #: Game.Levels.Algorithm.L03add_algo2
-msgid "Solve this level in one line with `simp only [add_assoc, add_left_comm, add_comm]`"
+msgid ""
+"Solve this level in one line with `simp only [add_assoc, add_left_comm, "
+"add_comm]`"
 msgstr ""
 
 #: Game.Levels.Algorithm.L03add_algo2
@@ -2117,14 +2341,16 @@ msgid "the simplest approach"
 msgstr ""
 
 #: Game.Levels.Algorithm.L04add_algo3
-msgid "# Overview\n"
+msgid ""
+"# Overview\n"
 "\n"
 "Our home-made tactic `simp_add` will solve arbitrary goals of\n"
 "the form `a + (b + c) + (d + e) = e + (d + (c + b)) + a`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L04add_algo3
-msgid "You can make your own tactics in Lean.\n"
+msgid ""
+"You can make your own tactics in Lean.\n"
 "This code here\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
@@ -2136,12 +2362,8 @@ msgid "You can make your own tactics in Lean.\n"
 msgstr ""
 
 #: Game.Levels.Algorithm.L04add_algo3
-msgid "If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
-"$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
-msgstr ""
-
-#: Game.Levels.Algorithm.L04add_algo3
-msgid "Let's now move on to a more efficient approach to questions\n"
+msgid ""
+"Let's now move on to a more efficient approach to questions\n"
 "involving numerals, such as `20 + 20 = 40`."
 msgstr ""
 
@@ -2150,7 +2372,9 @@ msgid "pred"
 msgstr ""
 
 #: Game.Levels.Algorithm.L05pred
-msgid "We now start work on an algorithm to do addition more efficiently. Recall that\n"
+msgid ""
+"We now start work on an algorithm to do addition more efficiently. Recall "
+"that\n"
 "we defined addition by recursion, saying what it did on `0` and successors.\n"
 "It is an axiom of Lean that recursion is a valid\n"
 "way to define functions from types such as the naturals.\n"
@@ -2163,10 +2387,13 @@ msgid "We now start work on an algorithm to do addition more efficiently. Recall
 "pred (succ n) := n\n"
 "```\n"
 "\n"
-"We cannot subtract one from 0, so we just return a junk value. As well as this\n"
-"definition, we also create a new lemma `pred_succ`, which says that `pred (succ n) = n`.\n"
+"We cannot subtract one from 0, so we just return a junk value. As well as "
+"this\n"
+"definition, we also create a new lemma `pred_succ`, which says that `pred "
+"(succ n) = n`.\n"
 "Let's use this lemma to prove `succ_inj`, the theorem which\n"
-"Peano assumed as an axiom and which we have already used extensively without justification."
+"Peano assumed as an axiom and which we have already used extensively without "
+"justification."
 msgstr ""
 
 #: Game.Levels.Algorithm.L05pred
@@ -2182,7 +2409,8 @@ msgid "Start with `rw [← pred_succ a]` and take it from there."
 msgstr ""
 
 #: Game.Levels.Algorithm.L05pred
-msgid "Nice! You've proved `succ_inj`!\n"
+msgid ""
+"Nice! You've proved `succ_inj`!\n"
 "Let's now prove Peano's other axiom, that successors can't be $0$."
 msgstr ""
 
@@ -2191,21 +2419,27 @@ msgid "is_zero"
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
-msgid "We define a function `is_zero` thus:\n"
+msgid ""
+"We define a function `is_zero` thus:\n"
 "\n"
 "```\n"
 "is_zero 0 := True\n"
 "is_zero (succ n) := False\n"
 "```\n"
 "\n"
-"We also create two lemmas, `is_zero_zero` and `is_zero_succ n`, saying that `is_zero 0 = True`\n"
-"and `is_zero (succ n) = False`. Let's use these lemmas to prove `succ_ne_zero`, Peano's\n"
-"Last Axiom. Actually, we have been using `zero_ne_succ` before, but it's handy to have\n"
-"this opposite version too, which can be proved in the same way. Note: you can\n"
+"We also create two lemmas, `is_zero_zero` and `is_zero_succ n`, saying that "
+"`is_zero 0 = True`\n"
+"and `is_zero (succ n) = False`. Let's use these lemmas to prove "
+"`succ_ne_zero`, Peano's\n"
+"Last Axiom. Actually, we have been using `zero_ne_succ` before, but it's "
+"handy to have\n"
+"this opposite version too, which can be proved in the same way. Note: you "
+"can\n"
 "cheat here by using `zero_ne_succ` but the point of this world is to show\n"
 "you how to *prove* results like that.\n"
 "\n"
-"If you can turn your goal into `True`, then the `trivial` tactic will solve it."
+"If you can turn your goal into `True`, then the `trivial` tactic will solve "
+"it."
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
@@ -2221,7 +2455,8 @@ msgid "`succ_ne_zero a` is a proof of `succ a ≠ 0`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "\n"
 "`trivial` will solve the goal `True`."
 msgstr ""
@@ -2231,17 +2466,20 @@ msgid "$\\operatorname{succ}(a) \\neq 0$."
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
-msgid "Start with `intro h` (remembering that `X ≠ Y` is just notation\n"
+msgid ""
+"Start with `intro h` (remembering that `X ≠ Y` is just notation\n"
 "for `X = Y → False`)."
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
-msgid "We're going to change that `False` into `True`. Start by changing it into\n"
+msgid ""
+"We're going to change that `False` into `True`. Start by changing it into\n"
 "`is_zero (succ a)` by executing `rw [← is_zero_succ a]`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L06is_zero
-msgid "See if you can take it from here. Look at the new lemmas and tactic\n"
+msgid ""
+"See if you can take it from here. Look at the new lemmas and tactic\n"
 "available on the right."
 msgstr ""
 
@@ -2250,8 +2488,10 @@ msgid "An algorithm for equality"
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-msgid "Here we begin to\n"
-"develop an algorithm which, given two naturals `a` and `b`, returns the answer\n"
+msgid ""
+"Here we begin to\n"
+"develop an algorithm which, given two naturals `a` and `b`, returns the "
+"answer\n"
 "to \"does `a = b`?\"\n"
 "\n"
 "Here is the algorithm. First note that `a` and `b` are numbers, and hence\n"
@@ -2261,17 +2501,22 @@ msgid "Here we begin to\n"
 "\n"
 "*) If one is `0` and the other is `succ n`, return \"no\".\n"
 "\n"
-"*) If `a = succ m` and `b = succ n`, then return the answer to \"does `m = n`?\"\n"
+"*) If `a = succ m` and `b = succ n`, then return the answer to \"does `m = "
+"n`?\"\n"
 "\n"
-"Our job now is to *prove* that this algorithm always gives the correct answer. The proof that\n"
-"`0 = 0` is `rfl`. The proof that `0 ≠ succ n` is `zero_ne_succ n`, and the proof\n"
+"Our job now is to *prove* that this algorithm always gives the correct "
+"answer. The proof that\n"
+"`0 = 0` is `rfl`. The proof that `0 ≠ succ n` is `zero_ne_succ n`, and the "
+"proof\n"
 "that `succ m ≠ 0` is `succ_ne_zero m`. The proof that if `h : m = n` then\n"
-"`succ m = succ n` is `rw [h]` and then `rfl`. This level is a proof of the one\n"
+"`succ m = succ n` is `rw [h]` and then `rfl`. This level is a proof of the "
+"one\n"
 "remaining job we have to do: if `a ≠ b` then `succ a ≠ succ b`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "\n"
 "If you have a hypothesis\n"
 "\n"
@@ -2281,7 +2526,8 @@ msgid "# Summary\n"
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\\"contrapositive\\\":\n"
+"then `contrapose! h` replaces the set-up with its so-called \\"
+"\"contrapositive\\\":\n"
 "a hypothesis\n"
 "\n"
 "`h : c = d`\n"
@@ -2296,16 +2542,20 @@ msgid "`succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-msgid "If $a \\neq b$ then $\\operatorname{succ}(a) \\neq\\operatorname{succ}(b)$."
+msgid ""
+"If $a \\neq b$ then $\\operatorname{succ}(a) \\neq\\operatorname{succ}(b)$."
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-msgid "Start with `contrapose! h`, to change the goal into its\n"
-"contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = n`."
+msgid ""
+"Start with `contrapose! h`, to change the goal into its\n"
+"contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = "
+"n`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-msgid "Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
+msgid ""
+"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
 "take you back to where you started!)"
 msgstr ""
 
@@ -2314,20 +2564,25 @@ msgid "decide"
 msgstr ""
 
 #: Game.Levels.Algorithm.L08decide
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "\n"
 "`decide` will attempt to solve a goal if it can find an algorithm which it\n"
 "can run to solve it.\n"
 "\n"
 "## Example\n"
 "\n"
-"A term of type `DecidableEq ℕ` is an algorithm to decide whether two naturals\n"
-"are equal or different. Hence, once this term is made and made into an `instance`,\n"
+"A term of type `DecidableEq ℕ` is an algorithm to decide whether two "
+"naturals\n"
+"are equal or different. Hence, once this term is made and made into an "
+"`instance`,\n"
 "the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L08decide
-msgid "Implementing the algorithm for equality of naturals, and the proof that it is correct,\n"
+msgid ""
+"Implementing the algorithm for equality of naturals, and the proof that it "
+"is correct,\n"
 "looks like this:\n"
 "\n"
 "```\n"
@@ -2363,7 +2618,8 @@ msgid "$20+20=40$."
 msgstr ""
 
 #: Game.Levels.Algorithm.L08decide
-msgid "You can read more about the `decide` tactic by clicking\n"
+msgid ""
+"You can read more about the `decide` tactic by clicking\n"
 "on it in the top right."
 msgstr ""
 
@@ -2372,7 +2628,9 @@ msgid "decide again"
 msgstr ""
 
 #: Game.Levels.Algorithm.L09decide2
-msgid "We gave a pretty unsatisfactory proof of `2 + 2 ≠ 5` earlier on; now give a nicer one."
+msgid ""
+"We gave a pretty unsatisfactory proof of `2 + 2 ≠ 5` earlier on; now give a "
+"nicer one."
 msgstr ""
 
 #: Game.Levels.Algorithm.L09decide2
@@ -2380,7 +2638,8 @@ msgid "$2+2 \\neq 5.$"
 msgstr ""
 
 #: Game.Levels.Algorithm.L09decide2
-msgid "Congratulations! You've finished Algorithm World. These algorithms\n"
+msgid ""
+"Congratulations! You've finished Algorithm World. These algorithms\n"
 "will be helpful for you in Even-Odd World."
 msgstr ""
 
@@ -2389,7 +2648,9 @@ msgid "Algorithm World"
 msgstr ""
 
 #: Game.Levels.Algorithm
-msgid "Proofs like $2+2=4$ and $a+b+c+d+e=e+d+c+b+a$ are very tedious to do by hand.\n"
+msgid ""
+"Proofs like $2+2=4$ and $a+b+c+d+e=e+d+c+b+a$ are very tedious to do by "
+"hand.\n"
 "In Algorithm World we learn how to get the computer to do them for us.\n"
 "\n"
 "Click on \"Start\" to proceed."
@@ -2404,7 +2665,8 @@ msgid "`add_right_cancel a b n` is the theorem that $a+n=b+n \\implies a=b.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
-msgid "In this world I will mostly leave you on your own.\n"
+msgid ""
+"In this world I will mostly leave you on your own.\n"
 "\n"
 "`add_right_cancel a b n` is the theorem that $a+n=b+n\\implies a=b$."
 msgstr ""
@@ -2417,10 +2679,6 @@ msgstr ""
 msgid "Start with induction on `n`."
 msgstr ""
 
-#: Game.Levels.AdvAddition.L01add_right_cancel
-msgid "Nice!"
-msgstr ""
-
 #: Game.Levels.AdvAddition.L02add_left_cancel
 msgid "add_left_cancel"
 msgstr ""
@@ -2430,8 +2688,10 @@ msgid "`add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
-msgid "`add_left_cancel a b n` is the theorem that $n+a=n+b\\implies a=b$.\n"
-"You can prove it by induction on `n` or you can deduce it from `add_right_cancel`."
+msgid ""
+"`add_left_cancel a b n` is the theorem that $n+a=n+b\\implies a=b$.\n"
+"You can prove it by induction on `n` or you can deduce it from "
+"`add_right_cancel`."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
@@ -2439,7 +2699,8 @@ msgid "$n+a=n+b\\implies a=b$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
-msgid "How about this for a proof:\n"
+msgid ""
+"How about this for a proof:\n"
 "```\n"
 "repeat rw [add_comm n]\n"
 "exact add_right_cancel a b n\n"
@@ -2463,9 +2724,12 @@ msgid "$x + y = y\\implies x=0.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
-msgid "Did you use induction on `y`?\n"
-"Here's a two-line proof of `add_left_eq_self` which uses `add_right_cancel`.\n"
-"If you want to inspect it, you can go into editor mode by clicking `</>` in the top right\n"
+msgid ""
+"Did you use induction on `y`?\n"
+"Here's a two-line proof of `add_left_eq_self` which uses "
+"`add_right_cancel`.\n"
+"If you want to inspect it, you can go into editor mode by clicking `</>` in "
+"the top right\n"
 "and then just cut and paste the proof and move your cursor around it\n"
 "to see the hypotheses and goal at any given point\n"
 "(although you'll lose your own proof this way). Click `>_` to get\n"
@@ -2485,7 +2749,8 @@ msgid "`add_right_eq_self x y` is the theorem that $x + y = x \\implies y=0.$"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
-msgid "`add_right_eq_self x y` is the theorem that $x + y = x\\implies y=0.$\n"
+msgid ""
+"`add_right_eq_self x y` is the theorem that $x + y = x\\implies y=0.$\n"
 "Two ways to do it spring to mind; I'll mention them when you've solved it."
 msgstr ""
 
@@ -2494,7 +2759,8 @@ msgid "$x+y=x\\implies y=0$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
-msgid "Here's a proof using `add_left_eq_self`:\n"
+msgid ""
+"Here's a proof using `add_left_eq_self`:\n"
 "```\n"
 "rw [add_comm]\n"
 "intro h\n"
@@ -2530,57 +2796,78 @@ msgid "add_right_eq_zero"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-msgid "The next result we'll need in `≤` World is that if `a + b = 0` then `a = 0` and `b = 0`.\n"
+msgid ""
+"The next result we'll need in `≤` World is that if `a + b = 0` then `a = 0` "
+"and `b = 0`.\n"
 "Let's prove one of these facts in this level, and the other in the next.\n"
 "\n"
 "## A new tactic: `cases`\n"
 "\n"
-"The `cases` tactic will split an object or hypothesis up into the possible ways\n"
+"The `cases` tactic will split an object or hypothesis up into the possible "
+"ways\n"
 "that it could have been created.\n"
 "\n"
-"For example, sometimes you want to deal with the two cases `b = 0` and `b = succ d` separately,\n"
-"but don't need the inductive hypothesis `hd` that comes with `induction b with d hd`.\n"
-"In this situation you can use `cases b with d` instead. There are two ways to make\n"
-"a number: it's either zero or a successor. So you will end up with two goals, one\n"
+"For example, sometimes you want to deal with the two cases `b = 0` and `b = "
+"succ d` separately,\n"
+"but don't need the inductive hypothesis `hd` that comes with `induction b "
+"with d hd`.\n"
+"In this situation you can use `cases b with d` instead. There are two ways "
+"to make\n"
+"a number: it's either zero or a successor. So you will end up with two "
+"goals, one\n"
 "with `b = 0` and one with `b = succ d`.\n"
 "\n"
-"Another example: if you have a hypothesis `h : False` then you are done, because a false statement implies\n"
-"any statement. Here `cases h` will close the goal, because there are *no* ways to\n"
-"make a proof of `False`! So you will end up with no goals, meaning you have proved everything."
+"Another example: if you have a hypothesis `h : False` then you are done, "
+"because a false statement implies\n"
+"any statement. Here `cases h` will close the goal, because there are *no* "
+"ways to\n"
+"make a proof of `False`! So you will end up with no goals, meaning you have "
+"proved everything."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
-"If `n` is a number, then `cases n with d` will break the goal into two goals,\n"
+"If `n` is a number, then `cases n with d` will break the goal into two "
+"goals,\n"
 "one with `n = 0` and the other with `n = succ d`.\n"
 "\n"
-"If `h` is a proof (for example a hypothesis), then `cases h with...` will break the\n"
+"If `h` is a proof (for example a hypothesis), then `cases h with...` will "
+"break the\n"
 "proof up into the pieces used to prove it.\n"
 "\n"
 "## Example\n"
 "\n"
-"If `n : ℕ` is a number, then `cases n with d` will break the goal into two goals,\n"
-"one with `n` replaced by 0 and the other with `n` replaced by `succ d`. This\n"
-"corresponds to the mathematical idea that every natural number is either `0`\n"
+"If `n : ℕ` is a number, then `cases n with d` will break the goal into two "
+"goals,\n"
+"one with `n` replaced by 0 and the other with `n` replaced by `succ d`. "
+"This\n"
+"corresponds to the mathematical idea that every natural number is either "
+"`0`\n"
 "or a successor.\n"
 "\n"
 "## Example\n"
 "\n"
-"If `h : P ∨ Q` is a hypothesis, then `cases h with hp hq` will turn one goal\n"
+"If `h : P ∨ Q` is a hypothesis, then `cases h with hp hq` will turn one "
+"goal\n"
 "into two goals, one with a hypothesis `hp : P` and the other with a\n"
 "hypothesis `hq : Q`.\n"
 "\n"
 "## Example\n"
 "\n"
-"If `h : False` is a hypothesis, then `cases h` will turn one goal into no goals,\n"
-"because there are no ways to make a proof of `False`! And if you have no goals left,\n"
+"If `h : False` is a hypothesis, then `cases h` will turn one goal into no "
+"goals,\n"
+"because there are no ways to make a proof of `False`! And if you have no "
+"goals left,\n"
 "you have finished the level.\n"
 "\n"
 "## Example\n"
 "\n"
-"If `h : a ≤ b` is a hypothesis, then `cases h with c hc` will create a new number `c`\n"
-"and a proof `hc : b = a + c`. This is because the *definition* of `a ≤ b` is\n"
+"If `h : a ≤ b` is a hypothesis, then `cases h with c hc` will create a new "
+"number `c`\n"
+"and a proof `hc : b = a + c`. This is because the *definition* of `a ≤ b` "
+"is\n"
 "`∃ c, b = a + c`."
 msgstr ""
 
@@ -2593,7 +2880,8 @@ msgid "If $a+b=0$ then $a=0$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-msgid "Here we want to deal with the cases `b = 0` and `b ≠ 0` separately,\n"
+msgid ""
+"Here we want to deal with the cases `b = 0` and `b ≠ 0` separately,\n"
 "so start with `cases b with d`."
 msgstr ""
 
@@ -2606,7 +2894,9 @@ msgid "add_left_eq_zero"
 msgstr ""
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
-msgid "You can just mimic the previous proof to do this one -- or you can figure out a way\n"
+msgid ""
+"You can just mimic the previous proof to do this one -- or you can figure "
+"out a way\n"
 "of using it."
 msgstr ""
 
@@ -2619,7 +2909,8 @@ msgid "If $a+b=0$ then $b=0$."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
-msgid "How about this for a proof:\n"
+msgid ""
+"How about this for a proof:\n"
 "\n"
 "```\n"
 "rw [add_comm]\n"
@@ -2635,7 +2926,8 @@ msgid "Advanced Addition World"
 msgstr ""
 
 #: Game.Levels.AdvAddition
-msgid "In Advanced Addition World we will prove some basic\n"
+msgid ""
+"In Advanced Addition World we will prove some basic\n"
 "addition facts such as $x+y=x\\implies y=0$. The theorems\n"
 "proved in this world will be used to build\n"
 "a theory of inequalities in `≤` World.\n"
@@ -2648,19 +2940,22 @@ msgid "The `use` tactic"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
-msgid "## Summary\n"
+msgid ""
+"## Summary\n"
 "\n"
 "The `use` tactic makes progress with goals which claim something *exists*.\n"
 "If the goal claims that some `x` exists with some property, and you know\n"
 "that `x = 37` will work, then `use 37` will make progress.\n"
 "\n"
-"Because `a ≤ b` is notation for \\\"there exists `c` such that `b = a + c`\\\",\n"
+"Because `a ≤ b` is notation for \\\"there exists `c` such that `b = a + c`\\"
+"\",\n"
 "you can make progress on goals of the form `a ≤ b` by `use`ing the\n"
 "number which is morally `b - a`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
-msgid "`a ≤ b` is *notation* for `∃ c, b = a + c`.\n"
+msgid ""
+"`a ≤ b` is *notation* for `∃ c, b = a + c`.\n"
 "\n"
 "Because this game doesn't have negative numbers, this definition\n"
 "is mathematically valid.\n"
@@ -2671,7 +2966,8 @@ msgid "`a ≤ b` is *notation* for `∃ c, b = a + c`.\n"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
-msgid "`a ≤ b` is *notation* for `∃ c, b = a + c`. This \"backwards E\"\n"
+msgid ""
+"`a ≤ b` is *notation* for `∃ c, b = a + c`. This \"backwards E\"\n"
 "means \"there exists\". So `a ≤ b` means that there exists\n"
 "a number `c` such that `b = a + c`. This definition works\n"
 "because there are no negative numbers in this game.\n"
@@ -2681,7 +2977,8 @@ msgid "`a ≤ b` is *notation* for `∃ c, b = a + c`. This \"backwards E\"\n"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
-msgid "`le_refl x` is a proof of `x ≤ x`.\n"
+msgid ""
+"`le_refl x` is a proof of `x ≤ x`.\n"
 "\n"
 "The reason for the name is that this lemma is \"reflexivity of $\\le$\""
 msgstr ""
@@ -2691,7 +2988,8 @@ msgid "If $x$ is a number, then $x \\le x$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L01le_refl
-msgid "The reason `«{x}» ≤ «{x}»` is because `«{x}» = «{x}» + 0`.\n"
+msgid ""
+"The reason `«{x}» ≤ «{x}»` is because `«{x}» = «{x}» + 0`.\n"
 "So you should start this proof with `use 0`."
 msgstr ""
 
@@ -2704,7 +3002,8 @@ msgid "0 ≤ x"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L02zero_le
-msgid "To solve this level, you need to `use` a number `c` such that `x = 0 + c`."
+msgid ""
+"To solve this level, you need to `use` a number `c` such that `x = 0 + c`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L02zero_le
@@ -2724,7 +3023,8 @@ msgid "`le_succ_self x` is a proof that `x ≤ succ x`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
-msgid "If you `use` the wrong number, you get stuck with a goal you can't prove.\n"
+msgid ""
+"If you `use` the wrong number, you get stuck with a goal you can't prove.\n"
 "What number will you `use` here?"
 msgstr ""
 
@@ -2733,7 +3033,8 @@ msgid "If $x$ is a number, then $x \\le \\operatorname{succ}(x)$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
-msgid "Here's a two-liner:\n"
+msgid ""
+"Here's a two-liner:\n"
 "```\n"
 "use 1\n"
 "exact succ_eq_add_one x\n"
@@ -2747,21 +3048,27 @@ msgid "x ≤ y and y ≤ z implies x ≤ z"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
+msgid ""
+"`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
 "More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
 "If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.\n"
 "\n"
 "## A note on associativity\n"
 "\n"
-"In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. However\n"
-"`→` is right associative. This means that `x ≤ y → y ≤ z → x ≤ z` in Lean means\n"
+"In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. "
+"However\n"
+"`→` is right associative. This means that `x ≤ y → y ≤ z → x ≤ z` in Lean "
+"means\n"
 "exactly that `≤` is transitive. This is different to how mathematicians use\n"
-"$P \\implies Q \\implies R$; for them, this usually means that $P \\implies Q$\n"
+"$P \\implies Q \\implies R$; for them, this usually means that $P \\implies Q"
+"$\n"
 "and $Q \\implies R$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "In this level, we see inequalities as *hypotheses*. We have not seen this before.\n"
+msgid ""
+"In this level, we see inequalities as *hypotheses*. We have not seen this "
+"before.\n"
 "The `cases` tactic can be used to take `hxy` apart."
 msgstr ""
 
@@ -2774,16 +3081,22 @@ msgid "Start with `cases «{hxy}» with a ha`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "Now `«{ha}»` is a proof that `«{y}» = «{x}» + «{a}»`, and `hxy` has vanished. Similarly, you can destruct\n"
+msgid ""
+"Now `«{ha}»` is a proof that `«{y}» = «{x}» + «{a}»`, and `hxy` has "
+"vanished. Similarly, you can destruct\n"
 "`«{hyz}»` into its parts with `cases «{hyz}» with b hb`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "Now you need to figure out which number to `use`. See if you can take it from here."
+msgid ""
+"Now you need to figure out which number to `use`. See if you can take it "
+"from here."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "A passing mathematician remarks that with reflexivity and transitivity out of the way,\n"
+msgid ""
+"A passing mathematician remarks that with reflexivity and transitivity out "
+"of the way,\n"
 "you have proved that `≤` is a *preorder* on `ℕ`."
 msgstr ""
 
@@ -2796,7 +3109,8 @@ msgid "`le_zero x` is a proof of `x ≤ 0 → x = 0`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L05le_zero
-msgid "It's \"intuitively obvious\" that there are no numbers less than zero,\n"
+msgid ""
+"It's \"intuitively obvious\" that there are no numbers less than zero,\n"
 "but to prove it you will need a result which you showed in advanced\n"
 "addition world."
 msgstr ""
@@ -2810,7 +3124,8 @@ msgid "If $x \\leq 0$, then $x=0$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L05le_zero
-msgid "You want to use `add_right_eq_zero`, which you already\n"
+msgid ""
+"You want to use `add_right_eq_zero`, which you already\n"
 "proved, but you'll have to start with `symm at` your hypothesis."
 msgstr ""
 
@@ -2823,7 +3138,8 @@ msgid "`le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-msgid "This level asks you to prove *antisymmetry* of $\\leq$.\n"
+msgid ""
+"This level asks you to prove *antisymmetry* of $\\leq$.\n"
 "In other words, if $x \\leq y$ and $y \\leq x$ then $x = y$.\n"
 "It's the trickiest one so far. Good luck!"
 msgstr ""
@@ -2833,7 +3149,8 @@ msgid "If $x \\leq y$ and $y \\leq x$, then $x = y$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-msgid "Here's my proof:\n"
+msgid ""
+"Here's my proof:\n"
 "```\n"
 "cases hxy with a ha\n"
 "cases hyx with b hb\n"
@@ -2859,7 +3176,8 @@ msgid "Dealing with `or`"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L07or_symm
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "The `left` tactic changes a goal of `P ∨ Q` into a goal of `P`.\n"
 "Use it when your hypotheses guarantee that the reason that `P ∨ Q`\n"
 "is true is because in fact `P` is true.\n"
@@ -2872,7 +3190,8 @@ msgid "# Summary\n"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L07or_symm
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "The `right` tactic changes a goal of `P ∨ Q` into a goal of `Q`.\n"
 "Use it when your hypotheses guarantee that the reason that `P ∨ Q`\n"
 "is true is because in fact `Q` is true.\n"
@@ -2885,7 +3204,9 @@ msgid "# Summary\n"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L07or_symm
-msgid "Totality of `≤` is the boss level of this world, and it's coming up next. It says that\n"
+msgid ""
+"Totality of `≤` is the boss level of this world, and it's coming up next. It "
+"says that\n"
 "if `a` and `b` are naturals then either `a ≤ b` or `b ≤ a`.\n"
 "But we haven't talked about `or` at all. Here's a run-through.\n"
 "\n"
@@ -2906,11 +3227,14 @@ msgid "If $x=37$ or $y=42$, then $y=42$ or $x=37$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L07or_symm
-msgid "We don't know whether to go left or right yet. So start with `cases «{h}» with hx hy`."
+msgid ""
+"We don't know whether to go left or right yet. So start with `cases «{h}» "
+"with hx hy`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L07or_symm
-msgid "Now we can prove the `or` statement by proving the statement on the right,\n"
+msgid ""
+"Now we can prove the `or` statement by proving the statement on the right,\n"
 "so use the `right` tactic."
 msgstr ""
 
@@ -2931,7 +3255,8 @@ msgid "`le_total x y` is a proof that `x ≤ y` or `y ≤ x`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L08le_total
-msgid "This is I think the toughest level yet. Tips: if `a` is a number\n"
+msgid ""
+"This is I think the toughest level yet. Tips: if `a` is a number\n"
 "then `cases a with b` will split into cases `a = 0` and `a = succ b`.\n"
 "And don't go left or right until your hypotheses guarantee that\n"
 "you can prove the resulting goal!\n"
@@ -2961,9 +3286,11 @@ msgid "You still don't know which way to go, so do `cases «{e}» with a`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L08le_total
-msgid "Very well done.\n"
+msgid ""
+"Very well done.\n"
 "\n"
-"A passing mathematician remarks that with you've just proved that `ℕ` is totally\n"
+"A passing mathematician remarks that with you've just proved that `ℕ` is "
+"totally\n"
 "ordered.\n"
 "\n"
 "The final few levels in this world are much easier."
@@ -2978,17 +3305,20 @@ msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-msgid "We've proved that `x ≤ 0` implies `x = 0`. The last two levels\n"
+msgid ""
+"We've proved that `x ≤ 0` implies `x = 0`. The last two levels\n"
 "in this world will prove which numbers are `≤ 1` and `≤ 2`.\n"
 "This lemma will be helpful for them."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-msgid "If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ then $x \\leq y$."
+msgid ""
+"If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ then $x \\leq y$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-msgid "Here's my proof:\n"
+msgid ""
+"Here's my proof:\n"
 "```\n"
 "cases hx with d hd\n"
 "use d\n"
@@ -3007,7 +3337,8 @@ msgid "`le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L10le_one
-msgid "We've seen `le_zero`, the proof that if `x ≤ 0` then `x = 0`.\n"
+msgid ""
+"We've seen `le_zero`, the proof that if `x ≤ 0` then `x = 0`.\n"
 "Now we'll prove that if `x ≤ 1` then `x = 0` or `x = 1`."
 msgstr ""
 
@@ -3016,7 +3347,8 @@ msgid "If $x \\leq 1$ then either $x = 0$ or $x = 1$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L10le_one
-msgid "Here's my proof:\n"
+msgid ""
+"Here's my proof:\n"
 "```\n"
 "cases x with y\n"
 "left\n"
@@ -3037,11 +3369,13 @@ msgid "le_two"
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L11le_two
-msgid "`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
+msgid ""
+"`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L11le_two
-msgid "We'll need this lemma to prove that two is prime!\n"
+msgid ""
+"We'll need this lemma to prove that two is prime!\n"
 "\n"
 "You'll need to know that `∨` is right associative. This means that\n"
 "`x = 0 ∨ x = 1 ∨ x = 2` actually means `x = 0 ∨ (x = 1 ∨ x = 2)`.\n"
@@ -3053,7 +3387,8 @@ msgid "If $x \\leq 2$ then $x = 0$ or $1$ or $2$."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L11le_two
-msgid "Nice!\n"
+msgid ""
+"Nice!\n"
 "\n"
 "The next step in the development of order theory is to develop\n"
 "the theory of the interplay between `≤` and multiplication.\n"
@@ -3066,7 +3401,8 @@ msgid "≤ World"
 msgstr ""
 
 #: Game.Levels.LessOrEqual
-msgid "In this world we define `a ≤ b` and prove standard facts\n"
+msgid ""
+"In this world we define `a ≤ b` and prove standard facts\n"
 "about it, such as \"if `a ≤ b` and `b ≤ c` then `a ≤ c`.\"\n"
 "\n"
 "The definition of `a ≤ b` is \"there exists a number `c`\n"
@@ -3090,7 +3426,8 @@ msgid "Let's warm up with an easy one, which works even if `t = 0`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-msgid "My proof:\n"
+msgid ""
+"My proof:\n"
 "```\n"
 "cases h with d hd\n"
 "use d * t\n"
@@ -3108,14 +3445,19 @@ msgid "`mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-msgid "If you have completed Algorithm World then you can use the `contrapose!` tactic\n"
+msgid ""
+"If you have completed Algorithm World then you can use the `contrapose!` "
+"tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-msgid "We want to reduce this to a hypothesis `b = 0` and a goal `a * b = 0`,\n"
-"which is logically equivalent but much easier to prove. Remember that `X ≠ 0`\n"
-"is notation for `X = 0 → False`. Click on `Show more help!` if you need hints."
+msgid ""
+"We want to reduce this to a hypothesis `b = 0` and a goal `a * b = 0`,\n"
+"which is logically equivalent but much easier to prove. Remember that `X ≠ "
+"0`\n"
+"is notation for `X = 0 → False`. Click on `Show more help!` if you need "
+"hints."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
@@ -3131,9 +3473,11 @@ msgid "eq_succ_of_ne_zero"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "\n"
-"The `tauto` tactic will solve any goal which can be solved purely by logic (that is, by\n"
+"The `tauto` tactic will solve any goal which can be solved purely by logic "
+"(that is, by\n"
 "truth tables).\n"
 "\n"
 "## Example\n"
@@ -3147,20 +3491,26 @@ msgid "# Summary\n"
 "\n"
 "## Example\n"
 "\n"
-"If you have two hypotheses `h1 : a = 37` and `h2 : a ≠ 37` then `tauto` will\n"
+"If you have two hypotheses `h1 : a = 37` and `h2 : a ≠ 37` then `tauto` "
+"will\n"
 "solve the goal because it can prove `False` from your hypotheses, and thus\n"
 "prove the goal (as `False` implies anything).\n"
 "\n"
 "## Example\n"
 "\n"
-"If you have one hypothesis `h : a ≠ a` then `tauto` will solve the goal because\n"
-"`tauto` is smart enough to know that `a = a` is true, which gives the contradiction we seek.\n"
+"If you have one hypothesis `h : a ≠ a` then `tauto` will solve the goal "
+"because\n"
+"`tauto` is smart enough to know that `a = a` is true, which gives the "
+"contradiction we seek.\n"
 "\n"
 "## Example\n"
 "\n"
-"If you have a hypothesis of the form `a = 0 → a * b = 0` and your goal is `a * b ≠ 0 → a ≠ 0`, then\n"
-"`tauto` will solve the goal, because the goal is logically equivalent to the hypothesis.\n"
-"If you switch the goal and hypothesis in this example, `tauto` would solve it too."
+"If you have a hypothesis of the form `a = 0 → a * b = 0` and your goal is `a "
+"* b ≠ 0 → a ≠ 0`, then\n"
+"`tauto` will solve the goal, because the goal is logically equivalent to the "
+"hypothesis.\n"
+"If you switch the goal and hypothesis in this example, `tauto` would solve "
+"it too."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
@@ -3168,19 +3518,25 @@ msgid "`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-msgid "Multiplication usually makes a number bigger, but multiplication by zero can make\n"
+msgid ""
+"Multiplication usually makes a number bigger, but multiplication by zero can "
+"make\n"
 "it smaller. Thus many lemmas about inequalities and multiplication need the\n"
 "hypothesis `a ≠ 0`. Here is a key lemma enables us to use this hypothesis.\n"
-"To help us with the proof, we can use the `tauto` tactic. Click on the tactic's name\n"
+"To help us with the proof, we can use the `tauto` tactic. Click on the "
+"tactic's name\n"
 "on the right to see what it does."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-msgid "Start with `cases a with d` to do a case split on `a = 0` and `a = succ d`."
+msgid ""
+"Start with `cases a with d` to do a case split on `a = 0` and `a = succ d`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-msgid "In the \"base case\" we have a hypothesis `ha : 0 ≠ 0`, and you can deduce anything\n"
+msgid ""
+"In the \"base case\" we have a hypothesis `ha : 0 ≠ 0`, and you can deduce "
+"anything\n"
 "from a false statement. The `tauto` tactic will close this goal."
 msgstr ""
 
@@ -3209,22 +3565,27 @@ msgid "le_mul_right"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-msgid "`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
+msgid ""
+"`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
 "\n"
 "It's one way of saying that a divisor of a positive number\n"
 "has to be at most that number."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-msgid "In Prime Number World we will be proving that $2$ is prime.\n"
+msgid ""
+"In Prime Number World we will be proving that $2$ is prime.\n"
 "To do this, we will have to rule out things like $2 ≠ 37 × 42.$\n"
 "We will do this by proving that any factor of $2$ is at most $2$,\n"
-"which we will do using this lemma. The proof I have in mind manipulates the hypothesis\n"
-"until it becomes the goal, using pretty much everything which we've proved in this world so far."
+"which we will do using this lemma. The proof I have in mind manipulates the "
+"hypothesis\n"
+"until it becomes the goal, using pretty much everything which we've proved "
+"in this world so far."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-msgid "Here's what I was thinking of:\n"
+msgid ""
+"Here's what I was thinking of:\n"
 "```\n"
 "apply mul_left_ne_zero at h\n"
 "apply one_le_of_ne_zero at h\n"
@@ -3239,15 +3600,18 @@ msgid "mul_right_eq_one"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-msgid "# Summary\n"
+msgid ""
+"# Summary\n"
 "\n"
-"The `have` tactic can be used to add new hypotheses to a level, but of course\n"
+"The `have` tactic can be used to add new hypotheses to a level, but of "
+"course\n"
 "you have to prove them.\n"
 "\n"
 "\n"
 "## Example\n"
 "\n"
-"The simplest usage is like this. If you have `a` in your context and you execute\n"
+"The simplest usage is like this. If you have `a` in your context and you "
+"execute\n"
 "\n"
 "`have ha : a = 0`\n"
 "\n"
@@ -3280,16 +3644,21 @@ msgid "`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-msgid "This level proves `x * y = 1 → x = 1`, the multiplicative analogue of Advanced Addition\n"
-"World's `x + y = 0 → x = 0`. The strategy is to prove that `x ≤ 1` and then use the\n"
+msgid ""
+"This level proves `x * y = 1 → x = 1`, the multiplicative analogue of "
+"Advanced Addition\n"
+"World's `x + y = 0 → x = 0`. The strategy is to prove that `x ≤ 1` and then "
+"use the\n"
 "lemma `le_one` from `≤` world.\n"
 "\n"
 "We'll prove it using a new and very useful tactic called `have`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-msgid "We want to use `le_mul_right`, but we need a hypothesis `x * y ≠ 0`\n"
-"which we don't have. Yet. Execute `have h2 : x * y ≠ 0` (you can type `≠` with `\\ne`).\n"
+msgid ""
+"We want to use `le_mul_right`, but we need a hypothesis `x * y ≠ 0`\n"
+"which we don't have. Yet. Execute `have h2 : x * y ≠ 0` (you can type `≠` "
+"with `\\ne`).\n"
 "You'll be asked to\n"
 "prove it, and then you'll have a new hypothesis which you can apply\n"
 "`le_mul_right` to."
@@ -3304,7 +3673,8 @@ msgid "Now `rw [h] at h2` so you can `apply le_one at hx`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-msgid "Now `cases h2 with h0 h1` and deal with the two\n"
+msgid ""
+"Now `cases h2 with h0 h1` and deal with the two\n"
 "cases separately."
 msgstr ""
 
@@ -3317,11 +3687,14 @@ msgid "mul_ne_zero"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-msgid "`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
+msgid ""
+"`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-msgid "This level proves that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. One strategy\n"
+msgid ""
+"This level proves that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. One "
+"strategy\n"
 "is to write both `a` and `b` as `succ` of something, deduce that `a * b` is\n"
 "also `succ` of something, and then `apply zero_ne_succ`."
 msgstr ""
@@ -3335,11 +3708,13 @@ msgid "mul_eq_zero"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-msgid "`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
+msgid ""
+"`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-msgid "This level proves that if `a * b = 0` then `a = 0` or `b = 0`. It is\n"
+msgid ""
+"This level proves that if `a * b = 0` then `a = 0` or `b = 0`. It is\n"
 "logically equivalent to the last level, so there is a very short proof."
 msgstr ""
 
@@ -3348,7 +3723,8 @@ msgid "Start with `have h2 := mul_ne_zero a b`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-msgid "Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n"
+msgid ""
+"Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n"
 "tactic."
 msgstr ""
 
@@ -3357,21 +3733,29 @@ msgid "mul_left_cancel"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-msgid "`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then `b = c`."
+msgid ""
+"`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then "
+"`b = c`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-msgid "In this level we prove that if `a * b = a * c` and `a ≠ 0` then `b = c`. It is tricky, for\n"
+msgid ""
+"In this level we prove that if `a * b = a * c` and `a ≠ 0` then `b = c`. It "
+"is tricky, for\n"
 "several reasons. One of these is that\n"
 "we need to introduce a new idea: we will need to understand the concept of\n"
 "mathematical induction a little better.\n"
 "\n"
-"Starting with `induction b with d hd` is too naive, because in the inductive step\n"
-"the hypothesis is `a * d = a * c → d = c` but what we know is `a * succ d = a * c`,\n"
+"Starting with `induction b with d hd` is too naive, because in the inductive "
+"step\n"
+"the hypothesis is `a * d = a * c → d = c` but what we know is `a * succ d = "
+"a * c`,\n"
 "so the induction hypothesis does not apply!\n"
 "\n"
-"Assume `a ≠ 0` is fixed. The actual statement we want to prove by induction on `b` is\n"
-"\"for all `c`, if `a * b = a * c` then `b = c`. This *can* be proved by induction,\n"
+"Assume `a ≠ 0` is fixed. The actual statement we want to prove by induction "
+"on `b` is\n"
+"\"for all `c`, if `a * b = a * c` then `b = c`. This *can* be proved by "
+"induction,\n"
 "because we now have the flexibility to change `c`.\""
 msgstr ""
 
@@ -3380,12 +3764,15 @@ msgid "The way to start this proof is `induction b with d hd generalizing c`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-msgid "Use `mul_eq_zero` and remember that `tauto` will solve a goal\n"
+msgid ""
+"Use `mul_eq_zero` and remember that `tauto` will solve a goal\n"
 "if there are hypotheses `a = 0` and `a ≠ 0`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-msgid "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * c → d = c`\".\n"
+msgid ""
+"The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * "
+"c → d = c`\".\n"
 "You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
 msgstr ""
 
@@ -3398,11 +3785,14 @@ msgid "mul_right_eq_self"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-msgid "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`."
+msgid ""
+"`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = "
+"1`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-msgid "The lemma proved in the final level of this world will be helpful\n"
+msgid ""
+"The lemma proved in the final level of this world will be helpful\n"
 "in Divisibility World."
 msgstr ""
 
@@ -3415,14 +3805,16 @@ msgid "You can now `apply mul_left_cancel at h`"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-msgid "A two-line proof is\n"
+msgid ""
+"A two-line proof is\n"
 "\n"
 "```\n"
 "nth_rewrite 2 [← mul_one a] at h\n"
 "exact mul_left_cancel a b 1 ha h\n"
 "```\n"
 "\n"
-"We now have all the tools necessary to set up the basic theory of divisibility of naturals."
+"We now have all the tools necessary to set up the basic theory of "
+"divisibility of naturals."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication
@@ -3430,13 +3822,15 @@ msgid "Advanced Multiplication World"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication
-msgid "Advanced *Addition* World proved various implications\n"
+msgid ""
+"Advanced *Addition* World proved various implications\n"
 "involving addition, such as `x + y = 0 → x = 0` and `x + y = x → y = 0`.\n"
 "These lemmas were used to prove basic facts about ≤ in ≤ World.\n"
 "\n"
 "In Advanced Multiplication World we prove analogous\n"
 "facts about multiplication, such as `x * y = 1 → x = 1`, and\n"
-"`x * y = x → y = 1` (assuming `x ≠ 0` in the latter result). This will prepare\n"
+"`x * y = x → y = 1` (assuming `x ≠ 0` in the latter result). This will "
+"prepare\n"
 "us for Divisibility World.\n"
 "\n"
 "Multiplication World is more complex than Addition World. In the same\n"
@@ -3451,7 +3845,8 @@ msgid "Natural Number Game"
 msgstr ""
 
 #: Game
-msgid "# Welcome to the Natural Number Game\n"
+msgid ""
+"# Welcome to the Natural Number Game\n"
 "#### An introduction to mathematical proof.\n"
 "\n"
 "In this game, we will build the basic theory of the natural\n"
@@ -3476,12 +3871,14 @@ msgid "# Welcome to the Natural Number Game\n"
 "\n"
 "## More\n"
 "\n"
-"Click on the three lines in the top right and select \"Game Info\" for resources,\n"
+"Click on the three lines in the top right and select \"Game Info\" for "
+"resources,\n"
 "links, and ways to interact with the Lean community."
 msgstr ""
 
 #: Game
-msgid "*Game version: 4.2*\n"
+msgid ""
+"*Game version: 4.2*\n"
 "\n"
 "*Recent additions: Inequality world, algorithm world*\n"
 "\n"
@@ -3490,7 +3887,8 @@ msgid "*Game version: 4.2*\n"
 "The game stores your progress in your local browser storage.\n"
 "If you delete it, your progress will be lost!\n"
 "\n"
-"Warning: In most browsers, deleting cookies will also clear the local storage\n"
+"Warning: In most browsers, deleting cookies will also clear the local "
+"storage\n"
 "(or \"local site data\"). Make sure to download your game progress first!\n"
 "\n"
 "## Credits\n"
@@ -3506,7 +3904,8 @@ msgid "*Game version: 4.2*\n"
 "## Resources\n"
 "\n"
 "* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n"
-"* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) (no longer maintained)\n"
+"* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/"
+"natural_number_game/) (no longer maintained)\n"
 "\n"
 "## Problems?\n"
 "\n"
@@ -3516,12 +3915,15 @@ msgid "*Game version: 4.2*\n"
 "the Lean Zulip chat is a professional research forum.\n"
 "Please use your full real name there, stay on topic, and be nice. If you're\n"
 "looking for somewhere less formal (e.g. you want to post natural number\n"
-"game memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).\n"
+"game memes) then head on over to the [Lean Discord](https://discord.gg/"
+"WZ9bs9UCvx).\n"
 "\n"
-"Alternatively, if you experience issues / bugs you can also open github issues:\n"
+"Alternatively, if you experience issues / bugs you can also open github "
+"issues:\n"
 "\n"
 "* For issues with the game engine, please open an\n"
-"[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n"
+"[issue at the lean4game](https://github.com/leanprover-community/lean4game/"
+"issues) repo.\n"
 "* For issues about the game's content, please open an\n"
 "[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo."
 msgstr ""
@@ -3531,7 +3933,9 @@ msgid "The classical introduction game for Lean."
 msgstr ""
 
 #: Game
-msgid "In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano axioms,\n"
+msgid ""
+"In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano "
+"axioms,\n"
 "learning the basics about theorem proving in Lean.\n"
 "\n"
 "This is a good first introduction to Lean!"
