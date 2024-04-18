@@ -18,6 +18,19 @@ Two ways to do it spring to mind; I'll mention them when you've solved it.
 
 /-- $x+y=x\implies y=0$. -/
 Statement add_right_eq_self (x y : ℕ) : x + y = x → y = 0 := by
+  Branch
+    intro h
+    rw [add_comm] at h
+    rw [add_left_eq_self x y] at h
+    · rw [add_zero] at h
+      exact h
+    Hint "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`
+    instead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory."
+    -- not ideal to have the hint duplicated, but it's not obvious if they'd use `add_comm`
+    -- or not
+    rw [add_comm] at h
+    Hint "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`
+    instead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory."
   rw [add_comm]
   exact add_left_eq_self y x
 
