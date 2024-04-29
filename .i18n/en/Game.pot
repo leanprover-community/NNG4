@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Apr 11 19:41:22 2024\n"
+"POT-Creation-Date: Mon Apr 29 13:18:35 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1518,7 +1518,7 @@ msgid "In this world we'll learn how to prove theorems of the form $P\\implies Q
 "To do that we need to learn some more tactics.\n"
 "\n"
 "The `exact` tactic can be used to close a goal which is exactly one of\n"
-"the hypotheses."
+"the hypotheses. It takes the name of the hypothesis as argument: `exact h`."
 msgstr ""
 
 #: Game.Levels.Implication.L01exact
@@ -2491,6 +2491,16 @@ msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid "$x+y=x\\implies y=0$."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`\n"
+"instead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`\n"
+"instead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory."
 msgstr ""
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self

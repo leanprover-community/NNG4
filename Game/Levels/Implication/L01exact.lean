@@ -43,7 +43,7 @@ In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ is 
 To do that we need to learn some more tactics.
 
 The `exact` tactic can be used to close a goal which is exactly one of
-the hypotheses.
+the hypotheses. It takes the name of the hypothesis as argument: `exact h`.
 "
 
 set_option linter.unusedVariables false in
