@@ -39,7 +39,7 @@ valid is that if `P` is a true-false statement then `P → False`
 is the logical opposite of `P`. Indeed `True → False` is false,
 and `False → False` is true!
 
-The upshot of this is that use can treat `a ≠ b` in exactly
+The upshot of this is that you can treat `a ≠ b` in exactly
 the same way as you treat any implication `P → Q`. For example,
 if your *goal* is of the form `a ≠ b` then you can make progress
 with `intro h`, and if you have a hypothesis `h` of the
