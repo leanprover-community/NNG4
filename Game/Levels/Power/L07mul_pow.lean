@@ -11,7 +11,7 @@ Introduction
 The music gets ever more dramatic, as we explore
 the interplay between exponentiation and multiplication.
 
-If you're having trouble exchanging the right `x * y`
+If you're having trouble exchanging the right `a * b`
 because `rw [mul_comm]` swaps the wrong multiplication,
 then read the documentation of `rw` for tips on how to fix this.
 "
