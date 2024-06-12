@@ -39,7 +39,7 @@ Conclusion
 The music dies down. Is that it?
 
 Course it isn't, you can
-clearly see that there are two worlds left.
+clearly see that there are two levels left.
 
 A passing mathematician says that mathematicians don't have a name
 for the structure you just constructed. You feel cheated.
