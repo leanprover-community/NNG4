@@ -38,7 +38,7 @@ to the context, because you just supplied the proof of it (`succ_inj a b`).
 ## Example
 
 If you have a proof to hand, then you don't even need to state what you
-are proving. example
+are proving. For example
 
 `have h2 := succ_inj a b`
 
