@@ -50,7 +50,7 @@ TheoremDoc MyNat.eq_succ_of_ne_zero as "eq_succ_of_ne_zero" in "≤"
 Introduction
 "Multiplication usually makes a number bigger, but multiplication by zero can make
 it smaller. Thus many lemmas about inequalities and multiplication need the
-hypothesis `a ≠ 0`. Here is a key lemma enables us to use this hypothesis.
+hypothesis `a ≠ 0`. Here is a key lemma that enables us to use this hypothesis.
 To help us with the proof, we can use the `tauto` tactic. Click on the tactic's name
 on the right to see what it does.
 "
