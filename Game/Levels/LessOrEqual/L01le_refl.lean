@@ -18,7 +18,13 @@ that `x = 37` will work, then `use 37` will make progress.
 
 Because `a ≤ b` is notation for \"there exists `c` such that `b = a + c`\",
 you can make progress on goals of the form `a ≤ b` by `use`ing the
-number which is morally `b - a`.
+number which is morally `b - a` (i.e. `use b - a`)
+
+Any of the following examples is possible assuming the type of the argument passed to the `use` function is accurate:
+
+- `use 37`
+- `use a`
+- `use a * a + 1`
 -/
 TacticDoc use
 
