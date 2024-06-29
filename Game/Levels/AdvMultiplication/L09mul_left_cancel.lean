@@ -23,8 +23,8 @@ the hypothesis is `a * d = a * c → d = c` but what we know is `a * succ d = a 
 so the induction hypothesis does not apply!
 
 Assume `a ≠ 0` is fixed. The actual statement we want to prove by induction on `b` is
-\"for all `c`, if `a * b = a * c` then `b = c`. This *can* be proved by induction,
-because we now have the flexibility to change `c`.\"
+\"for all `c`, if `a * b = a * c` then `b = c`\". This *can* be proved by induction,
+because we now have the flexibility to change `c`.
 "
 
 Statement mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b = c := by
