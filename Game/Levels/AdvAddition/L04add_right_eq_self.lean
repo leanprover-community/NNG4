@@ -48,19 +48,17 @@ rw [add_comm]
 exact add_left_eq_self y x
 ```
 
-Alternatively you can just prove it by induction on `x`
-(the dots in the proof just indicate the two goals and
-can be omitted):
+Alternatively you can just prove it by induction on `x`:
 
 ```
-  induction x with d hd
-  · intro h
-    rw [zero_add] at h
-    assumption
-  · intro h
-    rw [succ_add] at h
-    apply succ_inj at h
-    apply hd at h
-    assumption
+induction x with d hd
+intro h
+rw [zero_add] at h
+exact h
+intro h
+rw [succ_add] at h
+apply succ_inj at h
+apply hd at h
+exact h
 ```
 "
