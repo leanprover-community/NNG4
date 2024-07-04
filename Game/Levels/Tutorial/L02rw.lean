@@ -77,7 +77,7 @@ are two distinct situations where you can use this tactic.
 
 1) Basic usage: if `h : A = B` is an assumption or
 the proof of a theorem, and if the goal contains one or more `A`s, then `rw [h]`
-will change them all to `B`'s. The tactic will error
+will change them all to `B`s. The tactic will error
 if there are no `A`s in the goal.
 
 2) Advanced usage: Assumptions coming from theorem proofs

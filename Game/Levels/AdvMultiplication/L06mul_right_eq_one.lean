@@ -74,7 +74,7 @@ Statement mul_right_eq_one (x y : ℕ) (h : x * y = 1) : x = 1 := by
   exact one_ne_zero
   Hint (hidden := true) "Now you can `apply le_mul_right at h2`."
   apply le_mul_right at h2
-  Hint (hidden := true) "Now `rw [h] at h2` so you can `apply le_one at hx`."
+  Hint (hidden := true) "Now `rw [{h}] at {h2}` so you can `apply le_one at {h2}`."
   rw [h] at h2
   apply le_one at h2
   Hint (hidden := true) "Now `cases h2 with h0 h1` and deal with the two
