@@ -354,29 +354,29 @@ msgstr ""
 #: Game.Levels.Tutorial.L02rw
 msgid ""
 "If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$."
-msgstr ""
+msgstr "Se $x$ e $y$ sono numeri naturali, e $y = x + 7$, allora $2y = 2(x + 7)$."
 
 #: Game.Levels.Tutorial.L02rw
 msgid "First execute `rw [h]` to replace the `y` with `x + 7`."
-msgstr ""
+msgstr "Per primo, esegui `rw [h]` per sostituire `y` con `x + 7`."
 
 #: Game.Levels.Tutorial.L02rw
 msgid ""
 "Can you take it from here? Click on \"Show more help!\" if you need a hint."
-msgstr ""
+msgstr "Riesci a finire la dimostrazione da solo? Fai click su \"Mostra più aiuto!\" se hai bisogno di un indizio."
 
 #: Game.Levels.Tutorial.L02rw
 msgid "Now `rfl` will work."
-msgstr ""
+msgstr "Adesso `rfl` funzionerà."
 
 #: Game.Levels.Tutorial.L02rw
 msgid ""
 "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey."
-msgstr ""
+msgstr "Ora conosci abbastanza tattiche per dimostrare `2 + 2 = 4`! Cominciamo l'avventura."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Numbers"
-msgstr ""
+msgstr "Numeri"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
@@ -393,22 +393,33 @@ msgid ""
 "It is distinct from the Lean natural numbers `Nat`, which should hopefully\n"
 "never leak into the natural number game.*"
 msgstr ""
+"`ℕ` denota l'insieme dei numeri naturali, che chiameremo semplicemente \\\"numeri \\\" nel resto del gioco. Questo insieme è\n"
+"definito tramite due regole:\n"
+"\n"
+"* `0 : ℕ` (zero è un numero)\n"
+"* `succ (n: ℕ): ℕ` (il successore di un numero è un numero)\n"
+"\n"
+"## Implementazione del gioco \n"
+"\n"
+"*Il gioco usa una versione propria dei numeri naturali - chiamata `Mynat` con "
+"notazione` ℕ` -\n"
+"diversa dal tipo primitivo dei numeri naturali di Lean `nat`; quest'ultimo non dovrebbe venire utilizzato nel contesto del gioco.\n"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
-msgstr ""
+msgstr "`one_eq_succ_zero` è la dimostrazione di `1 = succ 0`.\""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`two_eq_succ_one` is a proof of `2 = succ 1`."
-msgstr ""
+msgstr "`two_eq_succ_one` è la dimostrazione di of `2 = succ 1`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`three_eq_succ_two` is a proof of `3 = succ 2`."
-msgstr ""
+msgstr "`three_eq_succ_two` è la dimostrazione di of `3 = succ 2`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`four_eq_succ_three` is a proof of `4 = succ 3`."
-msgstr ""
+msgstr "`four_eq_succ_three` è la dimostrazione di of `4 = succ 3`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
