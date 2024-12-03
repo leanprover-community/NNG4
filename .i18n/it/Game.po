@@ -811,9 +811,8 @@ msgstr ""
 "## Summary\n"
 "\n"
 "`repeat t` applica la tattica `t`\n"
-"nel goal ripetitivamente. Non è necessario usare questa tattica\n"
-"per completare il gioco, ma è utile per rendere le dimostrazioni più "
-"succinte.\n"
+"nel goal ripetitivamente. Non è strettamente necessaria al fine di\n"
+"completare il gioco, ma a volte è utile per velocizzare le dimostrazioni.\n"
 "\n"
 "## Example\n"
 "\n"
@@ -1356,7 +1355,7 @@ msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
 msgid "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
-msgstr "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
+msgstr "`succ_add a b` è la dimostrazione che `succ a + b = succ (a + b)`."
 
 #: Game.Levels.Addition.L02succ_add
 msgid ""
@@ -1833,7 +1832,7 @@ msgstr "`one_mul m` è la dimostrazione che `1 * m = m`."
 
 #: Game.Levels.Multiplication.L05one_mul
 msgid "For any natural number $m$, we have $ 1 \\times m = m$."
-msgstr "Per un qualsiasi numero naturale $m$, si ha che $ 1 \\times m = m$."
+msgstr "Per ogni numero naturale $m$, si ha che $ 1 \\times m = m$."
 
 #: Game.Levels.Multiplication.L05one_mul
 msgid ""
@@ -1859,19 +1858,17 @@ msgid ""
 "a useful role when battling a big boss later on."
 msgstr ""
 "Questo livello è più importante di quanto sembri; giocherà\n"
-"un ruolo importante in una prossima boss battle."
+"un ruolo importante in un prossimo boss."
 
 #: Game.Levels.Multiplication.L06two_mul
 msgid "`two_mul m` is the proof that `2 * m = m + m`."
 msgstr "`two_mul m` è la dimostrazione che `2 * m = m + m`."
 
 #: Game.Levels.Multiplication.L06two_mul
-#, fuzzy
 msgid "For any natural number $m$, we have $ 2 \\times m = m+m$."
-msgstr "For any natural number $m$, we have $ 2 \\times m = m+m$."
+msgstr "Per ogni numero naturale $m$, si ha che $ 2 \\times m = m+m$."
 
 #: Game.Levels.Multiplication.L06two_mul
-#, fuzzy
 msgid ""
 "Here's my solution:\n"
 "```\n"
@@ -1879,19 +1876,17 @@ msgid ""
 "rfl\n"
 "```"
 msgstr ""
-"Here's my solution:\n"
+"Ecco come l'ho fatta io:\n"
 "```\n"
 "rw [two_eq_succ_one, succ_mul, one_mul]\n"
 "rfl\n"
 "```"
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid "mul_add"
 msgstr "mul_add"
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "Our next goal is \"left and right distributivity\",\n"
 "meaning $a(b+c)=ab+ac$ and $(b+c)a=ba+ca$. Rather than\n"
@@ -1901,60 +1896,55 @@ msgid ""
 "Note that the left hand side contains a multiplication\n"
 "and then an addition."
 msgstr ""
-"Our next goal is \"left and right distributivity\",\n"
-"meaning $a(b+c)=ab+ac$ and $(b+c)a=ba+ca$. Rather than\n"
-"these slightly pompous names, the name of the proofs\n"
-"in Lean are descriptive. Let's start with\n"
-"`mul_add a b c`, the proof of `a * (b + c) = a * b + a * c`.\n"
-"Note that the left hand side contains a multiplication\n"
-"and then an addition."
+"Il nostro nuovo obiettivo è la \"distributività sinistra e destra\",\n"
+"ossia $a(b+c)=ab+ac$ e $(b+c)a=ba+ca$. Anziché chiamarli con questi\n"
+"paroloni altisonanti, i nomi delle loro dimostrazioni\n"
+"in Lean sono più descrittivi. Il primo,\n"
+"`mul_add a b c`, è la dimostrazione di `a * (b + c) = a * b + a * c`.\n"
+"Nota che a sinistra dell'uguale abbiamo una moltiplicazione\n"
+"di un'addizione."
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "Multiplication distributes\n"
 "over addition on the left.\n"
 "\n"
 "`mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."
 msgstr ""
-"Multiplication distributes\n"
-"over addition on the left.\n"
+"La moltiplicazione si distribuisce\n"
+"sull'addizione a sinistra.\n"
 "\n"
-"`mul_add a b c` is the proof that `a * (b + c) = a * b + a * c`."
+"`mul_add a b c` è la dimostrazione di `a * (b + c) = a * b + a * c`."
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "Multiplication is distributive over addition on the left.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$a(b + c) = ab + ac$."
 msgstr ""
-"Multiplication is distributive over addition on the left.\n"
-"In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
+"La moltiplicazione è distributiva a sinistra rispetto all'addizione.\n"
+"Equivalentemente, per tutti i numeri naturali $a$, $b$ and $c$, si ha che\n"
 "$a(b + c) = ab + ac$."
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "You can do induction on any of the three variables. Some choices\n"
 "are harder to push through than others. Can you do the inductive step in\n"
 "5 rewrites only?"
 msgstr ""
-"You can do induction on any of the three variables. Some choices\n"
-"are harder to push through than others. Can you do the inductive step in\n"
-"5 rewrites only?"
+"Puoi procedere per induzione su una qualsiasi delle tre variabili. Scegli bene, perché\n"
+"con certe opzioni si aggrovigliano più di altre. Riesci a dimostrare il caso induttivo in\n"
+"sole cinque sostituzioni?"
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "Induction on `a` is the most troublesome, then `b`,\n"
 "and `c` is the easiest."
 msgstr ""
-"Induction on `a` is the most troublesome, then `b`,\n"
-"and `c` is the easiest."
+"L'induzione su `a` è la più faticosa, mentre su `b`,\n"
+"o su `c` è più facile."
 
 #: Game.Levels.Multiplication.L07mul_add
-#, fuzzy
 msgid ""
 "Here's my solution:\n"
 "```\n"
@@ -1967,7 +1957,7 @@ msgid ""
 "\n"
 "Inducting on `a` or `b` also works, but might take longer."
 msgstr ""
-"Here's my solution:\n"
+"Ecco come l'ho fatta io:\n"
 "```\n"
 "induction c with d hd\n"
 "rw [add_zero, mul_zero, add_zero]\n"
@@ -1976,40 +1966,35 @@ msgstr ""
 "rfl\n"
 "```\n"
 "\n"
-"Inducting on `a` or `b` also works, but might take longer."
+"Si poteva risolvere anche per induzione su `a` or `b`, ma avrebbero richiesto più passi."
 
 #: Game.Levels.Multiplication.L08add_mul
-#, fuzzy
 msgid "add_mul"
 msgstr "add_mul"
 
 #: Game.Levels.Multiplication.L08add_mul
-#, fuzzy
 msgid ""
 "`add_mul` is just as fiddly to prove by induction; but there's a trick\n"
 "which avoids it. Can you spot it?"
 msgstr ""
-"`add_mul` is just as fiddly to prove by induction; but there's a trick\n"
-"which avoids it. Can you spot it?"
+"`add_mul` è altrettanto macchinoso da dimostrare per induzione; ma c'è un trucco\n"
+"che ci permette di evitarla. Sai individuarla?"
 
 #: Game.Levels.Multiplication.L08add_mul
-#, fuzzy
 msgid "`add_mul a b c` is a proof that $(a+b)c=ac+bc$."
-msgstr "`add_mul a b c` is a proof that $(a+b)c=ac+bc$."
+msgstr "`add_mul a b c` è la dimostrazione che $(a+b)c=ac+bc$."
 
 #: Game.Levels.Multiplication.L08add_mul
-#, fuzzy
 msgid ""
 "Addition is distributive over multiplication.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$(a + b) \\times c = ac + bc$."
 msgstr ""
-"Addition is distributive over multiplication.\n"
-"In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
+"L'addizione gode della proprietà distributiva sulla moltiplicazione.\n"
+"Equivalentemente, per tutti i numeri naturali $a$, $b$ and $c$, si ha che\n"
 "$(a + b) \\times c = ac + bc$."
 
 #: Game.Levels.Multiplication.L08add_mul
-#, fuzzy
 msgid ""
 "Here's my proof:\n"
 "```\n"
@@ -2018,7 +2003,7 @@ msgid ""
 "rfl\n"
 "```"
 msgstr ""
-"Here's my proof:\n"
+"Ecco la mia dimostrazione:\n"
 "```\n"
 "rw [mul_comm, mul_add]\n"
 "repeat rw [mul_comm c]\n"
@@ -2026,21 +2011,18 @@ msgstr ""
 "```"
 
 #: Game.Levels.Multiplication.L09mul_assoc
-#, fuzzy
 msgid "mul_assoc"
 msgstr "mul_assoc"
 
 #: Game.Levels.Multiplication.L09mul_assoc
-#, fuzzy
 msgid ""
 "We now have enough to prove that multiplication is associative,\n"
 "the boss level of multiplication world. Good luck!"
 msgstr ""
-"We now have enough to prove that multiplication is associative,\n"
-"the boss level of multiplication world. Good luck!"
+"Adesso abbiamo abbastanza informazioni per dimostrare che la moltiplicazione è associativa,\n"
+"il boss del mondo della moltiplicazione. Avanti guerriero!"
 
 #: Game.Levels.Multiplication.L09mul_assoc
-#, fuzzy
 msgid ""
 "`mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.\n"
 "\n"
@@ -2051,46 +2033,41 @@ msgid ""
 "for example subtraction is not associative, as `(6 - 2) - 1` is not\n"
 "equal to `6 - (2 - 1)`."
 msgstr ""
-"`mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.\n"
+"`mul_assoc a b c` è la dimostrazione che `(a * b) * c = a * (b * c)`.\n"
 "\n"
-"Note that when Lean says `a * b * c` it means `(a * b) * c`.\n"
+"Ricorda che Lean per `a * b * c` intende `(a * b) * c`.\n"
 "\n"
-"Note that `(a * b) * c = a * (b * c)` cannot be proved by \\\"pure thought\\"
+"Ricorda che `(a * b) * c = a * (b * c)` non è una legge universale della matematica"
 "\":\n"
-"for example subtraction is not associative, as `(6 - 2) - 1` is not\n"
-"equal to `6 - (2 - 1)`."
+"un esempio famoso di operazione non associativa è la sottrazione, dato che `(6 - 2) - 1` è diverso\n"
+"uguale a `6 - (2 - 1)`."
 
 #: Game.Levels.Multiplication.L09mul_assoc
-#, fuzzy
 msgid ""
 "Multiplication is associative.\n"
 "In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
 "$(ab)c = a(bc)$."
-msgstr ""
-"Multiplication is associative.\n"
-"In other words, for all natural numbers $a$, $b$ and $c$, we have\n"
+msgstr "La moltiplicazione è un'operazione associativa.\n"
+"Equivalentemente, per tutti i numeri naturali $a$, $b$ and $c$, si ha che\n"
 "$(ab)c = a(bc)$."
 
 #: Game.Levels.Multiplication.L09mul_assoc
-#, fuzzy
 msgid ""
 "A passing mathematician notes that you've proved\n"
 "that the natural numbers are a commutative semiring.\n"
 "\n"
 "If you want to begin your journey to the final boss, head for Power World."
 msgstr ""
-"A passing mathematician notes that you've proved\n"
-"that the natural numbers are a commutative semiring.\n"
+"Un matematico a passeggio nota che hai appena dimostrato\n"
+"che i numeri naturali sono un semianello commutativo.\n"
 "\n"
-"If you want to begin your journey to the final boss, head for Power World."
+"Se ti senti pronto per incamminarti verso il boss finale, dirigiti verso il Mondo della Potenza."
 
 #: Game.Levels.Multiplication
-#, fuzzy
 msgid "Multiplication World"
-msgstr "Multiplication World"
+msgstr "Mondo della Moltiplicazione"
 
 #: Game.Levels.Multiplication
-#, fuzzy
 msgid ""
 "How should we define `37 * x`? Just like addition, we need to give "
 "definitions\n"
@@ -2111,32 +2088,30 @@ msgid ""
 "like `a * (b + c) = a * b + a * c`.\n"
 "Let's get started."
 msgstr ""
-"How should we define `37 * x`? Just like addition, we need to give "
-"definitions\n"
-"when $x=0$ and when $x$ is a successor.\n"
+"Come si può definire `37 * x`? Come per l'addizione, dobbiamo distinguere la definizione nei"
+"casi\n"
+"quando $x=0$ e quando $x$ è un successore.\n"
 "\n"
-"The zero case is easy: we define `37 * 0` to be `0`. Now say we know\n"
-"`37 * d`. What should `37 * succ d` be? Well, that's $(d+1)$ $37$s,\n"
-"so it should be `37 * d + 37`.\n"
+"Il caso di zero è facile: definiamo `37 * 0` uguale a `0`. Ora, immaginiamo di sapere quanto fa\n"
+"`37 * d`. Quanto fa allora `37 * succ d`? Beh, non è altro che $37$ sommato a se stesso $(d+1)$ volte,\n"
+"quindi `37 * d + 37`.\n"
 "\n"
-"Here are the definitions in Lean.\n"
+"Ecco le due definizioni in Lean.\n"
 "\n"
 "  * `mul_zero a : a * 0 = 0`\n"
 "  * `mul_succ a d : a * succ d = a * d + a`\n"
 "\n"
-"In this world, we must not only prove facts about multiplication like `a * b "
+"In questo mondo, non ci limiteremo a dimostrare fatti riguardanti solo la moltiplicazione come `a * b "
 "= b * a`,\n"
-"we must also prove facts about how multiplication interacts with addition, "
-"like `a * (b + c) = a * b + a * c`.\n"
-"Let's get started."
+"ma anche fatti su come la moltiplicazione interagisce con l'addizione, "
+"come `a * (b + c) = a * b + a * c`.\n"
+"Iniziamo."
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid "zero_pow_zero"
 msgstr "zero_pow_zero"
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid ""
 "Mathematicians sometimes debate what `0 ^ 0` is;\n"
 "the answer depends, of course, on your definitions. In this\n"
@@ -2145,15 +2120,14 @@ msgid ""
 "Check out the *Pow* tab in your list of theorems\n"
 "to see the new proofs which are available."
 msgstr ""
-"Mathematicians sometimes debate what `0 ^ 0` is;\n"
-"the answer depends, of course, on your definitions. In this\n"
-"game, `0 ^ 0 = 1`. See if you can prove it.\n"
+"A volte i matematici discutono su cosa è `0 ^ 0`;\n"
+"la vera risposta è: dipende dalle tue definizioni. In questo\n"
+"gioco, `0 ^ 0 = 1`. Prova a dimostrarlo.\n"
 "\n"
-"Check out the *Pow* tab in your list of theorems\n"
-"to see the new proofs which are available."
+"Guarda nel tab *Pow* nel tuo elenco di teoremi\n"
+"per vedere le nuove dimostrazioni disponibili."
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid ""
 "`Pow a b`, with notation `a ^ b`, is the usual\n"
 "  exponentiation of natural numbers. Internally it is\n"
@@ -2165,24 +2139,23 @@ msgid ""
 "\n"
 "Note in particular that `0 ^ 0 = 1`."
 msgstr ""
-"`Pow a b`, with notation `a ^ b`, is the usual\n"
-"  exponentiation of natural numbers. Internally it is\n"
-"  defined via two axioms:\n"
+"`Pow a b`, con notazione `a ^ b`, è\n"
+"  l'elevazione a potenza sui numeri naturali. Dentro Lean è\n"
+"  definita tramite due assiomi:\n"
 "\n"
 "  * `pow_zero a : a ^ 0 = 1`\n"
 "\n"
 "  * `pow_succ a b : a ^ succ b = a ^ b * a`\n"
 "\n"
-"Note in particular that `0 ^ 0 = 1`."
+"In particolare, dal primo segue che `0 ^ 0 = 1`."
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid ""
 "`pow_zero a : a ^ 0 = 1` is one of the two axioms\n"
 "defining exponentiation in this game."
 msgstr ""
-"`pow_zero a : a ^ 0 = 1` is one of the two axioms\n"
-"defining exponentiation in this game."
+"`pow_zero a : a ^ 0 = 1` è uno dei due assiomi che\n"
+"definiscono l'elevazione a potenza in questo gioco."
 
 #: Game.Levels.Power.L01zero_pow_zero
 #, fuzzy
@@ -2192,60 +2165,52 @@ msgid ""
 "game; all the later levels come out beautifully with the\n"
 "convention that `0 ^ 0 = 1`."
 msgstr ""
-"Mathematicians sometimes argue that `0 ^ 0 = 0` is also\n"
-"a good convention. But it is not a good convention in this\n"
-"game; all the later levels come out beautifully with the\n"
-"convention that `0 ^ 0 = 1`."
+"Certi matematici sostengono che anche `0 ^ 0 = 0` sia una\n"
+"convenzione ragionevole. Tuttavia non va d'accordo in questo gioco con il modo in cui abbiamo strutturato\n"
+"i livelli successivi, e nell'intento di difendere la loro eleganza matematica\n"
+"rimaniamo fermi sulla convenzione `0 ^ 0 = 1`."
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid "$0 ^ 0 = 1$"
 msgstr "$0 ^ 0 = 1$"
 
 #: Game.Levels.Power.L02zero_pow_succ
-#, fuzzy
 msgid "zero_pow_succ"
 msgstr "zero_pow_succ"
 
 #: Game.Levels.Power.L02zero_pow_succ
-#, fuzzy
 msgid ""
 "We've just seen that `0 ^ 0 = 1`, but if `n`\n"
 "is a successor, then `0 ^ n = 0`. We prove that here."
 msgstr ""
-"We've just seen that `0 ^ 0 = 1`, but if `n`\n"
-"is a successor, then `0 ^ n = 0`. We prove that here."
+"Abbiamo appena visto che `0 ^ 0 = 1`, ma se `n`\n"
+"è un successore, allora `0 ^ n = 0`. È ciò che dimostreremo adesso."
 
 #: Game.Levels.Power.L02zero_pow_succ
-#, fuzzy
 msgid ""
 "`pow_succ a b : a ^ (succ b) = a ^ b * a` is one of the\n"
 "two axioms defining exponentiation in this game."
 msgstr ""
-"`pow_succ a b : a ^ (succ b) = a ^ b * a` is one of the\n"
-"two axioms defining exponentiation in this game."
+"`pow_succ a b : a ^ (succ b) = a ^ b * a` è uno dei\n"
+"due assiomi che definiscono l'elevazione a potenza in questo gioco."
 
 #: Game.Levels.Power.L02zero_pow_succ
-#, fuzzy
 msgid ""
 "Although $0^0=1$ in this game, $0^n=0$ if $n>0$, i.e., if\n"
 "$n$ is a successor."
 msgstr ""
-"Although $0^0=1$ in this game, $0^n=0$ if $n>0$, i.e., if\n"
-"$n$ is a successor."
+"Sebbene definiamo $0^0=1$ in questo gioco, $0^n=0$ se $n>0$, ossia se\n"
+"$n$ è un successore."
 
 #: Game.Levels.Power.L02zero_pow_succ
-#, fuzzy
 msgid "For all numbers $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
-msgstr "For all numbers $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
+msgstr "Per tutti i naturali $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
 
 #: Game.Levels.Power.L03pow_one
-#, fuzzy
 msgid "pow_one"
 msgstr "pow_one"
 
 #: Game.Levels.Power.L03pow_one
-#, fuzzy
 msgid ""
 "`pow_one a` says that `a ^ 1 = a`.\n"
 "\n"
@@ -2253,83 +2218,69 @@ msgid ""
 "defined to be `a ^ 0 * a` so it's `1 * a`, and to prove\n"
 "that this is equal to `a` you need to use induction somewhere."
 msgstr ""
-"`pow_one a` says that `a ^ 1 = a`.\n"
+"`pow_one a` afferma `a ^ 1 = a`.\n"
 "\n"
-"Note that this is not quite true by definition: `a ^ 1` is\n"
-"defined to be `a ^ 0 * a` so it's `1 * a`, and to prove\n"
-"that this is equal to `a` you need to use induction somewhere."
+"Questo fatto non deriva direttamente dalla definizione: `a ^ 1` si\n"
+"espande in `a ^ 0 * a` ovvero `1 * a`, e abbiamo visto che per dimostrare\n"
+"che tale prodotto è uguale ad `a` bisogna usare l'induzione."
 
 #: Game.Levels.Power.L03pow_one
-#, fuzzy
 msgid "For all naturals $a$, $a ^ 1 = a$."
-msgstr "For all naturals $a$, $a ^ 1 = a$."
+msgstr "Per tutti i naturali $a$, $a ^ 1 = a$."
 
 #: Game.Levels.Power.L04one_pow
-#, fuzzy
 msgid "one_pow"
 msgstr "one_pow"
 
 #: Game.Levels.Power.L04one_pow
-#, fuzzy
 msgid "`one_pow n` is a proof that $1^n=1$."
-msgstr "`one_pow n` is a proof that $1^n=1$."
+msgstr "`one_pow n` è la dimostrazione che $1^n=1$."
 
 #: Game.Levels.Power.L04one_pow
-#, fuzzy
 msgid "For all naturals $m$, $1 ^ m = 1$."
-msgstr "For all naturals $m$, $1 ^ m = 1$."
+msgstr "Per tutti i naturali $m$, $1 ^ m = 1$."
 
 #: Game.Levels.Power.L05pow_two
-#, fuzzy
 msgid "pow_two"
 msgstr "pow_two"
 
 #: Game.Levels.Power.L05pow_two
-#, fuzzy
 msgid "Note: this lemma will be useful for the final boss!"
-msgstr "Note: this lemma will be useful for the final boss!"
+msgstr "Nota: questo lemma sarà d'aiuto per il boss finale!"
 
 #: Game.Levels.Power.L05pow_two
-#, fuzzy
 msgid "`pow_two a` says that `a ^ 2 = a * a`."
-msgstr "`pow_two a` says that `a ^ 2 = a * a`."
+msgstr "`pow_two a` afferma `a ^ 2 = a * a`."
 
 #: Game.Levels.Power.L05pow_two
-#, fuzzy
 msgid "For all naturals $a$, $a ^ 2 = a \\times a$."
-msgstr "For all naturals $a$, $a ^ 2 = a \\times a$."
+msgstr "Per tutti i naturali $a$, $a ^ 2 = a \\times a$."
 
 #: Game.Levels.Power.L06pow_add
-#, fuzzy
 msgid "pow_add"
 msgstr "pow_add"
 
 #: Game.Levels.Power.L06pow_add
-#, fuzzy
 msgid ""
 "Let's now begin our approach to the final boss,\n"
 "by proving some more subtle facts about powers."
 msgstr ""
-"Let's now begin our approach to the final boss,\n"
-"by proving some more subtle facts about powers."
+"Vediamo meglio come affrontare il boss finale,\n"
+"dimostrando qualche proprietà più subdola delle potenze."
 
 #: Game.Levels.Power.L06pow_add
-#, fuzzy
 msgid "`pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$"
-msgstr "`pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$"
+msgstr "`pow_add a m n` è la dimostrazione che $a^{m+n}=a^ma^n.$"
 
 #: Game.Levels.Power.L06pow_add
-#, fuzzy
 msgid "For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$."
-msgstr "For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$."
+msgstr "Per tutti i naturali $a$, $m$, $n$, si ha che $a^{m + n} = a ^ m  a ^ n$."
 
 #: Game.Levels.Power.L07mul_pow
-#, fuzzy
 msgid "mul_pow"
 msgstr "mul_pow"
 
 #: Game.Levels.Power.L07mul_pow
-#, fuzzy
 msgid ""
 "The music gets ever more dramatic, as we explore\n"
 "the interplay between exponentiation and multiplication.\n"
@@ -2338,25 +2289,22 @@ msgid ""
 "because `rw [mul_comm]` swaps the wrong multiplication,\n"
 "then read the documentation of `rw` for tips on how to fix this."
 msgstr ""
-"The music gets ever more dramatic, as we explore\n"
-"the interplay between exponentiation and multiplication.\n"
+"La musica si fa sempre più drammatica nel mentre che ci addentriamo\n"
+"nella relazione tra elevazione a potenza e prodotto.\n"
 "\n"
-"If you're having trouble exchanging the right `x * y`\n"
-"because `rw [mul_comm]` swaps the wrong multiplication,\n"
-"then read the documentation of `rw` for tips on how to fix this."
+"Se stai avendo difficoltà ad applicare la commutatività sul `x * y` che vuoi scambiare\n"
+"perché `rw [mul_comm]` sta operando su un prodotto diverso,\n"
+"leggi la documentazione di `rw` per ripassare come fare sostituzioni di precisione."
 
 #: Game.Levels.Power.L07mul_pow
-#, fuzzy
 msgid "`mul_pow a b n` is a proof that $(ab)^n=a^nb^n.$"
-msgstr "`mul_pow a b n` is a proof that $(ab)^n=a^nb^n.$"
+msgstr "`mul_pow a b n` è la dimostrazione che $(ab)^n=a^nb^n.$"
 
 #: Game.Levels.Power.L07mul_pow
-#, fuzzy
 msgid "For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$."
-msgstr "For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$."
+msgstr "Per tutti i naturali $a$, $b$, $n$, si ha che $(ab) ^ n = a ^ nb ^ n$."
 
 #: Game.Levels.Power.L08pow_pow
-#, fuzzy
 msgid "pow_pow"
 msgstr "pow_pow"
 
@@ -2367,19 +2315,17 @@ msgid ""
 "sub-boss appears as the music reaches a frenzy. What\n"
 "else could there be to prove about powers after this?"
 msgstr ""
-"One of the best named levels in the game, a savage `pow_pow`\n"
-"sub-boss appears as the music reaches a frenzy. What\n"
-"else could there be to prove about powers after this?"
+"Con il suo nome degno di un premio Oscar, il mini-boss `pow_pow`\n"
+"salta nel ring e la musica si fa ancora più intensa. Cos'altro c'è da\n"
+"dimostrare sulle potenze dopo di lui?!"
 
 #: Game.Levels.Power.L08pow_pow
-#, fuzzy
 msgid "`pow_pow a m n` is a proof that $(a^m)^n=a^{mn}.$"
-msgstr "`pow_pow a m n` is a proof that $(a^m)^n=a^{mn}.$"
+msgstr "`pow_pow a m n` è la dimostrazione che $(a^m)^n=a^{mn}.$"
 
 #: Game.Levels.Power.L08pow_pow
-#, fuzzy
 msgid "For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$."
-msgstr "For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$."
+msgstr "Per tutti i naturali $a$, $m$, $n$, si ha che $(a ^ m) ^ n = a ^ {mn}$."
 
 #: Game.Levels.Power.L08pow_pow
 #, fuzzy
@@ -2394,42 +2340,37 @@ msgid ""
 "\n"
 "Suddenly the music starts up again. This really is the final boss."
 msgstr ""
-"The music dies down. Is that it?\n"
+"La musica si affievolisce. È finita?\n"
 "\n"
-"Course it isn't, you can\n"
-"clearly see that there are two worlds left.\n"
+"Ovvio che no, come vedrai\n"
+"ci sono ancora due mondi da esplorare.\n"
 "\n"
-"A passing mathematician says that mathematicians don't have a name\n"
-"for the structure you just constructed. You feel cheated.\n"
+"Intanto, un matematico a passeggio ti rivela che i matematici non hanno dato un nome\n"
+"alla struttura che hai appena costruito. Questa notizia ti lascia l'amaro in bocca.\n"
 "\n"
-"Suddenly the music starts up again. This really is the final boss."
+"La musica riparte improvvisamente. Ti lasci alle spalle il passato: lo scontro con il boss finale è vicino."
 
 #: Game.Levels.Power.L09add_sq
-#, fuzzy
 msgid "add_sq"
 msgstr "add_sq"
 
 #: Game.Levels.Power.L09add_sq
-#, fuzzy
 msgid "[final boss music]"
 msgstr "[final boss music]"
 
 #: Game.Levels.Power.L09add_sq
-#, fuzzy
 msgid "`add_sq a b` is the statement that $(a+b)^2=a^2+b^2+2ab.$"
-msgstr "`add_sq a b` is the statement that $(a+b)^2=a^2+b^2+2ab.$"
+msgstr "`add_sq a b` è l'enunciato $(a+b)^2=a^2+b^2+2ab.$"
 
 #: Game.Levels.Power.L09add_sq
-#, fuzzy
 msgid ""
 "For all numbers $a$ and $b$, we have\n"
 "$$(a+b)^2=a^2+b^2+2ab.$$"
 msgstr ""
-"For all numbers $a$ and $b$, we have\n"
+"Per tutti i naturali $a$ e $b$, si ha che\n"
 "$$(a+b)^2=a^2+b^2+2ab.$$"
 
 #: Game.Levels.Power.L09add_sq
-#, fuzzy
 msgid ""
 "It's all over! You have proved a theorem which has tripped up\n"
 "schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$:\n"
@@ -2440,19 +2381,18 @@ msgid ""
 "But wait! This boss is stirring...and mutating into a second more powerful "
 "form!"
 msgstr ""
-"It's all over! You have proved a theorem which has tripped up\n"
-"schoolkids for generations (some of them think $(a+b)^2=a^2+b^2$:\n"
-"this is \"the freshman's dream\").\n"
+"Hai vinto tutto! Hai dimostrato un teorema che ha tormentato\n"
+"intere generazioni di alunni (alcuni credono che $(a+b)^2=a^2+b^2$:\n"
+"il cosiddetto \"freshman's dream\").\n"
 "\n"
-"How many rewrites did you use? I can do it in 12.\n"
+"Quante sostituzioni hai fatto? Io ci sono riuscito in 12.\n"
 "\n"
-"But wait! This boss is stirring...and mutating into a second more powerful "
-"form!"
+"In guardia! Il boss si agita...si sta trasformando nella sua seconda forma"
+"ancor più letale!"
 
 #: Game.Levels.Power.L10FLT
-#, fuzzy
 msgid "Fermat's Last Theorem"
-msgstr "Fermat's Last Theorem"
+msgstr "L'ultimo teorema di Fermat"
 
 #: Game.Levels.Power.L10FLT
 msgid ""
@@ -2482,35 +2422,32 @@ msgid ""
 "an interactive textbook which you can read in your browser,\n"
 "and which explains how to work with many more mathematical concepts in Lean."
 msgstr ""
-"Ora abbiamo abbastanza per affermare una versione matematicamente accurata, "
-"ma un po' goffa, dell'Ultimo Teorema di Fermat\n"
-"versione un po' goffa dell'Ultimo Teorema di Fermat.\n"
+"Ora sappiamo abbastanza per affermare una versione matematicamente accurata,"
+"ma un po' goffa, dell'Ultimo Teorema di Fermat.\n"
 "\n"
 "L'ultimo teorema di Fermat afferma che se $x,y,z>0$ e $m \\geq 3$ allora "
-"$x^m+y^m^not =z^m$.\n"
-"Se non avete ancora fatto il mondo delle disuguaglianze, non possiamo parlare "
-"di $m \\geq 3$,\n"
-"quindi dobbiamo ricorrere all'espediente di usare `n + 3' per `m',\n"
-"che garantisce che sia abbastanza grande. Allo stesso modo, al posto di `x > "
-"0` usiamo\n"
-"usiamo `a + 1`.\n"
+"$x^m+y^m\\not =z^m$.\n"
+"Se non sei ancora stato nel Mondo delle Disequazioni, non possiamo parlare ancora di $m \\geq 3$,\n"
+"quindi dobbiamo ricorrere all'espediente `n + 3` per `m`,\n"
+"che garantisce che sia abbastanza grande. Allo stesso modo, simuliamo `x > 0`\n"
+"tramite `a + 1`.\n"
 "\n"
-"Questo livello assomiglia superficialmente ad altri livelli che abbiamo "
-"visto,\n"
-"ma la soluzione più breve conosciuta dagli esseri umani si tradurrebbe in\n"
-"milioni di righe di codice Lean. L'autore di questo gioco,\n"
-"Kevin Buzzard, sta lavorando per tradurre la prova di Wiles e Taylor in Lean\n"
-"e Taylor in Lean, anche se questo compito richiederà molti anni.\n"
+"A primo sguardo, questo livello assomiglia ad altri livelli che abbiamo visto,\n"
+"ma in realtà è impossibile da dimostrare a mano. Purtroppo, la soluzione più breve nota all'uomo\n"
+"corrisponde a milioni di righe di codice Lean. Questo boss imbattibile ti lascia tutti perplessi, ma\n"
+"non perdiamoci d'animo! L'autore di questo gioco,\n"
+"Kevin Buzzard, sta lavorando al traduzione della prova di Wiles e Taylor in Lean,\n"
+"nonostante sia un compito che richiederà parecchi anni.\n"
 "\n"
 "## CONGRATULAZIONI!\n"
 "\n"
-"Avete terminato la missione principale del gioco dei numeri naturali!\n"
-"Se desiderate saperne di più su come utilizzare Lean per\n"
-"dimostrare i teoremi della matematica, date un'occhiata a\n"
-"a [Mathematics In Lean](https://leanprover-community.github.io/"
+"Hai completato la missione principale del Natural Numbers Game!\n"
+"Se vuoi sapere di più su come si usa Lean per\n"
+"dimostrare i teoremi della matematica, ti indirizziamo a \n"
+"[Mathematics In Lean](https://leanprover-community.github.io/"
 "mathematics_in_lean/),\n"
-"un libro di testo interattivo che potete leggere nel vostro browser,\n"
-"che spiega come lavorare con molti altri concetti matematici in Lean."
+"un web book interattivo che puoi leggere dal browser,\n"
+"che spiega come trattare tanti altri concetti matematici su Lean."
 
 #: Game.Levels.Power.L10FLT
 #, fuzzy
@@ -2519,34 +2456,31 @@ msgid ""
 "modern word `sorry`. The game won't complain - or notice - if you\n"
 "prove anything with `xyzzy`."
 msgstr ""
-"`xyzzy` is an ancient magic spell, believed to be the origin of the\n"
-"modern word `sorry`. The game won't complain - or notice - if you\n"
-"prove anything with `xyzzy`."
+"`xyzzy` è un incantesimo arcaico, che si ritiene sia l'origine\n"
+"della parola inglese `sorry`. Il gioco non si lamenterà - né noterà nemmeno - se\n"
+"completi tutti i livelli con `xyzzy`."
 
 #: Game.Levels.Power.L10FLT
-#, fuzzy
 msgid ""
 "For all naturals $a$ $b$ $c$ and $n$, we have\n"
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 msgstr ""
-"For all naturals $a$ $b$ $c$ and $n$, we have\n"
+"Per tutti i naturali $a$ $b$ $c$ and $n$, si ha che\n"
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 
 #: Game.Levels.Power.L10FLT
-#, fuzzy
 msgid ""
 "Congratulations! You have proved Fermat's Last Theorem!\n"
 "\n"
 "Either that, or you used magic..."
 msgstr ""
-"Congratulations! You have proved Fermat's Last Theorem!\n"
+"Congratulazioni! Hai dimostrato l'ultimo teorema di Fermat!\n"
 "\n"
-"Either that, or you used magic..."
+"O forse no... ti ho visto usare la polvere magica..."
 
 #: Game.Levels.Power
-#, fuzzy
 msgid "Power World"
-msgstr "Power World"
+msgstr "Il Mondo della Potenza"
 
 #: Game.Levels.Power
 #, fuzzy
@@ -2567,26 +2501,25 @@ msgid ""
 "in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
 "College for funding her."
 msgstr ""
-"This world introduces exponentiation. If you want to define `37 ^ n`\n"
-"then, as always, you will need to know what `37 ^ 0` is, and\n"
-"what `37 ^ (succ d)` is, given only `37 ^ d`.\n"
+"Questo mondo ospita l'elevamento a potenza. Per definire `37 ^ n`\n"
+"come sempre, dobbiamo stabilire cosa significa `37 ^ 0`, e poi\n"
+"cosa significa `37 ^ (succ d)`, dalla conoscenza di `37 ^ d`.\n"
 "\n"
-"You can probably guess the names of the general theorems:\n"
+"Se sapevi che il nome dell'operazione in inglese è "power", magari hai già indovinato i nomi dei due assiomi:\n"
 "\n"
 "  * `pow_zero (a : ℕ) : a ^ 0 = 1`\n"
 "  * `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`\n"
 "\n"
-"Using only these, can you get past the final boss level?\n"
+"Riuscirai a superare il livello boss usando solo questi due?\n"
 "\n"
-"The levels in this world were designed by Sian Carey, a UROP student\n"
-"at Imperial College London, funded by a Mary Lister McCammon Fellowship\n"
-"in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
-"College for funding her."
+"Questo mondo è stato progettato da Sian Carey, studente UROP\n"
+"al Imperial College London, finanziato dalla Mary Lister McCammon Fellowship\n"
+"nell'estate 2019. Un grazie a Sian e un grazie a Imperial\n"
+"College per averla sostenuta economicamente."
 
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid "The `exact` tactic"
-msgstr "The `exact` tactic"
+msgstr "La tattica `exact`"
 
 #: Game.Levels.Implication.L01exact
 #, fuzzy
@@ -2663,7 +2596,7 @@ msgstr ""
 #: Game.Levels.Implication.L01exact
 #, fuzzy
 msgid "Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$."
-msgstr "Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$."
+msgstr "Assuming $x+y=37$ and $3x+z=42$, si ha che $x+y=37$."
 
 #: Game.Levels.Implication.L01exact
 #, fuzzy
@@ -2691,7 +2624,7 @@ msgstr ""
 #: Game.Levels.Implication.L02exact2
 #, fuzzy
 msgid "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
-msgstr "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
+msgstr "Assuming $0+x=(0+y)+2$, si ha che $x=y+2$."
 
 #: Game.Levels.Implication.L02exact2
 #, fuzzy
@@ -2776,22 +2709,8 @@ msgid ""
 "\n"
 "If the goal is `a * b = 7`, then `apply succ_inj` will turn the\n"
 "goal into `succ (a * b) = succ 7`."
-msgstr ""
-"## Summary\n"
-"\n"
-"If `t : P → Q` is a proof that $P \\implies Q$, and `h : P` is a proof of "
-"`P`,\n"
-"then `apply t at h` will change `h` to a proof of `Q`. The idea is that if\n"
-"you know `P` is true, then you can deduce from `t` that `Q` is true.\n"
-"\n"
-"If the *goal* is `Q`, then `apply t` will \\\"argue backwards\\\" and change "
-"the\n"
-"goal to `P`. The idea here is that if you want to prove `Q`, then by `t`\n"
-"it suffices to prove `P`, so you can reduce the goal to proving `P`.\n"
-"\n"
-"### Example:\n"
-"\n"
-"`succ_inj x y` is a proof that `succ x = succ y → x = y`.\n"
+msgstr "\n"
+"`succ_inj x y` è la dimostrazione che `succ x = succ y → x = y`.\n"
 "\n"
 "So if you have a hypothesis `h : succ (a + 37) = succ (b + 42)`\n"
 "then `apply succ_inj at h` will change `h` to `a + 37 = b + 42`.\n"
@@ -3390,7 +3309,7 @@ msgstr ""
 #: Game.Levels.Implication.L10one_ne_zero
 #, fuzzy
 msgid "`one_ne_zero` is a proof that `1 ≠ 0`."
-msgstr "`one_ne_zero` is a proof that `1 ≠ 0`."
+msgstr "`one_ne_zero` è la dimostrazione che `1 ≠ 0`."
 
 #: Game.Levels.Implication.L10one_ne_zero
 #, fuzzy
@@ -3464,7 +3383,7 @@ msgid ""
 "World\" and\n"
 "decide your route."
 msgstr ""
-"Here's my proof:\n"
+"Ecco la mia dimostrazione:\n"
 "```\n"
 "intro h\n"
 "rw [add_succ, add_succ, add_zero] at h\n"
@@ -3526,7 +3445,7 @@ msgstr "add_left_comm"
 #: Game.Levels.Algorithm.L01add_left_comm
 #, fuzzy
 msgid "`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`."
-msgstr "`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`."
+msgstr "`add_left_comm a b c` è la dimostrazione che `a + (b + c) = b + (a + c)`."
 
 #: Game.Levels.Algorithm.L01add_left_comm
 #, fuzzy
@@ -3592,7 +3511,7 @@ msgid ""
 "If $a, b$, $c$ and $d$ are numbers, we have\n"
 "$(a + b) + (c + d) = ((a + c) + d) + b.$"
 msgstr ""
-"If $a, b$, $c$ and $d$ are numbers, we have\n"
+"If $a, b$, $c$ and $d$ are numbers, si ha che\n"
 "$(a + b) + (c + d) = ((a + c) + d) + b.$"
 
 #: Game.Levels.Algorithm.L02add_algo1
@@ -3677,7 +3596,7 @@ msgid ""
 "If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
 "$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
 msgstr ""
-"If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
+"If $a, b,\\ldots h$ are arbitrary natural numbers, si ha che\n"
 "$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
 
 #: Game.Levels.Algorithm.L03add_algo2
@@ -4792,7 +4711,7 @@ msgstr ""
 #: Game.Levels.LessOrEqual.L02zero_le
 #, fuzzy
 msgid "`zero_le x` is a proof that `0 ≤ x`."
-msgstr "`zero_le x` is a proof that `0 ≤ x`."
+msgstr "`zero_le x` è la dimostrazione che `0 ≤ x`."
 
 #: Game.Levels.LessOrEqual.L02zero_le
 #, fuzzy
@@ -4807,7 +4726,7 @@ msgstr "x ≤ succ x"
 #: Game.Levels.LessOrEqual.L03le_succ_self
 #, fuzzy
 msgid "`le_succ_self x` is a proof that `x ≤ succ x`."
-msgstr "`le_succ_self x` is a proof that `x ≤ succ x`."
+msgstr "`le_succ_self x` è la dimostrazione che `x ≤ succ x`."
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 #, fuzzy
@@ -4864,9 +4783,8 @@ msgid ""
 "$P \\implies Q \\implies R$; for them, this usually means that $P \\implies "
 "Q$\n"
 "and $Q \\implies R$."
-msgstr ""
-"`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
-"More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
+msgstr "`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
+"More precisely, it è la dimostrazione che `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
 "If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.\n"
 "\n"
 "## A note on associativity\n"
@@ -4908,7 +4826,7 @@ msgid ""
 "Similarly, you can destruct\n"
 "`«{hyz}»` into its parts with `cases «{hyz}» with b hb`."
 msgstr ""
-"Now `«{ha}»` is a proof that `«{y}» = «{x}» + «{a}»`, and `hxy` has vanished. "
+"Now `«{ha}»` è la dimostrazione che `«{y}» = «{x}» + «{a}»`, and `hxy` has vanished. "
 "Similarly, you can destruct\n"
 "`«{hyz}»` into its parts with `cases «{hyz}» with b hb`."
 
@@ -4980,7 +4898,7 @@ msgstr "x ≤ y and y ≤ x implies x = y"
 #: Game.Levels.LessOrEqual.L06le_antisymm
 #, fuzzy
 msgid "`le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`."
-msgstr "`le_antisymm x y` is a proof that if `x ≤ y` and `y ≤ x` then `x = y`."
+msgstr "`le_antisymm x y` è la dimostrazione che if `x ≤ y` and `y ≤ x` then `x = y`."
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
 #, fuzzy
@@ -5021,7 +4939,7 @@ msgid ""
 "that `≤` is a total order. Let's learn two more easy tactics\n"
 "first."
 msgstr ""
-"Here's my proof:\n"
+"Ecco la mia dimostrazione:\n"
 "```\n"
 "cases hxy with a ha\n"
 "cases hyx with b hb\n"
@@ -5172,7 +5090,7 @@ msgstr "x ≤ y or y ≤ x"
 #: Game.Levels.LessOrEqual.L08le_total
 #, fuzzy
 msgid "`le_total x y` is a proof that `x ≤ y` or `y ≤ x`."
-msgstr "`le_total x y` is a proof that `x ≤ y` or `y ≤ x`."
+msgstr "`le_total x y` è la dimostrazione che `x ≤ y` or `y ≤ x`."
 
 #: Game.Levels.LessOrEqual.L08le_total
 #, fuzzy
@@ -5245,7 +5163,7 @@ msgstr "succ x ≤ succ y → x ≤ y"
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 #, fuzzy
 msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
-msgstr "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr "`succ_le_succ x y` è la dimostrazione che if `succ x ≤ succ y` then `x ≤ y`."
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 #, fuzzy
@@ -5277,7 +5195,7 @@ msgid ""
 "exact hd\n"
 "```"
 msgstr ""
-"Here's my proof:\n"
+"Ecco la mia dimostrazione:\n"
 "```\n"
 "cases hx with d hd\n"
 "use d\n"
@@ -5294,7 +5212,7 @@ msgstr "x ≤ 1"
 #: Game.Levels.LessOrEqual.L10le_one
 #, fuzzy
 msgid "`le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`."
-msgstr "`le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`."
+msgstr "`le_one x` è la dimostrazione che if `x ≤ 1` then `x = 0` or `x = 1`."
 
 #: Game.Levels.LessOrEqual.L10le_one
 #, fuzzy
@@ -5328,7 +5246,7 @@ msgid ""
 "\n"
 "If you solved this level then you should be fine with the next level!"
 msgstr ""
-"Here's my proof:\n"
+"Ecco la mia dimostrazione:\n"
 "```\n"
 "cases x with y\n"
 "left\n"
@@ -5353,7 +5271,7 @@ msgstr "le_two"
 msgid ""
 "`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
 msgstr ""
-"`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
+"`le_two x` è la dimostrazione che if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
 
 #: Game.Levels.LessOrEqual.L11le_two
 #, fuzzy
@@ -5428,7 +5346,7 @@ msgstr "mul_le_mul_right"
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 #, fuzzy
 msgid "`mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`."
-msgstr "`mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`."
+msgstr "`mul_le_mul_right a b t` è la dimostrazione che `a ≤ b → a * t ≤ b * t`."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 #, fuzzy
@@ -5462,7 +5380,7 @@ msgstr "mul_left_ne_zero"
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #, fuzzy
 msgid "`mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`."
-msgstr "`mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`."
+msgstr "`mul_left_ne_zero a b` è la dimostrazione che `a * b ≠ 0 → b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #, fuzzy
@@ -5583,7 +5501,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #, fuzzy
 msgid "`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`."
-msgstr "`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`."
+msgstr "`eq_succ_of_ne_zero a` è la dimostrazione che `a ≠ 0 → ∃ n, a = succ n`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #, fuzzy
@@ -5630,7 +5548,7 @@ msgstr "one_le_of_ne_zero"
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #, fuzzy
 msgid "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`."
-msgstr "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`."
+msgstr "`one_le_of_ne_zero a` è la dimostrazione che `a ≠ 0 → 1 ≤ a`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #, fuzzy
@@ -5660,7 +5578,7 @@ msgid ""
 "It's one way of saying that a divisor of a positive number\n"
 "has to be at most that number."
 msgstr ""
-"`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
+"`le_mul_right a b` è la dimostrazione che `a * b ≠ 0 → a ≤ a * b`.\n"
 "\n"
 "It's one way of saying that a divisor of a positive number\n"
 "has to be at most that number."
@@ -5790,7 +5708,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #, fuzzy
 msgid "`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`."
-msgstr "`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`."
+msgstr "`mul_right_eq_one a b` è la dimostrazione che `a * b = 1 → a = 1`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #, fuzzy
@@ -5862,7 +5780,7 @@ msgstr "mul_ne_zero"
 msgid ""
 "`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
 msgstr ""
-"`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
+"`mul_ne_zero a b` è la dimostrazione che if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 #, fuzzy
@@ -5890,7 +5808,7 @@ msgstr "mul_eq_zero"
 msgid ""
 "`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
 msgstr ""
-"`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
+"`mul_eq_zero a b` è la dimostrazione che if `a * b = 0` then `a = 0` or `b = 0`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #, fuzzy
@@ -5926,7 +5844,7 @@ msgid ""
 "`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then "
 "`b = c`."
 msgstr ""
-"`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then "
+"`mul_left_cancel a b c` è la dimostrazione che if `a ≠ 0` and `a * b = a * c` then "
 "`b = c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
@@ -5989,7 +5907,7 @@ msgid ""
 "c → d = c`\".\n"
 "You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
 msgstr ""
-"The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * "
+"The inductive hypothesis `hd` is \"Per tutti i numeri naturali `c`, `a * d = a * "
 "c → d = c`\".\n"
 "You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
 
@@ -6009,7 +5927,7 @@ msgid ""
 "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = "
 "1`."
 msgstr ""
-"`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = "
+"`mul_right_eq_self a b` è la dimostrazione che if `a ≠ 0` and `a * b = a` then `b = "
 "1`."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
