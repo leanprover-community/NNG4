@@ -2158,16 +2158,15 @@ msgstr ""
 "definiscono l'elevazione a potenza in questo gioco."
 
 #: Game.Levels.Power.L01zero_pow_zero
-#, fuzzy
 msgid ""
 "Mathematicians sometimes argue that `0 ^ 0 = 0` is also\n"
 "a good convention. But it is not a good convention in this\n"
 "game; all the later levels come out beautifully with the\n"
 "convention that `0 ^ 0 = 1`."
 msgstr ""
-"Certi matematici sostengono che anche `0 ^ 0 = 0` sia una\n"
-"convenzione ragionevole. Tuttavia non va d'accordo in questo gioco con il modo in cui abbiamo strutturato\n"
-"i livelli successivi, e nell'intento di difendere la loro eleganza matematica\n"
+"Certi matematici sostengono che `0 ^ 0 = 0` sia pure una\n"
+"convenzione ragionevole. Tuttavia non va d'accordo con il modo in cui abbiamo strutturato\n"
+"i livelli successivi del gioco, e nell'intento di difendere la loro eleganza matematica\n"
 "rimaniamo fermi sulla convenzione `0 ^ 0 = 1`."
 
 #: Game.Levels.Power.L01zero_pow_zero
@@ -2501,11 +2500,11 @@ msgid ""
 "in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
 "College for funding her."
 msgstr ""
-"Questo mondo ospita l'elevamento a potenza. Per definire `37 ^ n`\n"
-"come sempre, dobbiamo stabilire cosa significa `37 ^ 0`, e poi\n"
+"Questo mondo ospita l'elevamento a potenza. Per definire `37 ^ n`,\n"
+"come al solito, dobbiamo stabilire cosa significa `37 ^ 0`, e poi\n"
 "cosa significa `37 ^ (succ d)`, dalla conoscenza di `37 ^ d`.\n"
 "\n"
-"Se sapevi che il nome dell'operazione in inglese è "power", magari hai già indovinato i nomi dei due assiomi:\n"
+"Se sapevi che il nome dell'operazione in inglese è \"power\", potevi immaginarti i nomi dei due assiomi:\n"
 "\n"
 "  * `pow_zero (a : ℕ) : a ^ 0 = 1`\n"
 "  * `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`\n"
@@ -2514,7 +2513,7 @@ msgstr ""
 "\n"
 "Questo mondo è stato progettato da Sian Carey, studente UROP\n"
 "al Imperial College London, finanziato dalla Mary Lister McCammon Fellowship\n"
-"nell'estate 2019. Un grazie a Sian e un grazie a Imperial\n"
+"nell'estate 2019. Grazie a Sian e grazie al Imperial\n"
 "College per averla sostenuta economicamente."
 
 #: Game.Levels.Implication.L01exact
@@ -2522,7 +2521,6 @@ msgid "The `exact` tactic"
 msgstr "La tattica `exact`"
 
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -2549,33 +2547,32 @@ msgid ""
 "and `rw [add_zero x]` will both change the goal to `x = x`,\n"
 "because `rw` guesses the input to the function `add_zero`."
 msgstr ""
-"## Summary\n"
+"## Riepilogo\n"
 "\n"
-"If the goal is a statement `P`, then `exact h` will close the goal if `h` is "
-"a proof of `P`.\n"
+"Se il goal è una proposizione `P`, `exact h` risolverà il goal se `h` è "
+"una dimostrazione di `P`.\n"
 "\n"
-"### Example\n"
+"### Esempio\n"
 "\n"
-"If the goal is `x = 37` and you have a hypothesis `h : x = 37`\n"
-"then `exact h` will solve the goal.\n"
+"Se il goal è `x = 37` e tra le ipotesi hai `h : x = 37`\n"
+"con `exact h` chiuderai il goal.\n"
 "\n"
-"### Example\n"
+"### Esempio\n"
 "\n"
-"If the goal is `x + 0 = x` then `exact add_zero x` will close the goal.\n"
+"Se il goal è `x + 0 = x`, `exact add_zero x` chiuderà il goal.\n"
 "\n"
-"### Exact needs to be exactly right\n"
+"### `exact` deve coincidere esattamente con il goal\n"
 "\n"
-"Note that `exact add_zero` will *not work* in the previous example;\n"
-"for `exact h` to work, `h` has to be *exactly* a proof of the goal.\n"
-"`add_zero` is a proof of `∀ n, n + 0 = n` or, if you like,\n"
-"a proof of `? + 0 = ?` where `?` needs to be supplied by the user.\n"
-"This is in contrast to `rw` and `apply`, which will \\\"guess the inputs\\\"\n"
-"if necessary. If the goal is `x + 0 = x` then `rw [add_zero]`\n"
-"and `rw [add_zero x]` will both change the goal to `x = x`,\n"
-"because `rw` guesses the input to the function `add_zero`."
+"È bene notare che `exact add_zero` *non funzionerà* nell'esempio di prima;\n"
+"come dice il nome, `exact h` ha successo solo se `h` coincide *esattamente* al goal.\n"
+"`add_zero` è la dimostrazione dell'enunciato più generale `∀ n, n + 0 = n` o, con notazione più intuitiva,\n"
+"alla dimostrazione di `? + 0 = ?` dove `?` deve essere fornito dall'utente.\n"
+"Diversamente da `rw` e `apply`, i quali tentano di \\\"indovinare i loro input\\\"\n"
+"quando essi sono assenti, `exact` vuole la pappa pronta. Ad esempio, se il goal è `x + 0 = x` sia `rw [add_zero]`\n"
+"che `rw [add_zero x]` porteranno il goal a `x = x`,\n"
+"perché `rw` è in grado di indovinare (o meglio, dedurre dal contesto) gli input della funzione `add_zero`."
 
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid ""
 "In this world we'll learn how to prove theorems of the form $P\\implies Q$.\n"
 "In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ "
@@ -2585,32 +2582,30 @@ msgid ""
 "The `exact` tactic can be used to close a goal which is exactly one of\n"
 "the hypotheses. It takes the name of the hypothesis as argument: `exact h`."
 msgstr ""
-"In this world we'll learn how to prove theorems of the form $P\\implies Q$.\n"
-"In other words, how to prove theorems of the form \"if $P$ is true, then $Q$ "
-"is true.\"\n"
-"To do that we need to learn some more tactics.\n"
+"In questo mondo vedremo come dimostrare teoremi della forma $P\\implies Q$.\n"
+"Se non hai mai incontrato l'implicazione logica, è come dire \"se $P$ è vero, allora $Q$ "
+"è vero.\"\n"
+"Per farlo avremo bisogno di conoscere qualche tattica in più.\n"
 "\n"
-"The `exact` tactic can be used to close a goal which is exactly one of\n"
-"the hypotheses. It takes the name of the hypothesis as argument: `exact h`."
+"La tattica `exact` può essere usata per chiudere un goal che è esattamente una\n"
+"delle ipotesi. Prende come argomento il nome di una delle ipotesi: `exact h`."
 
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid "Assuming $x+y=37$ and $3x+z=42$, we have $x+y=37$."
-msgstr "Assuming $x+y=37$ and $3x+z=42$, si ha che $x+y=37$."
+msgstr "Ipotizzando che $x+y=37$ e $3x+z=42$, si ha che $x+y=37$."
 
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid ""
 "The goal in this level is one of our hypotheses. Solve the goal by executing "
 "`exact h1`."
 msgstr ""
-"The goal in this level is one of our hypotheses. Solve the goal by executing "
+"Il goal di questo livello è una delle ipotesi che abbiamo. Risolvilo eseguendo "
 "`exact h1`."
 
 #: Game.Levels.Implication.L02exact2
 #, fuzzy
 msgid "`exact` practice."
-msgstr "`exact` practice."
+msgstr "esercizi di `exact`."
 
 #: Game.Levels.Implication.L02exact2
 #, fuzzy
@@ -2618,25 +2613,22 @@ msgid ""
 "If the goal is not *exactly* a hypothesis, we can sometimes\n"
 "use rewrites to fix things up."
 msgstr ""
-"If the goal is not *exactly* a hypothesis, we can sometimes\n"
-"use rewrites to fix things up."
+"Se il goal non coincide *esattamente* con un'ipotesi, può darsi che con\n"
+"qualche sostituzione possiamo farlo raggiungere una delle ipotesi."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
-msgstr "Assuming $0+x=(0+y)+2$, si ha che $x=y+2$."
+msgstr "Ipotizzando che $0+x=(0+y)+2$, si ha che $x=y+2$."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid ""
 "You can use `rw [zero_add] at «{h}»` to rewrite at `«{h}»` instead\n"
 "of at the goal."
 msgstr ""
-"You can use `rw [zero_add] at «{h}»` to rewrite at `«{h}»` instead\n"
-"of at the goal."
+"Puoi eseguire `rw [zero_add] at «{h}»` per sostituire nell'ipotesi `«{h}»` invece che\n"
+"nel goal."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid ""
 "Do that again!\n"
 "\n"
@@ -2645,24 +2637,22 @@ msgid ""
 "of\n"
 "`0 + «{x}»` it finds. Therefor, it did not rewrite `0 + «{y}»`, yet."
 msgstr ""
-"Do that again!\n"
+"Ripeti lo stesso comando!\n"
 "\n"
-"`rw [zero_add] at «{h}»` tries to fill in\n"
-"the arguments to `zero_add` (finding `«{x}»`) then it replaces all occurences "
-"of\n"
-"`0 + «{x}»` it finds. Therefor, it did not rewrite `0 + «{y}»`, yet."
+"`rw [zero_add] at «{h}»` ha completato automaticamente\n"
+"la chiamata a `zero_add` (trovando l'argomento `«{x}»`) e poi ha sostituito tutte le occorrenze "
+"di\n"
+"`0 + «{x}»` in un colpo. Dunque non ha toccato `0 + «{y}»` ancora, perciò ripeti il comando."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid ""
 "Now you could finish with `rw [«{h}»]` then `rfl`, but `exact «{h}»`\n"
 "does it in one line."
 msgstr ""
-"Now you could finish with `rw [«{h}»]` then `rfl`, but `exact «{h}»`\n"
-"does it in one line."
+"Adesso potresti chiudere con `rw [«{h}»]` e `rfl`, ma `exact «{h}»`\n"
+"fa lo stesso lavoro in una sola riga."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid ""
 "Here's a two-line proof:\n"
 "```\n"
@@ -2670,19 +2660,17 @@ msgid ""
 "exact h\n"
 "```"
 msgstr ""
-"Here's a two-line proof:\n"
+"Ecco una dimostrazione di due righe:\n"
 "```\n"
 "repeat rw [zero_add] at h\n"
 "exact h\n"
 "```"
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid "The `apply` tactic."
-msgstr "The `apply` tactic."
+msgstr "La tattica `apply`."
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -2709,52 +2697,60 @@ msgid ""
 "\n"
 "If the goal is `a * b = 7`, then `apply succ_inj` will turn the\n"
 "goal into `succ (a * b) = succ 7`."
-msgstr "\n"
-"`succ_inj x y` è la dimostrazione che `succ x = succ y → x = y`.\n"
+msgstr ""
+"## Riepilogo\n"
 "\n"
-"So if you have a hypothesis `h : succ (a + 37) = succ (b + 42)`\n"
-"then `apply succ_inj at h` will change `h` to `a + 37 = b + 42`.\n"
-"You could write `apply succ_inj (a + 37) (b + 42) at h`\n"
-"but Lean is smart enough to figure out the inputs to `succ_inj`.\n"
+"Se `t : P → Q` è una dimostrazione di $P \\implies Q$, e `h : P` è una dimostrazione di "
+"`P`,\n"
+"allora `apply t at h` trasformerà `h` in una dimostrazione di `Q`. L'idea alla base di questo è\n"
+"che se sai che `P` è vera, allora l'implicazione `t` ti permette di dedurre che `Q` è vera.\n"
 "\n"
-"### Example\n"
+"Al contrario, se il *goal* è `Q`, allora `apply t` \\\"ragionerà all'indietro\\\" e trasformerà "
+"il\n"
+"goal in `P`. È sempre l'implicazione che ci permette di farlo: `Q` è garantito da `t`\n"
+"se riesci a dimostrare `P`, quindi il goal si riduce a una dimostrazione di `P`.\n"
 "\n"
-"If the goal is `a * b = 7`, then `apply succ_inj` will turn the\n"
-"goal into `succ (a * b) = succ 7`."
+"### Esempio:\n"
+"\n"
+"`succ_inj x y` è una dimostrazione di `succ x = succ y → x = y` (un'implicazione).\n"
+"\n"
+"Quindi, se hai l'ipotesi `h : succ (a + 37) = succ (b + 42)`\n"
+"allora con `apply succ_inj at h` trasformerai `h` in `a + 37 = b + 42`.\n"
+"Puoi anche fornire gli argomenti direttamente `apply succ_inj (a + 37) (b + 42) at h`\n"
+"ma Lean fa questo lavoro per noi e capisce da solo cosa deve passare a `succ_inj`.\n"
+"\n"
+"### Esempio\n"
+"\n"
+"Se hai il goal `a * b = 7`, con `apply succ_inj` trasformerai il\n"
+"goal in `succ (a * b) = succ 7`."
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid ""
 "In this level one of our hypotheses is an *implication*. We can use this\n"
 "hypothesis with the `apply` tactic."
 msgstr ""
-"In this level one of our hypotheses is an *implication*. We can use this\n"
-"hypothesis with the `apply` tactic."
+"In questo livello una delle ipotesi è un'*implicazione*. Si può applicare\n"
+"la tattica `apply` a questa ipotesi."
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid ""
 "If $x=37$ and we know that $x=37\\implies y=42$ then we can deduce $y=42$."
 msgstr ""
-"If $x=37$ and we know that $x=37\\implies y=42$ then we can deduce $y=42$."
+"Se $x=37$ e abbiamo che $x=37\\implies y=42$ allora possiamo dedurre $y=42$."
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid "Start with `apply h2 at h1`. This will change `h1` to `y = 42`."
-msgstr "Start with `apply h2 at h1`. This will change `h1` to `y = 42`."
+msgstr "Inizia facendo `apply h2 at h1`. Così trasformi `h1` in `y = 42`."
 
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid "Now finish using the `exact` tactic."
-msgstr "Now finish using the `exact` tactic."
+msgstr "Adesso chiudi la dimostrazione usando `exact`."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid "succ_inj : the successor function is injective"
-msgstr "succ_inj : the successor function is injective"
+msgstr "succ_inj : la funzione successore è iniettiva"
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "If `a` and `b` are numbers, then `succ_inj a b` is a proof\n"
 "that `succ a = succ b` implies `a = b`. Click on this theorem in the *Peano*\n"
