@@ -2608,13 +2608,12 @@ msgid "`exact` practice."
 msgstr "esercizi di `exact`."
 
 #: Game.Levels.Implication.L02exact2
-#, fuzzy
 msgid ""
 "If the goal is not *exactly* a hypothesis, we can sometimes\n"
 "use rewrites to fix things up."
 msgstr ""
-"Se il goal non coincide *esattamente* con un'ipotesi, può darsi che con\n"
-"qualche sostituzione possiamo farlo raggiungere una delle ipotesi."
+"Se il goal non coincide *esattamente* con una delle ipotesi, può darsi che con\n"
+"qualche sostituzione possiamo renderlo uguale a una di esse."
 
 #: Game.Levels.Implication.L02exact2
 msgid "Assuming $0+x=(0+y)+2$, we have $x=y+2$."
@@ -2625,7 +2624,7 @@ msgid ""
 "You can use `rw [zero_add] at «{h}»` to rewrite at `«{h}»` instead\n"
 "of at the goal."
 msgstr ""
-"Puoi eseguire `rw [zero_add] at «{h}»` per sostituire nell'ipotesi `«{h}»` invece che\n"
+"Puoi eseguire `rw [zero_add] at «{h}»` per sostituire all'interno dell'ipotesi `«{h}»` invece che\n"
 "nel goal."
 
 #: Game.Levels.Implication.L02exact2
@@ -2642,7 +2641,7 @@ msgstr ""
 "`rw [zero_add] at «{h}»` ha completato automaticamente\n"
 "la chiamata a `zero_add` (trovando l'argomento `«{x}»`) e poi ha sostituito tutte le occorrenze "
 "di\n"
-"`0 + «{x}»` in un colpo. Dunque non ha toccato `0 + «{y}»` ancora, perciò ripeti il comando."
+"`0 + «{x}»` in un solo colpo. Dunque non ha toccato `0 + «{y}»` ancora, perciò dovresti ripetere il comando."
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
@@ -2773,7 +2772,6 @@ msgstr ""
 "walk you through this level."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "# Statement\n"
 "\n"
@@ -2799,108 +2797,97 @@ msgid ""
 "in Lean it can be proved using `pred`, a mathematically\n"
 "pathological function."
 msgstr ""
-"# Statement\n"
+"# Enunciato\n"
 "\n"
-"If $a$ and $b$ are numbers, then\n"
-"`succ_inj a b` is the proof that\n"
+"Se $a$ e $b$ sono numeri, allora\n"
+"`succ_inj a b` è la dimostrazione che\n"
 "$ (\\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n"
 "\n"
-"## More technical details\n"
+"## Dettagli tecnici\n"
 "\n"
-"There are other ways to think about `succ_inj`.\n"
+"Ci sono diversi modi di interpretare `succ_inj`.\n"
 "\n"
-"You can think about `succ_inj` itself as a function which takes two\n"
-"numbers $$a$$ and $$b$$ as input, and outputs a proof of\n"
+"Si può pensare a `succ_inj` come una funzione che prende in input due\n"
+"numeri $$a$$ e $$b$$, e restituisce una dimostrazione di\n"
 "$ ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n"
 "\n"
-"You can think of `succ_inj` itself as a proof; it is the proof\n"
-"that `succ` is an injective function. In other words,\n"
-"`succ_inj` is a proof of\n"
+"Ma `succ_inj` in sé e anche una dimostrazione; ovvero la dimostrazione\n"
+"che `succ` è una funzione iniettiva. In termini matematici,\n"
+"`succ_inj` è una dimostrazione di\n"
 "$\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = "
 "\\operatorname{succ}(b)) \\implies a=b$.\n"
 "\n"
-"`succ_inj` was postulated as an axiom by Peano, but\n"
-"in Lean it can be proved using `pred`, a mathematically\n"
-"pathological function."
+"`succ_inj` fu postulato da Peano come un'assioma, ma\n"
+"in Lean può essere dimostrato usando `pred`, una funzione che non va\n"
+"molto d'accordo con i numeri naturali."
 
 #: Game.Levels.Implication.L04succ_inj Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid "If $x+1=4$ then $x=3$."
-msgstr "If $x+1=4$ then $x=3$."
+msgstr "Se $x+1=4$ allora $x=3$."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "Let's first get `h` into the form `succ x = succ 3` so we can\n"
 "apply `succ_inj`. First execute `rw [four_eq_succ_three] at h`\n"
 "to change the 4 on the right hand side."
 msgstr ""
-"Let's first get `h` into the form `succ x = succ 3` so we can\n"
-"apply `succ_inj`. First execute `rw [four_eq_succ_three] at h`\n"
-"to change the 4 on the right hand side."
+"Prima di tutto portiamo `h` nella forma `succ x = succ 3` in modo da poter applicare\n"
+"apply `succ_inj`. Esegui `rw [four_eq_succ_three] at h`\n"
+"per sostituire il 4 nel membro destro."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "Now rewrite `succ_eq_add_one` backwards at `h`\n"
 "to get the right hand side."
 msgstr ""
-"Now rewrite `succ_eq_add_one` backwards at `h`\n"
-"to get the right hand side."
+"Adesso riscrivi `succ_eq_add_one` all'indietro all'interno di `h`\n"
+"per avere il suo membro destro."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "You can put a `←` in front of any theorem provided to `rw` to rewrite\n"
 "the other way around. Look at the docs for `rw` for an explanation. Type `←` "
 "with `\\l`."
 msgstr ""
-"You can put a `←` in front of any theorem provided to `rw` to rewrite\n"
-"the other way around. Look at the docs for `rw` for an explanation. Type `←` "
-"with `\\l`."
+"Ricorda che mettendo `←` davanti a un teorema che passi a `rw` puoi\n"
+"sostituire nel senso opposto. Guarda la documentazione di `rw` per capire meglio il suo funzionamento.\n"
+"`←` si ottiene digitando `\\l`."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid "Concretely: `rw [← succ_eq_add_one] at h`."
-msgstr "Concretely: `rw [← succ_eq_add_one] at h`."
+msgstr "Sintassi concreta: `rw [← succ_eq_add_one] at h`."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "Now let's `apply` our new theorem. Execute `apply succ_inj at h`\n"
 "to change `h` to a proof of `x = 3`."
 msgstr ""
-"Now let's `apply` our new theorem. Execute `apply succ_inj at h`\n"
-"to change `h` to a proof of `x = 3`."
+"Ora possiamo fare `apply` del nostro teorema. Esegui `apply succ_inj at h`\n"
+"per trasformare `h` in una dimostrazione di `x = 3`."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid "Now finish in one line."
-msgstr "Now finish in one line."
+msgstr "E finisci la dimostrazione con un one-liner!"
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid ""
 "And now we've deduced what we wanted to prove: the goal is one of our "
 "assumptions.\n"
 "Finish the level with `exact h`."
 msgstr ""
-"And now we've deduced what we wanted to prove: the goal is one of our "
-"assumptions.\n"
-"Finish the level with `exact h`."
+"Abbiamo dedotto esattamente ciò che volevamo dimostrare: il goal coincide con una delle "
+"ipotesi.\n"
+"Completa il livello con `exact h`."
 
 #: Game.Levels.Implication.L04succ_inj
-#, fuzzy
 msgid "In the next level, we'll do the same proof but backwards."
-msgstr "In the next level, we'll do the same proof but backwards."
+msgstr "Nel livello successivo, dimostreremo lo stesso enunciato, al rovescio."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid "Arguing backwards"
-msgstr "Arguing backwards"
+msgstr "Ragionare all'indietro"
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid ""
 "In the last level, we manipulated the hypothesis `x + 1 = 4`\n"
 "  until it became the goal `x = 3`. In this level we'll manipulate\n"
@@ -2909,43 +2896,38 @@ msgid ""
 "  Again I will walk you through this one (assuming you're in\n"
 "  command line mode)."
 msgstr ""
-"In the last level, we manipulated the hypothesis `x + 1 = 4`\n"
-"  until it became the goal `x = 3`. In this level we'll manipulate\n"
-"  the goal until it becomes our hypothesis! In other words, we\n"
-"  will \"argue backwards\". The `apply` tactic can do this too.\n"
-"  Again I will walk you through this one (assuming you're in\n"
-"  command line mode)."
+"Nell'ultimo livello, abbiamo manipolato l'ipotesi `x + 1 = 4`\n"
+"  per farlo coincidere con il goal `x = 3`. In questo livello manipoleremo\n"
+"  il goal per farlo diventare una delle ipotesi! Sì puo dire che\n"
+"  \"ragioneremo all'indietro\". È sempre la `apply` che ci consente di fare questo.\n"
+"  Ti guiderò io anche in questa dimostrazione (assicurati di essere in modalità\n"
+"  command line)."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid "Start with `apply succ_inj` to apply `succ_inj` to the *goal*."
-msgstr "Start with `apply succ_inj` to apply `succ_inj` to the *goal*."
+msgstr "Parti con `apply succ_inj` per applicare `succ_inj` *sul goal*."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid ""
 "Applying a proof of $P\\implies Q$ to the *goal* changes $Q$ to $P$.\n"
 "Now try `rw [succ_eq_add_one]` to make the goal more like the hypothesis."
 msgstr ""
-"Applying a proof of $P\\implies Q$ to the *goal* changes $Q$ to $P$.\n"
-"Now try `rw [succ_eq_add_one]` to make the goal more like the hypothesis."
+"Applicando $P\\implies Q$ al *goal* ci siamo mossi da $Q$ a $P$.\n"
+"Ora esegui `rw [succ_eq_add_one]` per iniziare a portare il goal a una delle ipotesi."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid ""
 "Now rewrite `four_eq_succ_three` backwards to make the goal\n"
 "equal to the hypothesis."
 msgstr ""
-"Now rewrite `four_eq_succ_three` backwards to make the goal\n"
-"equal to the hypothesis."
+"Ora sostituisci `four_eq_succ_three` all'indietro per eguagliare il\n"
+"goal all'ipotesi."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid "You can now finish with `exact h`."
-msgstr "You can now finish with `exact h`."
+msgstr "Concludi la dimostrazione con `exact h`."
 
 #: Game.Levels.Implication.L05succ_inj2
-#, fuzzy
 msgid ""
 "Many people find `apply t at h` easy, but some find `apply t` confusing.\n"
 "If you find it confusing, then just argue forwards.\n"
@@ -2954,20 +2936,18 @@ msgid ""
 "can view by\n"
 "clicking on the tactic in the list on the right."
 msgstr ""
-"Many people find `apply t at h` easy, but some find `apply t` confusing.\n"
-"If you find it confusing, then just argue forwards.\n"
+"Molti trovano che ragionare in avanti con `apply t at h` sia più naturale, mentre ragionare all'indietro con `apply t` confonde le idee.\n"
+"Se confonde anche a te le idee, puoi benissimo ragionare sempre in avanti.\n"
 "\n"
-"You can read more about the `apply` tactic in its documentation, which you "
-"can view by\n"
-"clicking on the tactic in the list on the right."
+"Trovi più informazioni sulla tattica `apply` nella sua documentazione, a cui puoi "
+"accedere\n"
+"clickando sul suo nome nell'elenco di tattiche a destra."
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid "intro"
 msgstr "intro"
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -2984,23 +2964,22 @@ msgid ""
 "then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal\n"
 "will change to $x=y$."
 msgstr ""
-"## Summary\n"
+"## Riepilogo\n"
 "\n"
-"If the goal is `P → Q`, then `intro h` will introduce `h : P` as a "
-"hypothesis,\n"
-"and change the goal to `Q`. Mathematically, it says that to prove $P "
+"Se il goal è `P → Q`, allora `intro h` introdurrà `h : P` come "
+"ipotesi,\n"
+"e lascerà nel goal solo `Q`. Nella matematica, per dimostrare l'implicazione $P "
 "\\implies Q$,\n"
-"we can assume $P$ and then prove $Q$.\n"
+"possiamo dare per vero $P$ e dimostrare $Q$.\n"
 "\n"
-"### Example:\n"
+"### Ad esempio:\n"
 "\n"
-"If your goal is `x + 1 = y + 1 → x = y` (the way Lean writes $x+1=y+1 "
+"Se il goal è `x + 1 = y + 1 → x = y` (codice Lean per $x+1=y+1 "
 "\\implies x=y$)\n"
-"then `intro h` will give you a hypothesis $x+1=y+1$ named `h`, and the goal\n"
-"will change to $x=y$."
+"allora `intro h` creerà un'ipotesi $x+1=y+1$ con nome `h`, e il goal\n"
+"diventerà $x=y$."
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid ""
 "We have seen how to `apply` theorems and assumptions\n"
 "of the form `P → Q`. But what if our *goal* is of the form `P → Q`?\n"
@@ -3008,74 +2987,63 @@ msgid ""
 "`Q`\"\n"
 "in Lean. We do this with the `intro` tactic."
 msgstr ""
-"We have seen how to `apply` theorems and assumptions\n"
-"of the form `P → Q`. But what if our *goal* is of the form `P → Q`?\n"
-"To prove this goal, we need to know how to say \"let's assume `P` and deduce "
+"Abbiamo visto come fare `apply` di teoremi e ipotesi\n"
+"della forma `P → Q`. Cosa si può fare se è il *goal* ad avere la forma `P → Q`?\n"
+"Per dimostrare questo tipo di goal, ci serve un modo per dire a Lean \"nel contesto dove `P` è vero, voglio dedurre "
 "`Q`\"\n"
-"in Lean. We do this with the `intro` tactic."
+"Questo è il compito della tattica `intro`."
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid "$x=37\\implies x=37$."
 msgstr "$x=37\\implies x=37$."
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid "Start with `intro h` to assume the hypothesis and call its proof `h`."
-msgstr "Start with `intro h` to assume the hypothesis and call its proof `h`."
+msgstr "Parti eseguendo `intro h` per introdurre l'ipotesi nel contesto e chiamare la sua evidenza `h`."
 
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid "Now `exact h` finishes the job."
-msgstr "Now `exact h` finishes the job."
+msgstr "Ora concludi con `exact h`."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid "intro practice"
-msgstr "intro practice"
+msgstr "esercizi su intro"
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid ""
 "Let's see if you can use the tactics we've learnt to prove $x+1=y+1\\implies "
 "x=y$.\n"
 "Try this one by yourself; if you need help then click on \"Show more help!\"."
 msgstr ""
-"Let's see if you can use the tactics we've learnt to prove $x+1=y+1\\implies "
+"Mettiti alla prova applicando le tattiche che abbiamo appena visto per dimostrare $x+1=y+1\\implies "
 "x=y$.\n"
-"Try this one by yourself; if you need help then click on \"Show more help!\"."
+"Cerca di dimostrarlo da solo; se ti perdi e hai bisogno di una mano clicca su \"Aiutami!\"."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid "$x+1=y+1 \\implies x=y$."
 msgstr "$x+1=y+1 \\implies x=y$."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid "Start with `intro h` to assume the hypothesis."
-msgstr "Start with `intro h` to assume the hypothesis."
+msgstr "Inizia con `intro h`per introdurre l'ipotesi."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid ""
 "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
 "change `succ x = succ y`."
 msgstr ""
-"Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
-"change `succ x = succ y`."
+"Adesso puoi fare `repeat rw [← succ_eq_add_one] at h` per fare due sostituzioni in un colpo\n"
+"e avrai `succ x = succ y`."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid "Now `apply succ_inj at h` to cancel the `succ`s."
-msgstr "Now `apply succ_inj at h` to cancel the `succ`s."
+msgstr "Ora esegui `apply succ_inj at h` per togliere i `succ`."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid "Now `rw [h]` then `rfl` works, but `exact h` is quicker."
-msgstr "Now `rw [h]` then `rfl` works, but `exact h` is quicker."
+msgstr "Ora potresti usare `rw [h]` e `rfl` in successione, ma `exact h` è più elegante."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid ""
 "Here's a completely backwards proof:\n"
 "```\n"
@@ -3085,7 +3053,7 @@ msgid ""
 "exact h\n"
 "```"
 msgstr ""
-"Here's a completely backwards proof:\n"
+"Ecco una dimostrazione che procede all'indietro:\n"
 "```\n"
 "intro h\n"
 "apply succ_inj\n"
@@ -3094,12 +3062,10 @@ msgstr ""
 "```"
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid "≠"
 msgstr "≠"
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid ""
 "We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n"
 "definition of `≠`. In Lean, `a ≠ b` is *notation* for `a = b → False`.\n"
@@ -3117,38 +3083,35 @@ msgid ""
 "So if your goal is `False` then you had better hope that your hypotheses\n"
 "are contradictory, which they are in this level."
 msgstr ""
-"We still can't prove `2 + 2 ≠ 5` because we have not talked about the\n"
-"definition of `≠`. In Lean, `a ≠ b` is *notation* for `a = b → False`.\n"
-"Here `False` is a generic false proposition, and `→` is Lean's notation\n"
-"for \"implies\". In logic we learn\n"
-"that `True → False` is false, but `False → False` is true. Hence\n"
-"`X → False` is the logical opposite of `X`.\n"
+"Non possiamo ancora dimostrare `2 + 2 ≠ 5` perché non abbiamo ancora dato la\n"
+"definizione dell'operatore `≠`. In Lean, `a ≠ b` è *notazione* per `a = b → False`.\n"
+"`False` è la proposizione falsa più banale, e `→` la notazione di Lean\n"
+"per \"implies\". Dalla tabella della verità dell'implicazione sappiamo\n"
+"che `True → False` è falso, ma `False → False` è vero. Quindi\n"
+"`X → False` equivale alla negazione logica di `X`.\n"
 "\n"
-"Even though `a ≠ b` does not look like an implication,\n"
-"you should treat it as an implication. The next two levels will show you "
-"how.\n"
+"Non si è abituati a vedere `a ≠ b` come un'implicazione, ma\n"
+"in Lean è comodo vederla come tale. I due livelli seguenti ti faranno vedere "
+"perché.\n"
 "\n"
-"`False` is a goal which you cannot deduce from a consistent set of "
-"assumptions!\n"
-"So if your goal is `False` then you had better hope that your hypotheses\n"
-"are contradictory, which they are in this level."
+"`False` è una proposizione insoddisfacibile, impossibile da dedurre da un insieme coerente di"
+"ipotesi!\n"
+"Quidni se ti capita `False` come goal, puoi solo sperare di avere una contraddizione tra le\n"
+"tue ipotesi, come succede in questo livello."
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid "If $x=y$ and $x \\neq y$ then we can deduce a contradiction."
-msgstr "If $x=y$ and $x \\neq y$ then we can deduce a contradiction."
+msgstr "Se $x=y$ e $x \\neq y$ allora possiamo dedurre una contraddizione."
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid ""
 "Remember that `h2` is a proof of `x = y → False`. Try\n"
 "`apply`ing `h2` either `at h1` or directly to the goal."
 msgstr ""
-"Remember that `h2` is a proof of `x = y → False`. Try\n"
-"`apply`ing `h2` either `at h1` or directly to the goal."
+"Ricorda che `h2` è la dimostrazoine di `x = y → False`. Fai\n"
+"l'`apply` di `h2` con `at h1` o direttamente sul goal."
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid ""
 "`a ≠ b` is *notation* for `(a = b) → False`.\n"
 "\n"
@@ -3164,32 +3127,29 @@ msgid ""
 "form `a ≠ b` then you can `apply h at h1` if `h1` is a proof\n"
 "of `a = b`."
 msgstr ""
-"`a ≠ b` is *notation* for `(a = b) → False`.\n"
+"`a ≠ b` è *notation* per `(a = b) → False`.\n"
 "\n"
-"The reason this is mathematically\n"
-"valid is that if `P` is a true-false statement then `P → False`\n"
-"is the logical opposite of `P`. Indeed `True → False` is false,\n"
-"and `False → False` is true!\n"
+"Questa uguaglianza è valida in matematica\n"
+"perché se `P` è una condizione vero-falso allora `P → False`\n"
+"è la negazione logica di `P`. Infatti `True → False` è falso,\n"
+"e `False → False` è vero!\n"
 "\n"
-"The upshot of this is that use can treat `a ≠ b` in exactly\n"
-"the same way as you treat any implication `P → Q`. For example,\n"
-"if your *goal* is of the form `a ≠ b` then you can make progress\n"
-"with `intro h`, and if you have a hypothesis `h` of the\n"
-"form `a ≠ b` then you can `apply h at h1` if `h1` is a proof\n"
-"of `a = b`."
+"Il vantaggio di questa notazione è che possiamo trattare una disuguaglianza `a ≠ b`\n"
+"come se fosse un implicazione `P → Q`, che sappiamo già come manipolare. Ad esempio,\n"
+"se il tuo *goal* è una disuguaglianza `a ≠ b`, puoi andare avanti\n"
+"con `intro h`, e se un'ipotesi `h` è una disuguaglianza\n"
+"`a ≠ b` allora puoi fare `apply h at h1` se `h1` è la prova di\n"
+"di `a = b`."
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid "Remember, `x ≠ y` is *notation* for `x = y → False`."
-msgstr "Remember, `x ≠ y` is *notation* for `x = y → False`."
+msgstr "Ricorda, `x ≠ y` è *zucchero sintattico* per `x = y → False`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "zero_ne_succ"
 msgstr "zero_ne_succ"
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid ""
 "`zero_ne_succ n` is the proof that `0 ≠ succ n`.\n"
 "\n"
@@ -3198,62 +3158,53 @@ msgid ""
 "Here `False` is a generic false statement. This means that\n"
 "you can `apply zero_ne_succ at h` if `h` is a proof of `0 = succ n`."
 msgstr ""
-"`zero_ne_succ n` is the proof that `0 ≠ succ n`.\n"
+"`zero_ne_succ n` è la dimostrazione che `0 ≠ succ n`.\n"
 "\n"
-"In Lean, `a ≠ b` is *defined to mean* `a = b → False`. Hence\n"
-"`zero_ne_succ n` is really a proof of `0 = succ n → False`.\n"
-"Here `False` is a generic false statement. This means that\n"
-"you can `apply zero_ne_succ at h` if `h` is a proof of `0 = succ n`."
+"In Lean, `a ≠ b` è *definito come* `a = b → False`. Dunque\n"
+"`zero_ne_succ n` è in realtà la dimostrazione di `0 = succ n → False`.\n"
+"Qui `False` è la proposizione false più banale. Essendo un'implicazione\n"
+"puoi applicarla ad una `h` che dimostra `0 = succ n` con `apply zero_ne_succ at h`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid ""
 "As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to\n"
 "introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.\n"
 "To learn about this result, click on it in the list of lemmas on the right."
 msgstr ""
-"As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to\n"
-"introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.\n"
-"To learn about this result, click on it in the list of lemmas on the right."
+"Come riscaldamento per il boss `2 + 2 ≠ 5` dimostriamo che `0 ≠ 1`. A tal fine dobbiamo introdurre\n"
+"l'ultimo assioma di Peano, `zero_ne_succ n`, che dimostra che `0 ≠ succ n`.\n"
+"Per capire meglio questo risultato, clickaci sopra nella lista di lemmi sulla destra."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "`zero_ne_one` is a proof of `0 ≠ 1`."
 msgstr "`zero_ne_one` è la dimostrazione di `0 ≠ 1`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "$0\\neq1$."
 msgstr "$0\\neq1$."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "Start with `intro h`."
-msgstr "Start with `intro h`."
+msgstr "Inizia con `intro h`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "Now change `1` to `succ 0` in `h`."
-msgstr "Now change `1` to `succ 0` in `h`."
+msgstr "Ora riscrivi `1` in `succ 0` in `h`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
-#, fuzzy
 msgid "Now you can `apply zero_ne_succ at h`."
-msgstr "Now you can `apply zero_ne_succ at h`."
+msgstr "Ora puoi fare `apply zero_ne_succ at h`."
 
 #: Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.AdvAddition.L01add_right_cancel
-#, fuzzy
 msgid "Nice!"
-msgstr "Nice!"
+msgstr "Ottimo!"
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid "1 ≠ 0"
 msgstr "1 ≠ 0"
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid ""
 "We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what\n"
 "if we have a hypothesis `succ n = 0`? It's the wrong way around!\n"
@@ -3263,13 +3214,13 @@ msgid ""
 "does the same for a hypothesis `h`. We've proved $0 \\neq 1$ and called\n"
 "the proof `zero_ne_one`; now try proving $1 \\neq 0$."
 msgstr ""
-"We know `zero_ne_succ n` is a proof of `0 = succ n → False` -- but what\n"
-"if we have a hypothesis `succ n = 0`? It's the wrong way around!\n"
+"Sappiamo che `zero_ne_succ n` è la dimostrazione di `0 = succ n → False` -- come possiamo applicarla\n"
+"all'ipotesi `succ n = 0`? È la stessa uguaglianza in fondo, solo che ha i due lati scambiati!\n"
 "\n"
-"The `symm` tactic changes a goal `x = y` to `y = x`, and a goal `x ≠ y`\n"
-"to `y ≠ x`. And `symm at h`\n"
-"does the same for a hypothesis `h`. We've proved $0 \\neq 1$ and called\n"
-"the proof `zero_ne_one`; now try proving $1 \\neq 0$."
+"La tattica `symm` ci aiuta in questo casi: riscrive un goal `x = y` in `y = x`, e un goal `x ≠ y`\n"
+"in `y ≠ x`. `symm at h`\n"
+"è la versione che opera sull'ipotesi `h`. Abbiamo dimostrato poco fa che $0 \\neq 1$ e chiamato\n"
+"la dimostrazione `zero_ne_one`; ora prova a dimostrare $1 \\neq 0$."
 
 #: Game.Levels.Implication.L10one_ne_zero
 #, fuzzy
@@ -3724,7 +3675,7 @@ msgstr "If $\\operatorname{succ}(a)=\\operatorname{succ}(b)$ then $a=b$."
 #: Game.Levels.Algorithm.L05pred
 #, fuzzy
 msgid "Start with `rw [← pred_succ a]` and take it from there."
-msgstr "Start with `rw [← pred_succ a]` and take it from there."
+msgstr "Inizia con `rw [← pred_succ a]` and take it from there."
 
 #: Game.Levels.Algorithm.L05pred
 #, fuzzy
@@ -4164,7 +4115,7 @@ msgstr "$a+n=b+n\\implies a=b$."
 #: Game.Levels.AdvAddition.L01add_right_cancel
 #, fuzzy
 msgid "Start with induction on `n`."
-msgstr "Start with induction on `n`."
+msgstr "Inizia con induction on `n`."
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
 #, fuzzy
@@ -4813,7 +4764,7 @@ msgstr "If $x \\leq y$ and $y \\leq z$, then $x \\leq z$."
 #: Game.Levels.LessOrEqual.L04le_trans
 #, fuzzy
 msgid "Start with `cases «{hxy}» with a ha`."
-msgstr "Start with `cases «{hxy}» with a ha`."
+msgstr "Inizia con `cases «{hxy}» with a ha`."
 
 #: Game.Levels.LessOrEqual.L04le_trans
 #, fuzzy
@@ -5115,7 +5066,7 @@ msgstr "If $x$ and $y$ are numbers, then either $x \\leq y$ or $y \\leq x$."
 #: Game.Levels.LessOrEqual.L08le_total
 #, fuzzy
 msgid "Start with `induction «{y}» with d hd`."
-msgstr "Start with `induction «{y}» with d hd`."
+msgstr "Inizia con `induction «{y}» with d hd`."
 
 #: Game.Levels.LessOrEqual.L08le_total
 #, fuzzy
@@ -5405,7 +5356,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #, fuzzy
 msgid "Start with `intro hb`."
-msgstr "Start with `intro hb`."
+msgstr "Inizia con `intro hb`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #, fuzzy
@@ -5792,7 +5743,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 #, fuzzy
 msgid "Start with `apply eq_succ_of_ne_zero at ha` and `... at hb`"
-msgstr "Start with `apply eq_succ_of_ne_zero at ha` and `... at hb`"
+msgstr "Inizia con `apply eq_succ_of_ne_zero at ha` and `... at hb`"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #, fuzzy
@@ -5818,7 +5769,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #, fuzzy
 msgid "Start with `have h2 := mul_ne_zero a b`."
-msgstr "Start with `have h2 := mul_ne_zero a b`."
+msgstr "Inizia con `have h2 := mul_ne_zero a b`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #, fuzzy
