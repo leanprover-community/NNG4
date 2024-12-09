@@ -3223,7 +3223,6 @@ msgstr ""
 "la dimostrazione `zero_ne_one`; ora prova a dimostrare $1 \\neq 0$."
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -3241,30 +3240,27 @@ msgid ""
 msgstr ""
 "## Summary\n"
 "\n"
-"The `symm` tactic will change a goal or hypothesis of\n"
-"the form `X = Y` to `Y = X`. It will also work on `X ≠ Y`\n"
-"and on `X ↔ Y`.\n"
+"La tattica `symm` trasformerà un goal o un'ipotesi della forma di\n"
+"un'uguaglianza `X = Y` in `Y = X`. Funziona anche sulla disuguaglianza `X ≠ Y`\n"
+"e sull'equivalenza `X ↔ Y`.\n"
 "\n"
-"### Example\n"
+"### Esempio\n"
 "\n"
-"If the goal is `2 + 2 = 4` then `symm` will change it to `4 = 2 + 2`.\n"
+"Se il goal è `2 + 2 = 4`, `symm` lo trasformerà in `4 = 2 + 2`.\n"
 "\n"
-"### Example\n"
+"### Esempio\n"
 "\n"
-"If `h : 2 + 2 ≠ 5` then `symm at h` will change `h` to `5 ≠ 2 + 2`."
+"Se hai `h : 2 + 2 ≠ 5` allora `symm at h` trasformerà `h` in `5 ≠ 2 + 2`."
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid "`one_ne_zero` is a proof that `1 ≠ 0`."
-msgstr "`one_ne_zero` è la dimostrazione che `1 ≠ 0`."
+msgstr "`one_ne_zero` è la dimostrazione di `1 ≠ 0`."
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid "$1\\neq0$."
 msgstr "$1\\neq0$."
 
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid ""
 "What do you think of this two-liner:\n"
 "```\n"
@@ -3275,35 +3271,32 @@ msgid ""
 "`exact` doesn't just take hypotheses, it will eat any proof which exists\n"
 "in the system."
 msgstr ""
-"What do you think of this two-liner:\n"
+"Guarda il mio two-liner:\n"
 "```\n"
 "symm\n"
 "exact zero_ne_one\n"
 "```\n"
 "\n"
-"`exact` doesn't just take hypotheses, it will eat any proof which exists\n"
-"in the system."
+"`exact` non prende soltanto ipotesi, puoi passargli qualsiasi dimostrazione\n"
+"definita nel sistema."
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
-#, fuzzy
 msgid "2 + 2 ≠ 5"
 msgstr "2 + 2 ≠ 5"
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
-#, fuzzy
 msgid ""
 "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have "
 "currently.\n"
 "To make it a bit less painful, I have unfolded all of the numerals for you.\n"
 "See if you can use `zero_ne_succ` and `succ_inj` to prove this."
 msgstr ""
-"2 + 2 ≠ 5 is boring to prove in full, given only the tools we have "
-"currently.\n"
-"To make it a bit less painful, I have unfolded all of the numerals for you.\n"
-"See if you can use `zero_ne_succ` and `succ_inj` to prove this."
+"2 + 2 ≠ 5 è noioso da dimostrare per intero, se ci limitiamo alle tattiche "
+"presentate finora.\n"
+"Per salvarti un po' di fatica, ho proceduto a espanderti in anticipo tutti i numeri.\n"
+"Prosegui la dimostrazione utilizzando `zero_ne_succ` e `succ_inj`."
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
-#, fuzzy
 msgid "$2+2≠5$."
 msgstr "$2+2≠5$."
 
@@ -3339,24 +3332,21 @@ msgstr ""
 "exact h\n"
 "```\n"
 "\n"
-"Even though Lean is a theorem prover, right now it's pretty clear that we "
-"have not\n"
-"developed enough material to make it an adequate calculator. In Algorithm\n"
-"World, a more computer-sciency world, we will develop machinery which makes\n"
-"questions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.\n"
-"Alternatively you can do more mathematics in Advanced Addition World, where "
-"we prove\n"
-"the lemmas needed to get a working theory of inequalities. Click \"Leave "
-"World\" and\n"
-"decide your route."
+"Nonostante Lean sia un theorem prover, con un po' di materiale in più "
+"possiamo renderlo anche una calcolatrice. Nel Mondo Algoritmi\n"
+", un mondo più informatico, svilupperemo gli algoritmi adatti a risolvere\n"
+"questo tipo di domande, grazie ai quali possiamo dimostrare $20 + 20 ≠ 41$ senza diventare matti.\n"
+"In alternativa puoi seguire una strada più matematica nel Mondo Addizione Avanzata, dove "
+"proveremo\n"
+"i lemmi necessari per studiare le disuguaglianze. Clicka su \"Lascia "
+"Mondo\" e\n"
+"scegli che strada percorrere."
 
 #: Game.Levels.Implication
-#, fuzzy
 msgid "Implication World"
-msgstr "Implication World"
+msgstr "Mondo Implicazione"
 
 #: Game.Levels.Implication
-#, fuzzy
 msgid ""
 "We've proved that $2+2=4$; in Implication World we'll learn\n"
 "how to prove $2+2\\neq 5$.\n"
@@ -3371,31 +3361,28 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
-"We've proved that $2+2=4$; in Implication World we'll learn\n"
-"how to prove $2+2\\neq 5$.\n"
+"Abbiamo dimostrato $2+2=4$; nel Mondo Implicazione vedremo\n"
+"dimostrare $2+2\\neq 5$.\n"
 "\n"
-"In Addition World we proved *equalities* like $x + y = y + x$.\n"
-"In this second tutorial world we'll learn some new tactics,\n"
-"enabling us to prove *implications*\n"
-"like $x+1=4 \\implies x=3.$\n"
+"Nel Mondo Addizione abbiamo dimostrato *uguaglianze* tipo $x + y = y + x$.\n"
+"In questo mondo imparerai delle nuove tattiche\n"
+"che ci permettono di dimostrare le *implicazioni*\n"
+"come $x+1=4 \\implies x=3.$\n"
 "\n"
-"We'll also learn two new fundamental facts about\n"
-"natural numbers, which Peano introduced as axioms.\n"
+"Inoltre imparerai due nuovi lemmi fondamentali sui\n"
+"numeri naturali, che Peano postulò come assiomi.\n"
 "\n"
-"Click on \"Start\" to proceed."
+"Premi su \"Start\" per iniziare."
 
 #: Game.Levels.Algorithm.L01add_left_comm
-#, fuzzy
 msgid "add_left_comm"
 msgstr "add_left_comm"
 
 #: Game.Levels.Algorithm.L01add_left_comm
-#, fuzzy
 msgid "`add_left_comm a b c` is a proof that `a + (b + c) = b + (a + c)`."
-msgstr "`add_left_comm a b c` è la dimostrazione che `a + (b + c) = b + (a + c)`."
+msgstr "`add_left_comm a b c` è la dimostrazione di `a + (b + c) = b + (a + c)`."
 
 #: Game.Levels.Algorithm.L01add_left_comm
-#, fuzzy
 msgid ""
 "Having to rearrange variables manually using commutativity and\n"
 "associativity is very tedious. We start by reminding you of this. "
@@ -3407,25 +3394,23 @@ msgid ""
 "with things like `rw [add_comm b c]`. And remember that\n"
 "`a + b + c` means `(a + b) + c`."
 msgstr ""
-"Having to rearrange variables manually using commutativity and\n"
-"associativity is very tedious. We start by reminding you of this. "
+"Ricollocare le variabili manualmente usando commutatività e\n"
+"associatività è un lavoraccio. Ma possiamo alleviare il problema. "
 "`add_left_comm`\n"
-"is a key component in the first algorithm which we'll explain, but we need\n"
-"to prove it manually.\n"
+"è un componente chiave del primo algoritmo che spiegheremo, ma prima di usarlo dobbiamo\n"
+"dimostrarlo.\n"
 "\n"
-"Remember that you can do precision commutativity rewriting\n"
-"with things like `rw [add_comm b c]`. And remember that\n"
-"`a + b + c` means `(a + b) + c`."
+"Ricorda che puoi fare applicare la commutatività su certe variabili che vuoi scambiare \n"
+"scrivendo qualcosa tipo `rw [add_comm b c]`. Ricorda anche che\n"
+"`a + b + c` sta per `(a + b) + c`."
 
 #: Game.Levels.Algorithm.L01add_left_comm
-#, fuzzy
 msgid "If $a, b, c$ are numbers, then $a+(b+c)=b+(a+c)$."
-msgstr "If $a, b, c$ are numbers, then $a+(b+c)=b+(a+c)$."
+msgstr "Se $a, b, c$ sono dei numeri, allora $a+(b+c)=b+(a+c)$."
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid "making life easier"
-msgstr "making life easier"
+msgstr "semplificandoci la vita"
 
 #: Game.Levels.Algorithm.L02add_algo1
 #, fuzzy
