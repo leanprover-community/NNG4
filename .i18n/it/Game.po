@@ -3332,13 +3332,13 @@ msgstr ""
 "exact h\n"
 "```\n"
 "\n"
-"Nonostante Lean sia un theorem prover, con un po' di materiale in più "
-"possiamo renderlo anche una calcolatrice. Nel Mondo Algoritmi\n"
-", un mondo più informatico, svilupperemo gli algoritmi adatti a risolvere\n"
-"questo tipo di domande, grazie ai quali possiamo dimostrare $20 + 20 ≠ 41$ senza diventare matti.\n"
-"In alternativa puoi seguire una strada più matematica nel Mondo Addizione Avanzata, dove "
-"proveremo\n"
-"i lemmi necessari per studiare le disuguaglianze. Clicka su \"Lascia "
+"Lean è un theorem prover, ma con un po' di fantasia e qualche codice in più "
+"possiamo fargli fare anche dei calcoli avanzati. Nel Mondo Algoritmi\n"
+", un mondo più informatico, svilupperemo gli algoritmi per automatizzare le\n"
+"dimostrazioni, grazie ai quali possiamo dimostrare $20 + 20 ≠ 41$ senza diventare matti.\n"
+"In alternativa, puoi seguire una strada più matematica nel Mondo Addizione Avanzata, dove "
+"dimostreremo\n"
+"i lemmi che ci porteranno alla teoria delle disuguaglianze. Clicka su \"Lascia "
 "Mondo\" e\n"
 "scegli che strada percorrere."
 
@@ -3395,7 +3395,7 @@ msgid ""
 "`a + b + c` means `(a + b) + c`."
 msgstr ""
 "Ricollocare le variabili manualmente usando commutatività e\n"
-"associatività è un lavoraccio. Ma possiamo alleviare il problema. "
+"associatività è un lavoraccio. Ma possiamo fare di meglio. "
 "`add_left_comm`\n"
 "è un componente chiave del primo algoritmo che spiegheremo, ma prima di usarlo dobbiamo\n"
 "dimostrarlo.\n"
@@ -3413,7 +3413,6 @@ msgid "making life easier"
 msgstr "semplificandoci la vita"
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "In some later worlds, we're going to see some much nastier levels,\n"
 "like `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`.\n"
@@ -3426,65 +3425,58 @@ msgid ""
 "and then swap `b` and `d`. But this is easier than you\n"
 "think with `add_left_comm`."
 msgstr ""
-"In some later worlds, we're going to see some much nastier levels,\n"
-"like `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`.\n"
-"Brackets need to be moved around, and variables need to be swapped.\n"
+"Nei mondi successivi ci sono livelli molto più brutti\n"
+"come `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`.\n"
+"Qui le parentesi vanno spostate, e le variabili vanno scambiate tra di loro.\n"
 "\n"
-"In this level, `(a + b) + (c + d) = ((a + c) + d) + b`,\n"
-"let's forget about the brackets and just think about\n"
-"the variable order.\n"
-"To turn `a+b+c+d` into `a+c+d+b` we need to swap `b` and `c`,\n"
-"and then swap `b` and `d`. But this is easier than you\n"
-"think with `add_left_comm`."
+"In questo livello, `(a + b) + (c + d) = ((a + c) + d) + b`,\n"
+"dimentichiamici delle parentesi e concentriamioci solamente\n"
+"sull'ordine delle variabili.\n"
+"Per portare `a+b+c+d` a `a+c+d+b` dobbiamo scambiare `b` con `c`,\n"
+"e poi scambiare `b` con `d`. Questo è più facile di quanto\n"
+"sembri con `add_left_comm`."
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "If $a, b$, $c$ and $d$ are numbers, we have\n"
 "$(a + b) + (c + d) = ((a + c) + d) + b.$"
 msgstr ""
-"If $a, b$, $c$ and $d$ are numbers, si ha che\n"
+"Se $a, b$, $c$ e $d$ sono numeri, si ha che\n"
 "$(a + b) + (c + d) = ((a + c) + d) + b.$"
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "Start with `repeat rw [add_assoc]` to push all the brackets to the right."
 msgstr ""
-"Start with `repeat rw [add_assoc]` to push all the brackets to the right."
+"Inizia con `repeat rw [add_assoc]` per portare tutte le parentesi a destra."
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "Now use `rw [add_left_comm b c]` to switch `b` and `c` on the left\n"
 "hand side."
 msgstr ""
-"Now use `rw [add_left_comm b c]` to switch `b` and `c` on the left\n"
-"hand side."
+"Ora fai `rw [add_left_comm b c]` per scambiare `b` con `c` a sinistra\n"
+"dell'uguale."
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid "Finally use a targetted `add_comm` to switch `b` and `d`"
-msgstr "Finally use a targetted `add_comm` to switch `b` and `d`"
+msgstr "Infine fai un rewrite mirato di `add_comm` per scambiare `b` con `d`"
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid "`rw [add_comm b d]`."
 msgstr "`rw [add_comm b d]`."
 
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "So that's the algorithm: now let's use automation to perform it\n"
 "automatically."
 msgstr ""
-"So that's the algorithm: now let's use automation to perform it\n"
-"automatically."
+"Questo è l'algoritmo: ora cerchiamo di automatizzarlo con\n"
+"l'automazione di Lean."
 
 #: Game.Levels.Algorithm.L03add_algo2
-#, fuzzy
 msgid "making life simple"
-msgstr "making life simple"
+msgstr "semplificandoci la vita"
 
 #: Game.Levels.Algorithm.L03add_algo2
 #, fuzzy
@@ -3515,43 +3507,38 @@ msgid ""
 "This level is not a level which you want to solve by hand.\n"
 "Get the simplifier to solve it for you."
 msgstr ""
-"Lean's simplifier, `simp`, is \"`rw` on steroids\". It will rewrite every "
-"lemma\n"
-"tagged with `simp` and every lemma fed to it by the user, as much as it can.\n"
+"La tattica di semplificazione di Lean, `simp`, si può considerare una versione di \"`rw` dopata\"."
+"Essa riscriverà ogni lemma\n"
+"che ha il tag `simp` e ogni lemma passato dall'utente in una lista, fin tanto che si può riscrivere qualcosa.\n"
 "\n"
-"This level is not a level which you want to solve by hand.\n"
-"Get the simplifier to solve it for you."
+"Questo è un livello che non vorresti risolvere a mano.\n"
+"Fai fare il lavoro noioso al semplificatore."
 
 #: Game.Levels.Algorithm.L03add_algo2 Game.Levels.Algorithm.L04add_algo3
-#, fuzzy
 msgid ""
 "If $a, b,\\ldots h$ are arbitrary natural numbers, we have\n"
 "$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
 msgstr ""
-"If $a, b,\\ldots h$ are arbitrary natural numbers, si ha che\n"
+"Se $a, b,\\ldots h$ sono numeri naturali qualsiasi, si ha che\n"
 "$(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$."
 
 #: Game.Levels.Algorithm.L03add_algo2
-#, fuzzy
 msgid ""
 "Solve this level in one line with `simp only [add_assoc, add_left_comm, "
 "add_comm]`"
 msgstr ""
-"Solve this level in one line with `simp only [add_assoc, add_left_comm, "
+"Completa questo livello in un'unica riga con `simp only [add_assoc, add_left_comm, "
 "add_comm]`"
 
 #: Game.Levels.Algorithm.L03add_algo2
-#, fuzzy
 msgid "Let's now make our own tactic to do this."
-msgstr "Let's now make our own tactic to do this."
+msgstr "Ora creiamo la nostra tattica per fare questo."
 
 #: Game.Levels.Algorithm.L04add_algo3
-#, fuzzy
 msgid "the simplest approach"
-msgstr "the simplest approach"
+msgstr "approccio semplice"
 
 #: Game.Levels.Algorithm.L04add_algo3
-#, fuzzy
 msgid ""
 "# Overview\n"
 "\n"
@@ -3560,11 +3547,10 @@ msgid ""
 msgstr ""
 "# Overview\n"
 "\n"
-"Our home-made tactic `simp_add` will solve arbitrary goals of\n"
-"the form `a + (b + c) + (d + e) = e + (d + (c + b)) + a`."
+"La nostra tattica casalinga `simp_add` risolverà qualsiasi goal\n"
+"del tipo `a + (b + c) + (d + e) = e + (d + (c + b)) + a`."
 
 #: Game.Levels.Algorithm.L04add_algo3
-#, fuzzy
 msgid ""
 "You can make your own tactics in Lean.\n"
 "This code here\n"
@@ -3576,32 +3562,29 @@ msgid ""
 "`simp only [add_assoc, add_left_comm, add_comm]`.\n"
 "Try running `simp_add` to solve this level!"
 msgstr ""
-"You can make your own tactics in Lean.\n"
-"This code here\n"
+"Puoi creare le tue tattiche personalizzate su Lean.\n"
+"Con questo codice\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
 "  simp only [add_assoc, add_left_comm, add_comm]))\n"
 "```\n"
-"was used to create a new tactic `simp_add`, which runs\n"
+"abbiamo creato la nuova tattica `simp_add`, che esegue\n"
 "`simp only [add_assoc, add_left_comm, add_comm]`.\n"
-"Try running `simp_add` to solve this level!"
+"Prova ad eseguire `simp_add` per risolvere questo livello!"
 
 #: Game.Levels.Algorithm.L04add_algo3
-#, fuzzy
 msgid ""
 "Let's now move on to a more efficient approach to questions\n"
 "involving numerals, such as `20 + 20 = 40`."
 msgstr ""
-"Let's now move on to a more efficient approach to questions\n"
-"involving numerals, such as `20 + 20 = 40`."
+"Ora concentriamoci su un approccio più efficiente per la risoluzione di\n"
+"lemmi che contengono dei numeri, come `20 + 20 = 40`."
 
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid "pred"
 msgstr "pred"
 
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid ""
 "We now start work on an algorithm to do addition more efficiently. Recall "
 "that\n"
@@ -3625,59 +3608,54 @@ msgid ""
 "Peano assumed as an axiom and which we have already used extensively without "
 "justification."
 msgstr ""
-"We now start work on an algorithm to do addition more efficiently. Recall "
-"that\n"
-"we defined addition by recursion, saying what it did on `0` and successors.\n"
-"It is an axiom of Lean that recursion is a valid\n"
-"way to define functions from types such as the naturals.\n"
+"Ora svilupperemo un algoritmo che ci permette di svolgere le addizioni in maniera più efficiente. Se "
+"ricordi,\n"
+"abbiamo definito l'addizione tramite la ricorsione, con il caso base su `0` e il caso ricorsivo del successore.\n"
+"Uno degli assiomi di Lean è proprio che la ricorsione è un metodo valido\n"
+"per definire funzioni su tipi di dato induttivi, come i numeri naturali.\n"
 "\n"
-"Let's define a new function `pred` from the naturals to the naturals, which\n"
-"attempts to subtract 1 from the input. The definition is this:\n"
+"Definiamo una nuova funzione `pred` dai naturali ai naturali, che\n"
+"tenta di sottrarre 1 dall'input. La definizione è la seguente:\n"
 "\n"
 "```\n"
 "pred 0 := 37\n"
 "pred (succ n) := n\n"
 "```\n"
 "\n"
-"We cannot subtract one from 0, so we just return a junk value. As well as "
-"this\n"
-"definition, we also create a new lemma `pred_succ`, which says that `pred "
+"Non potendo sottrarre uno da 0, in tal caso restituiamo un valore spazzatura. Oltre a "
+"questa\n"
+"definizione, creiamo un nuovo lemma `pred_succ`, che dice che `pred "
 "(succ n) = n`.\n"
-"Let's use this lemma to prove `succ_inj`, the theorem which\n"
-"Peano assumed as an axiom and which we have already used extensively without "
-"justification."
+"Usiamo subito questo lemma per dimostrare `succ_inj`, il teorema che\n"
+"Peano postulò come assioma e che finora abbiamo usato estensivamente senza mai"
+"motivarlo."
 
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid "`pred_succ n` is a proof of `pred (succ n) = n`."
 msgstr "`pred_succ n` è la dimostrazione di `pred (succ n) = n`."
 
 #: Game.Levels.Algorithm.L05pred
 #, fuzzy
 msgid "If $\\operatorname{succ}(a)=\\operatorname{succ}(b)$ then $a=b$."
-msgstr "If $\\operatorname{succ}(a)=\\operatorname{succ}(b)$ then $a=b$."
+msgstr "Se $\\operatorname{succ}(a)=\\operatorname{succ}(b)$ allora $a=b$."
 
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid "Start with `rw [← pred_succ a]` and take it from there."
-msgstr "Inizia con `rw [← pred_succ a]` and take it from there."
+msgstr "Inizia con `rw [← pred_succ a]` e fai da solo."
 
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid ""
 "Nice! You've proved `succ_inj`!\n"
 "Let's now prove Peano's other axiom, that successors can't be $0$."
 msgstr ""
-"Nice! You've proved `succ_inj`!\n"
-"Let's now prove Peano's other axiom, that successors can't be $0$."
+"Bene! Hai dimostrato `succ_inj`!\n"
+"Ora dimostriamo l'altro teorema di Peano, ossia che un successore non può essere $0$."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid "is_zero"
 msgstr "is_zero"
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "We define a function `is_zero` thus:\n"
 "\n"
@@ -3700,92 +3678,81 @@ msgid ""
 "If you can turn your goal into `True`, then the `trivial` tactic will solve "
 "it."
 msgstr ""
-"We define a function `is_zero` thus:\n"
+"Definiamo la funzione `is_zero` così:\n"
 "\n"
 "```\n"
 "is_zero 0 := True\n"
 "is_zero (succ n) := False\n"
 "```\n"
 "\n"
-"We also create two lemmas, `is_zero_zero` and `is_zero_succ n`, saying that "
+"E creiamo due lemmi associati, `is_zero_zero` e `is_zero_succ n`, che dicono che "
 "`is_zero 0 = True`\n"
-"and `is_zero (succ n) = False`. Let's use these lemmas to prove "
-"`succ_ne_zero`, Peano's\n"
-"Last Axiom. Actually, we have been using `zero_ne_succ` before, but it's "
-"handy to have\n"
-"this opposite version too, which can be proved in the same way. Note: you "
-"can\n"
-"cheat here by using `zero_ne_succ` but the point of this world is to show\n"
-"you how to *prove* results like that.\n"
+"e `is_zero (succ n) = False`. Usiamo questi due lemmi per dimostrare "
+"`succ_ne_zero`, l'ultimo assioma di\n"
+"Peano. Può sembrare ripetitivo perché abbiamo già `zero_ne_succ` nel nostro arsenale, ma è "
+"comodo avere anche\n"
+"la versione opposta, e la dimostrazione e identica. Nota: ora "
+"potresti\n"
+"barare usando `zero_ne_succ`, ma l'obiettivo di questo mondo\n"
+"è proprio insegnarti a *dimostrare* tali risultati.\n"
 "\n"
-"If you can turn your goal into `True`, then the `trivial` tactic will solve "
-"it."
+"Se riesci a riscrivere il goal a `True`, potrai risolverlo con la tattica `trivial`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid "`is_zero_zero` is a proof of `is_zero 0 = True`."
 msgstr "`is_zero_zero` è la dimostrazione di `is_zero 0 = True`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid "`is_zero_succ a` is a proof of `is_zero (succ a) = False`."
 msgstr "`is_zero_succ a` è la dimostrazione di `is_zero (succ a) = False`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid "`succ_ne_zero a` is a proof of `succ a ≠ 0`."
 msgstr "`succ_ne_zero a` è la dimostrazione di `succ a ≠ 0`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
 "`trivial` will solve the goal `True`."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "\n"
-"`trivial` will solve the goal `True`."
+"`trivial` risolve il goal `True`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid "$\\operatorname{succ}(a) \\neq 0$."
 msgstr "$\\operatorname{succ}(a) \\neq 0$."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "Start with `intro h` (remembering that `X ≠ Y` is just notation\n"
 "for `X = Y → False`)."
 msgstr ""
-"Start with `intro h` (remembering that `X ≠ Y` is just notation\n"
+"Parti con `intro h` (ricordandoti che `X ≠ Y` è zucchero sintattico per\n"
 "for `X = Y → False`)."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "We're going to change that `False` into `True`. Start by changing it into\n"
 "`is_zero (succ a)` by executing `rw [← is_zero_succ a]`."
 msgstr ""
-"We're going to change that `False` into `True`. Start by changing it into\n"
-"`is_zero (succ a)` by executing `rw [← is_zero_succ a]`."
+"Vogliamo trasformare quel `False` in un `True`. Inizia a trasformarlo in\n"
+"`is_zero (succ a)` eseguendo `rw [← is_zero_succ a]`."
 
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "See if you can take it from here. Look at the new lemmas and tactic\n"
 "available on the right."
 msgstr ""
-"See if you can take it from here. Look at the new lemmas and tactic\n"
-"available on the right."
+"Lascio il resto a te. Sfrutta i nuovi lemmi e tattiche\n"
+"disponibili nell'inventario, a destra."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid "An algorithm for equality"
-msgstr "An algorithm for equality"
+msgstr "Un algoritmo per l'uguaglianza"
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "Here we begin to\n"
 "develop an algorithm which, given two naturals `a` and `b`, returns the "
@@ -3811,32 +3778,31 @@ msgid ""
 "one\n"
 "remaining job we have to do: if `a ≠ b` then `succ a ≠ succ b`."
 msgstr ""
-"Here we begin to\n"
-"develop an algorithm which, given two naturals `a` and `b`, returns the "
-"answer\n"
-"to \"does `a = b`?\"\n"
+"Cominciamo lo sviluppo\n"
+"di un algoritmo che, dati due naturali `a` e`b`, restituisce la "
+"risosta\n"
+"alla domanda \"does `a = b`?\"\n"
 "\n"
-"Here is the algorithm. First note that `a` and `b` are numbers, and hence\n"
-"are either `0` or successors.\n"
+"Presentiamo l'algoritmo. Prima notiamo che `a` e `b` sono entrambi numeri, e dunque\n"
+"sono `0` oppure dei successori.\n"
 "\n"
-"*) If `a` and `b` are both `0`, return \"yes\".\n"
+"*) Se `a` e `b` sono entrambi `0`, restituiamo \"sì\".\n"
 "\n"
-"*) If one is `0` and the other is `succ n`, return \"no\".\n"
+"*) Se uno dei due è `0` e l'altro è `succ n`, restituiamo \"no\".\n"
 "\n"
-"*) If `a = succ m` and `b = succ n`, then return the answer to \"does `m = n`?"
+"*) Se `a = succ m` e `b = succ n`, restituiamo la risposta a \"does `m = n`?"
 "\"\n"
 "\n"
-"Our job now is to *prove* that this algorithm always gives the correct "
-"answer. The proof that\n"
-"`0 = 0` is `rfl`. The proof that `0 ≠ succ n` is `zero_ne_succ n`, and the "
-"proof\n"
-"that `succ m ≠ 0` is `succ_ne_zero m`. The proof that if `h : m = n` then\n"
-"`succ m = succ n` is `rw [h]` and then `rfl`. This level is a proof of the "
-"one\n"
-"remaining job we have to do: if `a ≠ b` then `succ a ≠ succ b`."
+"Non ci rimane che *dimostrare* che questo algoritmo ci dà sempre la risposta "
+"corretta. Procediamo per casi. La dimostrazione di\n"
+"`0 = 0` è `rfl`. La dimostrazione di `0 ≠ succ n` è `zero_ne_succ n`, e la "
+"dimostrazione di\n"
+"`succ m ≠ 0` è `succ_ne_zero m`. La dimostrazione di se `h : m = n` allora\n"
+"`succ m = succ n` è `rw [h]` and then `rfl`. Questo livello ci salva una "
+"parte di\n"
+"lavoro per dimostrare: if `a ≠ b` then `succ a ≠ succ b`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -3858,60 +3824,55 @@ msgid ""
 "\n"
 "`a = b`."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "\n"
-"If you have a hypothesis\n"
+"Se hai un'ipotesi\n"
 "\n"
 "`h : a ≠ b`\n"
 "\n"
-"and goal\n"
+"e il goal\n"
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\"
-"\"contrapositive\\\":\n"
-"a hypothesis\n"
+"allora `contrapose! h` cambierà l'impostazione con la cosiddetta \\"
+"\"contronominale\\\":\n"
+"un ipotesi\n"
 "\n"
 "`h : c = d`\n"
 "\n"
-"and goal\n"
+"e il goal\n"
 "\n"
 "`a = b`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid "`succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`."
-msgstr "`succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`."
+msgstr "`succ_ne_succ m n` è la dimostrazione di `m ≠ n → succ m ≠ succ n`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "If $a \\neq b$ then $\\operatorname{succ}(a) \\neq\\operatorname{succ}(b)$."
 msgstr ""
-"If $a \\neq b$ then $\\operatorname{succ}(a) \\neq\\operatorname{succ}(b)$."
+"Se $a \\neq b$ allora $\\operatorname{succ}(a) \\neq\\operatorname{succ}(b)$."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "Start with `contrapose! h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = "
 "n`."
 msgstr ""
-"Start with `contrapose! h`, to change the goal into its\n"
-"contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = "
+"Inizia con `contrapose! h`, che ti fa dimostrare la\n"
+"contronominale del goal, cioè avrai tra le ipotesi la negazione del goal, `succ m = succ m`, e come nuovo goal avrai la negazione dell'ipotesi `h`, `m = "
 "n`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
 "take you back to where you started!)"
 msgstr ""
-"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
-"take you back to where you started!)"
+"Sai proseguire da solo? (nota: se rifai `contrapose! h` adesso, ti riportera'\n"
+"allo stato di prima!)"
 
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid "decide"
 msgstr "decide"
 
@@ -3931,21 +3892,20 @@ msgid ""
 "`instance`,\n"
 "the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "\n"
-"`decide` will attempt to solve a goal if it can find an algorithm which it\n"
-"can run to solve it.\n"
+"La tattica `decide` cercherà di risolvere il goal se esiste un algoritmo da\n"
+"eseguire per risolverlo.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"A term of type `DecidableEq ℕ` is an algorithm to decide whether two "
-"naturals\n"
-"are equal or different. Hence, once this term is made and made into an "
-"`instance`,\n"
-"the `decide` tactic can use it to solve goals of the form `a = b` or `a ≠ b`."
+"Un termine di tipo `DecidableEq ℕ` è un algoritmo che decide se due "
+"naturali\n"
+"sono uguali o diversi. Dunque, una volta che è stata implementata un'istanza"
+" di questo tipo,\n"
+"la tattica `decide` può usare tale implementazione per risolvere i goal della forma `a = b` or `a ≠ b`."
 
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid ""
 "Implementing the algorithm for equality of naturals, and the proof that it is "
 "correct,\n"
@@ -3978,9 +3938,9 @@ msgid ""
 "Because the algorithm is formally verified to be correct, we can\n"
 "use it in Lean proofs. You can run the algorithm with the `decide` tactic."
 msgstr ""
-"Implementing the algorithm for equality of naturals, and the proof that it is "
-"correct,\n"
-"looks like this:\n"
+"L'implementazione dell'algoritmo di uguaglianza tra naturali, e la sua dimostrazione"
+"di correttezza,\n"
+"assomigliano a questo su Lean:\n"
 "\n"
 "```\n"
 "instance instDecidableEq : DecidableEq ℕ\n"
@@ -4004,13 +3964,12 @@ msgstr ""
 "    exact succ_ne_succ m n h\n"
 "```\n"
 "\n"
-"This Lean code is a formally verified algorithm for deciding equality\n"
-"between two naturals. I've typed it in already, behind the scenes.\n"
-"Because the algorithm is formally verified to be correct, we can\n"
-"use it in Lean proofs. You can run the algorithm with the `decide` tactic."
+"Questo codice Lean è un algoritmo formalmente verificato che risolve il problema di decisione per l'uguaglianza\n"
+"di due numeri naturali. L'ho già inserito nel gioco, dietro le quinte.\n"
+"Siccome abbiamo una verifica formale della correttezza dell'algoritmo, possiamo\n"
+"usarlo nelle dimostrazioni su Lean. Puoi eseguire l'algoritmo all'interno di una dimostrazione con la tattica `decide`."
 
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid "$20+20=40$."
 msgstr "$20+20=40$."
 
@@ -4020,41 +3979,36 @@ msgid ""
 "You can read more about the `decide` tactic by clicking\n"
 "on it in the top right."
 msgstr ""
-"You can read more about the `decide` tactic by clicking\n"
-"on it in the top right."
+"Puoi leggere di più sulla tattica `decide` clickando\n"
+"sul suo nome nel menu a destra."
 
 #: Game.Levels.Algorithm.L09decide2
-#, fuzzy
 msgid "decide again"
-msgstr "decide again"
+msgstr "decide, ancora"
 
 #: Game.Levels.Algorithm.L09decide2
-#, fuzzy
 msgid ""
 "We gave a pretty unsatisfactory proof of `2 + 2 ≠ 5` earlier on; now give a "
 "nicer one."
 msgstr ""
-"We gave a pretty unsatisfactory proof of `2 + 2 ≠ 5` earlier on; now give a "
-"nicer one."
+"La dimostrazione che abbiamo dato prima per `2 + 2 ≠ 5` non è stata molto elegante; ora ne "
+"daremo una più carina."
 
 #: Game.Levels.Algorithm.L09decide2
-#, fuzzy
 msgid "$2+2 \\neq 5.$"
 msgstr "$2+2 \\neq 5.$"
 
 #: Game.Levels.Algorithm.L09decide2
-#, fuzzy
 msgid ""
 "Congratulations! You've finished Algorithm World. These algorithms\n"
 "will be helpful for you in Even-Odd World."
 msgstr ""
-"Congratulations! You've finished Algorithm World. These algorithms\n"
-"will be helpful for you in Even-Odd World."
+"Congratulazioni! Hai finito il Mondo Algoritmi. Questi algoritmi\n"
+"ti saranno sicuramente utili per il Mondo Pari-Dispari."
 
 #: Game.Levels.Algorithm
-#, fuzzy
 msgid "Algorithm World"
-msgstr "Algorithm World"
+msgstr "Mondo Algoritmi"
 
 #: Game.Levels.Algorithm
 #, fuzzy
@@ -4065,11 +4019,11 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
-"Proofs like $2+2=4$ and $a+b+c+d+e=e+d+c+b+a$ are very tedious to do by "
-"hand.\n"
-"In Algorithm World we learn how to get the computer to do them for us.\n"
+"Dimostrazioni quali $2+2=4$ e $a+b+c+d+e=e+d+c+b+a$ risultano particolarmente noiose da fare a "
+"mano.\n"
+"Nel Mondo Algoritmi vedremo come far fare il lavoro ripetitivo alla macchina al posto nostro.\n"
 "\n"
-"Click on \"Start\" to proceed."
+"Premi su \"Avvia\" per cominciare."
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
 #, fuzzy
@@ -4910,7 +4864,7 @@ msgid ""
 "Note that this tactic can turn a solvable goal into an unsolvable\n"
 "one."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "The `left` tactic changes a goal of `P ∨ Q` into a goal of `P`.\n"
 "Use it when your hypotheses guarantee that the reason that `P ∨ Q`\n"
 "is true is because in fact `P` is true.\n"
@@ -4935,7 +4889,7 @@ msgid ""
 "Note that this tactic can turn a solvable goal into an unsolvable\n"
 "one."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "The `right` tactic changes a goal of `P ∨ Q` into a goal of `Q`.\n"
 "Use it when your hypotheses guarantee that the reason that `P ∨ Q`\n"
 "is true is because in fact `Q` is true.\n"
@@ -5393,7 +5347,7 @@ msgid ""
 "If you switch the goal and hypothesis in this example, `tauto` would solve it "
 "too."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "\n"
 "The `tauto` tactic will solve any goal which can be solved purely by logic "
 "(that is, by\n"
@@ -5600,7 +5554,7 @@ msgid ""
 "\n"
 "will add `h2 : succ a = succ b → a = b` as a hypothesis."
 msgstr ""
-"# Summary\n"
+"# Riepilogo\n"
 "\n"
 "The `have` tactic can be used to add new hypotheses to a level, but of "
 "course\n"
