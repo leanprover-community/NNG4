@@ -734,7 +734,7 @@ msgstr ""
 "nel goal ripetitivamente. Non è strettamente necessaria al fine di\n"
 "completare il gioco, ma a volte è utile per velocizzare le dimostrazioni.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
 "`repeat rw [add_zero]` trasformerà il goal\n"
 "`a + 0 + (0 + (0 + 0)) = b + 0 + 0`\n"
@@ -1459,7 +1459,7 @@ msgstr ""
 "Benvenuti nel Mondo Addizione! In questo mondo impareremo la tattica dell'\"induzione\".\n"
 "Questo ci permetterà di sconfiggere il livello boss di questo mondo, ovvero `x + y = y + x`.\n"
 "\n"
-"Le tattiche `rw`, `rfl` e `induzione` sono le uniche tattiche di cui avrete bisogno per\n"
+"Le tattiche `rw`, `rfl` e `induction` sono le uniche tattiche di cui avrete bisogno per\n"
 "per battere tutti i livelli del Mondo dell'Addizione, del Mondo della Moltiplicazione e del Mondo della Potenza.\n"
 "Il Mondo Potenza ospita il boss finale del gioco.\n"
 "\n"
@@ -2522,7 +2522,7 @@ msgid ""
 "hypothesis with the `apply` tactic."
 msgstr ""
 "In questo livello una delle ipotesi è un'*implicazione*. Si può applicare\n"
-"la tattica `apply` a questa ipotesi."
+"la tattica `apply` a un'ipotesi."
 
 #: Game.Levels.Implication.L03apply
 msgid "If $x=37$ and we know that $x=37\\implies y=42$ then we can deduce $y=42$."
@@ -2552,15 +2552,15 @@ msgid ""
 "by manipulating our hypothesis until it becomes the goal. I will\n"
 "walk you through this level."
 msgstr ""
-"Se `a` e `b` are numbers, allora `succ_inj a b` is a proof\n"
-"that `succ a = succ b` implica `a = b`. Clicca su this theorem in the *Peano*\n"
-"tab for more information.\n"
+"Siano `a` e `b` numbers, allora `succ_inj a b` è una dimostrazione\n"
+"che `succ a = succ b` implica `a = b`. Clicca su questo theorem nel tab *Peano*\n"
+"per maggiori dettagli.\n"
 "\n"
-"Peano had this theorem as an axiom, but in Mondo Algorithm\n"
-"we will show how to prove it in Lean. Right now let's just assume it,\n"
-"e let's prove $x+1=4 \\implies x=3$ using it. Again, we will proceed\n"
-"by manipulating our ipotesi until it becomes the goal. I will\n"
-"walk you through this livello."
+"Peano formulò questo teorema come assioma, ma nel Mondo Algoritmi\n"
+"vedremo come dimostrarlo su Lean. Per ora lo diamo per scontato,\n"
+"e dimostriamo con lui $x+1=4 \\implies x=3$. Nuovamente, procederemo\n"
+"manipolando le nostre ipotesi finché non coincidono al goal. Ti seguirò\n"
+"passo per passo in questo livello."
 
 #: Game.Levels.Implication.L04succ_inj
 msgid ""
@@ -3097,7 +3097,7 @@ msgstr ""
 "exact h\n"
 "```\n"
 "\n"
-"Lean è un theorem prover, ma con un po' di fantasia e dandogli qualche istruzione in più possiamo renderlo un calcolatore all'altezza. Nel Mondo Algoritmi\n"
+"Lean è un theorem prover, ma tra un po' vedremo che è anche un ottimo linguaggio di programmazione. Nel Mondo Algoritmi\n"
 ", un mondo più informatico, svilupperemo gli algoritmi per automatizzare le\n"
 "dimostrazioni, grazie ai quali potremo dimostrare $20 + 20 ≠ 41$ senza diventare matti.\n"
 "In alternativa, puoi seguire una strada più matematica nel Mondo Addizione Avanzata, dove dimostreremo\n"
@@ -3591,7 +3591,6 @@ msgid "decide"
 msgstr "decide"
 
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -3607,13 +3606,13 @@ msgstr ""
 "# Riepilogo\n"
 "\n"
 "La tattica `decide` cercherà di risolvere il goal se esiste un algoritmo\n"
-"eseguibile per risolverlo.\n"
+"che possiamo eseguire per risolverlo.\n"
 "\n"
 "## Esempio\n"
 "\n"
 "Un termine di tipo `DecidableEq ℕ` è un algoritmo che decide se due naturali\n"
-"sono uguali o diversi. Dunque, una volta che è stata implementata un'istanza di questo tipo,\n"
-"la tattica `decide` può usare tale implementazione per risolvere i goal della forma `a = b` or `a ≠ b`."
+"sono uguali o diversi. Dunque, se abbiamo un'istanza di questo tipo,\n"
+"la tattica `decide` può usare la sua implementazione per risolvere i goal della forma `a = b` or `a ≠ b`."
 
 #: Game.Levels.Algorithm.L08decide
 msgid ""
@@ -3772,7 +3771,6 @@ msgid "$n+a=n+b\\implies a=b$."
 msgstr "$n+a=n+b\\implies a=b$."
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
-#, fuzzy
 msgid ""
 "How about this for a proof:\n"
 "```\n"
@@ -3849,13 +3847,12 @@ msgid "$x+y=x\\implies y=0$."
 msgstr "$x+y=x\\implies y=0$."
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
-#, fuzzy
 msgid ""
 "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`\n"
 "instead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory."
 msgstr ""
 "Questo stato non è dimostrabile! Per caso hai usato `rw [add_left_eq_self] at h`\n"
-"anziché `apply [add_left_eq_self] at h`? Puoi confrontare i loro effetti dall'inventario."
+"anziché `apply [add_left_eq_self] at h`? Puoi confrontare il loro effetto nell'inventario."
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 #, fuzzy
@@ -4380,7 +4377,6 @@ msgid "If $x \\leq y$ and $y \\leq x$, then $x = y$."
 msgstr "Se $x \\leq y$ e $y \\leq x$, allora $x = y$."
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-#, fuzzy
 msgid ""
 "Here's my proof:\n"
 "```\n"
@@ -4450,7 +4446,6 @@ msgstr ""
 "Nota bene che questa tattica può portare il tuo goal a uno stato irrisolvibile."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "# Summary\n"
 "The `right` tactic changes a goal of `P ∨ Q` into a goal of `Q`.\n"
@@ -4469,7 +4464,7 @@ msgstr ""
 "\n"
 "dalla verità di `Q`.\n"
 "\n"
-"L'implementazione di Lean di questa tattica non fa altro che l'`apply` di un teorema\n"
+"L'implementazione di Lean di questa tattica non fa altro che `apply` di un teorema\n"
 "che dice che $Q \\implies P \\lor Q.$\n"
 "\n"
 "Nota bene che questa tattica può portare il tuo goal a uno stato irrisolvibile."
@@ -4763,12 +4758,10 @@ msgid "`mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`."
 msgstr "`mul_le_mul_right a b t` è la dimostrazione che `a ≤ b → a * t ≤ b * t`."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid "Let's warm up with an easy one, which works even if `t = 0`."
-msgstr "Let's warm up with an easy one, which works even se `t = 0`."
+msgstr "Riscaldiamoci le dita con un teorema facile, che vale anche se `t = 0`."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid ""
 "My proof:\n"
 "```\n"
@@ -4778,7 +4771,7 @@ msgid ""
 "rfl\n"
 "```"
 msgstr ""
-"My proof:\n"
+"La mia dimostrazione:\n"
 "```\n"
 "cases h with d hd\n"
 "use d * t\n"
@@ -4787,52 +4780,44 @@ msgstr ""
 "```"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "mul_left_ne_zero"
 msgstr "mul_left_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "`mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`."
 msgstr "`mul_left_ne_zero a b` è la dimostrazione che `a * b ≠ 0 → b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid ""
 "If you have completed Algorithm World then you can use the `contrapose!` tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
-"Se you have completed Mondo Algorithm allora you can use the `contrapose!` tattica\n"
-"here. Se not allora I'll talk you through a manual approach."
+"Se hai già completato Mondo Algoritmi allora puoi usare la tattica `contrapose!`\n"
+"qui. Altrimenti ti farò vedere un approccio manuale."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid ""
 "We want to reduce this to a hypothesis `b = 0` and a goal `a * b = 0`,\n"
 "which is logically equivalent but much easier to prove. Remember that `X ≠ 0`\n"
 "is notation for `X = 0 → False`. Click on `Show more help!` if you need hints."
 msgstr ""
-"We want to reduce this to a ipotesi `b = 0` e a goal `a * b = 0`,\n"
-"which is logically equivalent but much easier to prove. Remember that `X ≠ 0`\n"
-"is notazione for `X = 0 → False`. Clicca su `Aiutami!` se you need hints."
+"Vogliamo ridurre questo teorema a un'ipotesi `b = 0` e a un goal `a * b = 0`,\n"
+"che insieme sono logicamente equivalenti all'originale ma più facili da dimostrare. Ricorda che `X ≠ 0`\n"
+"è zucchero sintattico per `X = 0 → False`. Clicca su `Aiutami!` se hai bisogno di un indizio."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "Start with `intro hb`."
 msgstr "Inizia con `intro hb`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "Now `apply h` and you can probably take it from here."
-msgstr "Now `apply h` e you can probably take it from here."
+msgstr "Ora fai `apply h` e credo che puoi proseguire da solo."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid "eq_succ_of_ne_zero"
 msgstr "eq_succ_of_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -4867,42 +4852,40 @@ msgid ""
 msgstr ""
 "# Riepilogo\n"
 "\n"
-"La tattica `tauto` will solve any goal which can be solved purely by logic (that is, by\n"
-"truth tables).\n"
+"La tattica `tauto` risolverà qualsiasi goal che può essere tramite puro ragionamento logico (ossia, tramite le\n"
+"tavole di verità).\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you have `False` as a ipotesi, allora `tauto` will solve\n"
-"the goal. This is because a false ipotesi implica any ipotesi.\n"
+"Se hai `False` come ipotesi, allora `tauto` risolverà\n"
+"il goal. Questo perché un'ipotesi false implica qualsiasi cosa.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se your goal is `True`, allora `tauto` will solve the goal.\n"
+"Se hai il goal `True`, allora `tauto` risolverà il goal.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you have two ipotesi `h1 : a = 37` e `h2 : a ≠ 37` allora `tauto` will\n"
-"solve the goal because it can prove `False` from your ipotesi, e thus\n"
-"prove the goal (as `False` implica anything).\n"
+"Se hai due ipotesi `h1 : a = 37` e `h2 : a ≠ 37` allora `tauto` risolverà\n"
+"solve il goal perché può dedurre `False` dalle tue ipotesi, e quindi\n"
+"dimostrare il goal (dato che `False` implica qualsiasi cosa).\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you have one ipotesi `h : a ≠ a` allora `tauto` will solve the goal because\n"
-"`tauto` is smart enough to know that `a = a` is true, which gives the contradiction we seek.\n"
+"Se hai un'ipotesi `h : a ≠ a` allora `tauto` risolverà il goal perché\n"
+"è abbastanza intelligente da capire che `a = a` è vero, arrivando alla contraddizione che cerchiamo.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you have a ipotesi of the form `a = 0 → a * b = 0` e your goal is `a * b ≠ 0 → a ≠ 0`, allora\n"
-"`tauto` will solve the goal, because the goal is logically equivalent to the ipotesi.\n"
-"Se you switch the goal e ipotesi in this example, `tauto` would solve it too."
+"Se hai un'ipotesi della forma `a = 0 → a * b = 0` e hai il goal `a * b ≠ 0 → a ≠ 0`, allora\n"
+"`tauto` risolverà il goal, because esso è logicamente equivalente all'ipotesi.\n"
+"E se scambi il ruolo del goal e dell'ipotesi in questo esempio, `tauto` lo risolverebbe lo stesso."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid "`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`."
 msgstr "`eq_succ_of_ne_zero a` è la dimostrazione che `a ≠ 0 → ∃ n, a = succ n`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "Multiplication usually makes a number bigger, but multiplication by zero can make\n"
 "it smaller. Thus many lemmas about inequalities and multiplication need the\n"
@@ -4910,58 +4893,49 @@ msgid ""
 "To help us with the proof, we can use the `tauto` tactic. Click on the tactic's name\n"
 "on the right to see what it does."
 msgstr ""
-"Moltiplicazione usually makes a number bigger, but multiplication by zero can make\n"
-"it smaller. Thus many lemmas about disuguaglianze e multiplication need the\n"
-"ipotesi `a ≠ 0`. Here is a key lemma enables us to use this ipotesi.\n"
-"To help us with the proof, we can use the tattica `tauto`. Clicca su the tattica's name\n"
-"on the right to see what it does."
+"La moltiplicazione di norma fa crescere un numero, ma moltiplicare per zero lo rende\n"
+"più piccolo, o meglio, lo azzera. Ecco perché gran parte dei teoremi che mischiano le disuguaglianze con la moltiplicazione hanno\n"
+"l'ipotesi `a ≠ 0`. Questo livello è un lemma chiave che ci permette di mettere a frutto questa ipotesi.\n"
+"Per aiutarci nella dimostrazione, possiamo usare la tattica `tauto`. Clicca sul nome della tattica\n"
+"sulla destra per una descrizione dettagliata su cosa fa."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid "Start with `cases a with d` to do a case split on `a = 0` and `a = succ d`."
-msgstr "Start with `cases a with d` to do a case split on `a = 0` e `a = succ d`."
+msgstr "Inizia con `cases a with d` per spezzare il numero nei casi `a = 0` e `a = succ d`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "In the \"base case\" we have a hypothesis `ha : 0 ≠ 0`, and you can deduce anything\n"
 "from a false statement. The `tauto` tactic will close this goal."
 msgstr ""
-"In the \"base case\" we have a ipotesi `ha : 0 ≠ 0`, e you can deduce anything\n"
-"from a false enunciato. La tattica `tauto` will close this goal."
+"Nel \"caso base\" abbiamo un'ipotesi `ha : 0 ≠ 0`, e sappiamo che puoi dedurre qualsiasi cosa\n"
+"da una proposizione falsa. La tattica `tauto` chiuderà il goal."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "one_le_of_ne_zero"
 msgstr "one_le_of_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`."
 msgstr "`one_le_of_ne_zero a` è la dimostrazione che `a ≠ 0 → 1 ≤ a`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "The previous lemma can be used to prove this one."
-msgstr "The previous lemma can be used to prove this one."
+msgstr "Il lemma precedente può essere usato per dimostrare il corrente."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "Use the previous lemma with `apply eq_succ_of_ne_zero at ha`."
-msgstr "Use the previous lemma with `apply eq_succ_of_ne_zero at ha`."
+msgstr "Usa il lemma precedente con `apply eq_succ_of_ne_zero at ha`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "Now take apart the existence statement with `cases ha with n hn`."
-msgstr "Now take apart the existence enunciato with `cases ha with n hn`."
+msgstr "Ora scomponi l'enunciato esistenziale con `cases ha with n hn`."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid "le_mul_right"
 msgstr "le_mul_right"
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
 "\n"
@@ -4970,11 +4944,10 @@ msgid ""
 msgstr ""
 "`le_mul_right a b` è la dimostrazione che `a * b ≠ 0 → a ≤ a * b`.\n"
 "\n"
-"It's one way of saying that a divisor of a positive number\n"
-"has to be at most that number."
+"È un modo di dire che un divisore di un numero positivo dev'essere per forza\n"
+"al massimo il numero stesso."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "In Prime Number World we will be proving that $2$ is prime.\n"
 "To do this, we will have to rule out things like $2 ≠ 37 × 42.$\n"
@@ -4982,14 +4955,13 @@ msgid ""
 "which we will do using this lemma. The proof I have in mind manipulates the hypothesis\n"
 "until it becomes the goal, using pretty much everything which we've proved in this world so far."
 msgstr ""
-"In Mondo Prime Number we will be proving that $2$ is prime.\n"
-"To do this, we will have to rule out things like $2 ≠ 37 × 42.$\n"
-"We will do this by proving that any factor of $2$ is at most $2$,\n"
-"which we will do using this lemma. The proof I have in mind manipulates the ipotesi\n"
-"until it becomes the goal, using pretty much everything which we've proved in this mondo so far."
+"Nel Mondo Numeri Primi dimostreremo che $2$ è primo.\n"
+"Ma per arrivarci, dobbiamo escludere falsità del tipo $2 ≠ 37 × 42.$\n"
+"Lo faremo mostrando che ogni fattore di $2$ è al più $2$,\n"
+"che avremo gratis grazie a questo lemma. La dimostrazione che ho in mente io manipola l'ipotesi finché\n"
+"non diventa il goal, usando praticamente tutto ciò che abbiamo dimostrato in questo mondo finora."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "Here's what I was thinking of:\n"
 "```\n"
@@ -5000,7 +4972,7 @@ msgid ""
 "exact h\n"
 "```"
 msgstr ""
-"Here's what I was thinking of:\n"
+"Ecco quello che avevo in mente:\n"
 "```\n"
 "apply mul_left_ne_zero at h\n"
 "apply one_le_of_ne_zero at h\n"
@@ -5010,12 +4982,10 @@ msgstr ""
 "```"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "mul_right_eq_one"
 msgstr "mul_right_eq_one"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -5054,46 +5024,44 @@ msgid ""
 msgstr ""
 "# Riepilogo\n"
 "\n"
-"La tattica `have` can be used to add new ipotesi to a livello, but of course\n"
-"you have to prove them.\n"
+"La tattica `have` può essere usata per aggiungere un'ipotesi a un livello, ma ovviamente ti chiede\n"
+"di dimostrarla.\n"
 "\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"The simplest usage is like this. Se you have `a` in your context e you execute\n"
+"Il suo utilizzo più semplice e così. Se hai `a` nel contesto e vuoi eseguire\n"
 "\n"
 "`have ha : a = 0`\n"
 "\n"
-"allora you will get a new goal `a = 0` to prove, e after you've proved\n"
-"it you will have a new ipotesi `ha : a = 0` in your original goal.\n"
+"allora otterrai un nuovo goal `a = 0` da dimostrare, e dopo che l'hai dimostrato\n"
+"avrai l'ipotesi `ha : a = 0` nel contesto originale.\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you already have a proof of what you want to `have`, you\n"
-"can just create it immediately. For example, se you have `a` e `b`\n"
-"number objects, allora\n"
+"Se hai già pronta la dimostrazione di ciò che vuoi introdurre con `have`,\n"
+"puoi farlo in un unico comando. Ad esempio, se hai `a` e `b`\n"
+"come numeri, allora\n"
 "\n"
 "`have h2 : succ a = succ b → a = b := succ_inj a b`\n"
 "\n"
-"will directly add a new ipotesi `h2 : succ a = succ b → a = b`\n"
-"to the context, because you just supplied the proof of it (`succ_inj a b`).\n"
+"aggiungerà direttamente l'ipotesi `h2 : succ a = succ b → a = b`\n"
+"al contesto, dato che hai fornito assieme la sua dimostrazione (`succ_inj a b`).\n"
 "\n"
-"## Example\n"
+"## Esempio\n"
 "\n"
-"Se you have a proof to hand, allora you don't even need to state what you\n"
-"are proving. example\n"
+"Se hai in mano una dimostrazione, puoi omettere il lemma che vuoi introdurre (quello tra i simboli `:` e `:=`).\n"
+"Ad esempio:\n"
 "\n"
 "`have h2 := succ_inj a b`\n"
 "\n"
-"will add `h2 : succ a = succ b → a = b` as a ipotesi."
+"aggiungerà `h2 : succ a = succ b → a = b` come ipotesi."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`."
 msgstr "`mul_right_eq_one a b` è la dimostrazione che `a * b = 1 → a = 1`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "This level proves `x * y = 1 → x = 1`, the multiplicative analogue of Advanced Addition\n"
 "World's `x + y = 0 → x = 0`. The strategy is to prove that `x ≤ 1` and then use the\n"
@@ -5101,14 +5069,13 @@ msgid ""
 "\n"
 "We'll prove it using a new and very useful tactic called `have`."
 msgstr ""
-"This livello proves `x * y = 1 → x = 1`, the multiplicative analogue of Advanced Addizione\n"
-"Mondo's `x + y = 0 → x = 0`. The strategy is to prove that `x ≤ 1` e allora use the\n"
-"lemma `le_one` from `≤` mondo.\n"
+"Questo livello dimostra `x * y = 1 → x = 1`, l'analogo moltiplicativo del lemma `x + y = 0 → x = 0`\n"
+"incontrato del Mondo Addizione Avanzata. La strategia è dimostrare prima che `x ≤ 1` e poi usare il\n"
+"lemma `le_one` del Mondo `≤`.\n"
 "\n"
-"We'll prove it using a new e very useful tattica called `have`."
+"Lo dimostreremo con una nuova tattica assai utile, `have`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "We want to use `le_mul_right`, but we need a hypothesis `x * y ≠ 0`\n"
 "which we don't have. Yet. Execute `have h2 : x * y ≠ 0` (you can type `≠` with `\\ne`).\n"
@@ -5116,107 +5083,91 @@ msgid ""
 "prove it, and then you'll have a new hypothesis which you can apply\n"
 "`le_mul_right` to."
 msgstr ""
-"We want to use `le_mul_right`, but we need a ipotesi `x * y ≠ 0`\n"
-"which we don't have. Yet. Execute `have h2 : x * y ≠ 0` (you can type `≠` with `\\ne`).\n"
-"You'll be asked to\n"
-"prove it, e allora you'll have a new ipotesi which you can apply\n"
-"`le_mul_right` to."
+"Il piano è applicare `le_mul_right`, ma per farlo abbiamo bisogno dell'ipotesi `x * y ≠ 0`\n"
+"che non è presente nel contesto. Per ora. Esegui `have h2 : x * y ≠ 0` (digita `≠` tramite `\\ne`).\n"
+"Ti verrà chiesto di\n"
+"dimostrarlo, e allora avrai un'ipotesi nuova di zecca che a cui puoi applicare\n"
+"`le_mul_right`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "Now you can `apply le_mul_right at h2`."
-msgstr "Now you can `apply le_mul_right at h2`."
+msgstr "Ora puoi eseguire `apply le_mul_right at h2`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "Now `rw [h] at h2` so you can `apply le_one at hx`."
-msgstr "Now `rw [h] at h2` so you can `apply le_one at hx`."
+msgstr "Adesso `rw [h] at h2` così puoi fare `apply le_one at hx`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "Now `cases h2 with h0 h1` and deal with the two\n"
 "cases separately."
 msgstr ""
-"Now `cases h2 with h0 h1` e deal with the two\n"
-"cases separately."
+"Ora `cases h2 with h0 h1` e lavora sui due casi\n"
+"separatamente."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "`tauto` is good enough to solve this goal."
-msgstr "`tauto` is good enough to solve this goal."
+msgstr "`tauto` è in grado di risolvere questo goal."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid "mul_ne_zero"
 msgstr "mul_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid "`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
 msgstr "`mul_ne_zero a b` è la dimostrazione che se `a ≠ 0` e `b ≠ 0` allora `a * b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid ""
 "This level proves that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. One strategy\n"
 "is to write both `a` and `b` as `succ` of something, deduce that `a * b` is\n"
 "also `succ` of something, and then `apply zero_ne_succ`."
 msgstr ""
-"This livello proves that se `a ≠ 0` e `b ≠ 0` allora `a * b ≠ 0`. One strategy\n"
-"is to write both `a` e `b` as `succ` of something, deduce that `a * b` is\n"
-"also `succ` of something, e allora `apply zero_ne_succ`."
+"Questo livello dimostra che se `a ≠ 0` e `b ≠ 0` allora `a * b ≠ 0`. Una buona strategia\n"
+"è riscrivere sia `a` che `b` come `succ` di qualcosa, dedurre che `a * b` è \n"
+"anche lui `succ` di qualcosa, e infine `apply zero_ne_succ`."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid "Start with `apply eq_succ_of_ne_zero at ha` and `... at hb`"
 msgstr "Inizia con `apply eq_succ_of_ne_zero at ha` e `... at hb`"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid "mul_eq_zero"
 msgstr "mul_eq_zero"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid "`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
 msgstr "`mul_eq_zero a b` è la dimostrazione che se `a * b = 0` allora `a = 0` or `b = 0`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "This level proves that if `a * b = 0` then `a = 0` or `b = 0`. It is\n"
 "logically equivalent to the last level, so there is a very short proof."
 msgstr ""
-"This livello proves that se `a * b = 0` allora `a = 0` or `b = 0`. It is\n"
-"logically equivalent to the last livello, so there is a very short proof."
+"Questo livello dimostra che se `a * b = 0` allora `a = 0` or `b = 0`. È\n"
+"logicamente equivalente allo scorso livello, quindi la dimostrazione è veramente corta."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid "Start with `have h2 := mul_ne_zero a b`."
 msgstr "Inizia con `have h2 := mul_ne_zero a b`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n"
 "tactic."
 msgstr ""
-"Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n"
-"tattica."
+"Adesso il goal può essere dedotto da `h2` tramite pura logica, dunque usa la tattica\n"
+"`tauto`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "mul_left_cancel"
 msgstr "mul_left_cancel"
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then `b = c`."
 msgstr "`mul_left_cancel a b c` è la dimostrazione che se `a ≠ 0` e `a * b = a * c` allora `b = c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "In this level we prove that if `a * b = a * c` and `a ≠ 0` then `b = c`. It is tricky, for\n"
 "several reasons. One of these is that\n"
@@ -5231,78 +5182,68 @@ msgid ""
 "\"for all `c`, if `a * b = a * c` then `b = c`. This *can* be proved by induction,\n"
 "because we now have the flexibility to change `c`.\""
 msgstr ""
-"In this livello we prove that se `a * b = a * c` e `a ≠ 0` allora `b = c`. It is tricky, for\n"
-"several reasons. One of these is that\n"
-"we need to introduce a new idea: we will need to understand the concept of\n"
-"mathematical induction a little better.\n"
+"In questo livello dimostriamo che se `a * b = a * c` e `a ≠ 0` allora `b = c`. È un pò complicato, per\n"
+"diverse ragioni. Una di queste è che\n"
+"abbiamo bisogno di introdurre una nuova idea, approfondendo la nozione di\n"
+"induzione matematica.\n"
 "\n"
-"Starting with `induction b with d hd` is too naive, because in the inductive step\n"
-"the ipotesi is `a * d = a * c → d = c` but what we know is `a * succ d = a * c`,\n"
-"so the induction ipotesi does not apply!\n"
+"Sarebbe ingenuo partire con `induction b with d hd`, perché nel passo induttivo\n"
+"l'ipotesi è `a * d = a * c → d = c` ma quello che sappiamo è solo che `a * succ d = a * c`,\n"
+"dunque non possiamo applicare l'ipotesi ipotesi induttiva!\n"
 "\n"
-"Assume `a ≠ 0` is fixed. The actual enunciato we want to prove by induction on `b` is\n"
-"\"for all `c`, se `a * b = a * c` allora `b = c`. This *can* be proved by induction,\n"
-"because we now have the flexibility to change `c`.\""
+"Supponiamo di fissare la variabile `a ≠ 0`. Il vero enunciato che vogliamo dimostrare per induzione su `b` è\n"
+"\"per tutte le `c`, se `a * b = a * c` allora `b = c`\". Questo *può* essere dimostrato per induzione,\n"
+"perché abbiamo permesso alla `c` di variare."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "The way to start this proof is `induction b with d hd generalizing c`."
-msgstr "The way to start this proof is `induction b with d hd generalizing c`."
+msgstr "Il codice per iniziare bene questa dimostrazione è `induction b with d hd generalizing c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "Use `mul_eq_zero` and remember that `tauto` will solve a goal\n"
 "if there are hypotheses `a = 0` and `a ≠ 0`."
 msgstr ""
-"Use `mul_eq_zero` e remember that `tauto` will solve a goal\n"
-"se there are ipotesi `a = 0` e `a ≠ 0`."
+"Usa `mul_eq_zero` e ricorda che `tauto` risolve qualsiasi goal\n"
+"se hai le ipotesi contraddittorie `a = 0` e `a ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * c → d = c`\".\n"
 "You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
 msgstr ""
-"The inductive ipotesi `hd` is \"Per tutti i numeri naturali `c`, `a * d = a * c → d = c`\".\n"
-"You can `apply` it `at` any ipotesi of the form `a * d = a * ?`."
+"L'ipotesi induttiva `hd` è \"Per tutti i numeri naturali `c`, `a * d = a * c → d = c`\".\n"
+"Puoi sfruttarla con `apply` e `at` su un'ipotesi della forma `a * d = a * ?`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "Split into cases `c = 0` and `c = succ e` with `cases c with e`."
-msgstr "Split into cases `c = 0` e `c = succ e` with `cases c with e`."
+msgstr "Suddividi la dimostrazione nei casi `c = 0` e `c = succ e` con `cases c with e`."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid "mul_right_eq_self"
 msgstr "mul_right_eq_self"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = 1`."
 msgstr "`mul_right_eq_self a b` è la dimostrazione che se `a ≠ 0` e `a * b = a` allora `b = 1`."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid ""
 "The lemma proved in the final level of this world will be helpful\n"
 "in Divisibility World."
 msgstr ""
-"The lemma proved in the final livello di questo mondo will be helpful\n"
-"in Mondo Divisibility."
+"Il lemma dimostrato nel livello finale di questo mondo sarà d'aiuto\n"
+"nel Mondo Divisibilità."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid "Reduce to the previous lemma with `nth_rewrite 2 [← mul_one a] at h`"
-msgstr "Reduce to the previous lemma with `nth_rewrite 2 [← mul_one a] at h`"
+msgstr "Riduci al lemma precedente con `nth_rewrite 2 [← mul_one a] at h`"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid "You can now `apply mul_left_cancel at h`"
-msgstr "You can now `apply mul_left_cancel at h`"
+msgstr "Ora puoi fare `apply mul_left_cancel at h`"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid ""
 "A two-line proof is\n"
 "\n"
@@ -5313,17 +5254,16 @@ msgid ""
 "\n"
 "We now have all the tools necessary to set up the basic theory of divisibility of naturals."
 msgstr ""
-"A two-line proof is\n"
+"Una dimostrazione di due righe è la seguente\n"
 "\n"
 "```\n"
 "nth_rewrite 2 [← mul_one a] at h\n"
 "exact mul_left_cancel a b 1 ha h\n"
 "```\n"
 "\n"
-"We now have all the tools necessary to set up the basic theory of divisibility of naturals."
+"A questo punto abbiamo tutti gli strumenti necessari per costruire una teoria basilare della divisibilità dei numeri naturali."
 
 #: Game.Levels.AdvMultiplication
-#, fuzzy
 msgid "Advanced Multiplication World"
 msgstr "Mondo Moltiplicazione Avanzata"
 
@@ -5345,20 +5285,19 @@ msgid ""
 "true under the additional hypothesis that one of the variables is non-zero.\n"
 "This causes some unexpected extra twists."
 msgstr ""
-"Advanced *Addizione* Mondo proved various implications\n"
-"involving addition, such as `x + y = 0 → x = 0` e `x + y = x → y = 0`.\n"
-"These lemmas were used to prove basic facts about ≤ in ≤ Mondo.\n"
+"Il Mondo *Addition* Avanzata ha dimostrato varie implicazioni\n"
+"riguardanti l'addizione, come `x + y = 0 → x = 0` e `x + y = x → y = 0`.\n"
+"Abbiamo usato questi lemmi per dimostrare fatti basilari su ≤ nel Mondo ≤.\n"
 "\n"
-"In Mondo Moltiplicazione Avanzata we prove analogous\n"
-"facts about multiplication, such as `x * y = 1 → x = 1`, e\n"
-"`x * y = x → y = 1` (assuming `x ≠ 0` in the latter result). This will prepare\n"
-"us for Mondo Divisibility.\n"
+"Nel Mondo Moltiplicazione Avanzata proveremo dei fatti\n"
+"analoghi sulla moltiplicazione, ad esempio `x * y = 1 → x = 1`, e\n"
+"`x * y = x → y = 1` (assumendo che `x ≠ 0` nel secondo enunciato). Questi saranno propedeutici\n"
+"per il Mondo Divisibilità.\n"
 "\n"
-"Mondo Moltiplicazione is more complex than Mondo Addizione. In the same\n"
-"way, Moltiplicazione Avanzata mondo is more complex than Advanced Addizione\n"
-"Mondo. One reason for this is that certain intermediate results are only\n"
-"true under the additional ipotesi that one of the variables is non-zero.\n"
-"This causes some unexpected extra twists."
+"In quanto a complessità, Mondo Moltiplicazione sta al Mondo Addizione come\n"
+"il Mondo Moltiplicazione Avanzata sta al Mondo Addizione Avanzata.\n"
+"La complessità aggiuntiva è dovuta al fatto che certi teoremi intermedi valgono a condizione certe variabili siano non nulle.\n"
+"Queste limitazioni hanno dei risvolti inaspettati."
 
 #: Game
 msgid "Natural Number Game"
@@ -5396,10 +5335,10 @@ msgid ""
 "links, and ways to interact with the Lean community."
 msgstr ""
 "# Welcome to the Natural Number Game\n"
-"#### An introduction to mathematical proof.\n"
+"#### An introduction to mathematical dimostrazione.\n"
 "\n"
 "In this game, we will build the basic theory of the natural\n"
-"numbers `{0,1,2,3,4,...}` from scratch. Our first goal is to prove\n"
+"numbers `{0,1,2,3,4,...}` from scratch. Our first goal is da dimostrare\n"
 "that `2 + 2 = 4`. Next dimostreremo that `x + y = y + x`.\n"
 "And at the end we'll see se we can prove Fermat's Last Theorem.\n"
 "We'll do this by solving livelli of a computer puzzle game called Lean.\n"
@@ -5415,7 +5354,7 @@ msgstr ""
 "Note: this is a new Lean 4 version of the game containing several\n"
 "worlds which were not present in the old Lean 3 version. A new version\n"
 "of Mondo Moltiplicazione Avanzata is in preparation, e worlds\n"
-"such as Mondo Prime Number e more will be appearing during October e\n"
+"such as Mondo Numeri Primi e more will be appearing during October e\n"
 "November 2023.\n"
 "\n"
 "## More\n"
