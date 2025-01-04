@@ -1602,7 +1602,7 @@ msgstr "Mondo dell'addizione"
 
 #: Game.Levels.Addition
 msgid ""
-"Welcome to Addition World! In this world we'll learn the `induction` tactic.\n"
+"Welcome to Addition World! In questo mondo we'll learn the `induction` tactic.\n"
 "This will enable us to defeat the boss level of this world, namely `x + y = y "
 "+ x`.\n"
 "\n"
@@ -4546,7 +4546,7 @@ msgstr "0 ≤ x"
 msgid ""
 "To solve this level, you need to `use` a number `c` such that `x = 0 + c`."
 msgstr ""
-"Per risolvere questo livello, hai bisogno di fare `use` su un numero `c` tale che `x = 0 + c`."
+"Per risolvere questo livello, dovrai fare `use` su un numero `c` tale che `x = 0 + c`."
 
 #: Game.Levels.LessOrEqual.L02zero_le
 msgid "`zero_le x` is a proof that `0 ≤ x`."
@@ -4565,21 +4565,19 @@ msgid "`le_succ_self x` is a proof that `x ≤ succ x`."
 msgstr "`le_succ_self x` è la dimostrazione che `x ≤ succ x`."
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
-#, fuzzy
 msgid ""
 "If you `use` the wrong number, you get stuck with a goal you can't prove.\n"
 "What number will you `use` here?"
 msgstr ""
-"If you `use` the wrong number, you get stuck with a goal you can't prove.\n"
-"What number will you `use` here?"
+"Se applichi `use` con un numero errato, finirai bloccato con un goal che non puoi dimostrare.\n"
+"Su che numero applicherai `use` qui?"
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 #, fuzzy
 msgid "If $x$ is a number, then $x \\le \\operatorname{succ}(x)$."
-msgstr "If $x$ is a number, then $x \\le \\operatorname{succ}(x)$."
+msgstr "Sia $x$ un numero, allora $x \\le \\operatorname{succ}(x)$."
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
-#, fuzzy
 msgid ""
 "Here's a two-liner:\n"
 "```\n"
@@ -4589,21 +4587,19 @@ msgid ""
 "\n"
 "This works because `succ_eq_add_one x` is a proof of `succ x = x + 1`."
 msgstr ""
-"Here's a two-liner:\n"
+"Ecco una dimostrazione di due righe:\n"
 "```\n"
 "use 1\n"
 "exact succ_eq_add_one x\n"
 "```\n"
 "\n"
-"This works because `succ_eq_add_one x` is a proof of `succ x = x + 1`."
+"Questo funziona perché `succ_eq_add_one x` è la dimostrazione di `succ x = x + 1`."
 
 #: Game.Levels.LessOrEqual.L04le_trans
-#, fuzzy
 msgid "x ≤ y and y ≤ z implies x ≤ z"
-msgstr "x ≤ y and y ≤ z implies x ≤ z"
+msgstr "x ≤ y e y ≤ z implica x ≤ z"
 
 #: Game.Levels.LessOrEqual.L04le_trans
-#, fuzzy
 msgid ""
 "`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
 "More precisely, it is a proof that `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
@@ -4619,20 +4615,20 @@ msgid ""
 "$P \\implies Q \\implies R$; for them, this usually means that $P \\implies "
 "Q$\n"
 "and $Q \\implies R$."
-msgstr "`le_trans x y z` is a proof that if `x ≤ y` and `y ≤ z` then `x ≤ z`.\n"
-"More precisely, it è la dimostrazione che `x ≤ y → (y ≤ z → x ≤ z)`. In words,\n"
-"If $x \\le y$ then (pause) if $y \\le z$ then $x \\le z$.\n"
+msgstr "`le_trans x y z` è la dimostrazione che se `x ≤ y` e `y ≤ z` allora `x ≤ z`.\n"
+"Riscritto in termini logici, è la dimostrazione che `x ≤ y → (y ≤ z → x ≤ z)`. Questa formula si legge ad alta voce così:\n"
+"Se $x \\le y$ allora (pausa) se $y \\le z$ allora $x \\le z$.\n"
 "\n"
-"## A note on associativity\n"
+"## Nota sull'associatività\n"
 "\n"
-"In Lean, `a + b + c` means `(a + b) + c`, because `+` is left associative. "
-"However\n"
-"`→` is right associative. This means that `x ≤ y → y ≤ z → x ≤ z` in Lean "
-"means\n"
-"exactly that `≤` is transitive. This is different to how mathematicians use\n"
-"$P \\implies Q \\implies R$; for them, this usually means that $P \\implies "
+"Come sai già, in Lean `a + b + c` sta per `(a + b) + c`, dato che `+` associa a sinitra. "
+"Invece l'implicazione\n"
+"`→` associa a destra. Dunque su Lean possiamo scrivere direttamente `x ≤ y → y ≤ z → x ≤ z`, "
+"che codifica\n"
+"proprio la proprietà transitiva di `≤`. Attenzione però, in quanto a volte i matematici interpretano le sequenze di `→` diversamente;  \n"
+"per alcuni, $P \\implies Q \\implies R$ si traduce nella congiunzione $P \\implies "
 "Q$\n"
-"and $Q \\implies R$."
+"e $Q \\implies R$."
 
 #: Game.Levels.LessOrEqual.L04le_trans
 #, fuzzy
@@ -4648,7 +4644,7 @@ msgstr ""
 #: Game.Levels.LessOrEqual.L04le_trans
 #, fuzzy
 msgid "If $x \\leq y$ and $y \\leq z$, then $x \\leq z$."
-msgstr "If $x \\leq y$ and $y \\leq z$, then $x \\leq z$."
+msgstr "Se $x \\leq y$ e $y \\leq z$, allora $x \\leq z$."
 
 #: Game.Levels.LessOrEqual.L04le_trans
 #, fuzzy
@@ -5147,12 +5143,10 @@ msgstr ""
 "Advanced Multiplication World. Click on \"Leave World\" to access it."
 
 #: Game.Levels.LessOrEqual
-#, fuzzy
 msgid "≤ World"
-msgstr "≤ World"
+msgstr "Mondo ≤"
 
 #: Game.Levels.LessOrEqual
-#, fuzzy
 msgid ""
 "In this world we define `a ≤ b` and prove standard facts\n"
 "about it, such as \"if `a ≤ b` and `b ≤ c` then `a ≤ c`.\"\n"
@@ -5164,23 +5158,21 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
-"In this world we define `a ≤ b` and prove standard facts\n"
-"about it, such as \"if `a ≤ b` and `b ≤ c` then `a ≤ c`.\"\n"
+"In questo mondo definiremo cosa vuol dire `a ≤ b` e dimostreremo dei fatti standard\n"
+"sulle diseguaglianze, come \"se ho `a ≤ b` e `b ≤ c` allora `a ≤ c`.\"\n"
 "\n"
-"The definition of `a ≤ b` is \"there exists a number `c`\n"
-"such that `b = a + c`. \" So we're going to have to learn\n"
-"a tactic to prove \"exists\" theorems, and another one\n"
-"to use \"exists\" hypotheses.\n"
+"La definizione di `a ≤ b` è \"esiste un numero `c`\n"
+"tale che `b = a + c`. \" Perciò avremo bisogno di imparare una\n"
+"tattica che dimostri la clausola \"esiste\", e un'altra \n"
+"per utilizzare gli \"esiste\" nelle ipotesi.\n"
 "\n"
-"Click on \"Start\" to proceed."
+"Premi su \"Inizia\" per procedere."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid "mul_le_mul_right"
 msgstr "mul_le_mul_right"
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid "`mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`."
 msgstr "`mul_le_mul_right a b t` è la dimostrazione che `a ≤ b → a * t ≤ b * t`."
 
