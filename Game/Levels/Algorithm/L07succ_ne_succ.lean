@@ -60,7 +60,7 @@ TheoremDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano"
 /-- If $a \neq b$ then $\operatorname{succ}(a) \neq\operatorname{succ}(b)$. -/
 Statement succ_ne_succ (m n : ℕ) (h : m ≠ n) : succ m ≠ succ n := by
   Hint "Start with `contrapose! h`, to change the goal into its
-  contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = n`."
+  contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`."
   contrapose! h
   Hint "Can you take it from here? (note: if you try `contrapose! h` again, it will
   take you back to where you started!)"
