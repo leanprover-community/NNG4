@@ -1,5 +1,5 @@
 import GameServer.Commands
-import Game.Levels.LessThan.L01_lt_iff_exists_add_succ
+import Game.Levels.LessThan.L01_le_of_lt.lean
 -- import Game.Levels.LessThan.L02zero_le
 -- import Game.Levels.LessThan.L03le_succ_self
 -- import Game.Levels.LessThan.L04le_trans
