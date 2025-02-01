@@ -41,10 +41,10 @@ those who read the help texts like this one.
 To start, click on \"Tutorial World\".
 
 Note: this is a new Lean 4 version of the game containing several
-worlds which were not present in the old Lean 3 version. A new version
-of Advanced Multiplication World is in preparation, and worlds
-such as Prime Number World and more will be appearing during October and
-November 2023.
+worlds which were not present in the old Lean 3 version. More new worlds
+such as Strong Induction World, Even/Odd World and Prime Number World
+are in development; if you want to see their state or even help out, checkout
+out the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).
 
 ## More
 
@@ -53,9 +53,9 @@ links, and ways to interact with the Lean community.
 "
 
 Info "
-*Game version: 4.2*
+*Game version: 4.3*
 
-*Recent additions: Inequality world, algorithm world*
+*Recent additions: bug fixes*
 
 ## Progress saving
 

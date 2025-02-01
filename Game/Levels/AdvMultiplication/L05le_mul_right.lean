@@ -18,7 +18,8 @@ TheoremDoc MyNat.le_mul_right as "le_mul_right" in "≤"
 
 Introduction
 "
-In Prime Number World we will be proving that $2$ is prime.
+One day this game will have a Prime Number World, with a final boss
+of proving that $2$ is prime.
 To do this, we will have to rule out things like $2 = 37 × 42.$
 We will do this by proving that any factor of $2$ is at most $2$,
 which we will do using this lemma. The proof I have in mind manipulates the hypothesis
