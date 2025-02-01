@@ -21,55 +21,54 @@ TheoremDoc MyNat.lt_tfae as "lt_tfae" in "<"
 /-- If $a\ b$ are natural numbers the a < b ↔ ¬(b ≤ a) ↔ a.succ ≤ b ↔ ∃ n : MyNat, a + n.succ = b
 -/
 Statement lt_tfae (a b: ℕ) :
-[a < b, --old 1 --new 1
- ¬(b ≤ a), --old 2 --new 1
-∃ n : MyNat, a.succ + n = b, --old 5 --new 3
-∃ n : MyNat, (a+n).succ = b, --old 6 --new 4
-∃ n : MyNat, a + n.succ = b, --old 4 --new 5
-a.succ ≤ b, --old 3 --new 6
-
-
-
+[a < b, --old 1
+a.succ ≤ b, --old 2
+∃ n : MyNat, b = a.succ + n, --old 3
+∃ n : MyNat, b = (a+n).succ, --old 4
+∃ n : MyNat, b = a + n.succ, --old 5
+∀ n : MyNat, a ≠ b + n , --old 6
+ ¬(b ≤ a), --old 7
+a ≤ b ∧ ¬(b ≤ a),  --old 8
 ].TFAE := by
   tfae_have 1 → 2
-  · intro ⟨h0,h1⟩ h2
-    exact h1 (le_antisymm a b h0 h2)
-  tfae_have 2 → 3
-  · intro h0
-    have h2 := Or.resolve_right (le_total a b) h0
-    rcases h2 with ⟨n,hn⟩
+  · intro ⟨⟨n,h0⟩,h1⟩
     cases n with l
-    · rw [hn,add_zero] at h0
-      exact False.elim (h0 (le_refl a))
-    use l
-    rw [hn,add_succ,succ_add]
-    rfl
+    · exfalso
+      rw [add_zero] at h0
+      exact h1 h0.symm
+    · use l
+      rw [h0,add_succ,succ_add]
+      rfl
+  tfae_have 2 → 3
+  · exact id
   tfae_have 3 → 4
-  · intro ⟨nn,hnn⟩
-    use nn
-    rw [←hnn,succ_add]
-    rfl
+  · simp_rw [succ_add]
+    exact id
   tfae_have 4 → 5
-  · intro ⟨n,hn⟩
-    use n
-    rw [←hn]
-    rw [add_succ]
-    rfl
+  · simp_rw [←add_succ]
+    exact id
   tfae_have 5 → 6
-  · rintro ⟨n,h0⟩
-    use n
-    rw [←h0,add_succ,succ_add]
-    rfl
-  tfae_have 6 → 1
-  · intro ⟨c,hc⟩
-    constructor
-    use succ c
-    rw [hc,add_succ,succ_add]
-    rfl
-    intro h1
-    rw [h1,succ_add,←add_succ] at hc
-    have h2 : succ c = 0 := add_right_eq_self b (succ c) hc.symm
-    exact (succ_ne_zero c) h2
+  · intro ⟨n,hn⟩ m h0
+    rw [h0,add_assoc,add_succ] at hn
+    have h1 : succ (m + n) = 0 :=
+      (add_right_eq_self b (succ (m + n)) ) hn.symm
+    have h2 := succ_ne_zero (m + n)
+    exact h2 h1
+  tfae_have 6 → 7
+  · intro h0
+    rw [←not_exists] at h0
+    exact h0
+  tfae_have 7 → 8
+  · intro h0
+    apply And.intro
+    exact Or.resolve_right (le_total a b) h0
+    exact h0
+  tfae_have 8 → 1
+  · intro ⟨h0,h1⟩
+    apply And.intro h0
+    intro h2
+    rw [h2] at h1
+    exact h1 (le_refl b)
   tfae_finish
 
 
