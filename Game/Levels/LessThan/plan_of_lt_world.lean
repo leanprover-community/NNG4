@@ -16,7 +16,6 @@ theorem lt_irrefl (a : ℕ) : ¬(a < a) := by
   rw [lt_iff_succ_le] at h0
   rcases h0 with ⟨n,hn⟩
   rw [succ_add,←add_succ] at hn
---  have h0 : succ n = 0 := add_right_eq_self
   have h1 := add_right_eq_self a (succ n) hn.symm
   have h2 := succ_ne_zero n
   exact h2 h1
@@ -69,7 +68,7 @@ theorem succ_le_succ_iff (m n : ℕ) : succ m ≤ succ n ↔ m ≤ n := by
   rw [succ_add]
   rfl
 
-theorem lt_succ_iff_le (a b : ℕ) : m < succ n ↔ m ≤ n := by
+theorem lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by
   apply Iff.intro
   intro ⟨k,hk⟩
   rw [succ_add] at hk
@@ -100,7 +99,12 @@ theorem add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := b
   rw [succ_add,succ_add,add_assoc]
   rfl
 
---succ_lt_succ_iff
+--instances ordered_comm_monoid
+--canonically_ordered_comm_monoid
+--oredered_cancel_comm_moniod
+
+
+
 
 --instances : something
 
@@ -130,7 +134,8 @@ theorem mul_lt_mul_of_pos_right (a b c : ℕ)
   repeat rw [add_assoc]
   rfl
 
---ordered semiring instance
+--instance ordered semiring
+
 
 theorem le_mul (a b c d : ℕ ) : a ≤ b → c ≤ d → a * c ≤ b * d := by
   intro ⟨n,hab⟩ ⟨m,hcd⟩
@@ -139,7 +144,7 @@ theorem le_mul (a b c d : ℕ ) : a ≤ b → c ≤ d → a * c ≤ b * d := by
   rw [add_assoc (a * c) ]
   rfl
 
-theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by  
+theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by
   intro hmn
   induction a with l hl
   rw [pow_zero,pow_zero]
@@ -152,7 +157,7 @@ theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by
 
 
 --strong induction
-theorem strong_induction_aux (P : ℕ → Prop)
+theorem strong_induction (P : ℕ → Prop)
     (h0 : ∀ n : ℕ, (∀ m : ℕ, m < n → P m) → P n) : ∀ z : ℕ, P z := by
   have h1 : ∀ θ : ℕ, ∀ y : ℕ, y < θ → P y := by
     intro θ
@@ -160,7 +165,18 @@ theorem strong_induction_aux (P : ℕ → Prop)
     intro y hy
     exact False.elim ((not_lt_zero y) hy)
     intro y hy
-    have h1 := @lt_succ_iff_le 
-
+    rcases (lt_succ_iff_le y k).mp hy with ⟨δ,hδ⟩
+    cases δ with l
+    rw [add_zero] at hδ
+    rw [←hδ]
+    exact h0 k (hk)
+    specialize hk y
+    apply hk
+    use l
+    rw [hδ]
+    rw [add_succ,succ_add]
+    rfl
+  intro z
+  exact h1 (succ z) z (lt_succ_self z)
 
 end MyNat
