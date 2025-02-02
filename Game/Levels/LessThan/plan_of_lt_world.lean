@@ -122,6 +122,10 @@ theorem mul_le_mul_of_nonneg_left (a b c: ℕ)
   rw [mul_comm n c]
   rfl
 
+theorem mul_lt_mul_of_pos_left (a b c : ℕ)
+    : a < b → 0 < c → c * a < c * b := by
+  sorry
+
 theorem mul_lt_mul_of_pos_right (a b c : ℕ)
     : a < b → 0 < c → c * a < c * b := by
   intro ⟨n,hab⟩
