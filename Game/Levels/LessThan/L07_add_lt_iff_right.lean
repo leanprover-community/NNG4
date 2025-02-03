@@ -1,26 +1,24 @@
-import Game.Levels.LessThan.L06_add_lt_iff_left
+import Game.Levels.LessThan.L0
 
 World "LessThan"
-Level 7
-Title "x + a  < x + b ↔ a < b"
+Level 9
+Title "succ x ≤ succ y → x ≤ y"
+
+TheoremTab "≤"
 
 namespace MyNat
 
-/-- `le_succ_self x` is a proof that `x ≤ succ x`. -/
-TheoremDoc MyNat.add_lt_iff_right as "add_lt_iff_right" in "<"
+/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+TheoremDoc MyNat.succ_le_succ as "succ_le_succ" in "<"
 
---Introduction "If you `use` the wrong number, you get stuck with a goal you can't prove.
---What number will you `use` here?"
+Introduction ""
 
-/-- If $x$ is a number, then $x \le \operatorname{succ}(x)$. -/
-Statement add_lt_iff_right {a b c : MyNat} :
-    a + b < c + b ↔ a < c := by
- rw [add_comm]
- rw [add_comm c b]
- exact @MyNat.add_lt_iff_left b a c
-
-
-TheoremTab "<"
+/-- If $\operatorname{succ}(x) \leq \operatorname{succ}(y)$ then $x \leq y$. -/
+Statement succ_le_succ (x y : ℕ) (hx : succ x ≤ succ y) : x ≤ y := by
+  cases hx with d hd
+  use d
+  rw [succ_add] at hd
+  apply succ_inj at hd
+  exact hd
 
 Conclusion ""
-

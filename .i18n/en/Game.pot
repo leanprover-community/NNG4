@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Feb  1 10:53:53 2025\n"
+"POT-Creation-Date: Sun Feb  2 19:50:10 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3088,6 +3088,354 @@ msgid "In this world we define `a ≤ b` and prove standard facts\n"
 "a tactic to prove \"exists\" theorems, and another one\n"
 "to use \"exists\" hypotheses.\n"
 "\n"
+"Click on \"Start\" to proceed."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Less Than is irreflexive"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Introduction Needed"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid ""
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "If $x$ is a natural number, then $\\neg (x \\lt x)$."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Conclusion Needed"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid ""
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "`a < b` is a stronger statment that `a ≠ b`, meaning that `a ≠  b` is *at least as true* as\n"
+"`a < b`.  We write this as `(a < b) → (a ≠ b)`.  We prove this here."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "If `a < b`, then `a ≠ b`.  We state and prove this here."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "If a b are natural numbers, then $a \\le b \\Rightarrow a \\ne b$."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "No natural number is less than zero"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "In the LessOrEqual world, we showed that zero is LessOrEqual to every\n"
+"natural number.  In this world, we show that there is not natural number strictly less\n"
+"than zero."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ then $x \\leq y$."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "a < b → b ≤ c → a < c"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "INTRO"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "If a < b and b ≤ c then a < c"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
+msgid "lt_of_le_of_lt"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
+msgid "INTRO"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
+msgid "If `a ≤ b` and `b < c` then `a < c`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L06_lt_trans
+msgid "less than is a transitive relation"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L06_lt_trans
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L06_lt_trans
+msgid "INTRO"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L06_lt_trans
+msgid "If a < b and b < c, then a < c"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L06_lt_trans
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid "A number is (strictly) less than is own successor"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid ""
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid "a < a.succ"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid "Conclusion"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L08_succ_le_succ
+msgid "succ x ≤ succ y ↔ x ≤ y"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L08_succ_le_succ
+msgid "`succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y` iff `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L08_succ_le_succ
+msgid "To show that the natural numbers for a (A CERTAIN\n"
+"ALGEBRAIC STRUCTURE), we need to add a result relating to the the `≤`\n"
+"operator, we add them here"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L08_succ_le_succ
+msgid "If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ iff $x \\leq y$."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L08_succ_le_succ
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L09_lt_succ_iff_le
+msgid "m < succ n ↔ m ≤ n"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L09_lt_succ_iff_le
+msgid "`lt_succ_iff_le` is a proof that `m < succ n` iff `m ≤ n`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L09_lt_succ_iff_le
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L09_lt_succ_iff_le
+msgid "If m < succ n iff m ≤"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L09_lt_succ_iff_le
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid "We can cancel a addend from both sides of a strict equality"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid "We can cancel an addend from both sides of an inequality"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid ""
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "We have now shown that the natural numbers form an ordered commutative monoid,\n"
+"a canonnically ordered commutative monoid, and an ordered cancellable commutative monoid."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
+msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
+msgid "We have shown that the natural numbers are an ordered semiring."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
+msgid "FUNCTION INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
+msgid "LEMMA DOCUMENTATION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L16_le_mul
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L16_le_mul
+msgid "`THEOREM DOC TEXT"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L16_le_mul
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L16_le_mul
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L17_pow_le
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L17_pow_le
+msgid "THEOREM DOC LANGUAGE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L17_pow_le
+msgid "INTRODUCTION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L17_pow_le
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L18_strong_induction
+msgid "TITLE"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L18_strong_induction
+msgid "THEOREM DOC COMMENT"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L18_strong_induction
+msgid "As an exercise, try to do this on paper before doing it on the computer.\n"
+"The idea of the proof isn't esoteric, but it is easy to convince yourself that an invalid\n"
+"proof your wrote is actually valid.  You will need to use mathematical induction."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L18_strong_induction
+msgid "CONCLUSION"
+msgstr ""
+
+#: Game.Levels.LessThan
+msgid "< World"
+msgstr ""
+
+#: Game.Levels.LessThan
+msgid "In this world we define `a < b` and prove standard facts\n"
+"about it, such as \"if `a < b` and `b < c` then `a < c`.\"\n"
+"\n"
+"The definition of `a < b` is \"a ≤ b ∧ a ≠ b. \"\n"
 "Click on \"Start\" to proceed."
 msgstr ""
 

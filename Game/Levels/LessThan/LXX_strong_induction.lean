@@ -28,7 +28,7 @@ Statement strong_induction {P : ℕ → Prop} (h0 : ∀ n : ℕ, (∀ m : ℕ, m
   intro m hm
   have h1 := lt_iff_not_le
   rw [lt_iff_not_le] at hm
-  
+  sorry
   
 
 

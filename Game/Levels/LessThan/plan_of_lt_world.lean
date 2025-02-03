@@ -9,110 +9,118 @@ import Game.Levels.Power
 
 namespace MyNat
 
-
-
-theorem lt_irrefl (a : ℕ) : ¬(a < a) := by
+--symm notation?
+theorem add_right_succ_ne_self (a b : ℕ) : ¬(a = a + succ b) := by
   intro h0
-  rw [lt_iff_succ_le] at h0
-  rcases h0 with ⟨n,hn⟩
-  rw [succ_add,←add_succ] at hn
-  have h1 := add_right_eq_self a (succ n) hn.symm
-  have h2 := succ_ne_zero n
+  have h1  := add_right_eq_self a (succ b) h0.symm
+  have h2 := succ_ne_zero b
   exact h2 h1
 
-theorem ne_of_lt (a b : ℕ) : a < b → a ≠ b := by
+
+--rintro
+theorem lt_irrefl (a : ℕ) : ¬(a < a) := by --level 01
+  rintro ⟨n,hn⟩
+  rw [succ_add,←add_succ] at hn
+  have h1 := add_right_succ_ne_self a n
+  exact h1 hn
+
+--contrapose tactic
+theorem ne_of_lt (a b : ℕ) : a < b → a ≠ b := by --level 02
   contrapose!
   intro h0
   rw [h0]
   exact lt_irrefl b
 
-theorem not_lt_zero (a : ℕ) : ¬(a < 0) := by
+theorem not_lt_zero (a : ℕ) : ¬(a < 0) := by --level 03
   intro ⟨n,hn⟩
   rw [succ_add] at hn
   have h1 := succ_ne_zero (a + n)
   exact h1 hn.symm
 
-theorem lt_of_lt_of_le (a b c : ℕ) : a < b → b ≤ c → a < c := by
-  intro ⟨n,hnab⟩ ⟨m,hmbc⟩
+--Exists.intro? --never used
+theorem lt_of_lt_of_le (a b c : ℕ) : a < b → b ≤ c → a < c := by --level 04
+  rintro ⟨n,hnab⟩ ⟨m,hmbc⟩
   use (n + m)
   rw [hmbc,hnab,add_assoc]
   rfl
 
-theorem lt_of_le_of_lt (a b c : ℕ) : a ≤ b → b < c → a < c := by
+--never used
+--repeat?
+theorem lt_of_le_of_lt (a b c : ℕ) : a ≤ b → b < c → a < c := by --level 05
   intro ⟨n,hnab⟩ ⟨m,hmbc⟩
   use (n + m)
-  rw [hmbc,hnab,succ_add,succ_add,add_assoc]
+  rw [hmbc,hnab]
+  repeat rw [succ_add]
+  rw [add_assoc]
   rfl
 
-theorem lt_trans (a b c : ℕ) : a < b → b < c → a < c := by
+theorem lt_trans (a b c : ℕ) : a < b → b < c → a < c := by  --level 06
   intro ⟨n,hnab⟩ ⟨m,hmbc⟩
   use ((n + m).succ)
   rw [hmbc,hnab]
-  rw [succ_add,succ_add,succ_add,succ_add,add_succ,add_assoc]
+  repeat rw [succ_add]
+  rw [add_succ,add_assoc]
   rfl
 
-theorem lt_succ_self (a : ℕ) : a < a.succ := by
+theorem lt_succ_self (a : ℕ) : a < a.succ := by --level 07
   use 0
-  rw [add_zero]
-  rfl
+  have h1 := add_zero (succ a)
+  exact h1.symm
 
-theorem succ_le_succ_iff (m n : ℕ) : succ m ≤ succ n ↔ m ≤ n := by
-  apply Iff.intro
-  intro ⟨a,ha⟩
-  use a
-  rw [succ_add] at ha
-  exact succ_inj n (m + a) ha
+--question for Kevin, this is called succ_le_succ in mathlib.  You had it originally as succ_le_succ
+--there is theorem in LessOrEqual world, that is named succ_le_succ but it is only the forward implication
+--I propose that we change that to be an iff, but I will leave it alone for now.
+
+theorem succ_le_succ_iff(m n : ℕ) : succ m ≤ succ n ↔ m ≤ n := by --level 08
+  apply Iff.intro (succ_le_succ m n)
   intro ⟨a,ha⟩
   rw [ha]
   use a
   rw [succ_add]
   rfl
 
-theorem lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by
+-- Iff.intro
+theorem lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by -- Level 09
   apply Iff.intro
   intro ⟨k,hk⟩
   rw [succ_add] at hk
   have hk1 := succ_inj n (m + k) hk
   exact Exists.intro k hk1
   intro ⟨k,hk⟩
-  rw [hk]
   use k
+  rw [hk]
   rw [succ_add]
   rfl
 
-
-theorem lt_of_add_lt_add_left (a b c : ℕ) : a + b < a + c → b < c := by
+theorem lt_of_add_lt_add_left (a b c : ℕ) : a + b < a + c → b < c := by --level 10
   intro ⟨n,hn⟩
   rw [succ_add,add_assoc,←add_succ,←add_succ] at hn
   have h1 := add_left_cancel c (b + succ n) a hn
   use n
-  rw [h1]
-  rw [add_succ,succ_add]
+  rw [h1,add_succ,succ_add]
   rfl
 
-theorem add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := by
+theorem add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := by --level 11
   rintro ⟨n,hn⟩
   intro c
   use n
-  rw [hn]
-  rw [add_assoc,add_comm n c]
-  rw [succ_add,succ_add,add_assoc]
+  rw [hn,add_assoc,add_comm n c]
+  repeat rw [succ_add]
+  rw [add_assoc]
   rfl
 
 --instances ordered_comm_monoid
+
+--Should we add something here to show how we can use this fact?
+
 --canonically_ordered_comm_monoid
---oredered_cancel_comm_moniod
+--ordered_cancel_comm_moniod
 
-
-
-
---instances : something
-
-theorem succ_lt_succ_iff (a b : ℕ) : succ a < succ b ↔ a < b := by
+theorem succ_lt_succ_iff (a b : ℕ) : succ a < succ b ↔ a < b := by --level 12
   rw [lt_iff_succ_le,lt_iff_succ_le]
   exact succ_le_succ_iff (succ a) b
 
-theorem mul_le_mul_of_nonneg_left (a b c: ℕ)
+theorem mul_le_mul_of_nonneg_left (a b c: ℕ) --level 13
     : a ≤ b → 0 ≤ c → a * c ≤ b * c := by
   intro ⟨n,hab⟩
   intro cnneg
@@ -122,33 +130,33 @@ theorem mul_le_mul_of_nonneg_left (a b c: ℕ)
   rw [mul_comm n c]
   rfl
 
-theorem mul_lt_mul_of_pos_left (a b c : ℕ)
-    : a < b → 0 < c → c * a < c * b := by
-  sorry
-
-theorem mul_lt_mul_of_pos_right (a b c : ℕ)
-    : a < b → 0 < c → c * a < c * b := by
-  intro ⟨n,hab⟩
-  intro ⟨d,hc⟩
-  rw [succ_add,zero_add] at hc
-  rw [hab,hc]
-  rw [mul_add,mul_succ]
-  use (d + succ d * n)
-  rw [succ_mul,succ_mul,add_succ,succ_add,succ_add]
-  repeat rw [add_assoc]
+theorem mul_lt_mul_of_pos_right (a b c : ℕ) --level 14
+    : b < c → 0 < a → b * a < c * a := by
+  intro ⟨n,hbc⟩
+  intro ⟨d,ha⟩
+  rw [succ_add,zero_add] at ha
+  rw [hbc,ha]
+  rw [add_mul,succ_mul]
+  use (d + n * succ d)
+  rw [mul_succ,mul_succ,add_succ,succ_add,succ_add]
+  rw [add_assoc ((b * d) + b)]
   rfl
+
+theorem mul_lt_mul_of_pos_left (a b c : ℕ) --level 15
+    : b < c → 0 < a → a * b < a * c  := by
+  rw [mul_comm a b, mul_comm a c]
+  exact mul_lt_mul_of_pos_right a b c
 
 --instance ordered semiring
 
-
-theorem le_mul (a b c d : ℕ ) : a ≤ b → c ≤ d → a * c ≤ b * d := by
+theorem le_mul (a b c d : ℕ ) : a ≤ b → c ≤ d → a * c ≤ b * d := by --level 16
   intro ⟨n,hab⟩ ⟨m,hcd⟩
   rw [hab,hcd,add_mul,mul_add,mul_add]
   use (a * m + (n * c + n * m))
   rw [add_assoc (a * c) ]
   rfl
 
-theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by
+theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by --level 17
   intro hmn
   induction a with l hl
   rw [pow_zero,pow_zero]
@@ -160,8 +168,9 @@ theorem pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by
   exact hmn
 
 
+--Try to do this on paper before doing it on the computer. 
 --strong induction
-theorem strong_induction (P : ℕ → Prop)
+theorem strong_induction (P : ℕ → Prop) --level 18
     (h0 : ∀ n : ℕ, (∀ m : ℕ, m < n → P m) → P n) : ∀ z : ℕ, P z := by
   have h1 : ∀ θ : ℕ, ∀ y : ℕ, y < θ → P y := by
     intro θ
@@ -182,5 +191,9 @@ theorem strong_induction (P : ℕ → Prop)
     rfl
   intro z
   exact h1 (succ z) z (lt_succ_self z)
+
+--should we have a level where we need to use strong induction?
+
+
 
 end MyNat
