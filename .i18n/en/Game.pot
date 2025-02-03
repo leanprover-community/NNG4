@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Feb  2 19:50:10 2025\n"
+"POT-Creation-Date: Sun Feb  2 20:33:13 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3282,6 +3282,10 @@ msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
 msgid ""
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid "explanation"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left

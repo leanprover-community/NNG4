@@ -16,7 +16,7 @@ Introduction "INTRODUCTION"
 
 --drop tactic?
 
-theorem mul_le_mul_of_nonneg_left (a b c: ℕ) --level 13
+Statement mul_le_mul_of_nonneg_left (a b c: ℕ) --level 13
     : a ≤ b → 0 ≤ c → a * c ≤ b * c := by
   intro ⟨n,hab⟩
   intro cnneg

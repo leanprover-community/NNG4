@@ -14,7 +14,7 @@ TheoremDoc MyNat.succ_lt_succ_iff as "succ_lt_succ_iff" in "<"
 
 Introduction "INTRODUCTION"
 
-theorem succ_lt_succ_iff (a b : ℕ) : succ a < succ b ↔ a < b := by --level 12
+Statement succ_lt_succ_iff (a b : ℕ) : succ a < succ b ↔ a < b := by --level 12
   rw [lt_iff_succ_le,lt_iff_succ_le]
   exact succ_le_succ_iff (succ a) b
 
