@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun Feb  2 20:33:13 2025\n"
+"POT-Creation-Date: Mon Feb  3 10:32:27 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3092,7 +3092,7 @@ msgid "In this world we define `a ≤ b` and prove standard facts\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "Less Than is irreflexive"
+msgid "LessThan is irreflexive"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
@@ -3100,7 +3100,7 @@ msgid "Introduction Needed"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid ""
+msgid "lt_irrefl a is a proof a is not lt than itself"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
@@ -3121,7 +3121,7 @@ msgid "`a < b` is a stronger statment that `a ≠ b`, meaning that `a ≠  b` is
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
-msgid "If `a < b`, then `a ≠ b`.  We state and prove this here."
+msgid "ne_of_lt a b is proof that if a < b then a ≠ b"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
@@ -3133,7 +3133,7 @@ msgid "No natural number is less than zero"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`not_lt_zero a` is a proof that if `a` is not less than `0`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
@@ -3155,7 +3155,7 @@ msgid "a < b → b ≤ c → a < c"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`lt_of_lt_of_le a b c` is a proof that if `a < b` then ((b ≤ c) implies a < c)"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
@@ -3175,7 +3175,7 @@ msgid "lt_of_le_of_lt"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`lt_of_le_of_lt a b c` is a proof that if `a ≤ b` then (`b < c` implies 'a < c'"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
@@ -3195,7 +3195,7 @@ msgid "less than is a transitive relation"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`lt_trans a b c` is a proof that if `a < b` then (`b < c` implies `a < c`)"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
@@ -3215,7 +3215,7 @@ msgid "A number is (strictly) less than is own successor"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`lt_succ_self a` is a proof that a natural number is less than its successor."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
@@ -3223,7 +3223,7 @@ msgid ""
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
-msgid "a < a.succ"
+msgid "a < succ a"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
@@ -3257,7 +3257,7 @@ msgid "m < succ n ↔ m ≤ n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L09_lt_succ_iff_le
-msgid "`lt_succ_iff_le` is a proof that `m < succ n` iff `m ≤ n`."
+msgid "`lt_succ_iff_le m n` is a proof that `m < succ n` iff `m ≤ n`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L09_lt_succ_iff_le
@@ -3277,11 +3277,11 @@ msgid "We can cancel a addend from both sides of a strict equality"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
-msgid "We can cancel an addend from both sides of an inequality"
+msgid "`lt_of_add_lt_add_left a b c` is proof that we can cancel an addend from both sides of an inequality"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
-msgid ""
+msgid "INTRODUCTION"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
@@ -3297,7 +3297,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`succ_le_succ a b` is a proof that we can add an addend to both sides of an inequality"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
@@ -3318,7 +3318,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`succ_lt_succ_iff a b` is a proof that shows that `succ a < succ b ↔ a < b`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
@@ -3326,7 +3326,9 @@ msgid "INTRODUCTION"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L12_succ_lt_succ_iff
-msgid "CONCLUSION"
+msgid "My solution\n"
+"  rw [lt_iff_succ_le,lt_iff_succ_le]\n"
+"  exact succ_le_succ_iff (succ a) b"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
@@ -3334,7 +3336,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`mul_le_mul_of_nonneg_left a b c` is a proof that if `a ≤ b` then a * c ≤ b * c"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
@@ -3350,7 +3352,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgid "`mul_lt_mul_of_pos_right a b c ` is a proof that we can post-multiply both sides of a strict inequality by a positive number and retain a strict inequality."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
@@ -3366,7 +3368,8 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
-msgid "FUNCTION INTRODUCTION"
+msgid "mul_lt_mul_of_pos_left a b c is proof that we can pre-multiply both sides\n"
+"of a strict inequality by a positive number and retain a strict inequality.\""
 msgstr ""
 
 #: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
@@ -3386,7 +3389,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L16_le_mul
-msgid "`THEOREM DOC TEXT"
+msgid "`le_mul a b c d` is a proof that `a ≤ b → c ≤ d → a * c ≤ b * d`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L16_le_mul
@@ -3402,7 +3405,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L17_pow_le
-msgid "THEOREM DOC LANGUAGE"
+msgid "`pow_le m n a` is a proof that m ≤ n → m ^ a ≤ n ^ a"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L17_pow_le
@@ -3418,7 +3421,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction
-msgid "THEOREM DOC COMMENT"
+msgid "NEED help on this"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction

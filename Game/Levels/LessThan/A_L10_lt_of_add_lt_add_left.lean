@@ -9,14 +9,13 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- We can cancel an addend from both sides of an inequality -/
-
+/-- `lt_of_add_lt_add_left a b c` is proof that we can cancel an addend from both sides of an inequality -/
 TheoremDoc MyNat.lt_of_add_lt_add_left as "lt_of_add_lt_add_left" in "<"
 
-Introduction ""
+Introduction "INTRODUCTION"
 
 /-- explanation -/
-Statement lt_of_add_lt_add_left (a b c : ℕ) : a + b < a + c → b < c := by --level 10
+Statement lt_of_add_lt_add_left (a b c : ℕ) : a + b < a + c → b < c := by
   intro ⟨n,hn⟩
   rw [succ_add,add_assoc,←add_succ,←add_succ] at hn
   have h1 := add_left_cancel c (b + succ n) a hn

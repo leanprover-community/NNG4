@@ -6,7 +6,7 @@ import Game.Levels.AdvAddition
 
 World "LessThan"
 Level 1
-Title "Less Than is irreflexive"
+Title "LessThan is irreflexive"
 
 namespace MyNat
 
@@ -14,9 +14,7 @@ namespace MyNat
 Introduction
 "Introduction Needed"
 
-/--
-
--/
+/--lt_irrefl a is a proof a is not lt than itself -/
 TheoremDoc MyNat.lt_irrefl as "lt_irrefl" in "<"
 
 /-- If $x$ is a natural number, then $\neg (x \lt x)$. -/

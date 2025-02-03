@@ -8,7 +8,7 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+/-- `lt_of_lt_of_le a b c` is a proof that if `a < b` then ((b ≤ c) implies a < c) -/
 TheoremDoc MyNat.lt_of_lt_of_le as "lt_of_lt_of_le" in "<"
 
 Introduction "INTRO"

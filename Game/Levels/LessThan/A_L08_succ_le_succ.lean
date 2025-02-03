@@ -17,7 +17,8 @@ operator, we add them here"
 
 /-- If $\operatorname{succ}(x) \leq \operatorname{succ}(y)$ iff $x \leq y$. -/
 Statement succ_le_succ_iff (x y: ℕ) : succ x ≤ succ y ↔ x ≤ y := by
-  apply Iff.intro (succ_le_succ x y)
+  constructor
+  exact (succ_le_succ x y)
   intro ⟨a,ha⟩
   rw [ha]
   use a

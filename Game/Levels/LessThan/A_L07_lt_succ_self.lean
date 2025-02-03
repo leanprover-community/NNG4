@@ -8,13 +8,13 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+/-- `lt_succ_self a` is a proof that a natural number is less than its successor. -/
 TheoremDoc MyNat.lt_succ_self as "lt_succ_self" in "<"
 
 Introduction ""
 
-/-- a < a.succ -/
-Statement lt_succ_self (a : ℕ) : a < a.succ  := by
+/-- a < succ a -/
+Statement lt_succ_self (a : ℕ) : a < succ a := by
   use 0
   have h1 := add_zero (succ a)
   exact h1.symm

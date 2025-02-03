@@ -8,13 +8,13 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+/-- `succ_le_succ a b` is a proof that we can add an addend to both sides of an inequality -/
 TheoremDoc MyNat.add_lt_add_right as "add_lt_add_right" in "<"
 
 Introduction "INTRODUCTION"
 
 /-- TITLE -/
-Statement add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := by --level 11
+Statement add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := by 
   rintro ⟨n,hn⟩
   intro c
   use n

@@ -9,8 +9,8 @@ TheoremTab "^"
 
 namespace MyNat
 
-/-- THEOREM DOC LANGUAGE -/
-TheoremDoc MyNat.pow_le as "pow_le" in "^"
+/-- `pow_le m n a` is a proof that m ≤ n → m ^ a ≤ n ^ a  -/
+TheoremDoc MyNat.pow_le as "pow_le" in "<"
 
 Introduction "INTRODUCTION"
 

@@ -21,9 +21,7 @@ Introduction
 
 --question for Kevin, triangle tactic (macro)
 
-/--
-If `a < b`, then `a ≠ b`.  We state and prove this here.
--/
+/--  ne_of_lt a b is proof that if a < b then a ≠ b -/
 TheoremDoc MyNat.ne_of_lt as "ne_of_lt" in "<"
 
 /-- If a b are natural numbers, then $a \le b \Rightarrow a \ne b$. -/

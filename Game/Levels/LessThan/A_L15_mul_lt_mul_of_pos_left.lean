@@ -8,7 +8,8 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- FUNCTION INTRODUCTION -/
+/-- mul_lt_mul_of_pos_left a b c is proof that we can pre-multiply both sides
+of a strict inequality by a positive number and retain a strict inequality."-/
 TheoremDoc MyNat.mul_lt_mul_of_pos_left as "mul_lt_mul_of_pos_left" in "<"
 
 Introduction "INTRODUCTION"

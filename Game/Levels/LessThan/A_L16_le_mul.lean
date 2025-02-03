@@ -8,7 +8,7 @@ TheoremTab "≤"
 
 namespace MyNat
 
-/-- `THEOREM DOC TEXT -/
+/-- `le_mul a b c d` is a proof that `a ≤ b → c ≤ d → a * c ≤ b * d` -/
 TheoremDoc MyNat.le_mul as "le_mul" in "≤"
 
 Introduction "INTRODUCTION"

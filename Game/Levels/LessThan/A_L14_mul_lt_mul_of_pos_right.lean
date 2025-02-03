@@ -8,11 +8,12 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+/-- `mul_lt_mul_of_pos_right a b c ` is a proof that we can post-multiply both sides of a strict inequality by a positive number and retain a strict inequality. -/
 TheoremDoc MyNat.mul_lt_mul_of_pos_right as "mul_lt_mul_of_pos_right" in "<"
 
-Introduction "INTRODUCTION"
+--TODO: Introduce "strict inequality" phrase somewhere.
 
+Introduction "INTRODUCTION"
 
 Statement mul_lt_mul_of_pos_right (a b c : ℕ) --level 14
     : b < c → 0 < a → b * a < c * a := by

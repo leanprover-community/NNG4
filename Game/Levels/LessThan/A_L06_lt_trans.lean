@@ -8,7 +8,7 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+/--`lt_trans a b c` is a proof that if `a < b` then (`b < c` implies `a < c`)-/
 TheoremDoc MyNat.lt_trans as "lt_trans" in "<"
 
 Introduction "INTRO"
@@ -16,7 +16,7 @@ Introduction "INTRO"
 /-- If a < b and b < c, then a < c -/
 Statement lt_trans (a b c : ℕ) : a < b → b < c → a < c := by
   intro ⟨n,hnab⟩ ⟨m,hmbc⟩
-  use ((n + m).succ)
+  use (succ (n + m))
   rw [hmbc,hnab]
   repeat rw [succ_add]
   rw [add_succ,add_assoc]
