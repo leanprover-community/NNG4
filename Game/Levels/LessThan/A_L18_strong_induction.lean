@@ -9,7 +9,8 @@ TheoremTab "<"  --not sure
 
 namespace MyNat
 
-/-- NEED help on this -/
+/-- 'strong_induction P h` is a proof that `∀ z : ℕ, P z`.
+-/
 TheoremDoc MyNat.strong_induction as "strong_induction" in "<" -- not sure
 
 

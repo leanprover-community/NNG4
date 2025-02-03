@@ -8,7 +8,10 @@ TheoremTab "<"
 
 namespace MyNat
 
-/--`lt_trans a b c` is a proof that if `a < b` then (`b < c` implies `a < c`)-/
+/--
+`lt_trans x y z` is a proof that if `x < y` and `y < z` then `x < z`.
+More precisely, it is a proof that `x < y → (y < z → x < z)`. In words,
+If $x < y$ then (pause) if $y < z$ then $x < z$. -/
 TheoremDoc MyNat.lt_trans as "lt_trans" in "<"
 
 Introduction "INTRO"

@@ -8,7 +8,8 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `succ_le_succ a b` is a proof that we can add an addend to both sides of an inequality -/
+/-- `add_lt_add_right a b` is a proof that `a < b → ∀ c : ℕ, a + c < b + c`.
+-/
 TheoremDoc MyNat.add_lt_add_right as "add_lt_add_right" in "<"
 
 Introduction "INTRODUCTION"

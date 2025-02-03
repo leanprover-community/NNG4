@@ -14,7 +14,8 @@ namespace MyNat
 Introduction
 "Introduction Needed"
 
-/--lt_irrefl a is a proof a is not lt than itself -/
+/--`lt_irrefl a` is a proof that `¬(a < a)`.  In words, a natural number `a` is not
+less than itself.-/
 TheoremDoc MyNat.lt_irrefl as "lt_irrefl" in "<"
 
 /-- If $x$ is a natural number, then $\neg (x \lt x)$. -/

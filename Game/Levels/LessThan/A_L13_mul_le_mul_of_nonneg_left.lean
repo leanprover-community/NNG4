@@ -5,17 +5,17 @@ World "LessThan"
 Level 13
 Title "TITLE"
 
-TheoremTab "<"
+TheoremTab "<" --should this be ≤?
 
 namespace MyNat
 
 /-- `mul_le_mul_of_nonneg_left a b c` is a proof that if `a ≤ b` then a * c ≤ b * c -/
-TheoremDoc MyNat.mul_le_mul_of_nonneg_left as "mul_le_mul_of_nonneg_left" in "<"
+TheoremDoc MyNat.mul_le_mul_of_nonneg_left as "mul_le_mul_of_nonneg_left" in "<" --should this be "≤"?
 
 Introduction "INTRODUCTION"
 
 --note to Kevin, I removed the requirement that `0 ≤ c`, since that always 
---happends, If some of the instances need this, then I suppose we could use
+--happens, If some of the instances need this, then I suppose we could use
 --this theorem as a base and use `zero_le c`.
 
 

@@ -8,7 +8,8 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `not_lt_zero a` is a proof that if `a` is not less than `0`. -/
+/-- `not_lt_zero a` is a proof that if `¬(a < 0)`. -In words, for a natural number `a`,
+`a` is not less than `0`. -/
 TheoremDoc MyNat.not_lt_zero as "not_lt_zero" in "<"
 
 Introduction "In the LessOrEqual world, we showed that zero is LessOrEqual to every

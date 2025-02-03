@@ -8,10 +8,8 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `mul_lt_mul_of_pos_right a b c ` is a proof that we can post-multiply both sides of a strict inequality by a positive number and retain a strict inequality. -/
+/-- `mul_lt_mul_of_pos_right a b c ` is a proof that `b < c → 0 < a → b * a < c * a`. -/
 TheoremDoc MyNat.mul_lt_mul_of_pos_right as "mul_lt_mul_of_pos_right" in "<"
-
---TODO: Introduce "strict inequality" phrase somewhere.
 
 Introduction "INTRODUCTION"
 

@@ -1,5 +1,4 @@
 import Game.Levels.LessThan.A_L09_lt_succ_iff_le
-  
 
 World "LessThan"
 Level 10
@@ -9,7 +8,7 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `lt_of_add_lt_add_left a b c` is proof that we can cancel an addend from both sides of an inequality -/
+/-- `lt_of_add_lt_add_left a b c` is a proof that `a + b < a + c → b < c`.-/
 TheoremDoc MyNat.lt_of_add_lt_add_left as "lt_of_add_lt_add_left" in "<"
 
 Introduction "INTRODUCTION"

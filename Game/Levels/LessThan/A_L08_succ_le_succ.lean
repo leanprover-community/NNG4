@@ -8,7 +8,7 @@ TheoremTab "≤" --question for kevin in this tab or in < tab?
 
 namespace MyNat
 
-/-- `succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y` iff `x ≤ y`. -/
+/-- `succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y ↔ x ≤ y`. -/
 TheoremDoc MyNat.succ_le_succ_iff as "succ_le_succ_iff" in "≤"
 
 Introduction "To show that the natural numbers for a (A CERTAIN

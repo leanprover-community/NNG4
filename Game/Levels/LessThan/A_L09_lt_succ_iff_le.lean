@@ -13,18 +13,24 @@ TheoremDoc MyNat.lt_succ_iff_le as "lt_succ_iff_le" in "<"
 
 Introduction "INTRODUCTION"
 
-/-- If m < succ n iff m ≤ -/
+/-- `lt_succ_iff_le m n` is a proof that `m < succ n ↔ m ≤ n`-/
 Statement lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by -- Level 09
-  constructor
-  rintro ⟨k,hk⟩
-  rw [succ_add] at hk
-  have hk1 := succ_inj n (m + k) hk
-  use k
-  exact hk1
-  rintro ⟨k,hk⟩
-  use k
-  rw [hk]
-  rw [succ_add]
-  rfl
+  rw [←succ_le_succ_iff m n]
+  apply Iff.intro
+  exact id
+  exact id
+
+  -- Old proof
+  -- constructor
+  -- rintro ⟨k,hk⟩
+  -- rw [succ_add] at hk
+  -- have hk1 := succ_inj n (m + k) hk
+  -- use k
+  -- exact hk1
+  -- rintro ⟨k,hk⟩
+  -- use k
+  -- rw [hk]
+  -- rw [succ_add]
+  -- rfl
 
 Conclusion "CONCLUSION"

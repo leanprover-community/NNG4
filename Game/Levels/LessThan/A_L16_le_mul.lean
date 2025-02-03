@@ -4,12 +4,12 @@ World "LessThan"
 Level 16
 Title "TITLE"
 
-TheoremTab "≤"
+TheoremTab "≤"  --double check that this is correct.
 
 namespace MyNat
 
 /-- `le_mul a b c d` is a proof that `a ≤ b → c ≤ d → a * c ≤ b * d` -/
-TheoremDoc MyNat.le_mul as "le_mul" in "≤"
+TheoremDoc MyNat.le_mul as "le_mul" in "≤" --double check that this is correct
 
 Introduction "INTRODUCTION"
 

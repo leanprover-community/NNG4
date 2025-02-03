@@ -8,7 +8,10 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `lt_of_le_of_lt a b c` is a proof that if `a ≤ b` then (`b < c` implies 'a < c' -/
+/--
+`lt_of_le_of_lt x y z` is a proof that if `x ≤ y` and `y < z` then `x < z`.
+More precisely, it is a proof that `x ≤ y → (y < z → x< z)`. In words,
+If $x \le y$ then (pause) if $y < z$ then $x < z$.-/
 TheoremDoc MyNat.lt_of_le_of_lt as "lt_of_le_of_lt" in "<"
 
 Introduction "INTRO"
