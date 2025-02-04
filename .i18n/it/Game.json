@@ -111,7 +111,7 @@
  "`pred_succ n` is a proof of `pred (succ n) = n`.":
  "`pred_succ n` è la dimostrazione di `pred (succ n) = n`.",
  "`pow_zero a : a ^ 0 = 1` is one of the two axioms\ndefining exponentiation in this game.":
- "`pow_zero a : a ^ 0 = 1` è uno dei due assiomi che\ndefiniscono l'elevazione a potenza in questo gioco.",
+ "`pow_zero a : a ^ 0 = 1` è uno dei due assiomi che\ndefiniscono l'elevamento a potenza in questo gioco.",
  "`pow_two a` says that `a ^ 2 = a * a`.":
  "`pow_two a` afferma `a ^ 2 = a * a`.",
  "`pow_succ a b : a ^ (succ b) = a ^ b * a` is one of the\ntwo axioms defining exponentiation in this game.":
