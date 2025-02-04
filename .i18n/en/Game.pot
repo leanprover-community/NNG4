@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Feb  3 10:32:27 2025\n"
+"POT-Creation-Date: Mon Feb  3 21:57:43 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3096,11 +3096,31 @@ msgid "LessThan is irreflexive"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "Introduction Needed"
+msgid "`a < b` is *notation* for `succ a ≤ b`, and 'succ a ≤ b` in turn is *notation* for\n"
+"`∃ c : b = succ a + c`.  This mean that if you have a *goal* of the for `a < b`, you\n"
+"can make progress with the `use tactice`, and if you have a *hypothesis* (h : a < b) you\n"
+"can make progress with `cases h with c hc`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "lt_irrefl a is a proof a is not lt than itself"
+msgid "In the `≤` world, we showed that `≤` is reflexive\n"
+"relation.  In this world our first task is to show that ̀`<` is an\n"
+"*ir*reflexive relation.  An irreflexive relation is one for which\n"
+"no element is related to itself.\n"
+"\n"
+"Remember that `a<b` is notation for `succ a ≤\n"
+"b`, And that `succ a ≤ b` is itself notation for \"there exists `c` such\n"
+"that `b = succ a + c`\".  As such, we can make progress on goals of the\n"
+"form `a < b` by `use`ing the number which is morally `b - succ a'\n"
+"(i.e. `use b - succ a`).\n"
+"\n"
+"Of course we haven't defined subtraction so deciphering which expression is\n"
+"morally the difference  will be your job."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "`lt_irrefl a` is a proof that `¬(a < a)`.  In words, a natural number `a` is not\n"
+"less than itself."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
@@ -3108,7 +3128,24 @@ msgid "If $x$ is a natural number, then $\\neg (x \\lt x)$."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "Conclusion Needed"
+msgid "You should probably split the hypothesis with a `cases`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Aiming for a contradiction, can you show that this implies that `succ «{n}» = 0`?\n"
+"If you get stuck you can ask for an additional hint."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Either `add_right_eq_self` or `add_left_eq_self` might be helpful."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "`succ_ne_zero` might be helpful."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Nice job, click the \"Next\" button to continue."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
@@ -3125,7 +3162,26 @@ msgid "ne_of_lt a b is proof that if a < b then a ≠ b"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
-msgid "If a b are natural numbers, then $a \\le b \\Rightarrow a \\ne b$."
+msgid "If a b are natural numbers, then `a < b → a ≠ b`."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "You can make this work but you are on your own.  To use\n"
+"the previous result, resist the temptation to split `a<b` into\n"
+"its constituent parts."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "Now use `have h2 := lt_irrefl «{b}»."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "You can take it from here"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L02_ne_of_lt
+msgid "For an added challenge, do this proof by immediately\n"
+"invoking the `contrapose!` tactic."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
@@ -3133,21 +3189,28 @@ msgid "No natural number is less than zero"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "`not_lt_zero a` is a proof that if `a` is not less than `0`."
+msgid "`not_lt_zero a` is a proof that if `¬(a < 0)`. In words, for a\n"
+"natural number `a`, `a` is not less than `0`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "In the LessOrEqual world, we showed that zero is LessOrEqual to every\n"
-"natural number.  In this world, we show that there is not natural number strictly less\n"
-"than zero."
+msgid "In the LessOrEqual world, we showed that zero is\n"
+"LessOrEqual to every natural number.  In this world, we show that for all\n"
+"natural numbers `a`, is not less than zero."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ then $x \\leq y$."
+msgid "You probably want to split up «{h0}» into its pieces."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "CONCLUSION"
+msgid "Can you show that «{hn}» implies that the successor of something is zero?"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "Since we have `<` and '≤` now we can combine them to generate\n"
+"transitivity properties.  In the next three levels we will state and prove\n"
+"three transititity properties."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
@@ -3155,11 +3218,16 @@ msgid "a < b → b ≤ c → a < c"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
-msgid "`lt_of_lt_of_le a b c` is a proof that if `a < b` then ((b ≤ c) implies a < c)"
+msgid "`lt_of_lt_of_le x y z` is a proof that if `x < y` and `y ≤ z` then `x < z`.\n"
+"More precisely, it is a proof that `x < y → (y ≤ z → x < z)`. In words,\n"
+"If $x < y$ then (pause) if $y \\le z$ then $x < z$."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
-msgid "INTRO"
+msgid "Before we prove that `<` is transitive, we show a stronger result.\n"
+"It suffices to have proofs for both `x < y` and `y ≤ z` to generate a proof of `x < z`.\n"
+"That is your task in this level.  Remember, your goal in this level is to generate/discover\n"
+"a number `n` that is morally `c - succ a`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
@@ -3167,7 +3235,19 @@ msgid "If a < b and b ≤ c then a < c"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
-msgid "CONCLUSION"
+msgid "You probably want to split «{hab}»."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "You probably want to split «{hbc}»."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "You can take it from here.  If subtraction was defined,  what number is `«{c}» - succ «{a}»` be?"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
+msgid "The next level is closely related."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
@@ -3175,11 +3255,14 @@ msgid "lt_of_le_of_lt"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
-msgid "`lt_of_le_of_lt a b c` is a proof that if `a ≤ b` then (`b < c` implies 'a < c'"
+msgid "`lt_of_le_of_lt x y z` is a proof that if `x ≤ y` and `y < z` then `x < z`.\n"
+"More precisely, it is a proof that `x ≤ y → (y < z → x< z)`. In words,\n"
+"If $x \\le y$ then (pause) if $y < z$ then $x < z$."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
-msgid "INTRO"
+msgid "This is small variation on the previous level and the proof is similar.\n"
+"We will refrain from offering hints here."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
@@ -3187,7 +3270,8 @@ msgid "If `a ≤ b` and `b < c` then `a < c`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L05_lt_of_le_of_lt
-msgid "CONCLUSION"
+msgid "Our next level is finally showing that `<` is transitive.\n"
+"This is actually implied by either the current level or the previous level."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
@@ -3195,11 +3279,16 @@ msgid "less than is a transitive relation"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
-msgid "`lt_trans a b c` is a proof that if `a < b` then (`b < c` implies `a < c`)"
+msgid "`lt_trans x y z` is a proof that if `x < y` and `y < z` then `x < z`.\n"
+"More precisely, it is a proof that `x < y → (y < z → x < z)`. In words,\n"
+"If $x < y$ then (pause) if $y < z$ then $x < z$."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
-msgid "INTRO"
+msgid "In this level we show that `<` is transitive.  Try doing\n"
+"this proof \"with your bare hands\" and also using one of the previous\n"
+"two levels.  In the latter case, we don't have `a<b → a ≤ b`, so\n"
+"showing that or something similar would be required."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
@@ -3207,15 +3296,18 @@ msgid "If a < b and b < c, then a < c"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
-msgid "CONCLUSION"
+msgid "Our tasks now are to develop how `<` interacts with\n"
+"successor, addition and multiplication.  To that end, our next level\n"
+"shows that a number is always less than its successor."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
-msgid "A number is (strictly) less than is own successor"
+msgid "A number is less than is own successor"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
-msgid "`lt_succ_self a` is a proof that a natural number is less than its successor."
+msgid "`lt_succ_self a` is a proof that `a < succ a`. In words, a natural number `a`, is\n"
+"less than it's own successor."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
@@ -3235,7 +3327,7 @@ msgid "succ x ≤ succ y ↔ x ≤ y"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L08_succ_le_succ
-msgid "`succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y` iff `x ≤ y`."
+msgid "`succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y ↔ x ≤ y`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L08_succ_le_succ
@@ -3265,7 +3357,7 @@ msgid "INTRODUCTION"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L09_lt_succ_iff_le
-msgid "If m < succ n iff m ≤"
+msgid "`lt_succ_iff_le m n` is a proof that `m < succ n ↔ m ≤ n`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L09_lt_succ_iff_le
@@ -3277,7 +3369,7 @@ msgid "We can cancel a addend from both sides of a strict equality"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
-msgid "`lt_of_add_lt_add_left a b c` is proof that we can cancel an addend from both sides of an inequality"
+msgid "`lt_of_add_lt_add_left a b c` is a proof that `a + b < a + c → b < c`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
@@ -3297,7 +3389,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
-msgid "`succ_le_succ a b` is a proof that we can add an addend to both sides of an inequality"
+msgid "`add_lt_add_right a b` is a proof that `a < b → ∀ c : ℕ, a + c < b + c`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
@@ -3352,7 +3444,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
-msgid "`mul_lt_mul_of_pos_right a b c ` is a proof that we can post-multiply both sides of a strict inequality by a positive number and retain a strict inequality."
+msgid "`mul_lt_mul_of_pos_right a b c ` is a proof that `b < c → 0 < a → b * a < c * a`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L14_mul_lt_mul_of_pos_right
@@ -3368,8 +3460,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
-msgid "mul_lt_mul_of_pos_left a b c is proof that we can pre-multiply both sides\n"
-"of a strict inequality by a positive number and retain a strict inequality.\""
+msgid "`mul_lt_mul_of_pos_left a b c` is proof that `b < c → 0 < a → a * b < a * c`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L15_mul_lt_mul_of_pos_left
@@ -3421,7 +3512,7 @@ msgid "TITLE"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction
-msgid "NEED help on this"
+msgid "'strong_induction P h` is a proof that `∀ z : ℕ, P z`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction
@@ -3442,7 +3533,8 @@ msgstr ""
 msgid "In this world we define `a < b` and prove standard facts\n"
 "about it, such as \"if `a < b` and `b < c` then `a < c`.\"\n"
 "\n"
-"The definition of `a < b` is \"a ≤ b ∧ a ≠ b. \"\n"
+"The definition of `a < b` is `succ a ≤ b`.\n"
+"\n"
 "Click on \"Start\" to proceed."
 msgstr ""
 

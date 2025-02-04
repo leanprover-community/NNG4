@@ -8,19 +8,24 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `not_lt_zero a` is a proof that if `¬(a < 0)`. -In words, for a natural number `a`,
-`a` is not less than `0`. -/
+/-- `not_lt_zero a` is a proof that if `¬(a < 0)`. In words, for a
+natural number `a`, `a` is not less than `0`.
+-/
 TheoremDoc MyNat.not_lt_zero as "not_lt_zero" in "<"
 
-Introduction "In the LessOrEqual world, we showed that zero is LessOrEqual to every
-natural number.  In this world, we show that there is not natural number strictly less
-than zero."
+Introduction "In the LessOrEqual world, we showed that zero is
+LessOrEqual to every natural number.  In this world, we show that for all
+natural numbers `a`, is not less than zero."
 
-/-- If $\operatorname{succ}(x) \leq \operatorname{succ}(y)$ then $x \leq y$. -/
 Statement not_lt_zero (a : ℕ) : ¬(a < 0)  := by
-  intro ⟨n,hn⟩
-  rw [succ_add] at hn
+  intro h0
+  Hint "You probably want to split up {h0} into its pieces."
+  cases h0 with n hn
+  Hint "Can you show that {hn} implies that the successor of something is zero?"
+  rw [succ_add] at hn  
   have h1 := succ_ne_zero (a + n)
   exact h1 hn.symm
 
-Conclusion "CONCLUSION"
+Conclusion "Since we have `<` and '≤` now we can combine them to generate
+transitivity properties.  In the next three levels we will state and prove
+three transititity properties."

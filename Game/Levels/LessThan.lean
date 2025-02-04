@@ -28,6 +28,7 @@ Introduction
 In this world we define `a < b` and prove standard facts
 about it, such as \"if `a < b` and `b < c` then `a < c`.\"
 
-The definition of `a < b` is \"a ≤ b ∧ a ≠ b. \"
+The definition of `a < b` is `succ a ≤ b`.
+
 Click on \"Start\" to proceed.
 "
