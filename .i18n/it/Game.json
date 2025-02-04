@@ -272,7 +272,7 @@
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "Puoi imitare la dimostrazione precedente per risolvere questa qua nuova -- oppure potresti trovare un\nmodo di applicarla.",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
- "Puoi procedere per induzione su una qualsiasi delle tre variabili. Scegli bene, perché\ncon certe opzioni si aggrovigliano più di altre. Riesci a dimostrare il caso induttivo in\nsole cinque sostituzioni?",
+ "Puoi procedere per induzione su una qualsiasi delle tre variabili. Scegli bene, perché\ncon certe scelte la dimostrazione si aggroviglia più che con altre. Riesci a dimostrare il caso induttivo in\nsole cinque sostituzioni?",
  "Why did we not just define `succ n` to be `n + 1`? Because we have not\neven *defined* addition yet! We'll do that in the next level.":
  "Come mai non abbiamo definito `succ n` semplicemente come `n + 1`? Perché non abbiamo\nancora *definito* il concetto di addizione! Provvederemo nel prossimo livello.",
  "What do you think of this two-liner:\n```\nsymm\nexact zero_ne_one\n```\n\n`exact` doesn't just take hypotheses, it will eat any proof which exists\nin the system.":
