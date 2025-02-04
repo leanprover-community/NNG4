@@ -159,7 +159,7 @@
  "`mul_comm` is the proof that multiplication is commutative. More precisely,\n`mul_comm a b` is the proof that `a * b = b * a`.":
  "`mul_comm` è la dimostrazione che la moltiplicazione è commutativa. Più precisamente,\n`mul_comm a b` è la dimostrazione che `a * b = b * a`.",
  "`mul_assoc a b c` is a proof that `(a * b) * c = a * (b * c)`.\n\nNote that when Lean says `a * b * c` it means `(a * b) * c`.\n\nNote that `(a * b) * c = a * (b * c)` cannot be proved by \\\"pure thought\\\":\nfor example subtraction is not associative, as `(6 - 2) - 1` is not\nequal to `6 - (2 - 1)`.":
- "`mul_assoc a b c` è la dimostrazione che `(a * b) * c = a * (b * c)`.\n\nRicorda che Lean per `a * b * c` intende `(a * b) * c`.\n\nRicorda che `(a * b) * c = a * (b * c)` non è una legge universale della matematica\":\nun esempio famoso di operazione non associativa è la sottrazione, dato che `(6 - 2) - 1` è diverso\nuguale a `6 - (2 - 1)`.",
+ "`mul_assoc a b c` è la dimostrazione che `(a * b) * c = a * (b * c)`.\n\nRicorda che Lean per `a * b * c` intende `(a * b) * c`.\n\nRicorda che `(a * b) * c = a * (b * c)` non è una legge universale della matematica\":\nun esempio famoso di operazione non associativa è la sottrazione, dato che `(6 - 2) - 1` non è \nuguale a `6 - (2 - 1)`.",
  "`le_zero x` is a proof of the implication `x ≤ 0 → x = 0`.":
  "`le_zero x` è la dimostrazione dell'implicazione `x ≤ 0 → x = 0`.",
  "`le_zero x` is a proof of `x ≤ 0 → x = 0`.":
