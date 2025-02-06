@@ -2,7 +2,7 @@ import Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
 
 World "LessThan"
 Level 11
-Title "TITLE"
+Title "add_lt_add_right"
 
 TheoremTab "<"
 
@@ -12,17 +12,22 @@ namespace MyNat
 -/
 TheoremDoc MyNat.add_lt_add_right as "add_lt_add_right" in "<"
 
-Introduction "INTRODUCTION"
+Introduction "In this level we show that we can add any number to both sides of an inequality and retain a (true) inequality."
 
-/-- TITLE -/
-Statement add_lt_add_right (a b : ℕ) : a < b → ∀ c : ℕ, a + c < b + c := by 
-  rintro ⟨n,hn⟩
-  intro c
-  use n
-  rw [hn,add_assoc,add_comm n c]
-  repeat rw [succ_add]
-  rw [add_assoc]
-  rfl
+Statement add_lt_add_right (a b : ℕ)
+  : a < b → ∀ c : ℕ, a + c < b + c := by
+    intro ⟨n,hn⟩
+    intro c
+    Hint "What number is morally `b - succ a`?"
+    use n
+    Hint "You can take it from here."
+    rw[hn,add_assoc,add_comm n c]
+    repeat rw [succ_add]
+    rw [add_assoc]
+    rfl
 
-Conclusion "We have now shown that the natural numbers form an ordered commutative monoid,
-a canonnically ordered commutative monoid, and an ordered cancellable commutative monoid."
+Conclusion "We have now shown that the natural numbers form an ordered
+commutative monoid, a canonnically ordered commutative monoid, and an
+ordered cancellable commutative monoid."
+
+--TODO: "Do we add these here?"

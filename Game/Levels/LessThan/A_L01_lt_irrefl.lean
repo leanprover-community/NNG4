@@ -44,9 +44,11 @@ Statement lt_irrefl (x : ℕ) : ¬(x < x) := by
   Hint "Aiming for a contradiction, can you show that this implies that `succ {n} = 0`?
   If you get stuck you can ask for an additional hint."
   Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self` might be helpful."
-  have h2 : succ n = 0 := by
-    rw [succ_add,←add_succ] at h1
-    exact add_right_eq_self x (succ n) h1.symm
+
+  rw [MyNat.succ_add] at h1
+  rw [←MyNat.add_succ] at h1
+  have h2 := MyNat.add_right_eq_self x (succ n) h1.symm
+
   Hint "`succ_ne_zero` might be helpful."
   have h3 := succ_ne_zero n
   exact h3 h2

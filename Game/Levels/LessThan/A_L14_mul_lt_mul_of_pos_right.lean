@@ -1,8 +1,8 @@
-import Game.Levels.LessThan.A_L13_mul_le_mul_of_nonneg_left
+import Game.Levels.LessThan.A_L13_mul_le_mul_left
 
 World "LessThan"
 Level 14
-Title "TITLE"
+Title "mul_lt_mul_of_pos_right"
 
 TheoremTab "<"
 
@@ -11,12 +11,16 @@ namespace MyNat
 /-- `mul_lt_mul_of_pos_right a b c ` is a proof that `b < c → 0 < a → b * a < c * a`. -/
 TheoremDoc MyNat.mul_lt_mul_of_pos_right as "mul_lt_mul_of_pos_right" in "<"
 
-Introduction "INTRODUCTION"
+Introduction "We prove that we can (post) multiply both sides of a
+inequality by a positive natural number and retain a valid
+inequality. "
 
-Statement mul_lt_mul_of_pos_right (a b c : ℕ) --level 14
+Statement mul_lt_mul_of_pos_right (a b c : ℕ)
     : b < c → 0 < a → b * a < c * a := by
+  Hint"What number is `(c * a) - succ (b * a)`?"
   intro ⟨n,hbc⟩
   intro ⟨d,ha⟩
+
   rw [succ_add,zero_add] at ha
   rw [hbc,ha]
   rw [add_mul,succ_mul]
@@ -26,3 +30,6 @@ Statement mul_lt_mul_of_pos_right (a b c : ℕ) --level 14
   rfl
 
 Conclusion "We have shown that the natural numbers are an ordered semiring."
+
+
+--Todo: Addthis?

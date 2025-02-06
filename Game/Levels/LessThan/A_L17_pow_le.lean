@@ -3,7 +3,7 @@ import Game.Levels.Power
 
 World "LessThan"
 Level 17
-Title "TITLE"
+Title "Question for Kevin.  I propose we put this in the `≤` world or scrap it."
 
 TheoremTab "^"
 
@@ -16,6 +16,7 @@ Introduction "INTRODUCTION"
 
 Statement pow_le (m n a : ℕ) : m ≤ n → m ^ a ≤ n ^ a := by --level 17
   intro hmn
+  Hint"Try doing induction on {a}."
   induction a with l hl
   rw [pow_zero,pow_zero]
   exact le_refl 1

@@ -22,7 +22,7 @@ Statement not_lt_zero (a : ℕ) : ¬(a < 0)  := by
   Hint "You probably want to split up {h0} into its pieces."
   cases h0 with n hn
   Hint "Can you show that {hn} implies that the successor of something is zero?"
-  rw [succ_add] at hn  
+  rw [succ_add] at hn
   have h1 := succ_ne_zero (a + n)
   exact h1 hn.symm
 

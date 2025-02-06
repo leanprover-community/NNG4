@@ -21,24 +21,19 @@ TheoremDoc MyNat.lt_tfae as "lt_tfae" in "<"
 /-- If $a\ b$ are natural numbers the a < b ↔ ¬(b ≤ a) ↔ a.succ ≤ b ↔ ∃ n : MyNat, a + n.succ = b
 -/
 Statement lt_tfae (a b: ℕ) :
-[a < b, --old 1
-a.succ ≤ b, --old 2
-∃ n : MyNat, b = a.succ + n, --old 3
-∃ n : MyNat, b = (a+n).succ, --old 4
-∃ n : MyNat, b = a + n.succ, --old 5
-∀ n : MyNat, a ≠ b + n , --old 6
+
+[a< b, --old 1
+ succ a ≤ b,  --old 2
+ ∃ n : MyNat, b = a.succ + n, --old 3
+ ∃ n : MyNat, b = (a+n).succ, --old 4
+ ∃ n : MyNat, b = a + n.succ, --old 5
+ ∀ n : MyNat, a ≠ b + n , --old 6
  ¬(b ≤ a), --old 7
-a ≤ b ∧ ¬(b ≤ a),  --old 8
+ a ≤ b ∧ ¬(b ≤ a),  --old 8
+ a ≤ b ∧ a ≠ b --old 9
 ].TFAE := by
   tfae_have 1 → 2
-  · intro ⟨⟨n,h0⟩,h1⟩
-    cases n with l
-    · exfalso
-      rw [add_zero] at h0
-      exact h1 h0.symm
-    · use l
-      rw [h0,add_succ,succ_add]
-      rfl
+  · exact id
   tfae_have 2 → 3
   · exact id
   tfae_have 3 → 4
@@ -63,13 +58,23 @@ a ≤ b ∧ ¬(b ≤ a),  --old 8
     apply And.intro
     exact Or.resolve_right (le_total a b) h0
     exact h0
-  tfae_have 8 → 1
+  tfae_have 8 → 9
   · intro ⟨h0,h1⟩
     apply And.intro h0
     intro h2
     rw [h2] at h1
     exact h1 (le_refl b)
+  tfae_have 9 → 1
+  · intro ⟨⟨n,h0⟩,h1⟩
+    cases n with l
+    · exfalso
+      rw [add_zero] at h0
+      exact h1 h0.symm
+    · use l
+      rw [h0,add_succ,succ_add]
+      rfl
   tfae_finish
+
 
 
 TheoremTab "<"

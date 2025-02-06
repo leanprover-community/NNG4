@@ -9,7 +9,7 @@ import Game.Levels.LessThan.A_L01_lt_irrefl
 
 World "LessThan"
 Level 2
-Title ""
+Title "ne_of_lt"
 
 namespace MyNat
 
@@ -29,10 +29,12 @@ Statement ne_of_lt (a b: ℕ) : a < b →  a ≠ b := by
     intro h hab
     Branch
       cases h with n hn
-      Hint "You can make this work but you are on your own.  To use
-        the previous result, resist the temptation to split `a<b` into
-        its constituent parts."
-      sorry
+      Hint "You can make this work but it is more work.  You might have
+      to use `add_right_eq_self` again"
+      rw [hab,succ_add,←add_succ] at hn
+      have h1 : succ n = 0 := add_right_eq_self b (succ n) hn.symm
+      have h2 := succ_ne_zero n
+      exact h2 h1
     rw [hab] at h
     Hint "Now use `have h2 := lt_irrefl {b}."
     have h2 := lt_irrefl b

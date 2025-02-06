@@ -2,7 +2,7 @@ import Game.Levels.LessThan.A_L05_lt_of_le_of_lt
 
 World "LessThan"
 Level 6
-Title "less than is a transitive relation"
+Title "< is transitive"
 
 TheoremTab "<"
 
@@ -16,8 +16,9 @@ TheoremDoc MyNat.lt_trans as "lt_trans" in "<"
 
 Introduction "In this level we show that `<` is transitive.  Try doing
 this proof \"with your bare hands\" and also using one of the previous
-two levels.  In the latter case, we don't have `a<b → a ≤ b`, so
-showing that or something similar would be required."
+two levels.  In the latter case, we don't have a proof of the true
+proposition that `a<b → a ≤ b`, so showing that or something similar
+would be required."
 
 --Question for Kevin, do we want to add le_of_lt?
 --This comes for free when show that we have a pre order.
