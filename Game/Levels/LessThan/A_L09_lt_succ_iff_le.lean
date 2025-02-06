@@ -18,28 +18,15 @@ levels."
 
 
 /-- `lt_succ_iff_le m n` is a proof that `m < succ n ↔ m ≤ n`-/
-Statement lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by
-  Hint (hidden := true) "Try to rewrite the right hand side using succ_le_succ_iff."
+Statement lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by  
+  Hint (hidden := true) "Rewrite the right hand side using
+  `succ_le_succ_iff`."
   rw [←succ_le_succ_iff m n]
   apply Iff.intro
   intro h0
   exact h0
   intro h0
   exact h0
-
-  -- Old proof
-  -- constructor
-  -- rintro ⟨k,hk⟩
-  -- rw [succ_add] at hk
-  -- have hk1 := succ_inj n (m + k) hk
-  -- use k
-  -- exact hk1
-  -- rintro ⟨k,hk⟩
-  -- use k
-  -- rw [hk]
-  -- rw [succ_add]
-  -- rfl
-
 Conclusion
 "My proof
 ```
@@ -51,4 +38,3 @@ Conclusion
   exact h0
 ```
 "
-

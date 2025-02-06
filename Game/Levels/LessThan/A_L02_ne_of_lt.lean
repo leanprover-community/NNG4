@@ -13,12 +13,10 @@ Title "ne_of_lt"
 
 namespace MyNat
 
-Introduction
-"
-`a < b` is a stronger statment that `a ≠ b`, meaning that `a ≠  b` is *at least as true* as
-`a < b`.  We write this as `(a < b) → (a ≠ b)`.  We prove this here.
+Introduction " `a < b` is a stronger statment that `a ≠ b`, meaning
+that `a ≠ b` is *at least as true* as `a < b`.  We write this as `(a <
+b) → (a ≠ b)`.  We prove this here."
 
-"
 
 
 /--  ne_of_lt a b is proof that if a < b then a ≠ b -/

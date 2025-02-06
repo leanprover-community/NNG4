@@ -8,7 +8,9 @@ TheoremTab "<"
 
 namespace MyNat
 
-/-- `mul_lt_mul_of_pos_right a b c ` is a proof that `b < c → 0 < a → b * a < c * a`. -/
+/--
+`mul_lt_mul_of_pos_right a b c ` is a proof that
+ `b < c → 0 < a → b * a < c * a`.-/
 TheoremDoc MyNat.mul_lt_mul_of_pos_right as "mul_lt_mul_of_pos_right" in "<"
 
 Introduction "We prove that we can (post) multiply both sides of a
@@ -32,4 +34,4 @@ Statement mul_lt_mul_of_pos_right (a b c : ℕ)
 Conclusion "We have shown that the natural numbers are an ordered semiring."
 
 
---Todo: Addthis?
+

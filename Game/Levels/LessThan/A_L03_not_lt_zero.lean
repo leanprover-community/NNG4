@@ -14,8 +14,8 @@ natural number `a`, `a` is not less than `0`.
 TheoremDoc MyNat.not_lt_zero as "not_lt_zero" in "<"
 
 Introduction "In the LessOrEqual world, we showed that zero is
-LessOrEqual to every natural number.  In this world, we show that for all
-natural numbers `a`, is not less than zero."
+LessOrEqual to every natural number.  In this world, we show that for
+all natural numbers `a`, is not less than zero."
 
 Statement not_lt_zero (a : ℕ) : ¬(a < 0)  := by
   intro h0

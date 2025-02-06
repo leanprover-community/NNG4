@@ -12,7 +12,7 @@ namespace MyNat
 -/
 TheoremDoc MyNat.add_lt_add_right as "add_lt_add_right" in "<"
 
-Introduction "In this level we show that we can add any number to both sides of an inequality and retain a (true) inequality."
+Introduction "In this level we show that we can add any number to both sides of an inequality and retain a inequality."
 
 Statement add_lt_add_right (a b : ℕ)
   : a < b → ∀ c : ℕ, a + c < b + c := by
@@ -29,5 +29,3 @@ Statement add_lt_add_right (a b : ℕ)
 Conclusion "We have now shown that the natural numbers form an ordered
 commutative monoid, a canonnically ordered commutative monoid, and an
 ordered cancellable commutative monoid."
-
---TODO: "Do we add these here?"

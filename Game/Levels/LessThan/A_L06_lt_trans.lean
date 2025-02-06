@@ -23,7 +23,7 @@ would be required."
 --Question for Kevin, do we want to add le_of_lt?
 --This comes for free when show that we have a pre order.
 --On the other hand, many other things also come for free,
---In fact most (all?) of this world.
+--In fact, most of this world.
 
 /-- If a < b and b < c, then a < c -/
 Statement lt_trans (a b c : ℕ) : a < b → b < c → a < c := by

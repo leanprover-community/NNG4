@@ -12,8 +12,8 @@ namespace MyNat
 TheoremDoc MyNat.lt_of_add_lt_add_left as "lt_of_add_lt_add_left" in "<"
 
 Introduction "In this level we show that we can always cancel an
-addend from both sides of an inequality.  Our overall goal is the number
-equivalent to `c - succ b`."
+addend from both sides of an inequality.  Our overall goal is to produce
+a number morally equal to `c - succ b`."
 
 
 
