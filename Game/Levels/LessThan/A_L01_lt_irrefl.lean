@@ -4,6 +4,7 @@ import Game.MyNat.LT
 import Game.Tactic.Use
 import Game.Levels.AdvAddition
 
+
 World "LessThan"
 Level 1
 Title "LessThan is irreflexive"
@@ -30,7 +31,7 @@ c`\".  As such, we can make progress on goals of the form `a < b` by
 a`).
 
 Of course we haven't defined subtraction so deciphering which
-expression is morally the difference will be your task."
+expression is morally this difference will be your task."
 
 /--`lt_irrefl a` is a proof that `¬(a < a)`.  In words, a natural
 number `a` is not less than itself.-/
@@ -41,9 +42,10 @@ Statement lt_irrefl (x : ℕ) : ¬(x < x) := by
   intro h0
   Hint "You should probably split the hypothesis with a `cases`."
   cases h0 with n h1
-  Hint "Aiming for a contradiction, can you show that this implies that `succ {n} = 0`?
-  If you get stuck you can ask for an additional hint."
-  Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self` might be helpful."
+  Hint "Aiming for a contradiction, can you show that this implies
+  that `succ {n} = 0`?  If you get stuck you can ask for an additional hint."
+  Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self` 
+  might be helpful."
 
   rw [MyNat.succ_add] at h1
   rw [←MyNat.add_succ] at h1
@@ -56,3 +58,4 @@ Statement lt_irrefl (x : ℕ) : ¬(x < x) := by
 TheoremTab "<"
 
 Conclusion "Nice job, click the \"Next\" button to continue."
+

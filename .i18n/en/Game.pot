@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb  6 18:44:43 2025\n"
+"POT-Creation-Date: Thu Feb  6 19:01:29 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3636,7 +3636,8 @@ msgid "Finish the following statement\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction
-msgid "CONCLUSION"
+msgid "Congratulations.  You have finished the `<` level and the\n"
+"natural numbers game.  For more games like this please visit URL"
 msgstr ""
 
 #: Game.Levels.LessThan
