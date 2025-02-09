@@ -27,8 +27,11 @@ Statement ne_of_lt (a b: ℕ) : a < b →  a ≠ b := by
     intro h hab
     Branch
       cases h with n hn
-      Hint "You can make this work but it is more work.  You might have
-      to use `add_right_eq_self` again"
+
+      Hint "You can make this work but it is more work.  An easier way
+      use the previous reult.  To proceed on this path, you probably
+      will have `add_right_eq_self` again.
+      "
       rw [hab,succ_add,←add_succ] at hn
       have h1 : succ n = 0 := add_right_eq_self b (succ n) hn.symm
       have h2 := succ_ne_zero n

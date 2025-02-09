@@ -12,13 +12,13 @@ namespace MyNat
 TheoremDoc MyNat.lt_succ_iff_le as "lt_succ_iff_le" in "<"
 
 Introduction "In this level we show that `m < succ n ↔ m ≤ n`.  In
-words a a number `m` is less than `n`'s sucessor if and only if `m` is
+words a number `m` is less than `n`'s sucessor if and only if `m` is
 less than or equal to `n`.  This is a useful theorem in the following
 levels."
 
 
 /-- `lt_succ_iff_le m n` is a proof that `m < succ n ↔ m ≤ n`-/
-Statement lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by  
+Statement lt_succ_iff_le (m n : ℕ) : m < succ n ↔ m ≤ n := by
   Hint (hidden := true) "Rewrite the right hand side using
   `succ_le_succ_iff`."
   rw [←succ_le_succ_iff m n]

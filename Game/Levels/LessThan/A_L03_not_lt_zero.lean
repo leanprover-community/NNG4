@@ -13,10 +13,13 @@ natural number `a`, `a` is not less than `0`.
 -/
 TheoremDoc MyNat.not_lt_zero as "not_lt_zero" in "<"
 
-Introduction "In the LessOrEqual world, we showed that zero is
-LessOrEqual to every natural number.  In this world, we show that for
-all natural numbers `a`, is not less than zero."
+Introduction "In the `≤` world, we showed that zero is
+`≤` to every natural number.  In this world, we show that for
+all natural numbers `a`, is not `<` zero."
 
+/--
+There is no natural number less than zero.
+-/
 Statement not_lt_zero (a : ℕ) : ¬(a < 0)  := by
   intro h0
   Hint "You probably want to split up {h0} into its pieces."
@@ -26,6 +29,6 @@ Statement not_lt_zero (a : ℕ) : ¬(a < 0)  := by
   have h1 := succ_ne_zero (a + n)
   exact h1 hn.symm
 
-Conclusion "Since we have `<` and '≤` now we can combine them to generate
+Conclusion "Since we have `<` and `≤`, we can combine them to generate
 transitivity properties.  In the next three levels we will state and prove
-three transititity properties."
+three of them."

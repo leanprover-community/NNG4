@@ -12,10 +12,12 @@ namespace MyNat
 number `a`, is less than it's own successor.-/
 TheoremDoc MyNat.lt_succ_self as "lt_succ_self" in "<"
 
-Introduction "In the `≤` world, we had proved that a natural number is
+Introduction "In the `≤` world, we proved that a natural number is
 is less or equal to its successor.  Now we strengthen this result to
 show that it is less than its successor."
 
+
+/-- A natural number is less than its successor -/
 Statement lt_succ_self (a : ℕ) : a < succ a := by
   Hint"If subtractions was defined, what number would `(succ a) - (succ a)` be?"
   use 0

@@ -20,7 +20,7 @@ z` to generate a proof of `x < z`.  That is your task in this level.
 Remember, your goal in this level is to generate/discover a number `n`
 that is morally `c - succ a`."
 
-/-- If a < b and b ≤ c then a < c -/
+/-- If `a < b` and `b ≤ c` then `a < c` -/
 Statement lt_of_lt_of_le (a b c: ℕ) : a < b → b ≤ c → a < c := by
   intro hab
   Hint"You probably want to split {hab}."

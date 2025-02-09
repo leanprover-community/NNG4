@@ -16,7 +16,7 @@ namespace MyNat
 is *notation* for `∃ c : b = succ a + c`.  This mean that if you have
 a *goal* of the for `a < b`, you can make progress with the `use
 tactice`, and if you have a *hypothesis* (h : a < b) you can make
-progress with `cases h with c hc`.  -/ 
+progress with `cases h with c hc`.  -/
 DefinitionDoc LT as "<"
 
 Introduction "In the `≤` world, we showed that `≤` is reflexive
@@ -27,11 +27,11 @@ element is related to itself.
 Remember that `a<b` is notation for `succ a ≤ b`, And that `succ a ≤
 b` is itself notation for \"there exists `c` such that `b = succ a +
 c`\".  As such, we can make progress on goals of the form `a < b` by
-`use`ing the number which is morally `b - succ a' (i.e. `use b - succ
+`use`ing the number which is morally `b - succ a` (i.e. `use b - succ
 a`).
 
 Of course we haven't defined subtraction so deciphering which
-expression is morally this difference will be your task."
+expression is morally equal to this difference will be your task."
 
 /--`lt_irrefl a` is a proof that `¬(a < a)`.  In words, a natural
 number `a` is not less than itself.-/
@@ -44,11 +44,14 @@ Statement lt_irrefl (x : ℕ) : ¬(x < x) := by
   cases h0 with n h1
   Hint "Aiming for a contradiction, can you show that this implies
   that `succ {n} = 0`?  If you get stuck you can ask for an additional hint."
-  Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self` 
+  Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self`
   might be helpful."
 
   rw [MyNat.succ_add] at h1
   rw [←MyNat.add_succ] at h1
+  Hint (hidden := true) "Either `add_right_eq_self` or `add_left_eq_self`
+  might be helpful."
+
   have h2 := MyNat.add_right_eq_self x (succ n) h1.symm
 
   Hint "`succ_ne_zero` might be helpful."

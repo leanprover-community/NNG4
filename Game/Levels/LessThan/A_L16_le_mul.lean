@@ -9,11 +9,14 @@ TheoremTab "≤"  --double check that this is correct.
 namespace MyNat
 
 /-- `le_mul a b c d` is a proof that `a ≤ b → c ≤ d → a * c ≤ b * d` -/
-TheoremDoc MyNat.le_mul as "le_mul" in "≤" --double check that this is correct
+TheoremDoc MyNat.le_mul as "le_mul" in "≤"
 
 Introduction "In this level we show that we can multiply two
 `≤`-relations term-by-term and retain a valid `≤`-relation."
 
+/--
+We can multiply two `≤`-relations term-by-term and retain a valid `≤`-relation.
+-/
 Statement le_mul (a b c d : ℕ ) : a ≤ b → c ≤ d → a * c ≤ b * d := by
   Hint"What number is `b * d - a * c`?"
   intro ⟨n,hab⟩ ⟨m,hcd⟩

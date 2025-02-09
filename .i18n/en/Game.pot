@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Thu Feb  6 19:01:29 2025\n"
+"POT-Creation-Date: Sun Feb  9 14:44:00 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3112,11 +3112,11 @@ msgid "In the `≤` world, we showed that `≤` is reflexive\n"
 "Remember that `a<b` is notation for `succ a ≤ b`, And that `succ a ≤\n"
 "b` is itself notation for \"there exists `c` such that `b = succ a +\n"
 "c`\".  As such, we can make progress on goals of the form `a < b` by\n"
-"`use`ing the number which is morally `b - succ a' (i.e. `use b - succ\n"
+"`use`ing the number which is morally `b - succ a` (i.e. `use b - succ\n"
 "a`).\n"
 "\n"
 "Of course we haven't defined subtraction so deciphering which\n"
-"expression is morally the difference will be your task."
+"expression is morally equal to this difference will be your task."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
@@ -3133,12 +3133,18 @@ msgid "You should probably split the hypothesis with a `cases`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "Aiming for a contradiction, can you show that this implies that `succ «{n}» = 0`?\n"
-"If you get stuck you can ask for an additional hint."
+msgid "Aiming for a contradiction, can you show that this implies\n"
+"that `succ «{n}» = 0`?  If you get stuck you can ask for an additional hint."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
-msgid "Either `add_right_eq_self` or `add_left_eq_self` might be helpful."
+msgid "Either `add_right_eq_self` or `add_left_eq_self`\n"
+"might be helpful."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L01_lt_irrefl
+msgid "Either `add_right_eq_self` or `add_left_eq_self`\n"
+"might be helpful."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L01_lt_irrefl
@@ -3168,8 +3174,9 @@ msgid "If a b are natural numbers, then `a < b → a ≠ b`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
-msgid "You can make this work but it is more work.  You might have\n"
-"to use `add_right_eq_self` again"
+msgid "You can make this work but it is more work.  An easier way\n"
+"use the previous reult.  To proceed on this path, you probably\n"
+"will have `add_right_eq_self` again."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L02_ne_of_lt
@@ -3201,6 +3208,10 @@ msgid "In the LessOrEqual world, we showed that zero is\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
+msgid "There is no natural number less than zero."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L03_not_lt_zero
 msgid "You probably want to split up «{h0}» into its pieces."
 msgstr ""
 
@@ -3209,7 +3220,7 @@ msgid "Can you show that «{hn}» implies that the successor of something is zer
 msgstr ""
 
 #: Game.Levels.LessThan.A_L03_not_lt_zero
-msgid "Since we have `<` and '≤` now we can combine them to generate\n"
+msgid "Since we have `<` and `≤`, we can combine them to generate\n"
 "transitivity properties.  In the next three levels we will state and prove\n"
 "three transititity properties."
 msgstr ""
@@ -3233,7 +3244,7 @@ msgid "Before we prove that `<` is transitive, we show a\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
-msgid "If a < b and b ≤ c then a < c"
+msgid "If `a < b` and `b ≤ c` then `a < c`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L04_lt_of_lt_of_le
@@ -3297,7 +3308,7 @@ msgid "In this level we show that `<` is transitive.  Try doing\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
-msgid "If a < b and b < c, then a < c"
+msgid "If `a < b` and `b < c`, then `a < c`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L06_lt_trans
@@ -3322,6 +3333,10 @@ msgid "In the `≤` world, we had proved that a natural number is\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L07_lt_succ_self
+msgid "A natural number is less than its successor"
+msgstr ""
+
+#: Game.Levels.LessThan.A_L07_lt_succ_self
 msgid "If subtractions was defined, what number would `(succ a) - (succ a)` be?"
 msgstr ""
 
@@ -3343,8 +3358,7 @@ msgid "`succ_le_succ_iff x y` is a proof that if `succ x ≤ succ y ↔ x ≤ y`
 msgstr ""
 
 #: Game.Levels.LessThan.A_L08_succ_le_succ_iff
-msgid "To show that the natural numbers form a (A CERTAIN\n"
-"ALGEBRAIC STRUCTURE), we need to add a result relating to the the `≤`\n"
+msgid "To show that the natural numbers form certain algebraic structures, we need to add a result relating to the the `≤`\n"
 "operator, we add them here"
 msgstr ""
 
@@ -3361,7 +3375,7 @@ msgid "Now split up «{h0}» using `cases`, and follow your nose."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L08_succ_le_succ_iff
-msgid "Now we can show that the natural numbers form a CERTAIN MATHEMATICAL STRUCTURE"
+msgid "Now we can show that the natural numbers form CERTAIN MATHEMATICAL STRUCTURES."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L09_lt_succ_iff_le
@@ -3415,6 +3429,11 @@ msgid "In this level we show that we can always cancel an\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
+msgid "We can cancel an addend from both sides of an inequality and retain\n"
+"an inequality."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L10_lt_of_add_lt_add_left
 msgid "Our goal is to use `add_left_cancel`, so `cases\n"
 "«{h0}» with n hn` will make progress"
 msgstr ""
@@ -3446,6 +3465,11 @@ msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
 msgid "In this level we show that we can add any number to both sides of an inequality and retain a inequality."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L11_add_lt_add_right
+msgid "We can *introduce* and addend from both sides of an inequality and retain an\n"
+"inequality."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L11_add_lt_add_right
@@ -3582,11 +3606,15 @@ msgid "In this level we show that we can multiply two\n"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L16_le_mul
+msgid "We can multiply two `≤`-relations term-by-term and retain a valid `≤`-relation."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L16_le_mul
 msgid "What number is `b * d - a * c`?"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L17_pow_le
-msgid "Question for Kevin.  I propose we put this in the `≤` world or scrap it.  Actually, we need ≤ and powers, so it can't go in `≤` world."
+msgid "`m ≤ n` → m^a ≤ n^a`"
 msgstr ""
 
 #: Game.Levels.LessThan.A_L17_pow_le
@@ -3617,7 +3645,17 @@ msgid "'strong_induction P h` is a proof that `∀ z : ℕ, P z`."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction
-msgid "As an exercise, try to do this on paper before doing it\n"
+msgid "Welcome to the boss level.  Your task is to prove a\n"
+"variant of basic induction called *strong induction*.  Remember that\n"
+"in basic induction, you prove that a predicate `P` is true for all\n"
+"natural numbers `n`.  You do this by showing `P 0` (the predicate is\n"
+"true for `k = 0`) , and then showing that for all `k`, `P k → P (succ k)`.\n"
+"\n"
+"In strong induction , you also show that that a predicate `P` is true for\n"
+"all natural numbers `n`.  You do this by showing that `P k` holds by\n"
+"showing that if `P m` holds for all `m < k` then `P k` holds.\n"
+"\n"
+"As an exercise, try to do this on paper before doing it\n"
 "on the computer.  The idea of the proof isn't esoteric, but it is easy\n"
 "to convince yourself that an invalid proof your wrote is actually\n"
 "valid.  You will need to use mathematical induction."
@@ -3628,6 +3666,12 @@ msgid "As a warm up, try to prove the statment for `z = 0`, `z = 1`,\n"
 "and `z = 2` first.  This should give you an idea that you need to\n"
 "introduce an auxillary statement.  There is a hidden hint if you are\n"
 "still stuck."
+msgstr ""
+
+#: Game.Levels.LessThan.A_L18_strong_induction
+msgid "You are likely in a dead end.  The inductive hypothesis give\n"
+"you 'P «{k}»`, but to use «{h0}», you need `∀ m < succ «{k}», P m`, something\n"
+"you don't have."
 msgstr ""
 
 #: Game.Levels.LessThan.A_L18_strong_induction

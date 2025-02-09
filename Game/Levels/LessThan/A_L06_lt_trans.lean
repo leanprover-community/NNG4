@@ -25,7 +25,7 @@ would be required."
 --On the other hand, many other things also come for free,
 --In fact, most of this world.
 
-/-- If a < b and b < c, then a < c -/
+/-- If `a < b` and `b < c`, then `a < c` -/
 Statement lt_trans (a b c : ℕ) : a < b → b < c → a < c := by
   intro ⟨n,hnab⟩ ⟨m,hmbc⟩
   use (succ (n + m))

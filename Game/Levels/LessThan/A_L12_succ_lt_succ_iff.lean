@@ -9,12 +9,12 @@ TheoremTab "<"
 namespace MyNat
 
 /--
-succ_lt_succ_iff a b` is a proof that shows that `succ a < succ b ↔ a < b`. 
+succ_lt_succ_iff a b` is a proof that shows that `succ a < succ b ↔ a < b`.
 -/
 TheoremDoc MyNat.succ_lt_succ_iff as "succ_lt_succ_iff" in "<"
 
 Introduction "This is the `<`-world partner of `succ_le_succ_iff` from
-'≤'-world.  The proof is not complicated.  A short proof is possible
+`≤`-world.  The proof is not complicated.  A short proof is possible
 by using `lt_succ_iff_le`, and the definition of `<`."
 
 
@@ -29,6 +29,7 @@ Statement succ_lt_succ_iff (a b : ℕ) : a < b ↔ succ a < succ b := by
   --
   --theorem lt_iff_succ_le (a b : ℕ) : a < b ↔ succ a ≤ b := by rfl
   --and it didn't complain
+  --Edit to add: acually it is now complaining, so I don't know.
   --
   exact (lt_iff_succ_le a b).symm
 

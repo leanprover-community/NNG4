@@ -14,6 +14,10 @@ TheoremDoc MyNat.add_lt_add_right as "add_lt_add_right" in "<"
 
 Introduction "In this level we show that we can add any number to both sides of an inequality and retain a inequality."
 
+/--
+We can *introduce* and addend from both sides of an inequality and retain an
+inequality.
+-/
 Statement add_lt_add_right (a b : ℕ)
   : a < b → ∀ c : ℕ, a + c < b + c := by
     intro ⟨n,hn⟩

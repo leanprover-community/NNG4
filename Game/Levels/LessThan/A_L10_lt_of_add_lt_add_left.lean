@@ -16,7 +16,10 @@ addend from both sides of an inequality.  Our overall goal is to produce
 a number morally equal to `c - succ b`."
 
 
-
+/--
+We can cancel an addend from both sides of an inequality and retain
+an inequality.
+-/
 Statement lt_of_add_lt_add_left (a b c : ℕ) : a + b < a + c → b < c := by
   intro h0
   Hint "Our goal is to use `add_left_cancel`, so `cases
