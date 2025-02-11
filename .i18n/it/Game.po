@@ -122,17 +122,17 @@ msgstr ""
 "\n"
 "Ciascun livello di questo gioco consiste nel dimostrare un teorema matematico (il cosiddetto \"goal\").\n"
 "Il goal è tipicamente un'affermazione che riguarda dei numeri. Certi numeri avranno dei valori ben precisi,\n"
-"come, ad esempio, $37$. Altri numeri saranno invece dati come delle incognite, e queste verranno denotate con della lettere come $x$ o $q$.\n"
+"come $37$. Altri numeri saranno invece dati come incognite, e queste verranno denotate con delle lettere quali $x$ o $q$.\n"
 "Possiamo dire con certezza che $x$ è un numero, ma non sappiamo quale!\n"
 "\n"
 "In questo primo livello dimostreremo il teorema $37x + q = 37x + q$.\n"
-"Nel riquadro *Oggetti* in basso puoi vedere `x q : ℕ`, che significa che `x` e `q`\n"
+"Nella sezione *Oggetti* in basso puoi vedere `x q : ℕ`, che significa che `x` e `q`\n"
 "sono numeri naturali.\n"
 "\n"
-"Per risolvere i goal in Lean usiamo le *tattiche*. La prima tattica che vedremo si chiama `rfl`, la quale\n"
+"Per risolvere i goal in Lean usiamo le *tattiche*. La prima tattica che vedremo si chiama `rfl`, che\n"
 "dimostra tutti i goal della forma $X = X$.\n"
 "\n"
-"Adesso tocca a te! Dimostra che $37x+q=37x+q$ eseguendo la tattica `rfl`."
+"Adesso tocca a te! Dimostra $37x+q=37x+q$ eseguendo la tattica `rfl`."
 
 #: Game.Levels.Tutorial.L01rfl
 msgid "If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$"
@@ -157,8 +157,8 @@ msgid ""
 msgstr ""
 "Congratulazioni! Hai completato la tua prima dimostrazione formale!\n"
 "\n"
-"Ricorda che `rfl` è una *tattica*. Se vuoi saperne di più sulla tattica `rfl`,\n"
-"clicca su `rfl` nell'elenco delle tattiche a destra.\n"
+"Ricorda che `rfl` è una *tattica*. Se vuoi sapere di più sulla tattica `rfl`,\n"
+"clicca su `rfl` nella lista di tattiche a destra.\n"
 "\n"
 "Adesso vedremo la tattica `rw`. Premi \"Avanti\"."
 
@@ -448,7 +448,7 @@ msgid ""
 "using the `rw` tactic."
 msgstr ""
 "In questo livello il *goal* è $2y=2(x+7)$ e l'unica informazione che\n"
-"può aiutarci a dimostrarlo è l'*ipotesi* `h` che dice $y = x + 7$. Puoi vedere `h` nell'elenco delle ipotesi.\n"
+"può aiutarci a dimostrarlo è l'*ipotesi* `h` che dice $y = x + 7$. Verifica di avere `h` sotto la voce \"Ipotesi\".\n"
 "Lean vede `h` come una dimostrazione segreta dell'ipotesi,\n"
 "un po' come il valore della variabile `x` è un'incognita.\n"
 "\n"
@@ -474,7 +474,7 @@ msgstr "Adesso `rfl` funzionerà."
 
 #: Game.Levels.Tutorial.L02rw
 msgid "You now know enough tactics to prove `2 + 2 = 4`! Let's begin the journey."
-msgstr "Ora conosci le tattiche sufficienti per dimostrare `2 + 2 = 4`! Proseguiamo l'avventura."
+msgstr "Ora conosci abbastanza tattiche per dimostrare `2 + 2 = 4`! Proseguiamo l'avventura."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Numbers"
@@ -562,7 +562,7 @@ msgstr ""
 "In modo simile, definiamo `2 = succ 1`, `3 = succ 2` e `4 = succ 3`.\n"
 "Questi primi quattro numeri sono più che sufficienti per proseguire il nostro ragionamento.\n"
 "\n"
-"La *dimostrazione* che afferma `2 = succ 1` si chiama `two_eq_succ_one`.\n"
+"La *dimostrazione* di `2 = succ 1` si chiama `two_eq_succ_one`.\n"
 "Puoi trovarla cliccando sul tab \"012\" nella lista di lemmi a destra nell'interfaccia,\n"
 "dove vedrai lei e altre dimostrazioni.\n"
 "\n"
@@ -774,7 +774,7 @@ msgstr ""
 "Come possiamo sommare $37$ a un numero arbitrario $x$? Beh,\n"
 "questo numero arbitrario può essere stato creato in due modi: o $0$\n"
 "o il successore. Dunque per definire `37 + x` abbiamo bisogno\n"
-"di sapere cosa dà `37 + 0` e cosa dà `37 + succ x`.\n"
+"di sapere quanto fa `37 + 0` e quanto fa `37 + succ x`.\n"
 "Partiamo dall'aggiungere `0` a qualcosa.\n"
 "\n"
 "### Aggiungere zero\n"
@@ -906,7 +906,7 @@ msgstr "Comincia espandendo `1`."
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "`rw [one_eq_succ_zero]` will do this."
-msgstr "`rw [one_eq_succ_zero]` farà questo."
+msgstr "`rw [one_eq_succ_zero]` per espandere."
 
 #: Game.Levels.Tutorial.L07add_succ Game.Levels.Tutorial.L08twoaddtwo
 msgid "Now you can `rw [add_succ]`"
@@ -922,7 +922,7 @@ msgstr "Infine, `rfl`."
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "[dramatic music]. Now are you ready to face the first boss of the game?"
-msgstr "[musica drammatica]. Sei pronto per affrontare il primo boss del gioco?"
+msgstr "[musica drammatica] Sei pronto per affrontare il primo boss del gioco?"
 
 #: Game.Levels.Tutorial.L08twoaddtwo
 msgid "2+2=4"
@@ -992,7 +992,7 @@ msgstr ""
 "Esercizio facoltativo: prova ad eseguire questa dimostrazione. Entra nella \"Modalità editor\" cliccando sul pulsante\n"
 "`</>` in alto a destra. Dovresti vedere la tua dimostrazione estesa su\n"
 "diverse linee di codice. Muovendo il cursore da una linea all'altra vedrai\n"
-"lo stato della dimostrazione corrispondente a quel punto. Ora copia la tua dimostrazione e salvala da qualche parte per non\n"
+"lo stato della dimostrazione in ogni punto. Ora copia la tua dimostrazione e salvala da qualche parte per non\n"
 "perderla, e incolla la dimostrazione che abbiamo riportato qui sopra al posto del tuo codice. Muovi il cursore\n"
 "tra le linee per vedere come si comporta, sperimenta un po' con l'interfaccia. Quando hai finito, premi il pulsante `>_` in alto a destra per\n"
 "ritornare nella \"Modalità interattiva\".\n"
@@ -1936,7 +1936,7 @@ msgstr ""
 "la risposta dipende, ovviamente, dalle tue definizioni. In questo\n"
 "gioco, `0 ^ 0 = 1`. Prova a dimostrarlo.\n"
 "\n"
-"Guarda nel tab *Pow* nel tuo elenco di teoremi\n"
+"Guarda nel tab *^* nell'elenco di teoremi\n"
 "per vedere le nuove dimostrazioni disponibili."
 
 #: Game.Levels.Power.L01zero_pow_zero
@@ -1994,7 +1994,7 @@ msgid ""
 "We've just seen that `0 ^ 0 = 1`, but if `n`\n"
 "is a successor, then `0 ^ n = 0`. We prove that here."
 msgstr ""
-"Abbiamo appena visto che `0 ^ 0 = 1`, ma se `n`\n"
+"Abbiamo appena visto che `0 ^ 0 = 1`, ma se l'esponente `n`\n"
 "è un successore, allora `0 ^ n = 0`. Lo dimostriamo in questo livello."
 
 #: Game.Levels.Power.L02zero_pow_succ
@@ -2015,7 +2015,7 @@ msgstr ""
 
 #: Game.Levels.Power.L02zero_pow_succ
 msgid "For all numbers $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
-msgstr "Per tutti i naturali $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
+msgstr "Per tutti i numeri naturali $m$, $0 ^{\\operatorname{succ} (m)} = 0$."
 
 #: Game.Levels.Power.L03pow_one
 msgid "pow_one"
@@ -2037,7 +2037,7 @@ msgstr ""
 
 #: Game.Levels.Power.L03pow_one
 msgid "For all naturals $a$, $a ^ 1 = a$."
-msgstr "Per tutti i naturali $a$, $a ^ 1 = a$."
+msgstr "Per tutti i numeri naturali $a$, $a ^ 1 = a$."
 
 #: Game.Levels.Power.L04one_pow
 msgid "one_pow"
@@ -2049,7 +2049,7 @@ msgstr "`one_pow n` è la dimostrazione che $1^n=1$."
 
 #: Game.Levels.Power.L04one_pow
 msgid "For all naturals $m$, $1 ^ m = 1$."
-msgstr "Per tutti i naturali $m$, $1 ^ m = 1$."
+msgstr "Per tutti i numeri naturali $m$, $1 ^ m = 1$."
 
 #: Game.Levels.Power.L05pow_two
 msgid "pow_two"
@@ -2065,7 +2065,7 @@ msgstr "`pow_two a` afferma `a ^ 2 = a * a`."
 
 #: Game.Levels.Power.L05pow_two
 msgid "For all naturals $a$, $a ^ 2 = a \\times a$."
-msgstr "Per tutti i naturali $a$, $a ^ 2 = a \\times a$."
+msgstr "Per tutti i numeri naturali $a$, $a ^ 2 = a \\times a$."
 
 #: Game.Levels.Power.L06pow_add
 msgid "pow_add"
@@ -2076,7 +2076,7 @@ msgid "Let's now begin our approach to the final boss,\n"
 "by proving some more subtle facts about powers."
 msgstr ""
 "Vediamo meglio come affrontare il boss finale,\n"
-"dimostrando alcune proprietà più subdole delle potenze."
+"dimostrando altre proprietà insidiose delle potenze."
 
 #: Game.Levels.Power.L06pow_add
 msgid "`pow_add a m n` is a proof that $a^{m+n}=a^ma^n.$"
@@ -2084,7 +2084,7 @@ msgstr "`pow_add a m n` è la dimostrazione che $a^{m+n}=a^ma^n.$"
 
 #: Game.Levels.Power.L06pow_add
 msgid "For all naturals $a$, $m$, $n$, we have $a^{m + n} = a ^ m  a ^ n$."
-msgstr "Per tutti i naturali $a$, $m$, $n$, si ha che $a^{m + n} = a ^ m  a ^ n$."
+msgstr "Per tutti i numeri naturali $a$, $m$, $n$, si ha che $a^{m + n} = a ^ m  a ^ n$."
 
 #: Game.Levels.Power.L07mul_pow
 msgid "mul_pow"
@@ -2110,7 +2110,7 @@ msgstr "`mul_pow a b n` è la dimostrazione che $(ab)^n=a^nb^n.$"
 
 #: Game.Levels.Power.L07mul_pow
 msgid "For all naturals $a$, $b$, $n$, we have $(ab) ^ n = a ^ nb ^ n$."
-msgstr "Per tutti i naturali $a$, $b$, $n$, si ha che $(ab) ^ n = a ^ nb ^ n$."
+msgstr "Per tutti i numeri naturali $a$, $b$, $n$, si ha che $(ab) ^ n = a ^ nb ^ n$."
 
 #: Game.Levels.Power.L08pow_pow
 msgid "pow_pow"
@@ -2133,7 +2133,7 @@ msgstr "`pow_pow a m n` è la dimostrazione di $(a^m)^n=a^{mn}.$"
 
 #: Game.Levels.Power.L08pow_pow
 msgid "For all naturals $a$, $m$, $n$, we have $(a ^ m) ^ n = a ^ {mn}$."
-msgstr "Per tutti i naturali $a$, $m$, $n$, si ha che $(a ^ m) ^ n = a ^ {mn}$."
+msgstr "Per tutti i numeri naturali $a$, $m$, $n$, si ha che $(a ^ m) ^ n = a ^ {mn}$."
 
 #: Game.Levels.Power.L08pow_pow
 msgid ""
@@ -2149,10 +2149,10 @@ msgid ""
 msgstr ""
 "La musica cessa di suonare. È finita?\n"
 "\n"
-"Ovvio che no, come vedrai\n"
-"ci sono ancora due mondi da esplorare.\n"
+"Ovvio che no, come vedi\n"
+"ci sono ancora due livelli da battere.\n"
 "\n"
-"Intanto, un matematico di passaggio ti rivela che i matematici non hanno dato un nome\n"
+"Intanto, un matematico di passaggio ti svela che i matematici non hanno dato un nome\n"
 "alla struttura che hai appena costruito. Questa notizia ti lascia l'amaro in bocca.\n"
 "\n"
 "La musica riparte improvvisamente. Ti lasci alle spalle il passato: lo scontro con il boss finale è vicino."
@@ -2174,7 +2174,7 @@ msgid ""
 "For all numbers $a$ and $b$, we have\n"
 "$$(a+b)^2=a^2+b^2+2ab.$$"
 msgstr ""
-"Per tutti i naturali $a$ e $b$, si ha che\n"
+"Per tutti i numeri naturali $a$ e $b$, si ha che\n"
 "$$(a+b)^2=a^2+b^2+2ab.$$"
 
 #: Game.Levels.Power.L09add_sq
@@ -2242,7 +2242,7 @@ msgstr ""
 "\n"
 "## CONGRATULAZIONI!\n"
 "\n"
-"Hai completato la missione principale del Natural Numbers Game!\n"
+"Hai completato la missione principale del Gioco dei Numeri Naturali!\n"
 "Se vuoi sapere di più su come si usa Lean per\n"
 "dimostrare i teoremi della matematica, ti indirizziamo a \n"
 "[Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\n"
@@ -2265,7 +2265,7 @@ msgid ""
 "For all naturals $a$ $b$ $c$ and $n$, we have\n"
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 msgstr ""
-"Per tutti i naturali $a$ $b$ $c$ e $n$, si ha che\n"
+"Per tutti i numeri naturali $a$ $b$ $c$ e $n$, si ha che\n"
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 
 #: Game.Levels.Power.L10FLT
@@ -2304,7 +2304,7 @@ msgstr ""
 "dobbiamo stabilire cosa significa `37 ^ 0`, e poi\n"
 "cosa significa `37 ^ (succ d)` data la conoscenza `37 ^ d`.\n"
 "\n"
-"Questi due assiomi, il cui nome allude al nome dell'operazione in inglese, \"power\", sono:\n"
+"Questi due assiomi, il cui nome allude al nome dell'operazione in inglese (\"power\"), sono:\n"
 "\n"
 "  * `pow_zero (a : ℕ) : a ^ 0 = 1`\n"
 "  * `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`\n"
@@ -4903,7 +4903,7 @@ msgstr "`one_le_of_ne_zero a` è la dimostrazione che `a ≠ 0 → 1 ≤ a`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "The previous lemma can be used to prove this one."
-msgstr "Il lemma precedente può essere usato per dimostrare il corrente."
+msgstr "Il lemma precedente può essere usato per dimostrare questo."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "Use the previous lemma with `apply eq_succ_of_ne_zero at ha`."
@@ -4911,7 +4911,7 @@ msgstr "Usa il lemma precedente con `apply eq_succ_of_ne_zero at ha`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "Now take apart the existence statement with `cases ha with n hn`."
-msgstr "Ora scomponi l'enunciato esistenziale con `cases ha with n hn`."
+msgstr "Ora scomponi l'ipotesi esistenziale con `cases ha with n hn`."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid "le_mul_right"
@@ -5214,7 +5214,7 @@ msgid ""
 "The lemma proved in the final level of this world will be helpful\n"
 "in Divisibility World."
 msgstr ""
-"Il lemma dimostrato nel livello finale di questo mondo sarà d'aiuto\n"
+"Il lemma dimostrato nel livello finale di questo mondo ci sarà d'aiuto\n"
 "nel Mondo Divisibilità."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
