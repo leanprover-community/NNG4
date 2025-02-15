@@ -14,6 +14,16 @@ namespace MyNat
 The `tauto` tactic will solve any goal which can be solved purely by logic (that is, by
 truth tables).
 
+## Details
+
+`tauto` *does not do magic*! It doesn't know *anything* about addition or multiplication,
+it doesn't even know `add_zero`. It doesn't know anything about *numbers*.
+What `tauto` knows about is *logic*. I guess it does know one fact about numbers, it
+knows that `a = a`. And that's it. But if you have a hypothesis `x < 37`
+and another hypothesis `x < 37 → y = 42` and your goal is `y = 42` then `tauto` will
+solve this goal, because to solve that goal you don't need to know any facts
+about numbers, all you need to know is the rules of logic.
+
 ## Example
 
 If you have `False` as a hypothesis, then `tauto` will solve
