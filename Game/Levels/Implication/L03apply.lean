@@ -39,8 +39,11 @@ NewTactic apply
 
 Introduction
 "
-In this level one of our hypotheses is an *implication*. We can use this
-hypothesis with the `apply` tactic.
+In this level, the hypotheses `h2` is an *implication*. It says
+that *if* `x = 37` *then* `y = 42`. We can use this
+hypothesis with the `apply` tactic. Remember you can click on
+`apply` or any other tactic on the right to see a detailed explanation
+of what it does, with examples.
 "
 
 /-- If $x=37$ and we know that $x=37\implies y=42$ then we can deduce $y=42$. -/

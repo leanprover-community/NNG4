@@ -16,7 +16,7 @@ Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
   Hint (hidden := true) "Start with `intro h` to assume the hypothesis."
   intro h
   Hint (hidden := true) "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to
-  change `succ x = succ y`."
+  change `h` to `succ x = succ y`."
   repeat rw [← succ_eq_add_one] at h
   Hint (hidden := true) "Now `apply succ_inj at h` to cancel the `succ`s."
   apply succ_inj at h
