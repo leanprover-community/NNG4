@@ -17,12 +17,12 @@ truth tables).
 ## Details
 
 `tauto` *does not do magic*! It doesn't know *anything* about addition or multiplication,
-it doesn't even know `add_zero`. It doesn't know anything about *numbers*.
-What `tauto` knows about is *logic*. I guess it does know one fact about numbers, it
-knows that `a = a`. And that's it. But if you have a hypothesis `x < 37`
-and another hypothesis `x < 37 → y = 42` and your goal is `y = 42` then `tauto` will
+it doesn't even know `add_zero`. The only things that `tauto` knows about numbers
+are firstly that `a = a` and secondly that `0 ≠ 1`, `0 ≠ 2`, `1 ≠ 2` and so on.
+What `tauto`'s strength is, is *logic*. If you have a hypothesis `x < 37`
+and another hypothesis `x < 37 → y + z = 42` and your goal is `y + z = 42` then `tauto` will
 solve this goal, because to solve that goal you don't need to know any facts
-about numbers, all you need to know is the rules of logic.
+about inequalities or addition, all you need to know is the rules of logic.
 
 ## Example
 
@@ -43,6 +43,11 @@ prove the goal (as `False` implies anything).
 
 If you have one hypothesis `h : a ≠ a` then `tauto` will solve the goal because
 `tauto` is smart enough to know that `a = a` is true, which gives the contradiction we seek.
+
+## Example
+
+If you have a hypothesis `h : 0 = 1` then `tauto` will solve the goal, because
+`tauto` knows `0 ≠ 1` and this is enough to prove `False`, which implies any goal.
 
 ## Example
 
