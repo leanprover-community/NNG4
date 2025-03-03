@@ -164,7 +164,7 @@ your list of assumptions. Lean thinks of `h` as being a secret proof of the
 assumption, rather like `x` is a secret number.
 
 Before we can use `rfl`, we have to \"substitute in for $y$\".
-We do this in Lean by *rewriting* the proof with `h`,
+We do this in Lean by *rewriting* the goal with `h`,
 using the `rw` tactic.
 "
 
