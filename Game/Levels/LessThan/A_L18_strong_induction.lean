@@ -60,8 +60,10 @@ Statement strong_induction (P : ℕ → Prop)
     induction θ with k hk
     intro y hy
     have h1 := not_lt_zero y
-    tauto
+    exfalso
+    exact h1 hy
     intro y hy
+    have h3 := (lt_succ_iff_le y k).mp hy
     cases (lt_succ_iff_le y k).mp hy with δ hδ
     cases δ with l
     rw [add_zero] at hδ
@@ -73,9 +75,18 @@ Statement strong_induction (P : ℕ → Prop)
     rfl
 
   exact h1 (succ z) z (lt_succ_self z)
-
-
+  
 
 
 Conclusion "Congratulations.  You have finished the `<` level and the
 natural numbers game.  For more games like this please visit URL"
+
+
+theorem boss (a : ℕ) : a ≠ 0 → ∃ k l : ℕ, a = 2^k * (2 * l + 1) := by
+  revert a
+  apply strong_induction
+  intro a h_ind anz
+  
+  
+  
+  
