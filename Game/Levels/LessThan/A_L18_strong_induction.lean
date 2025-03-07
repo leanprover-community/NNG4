@@ -82,11 +82,3 @@ Conclusion "Congratulations.  You have finished the `<` level and the
 natural numbers game.  For more games like this please visit URL"
 
 
-theorem boss (a : ℕ) : a ≠ 0 → ∃ k l : ℕ, a = 2^k * (2 * l + 1) := by
-  revert a
-  apply strong_induction
-  intro a h_ind anz
-  
-  
-  
-  
