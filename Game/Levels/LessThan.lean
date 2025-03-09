@@ -16,7 +16,7 @@ Introduction
 facts about it.  The final boss of this level is to prove the strong
 induction principle.
 
-If `a b` are natural number, We will eventuall define `a < b` as `succ
+If `a b` are natural number, We will eventually define `a < b` as `succ
 a ≤ b`.  But first we have to introduce two new tactics.
 
 Click on \"Start\" to proceed.

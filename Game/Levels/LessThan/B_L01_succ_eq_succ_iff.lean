@@ -7,19 +7,29 @@ import Game.Levels.AdvAddition
 
 World "LessThan"
 Level 1
-Title "Successor are iff originals are equal"
+Title "Successor are equal iff originals are equal"
 
 namespace MyNat
 
+/--
+## Summary
+
+## Example
+
+## Example
+
+-/
+TacticDoc constructor
+
+NewTactic constructor
+
 Introduction "In this level we introduce a tactic that will be useful
 in this world, the `constructor` tactic.  For two proposition `p` and
-`q`, `p ↔ q`, consists of two statements the Modus Ponens: `p → q` and
+`q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q` and
 the reversed Modus Ponens `q → p`.  If you have a goal of the form `p
 ↔ q`, then the constructor tactic will split this goal into these two goals.
 
 We practice using this tactic in this level."
-
-
 
 
 /--`succ_eq_succ_iff a b` is a proof that `succ a = succ b ↔ a = b`.  In words,
@@ -41,5 +51,8 @@ Statement  succ_eq_succ_iff (a b : ℕ) : succ a = succ b ↔ a = b := by
 
 TheoremTab "<"
 
-Conclusion "Nice job, click the \"Next\" button to continue."
+Conclusion "The `constructor` tactic also works on goals of the form `P
+∧ Q`, for two propositions `P` and `Q`.
 
+Now you know how to construct an iff statement from two implicationsm,
+in the next level how to use the `rw` tactic with `↔` statements."

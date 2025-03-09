@@ -9,7 +9,10 @@ namespace MyNat
 /-- `lt_iff_le_not_le a b` is a proof that  `a < b ↔ (a ≤ b) ∧ ¬(b ≤ a)`. -/
 TheoremDoc MyNat.lt_iff_le_not_le as "lt_iff_le_not_le" in "<"
 
-Introduction "In this level, "
+Introduction "There are many equivalent ways we could have defined the
+`<` relation.  The one that we chose allows the proofs in this world
+to be simpler.  In this level, we show that our definition is
+equivalent to Lean's default definition of `<`."
 
 /--If `a` and `b` are natural numbers, then `a < b` iff `a ≤ b` and `¬(b ≤ a)`. -/
 Statement lt_iff_le_not_le (a b : ℕ) :
@@ -40,10 +43,23 @@ Statement lt_iff_le_not_le (a b : ℕ) :
   rw [add_succ,succ_add]
   rfl
 
-Conclusion "CONCLUSION."
+Conclusion "The mathematician who passed by after level XXX, remarks
+that you have shown that the natural numbers and our choice for the
+definition of `<`, form a preorder, a partial order and a linear
+order."
 
+instance : Preorder ℕ := {
+  le_refl := le_refl
+  le_trans := le_trans
+  lt_iff_le_not_le := lt_iff_le_not_le
+}
 
+instance : PartialOrder ℕ := {
+  le_antisymm := le_antisymm
+}
 
-
-
-
+instance : LinearOrder ℕ :=
+{
+  le_total := le_total
+  decidableLE := instDecLE
+}

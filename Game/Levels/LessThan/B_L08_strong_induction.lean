@@ -19,13 +19,13 @@ Introduction "Welcome to the boss level.  Your task is to prove a
 variant of basic induction called *strong induction*.  Remember that
 in basic induction, you prove that a predicate `P` is true for all
 natural numbers `n`.  You do this by showing `P 0` (the predicate is
-true for `k = 0`) , and then showing that for all `k`, `P k → P (succ k)`.
+true for `k = 0`) , and then by showing that for all `k`, `P k → P (succ k)`.
 
 In strong induction , you also show that that a predicate `P` is true for
 all natural numbers `n`.  You do this by showing that `P k` holds by
 showing that if `P m` holds for all `m < k` then `P k` holds.
 
-You will need to use mathematical induction.
+You will need to use basic mathematical induction.
 
 As an exercise, try to do this on paper before doing it
 on the computer.  The idea of the proof isn't esoteric, but it is easy
@@ -49,8 +49,8 @@ Statement strong_induction (P : ℕ → Prop)
     exact h2 hm
 
     Hint "You are likely in a dead end.  The inductive hypothesis gives
-    you 'P {k}`, but to use {h0}, you need `∀ m < succ {k}, P m`, something
-    you don't have."
+    you `P {k}`, but to use `{h0}`, you need `∀ m < succ {k}, P m`, something
+    you don't have.  You may want to restart from the beginning."
     sorry
 
   Hint (hidden := true) "Finish the following statement
@@ -81,7 +81,3 @@ Statement strong_induction (P : ℕ → Prop)
 
 Conclusion "Congratulations.  You have finished the `<` level.  NEED MORE HERE."
 
-
-  
-  
-  

@@ -9,7 +9,9 @@ namespace MyNat
 /-- `lt_succ_iff_le m n `is a proof that `m < succ n ↔ m ≤ n` -/
 TheoremDoc MyNat.lt_succ_iff_le as "lt_succ_iff_le" in "<"
 
-Introduction "In this level, "
+Introduction "You are building up to fight the final boss of this world, Strong Induction.
+Your task in this level is to show that `m < succ n ↔ m ≤ n`.  The proof is straightforward
+so you probably don't need any hints."
 
 /--If `m` and `n` are natural numbers, then `lt_succ_iff_le m n` is a proof
 that `m < succ n ↔ m ≤ n`.-/
