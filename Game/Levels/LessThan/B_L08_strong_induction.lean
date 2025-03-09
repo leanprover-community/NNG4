@@ -21,7 +21,7 @@ in basic induction, you prove that a predicate `P` is true for all
 natural numbers `n`.  You do this by showing `P 0` (the predicate is
 true for `k = 0`) , and then by showing that for all `k`, `P k → P (succ k)`.
 
-In strong induction , you also show that that a predicate `P` is true for
+In strong induction, you also show that that a predicate `P` is true for
 all natural numbers `n`.  You do this by showing that `P k` holds by
 showing that if `P m` holds for all `m < k` then `P k` holds.
 
