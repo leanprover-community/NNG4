@@ -14,10 +14,19 @@ namespace MyNat
 /--
 ## Summary
 
-## Example
+The `constructor` tactic can be used to split a compound goal into its 
+parts.
 
 ## Example
+If you have a goal of the form `p ↔ q`, and you execute
+`constructor`, then you will replace `p ↔ q` with two goals, first
+`p →  q` and then `q`→ p`.
 
+
+## Example
+If you have a goal of the form `p ∧ q`, and you execute
+`constructor`, then you will get replace `p ∧ q` with two goals,
+first `p` and then `q`.
 -/
 TacticDoc constructor
 
@@ -25,9 +34,10 @@ NewTactic constructor
 
 Introduction "In this level we introduce a tactic that will be useful
 in this world, the `constructor` tactic.  For two proposition `p` and
-`q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q` and
-the reversed Modus Ponens `q → p`.  If you have a goal of the form `p
-↔ q`, then the constructor tactic will split this goal into these two goals.
+`q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q`
+and (2) the reversed Modus Ponens: `q → p`.  If you have a goal of the
+form `p ↔ q`, then the `constructor` tactic will split this goal into
+these two goals.
 
 We practice using this tactic in this level."
 
@@ -39,7 +49,7 @@ TheoremDoc MyNat.succ_eq_succ_iff as "succ_eq_succ_iff" in "<"
 
 /-- If `a b` are natural numbers, then `succ a = succ b ↔ a = b` -/
 Statement  succ_eq_succ_iff (a b : ℕ) : succ a = succ b ↔ a = b := by
-  Hint"The goal is an iff statement so use  `constructor`."
+  Hint"The goal is an iff statement so use `constructor`."
   constructor
   Hint "The `succ_inj` theorem is useful here."
   intro h0
@@ -54,5 +64,5 @@ TheoremTab "<"
 Conclusion "The `constructor` tactic also works on goals of the form `P
 ∧ Q`, for two propositions `P` and `Q`.
 
-Now you know how to construct an iff statement from two implicationsm,
+Now you know how to construct an iff statement from two implications,
 in the next level how to use the `rw` tactic with `↔` statements."

@@ -10,10 +10,10 @@ namespace MyNat
 
 Introduction "In this level, you will get practice using the `rw`
 tactic with iff statements.  Before this level, you used `rw` to
-substitute equations into the goal or into other expressions.  The `rw` tactic
-can be used to rewrite equivalent propositions into each other in the same way."
+substitute *equations* into the goal or into other expressions.  The `rw` tactic
+can be used to rewrite equivalent *propositions* into each other in the same way."
 
-/-- YADDA We don't really want this as a theorem do we.  TODO: Check how the other intro
+/-- YADDA We don't really want this as a theorem do we?  TODO: Check how the other intro
 levels were handled. -/
 TheoremDoc MyNat.succ_succ_eq_succ_succ_iff as "succ_succ_eq_succ_succ_iff" in "<"
 

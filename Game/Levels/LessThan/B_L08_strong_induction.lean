@@ -23,9 +23,10 @@ true for `k = 0`) , and then by showing that for all `k`, `P k → P (succ k)`.
 
 In strong induction, you also show that that a predicate `P` is true for
 all natural numbers `n`.  You do this by showing that `P k` holds by
-showing that if `P m` holds for all `m < k` then `P k` holds.
+showing that if `P m` holds for all `m < k` then `P k` holds.  
 
-You will need to use basic mathematical induction.
+Your task in this level, and the boss of this world, is to use the
+basic induction to prove the principle of strong induction.
 
 As an exercise, try to do this on paper before doing it
 on the computer.  The idea of the proof isn't esoteric, but it is easy

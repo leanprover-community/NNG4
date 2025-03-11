@@ -30,7 +30,7 @@ a)`).
 Of course we haven't defined subtraction yet so deciphering which
 expression is morally equal to this difference will be your task.
 
-We start by showing every number is less than itself."
+We start by showing every number is less than its sucessor."
 
 /-- `lt_succ_self a` is a proof that `a < succ a` -/
 TheoremDoc MyNat.lt_succ_self as "lt_succ_self" in "<"
@@ -43,4 +43,29 @@ Statement lt_succ_self (a : ℕ) : a < succ a := by
   rw [add_zero]
   rfl
 
-Conclusion "CONCLUSION."
+theorem le_iff_lt_or_eq (a b : ℕ) : a ≤ b ↔ a < b ∨ a = b := by
+  constructor
+  intro ⟨δ,h0⟩
+  cases δ with l
+  right
+  rw [add_zero] at h0
+  rw [h0]
+  rfl
+  left
+  use l
+  rw [h0]
+  rw [add_succ,succ_add]
+  rfl
+  rintro (⟨δ,h0⟩ | h0)
+  use (succ δ)
+  rw [h0]
+  rw [add_succ,succ_add]
+  rfl
+  rw [h0]
+  apply le_refl
+
+
+Conclusion "Nice job.  In the `≤`-world you showed that for all
+natural numbers a, we have `0 ≤ a`.  In the next level, you will show
+that zero is not greater than any natural number."
+

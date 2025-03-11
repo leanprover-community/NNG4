@@ -11,8 +11,9 @@ TheoremDoc MyNat.lt_iff_le_not_le as "lt_iff_le_not_le" in "<"
 
 Introduction "There are many equivalent ways we could have defined the
 `<` relation.  The one that we chose allows the proofs in this world
-to be simpler.  In this level, we show that our definition is
-equivalent to Lean's default definition of `<`."
+to be simpler, but isn't the default way that Lean would have defined
+it.  In this level, we show that our definition is equivalent to
+Lean's default definition of `<`."
 
 /--If `a` and `b` are natural numbers, then `a < b` iff `a ≤ b` and `¬(b ≤ a)`. -/
 Statement lt_iff_le_not_le (a b : ℕ) :
@@ -46,7 +47,7 @@ Statement lt_iff_le_not_le (a b : ℕ) :
 Conclusion "The mathematician who passed by after level XXX, remarks
 that you have shown that the natural numbers and our choice for the
 definition of `<`, form a preorder, a partial order and a linear
-order."
+order.  Question for Kevin: Do we want to mention why this is important as far as getting new theorems 'for free'?"
 
 instance : Preorder ℕ := {
   le_refl := le_refl

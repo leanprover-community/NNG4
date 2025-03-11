@@ -15,7 +15,8 @@ Introduction "You don't need this level to fight the final boss, but
 it is good training.  This level shows that there is no natural number
 that is both greater than a number `n` and less than `n + 1`.  This is
 not true for the rational numbers nor the real numbers.  It is true
-for integers, though."
+for integers, though.  Speaking loosely, natural numbers and the
+integers are *chunky*."
 
 /--If `m` and `n` are natural numbers, then `¬( (n < m) ∧ (m < succ n))`. -/
 Statement not_lt_and_lt_succ (m n : ℕ) : ¬( (n < m) ∧ (m < succ n )) := by
