@@ -16,13 +16,12 @@ DefinitionDoc LT as "<"
 
 NewDefinition LT
 
-Introduction "In the `≤` world, we showed that `≤` is reflexive
-relation.  In this world our first task is to show that ̀`<` is an
-*ir*reflexive relation.  An irreflexive relation is one for which no
-element is related to itself.
+Introduction "In this level we define a new relation, `<`, on the
+natural numbers,  For `a b`, two natural number, we have
+`a < b` if (and only if) `succ a ≤ b`.  
 
-Remember that `a<b` is notation for `succ a ≤ b`, And that `succ a ≤
-b` is itself notation for \"there exists `c` such that `b = succ a +
+Remember that that `succ a ≤
+b` is notation for \"there exists `c` such that `b = succ a +
 c`\".  As such, we can make progress on goals of the form `a < b` by
 `use`ing the number which is morally `b - succ a` (i.e. `use (b - succ
 a)`).
@@ -38,32 +37,12 @@ TheoremDoc MyNat.lt_succ_self as "lt_succ_self" in "<"
 
 /-- If `a` is a natural number, then `a < succ a` -/
 Statement lt_succ_self (a : ℕ) : a < succ a := by
-  Hint "Remember that `lhs < rhs` is defined as `succ lhs ≤ rhs`.  How would you show this for the cases when `lhs = a` and `rhs = succ a`?"
+  Hint "Remember that `lhs < rhs` is defined as `succ lhs ≤ rhs`.  How
+  would you show this for the cases when `lhs = a` and `rhs = succ
+  a`?"
   use 0
   rw [add_zero]
   rfl
-
-theorem le_iff_lt_or_eq (a b : ℕ) : a ≤ b ↔ a < b ∨ a = b := by
-  constructor
-  intro ⟨δ,h0⟩
-  cases δ with l
-  right
-  rw [add_zero] at h0
-  rw [h0]
-  rfl
-  left
-  use l
-  rw [h0]
-  rw [add_succ,succ_add]
-  rfl
-  rintro (⟨δ,h0⟩ | h0)
-  use (succ δ)
-  rw [h0]
-  rw [add_succ,succ_add]
-  rfl
-  rw [h0]
-  apply le_refl
-
 
 Conclusion "Nice job.  In the `≤`-world you showed that for all
 natural numbers a, we have `0 ≤ a`.  In the next level, you will show
