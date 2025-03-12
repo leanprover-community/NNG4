@@ -12,7 +12,7 @@ TheoremDoc MyNat.le_iff_lt_or_eq as "le_iff_lt_or_eq" in "<"
 
 Introduction "This level shows that `a ≤ b ↔ (a < b) ∨ (a = b)`.  In
 spoken form (\"`a` is less than or equal to `b` iff `a` is less than or
-equal to `b`\"*) this is a tautology, so it is a worthwhile exercise to
+equal to `b`\"); this is a tautology, so it is a worthwhile exercise to
 check that our mathematical definitions also make linguistic sense."
 
 /--If `a` and `b` are  natural numbers, then `a ≤ b` iff (`a < b` or `a = b`).

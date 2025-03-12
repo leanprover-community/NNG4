@@ -39,20 +39,18 @@ Statement lt_iff_le_not_le (a b : ℕ) :
   rw [h0]
   cases r with l
   rw [add_zero]  
-  exfalso
   rw [add_zero] at h0
-  apply h1
-  use 0
-  rw [add_zero,h0]
-  rfl
+  rw [h0] at h1
+  have h2 := h1 (le_refl a)
+  tauto
   use l
   rw [add_succ,succ_add]
   rfl
 
-Conclusion "The mathematician who passed by after level XXX, remarks
-that you have shown that the natural numbers and our choice for the
-definition of `<`, form a preorder, a partial order and a linear
-order.  Question for Kevin: Do we want to mention why this is important as far as getting new theorems 'for free'?"
+Conclusion "The mathematician who passed by after the transitiviy
+level of `≤` world, remarks that you have shown that the natural
+numbers equipped with our choice for the definition of `<`, is a *preorder*,
+a *Partial order* and a *Linear order*."
 
 instance : Preorder ℕ := {
   le_refl := le_refl

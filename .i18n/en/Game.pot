@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Mar 12 10:17:57 2025\n"
+"POT-Creation-Date: Wed Mar 12 15:54:00 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -2797,8 +2797,7 @@ msgid "Now you need to figure out which number to `use`. See if you can take it 
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L04le_trans
-msgid "A passing mathematician remarks that with reflexivity and transitivity out of the way,\n"
-"you have proved that `≤` is a *preorder* on `ℕ`."
+msgid "A passing mathematician remarks that with reflexivity and transitivity out of the way, you have proved that `≤` is a *preorder* on `ℕ`."
 msgstr ""
 
 #: Game.Levels.LessOrEqual.L05le_zero
@@ -3248,9 +3247,9 @@ msgstr ""
 
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
 msgid "This level shows that `a ≤ b ↔ (a < b) ∨ (a = b)`.  In\n"
-"spoken form (*`a` is less than or equal to `b` iff `a` is less than or\n"
-"equal to `b`*) this is a tautology, so it is a worthwhile exercise to\n"
-"check that our definitions make linguistic sense."
+"spoken form (\"`a` is less than or equal to `b` iff `a` is less than or\n"
+"equal to `b`\"); this is a tautology, so it is a worthwhile exercise to\n"
+"check that our mathematical definitions also make linguistic sense."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
@@ -3286,7 +3285,7 @@ msgstr ""
 #: Game.Levels.LessThan.B_L05_not_lt_zero
 msgid "One of main tools is the fact that zero is not the successor\n"
 "of a natural number, (`zero_ne_succ` or `succ_ne_zero`). Try to use\n"
-"one of those here"
+"one of those here."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L05_not_lt_zero
@@ -3316,10 +3315,10 @@ msgid "If `a` and `b` are natural numbers, then `a < b` iff `a ≤ b` and `¬(b 
 msgstr ""
 
 #: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
-msgid "The mathematician who passed by after level XXX, remarks\n"
-"that you have shown that the natural numbers and our choice for the\n"
-"definition of `<`, form a preorder, a partial order and a linear\n"
-"order.  Question for Kevin: Do we want to mention why this is important as far as getting new theorems 'for free'?"
+msgid "The mathematician who passed by after the transitiviy\n"
+"level of `≤` world, remarks that you have shown that the natural\n"
+"numbers equipped with our choice for the definition of `<`, is a *preorder*,\n"
+"a *Partial order* and a *Linear order*."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L07_lt_succ_iff_le
@@ -3387,12 +3386,13 @@ msgstr ""
 msgid "Welcome to the boss level.  Your task is to prove a\n"
 "variant of basic induction called *strong induction*.  Remember that\n"
 "in basic induction, you prove that a predicate `P` is true for all\n"
-"natural numbers `n`.  You do this by showing `P 0` (the predicate is\n"
-"true for `k = 0`) , and then by showing that for all `k`, `P k → P (succ k)`.\n"
+"natural numbers `n`.  You do this by showing `P 0`: a proof of the predicate\n"
+"for `k = 0`, and then by showing that for all `k`, `P k → P (succ k)`.\n"
 "\n"
-"In strong induction, you also show that that a predicate `P` is true for\n"
-"all natural numbers `n`.  You do this by showing that `P k` holds by\n"
-"showing that if `P m` holds for all `m < k` then `P k` holds.  \n"
+"The strong induction show show that that a predicate `P` is true for\n"
+"all natural numbers `n`.  It does this with a weaker \"inductive\n"
+"hypothesis\". For `n` the strong inductive hypotheses is a proof that\n"
+"for all `m < n, P m` implies `P n`.\n"
 "\n"
 "Your task in this level, and the boss of this world, is to use the\n"
 "basic induction to prove the principle of strong induction.\n"
@@ -3422,7 +3422,8 @@ msgid "Finish the following statement\n"
 msgstr ""
 
 #: Game.Levels.LessThan.B_L09_strong_induction
-msgid "Congratulations.  You have finished the `<` level.  NEED MORE HERE."
+msgid "Congratulations.  You have finished the `<` level.  Click\n"
+"\"Leave World\" to go back to the overworld."
 msgstr ""
 
 #: Game.Levels.LessThan

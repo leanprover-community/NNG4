@@ -44,9 +44,10 @@ Statement strong_induction (P : ℕ → Prop)
     have h1 := h0 0
     apply h1
     intro m hm
-    have h2 : ¬(m < 0) := not_lt_zero m
-    exfalso
-    exact h2 hm
+    have h2 : ¬(m < 0) := not_lt_zero m    
+    have h3 := h2 hm
+    tauto
+    
 
     Hint "You are likely in a dead end.  The inductive hypothesis gives
     you `P {k}`, but to use `{h0}`, you need `∀ m < succ {k}, P m`, something
@@ -61,8 +62,8 @@ Statement strong_induction (P : ℕ → Prop)
     induction θ with k hk
     intro y hy
     have h1 := not_lt_zero y
-    exfalso
-    exact h1 hy
+    have h2 := h1 hy
+    tauto
     intro y hy
     have h3 := (lt_succ_iff_le y k).mp hy
     cases (lt_succ_iff_le y k).mp hy with δ hδ
