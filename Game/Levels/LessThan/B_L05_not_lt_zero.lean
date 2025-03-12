@@ -18,7 +18,7 @@ Statement not_lt_zero (a : ℕ) : ¬(a < 0) := by
   cases h0 with θ h0
   Hint "One of main tools is the fact that zero is not the successor
   of a natural number, (`zero_ne_succ` or `succ_ne_zero`). Try to use
-  one of those here"
+  one of those here."
   rw [succ_add] at h0
   have h1 := zero_ne_succ (a + θ)
   exact h1 h0
