@@ -4,7 +4,6 @@ import Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
 import Game.Levels.LessThan.B_L03_lt_succ_self
 import Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
 import Game.Levels.LessThan.B_L05_not_lt_zero
-
 import Game.Levels.LessThan.B_L06_lt_iff_le_not_le
 import Game.Levels.LessThan.B_L07_lt_succ_iff_le
 import Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
@@ -18,8 +17,12 @@ Introduction
 facts about it.  The final boss of this level is to prove the strong
 induction principle.
 
-If `a b` are natural number, We will eventually define `a < b` as `succ
-a ≤ b`.  But first we have to introduce two new tactics.
+In this level we will define the proposition `a < b` as `succ a ≤ b`.
+We will define \"less than\" in terms of \"less than or equal\".  At
+first glance, this may seem like a circular definition but it is not.
+
+Before we prove this and other facts about \"less than\", we need to
+introduce two new tactics.
 
 Click on \"Start\" to proceed.
 "

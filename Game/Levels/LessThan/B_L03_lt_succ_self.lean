@@ -44,7 +44,6 @@ Statement lt_succ_self (a : ℕ) : a < succ a := by
   rw [add_zero]
   rfl
 
-Conclusion "Nice job.  In the `≤`-world you showed that for all
-natural numbers a, we have `0 ≤ a`.  In the next level, you will show
-that zero is not greater than any natural number."
-
+Conclusion "Nice job.  In the next level you will show that the
+relations \"less than:`<`\"  and \"less than or equal:`≤`\" make linguistic
+as well as mathematical sense."

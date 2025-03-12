@@ -12,10 +12,11 @@ TheoremDoc MyNat.le_iff_lt_or_eq as "le_iff_lt_or_eq" in "<"
 
 Introduction "This level shows that `a ≤ b ↔ (a < b) ∨ (a = b)`.  In
 spoken form (*`a` is less than or equal to `b` iff `a` is less than or
-equal to `b`*) this is a tautology, so it is worthwhile to check that
-our definitions make linguistic sense."
+equal to `b`*) this is a tautology, so it is a worthwhile exercise to
+check that our definitions make linguistic sense."
 
-/--If `a` is a natural number,=-/
+/--If `a` and `b` are  natural numbers, then `a ≤ b` iff (`a < b` or `a = b`).
+-/
 Statement le_iff_lt_or_eq (a b : ℕ) : a ≤ b ↔ a < b ∨ a = b := by
   constructor
   intro h0
@@ -39,7 +40,9 @@ Statement le_iff_lt_or_eq (a b : ℕ) : a ≤ b ↔ a < b ∨ a = b := by
   apply le_refl
 
 
-Conclusion "CONCLUSION."
+Conclusion "Nice job. In the `≤`-world you showed that for all natural
+numbers a, we have `0 ≤ a`. In the next level, you will show that zero
+is not greater than any natural number."
 
 
 

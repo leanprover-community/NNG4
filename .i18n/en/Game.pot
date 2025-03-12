@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed Mar 12 09:39:00 2025\n"
+"POT-Creation-Date: Wed Mar 12 10:17:57 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3119,7 +3119,7 @@ msgid "In this level we introduce a tactic that will be useful\n"
 "`q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q`\n"
 "and (2) the reversed Modus Ponens: `q → p`.  If you have a goal of the\n"
 "form `p ↔ q`, then the `constructor` tactic will split this goal into\n"
-"these two goals.\n"
+"these two sub-goals.\n"
 "\n"
 "We practice using this tactic in this level."
 msgstr ""
@@ -3233,9 +3233,9 @@ msgid "Remember that `lhs < rhs` is defined as `succ lhs ≤ rhs`.  How\n"
 msgstr ""
 
 #: Game.Levels.LessThan.B_L03_lt_succ_self
-msgid "Nice job.  In the `≤`-world you showed that for all\n"
-"natural numbers a, we have `0 ≤ a`.  In the next level, you will show\n"
-"that zero is not greater than any natural number."
+msgid "Nice job.  In the next level you will show that the\n"
+"relations \"less than:`<`\"  and \"less than or equal:`≤`\" make linguistic\n"
+"as well as mathematical sense."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
@@ -3249,16 +3249,18 @@ msgstr ""
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
 msgid "This level shows that `a ≤ b ↔ (a < b) ∨ (a = b)`.  In\n"
 "spoken form (*`a` is less than or equal to `b` iff `a` is less than or\n"
-"equal to `b`*) this is a tautology, so it is worthwhile to check that\n"
-"our definitions make linguistic sense."
+"equal to `b`*) this is a tautology, so it is a worthwhile exercise to\n"
+"check that our definitions make linguistic sense."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
-msgid "If `a` is a natural number,="
+msgid "If `a` and `b` are  natural numbers, then `a ≤ b` iff (`a < b` or `a = b`)."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
-msgid "CONCLUSION."
+msgid "Nice job. In the `≤`-world you showed that for all natural\n"
+"numbers a, we have `0 ≤ a`. In the next level, you will show that zero\n"
+"is not greater than any natural number."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L05_not_lt_zero
@@ -3278,23 +3280,19 @@ msgid "If `a` is a natural number the ¬(a < 0)."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L05_not_lt_zero
-msgid "Use `cases` to split up «{h0}»."
+msgid "Use `cases` to split up `«{h0}»`."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L05_not_lt_zero
 msgid "One of main tools is the fact that zero is not the successor\n"
-"of a natural number, (`zero_ne_succ` or `succ_ne_zero`) try to use\n"
+"of a natural number, (`zero_ne_succ` or `succ_ne_zero`). Try to use\n"
 "one of those here"
 msgstr ""
 
 #: Game.Levels.LessThan.B_L05_not_lt_zero
 msgid "Nice job.  In the next level you will show that our\n"
 "definition of `<`, is equivalent to Lean's default way of defining it.\n"
-"Click Next to continue."
-msgstr ""
-
-#: Game.Levels.LessThan.B_L05_not_lt_zero
-msgid "CONCLUSION."
+"Click \"Next\" to continue."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
@@ -3345,7 +3343,8 @@ msgid "If `m` and `n` are natural numbers, then `lt_succ_iff_le m n` is a proof\
 msgstr ""
 
 #: Game.Levels.LessThan.B_L07_lt_succ_iff_le
-msgid "CONCLUSION."
+msgid "Nice job, you are almost to the final boss.  Click\n"
+"\"Next\" to continue."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
@@ -3372,7 +3371,8 @@ msgid "If `m` and `n` are natural numbers, then `¬( (n < m) ∧ (m < succ n))`.
 msgstr ""
 
 #: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
-msgid "You are now ready to fight the final boss."
+msgid "You are now ready to fight the final boss.  Click \"Next\"\n"
+"to face it."
 msgstr ""
 
 #: Game.Levels.LessThan.B_L09_strong_induction
@@ -3434,8 +3434,12 @@ msgid "In this world we define `a < b` and prove standard\n"
 "facts about it.  The final boss of this level is to prove the strong\n"
 "induction principle.\n"
 "\n"
-"If `a b` are natural number, We will eventually define `a < b` as `succ\n"
-"a ≤ b`.  But first we have to introduce two new tactics.\n"
+"In this level we will define the proposition `a < b` as `succ a ≤ b`.\n"
+"We will define \"less than\" in terms of \"less than or equal\".  At\n"
+"first glance, this may seem like a circular definition but it is not.\n"
+"\n"
+"Before we prove this and other facts about \"less than\", we need to\n"
+"introduce two new tactics.\n"
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""

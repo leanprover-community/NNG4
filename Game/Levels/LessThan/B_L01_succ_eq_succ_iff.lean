@@ -37,7 +37,7 @@ in this world, the `constructor` tactic.  For two proposition `p` and
 `q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q`
 and (2) the reversed Modus Ponens: `q → p`.  If you have a goal of the
 form `p ↔ q`, then the `constructor` tactic will split this goal into
-these two goals.
+these two sub-goals.
 
 We practice using this tactic in this level."
 
