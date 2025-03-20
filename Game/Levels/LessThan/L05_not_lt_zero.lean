@@ -11,7 +11,7 @@ TheoremDoc MyNat.not_lt_zero as "not_lt_zero" in "<"
 
 Introduction "In this level, we show that there is no natural number less than zero."
 
-/--If `a` is a natural number the ¬(a < 0). -/
+/--If `a` is a natural number then `¬(a < 0)`. -/
 Statement not_lt_zero (a : ℕ) : ¬(a < 0) := by
   intro h0
   Hint "Use `cases` to split up `{h0}`."

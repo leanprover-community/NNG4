@@ -41,7 +41,7 @@ Statement le_iff_lt_or_eq (a b : ℕ) : a ≤ b ↔ a < b ∨ a = b := by
 
 
 Conclusion "Nice job. In the `≤`-world you showed that for all natural
-numbers a, we have `0 ≤ a`. In the next level, you will show that zero
+numbers `a`, we have `0 ≤ a`. In the next level, you will show that zero
 is not greater than any natural number."
 
 
