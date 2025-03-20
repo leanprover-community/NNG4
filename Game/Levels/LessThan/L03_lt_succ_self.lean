@@ -18,7 +18,7 @@ NewDefinition LT
 
 Introduction "In this level we define a new relation, `<`, on the
 natural numbers,  For `a b`, two natural number, we have
-`a < b` if (and only if) `succ a ≤ b`.  
+`a < b` if (and only if) `succ a ≤ b`.
 
 Remember that that `succ a ≤
 b` is notation for \"there exists `c` such that `b = succ a +

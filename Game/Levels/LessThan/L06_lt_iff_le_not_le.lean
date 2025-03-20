@@ -26,7 +26,7 @@ Statement lt_iff_le_not_le (a b : ℕ) :
   rw [add_succ,←succ_add]
   exact h0
   intro h1
-  cases h1 with r1 h1  
+  cases h1 with r1 h1
   rw [h0] at h1
   rw [add_assoc] at h1
   rw [succ_add,←add_succ] at h1
@@ -38,7 +38,7 @@ Statement lt_iff_le_not_le (a b : ℕ) :
   cases h0 with r h0
   rw [h0]
   cases r with l
-  rw [add_zero]  
+  rw [add_zero]
   rw [add_zero] at h0
   rw [h0] at h1
   have h2 := h1 (le_refl a)
