@@ -23,3 +23,12 @@ Statement mul_eq_zero (a b : ℕ) (h : a * b = 0) : a = 0 ∨ b = 0 := by
   Hint (hidden := true) "Now the goal can be deduced from `h2` by pure logic, so use the `tauto`
   tactic."
   tauto
+
+Conclusion "Here's the short proof:
+```
+have h2 := mul_ne_zero a b
+tauto
+```
+This works because, given `mul_ne_zero a b`,
+the argument is reduced to pure logic.
+"

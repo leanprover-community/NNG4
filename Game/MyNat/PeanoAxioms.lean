@@ -1,5 +1,7 @@
 import Game.MyNat.Definition
-import Mathlib.Tactic
+import Mathlib.Tactic.ApplyAt
+import Mathlib.Tactic.Contrapose
+import Mathlib.Tactic.Have
 
 namespace MyNat
 

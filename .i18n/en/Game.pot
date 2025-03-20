@@ -1,7 +1,9 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
+
 "POT-Creation-Date: Wed Mar 12 15:54:00 2025\n"
+
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1599,8 +1601,11 @@ msgid "## Summary\n"
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
-msgid "In this level one of our hypotheses is an *implication*. We can use this\n"
-"hypothesis with the `apply` tactic."
+msgid "In this level, the hypotheses `h2` is an *implication*. It says\n"
+"that *if* `x = 37` *then* `y = 42`. We can use this\n"
+"hypothesis with the `apply` tactic. Remember you can click on\n"
+"`apply` or any other tactic on the right to see a detailed explanation\n"
+"of what it does, with examples."
 msgstr ""
 
 #: Game.Levels.Implication.L03apply
@@ -1797,7 +1802,7 @@ msgstr ""
 
 #: Game.Levels.Implication.L07intro2
 msgid "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
-"change `succ x = succ y`."
+"change `h` to `succ x = succ y`."
 msgstr ""
 
 #: Game.Levels.Implication.L07intro2
@@ -2301,7 +2306,7 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid "Start with `contrapose! h`, to change the goal into its\n"
-"contrapositive, namely a hypothesis of `succ m = succ m` and a goal of `m = n`."
+"contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`."
 msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
@@ -2381,7 +2386,8 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L09decide2
 msgid "Congratulations! You've finished Algorithm World. These algorithms\n"
-"will be helpful for you in Even-Odd World."
+"will be helpful for you in Even-Odd World (when someone gets around to\n"
+"implementing it)."
 msgstr ""
 
 #: Game.Levels.Algorithm
@@ -3504,6 +3510,16 @@ msgid "# Summary\n"
 "The `tauto` tactic will solve any goal which can be solved purely by logic (that is, by\n"
 "truth tables).\n"
 "\n"
+"## Details\n"
+"\n"
+"`tauto` *does not do magic*! It doesn't know *anything* about addition or multiplication,\n"
+"it doesn't even know `add_zero`. The only things that `tauto` knows about numbers\n"
+"are firstly that `a = a` and secondly that `0 ≠ 1`, `0 ≠ 2`, `1 ≠ 2` and so on.\n"
+"What `tauto`'s strength is, is *logic*. If you have a hypothesis `x < 37`\n"
+"and another hypothesis `x < 37 → y + z = 42` and your goal is `y + z = 42` then `tauto` will\n"
+"solve this goal, because to solve that goal you don't need to know any facts\n"
+"about inequalities or addition, all you need to know is the rules of logic.\n"
+"\n"
 "## Example\n"
 "\n"
 "If you have `False` as a hypothesis, then `tauto` will solve\n"
@@ -3523,6 +3539,11 @@ msgid "# Summary\n"
 "\n"
 "If you have one hypothesis `h : a ≠ a` then `tauto` will solve the goal because\n"
 "`tauto` is smart enough to know that `a = a` is true, which gives the contradiction we seek.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have a hypothesis `h : 0 = 1` then `tauto` will solve the goal, because\n"
+"`tauto` knows `0 ≠ 1` and this is enough to prove `False`, which implies any goal.\n"
 "\n"
 "## Example\n"
 "\n"
@@ -3584,11 +3605,17 @@ msgid "`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
+<<<<<<< HEAD
 msgid "In Prime Number World we will be proving that $2$ is prime.\n"
+=======
+msgid "One day this game will have a Prime Number World, with a final boss\n"
+"of proving that $2$ is prime.\n"
+>>>>>>> main
 "To do this, we will have to rule out things like $2 = 37 × 42.$\n"
 "We will do this by proving that any factor of $2$ is at most $2$,\n"
 "which we will do using this lemma. The proof I have in mind manipulates the hypothesis\n"
-"until it becomes the goal, using pretty much everything which we've proved in this world so far."
+"until it becomes the goal, using `mul_left_ne_zero`, `one_le_of_ne_zero` and\n"
+"`mul_le_mul_right`."
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
@@ -3720,6 +3747,16 @@ msgid "Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n
 "tactic."
 msgstr ""
 
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "Here's the short proof:\n"
+"```\n"
+"have h2 := mul_ne_zero a b\n"
+"tauto\n"
+"```\n"
+"This works because, given `mul_ne_zero a b`,\n"
+"the argument is reduced to pure logic."
+msgstr ""
+
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid "mul_left_cancel"
 msgstr ""
@@ -3837,10 +3874,10 @@ msgid "# Welcome to the Natural Number Game\n"
 "To start, click on \"Tutorial World\".\n"
 "\n"
 "Note: this is a new Lean 4 version of the game containing several\n"
-"worlds which were not present in the old Lean 3 version. A new version\n"
-"of Advanced Multiplication World is in preparation, and worlds\n"
-"such as Prime Number World and more will be appearing during October and\n"
-"November 2023.\n"
+"worlds which were not present in the old Lean 3 version. More new worlds\n"
+"such as Strong Induction World, Even/Odd World and Prime Number World\n"
+"are in development; if you want to see their state or even help out, checkout\n"
+"out the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).\n"
 "\n"
 "## More\n"
 "\n"
@@ -3849,9 +3886,9 @@ msgid "# Welcome to the Natural Number Game\n"
 msgstr ""
 
 #: Game
-msgid "*Game version: 4.2*\n"
+msgid "*Game version: 4.3*\n"
 "\n"
-"*Recent additions: Inequality world, algorithm world*\n"
+"*Recent additions: bug fixes*\n"
 "\n"
 "## Progress saving\n"
 "\n"

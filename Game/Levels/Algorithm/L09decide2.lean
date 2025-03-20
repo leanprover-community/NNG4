@@ -18,4 +18,5 @@ Statement : (2 : ℕ) + 2 ≠ 5 := by
   decide
 
 Conclusion "Congratulations! You've finished Algorithm World. These algorithms
-will be helpful for you in Even-Odd World."
+will be helpful for you in Even-Odd World (when someone gets around to
+implementing it)."
