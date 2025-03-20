@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+import Game.Levels.LessThan.L04_le_iff_lt_or_eq
 
 World "LessThan"
 Level 5

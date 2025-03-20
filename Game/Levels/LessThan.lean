@@ -1,13 +1,13 @@
 import GameServer.Commands
-import Game.Levels.LessThan.B_L01_succ_eq_succ_iff
-import Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
-import Game.Levels.LessThan.B_L03_lt_succ_self
-import Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
-import Game.Levels.LessThan.B_L05_not_lt_zero
-import Game.Levels.LessThan.B_L06_lt_iff_le_not_le
-import Game.Levels.LessThan.B_L07_lt_succ_iff_le
-import Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
-import Game.Levels.LessThan.B_L09_strong_induction
+import Game.Levels.LessThan.L01_succ_eq_succ_iff
+import Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
+import Game.Levels.LessThan.L03_lt_succ_self
+import Game.Levels.LessThan.L04_le_iff_lt_or_eq
+import Game.Levels.LessThan.L05_not_lt_zero
+import Game.Levels.LessThan.L06_lt_iff_le_not_le
+import Game.Levels.LessThan.L07_lt_succ_iff_le
+import Game.Levels.LessThan.L08_not_lt_and_lt_succ
+import Game.Levels.LessThan.L09_strong_induction
 
 World "LessThan"
 Title "< World"

@@ -1,6 +1,6 @@
 import Game.Levels.AdvAddition
 import Game.Levels.LessOrEqual
-import Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+import Game.Levels.LessThan.L01_succ_eq_succ_iff
 
 World "LessThan"
 Level 2

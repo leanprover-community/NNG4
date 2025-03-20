@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+import Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 
 World "LessThan"
 Level 3

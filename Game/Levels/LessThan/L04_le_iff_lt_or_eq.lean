@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L03_lt_succ_self
+import Game.Levels.LessThan.L03_lt_succ_self
 
 
 World "LessThan"

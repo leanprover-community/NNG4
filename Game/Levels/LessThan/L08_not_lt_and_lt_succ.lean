@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L07_lt_succ_iff_le
+import Game.Levels.LessThan.L07_lt_succ_iff_le
 
 World "LessThan"
 Level 8

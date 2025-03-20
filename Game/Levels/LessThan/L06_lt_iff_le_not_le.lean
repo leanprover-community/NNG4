@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L05_not_lt_zero
+import Game.Levels.LessThan.L05_not_lt_zero
 
 World "LessThan"
 Level 6

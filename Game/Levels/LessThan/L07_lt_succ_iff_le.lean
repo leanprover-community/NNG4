@@ -1,4 +1,4 @@
-import Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+import Game.Levels.LessThan.L06_lt_iff_le_not_le
 
 World "LessThan"
 Level 7
