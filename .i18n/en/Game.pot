@@ -1,9 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-
-"POT-Creation-Date: Wed Mar 12 15:54:00 2025\n"
-
+"POT-Creation-Date: Thu Mar 20 09:28:24 2025\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3096,11 +3094,11 @@ msgid "In this world we define `a ≤ b` and prove standard facts\n"
 "Click on \"Start\" to proceed."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "Successor are equal iff originals are equal"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "## Summary\n"
 "\n"
 "The `constructor` tactic can be used to split a compound goal into its \n"
@@ -3118,7 +3116,7 @@ msgid "## Summary\n"
 "first `p` and then `q`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "In this level we introduce a tactic that will be useful\n"
 "in this world, the `constructor` tactic.  For two proposition `p` and\n"
 "`q`, `p ↔ q`, consists of two statements (1) the Modus Ponens: `p → q`\n"
@@ -3129,24 +3127,24 @@ msgid "In this level we introduce a tactic that will be useful\n"
 "We practice using this tactic in this level."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "`succ_eq_succ_iff a b` is a proof that `succ a = succ b ↔ a = b`.  In words,\n"
 "  equal numbers have equal successors and vice versa."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "If `a b` are natural numbers, then `succ a = succ b ↔ a = b`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "The goal is an iff statement so use `constructor`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "The `succ_inj` theorem is useful here."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L01_succ_eq_succ_iff
+#: Game.Levels.LessThan.L01_succ_eq_succ_iff
 msgid "The `constructor` tactic also works on goals of the form `P\n"
 "∧ Q`, for two propositions `P` and `Q`.\n"
 "\n"
@@ -3154,39 +3152,34 @@ msgid "The `constructor` tactic also works on goals of the form `P\n"
 "in the next level how to use the `rw` tactic with `↔` statements."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "Practice with `rw`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "In this level, you will get practice using the `rw`\n"
 "tactic with iff statements.  Before this level, you used `rw` to\n"
 "substitute *equations* into the goal or into other expressions.  The `rw` tactic\n"
 "can be used to rewrite equivalent *propositions* into each other in the same way."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
-msgid "YADDA We don't really want this as a theorem do we?  TODO: Check how the other intro\n"
-"levels were handled."
-msgstr ""
-
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "Equal numbers have equal successors of successors and vice versa."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "To strip of one pair of `succ`'s, you can use `rw [succ_eq_succ_iff]`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "Now strip off the next pair of `succ`'s."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "We have something of the form `p ↔ p`, which can be solved with `rfl`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L02_succ_succ_eq_succ_succ_iff
+#: Game.Levels.LessThan.L02_succ_succ_eq_succ_succ_iff
 msgid "A different proof\n"
 "```\n"
 "  rw [succ_eq_succ_iff]\n"
@@ -3194,11 +3187,11 @@ msgid "A different proof\n"
 "```"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "lt_succ_self"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "`a < b` is *notation* for `succ a ≤ b`, and `succ a ≤ b` in turn\n"
 "is *notation* for `∃ c : b = succ a + c`.  This mean that if you have\n"
 "a *goal* of the for `a < b`, you can make progress with the `use\n"
@@ -3206,10 +3199,10 @@ msgid "`a < b` is *notation* for `succ a ≤ b`, and `succ a ≤ b` in turn\n"
 "progress with `cases h with c hc`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "In this level we define a new relation, `<`, on the\n"
 "natural numbers,  For `a b`, two natural number, we have\n"
-"`a < b` if (and only if) `succ a ≤ b`.  \n"
+"`a < b` if (and only if) `succ a ≤ b`.\n"
 "\n"
 "Remember that that `succ a ≤\n"
 "b` is notation for \"there exists `c` such that `b = succ a +\n"
@@ -3223,92 +3216,92 @@ msgid "In this level we define a new relation, `<`, on the\n"
 "We start by showing every number is less than its sucessor."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "`lt_succ_self a` is a proof that `a < succ a`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "If `a` is a natural number, then `a < succ a`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "Remember that `lhs < rhs` is defined as `succ lhs ≤ rhs`.  How\n"
 "would you show this for the cases when `lhs = a` and `rhs = succ\n"
 "a`?"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L03_lt_succ_self
+#: Game.Levels.LessThan.L03_lt_succ_self
 msgid "Nice job.  In the next level you will show that the\n"
 "relations \"less than:`<`\"  and \"less than or equal:`≤`\" make linguistic\n"
 "as well as mathematical sense."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+#: Game.Levels.LessThan.L04_le_iff_lt_or_eq
 msgid "le_iff_lt_or_eq"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+#: Game.Levels.LessThan.L04_le_iff_lt_or_eq
 msgid "`le_iff_lt_or_eq a b `is a proof that `a ≤ b` iff `a < b' or a = b'."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+#: Game.Levels.LessThan.L04_le_iff_lt_or_eq
 msgid "This level shows that `a ≤ b ↔ (a < b) ∨ (a = b)`.  In\n"
 "spoken form (\"`a` is less than or equal to `b` iff `a` is less than or\n"
 "equal to `b`\"); this is a tautology, so it is a worthwhile exercise to\n"
 "check that our mathematical definitions also make linguistic sense."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+#: Game.Levels.LessThan.L04_le_iff_lt_or_eq
 msgid "If `a` and `b` are  natural numbers, then `a ≤ b` iff (`a < b` or `a = b`)."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L04_le_iff_lt_or_eq
+#: Game.Levels.LessThan.L04_le_iff_lt_or_eq
 msgid "Nice job. In the `≤`-world you showed that for all natural\n"
 "numbers a, we have `0 ≤ a`. In the next level, you will show that zero\n"
 "is not greater than any natural number."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "not_lt_zero"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "`not_lt_zero a`is a proof that `¬(a < 0)`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "In this level, we show that there is no natural number less than zero."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "If `a` is a natural number the ¬(a < 0)."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "Use `cases` to split up `«{h0}»`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "One of main tools is the fact that zero is not the successor\n"
 "of a natural number, (`zero_ne_succ` or `succ_ne_zero`). Try to use\n"
 "one of those here."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L05_not_lt_zero
+#: Game.Levels.LessThan.L05_not_lt_zero
 msgid "Nice job.  In the next level you will show that our\n"
 "definition of `<`, is equivalent to Lean's default way of defining it.\n"
 "Click \"Next\" to continue."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+#: Game.Levels.LessThan.L06_lt_iff_le_not_le
 msgid "lt_iff_le_not_le"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+#: Game.Levels.LessThan.L06_lt_iff_le_not_le
 msgid "`lt_iff_le_not_le a b` is a proof that  `a < b ↔ (a ≤ b) ∧ ¬(b ≤ a)`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+#: Game.Levels.LessThan.L06_lt_iff_le_not_le
 msgid "There are many equivalent ways we could have defined the\n"
 "`<` relation.  The one that we chose allows the proofs in this world\n"
 "to be simpler, but isn't the default way that Lean would have defined\n"
@@ -3316,53 +3309,53 @@ msgid "There are many equivalent ways we could have defined the\n"
 "Lean's default definition of `<`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+#: Game.Levels.LessThan.L06_lt_iff_le_not_le
 msgid "If `a` and `b` are natural numbers, then `a < b` iff `a ≤ b` and `¬(b ≤ a)`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L06_lt_iff_le_not_le
+#: Game.Levels.LessThan.L06_lt_iff_le_not_le
 msgid "The mathematician who passed by after the transitiviy\n"
 "level of `≤` world, remarks that you have shown that the natural\n"
 "numbers equipped with our choice for the definition of `<`, is a *preorder*,\n"
 "a *Partial order* and a *Linear order*."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L07_lt_succ_iff_le
+#: Game.Levels.LessThan.L07_lt_succ_iff_le
 msgid "lt_succ_iff_le"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L07_lt_succ_iff_le
+#: Game.Levels.LessThan.L07_lt_succ_iff_le
 msgid "`lt_succ_iff_le m n `is a proof that `m < succ n ↔ m ≤ n`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L07_lt_succ_iff_le
+#: Game.Levels.LessThan.L07_lt_succ_iff_le
 msgid "You are building up to fight the final boss of this\n"
 "world, the strong induction principle.  Your task in this level is to\n"
 "show that `m < succ n ↔ m ≤ n`.  The proof is straightforward so you\n"
 "probably don't need any hints."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L07_lt_succ_iff_le
+#: Game.Levels.LessThan.L07_lt_succ_iff_le
 msgid "If `m` and `n` are natural numbers, then `lt_succ_iff_le m n` is a proof\n"
 "that `m < succ n ↔ m ≤ n`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L07_lt_succ_iff_le
+#: Game.Levels.LessThan.L07_lt_succ_iff_le
 msgid "Nice job, you are almost to the final boss.  Click\n"
 "\"Next\" to continue."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
+#: Game.Levels.LessThan.L08_not_lt_and_lt_succ
 msgid "not_lt_and_lt_succ"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
+#: Game.Levels.LessThan.L08_not_lt_and_lt_succ
 msgid "`not_lt_and_lt_succ m n` is a proof that no number is both stricly\n"
 "greater than another number and strictly less than the other\n"
 "number's successor."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
+#: Game.Levels.LessThan.L08_not_lt_and_lt_succ
 msgid "You don't need this level to fight the final boss, but\n"
 "it is good training.  This level shows that there is no natural number\n"
 "that is both greater than a number `n` and less than `n + 1`.  This is\n"
@@ -3371,24 +3364,24 @@ msgid "You don't need this level to fight the final boss, but\n"
 "integers are *chunky*."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
+#: Game.Levels.LessThan.L08_not_lt_and_lt_succ
 msgid "If `m` and `n` are natural numbers, then `¬( (n < m) ∧ (m < succ n))`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L08_not_lt_and_lt_succ
+#: Game.Levels.LessThan.L08_not_lt_and_lt_succ
 msgid "You are now ready to fight the final boss.  Click \"Next\"\n"
 "to face it."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "Strong Induction Principle"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "'strong_induction P h` is a proof that `∀ z : ℕ, P z`."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "Welcome to the boss level.  Your task is to prove a\n"
 "variant of basic induction called *strong induction*.  Remember that\n"
 "in basic induction, you prove that a predicate `P` is true for all\n"
@@ -3409,25 +3402,25 @@ msgid "Welcome to the boss level.  Your task is to prove a\n"
 "valid."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "As a warm up, try to prove the statment for `z = 0`, `z = 1`,\n"
 "and `z = 2` first.  This should give you an idea that you need to\n"
 "introduce an auxillary statement.  There is a hidden hint if you are\n"
 "still stuck."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "You are likely in a dead end.  The inductive hypothesis gives\n"
 "you `P «{k}»`, but to use `«{h0}»`, you need `∀ m < succ «{k}», P m`, something\n"
 "you don't have.  You may want to restart from the beginning."
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "Finish the following statement\n"
 "`have h1 : ∀ a: ℕ, ∀ y : ℕ, y < a → P y := by`"
 msgstr ""
 
-#: Game.Levels.LessThan.B_L09_strong_induction
+#: Game.Levels.LessThan.L09_strong_induction
 msgid "Congratulations.  You have finished the `<` level.  Click\n"
 "\"Leave World\" to go back to the overworld."
 msgstr ""
@@ -3605,12 +3598,8 @@ msgid "`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
 msgstr ""
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-<<<<<<< HEAD
-msgid "In Prime Number World we will be proving that $2$ is prime.\n"
-=======
 msgid "One day this game will have a Prime Number World, with a final boss\n"
 "of proving that $2$ is prime.\n"
->>>>>>> main
 "To do this, we will have to rule out things like $2 = 37 × 42.$\n"
 "We will do this by proving that any factor of $2$ is at most $2$,\n"
 "which we will do using this lemma. The proof I have in mind manipulates the hypothesis\n"
