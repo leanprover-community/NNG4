@@ -43,6 +43,5 @@ Statement le_trans (x y z : ℕ) (hxy : x ≤ y) (hyz : y ≤ z) : x ≤ z := by
 TheoremTab "≤"
 
 Conclusion "
-A passing mathematician remarks that with reflexivity and transitivity out of the way,
-you have proved that `≤` is a *preorder* on `ℕ`.
+A passing mathematician remarks that with reflexivity and transitivity out of the way, you have proved that `≤` is a *preorder* on `ℕ`.
 "
