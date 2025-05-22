@@ -1,0 +1,19 @@
+import Game.Levels.Division.L01one_dvd
+import Game.Levels.Division.L02dvd_refl
+import Game.Levels.Division.L03dvd_zero
+import Game.Levels.Division.L04dvd_one
+
+World "Division"
+Title "Division World"
+
+Introduction
+"
+  This is the world in which we define `a ∣ b`. We will also prove
+  standard facts about it. In particular, that it is a partial order.
+
+  The definition of `a ∣ b` is that \"There exists a number `c` such
+  that `b = c * a`\" So we will use tactics used to prove \"exists\"
+  theorems.
+
+  Click on \"Start\" to proceed.
+"
