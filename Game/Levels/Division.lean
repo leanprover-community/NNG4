@@ -2,6 +2,9 @@ import Game.Levels.Division.L01one_dvd
 import Game.Levels.Division.L02dvd_refl
 import Game.Levels.Division.L03dvd_zero
 import Game.Levels.Division.L04dvd_one
+import Game.Levels.Division.L05dvd_trans
+import Game.Levels.Division.L06zero_dvd
+import Game.Levels.Division.L07dvd_ls
 
 World "Division"
 Title "Division World"
