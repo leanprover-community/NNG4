@@ -5,7 +5,7 @@ import Game.MyNat.PeanoAxioms
 
 World "Division"
 Level 7
-Title "dvd_ls"
+Title "dvd_le"
 
 TheoremTab "∣"
 
@@ -17,9 +17,9 @@ Introduction
   we will prove that a number only divides number's greater than or equal to itself.
 "
 /-- `dvd_ls a b` is a proof that if `a | b` and `b != 0 `then `a <= b`.-/
-TheoremDoc MyNat.dvd_ls as "dvd_ls" in "∣"
+TheoremDoc MyNat.dvd_le as "dvd_le" in "∣"
 
-Statement dvd_ls
+Statement dvd_le
     (a b : ℕ) (hab : a ∣ b) (hb : b ≠ 0) : a <= b := by
     cases hab with k
     rw[h]
