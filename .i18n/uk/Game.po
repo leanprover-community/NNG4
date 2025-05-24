@@ -4677,7 +4677,6 @@ msgstr ""
 "`le_antisymm x y` є доказом того, що якщо `x ≤ y` і `y ≤ x`, то `x = y`."
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-#, fuzzy
 msgid ""
 "This level asks you to prove *antisymmetry* of $\\leq$.\n"
 "In other words, if $x \\leq y$ and $y \\leq x$ then $x = y$.\n"
@@ -4685,15 +4684,13 @@ msgid ""
 msgstr ""
 "На цьому рівні вам потрібно довести *антисиметричність* $\\leq$.\n"
 "Іншими словами, якщо $x \\leq y$ і $y \\leq x$, то $x = y$.\n"
-"Це найскладніший наразі. удачі!"
+"Це найскладніше завдання наразі. Удачі!"
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-#, fuzzy
 msgid "If $x \\leq y$ and $y \\leq x$, then $x = y$."
 msgstr "Якщо $x \\leq y$ і $y \\leq x$, то $x = y$."
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
-#, fuzzy
 msgid ""
 "Here's my proof:\n"
 "```\n"
@@ -4717,13 +4714,14 @@ msgid ""
 msgstr ""
 "Ось мій доказ:\n"
 "```\n"
-"випадків hxy з a ha\n"
-"випадки hyx з b hb\n"
-"rw [га]\n"
-"rw [ha, add_assoc] у hb\n"
-"symm при hb\n"
-"застосувати add_right_eq_self у hb\n"
-"застосувати add_right_eq_zero на hb\n"
+"\n"
+"cases hxy with a ha\n"
+"cases hyx with b hb\n"
+"rw [ha]\n"
+"rw [ha, add_assoc] at hb\n"
+"symm at hb\n"
+"apply add_right_eq_self at hb\n"
+"apply add_right_eq_zero at hb\n"
 "rw [hb, add_zero]\n"
 "rfl\n"
 "```\n"
@@ -4732,15 +4730,14 @@ msgstr ""
 "ви довели, що `≤` є *частковим порядком* на `ℕ`.\n"
 "\n"
 "Рівень боса цього світу - довести\n"
-"що `≤` є загальним порядком. Давайте вивчимо ще дві прості тактики\n"
-"перший."
+"що `≤` є тотальним порядком. Давайте вивчимо ще дві прості тактики\n"
+"першими."
 
 #: Game.Levels.LessOrEqual.L07or_symm
 msgid "Dealing with `or`"
 msgstr "Робота з `or`"
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "# Summary\n"
 "The `left` tactic changes a goal of `P ∨ Q` into a goal of `P`.\n"
@@ -4754,18 +4751,17 @@ msgid ""
 "one."
 msgstr ""
 "# Резюме\n"
-"Тактика «ліворуч» змінює гол «P ∨ Q» на гол «P».\n"
-"Використовуйте його, коли ваші гіпотези гарантують, що причина `P ∨ Q`\n"
+"Тактика `left` змінює мету `P ∨ Q` на мету `P`.\n"
+"Використовуйте її, коли ваші гіпотези гарантують, що причина чому `P ∨ Q`\n"
 "є істинним тому, що насправді `P` є істинним.\n"
 "\n"
-"Внутрішньо ця тактика є лише «застосуванням» теореми\n"
-"кажучи, що $P \\implies P \\or Q.$\n"
+"Внутрішньо ця тактика є лише `apply`-ікацією теореми\n"
+"яка каже що $P \\implies P \\or Q.$\n"
 "\n"
-"Зауважте, що ця тактика може перетворити вирішувану мету на нерозв’язну\n"
-"один."
+"Зауважте, що ця тактика може перетворити вирішувану мету на нерозв’язувану\n"
+"мету."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "# Summary\n"
 "The `right` tactic changes a goal of `P ∨ Q` into a goal of `Q`.\n"
@@ -4779,18 +4775,19 @@ msgid ""
 "one."
 msgstr ""
 "# Резюме\n"
-"«Правильна» тактика змінює гол «P ∨ Q» на гол «Q».\n"
-"Використовуйте його, коли ваші гіпотези гарантують, що причина `P ∨ Q`\n"
+"Тактика `right` змінює мету `P ∨ Q` на мету `Q`во\n"
+"\n"
+".\n"
+"Використовуйте її, коли ваші гіпотези гарантують, що причина чому `P ∨ Q`\n"
 "є істинним тому, що насправді `Q` є істинним.\n"
 "\n"
 "Внутрішньо ця тактика є лише «застосуванням» теореми\n"
 "кажучи, що $Q \\implies P \\or Q.$\n"
 "\n"
-"Зауважте, що ця тактика може перетворити вирішувану мету на нерозв’язну\n"
-"один."
+"Зауважте, що ця тактика може перетворити вирішувану мету на нерозв’язувану\n"
+"мету."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "Totality of `≤` is the boss level of this world, and it's coming up next. It "
 "says that\n"
@@ -4808,66 +4805,60 @@ msgid ""
 "`cases h with h1 h2` will create two goals, one where you went left,\n"
 "and the other where you went right."
 msgstr ""
-"Сукупність «≤» — це рівень боса цього світу, і він наступний. Це говорить, "
+"Тотальність `≤` — це рівень боса цього світу, і він наступний. Він говорить, "
 "що\n"
 "якщо `a` і `b` є натуральними, тоді або `a ≤ b`, або `b ≤ a`.\n"
-"Але ми взагалі не говорили про «або». Ось пробіг.\n"
+"Але ми взагалі не говорили про `or`. Ось швидкий огляд.\n"
 "\n"
-"1) Для \"або\" позначається `∨`. Вам не потрібно буде вводити його, але ви "
+"1) Нотація для \"або\" це `∨`. Вам не потрібно буде вводити його, але ви "
 "можете\n"
-"введіть його за допомогою `\\або`.\n"
+"введіть його за допомогою `\\or`.\n"
 "\n"
-"2) Якщо у *цілі* є твердження «або», то дві тактики\n"
-"прогрес: `вліво` і `вправо`. Але не вибирайте напрямок, якщо ваш\n"
-"гіпотези гарантують, що вона правильна.\n"
+"2) Якщо у *мети* є твердження «або», то дві тактики\n"
+"роблять прогрес: `left` і `right`. Але не вибирайте напрямок, якщо ваша\n"
+"гіпотези не гарантує, що вона правильна.\n"
 "\n"
 "3) Якщо у вас є твердження \"або\" як *гіпотеза* `h`, тоді\n"
 "`cases h with h1 h2` створить дві цілі: одну, де ви пішли ліворуч,\n"
-"а інший там, де ви пішли правильно."
+"і іншу там, де ви пішли праворуч."
 
 #: Game.Levels.LessOrEqual.L07or_symm
 msgid "If $x=37$ or $y=42$, then $y=42$ or $x=37$."
 msgstr "Якщо $x=37$ або $y=42$, то $y=42$ або $x=37$."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "We don't know whether to go left or right yet. So start with `cases «{h}» "
 "with hx hy`."
 msgstr ""
-"Ми ще не знаємо, ліворуч чи праворуч. Тож почніть із `випадків «{h}» із hx "
-"hy`."
+"Ми ще не знаємо куда питі, ліворуч чи праворуч. Тож почніть із `cases «{h}» "
+"with hx hy`."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "Now we can prove the `or` statement by proving the statement on the right,\n"
 "so use the `right` tactic."
 msgstr ""
-"Тепер ми можемо довести твердження \"або\", довівши твердження праворуч,\n"
-"тому використовуйте «правильну» тактику."
+"Тепер ми можемо довести твердження `or`, довівши твердження праворуч,\n"
+"тому використовуйте тактику `right`."
 
 #: Game.Levels.LessOrEqual.L07or_symm
 msgid "This time, use the `left` tactic."
 msgstr "Цього разу використовуйте тактику `left`."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid "Ready for the boss level of this world?"
 msgstr "Готові до рівня боса цього світу?"
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "x ≤ y or y ≤ x"
 msgstr "x ≤ y або y ≤ x"
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "`le_total x y` is a proof that `x ≤ y` or `y ≤ x`."
 msgstr "`le_total x y` є доказом того, що `x ≤ y` або `y ≤ x`."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid ""
 "This is I think the toughest level yet. Tips: if `a` is a number\n"
 "then `cases a with b` will split into cases `a = 0` and `a = succ b`.\n"
@@ -4878,41 +4869,35 @@ msgid ""
 "and click on \"Show more help!\""
 msgstr ""
 "Я вважаю, що це найскладніший рівень. Підказки: якщо `a` є числом\n"
-"тоді `випадки a з b` розділяться на випадки `a = 0` і `a = succ b`.\n"
-"І не йдіть ні вліво, ні вправо, доки ваші гіпотези не підтвердять це\n"
-"ви можете довести кінцевий гол!\n"
+"тоді `cases a with b` розділяться на випадки `a = 0` і `a = succ b`.\n"
+"І не йдіть ні вліво, ні вправо, доки ваші гіпотези не підтвердять що\n"
+"ви можете довести кінцеву мету!\n"
 "\n"
 "Я залишив приховані підказки; якщо вони вам потрібні, повторіть спробу з "
 "самого початку\n"
 "і натисніть «Показати додаткову допомогу!»"
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "If $x$ and $y$ are numbers, then either $x \\leq y$ or $y \\leq x$."
 msgstr "Якщо $x$ і $y$ є числами, то або $x \\leq y$, або $y \\leq x$."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "Start with `induction «{y}» with d hd`."
-msgstr "Почніть з `індукції «{y}» з d hd`."
+msgstr "Почніть з `induction «{y}» with d hd`."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "Try `cases «{hd}» with h1 h2`."
-msgstr "Спробуйте `випадки «{hd}» з h1 h2`."
+msgstr "Спробуйте `cases «{hd}» with h1 h2`."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "Now `cases «{h2}» with e he`."
-msgstr "Тепер `відмінки «{h2}» з e he`."
+msgstr "Тепер `cases «{h2}» with e he`."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid "You still don't know which way to go, so do `cases «{e}» with a`."
-msgstr "Ви все ще не знаєте, куди піти, тому `випадки «{e}» з`."
+msgstr "Ви все ще не знаєте, що робити, тому `cases «{e}» with a`."
 
 #: Game.Levels.LessOrEqual.L08le_total
-#, fuzzy
 msgid ""
 "Very well done.\n"
 "\n"
@@ -4924,8 +4909,8 @@ msgid ""
 msgstr ""
 "Дуже добре зроблено.\n"
 "\n"
-"Перехожий математик зауважує, що ви щойно довели, що `ℕ` цілком\n"
-"замовив.\n"
+"Перехожий математик зауважує, що ви щойно довели, що `ℕ` тотально\n"
+"впорядковане.\n"
 "\n"
 "Кілька останніх рівнів у цьому світі набагато легші."
 
@@ -4939,18 +4924,16 @@ msgstr ""
 "`succ_le_succ x y` є доказом того, що якщо `succ x ≤ succ y`, то `x ≤ y`."
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-#, fuzzy
 msgid ""
 "We've proved that `x ≤ 0` implies `x = 0`. The last two levels\n"
 "in this world will prove which numbers are `≤ 1` and `≤ 2`.\n"
 "This lemma will be helpful for them."
 msgstr ""
 "Ми довели, що `x ≤ 0` означає `x = 0`. Останні два рівні\n"
-"у цьому світі доведе, які числа є `≤ 1` і `≤ 2`.\n"
-"Ця лема буде їм у пригоді."
+"у цьому світі доведуть, які числа є `≤ 1` і `≤ 2`.\n"
+"Ця лема буде там у нагоді."
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-#, fuzzy
 msgid ""
 "If $\\operatorname{succ}(x) \\leq \\operatorname{succ}(y)$ then $x \\leq y$."
 msgstr ""
@@ -4958,7 +4941,6 @@ msgstr ""
 "y$."
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-#, fuzzy
 msgid ""
 "Here's my proof:\n"
 "```\n"
@@ -4971,11 +4953,11 @@ msgid ""
 msgstr ""
 "Ось мій доказ:\n"
 "```\n"
-"випадки hx з d hd\n"
-"використання d\n"
-"rw [succ_add] на hd\n"
-"застосувати succ_inj на hd\n"
-"точний hd\n"
+"cases hx with d hd\n"
+"use d\n"
+"rw [succ_add] at hd\n"
+"apply succ_inj at hd\n"
+"exact hd\n"
 "```"
 
 #: Game.Levels.LessOrEqual.L10le_one
@@ -4983,26 +4965,22 @@ msgid "x ≤ 1"
 msgstr "x ≤ 1"
 
 #: Game.Levels.LessOrEqual.L10le_one
-#, fuzzy
 msgid "`le_one x` is a proof that if `x ≤ 1` then `x = 0` or `x = 1`."
-msgstr "`le_one x` є доказом того, що якщо `x ≤ 1`, то `x = 0` або `x = 1`."
+msgstr "`le_one x` є доказом того, що якщо `x ≤ 1`, тоді `x = 0` або `x = 1`."
 
 #: Game.Levels.LessOrEqual.L10le_one
-#, fuzzy
 msgid ""
 "We've seen `le_zero`, the proof that if `x ≤ 0` then `x = 0`.\n"
 "Now we'll prove that if `x ≤ 1` then `x = 0` or `x = 1`."
 msgstr ""
-"Ми бачили `le_zero`, доказ того, що якщо `x ≤ 0`, то `x = 0`.\n"
-"Тепер ми доведемо, що якщо `x ≤ 1`, то `x = 0` або `x = 1`."
+"Ми зробили `le_zero`, доказ того, що якщо `x ≤ 0`, тоді `x = 0`.\n"
+"Тепер ми доведемо, що якщо `x ≤ 1`, тоді `x = 0` або `x = 1`."
 
 #: Game.Levels.LessOrEqual.L10le_one
-#, fuzzy
 msgid "If $x \\leq 1$ then either $x = 0$ or $x = 1$."
 msgstr "Якщо $x \\leq 1$, то $x = 0$ або $x = 1$."
 
 #: Game.Levels.LessOrEqual.L10le_one
-#, fuzzy
 msgid ""
 "Here's my proof:\n"
 "```\n"
@@ -5021,14 +4999,15 @@ msgid ""
 msgstr ""
 "Ось мій доказ:\n"
 "```\n"
-"випадки х з у\n"
-"зліва\n"
+"\n"
+"cases x with y\n"
+"left\n"
 "rfl\n"
-"rw [one_eq_succ_zero] при hx ⊢\n"
-"застосувати succ_le_succ на hx\n"
-"застосувати le_zero в hx\n"
+"rw [one_eq_succ_zero] at hx ⊢\n"
+"apply succ_le_succ at hx\n"
+"apply le_zero at hx\n"
 "rw [hx]\n"
-"правильно\n"
+"right\n"
 "rfl\n"
 "```\n"
 "\n"
@@ -5039,7 +5018,6 @@ msgid "le_two"
 msgstr "le_two"
 
 #: Game.Levels.LessOrEqual.L11le_two
-#, fuzzy
 msgid ""
 "`le_two x` is a proof that if `x ≤ 2` then `x = 0` or `x = 1` or `x = 2`."
 msgstr ""
@@ -5047,7 +5025,6 @@ msgstr ""
 "2`."
 
 #: Game.Levels.LessOrEqual.L11le_two
-#, fuzzy
 msgid ""
 "We'll need this lemma to prove that two is prime!\n"
 "\n"
@@ -5055,19 +5032,17 @@ msgid ""
 "`x = 0 ∨ x = 1 ∨ x = 2` actually means `x = 0 ∨ (x = 1 ∨ x = 2)`.\n"
 "This affects how `left` and `right` work."
 msgstr ""
-"Нам знадобиться ця лема, щоб довести, що два є простим!\n"
+"Нам знадобиться ця лема, щоб довести, що два є простим числом!\n"
 "\n"
-"Вам потрібно знати, що `∨` є правильною асоціативністю. Це означає, що\n"
-"«x = 0 ∨ x = 1 ∨ x = 2» насправді означає «x = 0 ∨ (x = 1 ∨ x = 2)».\n"
-"Це впливає на роботу `left` і `right`."
+"Вам потрібно знати, що `∨` є право-асоціативно. Це означає, що\n"
+"`x = 0 ∨ x = 1 ∨ x = 2` насправді означає `x = 0 ∨ (x = 1 ∨ x = 2)`.\n"
+"Це впливає на роботу `left` та `right`."
 
 #: Game.Levels.LessOrEqual.L11le_two
-#, fuzzy
 msgid "If $x \\leq 2$ then $x = 0$ or $1$ or $2$."
 msgstr "Якщо $x \\leq 2$, то $x = 0$ або $1$ або $2$."
 
 #: Game.Levels.LessOrEqual.L11le_two
-#, fuzzy
 msgid ""
 "Nice!\n"
 "\n"
@@ -5076,20 +5051,19 @@ msgid ""
 "If you've already done Multiplication World, you're now ready for\n"
 "Advanced Multiplication World. Click on \"Leave World\" to access it."
 msgstr ""
-"приємно!\n"
+"Гарно!\n"
 "\n"
 "Наступним кроком у розвитку теорії порядку є розробка\n"
-"теорія взаємодії між «≤» і множенням.\n"
+"теорія взаємодії між `≤` і множенням.\n"
 "Якщо ви вже працювали зі Світом множення, тепер ви готові\n"
-"Розширений світ множення. Натисніть «Залишити світ», щоб отримати до нього "
-"доступ."
+"до Розширеного світу множення. Натисніть «Залишити світ», щоб отримати до "
+"нього доступ."
 
 #: Game.Levels.LessOrEqual
 msgid "≤ World"
 msgstr "Світ ≤"
 
 #: Game.Levels.LessOrEqual
-#, fuzzy
 msgid ""
 "In this world we define `a ≤ b` and prove standard facts\n"
 "about it, such as \"if `a ≤ b` and `b ≤ c` then `a ≤ c`.\"\n"
@@ -5102,12 +5076,12 @@ msgid ""
 "Click on \"Start\" to proceed."
 msgstr ""
 "У цьому світі ми визначаємо `a ≤ b` і доводимо стандартні факти\n"
-"про це, наприклад «якщо `a ≤ b` і `b ≤ c`, то `a ≤ c`».\n"
+"про нерівність, наприклад «якщо `a ≤ b` і `b ≤ c`, то `a ≤ c`».\n"
 "\n"
 "Визначення `a ≤ b` таке: «існує число `c`\n"
-"такий, що `b = a + c`. «Тож нам доведеться вчитися\n"
-"тактика доведення теорем «існування» та інша\n"
-"використовувати гіпотези «існує».\n"
+"таке, що `b = a + c`. «Тож нам доведеться навчитися\n"
+"тактик доведення теорем «існування» та інших\n"
+"використовуючи гіпотези «існує».\n"
 "\n"
 "Натисніть «Почати», щоб продовжити."
 
@@ -5116,17 +5090,14 @@ msgid "mul_le_mul_right"
 msgstr "mul_le_mul_right"
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid "`mul_le_mul_right a b t` is a proof that `a ≤ b → a * t ≤ b * t`."
 msgstr "`mul_le_mul_right a b t` є доказом того, що `a ≤ b → a * t ≤ b * t`."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid "Let's warm up with an easy one, which works even if `t = 0`."
-msgstr "Давайте зігріємося легким, який працює, навіть якщо `t = 0`."
+msgstr "Давайте зігріємося із легкою задачею, яка працює, навіть якщо `t = 0`."
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
-#, fuzzy
 msgid ""
 "My proof:\n"
 "```\n"
@@ -5138,8 +5109,8 @@ msgid ""
 msgstr ""
 "Мій доказ:\n"
 "```\n"
-"випадків h з d hd\n"
-"використовувати d * t\n"
+"cases h with d hd\n"
+"use d * t\n"
 "rw [hd, add_mul]\n"
 "rfl\n"
 "```"
@@ -5149,50 +5120,44 @@ msgid "mul_left_ne_zero"
 msgstr "mul_left_not_zero"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "`mul_left_ne_zero a b` is a proof that `a * b ≠ 0 → b ≠ 0`."
 msgstr "`mul_left_ne_zero a b` є доказом того, що `a * b ≠ 0 → b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid ""
 "If you have completed Algorithm World then you can use the `contrapose!` "
 "tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
-"Якщо ви завершили Algorithm World, ви можете використовувати тактику "
+"Якщо ви завершили Світ алгоритмів, ви можете використовувати тактику "
 "`contrapose!`\n"
-"тут. Якщо ні, я розповім вам ручний підхід."
+"тут. Якщо ні, я покажу вам ручний підхід."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid ""
 "We want to reduce this to a hypothesis `b = 0` and a goal `a * b = 0`,\n"
 "which is logically equivalent but much easier to prove. Remember that `X ≠ "
 "0`\n"
 "is notation for `X = 0 → False`. Click on `Show more help!` if you need hints."
 msgstr ""
-"Ми хочемо звести це до гіпотези \"b = 0\" і цілі \"a * b = 0\",\n"
+"Ми хочемо звести це до гіпотези `b = 0` і мети\"a * b = 0\",\n"
 "що логічно еквівалентно, але набагато легше довести. Пам’ятайте, що `X ≠ 0`\n"
 "це позначення для `X = 0 → False`. Натисніть `Показати більше допомоги!`, "
 "якщо вам потрібні підказки."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "Start with `intro hb`."
 msgstr "Почніть із `intro hb`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-#, fuzzy
 msgid "Now `apply h` and you can probably take it from here."
-msgstr "Тепер `застосуйте h`, і ви, ймовірно, зможете взяти це звідси."
+msgstr "Тепер `apply h`, і ви, ймовірно, зможете продовжити звідси."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid "eq_succ_of_ne_zero"
 msgstr "eq_succ_of_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -5254,47 +5219,46 @@ msgid ""
 msgstr ""
 "# Резюме\n"
 "\n"
-"Тактика «тавто» вирішить будь-яку мету, яка може бути розв’язана чисто "
+"Тактика `tauto` вирішить будь-яку мету, яка може бути розв’язана чисто "
 "логічно (тобто\n"
-"таблиці істинності).\n"
+"через таблиці істинності).\n"
 "\n"
-"## Деталі\n"
+"## Подробиці\n"
 "\n"
 "`tauto` *не робить магії*! Він не знає *нічого* про додавання чи множення,\n"
 "він навіть не знає `add_zero`. Єдине, що `tauto` знає про числа\n"
 "по-перше, що `a = a`, а по-друге, `0 ≠ 1`, `0 ≠ 2`, `1 ≠ 2` і так далі.\n"
 "Сила `tauto` полягає в *логіці*. Якщо у вас є гіпотеза `x < 37`\n"
-"і інша гіпотеза `x < 37 → y + z = 42` і ваша мета `y + z = 42` тоді `tauto` "
-"буде\n"
-"вирішити цю мету, тому що для вирішення цієї мети вам не потрібно знати "
+"і інша гіпотеза `x < 37 → y + z = 42` і ваша мета `y + z = 42` тоді `tauto`\n"
+"вирішить цю мету, тому що для вирішення цієї мети вам не потрібно знати "
 "жодних фактів\n"
 "про нерівності чи додавання все, що вам потрібно знати, це правила логіки.\n"
 "\n"
 "## Приклад\n"
 "\n"
-"Якщо у вас є \"False\" як гіпотеза, \"tauto\" вирішить проблему\n"
-"мета. Це тому, що хибна гіпотеза передбачає будь-яку гіпотезу.\n"
+"Якщо у вас є `False` як гіпотеза, `tauto` вирішить\n"
+"мету. Це тому, що хибна гіпотеза передбачає будь-яку гіпотезу.\n"
 "\n"
 "## Приклад\n"
 "\n"
-"Якщо ваша ціль `True`, тоді `tauto` вирішить ціль.\n"
+"Якщо ваша мета `True`, тоді `tauto` вирішить ціль.\n"
 "\n"
 "## Приклад\n"
 "\n"
-"Якщо у вас є дві гіпотези `h1 : a = 37` і `h2 : a ≠ 37`, тоді `tauto` буде\n"
-"розв’яжіть ціль, тому що це може підтвердити «Хибність» ваших гіпотез, і "
-"таким чином\n"
-"довести мету (оскільки `False` означає будь-що).\n"
+"Якщо у вас є дві гіпотези `h1 : a = 37` і `h2 : a ≠ 37`, тоді `tauto`\n"
+"розв’яже ціль, тому що це може підтвердити `False` із вашої гіпотези, і таким "
+"чином\n"
+"доведе мету (оскільки `False` означає будь-що).\n"
 "\n"
 "## Приклад\n"
 "\n"
-"Якщо у вас є одна гіпотеза `h : a ≠ a`, тоді `tauto` вирішить ціль, оскільки\n"
+"Якщо у вас є одна гіпотеза `h : a ≠ a`, тоді `tauto` вирішить мету, оскільки\n"
 "`tauto` достатньо розумний, щоб знати, що `a = a` є істинним, що створює "
 "суперечність, яку ми шукаємо.\n"
 "\n"
 "## Приклад\n"
 "\n"
-"Якщо у вас є гіпотеза `h : 0 = 1`, то `tauto` вирішить ціль, оскільки\n"
+"Якщо у вас є гіпотеза `h : 0 = 1`, то `tauto` вирішить мету, оскільки\n"
 "`tauto` знає `0 ≠ 1`, і цього достатньо, щоб довести `False`, що передбачає "
 "будь-яку мету.\n"
 "\n"
@@ -5303,15 +5267,13 @@ msgstr ""
 "Якщо у вас є гіпотеза у вигляді `a = 0 → a * b = 0` і ваша мета `a * b ≠ 0 → "
 "a ≠ 0`, то\n"
 "`tauto` вирішить мету, оскільки мета логічно еквівалентна гіпотезі.\n"
-"Якщо ви поміняєте ціль і гіпотезу в цьому прикладі, `tauto` також вирішить це."
+"Якщо ви поміняєте мету і гіпотезу в цьому прикладі, `tauto` також вирішить це."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid "`eq_succ_of_ne_zero a` is a proof that `a ≠ 0 → ∃ n, a = succ n`."
 msgstr "`eq_succ_of_ne_zero a` є доказом того, що `a ≠ 0 → ∃ n, a = succ n`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "Multiplication usually makes a number bigger, but multiplication by zero can "
 "make\n"
@@ -5323,22 +5285,20 @@ msgid ""
 "on the right to see what it does."
 msgstr ""
 "Множення зазвичай збільшує число, але множення на нуль може зробити\n"
-"воно менше. Тому багато лем про нерівності та множення потребують\n"
-"гіпотеза `a ≠ 0`. Ось ключова лема, яка дозволяє нам використовувати цю "
+"воно меншим. Тому багато лем про нерівності та множення потребують\n"
+"гіпотези `a ≠ 0`. Ось ключова лема, яка дозволяє нам використовувати цю "
 "гіпотезу.\n"
 "Щоб допомогти нам із доказом, ми можемо використати тактику `tauto`. "
 "Натисніть на назву тактики\n"
-"праворуч, щоб побачити, що він робить."
+"праворуч, щоб побачити, що вона робить."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "Start with `cases a with d` to do a case split on `a = 0` and `a = succ d`."
 msgstr ""
-"Почніть із «cases a with d», щоб розділити регістр на «a = 0» і «a = succ d»."
+"Почніть із `cases a with d`, щоб розділити регістр на `a = 0` і `a = succ d`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "In the \"base case\" we have a hypothesis `ha : 0 ≠ 0`, and you can deduce "
 "anything\n"
@@ -5346,38 +5306,33 @@ msgid ""
 msgstr ""
 "У «базовому випадку» ми маємо гіпотезу `ha : 0 ≠ 0`, і ви можете вивести будь-"
 "що\n"
-"від неправдивої заяви. Тактика «тауто» закриє цей гол."
+"із хибного твердження. Тактика `tauto` закриє цю мету."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "one_le_of_ne_zero"
 msgstr "one_le_of_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`."
 msgstr "`one_le_of_ne_zero a` — це доказ того, що `a ≠ 0 → 1 ≤ a`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "The previous lemma can be used to prove this one."
 msgstr "Попередню лему можна використати для доведення цієї."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "Use the previous lemma with `apply eq_succ_of_ne_zero at ha`."
 msgstr "Використовуйте попередню лему з `apply eq_succ_of_ne_zero at ha`."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
-#, fuzzy
 msgid "Now take apart the existence statement with `cases ha with n hn`."
-msgstr "Тепер розберіть оператор існування з `випадками ha з n hn`."
+msgstr "Тепер розберіть твердження існування за допомогою `cases ha with n hn`."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid "le_mul_right"
 msgstr "le_mul_right"
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "`le_mul_right a b` is a proof that `a * b ≠ 0 → a ≤ a * b`.\n"
 "\n"
@@ -5390,7 +5345,6 @@ msgstr ""
 "має бути не більше цього числа."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "One day this game will have a Prime Number World, with a final boss\n"
 "of proving that $2$ is prime.\n"
@@ -5412,7 +5366,6 @@ msgstr ""
 "`mul_le_mul_right`."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "Here's what I was thinking of:\n"
 "```\n"
@@ -5425,11 +5378,11 @@ msgid ""
 msgstr ""
 "Ось про що я думав:\n"
 "```\n"
-"застосувати mul_left_ne_zero на h\n"
-"застосувати one_le_of_ne_zero в h\n"
-"застосувати mul_le_mul_right 1 b a на h\n"
-"rw [one_mul, mul_comm] о h\n"
-"точний h\n"
+"apply mul_left_ne_zero at h\n"
+"apply one_le_of_ne_zero at h\n"
+"apply mul_le_mul_right 1 b a at h\n"
+"rw [one_mul, mul_comm] at h\n"
+"exact h\n"
 "```"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
@@ -5437,7 +5390,6 @@ msgid "mul_right_eq_one"
 msgstr "mul_right_eq_one"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -5478,8 +5430,8 @@ msgid ""
 msgstr ""
 "# Резюме\n"
 "\n"
-"Тактику «має» можна використовувати для додавання нових гіпотез до рівня, але "
-"звичайно\n"
+"Тактику `have` можна використовувати для додавання нових гіпотез до рівня, "
+"але звичайно\n"
 "ви повинні довести їх.\n"
 "\n"
 "\n"
@@ -5490,8 +5442,8 @@ msgstr ""
 "`have ha : a = 0`\n"
 "\n"
 "тоді ви отримаєте нову ціль `a = 0`, щоб довести, і після того, як ви "
-"доведете\n"
-"якщо ви матимете нову гіпотезу `ha : a = 0` у вашій початковій меті.\n"
+"доведете її\n"
+"ви матимете нову гіпотезу `ha : a = 0` у вашій початковій меті.\n"
 "\n"
 "## Приклад\n"
 "\n"
@@ -5507,19 +5459,17 @@ msgstr ""
 "## Приклад\n"
 "\n"
 "Якщо у вас під рукою є докази, то вам навіть не потрібно вказувати, що ви\n"
-"доводять. Наприклад\n"
+"доводите. Наприклад\n"
 "\n"
 "`є h2 := succ_inj a b`\n"
 "\n"
 "додасть `h2 : succ a = succ b → a = b` як гіпотезу."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "`mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`."
 msgstr "`mul_right_eq_one a b` є доказом того, що `a * b = 1 → a = 1`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "This level proves `x * y = 1 → x = 1`, the multiplicative analogue of "
 "Advanced Addition\n"
@@ -5529,16 +5479,15 @@ msgid ""
 "\n"
 "We'll prove it using a new and very useful tactic called `have`."
 msgstr ""
-"Цей рівень підтверджує `x * y = 1 → x = 1`, мультиплікативний аналог "
+"Цей рівень доводить `x * y = 1 → x = 1`, мультиплікативний аналог Світу "
 "розширеного додавання\n"
-"Світовий `x + y = 0 → x = 0`. Стратегія полягає в тому, щоб довести, що `x ≤ "
-"1`, а потім використати\n"
+"`x + y = 0 → x = 0`. Стратегія полягає в тому, щоб довести, що `x ≤ 1`, а "
+"потім використати\n"
 "лема `le_one` зі світу `≤`.\n"
 "\n"
-"Ми доведемо це за допомогою нової та дуже корисної тактики під назвою «мати»."
+"Ми доведемо це за допомогою нової та дуже корисної тактики під назвою `have`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "We want to use `le_mul_right`, but we need a hypothesis `x * y ≠ 0`\n"
 "which we don't have. Yet. Execute `have h2 : x * y ≠ 0` (you can type `≠` "
@@ -5549,49 +5498,43 @@ msgid ""
 msgstr ""
 "Ми хочемо використовувати `le_mul_right`, але нам потрібна гіпотеза `x * y ≠ "
 "0`\n"
-"яких у нас немає. ще. Виконайте `have h2 : x * y ≠ 0` (ви можете ввести `≠` "
-"разом з `\\ne`).\n"
+"якої у нас ще немає. Виконайте `have h2 : x * y ≠ 0` (ви можете ввести `≠` як "
+"`\\ne`).\n"
 "Вас попросять\n"
 "доведіть це, і тоді у вас буде нова гіпотеза, яку ви зможете застосувати\n"
-"`le_mul_right` до."
+"до `le_mul_right`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid "Now you can `apply le_mul_right at h2`."
 msgstr "Тепер ви можете `apply le_mul_right at h2`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "Now `rw [«{h}»] at «{h2}»` so you can `apply le_one at «{h2}»`."
-msgstr ""
-"Тепер `rw [«{h}»] у «{h2}»», щоб ви могли `застосувати le_one у «{h2}»`."
+msgstr "Тепер `rw [«{h}»] у «{h2}»», щоб ви могли `apply le_one at «{h2}»`."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "Now `cases h2 with h0 h1` and deal with the two\n"
 "cases separately."
 msgstr ""
-"Тепер `випадки h2 з h0 h1` і розберемося з двома\n"
-"справи окремо."
+"Тепер `cases h2 with h0 h1` і розберемося з двома\n"
+"випадками окремо."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "`tauto` is good enough to solve this goal."
-msgstr "`tauto` достатньо хороший для вирішення цієї мети."
+msgstr "`tauto` достатньо хорош для вирішення цієї мети."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "mul_ne_zero"
 msgstr "mul_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid ""
 "`mul_ne_zero a b` is a proof that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`."
 msgstr ""
 "`mul_ne_zero a b` є доказом того, що якщо `a ≠ 0` і `b ≠ 0`, то `a * b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid ""
 "This level proves that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. One strategy\n"
 "is to write both `a` and `b` as `succ` of something, deduce that `a * b` is\n"
@@ -5599,11 +5542,11 @@ msgid ""
 msgstr ""
 "Цей рівень доводить, що якщо `a ≠ 0` і `b ≠ 0`, то `a * b ≠ 0`. Одна "
 "стратегія\n"
-"це писати як `a`, так і `b` як `succ` чогось, зробити висновок, що `a * b` є\n"
+"це записати як `a`, так і `b` як `succ` чогось, зробити висновок, що `a * b` "
+"є\n"
 "також `succ` чогось, а потім `apply zero_ne_succ`."
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
-#, fuzzy
 msgid "Start with `apply eq_succ_of_ne_zero at ha` and `... at hb`"
 msgstr "Почніть із `apply eq_succ_of_ne_zero at ha` і `... at hb`"
 
@@ -5612,37 +5555,32 @@ msgid "mul_eq_zero"
 msgstr "mul_eq_zero"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "`mul_eq_zero a b` is a proof that if `a * b = 0` then `a = 0` or `b = 0`."
 msgstr ""
 "`mul_eq_zero a b` є доказом того, що якщо `a * b = 0`, то `a = 0` або `b = 0`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "This level proves that if `a * b = 0` then `a = 0` or `b = 0`. It is\n"
 "logically equivalent to the last level, so there is a very short proof."
 msgstr ""
-"Цей рівень доводить, що якщо `a * b = 0`, то `a = 0` або `b = 0`. Це так\n"
-"логічно еквівалентний останньому рівню, тому є дуже короткий доказ."
+"Цей рівень доводить, що якщо `a * b = 0`, то `a = 0` або `b = 0`. Це\n"
+"логічно еквівалентно попередньому рівню, тому дуже короткий доказ."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid "Start with `have h2 := mul_ne_zero a b`."
 msgstr "Почніть із `have h2 := mul_ne_zero a b`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "Now the goal can be deduced from `h2` by pure logic, so use the `tauto`\n"
 "tactic."
 msgstr ""
-"Тепер гол можна вивести з `h2` чистою логікою, тому використовуйте `tauto`\n"
-"тактика."
+"Тепер мету можна вивести з `h2` чистою логікою, тому використовуйте тактику\n"
+"`tauto`."
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
-#, fuzzy
 msgid ""
 "Here's the short proof:\n"
 "```\n"
@@ -5654,7 +5592,7 @@ msgid ""
 msgstr ""
 "Ось короткий доказ:\n"
 "```\n"
-"мають h2 := mul_ne_zero a b\n"
+"have h2 := mul_ne_zero a b\n"
 "tauto\n"
 "```\n"
 "Це працює, тому що, враховуючи `mul_ne_zero a b`,\n"
@@ -5665,7 +5603,6 @@ msgid "mul_left_cancel"
 msgstr "mul_left_cancel"
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "`mul_left_cancel a b c` is a proof that if `a ≠ 0` and `a * b = a * c` then "
 "`b = c`."
@@ -5674,7 +5611,6 @@ msgstr ""
 "`b = c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "In this level we prove that if `a * b = a * c` and `a ≠ 0` then `b = c`. It "
 "is tricky, for\n"
@@ -5695,15 +5631,16 @@ msgid ""
 "because we now have the flexibility to change `c`."
 msgstr ""
 "На цьому рівні ми доведемо, що якщо `a * b = a * c` і `a ≠ 0`, то `b = c`. Це "
-"складно, для\n"
-"кілька причин. Одна з них така\n"
+"складно, через\n"
+"кілька причин. Одна з них це що\n"
 "нам потрібно представити нову ідею: нам потрібно буде зрозуміти концепцію\n"
 "математична індукція трохи краще.\n"
 "\n"
-"Починати з `індукції b з d hd` надто наївно, тому що в індуктивному кроці\n"
+"Починати з `induction b with d hd` надто наївно, тому що в індуктивному "
+"кроці\n"
 "гіпотеза `a * d = a * c → d = c`, але те, що ми знаємо, це `a * succ d = a * "
 "c`,\n"
-"тому індукційна гіпотеза не діє!\n"
+"тому індуктивна гіпотеза не діє!\n"
 "\n"
 "Припустимо, що `a ≠ 0` фіксовано. Справжнє твердження, яке ми хочемо довести "
 "індукцією по `b`, таке\n"
@@ -5712,12 +5649,10 @@ msgstr ""
 "тому що ми тепер маємо можливість змінити `c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "The way to start this proof is `induction b with d hd generalizing c`."
-msgstr "Спосіб розпочати це доведення – `індукція b з d hd, що узагальнює c`."
+msgstr "Спосіб розпочати це доведення – `induction b with d hd generalizing c`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "Use `mul_eq_zero` and remember that `tauto` will solve a goal\n"
 "if there are hypotheses `a = 0` and `a ≠ 0`."
@@ -5726,7 +5661,6 @@ msgstr ""
 "якщо є гіпотези `a = 0` і `a ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * "
 "c → d = c`\".\n"
@@ -5734,20 +5668,17 @@ msgid ""
 msgstr ""
 "Індуктивна гіпотеза `hd` така: «Для всіх натуральних чисел `c`, `a * d = a * "
 "c → d = c`».\n"
-"Ви можете `застосувати` його `до` будь-якої гіпотези у вигляді `a * d = a * ?"
-"`."
+"Ви можете `apply` її `at` будь-якої гіпотези у вигляді `a * d = a * ?`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid "Split into cases `c = 0` and `c = succ e` with `cases c with e`."
-msgstr "Розділити на випадки \"c = 0\" і \"c = succ e\" з \"cases c with e\"."
+msgstr "Розділити на випадки `c = 0` і `c = succ e` з `cases c with e`."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid "mul_right_eq_self"
 msgstr "mul_right_eq_self"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid ""
 "`mul_right_eq_self a b` is a proof that if `a ≠ 0` and `a * b = a` then `b = "
 "1`."
@@ -5756,7 +5687,6 @@ msgstr ""
 "= 1`."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid ""
 "The lemma proved in the final level of this world will be helpful\n"
 "in Divisibility World."
@@ -5765,17 +5695,15 @@ msgstr ""
 "у світі подільності."
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid "Reduce to the previous lemma with `nth_rewrite 2 [← mul_one a] at h`"
 msgstr ""
-"Зведіть до попередньої леми за допомогою `nth_rewrite 2 [← mul_one a] в h`"
+"Зведіть до попередньої леми за допомогою `nth_rewrite 2 [← mul_one a] at h`"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid "You can now `apply mul_left_cancel at h`"
 msgstr "Тепер ви можете виконати `apply mul_left_cancel at h`"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
-#, fuzzy
 msgid ""
 "A two-line proof is\n"
 "\n"
@@ -5787,11 +5715,11 @@ msgid ""
 "We now have all the tools necessary to set up the basic theory of "
 "divisibility of naturals."
 msgstr ""
-"Дворядковий доказ є\n"
+"Дворядковий доказ\n"
 "\n"
 "```\n"
-"nth_rewrite 2 [← mul_one a] в h\n"
-"точне mul_left_cancel a b 1 ha h\n"
+"nth_rewrite 2 [← mul_one a] at h\n"
+"exact mul_left_cancel a b 1 ha h\n"
 "```\n"
 "\n"
 "Тепер у нас є всі інструменти, необхідні для створення базової теорії "
