@@ -35,5 +35,5 @@ Statement dvd_trans
 
 Conclusion
 "
-  Congratulations!
+  Congratulations, you have now proven that division is transitive!
 "
