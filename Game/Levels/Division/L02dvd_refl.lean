@@ -27,6 +27,5 @@ Statement dvd_refl
 
 Conclusion
 "
-  Well Done, this was the first step in proving that `∣` is a partial order. We
-  will prove the other properties in the next few levels.
+  Well Done, you have now proven that n|n , the next step is to prove that n|0.
 "
