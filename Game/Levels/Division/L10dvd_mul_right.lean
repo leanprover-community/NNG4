@@ -31,5 +31,5 @@ Statement dvd_mul_right
 
 Conclusion
 "
-  Congratulations!
+  Congratulations, you have completed all the levels in divisibility world!
 "
