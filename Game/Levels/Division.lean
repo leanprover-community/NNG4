@@ -7,7 +7,7 @@ import Game.Levels.Division.L06zero_dvd
 import Game.Levels.Division.L07dvd_ls
 import Game.Levels.Division.L08dvd_antisymm
 import Game.Levels.Division.L09dvd_add
-import Game.Levels.Division.L10dvd_ls
+import Game.Levels.Division.L10dvd_mul_right.lean
 
 
 World "Division"
