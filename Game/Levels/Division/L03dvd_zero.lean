@@ -25,5 +25,5 @@ Statement dvd_zero
 
 Conclusion
 "
-  Congratulations!
+  Well done, you have now proven that n|0 , the next step is proving that if n|1 then n=1.
 "
