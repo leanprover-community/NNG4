@@ -36,3 +36,8 @@ Statement dvd_antisymm
   rw [hm, mul_one] at hn
   exact hn
   exact ha
+
+Conclusion
+"
+  Well done, if you solved this level then you should be fine with the next level!
+"
