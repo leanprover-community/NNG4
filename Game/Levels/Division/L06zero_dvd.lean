@@ -28,5 +28,5 @@ Statement zero_dvd
 
 Conclusion
 "
-  Congratulations! You have proven your first theorem about division.
+  Very well done! .
 "
