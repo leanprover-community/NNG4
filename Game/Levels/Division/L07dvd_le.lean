@@ -19,15 +19,22 @@ Introduction
 /-- `dvd_ls a b` is a proof that if `a | b` and `b != 0 `then `a <= b`.-/
 TheoremDoc MyNat.dvd_le as "dvd_le" in "∣"
 
-Statement dvd_le
+Statement dvd_ls
     (a b : ℕ) (hab : a ∣ b) (hb : b ≠ 0) : a <= b := by
-    cases hab with k
-    rw[h]
+    cases hab with d hd
+    rw[hd]
     apply le_mul_right
-    rw[h] at hb
+    rw[hd] at hb
     exact hb
 
 Conclusion
 "
-  Congratulations!
+My proof:
+```
+  cases hab with d hd
+  rw[hd]
+  apply le_mul_right
+  rw[hd] at hb
+  exact hb
+```
 "
