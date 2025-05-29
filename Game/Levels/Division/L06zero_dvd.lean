@@ -11,10 +11,8 @@ namespace MyNat
 
 Introduction
 "
-  In this level, we will prove that 1 ∣ n for all n ∈ ℕ. `a | b` is
-  shorthand for `there exists a number c such that `b = c * a`, because of
-  `exists`, the use statment will be useful here.
-
+  In this level, we will prove that if 0 ∣ n then n = 0 for all n ∈ ℕ. In other words,
+  the only number 0 can divide is itself.
 "
 /-- `zero_dvd n` is a proof that if `0 ∣ n` then n = 0.-/
 TheoremDoc MyNat.zero_dvd as "zero_dvd" in "∣"
