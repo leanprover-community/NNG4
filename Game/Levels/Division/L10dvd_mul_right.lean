@@ -21,6 +21,7 @@ TheoremDoc MyNat.dvd_mul_right as "dvd_mul_right" in "∣"
 Statement dvd_mul_right
     (a b c : ℕ) (h1 : a ∣ b) : a ∣ b*c := by
   cases h1 with k1 h11
+  Hint "Think of what could be used as a witness here."
   use k1*c
   rw [<- mul_assoc]
   rw [h11]
@@ -31,5 +32,5 @@ Statement dvd_mul_right
 
 Conclusion
 "
-  Congratulations, you have completed all the levels in divisibility world!
+  Kudos on finishing this level!
 "
