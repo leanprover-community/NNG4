@@ -20,10 +20,23 @@ TheoremDoc MyNat.dvd_mul_both as "dvd_mul_both" in "∣"
 
 Statement dvd_mul_both
     (a b c  : ℕ) (h1 : a ∣ b) : ( a*c ∣ b*c ) := by
-    cases h1 with k h11
-    use k
-    rw [h11]
+    cases h1 with d hd
+    use d
+    rw [hd]
     rw [mul_assoc]
-    rw [mul_comm k c]
+    rw [mul_comm d c]
     rw [<- mul_assoc]
     rfl
+
+Conclusion
+"
+My proof:
+```
+ cases h1 with d hd
+    use d
+    rw [hd]
+    rw [mul_assoc,mul_comm d c]
+    rw [<- mul_assoc]
+    rfl
+```
+"
