@@ -24,10 +24,9 @@ Statement dvd_trans
   Hint "Here, like the last level, you may find `cases` helpful."
   cases hbc with m hm
   cases hab with n hn
-  Hint "Now, since we are looking show `a ∣ c`, which is an existience hypothesis, the `use`
-  tactic would be a good choice."
   rw[hn] at hm
-  Hint "Now the goal is clear, its just a case of finding the correct rewrites."
+  Hint "Now, since we are looking to show `a ∣ c`, which is an existience hypothesis, the `use`
+  tactic would be a good choice."
   use (n * m)
   rw [← mul_assoc]
   exact hm
