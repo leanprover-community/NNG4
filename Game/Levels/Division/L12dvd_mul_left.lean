@@ -26,3 +26,48 @@ Statement dvd_mul_left
   rw [h11]
   rw [mul_comm]
   rfl
+
+/-- import Game.Levels.Multiplication
+import Game.Levels.AdvMultiplication
+import Game.MyNat.Division
+import Game.MyNat.PeanoAxioms
+
+World "Division"
+Level 12
+Title ""
+
+TheoremTab "∣"
+
+namespace MyNat
+
+Introduction
+"
+  In this level, we will prove that if a | b  and a ≠ b then ¬ (b ∣ a) for all a,b ∈ ℕ.
+"
+/-- `dvd_not_eq a b c` is a proof that if `a | b` and `a ≠ b` then `¬ (b ∣ a)` .-/
+TheoremDoc MyNat.dvd_not_eq as "dvd_not_eq" in "∣"
+
+Statement dvd_not_eq
+    (a b : ℕ) (h1 : a ∣ b)(h2 : a ≠  b) : ¬ (b ∣ a) := by
+  intro h
+  cases h1 with k hk     -- b = a * k
+  cases h with m hm      -- a = b * m
+  rw [hk] at hm          -- a = (a * k) * m
+  rw [mul_assoc] at hm   -- a = a * (k * m)
+  symm at hm             -- a * (k * m) = a
+  by_cases ha : a = 0
+  · -- case: a = 0
+    rw [ha, zero_mul] at hm
+    rw [ha] at hk
+    rw [zero_mul] at hk
+    rw [hk] at h2
+    contradiction        -- contradiction: a = b
+  · -- case: a ≠ 0
+    apply mul_right_eq_self a (k * m) at hm
+    apply mul_right_eq_one at hm
+    rw[hm] at hk
+    rw[mul_one] at hk
+    symm at h2
+    contradiction
+    exact ha
+--/
