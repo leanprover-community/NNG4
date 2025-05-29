@@ -13,7 +13,7 @@ Introduction
 "
   In this level, we will prove that n ∣ n for any natural number n.
   In other words, 'divides' is a reflexive relation on the natural
-  numebrs.
+  numbers. Hint try "use 1".
 
 "
 /-- `dvd_refl x` is a proof that `x ∣ x`.-/
@@ -27,5 +27,5 @@ Statement dvd_refl
 
 Conclusion
 "
-  Well Done, you have now proven that n|n , the next step is to prove that n|0.
+  Well Done, you have now proven that division is a reflexive relation, the next step is to prove that n|0.
 "
