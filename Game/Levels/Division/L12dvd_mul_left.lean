@@ -49,7 +49,7 @@ TheoremDoc MyNat.dvd_not_eq as "dvd_not_eq" in "∣"
 
 Statement dvd_not_eq
   (a b : ℕ) (h1 : a ∣ b) (h2 : a ≠ b) : ¬ (b ∣ a) := by
- intro h
+  intro h
   cases h1 with k hk       -- b = a * k
   cases h with m hm        -- a = b * m
   rw [hk] at hm            -- a = (a * k) * m
@@ -65,4 +65,5 @@ Statement dvd_not_eq
   apply mul_right_eq_one at hm
   rw[hm,mul_one] at hk
   tauto
+
 --/
