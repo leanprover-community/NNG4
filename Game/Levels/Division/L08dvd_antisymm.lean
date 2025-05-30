@@ -21,18 +21,20 @@ TheoremDoc MyNat.dvd_antisymm as "dvd_antisymm" in "∣"
 
 Statement dvd_antisymm
     (a b : ℕ) (h1 : a ∣ b) (h2 : b ∣ a): a = b := by
-  cases h1 with m hm        -- b = a * m
-  cases h2 with n hn        -- a = b * n
-  rw [hn] at hm             -- a = (a * m) * n
+  cases h1 with m hm       
+  cases h2 with n hn       
+  rw [hn] at hm             
+  Hint "Try casing on b"
   cases b with b'
-  rw [zero_mul] at hn     -- a = 0
+  rw [zero_mul] at hn     
   rw [hn]
   rfl
-  rw [mul_assoc] at hm    -- a = a * (m * n)
-  symm at hm              -- a * (m * n) = a
+  rw [mul_assoc] at hm    
+  symm at hm              
+  Hint "Think of what hypothesis can be introduced here that could help solve this step."
   have ha : succ b' ≠ 0 := succ_ne_zero b'
-  apply mul_right_eq_self at hm    -- concludes m * n = 1
-  apply mul_right_eq_one at hm           -- from m * n = 1 → m = 1 ∧ n = 1
+  apply mul_right_eq_self at hm   
+  apply mul_right_eq_one at hm          
   rw [hm, mul_one] at hn
   exact hn
   exact ha
