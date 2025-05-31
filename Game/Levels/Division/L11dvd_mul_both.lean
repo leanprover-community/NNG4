@@ -5,7 +5,7 @@ import Game.MyNat.PeanoAxioms
 
 World "Division"
 Level 11
-Title ""
+Title "dvd_mul_both"
 
 TheoremTab "∣"
 
