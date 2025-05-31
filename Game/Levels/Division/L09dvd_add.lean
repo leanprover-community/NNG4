@@ -11,7 +11,7 @@ namespace MyNat
 
 Introduction
 "
- We will prove that if d ∣ a , and d ∣ b, then we know that d ∣ a + b.
+ In this level , we will prove that if d ∣ a , and d ∣ b, then we know that d ∣ a + b for all  d,a,b ∈ ℕ.
 "
 
 /-- div_add_right d a b ` is a proof that `d ∣ a ∧ d ∣ b` then ` d ∣ a + b`.-/
@@ -27,3 +27,8 @@ Statement dvd_add_right
   rw[hn,hm]
   rw[mul_add]
   rfl
+
+Conclusion
+"
+  Congratulations!
+"
