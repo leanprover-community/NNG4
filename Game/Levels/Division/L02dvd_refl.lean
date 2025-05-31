@@ -13,7 +13,7 @@ Introduction
 "
   In this level, we will prove that n ∣ n for any natural number n.
   In other words, 'divides' is a reflexive relation on the natural
-  numbers. Hint try "use 1".
+  numbers. Hint try `use 1`.
 
 "
 /-- `dvd_refl x` is a proof that `x ∣ x`.-/
