@@ -30,5 +30,12 @@ Statement dvd_not_eq
 
 Conclusion
 "
+My proof:
+```
+  intro h
+  apply h2
+  exact dvd_antisymm a b h1 h
+```
   Congratulations, you have completed all the levels in divisibility world!
+
 "
