@@ -6,7 +6,7 @@ import Game.MyNat.PeanoAxioms
 
 World "Division"
 Level 12
-Title ""
+Title "dvd_not_eq"
 
 TheoremTab "∣"
 
