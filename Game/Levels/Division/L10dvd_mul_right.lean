@@ -5,7 +5,7 @@ import Game.MyNat.PeanoAxioms
 
 World "Division"
 Level 10
-Title ""
+Title "dvd_mul_right"
 
 TheoremTab "∣"
 
@@ -26,9 +26,6 @@ Statement dvd_mul_right
   rw [<- mul_assoc]
   rw [h11]
   rfl
-
-
-
 
 Conclusion
 "
