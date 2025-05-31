@@ -33,10 +33,10 @@ Conclusion
 My proof:
 ```
  cases h1 with d hd
-    use d
-    rw [hd]
-    rw [mul_assoc,mul_comm d c]
-    rw [<- mul_assoc]
-    rfl
+ use d
+ rw [hd]
+ rw [mul_assoc,mul_comm d c]
+ rw [<- mul_assoc]
+ rfl
 ```
 "
