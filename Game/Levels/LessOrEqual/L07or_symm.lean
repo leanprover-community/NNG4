@@ -47,7 +47,7 @@ But we haven't talked about `or` at all. Here's a run-through.
 1) The notation for \"or\" is `∨`. You won't need to type it, but you can
 type it with `\\or`.
 
-2) If you have an \"or\" statement in the *goal*, then two tactics made
+2) If you have an \"or\" statement in the *goal*, then two tactics make
 progress: `left` and `right`. But don't choose a direction unless your
 hypotheses guarantee that it's the correct one.
 
