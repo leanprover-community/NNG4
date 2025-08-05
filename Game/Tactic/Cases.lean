@@ -29,9 +29,9 @@ Usage: `cases n with d` if `n : ℕ`; `cases h with h1 h2` if `h : P ∨ Q`; `ca
 
 *(This implementation mimics the `cases'` from mathlib. The actual `cases` tactic in mathlib has a more complex syntax)*
 -/
-elab (name := cases) "cases " tgts:(Parser.Tactic.casesTarget,+) usingArg:((" using " ident)?)
-    withArg:((" with" (ppSpace colGt binderIdent)+)?) : tactic => do
-  let (targets, toTag) ← elabCasesTargets tgts.1.getSepArgs
+elab (name := cases) "cases " tgts:(Parser.Tactic.elimTarget,+) usingArg:((" using " ident)?)
+  withArg:((" with" (ppSpace colGt binderIdent)+)?) : tactic => do
+  let (targets, toTag) ← elabElimTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := false)

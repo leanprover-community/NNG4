@@ -6,13 +6,18 @@ def leanVersion : String := s!"v{Lean.versionString}"
 
 def LocalGameServer : Dependency := {
   name := `GameServer
-  src := Source.path "../lean4game/server"
+  scope := "hhu-adam"
+  src? := DependencySrc.path "../lean4game/server"
+  version? := none
+  opts := ∅
 }
 
 def RemoteGameServer : Dependency := {
   name := `GameServer
-  -- TODO: change back to stable version
-  src := Source.git "https://github.com/leanprover-community/lean4game.git" leanVersion "server"
+  scope := "hhu-adam"
+  src? := DependencySrc.git "https://github.com/leanprover-community/lean4game.git" leanVersion "server"
+  version? := s!"git#{leanVersion}"
+  opts := ∅
 }
 
 /- Choose GameServer dependency depending on the environment variable `LEAN4GAME`. -/
@@ -33,7 +38,7 @@ you can use `require mathlib from git "[URL]" @ leanVersion`
 
 
 
-require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ leanVersion
+require "leanprover-community" / mathlib @ s!"git#{leanVersion}"
 
 
 
@@ -46,10 +51,12 @@ package Game where
   moreLeanArgs := #[
     "-Dtactic.hygienic=false",
     "-Dlinter.unusedVariables.funArgs=false",
+    "-Dweak.linter.unusedTactic=false",
     "-Dtrace.debug=false"]
   moreServerOptions := #[
     ⟨`tactic.hygienic, false⟩,
     ⟨`linter.unusedVariables.funArgs, true⟩,
+    ⟨`weak.linter.unusedTactic, false⟩,
     ⟨`trace.debug, true⟩]
   weakLeanArgs := #[]
 
