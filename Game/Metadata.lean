@@ -1,4 +1,4 @@
-import GameServer.Commands
+import GameServer
 
 import Game.MyNat.Definition
 
