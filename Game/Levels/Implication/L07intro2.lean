@@ -12,7 +12,7 @@ Try this one by yourself; if you need help then click on \"Show more help!\".
 "
 
 /-- $x+1=y+1 \implies x=y$. -/
-Statement (x : ℕ) : x + 1 = y + 1 → x = y := by
+Statement (x y : ℕ) : x + 1 = y + 1 → x = y := by
   Hint (hidden := true) "Start with `intro h` to assume the hypothesis."
   intro h
   Hint (hidden := true) "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to
