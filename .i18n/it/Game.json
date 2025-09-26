@@ -334,7 +334,7 @@
  "Scrivi `rw [← one_eq_succ_zero]` per trasformare `succ 0` in `1`.",
  "Try `rw [add_zero c]`.": "Esegui `rw [add_zero c]`.",
  "Try `cases «{hd}» with h1 h2`.": "Prova `cases «{hd}» with h1 h2`.",
- "Totality of `≤` is the boss level of this world, and it's coming up next. It says that\nif `a` and `b` are naturals then either `a ≤ b` or `b ≤ a`.\nBut we haven't talked about `or` at all. Here's a run-through.\n\n1) The notation for \"or\" is `∨`. You won't need to type it, but you can\ntype it with `\\or`.\n\n2) If you have an \"or\" statement in the *goal*, then two tactics made\nprogress: `left` and `right`. But don't choose a direction unless your\nhypotheses guarantee that it's the correct one.\n\n3) If you have an \"or\" statement as a *hypothesis* `h`, then\n`cases h with h1 h2` will create two goals, one where you went left,\nand the other where you went right.":
+ "Totality of `≤` is the boss level of this world, and it's coming up next. It says that\nif `a` and `b` are naturals then either `a ≤ b` or `b ≤ a`.\nBut we haven't talked about `or` at all. Here's a run-through.\n\n1) The notation for \"or\" is `∨`. You won't need to type it, but you can\ntype it with `\\or`.\n\n2) If you have an \"or\" statement in the *goal*, then two tactics make\nprogress: `left` and `right`. But don't choose a direction unless your\nhypotheses guarantee that it's the correct one.\n\n3) If you have an \"or\" statement as a *hypothesis* `h`, then\n`cases h with h1 h2` will create two goals, one where you went left,\nand the other where you went right.":
  "La totalità di `≤` è il livello boss di questo mondo, ed è il prossimo livello. Essa afferma che\nse `a` e `b` sono due numeri naturali allora `a ≤ b` or `b ≤ a`.\nMa non abbiamo mai parlato di `or` (o, oppure). In breve:\n\n1) La notazione per \"or\" è `∨`. Non avrai bisogno di digitarlo, ma puoi ottenere quel simbolo\ndigitando `\\or`.\n\n2) Se hai un enunciato \"or\" nel *goal*, due tattiche ti consentono di fare progresso:\n`left` e `right`. Ma non avere mai fretta di prendere una direzione o l'altra \nse le tue ipotesi non ti garantiscono che stai scegliendo la direzione giusta.\n\n3) Se hai un enunciato \"or\" come *ipotesi* `h`, allora\n`cases h with h1 h2` creerà due goal, in uno devi dimostrare il lato sinistro,\ne nel secondo devi dimostrare il lato destro.",
  "To solve this level, you need to `use` a number `c` such that `x = 0 + c`.":
  "Per risolvere questo livello, dovrai chiamare `use` su un numero `c` tale che `x = 0 + c`.",
@@ -344,8 +344,6 @@
  "Questo mondo è casa dell'elevamento a potenza. Come al solito, per definire `37 ^ n`,\ndobbiamo stabilire cosa significa `37 ^ 0`, e poi\ncosa significa `37 ^ (succ d)` data la conoscenza `37 ^ d`.\n\nQuesti due assiomi, il cui nome allude al nome dell'operazione in inglese (\"power\"), sono:\n\n  * `pow_zero (a : ℕ) : a ^ 0 = 1`\n  * `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`\n\nRiuscirai a battere il livello boss usando solo questi due?\n\nQuesto mondo è stato progettato da Sian Carey, studente UROP\nal Imperial College London, finanziato dalla Mary Lister McCammon Fellowship\nnell'estate 2019. Grazie a Sian e grazie a Imperial\nCollege per averla sostenuta economicamente.",
  "This time, use the `left` tactic.":
  "Questa volta, puoi usare tattica `left`.",
- "This state is not provable! Did you maybe use `rw [add_left_eq_self] at h`\ninstead of `apply [add_left_eq_self] at h`? You can complare the two in the inventory.":
- "Questo stato non è dimostrabile! Per caso hai usato `rw [add_left_eq_self] at h`\nanziché `apply [add_left_eq_self] at h`? Puoi confrontare il loro effetto nell'inventario.",
  "This level proves that if `a ≠ 0` and `b ≠ 0` then `a * b ≠ 0`. One strategy\nis to write both `a` and `b` as `succ` of something, deduce that `a * b` is\nalso `succ` of something, and then `apply zero_ne_succ`.":
  "Questo livello dimostra che se `a ≠ 0` e `b ≠ 0` allora `a * b ≠ 0`. Una strategia vincente\nè riscrivere sia `a` che `b` come `succ` di qualcosa, dedurre che `a * b` è \nanche lui `succ` di qualcosa, e infine fare `apply zero_ne_succ`.",
  "This level proves that if `a * b = 0` then `a = 0` or `b = 0`. It is\nlogically equivalent to the last level, so there is a very short proof.":
@@ -420,7 +418,7 @@
  "Start by unravelling the `1`.": "Comincia espandendo `1`.",
  "Split into cases `c = 0` and `c = succ e` with `cases c with e`.":
  "Suddividi la dimostrazione nei casi `c = 0` e `c = succ e` con `cases c with e`.",
- "Solve this level in one line with `simp only [add_assoc, add_left_comm, add_comm]`":
+ "Solve this level in one line with `simp only [add_left_comm, add_comm]`":
  "Completa questo livello in un'unica riga con `simp only [add_assoc, add_left_comm, add_comm]`",
  "So that's the algorithm: now let's use automation to perform it\nautomatically.":
  "Questo è l'algoritmo: ora cerchiamo di automatizzarlo con\nl'automazione di Lean.",
@@ -449,7 +447,7 @@
  "Our first challenge is `mul_comm x y : x * y = y * x`,\nand we want to prove it by induction. The zero\ncase will need `mul_zero` (which we have)\nand `zero_mul` (which we don't), so let's\nstart with this.":
  "La prima sfida è dimostrare `mul_comm x y : x * y = y * x`,\ne vogliamo farlo per induzione. Per dimostrare il caso\nbase utilizzeremo `mul_zero` (che abbiamo come assioma)\ne `zero_mul`, che non abbiamo ancora, dunque partiamo\nda quest'ultimo.",
  "One of the best named levels in the game, a savage `pow_pow`\nsub-boss appears as the music reaches a frenzy. What\nelse could there be to prove about powers after this?":
- "Con il suo nome degno di premio Oscar, il mini-boss `pow_pow`\nsalta nel ring e la musica si fa ancora più intensa. Cos'altro c'è da\ndimostrare sulle potenze dopo di lui?!",
+ "Con il suo nome accattivante, il mini-boss `pow_pow`\nsalta nel ring e la musica si fa ancora più intensa. Cos'altro c'è da\ndimostrare sulle potenze dopo di lui?!",
  "One day this game will have a Prime Number World, with a final boss\nof proving that $2$ is prime.\nTo do this, we will have to rule out things like $2 = 37 × 42.$\nWe will do this by proving that any factor of $2$ is at most $2$,\nwhich we will do using this lemma. The proof I have in mind manipulates the hypothesis\nuntil it becomes the goal, using `mul_left_ne_zero`, `one_le_of_ne_zero` and\n`mul_le_mul_right`.":
  "Nel Mondo Numeri Primi dimostreremo che $2$ è primo.\nMa per arrivarci, dobbiamo escludere falsità del tipo $2 ≠ 37 × 42.$\nLo faremo mostrando che ogni fattore di $2$ è al più $2$,\nche avremo gratis grazie a questo lemma. La dimostrazione che ho in mente io manipola l'ipotesi finché\nnon diventa il goal, usando praticamente tutto ciò che abbiamo dimostrato in questo mondo finora.",
  "On the set of natural numbers, addition is commutative.\nIn other words, if `a` and `b` are arbitrary natural numbers, then\n$a + b = b + a$.":
@@ -564,8 +562,6 @@
  "Hai vinto tutto! Hai dimostrato un teorema che ha tormentato\nintere generazioni di alunni (alcuni credono che $(a+b)^2=a^2+b^2$:\nil cosiddetto \"freshman's dream\").\n\nQuante sostituzioni hai fatto? Io ci sono riuscito in 12.\n\nIn guardia! Il boss si agita...si sta trasformando nella sua seconda forma ancora più letale!",
  "It's \"intuitively obvious\" that there are no numbers less than zero,\nbut to prove it you will need a result which you showed in advanced\naddition world.":
  "È \"intuitivamente ovvio\" che non esistono numeri naturali minori di zero,\nma per dimostrarlo dovrai ricorrere a un risultato che abbiamo dimostrato nel mondo\nAddizione Avanzata.",
- "Induction on `a` will not work here. You are still stuck with an `+ b`.\nI suggest you delete this line and try a different approach.":
- "Fare induzione su `a` non aiuta: rimarrai bloccato con `+ b`.\nCancella la linea e tenta un altro approccio.",
  "Induction on `a` or `b` -- it's all the same in this one.":
  "Induzione su `a` o su `b` -- vanno entrambe bene qua.",
  "Induction on `a` is the most troublesome, then `b`,\nand `c` is the easiest.":
