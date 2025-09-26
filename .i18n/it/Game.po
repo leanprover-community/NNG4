@@ -322,7 +322,6 @@ msgid "the rw tactic"
 msgstr "la tattica rw"
 
 #: Game.Levels.LessOrEqual.L01le_refl
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -344,17 +343,23 @@ msgid ""
 msgstr ""
 "## Descrizione\n"
 "\n"
-"La tattica `use` permette di avanzare su goal che postulano l'*esistenza* di "
+"La tattica `use` permette di avanzare su dei goal che postulano l'*esistenza* di "
 "qualcosa.\n"
-"Se il goal afferma che esiste una certa `x`con qualche proprietà, e sei "
+"Se il goal afferma che esiste una certa `x` con qualche proprietà, e sei "
 "sicuro\n"
-"che `x = 37` la soddisfi, allora con `use 37` farai progresso nella "
+"che `x = 37` sia una soluzione, allora con `use 37` farai progresso nella "
 "dimostrazione.\n"
 "\n"
-"Dato che `a ≤ b` è notazione per \\\"there exists `c` such that `b = a + c`\\"
+"Dato che `a ≤ b` è notazione per \\\"esiste `c` tale che `b = a + c`\\"
 "\",\n"
-"puoi fare progresso su goal della forma `a ≤ b` passando a `use`\n"
-"quel numero che corrisponde a `b - a`, la distanza tra `a` e `b`."
+"puoi fare progresso sui goal della forma `a ≤ b` passando a `use`\n"
+"quel numero che corrisponde a `b - a`, quindi `use b - a`.\n"
+"\n"
+"Seguono alcuni esempi di utilizzo di `use`:\n"
+"\n"
+"- `use 37`\n"
+"- `use a`\n"
+"- `use a * a + 1`"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "mul_ne_zero"
@@ -428,9 +433,8 @@ msgstr ""
 "Questo ulteriore vincolo ha dei risvolti inaspettati."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid "Now `rw [«{h}»] at «{h2}»` so you can `apply le_one at «{h2}»`."
-msgstr "Adesso `rw [h] at h2` così puoi fare `apply le_one at hx`."
+msgstr "Adesso esegui `rw [h] at h2` così puoi fare `apply le_one at hx`."
 
 #: Game.Levels.Power.L01zero_pow_zero
 msgid "zero_pow_zero"
@@ -541,7 +545,6 @@ msgstr ""
 "Mondo Potenza."
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
-#, fuzzy
 msgid ""
 "One day this game will have a Prime Number World, with a final boss\n"
 "of proving that $2$ is prime.\n"
@@ -553,13 +556,15 @@ msgid ""
 "and\n"
 "`mul_le_mul_right`."
 msgstr ""
-"Nel Mondo Numeri Primi dimostreremo che $2$ è primo.\n"
+"Un giorno questo gioco avrà il Mondo Numeri Primi, il cui boss finale\n"
+"sarà dimostrare che $2$ è un numero primo.\n"
 "Ma per arrivarci, dobbiamo escludere falsità del tipo $2 ≠ 37 × 42.$\n"
-"Lo faremo mostrando che ogni fattore di $2$ è al più $2$,\n"
+"Lo faremo dimostrando che ogni fattore di $2$ è al più $2$,\n"
 "che avremo gratis grazie a questo lemma. La dimostrazione che ho in mente io "
 "manipola l'ipotesi finché\n"
-"non diventa il goal, usando praticamente tutto ciò che abbiamo dimostrato in "
-"questo mondo finora."
+"non ha la forma del goal, usando `mul_left_ne_zero`, `one_le_of_ne_zero` "
+"e\n"
+"`mul_le_mul_right`."
 
 #: Game.Levels.Power.L01zero_pow_zero
 msgid ""
@@ -778,14 +783,13 @@ msgstr ""
 "$$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$"
 
 #: Game.Levels.Algorithm.L09decide2
-#, fuzzy
 msgid ""
 "Congratulations! You've finished Algorithm World. These algorithms\n"
 "will be helpful for you in Even-Odd World (when someone gets around to\n"
 "implementing it)."
 msgstr ""
 "Congratulazioni! Hai finito il Mondo Algoritmi. Questi algoritmi\n"
-"ti saranno sicuramente utili per il Mondo Pari-Dispari."
+"ti saranno sicuramente utili per il Mondo Pari-Dispari (quando qualcuno lo aggiungerà al gioco)."
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
 msgid ""
@@ -937,7 +941,6 @@ msgid "If $x$ is a number, then $0 \\le x$."
 msgstr "Se $x$ è un numero, allora $0 \\le x$."
 
 #: Game.Levels.LessOrEqual.L07or_symm
-#, fuzzy
 msgid ""
 "Totality of `≤` is the boss level of this world, and it's coming up next. It "
 "says that\n"
@@ -1104,7 +1107,6 @@ msgid "x ≤ y and y ≤ x implies x = y"
 msgstr "x ≤ y e y ≤ x implica x = y"
 
 #: Game.Levels.Power.L08pow_pow
-#, fuzzy
 msgid ""
 "One of the best named levels in the game, a savage `pow_pow`\n"
 "sub-boss appears as the music reaches a frenzy. What\n"
@@ -1146,7 +1148,6 @@ msgstr ""
 "at h`."
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "Multiplication usually makes a number bigger, but multiplication by zero can "
 "make\n"
@@ -1157,15 +1158,15 @@ msgid ""
 "tactic's name\n"
 "on the right to see what it does."
 msgstr ""
-"La moltiplicazione di norma fa crescere un numero, ma moltiplicare per zero "
+"La moltiplicazione normalmente fa crescere un numero, ma moltiplicare per zero "
 "lo rende\n"
 "più piccolo, o meglio, lo azzera. Ecco perché gran parte dei teoremi che "
-"mischiano le disuguaglianze con la moltiplicazione hanno\n"
+"mischiano le disuguaglianze con la moltiplicazione necessitano\n"
 "l'ipotesi `a ≠ 0`. Questo livello è un lemma chiave che ci permette di "
 "mettere a frutto questa ipotesi.\n"
 "Per aiutarci nella dimostrazione, possiamo usare la tattica `tauto`. Clicca "
 "sul nome della tattica\n"
-"sulla destra per una descrizione dettagliata su cosa fa."
+"sulla destra per una descrizione dettagliata di cosa fa."
 
 #: Game.Levels.Multiplication
 msgid "Multiplication World"
@@ -1403,7 +1404,6 @@ msgid "`add_succ a b` is the proof of `a + succ b = succ (a + b)`."
 msgstr "`add_succ a b` è la dimostrazione di `a + succ b = succ (a + b)`."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "In this level we prove that if `a * b = a * c` and `a ≠ 0` then `b = c`. It "
 "is tricky, for\n"
@@ -1423,7 +1423,7 @@ msgid ""
 "induction,\n"
 "because we now have the flexibility to change `c`."
 msgstr ""
-"In questo livello dimostriamo se `a * b = a * c` e `a ≠ 0` allora `b = c`. È "
+"In questo livello dimostriamo che se `a * b = a * c` e `a ≠ 0` allora `b = c`. È "
 "un pò complicato, per\n"
 "diverse ragioni. Una di queste è che\n"
 "abbiamo bisogno di introdurre una nuova idea, approfondendo la nozione di\n"
@@ -1995,7 +1995,6 @@ msgid "Start with `apply eq_succ_of_ne_zero at ha` and `... at hb`"
 msgstr "Inizia con `apply eq_succ_of_ne_zero at ha` e `... at hb`"
 
 #: Game
-#, fuzzy
 msgid ""
 "*Game version: 4.3*\n"
 "\n"
@@ -2048,15 +2047,15 @@ msgid ""
 msgstr ""
 "*Versione del gioco: 4.2*\n"
 "\n"
-"*Aggiunti di recente: Mondo Disequazioni, Mondo Algoritmi*\n"
+"*Aggiunti di recente: rimozione di bug*\n"
 "\n"
 "## Salvataggio del gioco\n"
 "\n"
 "Il gioco salva il tuo progresso nella memoria locale del browser.\n"
-"Se cancelli la memoria, perderai anche i dati del gioco! (le tue preziose "
+"Se svuoti la memoria del browser, perderai anche i dati del gioco! (le tue preziose "
 "dimostrazioni!)\n"
 "\n"
-"Attenzione: nella maggior parte dei browser, cancellare i cookies cancella "
+"Attenzione: nella maggior parte dei browser, eliminando i cookies si elimina "
 "anche la memoria di un sito\n"
 "(o \"i dati locali del sito\"). In ogni caso, assicurati di esportare il tuo "
 "progresso del gioco!\n"
@@ -2353,14 +2352,13 @@ msgid "If $x$ and $q$ are arbitrary natural numbers, then $37x+q=37x+q.$"
 msgstr "Se $x$ e $q$ sono numeri naturali qualsiasi, allora $37x+q=37x+q.$"
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * "
 "c → d = c`\".\n"
 "You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
 msgstr ""
-"L'ipotesi induttiva `hd` è \"Per tutti i numeri naturali `c`, `a * d = a * c "
-"→ d = c`\".\n"
+"L'ipotesi induttiva `hd` è \"Per tutti i numeri naturali `c`, `a * d = a * "
+"c → d = c`\".\n"
 "Puoi sfruttarla con `apply` e `at` su un'ipotesi della forma `a * d = a * ?`."
 
 #: Game.Levels.Tutorial.L04rw_backwards
@@ -2559,7 +2557,6 @@ msgstr ""
 "nel goal."
 
 #: Game.Levels.Tutorial.L02rw
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -2897,7 +2894,6 @@ msgid "succ_inj : the successor function is injective"
 msgstr "succ_inj : la funzione successore è iniettiva"
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -2961,9 +2957,24 @@ msgid ""
 msgstr ""
 "# Descrizione\n"
 "\n"
-"La tattica `tauto` risolverà qualsiasi goal che può essere tramite puro "
+"La tattica `tauto` risolverà qualsiasi goal che può essere risolto tramite puro "
 "ragionamento logico (ossia, tramite le\n"
-"tavole di verità).\n"
+"tabelle di verità).\n"
+"\n"
+"## Details\n"
+"\n"
+"`tauto` *non fa magie*! Non sa *nulla* riguardo l'addizione o "
+"la moltiplicazione,\n"
+"non conosce nemmeno `add_zero`. Le uniche cose che `tauto` conosce "
+"sui numberi\n"
+"sono innanzitutto `a = a`, poi `0 ≠ 1`, `0 ≠ 2`, `1 ≠ 2` e così "
+"via.\n"
+"Ciò in cui `tauto` eccelle è la *logica*. Se hai un'ipotesi `x < 37`\n"
+"e un'altra ipotesi `x < 37 → y + z = 42` e il tuo goal è `y + z = 42` "
+"allora `tauto` \n"
+"lo potrà risolvere, perché la dimostrazione di tale goal non richiede alcuna nozione matematica "
+"sulle\n"
+"disuguaglianze o sulle addizioni, ma si può risolvere semplicemente applicando le regole della logica.\n"
 "\n"
 "## Esempio\n"
 "\n"
@@ -3698,11 +3709,9 @@ msgid "Start with `induction «{y}» with d hd`."
 msgstr "Inizia con `induction «{y}» with d hd`."
 
 #: Game.Levels.Algorithm.L03add_algo2
-#, fuzzy
 msgid "Solve this level in one line with `simp only [add_left_comm, add_comm]`"
 msgstr ""
-"Completa questo livello in un'unica riga con `simp only [add_assoc, "
-"add_left_comm, add_comm]`"
+"Completa questo livello in un'unica riga con `simp only [add_left_comm, add_comm]`"
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid ""
@@ -4515,7 +4524,6 @@ msgid "0 ≤ x"
 msgstr "0 ≤ x"
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
-#, fuzzy
 msgid ""
 "Here's a proof using `add_left_eq_self`:\n"
 "```\n"
@@ -4559,21 +4567,18 @@ msgstr ""
 "exact add_left_eq_self y x\n"
 "```\n"
 "\n"
-"Volendo puoi anche dimostrarlo per induzione su `x`\n"
-"(i pallini nel codice qui sotto hanno solo funzione decorativa,\n"
-"assieme all'indentazione servono per riconoscere più facilmente i due "
-"sottogoal, ma possono essere omessi):\n"
+"Volendo puoi anche dimostrarlo per induzione su `x`:\n"
 "\n"
 "```\n"
-"  induction x with d hd\n"
-"  · intro h\n"
-"    rw [zero_add] at h\n"
-"    assumption\n"
-"  · intro h\n"
-"    rw [succ_add] at h\n"
-"    apply succ_inj at h\n"
-"    apply hd at h\n"
-"    assumption\n"
+"induction x with d hd\n"
+"intro h\n"
+"rw [zero_add] at h\n"
+"exact h\n"
+"intro h\n"
+"rw [succ_add] at h\n"
+"apply succ_inj at h\n"
+"apply hd at h\n"
+"exact h\n"
 "```"
 
 #: Game.Levels.Multiplication.L01mul_one
@@ -4705,7 +4710,6 @@ msgstr ""
 "uguale a `6 - (2 - 1)`."
 
 #: Game.Levels.Tutorial.L01rfl
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -4754,7 +4758,7 @@ msgstr ""
 "forma `A = B` se `A` e `B` sono termini *identici*, ovvero sono scritti "
 "nello stesso modo.\n"
 "\n"
-"`rfl` è l'abbreviazione di \"riflessività (di uguaglianza)\".\n"
+"`rfl` è l'abbreviazione di \"riflessività (dell'uguaglianza)\".\n"
 "\n"
 "## Esempio:\n"
 "\n"
@@ -4777,12 +4781,11 @@ msgstr ""
 "\n"
 "*Per motivi didattici questo gioco usa una versione di `rfl` più debole "
 "della versione di Lean e della sua libreria `mathlib`;\n"
-"infatti nella matematica classica non vi è distinzione tra uguaglianza "
+"infatti i matematici non fanno distinzione tra uguaglianza "
 "proposizionale e\n"
-"e uguaglianza denotazionale, questa distinzione è rilevante solo nella "
+"e uguaglianza denotazionale, questa distinzione è rilevante solo per chi studia la "
 "teoria dei tipi.\n"
-"(ad esempio, `zero_add` e `add_zero` sono entrambi dei \\\"fatti\\\" per "
-"quanto riguarda i matematici,\n"
+"(ad esempio, `zero_add` e `add_zero` sono entrambi dei \\\"fatti\\\" per i matematici,\n"
 "a loro non interessa quale sia la definizione precisa di addizione).*"
 
 #: Game.Levels.LessOrEqual.L11le_two
@@ -4857,7 +4860,6 @@ msgid "is_zero"
 msgstr "is_zero"
 
 #: Game.Levels.Power.L07mul_pow
-#, fuzzy
 msgid ""
 "The music gets ever more dramatic, as we explore\n"
 "the interplay between exponentiation and multiplication.\n"
@@ -4906,7 +4908,6 @@ msgid "`rw [add_comm b d]`."
 msgstr "`rw [add_comm b d]`."
 
 #: Game.Levels.Power.L10FLT
-#, fuzzy
 msgid ""
 "`xyzzy` is an ancient magic spell, believed to be the origin of the\n"
 "modern word `sorry`. The game won't complain - or notice - if you\n"
@@ -5016,6 +5017,13 @@ msgid ""
 "This works because, given `mul_ne_zero a b`,\n"
 "the argument is reduced to pure logic."
 msgstr ""
+"Ecco la dimostrazione breve:\n"
+"```\n"
+"have h2 := mul_ne_zero a b\n"
+"tauto\n"
+"```\n"
+"Funziona perché, avendo `mul_ne_zero a b`,\n"
+"l'argomento è ridotto a pura logica."
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid "add_right_eq_self"
@@ -5069,7 +5077,6 @@ msgstr ""
 "`add_right_cancel`."
 
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid ""
 "`a ≠ b` is *notation* for `(a = b) → False`.\n"
 "\n"
@@ -5164,6 +5171,11 @@ msgid ""
 "`apply` or any other tactic on the right to see a detailed explanation\n"
 "of what it does, with examples."
 msgstr ""
+"In questo livello, l'ipotesi `h2` è un'*implicazione*. Essa enuncia\n"
+"che *se* `x = 37` *allora* `y = 42`. Possiamo usare questa\n"
+"ipotesi con la tattica `apply`. Ricorda che puoi clickare su\n"
+"`apply` o un'altra tattica qualsiasi sulla destra per aprire una spiegazione dettagliata\n"
+"di cosa fa, con esempi."
 
 #: Game.Levels.Algorithm.L06is_zero
 msgid ""
@@ -5229,7 +5241,6 @@ msgstr ""
 "$(\\operatorname{succ}\\ a) \\times b = a\\times b + b$."
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -5271,8 +5282,7 @@ msgstr ""
 "# Descrizione\n"
 "\n"
 "La tattica `have` può essere usata per aggiungere un'ipotesi a un livello, "
-"ma ovviamente ti chiede\n"
-"di dimostrarla.\n"
+"ma ovviamente a patto che tu la dimostri.\n"
 "\n"
 "\n"
 "## Esempio\n"
@@ -5631,7 +5641,6 @@ msgid "For any natural number $m$, we have $ 1 \\times m = m$."
 msgstr "Per ogni numero naturale $m$, si ha che $ 1 \\times m = m$."
 
 #: Game.Levels.Power.L08pow_pow
-#, fuzzy
 msgid ""
 "The music dies down. Is that it?\n"
 "\n"
@@ -5720,7 +5729,6 @@ msgstr ""
 "NB: `zero_mul` è un lemma di semplificazione (`simp`)."
 
 #: Game
-#, fuzzy
 msgid ""
 "# Welcome to the Natural Number Game\n"
 "#### An introduction to mathematical proof.\n"
@@ -5773,11 +5781,12 @@ msgstr ""
 "Per iniziare, clicca su \"Mondo Tutorial\".\n"
 "\n"
 "Nota: questa è la versione del gioco per Lean 4 contenente diversi\n"
-"mondi che non erano presenti nella versione per Lean 3. Stiamo lavorando a "
-"una\n"
-"nuova versione del Mondo Moltiplicazione Avanzata e nuovi mondi\n"
-"tra cui Mondo Numeri Primi arriveranno durante Ottobre e\n"
-"Novembre 2023.\n"
+"mondi che non erano presenti nella versione per Lean 3. Nuovi mondi \n"
+"quali Mondo Induzione Forte, Mondo Pari/Dispari and Mondo Numeri Primi\n"
+"sono in fase di sviluppo; se vuoi rimanere aggiornato o anche aiutare, "
+"leggi\n"
+"le [issues nel repo su github](https://github.com/leanprover-community/"
+"NNG4/issues).\n"
 "\n"
 "## Altro\n"
 "\n"
@@ -5798,7 +5807,6 @@ msgstr ""
 "secondo me."
 
 #: Game.Levels.Implication.L07intro2
-#, fuzzy
 msgid ""
 "Now `repeat rw [← succ_eq_add_one] at h` is the quickest way to\n"
 "change `h` to `succ x = succ y`."
@@ -6045,14 +6053,13 @@ msgstr ""
 "farà solo sostituzioni della forma `b + c = c + b`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "Start with `contrapose! h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = "
 "n`."
 msgstr ""
-"Inizia con `contrapose! h`, che ti fa dimostrare la\n"
-"contronominale del goal, cioè avrai tra le ipotesi la negazione del goal, "
+"Inizia con `contrapose! h`, che ti lascia da dimostrare la\n"
+"contronominale del goal, dunque avrai tra le ipotesi la negazione del goal, "
 "`succ m = succ m`, e come nuovo goal avrai la negazione dell'ipotesi `h`, `m "
 "= n`."
 
