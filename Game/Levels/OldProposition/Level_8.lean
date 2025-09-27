@@ -28,7 +28,7 @@ Statement
   repeat rw [Not]
   ```
 
-  to get rid of the two occurences of `¬`. (`Not` is the name of `¬`)
+  to get rid of the two occurrences of `¬`. (`Not` is the name of `¬`)
 
   I'm sure you can take it from there."
   Branch
