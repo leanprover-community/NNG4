@@ -14,7 +14,7 @@ namespace MyNat
 
 Introduction
 "
-  In this level, we will prove that if a | b  and a ≠ b then ¬ (b ∣ a) for all a,b ∈ ℕ.
+  In this level, we will prove that if `a | b`  and `a ≠ b` then `¬ (b ∣ a)` for all `a,b ∈ ℕ`.
 "
 /-- `dvd_not_eq a b c` is a proof that if `a | b` and `a ≠ b` then `¬ (b ∣ a)` .-/
 TheoremDoc MyNat.dvd_not_eq as "dvd_not_eq" in "∣"
