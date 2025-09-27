@@ -55,7 +55,7 @@ Statement zero_add (n : ℕ) : 0 + n = n := by
     Hint (hidden := true) "try rewriting `add_zero`."
     rw [add_zero]
     rfl
-  · Hint "Now for to the second goal. Here you have the induction hypothesis
+  · Hint "Now for the second goal. Here you have the induction hypothesis
     `{hd} : 0 + {d} = {d}`, and you need to prove that `0 + succ {d} = succ {d}`."
     Hint (hidden := true) "Use `add_succ`."
     rw [add_succ]
