@@ -1,4 +1,3 @@
-import Mathlib.Init.Core
 import Game.MyNat.Definition
 import Game.MyNat.Multiplication
 
