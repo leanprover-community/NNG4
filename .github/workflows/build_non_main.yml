@@ -2,9 +2,10 @@ name: Build non-main branch
 run-name: Build non-main branch
 on:
   workflow_dispatch:
-  push:
-    branches-ignore:
-    - 'main'
+  pull_request:
+  # push:
+  #   branches-ignore:
+  #   - 'main'
 jobs:
   build:
     runs-on: ubuntu-latest
