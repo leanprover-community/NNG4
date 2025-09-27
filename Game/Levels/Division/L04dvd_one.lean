@@ -21,7 +21,7 @@ TheoremDoc MyNat.dvd_one as "dvd_one" in "∣"
 
 Statement dvd_one
     (n : ℕ) : (h:  n ∣ 1 ) → n = 1 := by
-    Hint "Start with intro"
+    Hint "Start with `intro`"
     intro
     Hint "Now try cases h with k h1"
     cases h with k h1
