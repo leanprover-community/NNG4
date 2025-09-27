@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23\n"
+"POT-Creation-Date: 2025-09-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1653,6 +1653,19 @@ msgstr ""
 msgid "succ_add"
 msgstr ""
 
+#. §0: `rw [zero_add] at «{h}»`
+#. §1: `zero_add`
+#. §2: `«{x}»`
+#. §3: `0 + «{x}»`
+#. §4: `0 + «{y}»`
+#: Game.Levels.Implication.L02exact2
+msgid "Do that again!\n"
+"\n"
+"§0 tries to fill in\n"
+"the arguments to §1 (finding §2) then it replaces all occurrences of\n"
+"§3 it finds. Therefor, it did not rewrite §4, yet."
+msgstr ""
+
 #. §0: `a`
 #. §1: `b`
 #. §2: `c`
@@ -2960,19 +2973,6 @@ msgid "We've just seen that §0, but if §1\n"
 "is a successor, then §2. We prove that here."
 msgstr ""
 
-#. §0: `rw [zero_add] at «{h}»`
-#. §1: `zero_add`
-#. §2: `«{x}»`
-#. §3: `0 + «{x}»`
-#. §4: `0 + «{y}»`
-#: Game.Levels.Implication.L02exact2
-msgid "Do that again!\n"
-"\n"
-"§0 tries to fill in\n"
-"the arguments to §1 (finding §2) then it replaces all occurences of\n"
-"§3 it finds. Therefor, it did not rewrite §4, yet."
-msgstr ""
-
 #. §0: `zero_mul x`
 #. §1: `0 * x = 0`
 #. §2: `zero_mul`
@@ -3555,6 +3555,13 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L05one_mul
 msgid "one_mul"
+msgstr ""
+
+#. §0: `«{hd}» : 0 + «{d}» = «{d}»`
+#. §1: `0 + succ «{d}» = succ «{d}»`
+#: Game.Levels.Addition.L01zero_add
+msgid "Now for the second goal. Here you have the induction hypothesis\n"
+"§0, and you need to prove that §1."
 msgstr ""
 
 #: Game.Levels.Algorithm.L05pred
@@ -4264,13 +4271,6 @@ msgstr ""
 
 #: Game.Levels.LessOrEqual
 msgid "≤ World"
-msgstr ""
-
-#. §0: `«{hd}» : 0 + «{d}» = «{d}»`
-#. §1: `0 + succ «{d}» = succ «{d}»`
-#: Game.Levels.Addition.L01zero_add
-msgid "Now for to the second goal. Here you have the induction hypothesis\n"
-"§0, and you need to prove that §1."
 msgstr ""
 
 #. §0: ```
