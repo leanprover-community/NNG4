@@ -16,7 +16,7 @@ via the following two hypotheses:
 * `add_succ a b : a + succ b = succ (a + b)`
 
 Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved
-by induction using these two basic theorems."
+by induction using these two basic theorems.
 -/
 DefinitionDoc Add as "+"
 
