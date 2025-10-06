@@ -54,7 +54,7 @@ around to investigate. When you've finished, click the `>_` button in the top ri
 move back into \"Typewriter mode\".
 
 You have finished tutorial world!
-Click \"Leave World\" to go back to the
+Click \"Home\" to go back to the
 overworld, and select Addition World, where you will learn
 about the `induction` tactic.
 "
