@@ -13,7 +13,7 @@ namespace MyNat
 Introduction
 "
   In this level, we will prove that `divides` is antisymmetric. i.e the
-  only way that we can have `a | b` and `b | a ` is if a = b.
+  only way that we can have `a | b` and `b | a` is if `a = b`.
 "
 
 /-- div_antisymm a b` is a proof that `if a ∣ b and b ∣ a, then a = b`.-/
@@ -24,14 +24,14 @@ Statement dvd_antisymm
   cases h1 with m hm       
   cases h2 with n hn       
   rw [hn] at hm             
-  Hint "Try casing on b"
+  Hint (hidden := true) "Try casing on b"
   cases b with b'
   rw [zero_mul] at hn     
   rw [hn]
   rfl
   rw [mul_assoc] at hm    
   symm at hm              
-  Hint "Think of what hypothesis can be introduced here that could help solve this step."
+  Hint (hidden := true) "Think of what hypothesis can be introduced here that could help solve this step."
   have ha : succ b' ≠ 0 := succ_ne_zero b'
   apply mul_right_eq_self at hm   
   apply mul_right_eq_one at hm          
