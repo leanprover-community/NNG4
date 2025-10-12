@@ -11,7 +11,7 @@ namespace MyNat
 
 Introduction
 "
-  In this level, we will prove that if 0 ∣ n then n = 0 for all n ∈ ℕ. In other words,
+  In this level, we will prove that if `0 ∣ n` then `n = 0` for all n ∈ ℕ. In other words,
   the only number 0 can divide is itself.
 "
 /-- `zero_dvd n` is a proof that if `0 ∣ n` then n = 0.-/
