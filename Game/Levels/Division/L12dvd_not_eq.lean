@@ -21,10 +21,10 @@ TheoremDoc MyNat.dvd_not_eq as "dvd_not_eq" in "∣"
 
 Statement dvd_not_eq
   (a b : ℕ) (h1 : a ∣ b) (h2 : a ≠ b) : ¬ (b ∣ a) := by
-  Hint "Start with intro"
+  Hint (hidden := true) "Start with `intro`"
   intro h
   apply h2
-  Hint "Think about the theorems you have already proven and how they can be applied here"
+  Hint (hidden := true) "Think about the theorems you have already proven and how they can be applied here"
   exact dvd_antisymm a b h1 h
 
 
