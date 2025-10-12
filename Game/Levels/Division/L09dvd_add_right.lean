@@ -20,7 +20,7 @@ TheoremDoc MyNat.dvd_add_right as "dvd_add_right" in "∣"
 
 Statement dvd_add_right
     (d a b : ℕ)  (ha : d ∣ a) (hab : d ∣ b) : d ∣ a + b := by
-  Hint "Similar to other levels, cases will be useful here."
+  Hint "Similar to other levels, `cases` will be useful here."
   cases ha with n hn
   cases hab with m hm
   use n + m
