@@ -13,7 +13,7 @@ namespace MyNat
 
 Introduction
 "
-  In this level, we will prove that if a | b and b != 0 then a <=b for all a,b ∈ ℕ. In other words,
+  In this level, we will prove that if `a | b` and `b != 0` then `a <= b` for all a,b ∈ ℕ. In other words,
   we will prove that a number only divides number's greater than or equal to itself.
 "
 /-- `dvd_ls a b` is a proof that if `a | b` and `b != 0 `then `a <= b`.-/
