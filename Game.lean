@@ -103,7 +103,7 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 -- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "en" "zh"
+Languages "en" "zh" "uk" "it" "fr"
 CaptionShort "The classical introduction game for Lean."
 CaptionLong "In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano axioms,
 learning the basics about theorem proving in Lean.

@@ -18,7 +18,7 @@ Moreover, there are multiple ways to run the game while developing it, which are
 PRs/Issues fixing typos, inconsistencies, missing hints, etc. are very welcome!
 
 ### Translations
- We happily accept translations of the game into different lanugages! You can use `.i18n/en/Game.pot` and translate it into `.i18n/{lang}/Game.po` where `{lang}` is the ISO language code like `fr` or `en_UK`, using for example POEdit.
+ We happily accept translations of the game into different languages! You can use `.i18n/en/Game.pot` and translate it into `.i18n/{lang}/Game.po` where `{lang}` is the ISO language code like `fr` or `en_UK`, using for example POEdit.
 
  We would like the following requirements for a translation PR:
 

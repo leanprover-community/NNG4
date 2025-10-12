@@ -1,7 +1,7 @@
 import Lean.Elab.Tactic.Basic
 import Lean.Elab.Tactic.Induction
-import Std.Tactic.OpenPrivate
-import Std.Data.List.Basic
+import Batteries.Tactic.OpenPrivate
+import Batteries.Data.List.Basic
 import Game.MyNat.Definition
 import Mathlib.Lean.Expr.Basic
 import Mathlib.Tactic.Cases
@@ -35,7 +35,7 @@ open Lean Parser Tactic
 open Meta Elab Elab.Tactic
 open Mathlib.Tactic
 
-open private getElimNameInfo generalizeTargets generalizeVars in evalInduction in
+open private getElimNameInfo generalizeTargets generalizeVars from Lean.Elab.Tactic.Induction
 
 /--
 Modified `induction` tactic for this game.
@@ -44,11 +44,11 @@ Usage: `induction n with d hd`.
 
 *(The actual `induction` tactic has a more complex `with`-argument that works differently)*
 -/
-elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
+elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.elimTarget,+)
     usingArg:((" using " ident)?)
     withArg:((" with" (ppSpace colGt binderIdent)+)?)
     genArg:((" generalizing" (ppSpace colGt ident)+)?) : tactic => do
-  let (targets, toTag) ← elabCasesTargets tgts.1.getSepArgs
+  let (targets, toTag) ← elabElimTargets tgts.1.getSepArgs
   let g :: gs ← getUnsolvedGoals | throwNoGoalsToBeSolved
   g.withContext do
     let elimInfo ← getElimNameInfo usingArg targets (induction := true)
@@ -67,7 +67,7 @@ elab (name := MyNat.induction) "induction " tgts:(Parser.Tactic.casesTarget,+)
     | _ => pure elimInfo
 
     let targets ← addImplicitTargets elimInfo targets
-    evalInduction.checkTargets targets
+    checkInductionTargets targets
     let targetFVarIds := targets.map (·.fvarId!)
     g.withContext do
       let genArgs ← if genArg.1.isNone then pure #[] else getFVarIds genArg.1[1].getArgs

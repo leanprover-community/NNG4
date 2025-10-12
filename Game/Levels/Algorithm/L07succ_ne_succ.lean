@@ -53,6 +53,7 @@ and goal
 TacticDoc contrapose
 
 NewTactic contrapose
+NewHiddenTactic contrapose!
 
 /-- `succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`. -/
 TheoremDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano"
