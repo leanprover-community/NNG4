@@ -11,7 +11,7 @@ namespace MyNat
 
 Introduction
 "
-  In this level, we will prove that n ∣ 0 for all n ∈ ℕ. In other words,
+  In this level, we will prove that `n ∣ 0` for all n ∈ ℕ. In other words,
   zero can be divided by any number.
 "
 /-- `dvd_zero x` is a proof that `x | 0 `.-/
@@ -25,5 +25,5 @@ Statement dvd_zero
 
 Conclusion
 "
-  Well done, you have now proven that n|0 , the next step is proving that if n|1 then n=1.
+  Well done, you have now proven that `n|0` , the next step is proving that if `n|1` then `n=1`.
 "
