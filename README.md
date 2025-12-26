@@ -4,7 +4,7 @@ This is the lean4 version of the classical *Natural Number Game*. It uses
 the [Lean4 Game Engine](https://github.com/leanprover-community/lean4game) and is
 running live at [adam.math.hhu.de](https://adam.math.hhu.de).
 
-The game was initially designed for lean3 and has been adapted for lean4. [See lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/).
+The game was initially designed for lean3 and has been adapted for lean4. [See lean3 version](https://github.com/ImperialCollegeLondon/natural_number_game/).
 
 ## Getting Started
 
