@@ -78,7 +78,7 @@ about the material.
 ## Resources
 
 * The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum
-* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) (no longer maintained)
+* [Original Lean3 version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no longer maintained)
 
 ## Problems?
 
