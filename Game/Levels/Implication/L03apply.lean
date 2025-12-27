@@ -39,7 +39,7 @@ NewTactic apply
 
 Introduction
 "
-In this level, the hypotheses `h2` is an *implication*. It says
+In this level, the hypothesis `h2` is an *implication*. It says
 that *if* `x = 37` *then* `y = 42`. We can use this
 hypothesis with the `apply` tactic. Remember you can click on
 `apply` or any other tactic on the right to see a detailed explanation
