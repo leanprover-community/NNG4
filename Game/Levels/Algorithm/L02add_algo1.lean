@@ -30,7 +30,7 @@ Statement (a b c d : ℕ) : a + b + (c + d) = a + c + d + b := by
   Hint "Now use `rw [add_left_comm b c]` to switch `b` and `c` on the left
   hand side."
   rw [add_left_comm b c]
-  Hint "Finally use a targetted `add_comm` to switch `b` and `d`"
+  Hint "Finally use a targeted `add_comm` to switch `b` and `d`."
   Hint (hidden := true) "`rw [add_comm b d]`."
   rw [add_comm b d]
   rfl
