@@ -29,5 +29,5 @@ exact add_right_eq_zero b a
 ```
 
 That's the end of Advanced Addition World! You'll need these theorems
-for the next world, `≤` World. Click on \"Leave World\" to access it.
+for the next world, `≤` World. Click on \"Home\" to access it.
 "
