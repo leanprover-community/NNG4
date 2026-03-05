@@ -11,7 +11,7 @@ The game was initially designed for lean3 and has been adapted for lean4. [See l
 You can develop the game as any lean project and use `lake build` to build it.
 
 Moreover, there are multiple ways to run the game while developing it, which are described in
-[Running Games Locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)
+[Running Games Locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md).
 
 ## Contributing
 
