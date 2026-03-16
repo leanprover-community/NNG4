@@ -17,7 +17,7 @@ Use associativity and commutativity to prove `add_right_comm`.
 You don't need induction. `add_assoc` moves brackets around,
 and `add_comm` moves variables around.
 
-Remember that you can do more targetted rewrites by
+Remember that you can do more targeted rewrites by
 adding explicit variables as inputs to theorems. For example `rw [add_comm b]`
 will only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`
 will only do rewrites of the form `b + c = c + b`.
