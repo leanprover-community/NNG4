@@ -387,7 +387,7 @@ msgstr ""
 #. §1: `b`
 #. §2: `d`
 #: Game.Levels.Algorithm.L02add_algo1
-msgid "Finally use a targetted §0 to switch §1 and §2"
+msgid "Finally use a targeted §0 to switch §1 and §2"
 msgstr ""
 
 #. §0: `repeat t`
@@ -1970,7 +1970,7 @@ msgid "§0 is a proof that §1. But if your goal\n"
 "You don't need induction. §7 moves brackets around,\n"
 "and §8 moves variables around.\n"
 "\n"
-"Remember that you can do more targetted rewrites by\n"
+"Remember that you can do more targeted rewrites by\n"
 "adding explicit variables as inputs to theorems. For example §9\n"
 "will only do rewrites of the form §10, and §11\n"
 "will only do rewrites of the form §12."
@@ -2147,7 +2147,7 @@ msgid "## Summary\n"
 "If you can't remember the name of the proof of an equality, look it up in\n"
 "the list of lemmas on the right.\n"
 "\n"
-"## Targetted usage\n"
+"## Targeted usage\n"
 "\n"
 "If your goal is §67 and you want to rewrite §68\n"
 "to §69, then §70 will not work because Lean finds another\n"

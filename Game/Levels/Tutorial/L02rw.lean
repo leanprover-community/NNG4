@@ -94,7 +94,7 @@ Exercise: think about why `rw [add_zero]` changes the term
 If you can't remember the name of the proof of an equality, look it up in
 the list of lemmas on the right.
 
-## Targetted usage
+## Targeted usage
 
 If your goal is `b + c + a = b + (a + c)` and you want to rewrite `a + c`
 to `c + a`, then `rw [add_comm]` will not work because Lean finds another
