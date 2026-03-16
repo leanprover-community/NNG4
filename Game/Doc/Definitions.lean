@@ -86,3 +86,5 @@ import GameServer.Commands
 -- DefinitionDoc Mul as "*" ""
 
 -- DefinitionDoc Ne as "≠" ""
+
+-- DefinitionDoc Dvd as "\|" ""
