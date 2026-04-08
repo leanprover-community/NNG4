@@ -763,8 +763,8 @@ msgid "add_left_comm"
 msgstr "add_left_comm"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
-msgstr "`one_eq_succ_zero` è la dimostrazione di `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
+msgstr "`one_eq_succ_zero` è la dimostrazione di `1 = succ 0`."
 
 #: Game.Levels.Power.L02zero_pow_succ
 msgid ""

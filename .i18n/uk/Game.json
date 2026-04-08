@@ -127,8 +127,8 @@
  "`one_mul m` is the proof `1 * m = m`.": "`one_mul m` є доказом `1 * m = m`.",
  "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`.":
  "`one_le_of_ne_zero a` це доказ того, що `a ≠ 0 → 1 ≤ a`.",
- "`one_eq_succ_zero` is a proof of `1 = succ 0`.\"":
- "`one_eq_succ_zero` є доказом `1 = succ 0`.\"",
+ "`one_eq_succ_zero` is a proof of `1 = succ 0`.":
+ "`one_eq_succ_zero` є доказом `1 = succ 0`.",
  "`nth_rewrite 2 [two_eq_succ_one]` is I think quicker than `rw [two_eq_succ_one]`.":
  "я думаю, `nth_rewrite 2 [two_eq_succ_one]` швидше, ніж `rw [two_eq_succ_one]`.",
  "`mul_zero m` is the proof that `m * 0 = 0`.":

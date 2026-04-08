@@ -513,7 +513,7 @@ msgstr ""
 "apparaître dans le jeu des nombres naturels.*"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
 msgstr "`one_eq_succ_zero` est une preuve que `1 = succ 0`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0

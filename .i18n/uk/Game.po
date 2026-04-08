@@ -549,8 +549,8 @@ msgstr ""
 "ніколи просочуйтеся в гру натуральних чисел.*"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
-msgstr "`one_eq_succ_zero` є доказом `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
+msgstr "`one_eq_succ_zero` є доказом `1 = succ 0`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`two_eq_succ_one` is a proof of `2 = succ 1`."
