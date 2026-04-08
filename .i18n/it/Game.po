@@ -5049,8 +5049,8 @@ msgid "Multiplication is commutative."
 msgstr "La moltiplicazione è commutativa."
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` è la dimostrazione di `x + y = y + x`."
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` è la dimostrazione di `a + b = b + a`."
 
 #: Game.Levels.Implication.L02exact2
 msgid ""

@@ -1367,8 +1367,8 @@ msgstr ""
 "Цього має бути достатньо."
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` є доказом `x + y = y + x`."
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` є доказом `a + b = b + a`."
 
 #: Game.Levels.Addition.L03add_comm
 msgid ""

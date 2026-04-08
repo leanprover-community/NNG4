@@ -4568,8 +4568,8 @@ msgid "Multiplication is commutative."
 msgstr "乘法是可交换的。"
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` 是 `x + y = y + x` 的证明。"
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` 是 `a + b = b + a` 的证明。"
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
