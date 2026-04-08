@@ -15,7 +15,7 @@ Look in your inventory to see the proofs you have available.
 These should be enough.
 "
 
-/-- `add_comm x y` is a proof of `x + y = y + x`. -/
+/-- `add_comm a b` is a proof of `a + b = b + a`. -/
 TheoremDoc MyNat.add_comm as "add_comm" in "+"
 
 /-- On the set of natural numbers, addition is commutative.

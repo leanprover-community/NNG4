@@ -75,12 +75,12 @@
  "`zero_ne_succ n` est la preuve que `0 ≠ succ n`.\n\nDans Lean, `a ≠ b` est *défini comme signifiant* `a = b → False`. Par conséquent\n`zero_ne_succ n` est en réalité une preuve de `0 = succ n → False`.\nIci `False` est un énoncé faux générique. Cela signifie que\nvous pouvez `apply zero_ne_succ at h` si `h` est une preuve de `0 = succ n`.",
  "`zero_ne_one` is a proof of `0 ≠ 1`.":
  "`zero_ne_one` est une preuve de `0 ≠ 1`.",
- "`zero_mul x` is the proof that `0 * x = 0`.\n\nNote: `zero_mul` is a `simp` lemma.":
- "`zero_mul x` est la preuve que `0 * x = 0`.\n\nNote : `zero_mul` est un lemme `simp`.",
+ "`zero_mul m` is the proof that `0 * m = 0`.\n\nNote: `zero_mul` is a `simp` lemma.":
+ "`zero_mul m` est la preuve que `0 * m = 0`.\n\nNote : `zero_mul` est un lemme `simp`.",
  "`zero_le x` is a proof that `0 ≤ x`.":
  "`zero_le x` est une preuve que `0 ≤ x`.",
- "`zero_add x` is the proof of `0 + x = x`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\nis almost always what you want to do if you're simplifying an expression.":
- "`zero_add x` est la preuve que `0 + x = x`.\n\n`zero_add` est un lemme `simp`, car remplacer `0 + x` par `x`\nest presque toujours ce que vous voulez faire si vous simplifiez une expression.",
+ "`zero_add n` is the proof of `0 + n = n`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\nis almost always what you want to do if you're simplifying an expression.":
+ "`zero_add n` est la preuve que `0 + n = n`.\n\n`zero_add` est un lemme `simp`, car remplacer `0 + n` par `n`\nest presque toujours ce que vous voulez faire si vous simplifiez une expression.",
  "`xyzzy` is an ancient magic spell, believed to be the origin of the\nmodern word `sorry`. The game won't complain - or notice - if you\nprove anything with `xyzzy`.":
  "`xyzzy` est un ancien sortilège magique, considéré comme l'origine du\nmot moderne `sorry`. Le jeu ne se plaindra pas - ou ne remarquera pas - si vous\nprouvez quoi que ce soit avec `xyzzy`.",
  "`two_mul m` is the proof that `2 * m = m + m`.":
@@ -129,7 +129,7 @@
  "`one_mul m` est la preuve que `1 * m = m`.",
  "`one_le_of_ne_zero a` is a proof that `a ≠ 0 → 1 ≤ a`.":
  "`one_le_of_ne_zero a` est une preuve que `a ≠ 0 → 1 ≤ a`.",
- "`one_eq_succ_zero` is a proof of `1 = succ 0`.\"":
+ "`one_eq_succ_zero` is a proof of `1 = succ 0`.":
  "`one_eq_succ_zero` est une preuve que `1 = succ 0`.",
  "`nth_rewrite 2 [two_eq_succ_one]` is I think quicker than `rw [two_eq_succ_one]`.":
  "`nth_rewrite 2 [two_eq_succ_one]` est je pense plus rapide que `rw [two_eq_succ_one]`.",
@@ -218,8 +218,8 @@
  "`add_left_cancel a b n` est le théorème que $n+a=n+b\\implies a=b$.\nVous pouvez le prouver par induction sur `n` ou le déduire de `add_right_cancel`.",
  "`add_left_cancel a b n` is the theorem that $n+a=n+b \\implies a=b.$":
  "`add_left_cancel a b n` est le théorème que $n+a=n+b \\implies a=b.$",
- "`add_comm x y` is a proof of `x + y = y + x`.":
- "`add_comm x y` est une preuve de `x + y = y + x`.",
+ "`add_comm a b` is a proof of `a + b = b + a`.":
+ "`add_comm a b` est une preuve de `a + b = b + a`.",
  "`add_comm b c` is a proof that `b + c = c + b`. But if your goal\nis `a + b + c = a + c + b` then `rw [add_comm b c]` will not\nwork! Because the goal means `(a + b) + c = (a + c) + b` so there\nis no `b + c` term *directly* in the goal.\n\nUse associativity and commutativity to prove `add_right_comm`.\nYou don't need induction. `add_assoc` moves brackets around,\nand `add_comm` moves variables around.\n\nRemember that you can do more targeted rewrites by\nadding explicit variables as inputs to theorems. For example `rw [add_comm b]`\nwill only do rewrites of the form `b + ? = ? + b`, and `rw [add_comm b c]`\nwill only do rewrites of the form `b + c = c + b`.":
  "`add_comm b c` est une preuve que `b + c = c + b`. Mais si votre but\nest `a + b + c = a + c + b` alors `rw [add_comm b c]` ne\nfonctionnera pas ! Parce que le but signifie `(a + b) + c = (a + c) + b` donc il n'y a\npas de terme `b + c` *directement* dans le but.\n\nUtilisez l'associativité et la commutativité pour prouver `add_right_comm`.\nVous n'avez pas besoin d'induction. `add_assoc` déplace les parenthèses,\net `add_comm` échange les variables.\n\nRappelez-vous que vous pouvez faire des réécritures plus ciblées en\najoutant des variables explicites comme entrées aux théorèmes. Par exemple `rw [add_comm b]`\nne fera que des réécritures de la forme `b + ? = ? + b`, et `rw [add_comm b c]`\nne fera que des réécritures de la forme `b + c = c + b`.",
  "`add_assoc a b c` is a proof\nthat `(a + b) + c = a + (b + c)`. Note that in Lean `(a + b) + c` prints\nas `a + b + c`, because the notation for addition is defined to be left\nassociative.":
@@ -234,8 +234,8 @@
  "`Pow a b`, avec la notation `a ^ b`, est l'exponentiation\n  habituelle des nombres naturels, c'est à dire `a` puissance `b`. En interne, elle est\n  définie par deux axiomes :\n\n  * `pow_zero a : a ^ 0 = 1`\n\n  * `pow_succ a b : a ^ succ b = a ^ b * a`\n\nNotez en particulier que `0 ^ 0 = 1`.",
  "`Mul a b`, with notation `a * b`, is the usual\n  product of natural numbers. Internally it is\n  via two axioms:\n\n  * `mul_zero a : a * 0 = 0`\n\n  * `mul_succ a b : a * succ b = a * b + a`\n\nOther theorems about naturals, such as `zero_mul`,\nare proved by induction from these two basic theorems.":
  "`Mul a b`, avec la notation `a * b`, est le produit\n  habituel des nombres naturels. En interne, il est\n  défini par deux axiomes :\n\n  * `mul_zero a : a * 0 = 0`\n\n  * `mul_succ a b : a * succ b = a * b + a`\n\nD'autres théorèmes sur les naturels, comme `zero_mul`,\nsont prouvés par induction à partir de ces deux théorèmes de base.",
- "`Add a b`, with notation `a + b`, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nOther theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\nby induction using these two basic theorems.\"":
- "`Add a b`, avec la notation `a + b`, est\nla somme habituelle des nombres naturels. En interne, elle est définie\npar les deux hypothèses suivantes :\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nD'autres théorèmes sur les naturels, comme `zero_add a : 0 + a = a`, sont prouvés\npar induction en utilisant ces deux théorèmes de base.\"",
+ "`Add a b`, with notation `a + b`, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nOther theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\nby induction using these two basic theorems.":
+ "`Add a b`, avec la notation `a + b`, est\nla somme habituelle des nombres naturels. En interne, elle est définie\npar les deux hypothèses suivantes :\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nD'autres théorèmes sur les naturels, comme `zero_add a : 0 + a = a`, sont prouvés\npar induction en utilisant ces deux théorèmes de base.",
  "[final boss music]": "[musique de boss final]",
  "[dramatic music]. Now are you ready to face the first boss of the game?":
  "[musique dramatique]. Êtes-vous maintenant prêt à affronter le premier boss du jeu ?",

@@ -696,7 +696,7 @@ msgid "add_left_comm"
 msgstr "add_left_comm"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
 msgstr "`one_eq_succ_zero` 是 `1 = succ 0`的证明。"
 
 #: Game.Levels.Power.L02zero_pow_succ
@@ -1508,15 +1508,15 @@ msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
 msgid ""
-"`zero_add x` is the proof of `0 + x = x`.\n"
+"`zero_add n` is the proof of `0 + n = n`.\n"
 "\n"
-"`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
+"`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
-"`zero_add x` 是 `0 + x = x` 的证明。\n"
+"`zero_add n` 是 `0 + n = n` 的证明。\n"
 "\n"
 "`zero_add` 是一个有 `simp` 标记的引理，因为如果你正在简化一个表达式，几乎总是"
-"想要将 `0 + x` 替换为 `x`。"
+"想要将 `0 + n` 替换为 `n`。"
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
 msgid "add_left_eq_self"
@@ -4518,7 +4518,7 @@ msgid ""
 "* `add_succ a b : a + succ b = succ (a + b)`\n"
 "\n"
 "Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\n"
-"by induction using these two basic theorems.\""
+"by induction using these two basic theorems."
 msgstr ""
 "`Add a b`，符号为 `a + b`，是\n"
 "自然数之和。\n"
@@ -4568,8 +4568,8 @@ msgid "Multiplication is commutative."
 msgstr "乘法是可交换的。"
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` 是 `x + y = y + x` 的证明。"
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` 是 `a + b = b + a` 的证明。"
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
@@ -5170,11 +5170,11 @@ msgstr "完成关卡！🎉"
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` 是 `0 * x = 0` 的证明。\n"
+"`zero_mul m` 是 `0 * m = 0` 的证明。\n"
 "\n"
 "注意：`zero_mul` 是一个 `simp` 引理。"
 

@@ -24,7 +24,7 @@ never leak into the natural number game.*
 DefinitionDoc MyNat as "ℕ"
 
 
-/-- `one_eq_succ_zero` is a proof of `1 = succ 0`." -/
+/-- `one_eq_succ_zero` is a proof of `1 = succ 0`. -/
 TheoremDoc MyNat.one_eq_succ_zero as "one_eq_succ_zero" in "012"
 
 /-- `two_eq_succ_one` is a proof of `2 = succ 1`. -/

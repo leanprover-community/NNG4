@@ -549,8 +549,8 @@ msgstr ""
 "ніколи просочуйтеся в гру натуральних чисел.*"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
-msgstr "`one_eq_succ_zero` є доказом `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
+msgstr "`one_eq_succ_zero` є доказом `1 = succ 0`."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "`two_eq_succ_one` is a proof of `2 = succ 1`."
@@ -702,7 +702,7 @@ msgid ""
 "* `add_succ a b : a + succ b = succ (a + b)`\n"
 "\n"
 "Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\n"
-"by induction using these two basic theorems.\""
+"by induction using these two basic theorems."
 msgstr ""
 "`Add a b` із нотацією `a + b` є\n"
 "звичайною сумою натуральних чисел. Внутрішньо це визначається\n"
@@ -714,7 +714,7 @@ msgstr ""
 "\n"
 "Інші теореми про натуральні числа, такі як `zero_add a : 0 + a = a`, "
 "доводяться\n"
-"шляхом індукції із використанням цих двох основних теорем»."
+"шляхом індукції із використанням цих двох основних теорем."
 
 #: Game.Levels.Tutorial.L05add_zero
 msgid ""
@@ -1155,14 +1155,14 @@ msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
 msgid ""
-"`zero_add x` is the proof of `0 + x = x`.\n"
+"`zero_add n` is the proof of `0 + n = n`.\n"
 "\n"
-"`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
+"`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
-"`zero_add x` є доказом що`0 + x = x`.\n"
+"`zero_add n` є доказом що`0 + n = n`.\n"
 "\n"
-"`zero_add` є лемою `simp`, оскільки заміна `0 + x` на `x`\n"
+"`zero_add` є лемою `simp`, оскільки заміна `0 + n` на `n`\n"
 "майже завжди те, що ви хочете зробити, якщо ви спрощуєте вираз."
 
 #: Game.Levels.Addition.L01zero_add
@@ -1367,8 +1367,8 @@ msgstr ""
 "Цього має бути достатньо."
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` є доказом `x + y = y + x`."
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` є доказом `a + b = b + a`."
 
 #: Game.Levels.Addition.L03add_comm
 msgid ""
@@ -1656,11 +1656,11 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` є доказом того, що `0 * x = 0`.\n"
+"`zero_mul m` є доказом того, що `0 * m = 0`.\n"
 "\n"
 "Примітка: `zero_mul` - це `simp` лема."
 
