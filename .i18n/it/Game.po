@@ -5720,11 +5720,11 @@ msgstr "livello completato! 🎉"
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` è la dimostrazione di `0 * x = 0`.\n"
+"`zero_mul m` è la dimostrazione di `0 * m = 0`.\n"
 "\n"
 "NB: `zero_mul` è un lemma di semplificazione (`simp`)."
 

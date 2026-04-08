@@ -75,8 +75,8 @@
  "`zero_ne_succ n` est la preuve que `0 ≠ succ n`.\n\nDans Lean, `a ≠ b` est *défini comme signifiant* `a = b → False`. Par conséquent\n`zero_ne_succ n` est en réalité une preuve de `0 = succ n → False`.\nIci `False` est un énoncé faux générique. Cela signifie que\nvous pouvez `apply zero_ne_succ at h` si `h` est une preuve de `0 = succ n`.",
  "`zero_ne_one` is a proof of `0 ≠ 1`.":
  "`zero_ne_one` est une preuve de `0 ≠ 1`.",
- "`zero_mul x` is the proof that `0 * x = 0`.\n\nNote: `zero_mul` is a `simp` lemma.":
- "`zero_mul x` est la preuve que `0 * x = 0`.\n\nNote : `zero_mul` est un lemme `simp`.",
+ "`zero_mul m` is the proof that `0 * m = 0`.\n\nNote: `zero_mul` is a `simp` lemma.":
+ "`zero_mul m` est la preuve que `0 * m = 0`.\n\nNote : `zero_mul` est un lemme `simp`.",
  "`zero_le x` is a proof that `0 ≤ x`.":
  "`zero_le x` est une preuve que `0 ≤ x`.",
  "`zero_add n` is the proof of `0 + n = n`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\nis almost always what you want to do if you're simplifying an expression.":

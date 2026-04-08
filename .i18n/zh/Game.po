@@ -5170,11 +5170,11 @@ msgstr "完成关卡！🎉"
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` 是 `0 * x = 0` 的证明。\n"
+"`zero_mul m` 是 `0 * m = 0` 的证明。\n"
 "\n"
 "注意：`zero_mul` 是一个 `simp` 引理。"
 

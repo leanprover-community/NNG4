@@ -1656,11 +1656,11 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` є доказом того, що `0 * x = 0`.\n"
+"`zero_mul m` є доказом того, що `0 * m = 0`.\n"
 "\n"
 "Примітка: `zero_mul` - це `simp` лема."
 
