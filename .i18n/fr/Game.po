@@ -1083,14 +1083,14 @@ msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
 msgid ""
-"`zero_add x` is the proof of `0 + x = x`.\n"
+"`zero_add n` is the proof of `0 + n = n`.\n"
 "\n"
-"`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
+"`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
-"`zero_add x` est la preuve que `0 + x = x`.\n"
+"`zero_add n` est la preuve que `0 + n = n`.\n"
 "\n"
-"`zero_add` est un lemme `simp`, car remplacer `0 + x` par `x`\n"
+"`zero_add` est un lemme `simp`, car remplacer `0 + n` par `n`\n"
 "est presque toujours ce que vous voulez faire si vous simplifiez une expression."
 
 #: Game.Levels.Addition.L01zero_add

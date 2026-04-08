@@ -79,8 +79,8 @@
  "`zero_mul x` è la dimostrazione di `0 * x = 0`.\n\nNB: `zero_mul` è un lemma di semplificazione (`simp`).",
  "`zero_le x` is a proof that `0 ≤ x`.":
  "`zero_le x` è la dimostrazione che `0 ≤ x`.",
- "`zero_add x` is the proof of `0 + x = x`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\nis almost always what you want to do if you're simplifying an expression.":
- "`zero_add x` è la dimostrazione di `0 + x = x`.\n\n`zero_add` è un lemma del tipo `simp` (semplificazione), infatti sostituire `0 + x` con `x`\nè quasi sempre uno dei passi più ovvi della semplificazione di un'espressione.",
+ "`zero_add n` is the proof of `0 + n = n`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\nis almost always what you want to do if you're simplifying an expression.":
+ "`zero_add n` è la dimostrazione di `0 + n = n`.\n\n`zero_add` è un lemma del tipo `simp` (semplificazione), infatti sostituire `0 + n` con `n`\nè quasi sempre uno dei passi più ovvi della semplificazione di un'espressione.",
  "`xyzzy` is an ancient magic spell, believed to be the origin of the\nmodern word `sorry`. The game won't complain - or notice - if you\nprove anything with `xyzzy`.":
  "`xyzzy` è un incantesimo arcaico, si crede che sia l'origine\ndella parola inglese `sorry`. Il gioco non si lamenterà - e nemmeno noterà - se\nrisolvi tutti i livelli con `xyzzy`.",
  "`two_mul m` is the proof that `2 * m = m + m`.":

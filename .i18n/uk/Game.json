@@ -77,8 +77,8 @@
  "`zero_mul x` є доказом того, що `0 * x = 0`.\n\nПримітка: `zero_mul` - це `simp` лема.",
  "`zero_le x` is a proof that `0 ≤ x`.":
  "`zero_le x` є доказом того, що `0 ≤ x`.",
- "`zero_add x` is the proof of `0 + x = x`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\nis almost always what you want to do if you're simplifying an expression.":
- "`zero_add x` є доказом що`0 + x = x`.\n\n`zero_add` є лемою `simp`, оскільки заміна `0 + x` на `x`\nмайже завжди те, що ви хочете зробити, якщо ви спрощуєте вираз.",
+ "`zero_add n` is the proof of `0 + n = n`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\nis almost always what you want to do if you're simplifying an expression.":
+ "`zero_add n` є доказом що`0 + n = n`.\n\n`zero_add` є лемою `simp`, оскільки заміна `0 + n` на `n`\nмайже завжди те, що ви хочете зробити, якщо ви спрощуєте вираз.",
  "`xyzzy` is an ancient magic spell, believed to be the origin of the\nmodern word `sorry`. The game won't complain - or notice - if you\nprove anything with `xyzzy`.":
  "`xyzzy` — стародавнє магічне заклинання, яке, як вважають, походить від\nсучасне слово `sorry`. Гра не поскаржиться - або не помітить - якщо ви\nдоведете будь-що за допомогою `xyzzy`.",
  "`two_mul m` is the proof that `2 * m = m + m`.":

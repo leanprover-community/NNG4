@@ -1508,15 +1508,15 @@ msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
 msgid ""
-"`zero_add x` is the proof of `0 + x = x`.\n"
+"`zero_add n` is the proof of `0 + n = n`.\n"
 "\n"
-"`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
+"`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
-"`zero_add x` 是 `0 + x = x` 的证明。\n"
+"`zero_add n` 是 `0 + n = n` 的证明。\n"
 "\n"
 "`zero_add` 是一个有 `simp` 标记的引理，因为如果你正在简化一个表达式，几乎总是"
-"想要将 `0 + x` 替换为 `x`。"
+"想要将 `0 + n` 替换为 `n`。"
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
 msgid "add_left_eq_self"

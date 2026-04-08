@@ -74,8 +74,8 @@
  "`zero_mul x` is the proof that `0 * x = 0`.\n\nNote: `zero_mul` is a `simp` lemma.":
  "`zero_mul x` 是 `0 * x = 0` 的证明。\n\n注意：`zero_mul` 是一个 `simp` 引理。",
  "`zero_le x` is a proof that `0 ≤ x`.": "`zero_le x` 是 `0 ≤ x` 的证明。",
- "`zero_add x` is the proof of `0 + x = x`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\nis almost always what you want to do if you're simplifying an expression.":
- "`zero_add x` 是 `0 + x = x` 的证明。\n\n`zero_add` 是一个有 `simp` 标记的引理，因为如果你正在简化一个表达式，几乎总是想要将 `0 + x` 替换为 `x`。",
+ "`zero_add n` is the proof of `0 + n = n`.\n\n`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\nis almost always what you want to do if you're simplifying an expression.":
+ "`zero_add n` 是 `0 + n = n` 的证明。\n\n`zero_add` 是一个有 `simp` 标记的引理，因为如果你正在简化一个表达式，几乎总是想要将 `0 + n` 替换为 `n`。",
  "`xyzzy` is an ancient magic spell, believed to be the origin of the\nmodern word `sorry`. The game won't complain - or notice - if you\nprove anything with `xyzzy`.":
  "`xyzzy` 是一个古老的魔法咒语，被认为是现代词汇 `sorry` 的起源。游戏不会发现——或者注意到你用 `xyzzy` 证明任何东西。",
  "`two_mul m` is the proof that `2 * m = m + m`.":
