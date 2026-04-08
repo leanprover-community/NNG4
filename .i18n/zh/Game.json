@@ -223,7 +223,7 @@
  "`Pow a b`，其符号表示为 `a ^ b`，是自然数的常规指数运算。在内部，它是通过两个公理定义的：\n\n* `pow_zero a : a ^ 0 = 1`\n\n* `pow_succ a b : a ^ succ b = a ^ b * a`\n\n特别要注意的是 `0 ^ 0 = 1`。",
  "`Mul a b`, with notation `a * b`, is the usual\n  product of natural numbers. Internally it is\n  via two axioms:\n\n  * `mul_zero a : a * 0 = 0`\n\n  * `mul_succ a b : a * succ b = a * b + a`\n\nOther theorems about naturals, such as `zero_mul`,\nare proved by induction from these two basic theorems.":
  "`Mul a b`，其符号表示为 `a * b`，是自然数的常规乘积。它是通过两条规则定义的：\n\n* `mul_zero a : a * 0 = 0`\n\n* `mul_succ a b : a * succ b = a * b + a`\n\n关于自然数的其他定理，比如 `zero_mul`，都是通过从这两个基本定理进行归纳证明得到的。",
- "`Add a b`, with notation `a + b`, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nOther theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\nby induction using these two basic theorems.\"":
+ "`Add a b`, with notation `a + b`, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\nOther theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\nby induction using these two basic theorems.":
  "`Add a b`，符号为 `a + b`，是\n自然数之和。\n通过以下两个假设定义：\n\n* `add_zero a : a + 0 = a`\n\n* `add_succ a b : a + succ b = succ (a + b)`\n\n其他关于自然数的定理，例如 `zero_add a : 0 + a = a`，也\n通过数学归纳法使用这两个基本定义进行证明。",
  "[final boss music]": "【最终Boss背景音乐】",
  "[dramatic music]. Now are you ready to face the first boss of the game?":
