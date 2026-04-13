@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-13\n"
-"Last-Translator:  <virusbb001a@gmail.com>\n"
+"Last-Translator: <virusbb001a@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2026-04-13 14:32+0900\n"
 "MIME-Version: 1.0\n"
@@ -14,17 +14,18 @@ msgstr ""
 
 #: Game.Levels.LessOrEqual.L10le_one
 msgid "x ≤ 1"
-msgstr ""
+msgstr "x ≤ 1"
 
-#. §0: `tauto`
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+#. §0: `tauto`
 msgid "§0 is good enough to solve this goal."
-msgstr ""
+msgstr "§0はこの目標を解決するのに十分です。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid "mul_assoc"
-msgstr ""
+msgstr "乗法の結合律"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: $a$
 #. §1: $b$
 #. §2: `succ_inj a b`
@@ -40,7 +41,6 @@ msgstr ""
 #. §12: $\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$
 #. §13: `succ_inj`
 #. §14: `pred`
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "# Statement\n"
 "\n"
@@ -65,15 +65,66 @@ msgid ""
 "in Lean it can be proved using §14, a mathematically\n"
 "pathological function."
 msgstr ""
+"### 原文 (English)\n"
+"# Statement\n"
+"\n"
+"If §0 and §1 are numbers, then\n"
+"§2 is the proof that\n"
+"§3.\n"
+"\n"
+"## More technical details\n"
+"\n"
+"There are other ways to think about §4.\n"
+"\n"
+"You can think about §5 itself as a function which takes two\n"
+"numbers §6 and §7 as input, and outputs a proof of\n"
+"§8.\n"
+"\n"
+"You can think of §9 itself as a proof; it is the proof\n"
+"that §10 is an injective function. In other words,\n"
+"§11 is a proof of\n"
+"§12.\n"
+"\n"
+"§13 was postulated as an axiom by Peano, but\n"
+"in Lean it can be proved using §14, a mathematically\n"
+"pathological function.\n"
+"\n"
+"\n"
+"## 翻訳 (Japanese)\n"
+"# 陳述\n"
+"\n"
+"§0 と §1 が数値である場合、\n"
+"§2 は §3 の証明です。\n"
+"\n"
+"## さらなる技術的な詳細\n"
+"\n"
+"§4 を考える方法は他にもあります。\n"
+"\n"
+"§5 は、2 つの数値 §6 と §7 を入力として取り、\n"
+"§8 の証明を出力する関数として考えることができます。\n"
+"\n"
+"§9 は自身が証明であり、これは §10 が単射関数であることを示す証明です。つまり、\n"
+"§11 は §12 の証明です。\n"
+"\n"
+"ペアノによって公理として導入された §13 ですが、\n"
+"Lean では §14、すなわち数学的に病理的な関数を使用して証明できます。"
 
+#: Game.Levels.Addition.L02succ_add
 #. §0: $a, b$
 #. §1: $ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$
-#: Game.Levels.Addition.L02succ_add
 msgid ""
 "For all natural numbers §0, we have\n"
 "§1."
 msgstr ""
+"すべての自然数 §0 に対して、\n"
+"§1.\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"すべての自然数 §0 に対して、\n"
+"§1."
 
+#: Game.Levels.Tutorial.L04rw_backwards
 #. §0: `h`
 #. §1: `X = Y`
 #. §2: `rw [h]`
@@ -88,7 +139,6 @@ msgstr ""
 #. §11: $0$
 #. §12: `succ (succ 0)`
 #. §13: `2`
-#: Game.Levels.Tutorial.L04rw_backwards
 msgid ""
 "If §0 is a proof of §1 then §2 will\n"
 "turn §3s into §4s. But what if we want to\n"
@@ -100,7 +150,12 @@ msgid ""
 "after §11 again, this time by changing §12\n"
 "into §13."
 msgstr ""
+"もし§0が§1の証明であるなら、§2は§3を§4に変換します。しかし、§5を§6に変換したい場合怎么办？§7"
+"タクティクに私たちがこの変換を指示するには、左矢印§8を使用します。型§9を入力し、スペースバーを押すとこの矢印が得られます。\n"
+"\n"
+"次の証明で、§10が§11の後ろの数値の後ろの数値であることを証明しましょう。今回は§12を§13に変換して証明します。"
 
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `have`
 #. §1: `a`
 #. §2: `have ha : a = 0`
@@ -114,7 +169,6 @@ msgstr ""
 #. §10: `succ_inj a b`
 #. §11: `have h2 := succ_inj a b`
 #. §12: `h2 : succ a = succ b → a = b`
-#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid ""
 "# Summary\n"
 "\n"
@@ -152,11 +206,28 @@ msgid ""
 "\n"
 "will add §12 as a hypothesis."
 msgstr ""
+"### Summary\n"
+"\n"
+"§0 タクティクはレベルに新しい仮定を追加するのに使用できますが、もちろんそれらを証明する必要があります。\n"
+"\n"
+"## 例\n"
+"\n"
+"最も単純な使用法は以下の通りです。コンテキストに§1がある場合、§2を実行すると新しい目標§3が生成され、それを証明すると元の目標に新しい仮定§4"
+"が追加されます。\n"
+"\n"
+"## 例\n"
+"\n"
+"既に証明したいものを持っている場合、それをすぐに作成することができます。例えば、§6と§7で番号付けされたオブジェクトがある場合、§8"
+"を実行すると、その証明（§10）を提供したため、コンテキストに新しい仮定§9が追加されます。\n"
+"\n"
+"## 例\n"
+"\n"
+"証明を持っている場合、証明したいものを明示する必要すらありません。例えば、§11を実行すると、§12が仮定として追加されます。"
 
+#: Game.Levels.Addition.L04add_assoc
 #. §0: `a + b + c`
 #. §1: `(a + b) + c`
 #. §2: `+`
-#: Game.Levels.Addition.L04add_assoc
 msgid ""
 "Remember that when Lean writes §0, it means §1.\n"
 "If you are not sure where the brackets are in an expression, just hover\n"
@@ -164,33 +235,46 @@ msgid ""
 "hover over both §2 symbols on the left hand side of the goal and\n"
 "you'll see where the invisible brackets are."
 msgstr ""
+"Remember that when Lean writes §0, it means §1.\n"
+"もし式内の括弧の位置が不明な場合は、カーソルをその位置に-hover "
+"して表示されるハイライトを確認してください。例えば、目標の左側の両方の§2をhoverすると、見えない括弧の位置がわかります。"
 
+#: Game.Levels.Tutorial.L04rw_backwards
 #. §0: `rw [← one_eq_succ_zero]`
 #. §1: `succ 0`
 #. §2: `1`
-#: Game.Levels.Tutorial.L04rw_backwards
 msgid "Try §0 to change §1 into §2."
-msgstr ""
+msgstr "試してみて §0 を使用し、§1 を §2 に変換してください。"
 
-#. §0: `1`
 #: Game.Levels.Tutorial.L07add_succ
+#. §0: `1`
 msgid "Start by unravelling the §0."
-msgstr ""
+msgstr "開始するには、§0 を unravel してください。"
 
 #: Game.Levels.Tutorial.L02rw
 msgid "the rw tactic"
-msgstr ""
+msgstr "the rw タクティク"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid "mul_left_ne_zero"
 msgstr ""
+"mul_left_ne_zero\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"左側 multiplicand が非零である定理"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "mul_ne_zero"
 msgstr ""
+"mul_ne_zero\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"乗算が零でない（mul_ne_zero）"
 
-#. §0: `2 + 2 = 4`
 #: Game.Levels.Tutorial
+#. §0: `2 + 2 = 4`
 msgid ""
 "Welcome to tutorial world! In this world we learn the basics\n"
 "of proving theorems. The boss level of this world\n"
@@ -203,34 +287,59 @@ msgid ""
 "Let's learn some basic tactics. Click on \"Start\" below\n"
 "to begin your quest."
 msgstr ""
+"### 原文 (English)\n"
+"Welcome to tutorial world! In this world we learn the basics\n"
+"of proving theorems. The boss level of this world\n"
+"is the theorem §0.\n"
+"\n"
+"You prove theorems by solving puzzles using tools called *tactics*.\n"
+"The aim is to prove the theorem by applying tactics\n"
+"in the right order.\n"
+"\n"
+"Let's learn some basic tactics. Click on \"Start\" below\n"
+"to begin your quest.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+" welcomes to tutorial world! この世界では定理を証明する基本を学びます。この世界のボスレベルは定理§0です。\n"
+"\n"
+"定理を証明するには、*タクティク*というツールを使ってパズルを解きます。目標は、適切な順序でタクティクを適用して定理を証明することです。\n"
+"\n"
+"基本的なタクティクについて学んでみましょう。以下の \"開始\" をクリックして冒険を始めてください。"
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
 msgid "add_left_cancel"
 msgstr ""
+"add_left_cancel\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"左-cancel 付加律"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 msgid "You can probably take it from here."
-msgstr ""
+msgstr "您可能已经可以继续了。"
 
 #: Game.Levels.Tutorial.L08twoaddtwo
 msgid "2+2=4"
-msgstr ""
+msgstr "2+2=4"
 
+#: Game.Levels.Implication.L08ne
 #. §0: `x ≠ y`
 #. §1: `x = y → False`
-#: Game.Levels.Implication.L08ne
 msgid "Remember, §0 is *notation* for §1."
-msgstr ""
+msgstr "記憶しておいてください、§0は§1の*表記*です。"
 
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #. §0: `a * b = 0`
 #. §1: `a = 0`
 #. §2: `b = 0`
-#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid ""
 "This level proves that if §0 then §1 or §2. It is\n"
 "logically equivalent to the last level, so there is a very short proof."
-msgstr ""
+msgstr "このレベルは、§0 ならば §1 または §2 であることを証明します。これは最後のレベルと論理的に同等であるため、非常に短い証明があります。"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: $0+n=n$
 #. §1: $n$
 #. §2: $n+0=n$
@@ -248,7 +357,6 @@ msgstr ""
 #. §14: `0 + succ d = succ d`
 #. §15: `0`
 #. §16: `>_`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "In this level we're going to prove that §0, where §1 is a secret natural "
 "number.\n"
@@ -272,13 +380,51 @@ msgid ""
 "you can swap\n"
 "back to \"Typewriter mode\" by clicking the §16 button in the top right.)"
 msgstr ""
+"### 原文 (English)\n"
+"In this level we're going to prove that §0, where §1 is a secret natural "
+"number.\n"
+"\n"
+"Wait, don't we already know that? No! We know that §2, but that's §3.\n"
+"This is §4, which is different.\n"
+"\n"
+"The difficulty with proving §5 is that we do not have a *formula* for\n"
+"§6 in general, we can only use §7 and §8 once\n"
+"we know whether §9 is §10 or a successor. The §11 tactic splits into these "
+"two cases.\n"
+"\n"
+"The base case will require us to prove §12, and the inductive step\n"
+"will ask us to show that if §13 then §14. Because\n"
+"§15 and successor are the only way to make numbers, this will cover all the "
+"cases.\n"
+"\n"
+"See if you can do your first induction proof in Lean.\n"
+"\n"
+"(By the way, if you are still in the \"Editor mode\" from the last world, "
+"you can swap\n"
+"back to \"Typewriter mode\" by clicking the §16 button in the top right.)\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"このレベルでは、§1 という秘密の自然数について §0 を証明します。\n"
+"\n"
+"待って、それでは既に知っていることではないですか？いいえ！§2 は分かっていますが、それが §3 です。\n"
+"これは §4 で、異なるものです。\n"
+"\n"
+"§5 を証明する難しさは、一般の §6 に対する *公式* が存在しないことです。§7 と §8 は §9 が §10 "
+"か後続数であることを知ったときにのみ使用できます。§11 のタクティクはこれらの2つの場合に分岐します。\n"
+"\n"
+"基本的な場合では §12 を証明する必要がありますし、帰納的なステップでは §13 が真なら §14 を示す必要があります。§15 "
+"と後続数が数を作る唯一の方法であるため、これで全てのケースをカバーします。\n"
+"\n"
+"Leanで初めての帰納法証明を試みることができますか？\n"
+"\n"
+"（ちなみに、最後のワールドで「エディタモード」にいた場合、右上にある §16 ボタンをクリックして「タイプライターモード」に戻ることができます。）"
 
+#: Game.Levels.LessOrEqual.L11le_two
 #. §0: `∨`
 #. §1: `x = 0 ∨ x = 1 ∨ x = 2`
 #. §2: `x = 0 ∨ (x = 1 ∨ x = 2)`
 #. §3: `left`
 #. §4: `right`
-#: Game.Levels.LessOrEqual.L11le_two
 msgid ""
 "We'll need this lemma to prove that two is prime!\n"
 "\n"
@@ -286,29 +432,48 @@ msgid ""
 "§1 actually means §2.\n"
 "This affects how §3 and §4 work."
 msgstr ""
+"We'll need this lemma to prove that two is prime!\n"
+"\n"
+"You'll need to know that §0 is right associative. This means that\n"
+"§1 actually means §2.\n"
+"This affects how §3 and §4 work."
 
 #: Game.Levels.Power.L01zero_pow_zero
 msgid "zero_pow_zero"
 msgstr ""
+"零乗零\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"零乗零"
 
+#: Game.Levels.Addition.L03add_comm
 #. §0: `a`
 #. §1: `b`
-#: Game.Levels.Addition.L03add_comm
 msgid "Induction on §0 or §1 -- it's all the same in this one."
-msgstr ""
+msgstr "帰納法を用いて §0 または §1 に適用する -- どちらも同じことです。"
 
 #: Game.Levels.Power.L05pow_two
 msgid "Note: this lemma will be useful for the final boss!"
-msgstr ""
+msgstr "この補題は最終ボス戦で役立つでしょう！"
 
 #: Game.Levels.Implication.L06intro
 msgid "intro"
 msgstr ""
+"## はじめに\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"## はじめに\n"
+"\n"
+"\n"
+"## 翻訳\n"
+"## はじめに"
 
-#. §0: `apply eq_succ_of_ne_zero at ha`
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+#. §0: `apply eq_succ_of_ne_zero at ha`
 msgid "Use the previous lemma with §0."
-msgstr ""
+msgstr "前の補題を使用し、§0を適用してください。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
@@ -317,30 +482,35 @@ msgid ""
 "\n"
 "If you want to begin your journey to the final boss, head for Power World."
 msgstr ""
+"数学的な通り路人は、自然数が可換半環であることを証明したことを指摘しました。\n"
+"\n"
+"最終ボスへの旅を始めるなら、Power Worldへ向かってください。"
 
-#. §0: `pow_pow`
 #: Game.Levels.Power.L08pow_pow
+#. §0: `pow_pow`
 msgid ""
 "One of the best named levels in the game, a savage §0\n"
 "sub-boss appears as the music reaches a frenzy. What\n"
 "else could there be to prove about powers after this?"
 msgstr ""
+"ゲームで最も適切に名付けられたレベルの一つとして知られる場面で、音楽が狂熱に達すると凶暴な§0\n"
+"サブボスが登場します。それ以降の力について何を証明できるでしょうか？"
 
+#: Game.Levels.LessOrEqual.L05le_zero
 #. §0: $x \\leq 0$
 #. §1: $x=0$
-#: Game.Levels.LessOrEqual.L05le_zero
 msgid "If §0, then §1."
-msgstr ""
+msgstr "もし§0であるなら、§1です。"
 
-#. §0: `apply h`
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+#. §0: `apply h`
 msgid "Now §0 and you can probably take it from here."
-msgstr ""
+msgstr "現在、§0 です。ここから大丈夫でしょう。"
 
+#: Game.Levels.Multiplication.L04mul_comm
 #. §0: `mul_comm x y : x * y = y * x`
 #. §1: `zero_mul`
 #. §2: `mul_zero`
-#: Game.Levels.Multiplication.L04mul_comm
 msgid ""
 "The first sub-boss of Multiplication World is §0.\n"
 "\n"
@@ -349,38 +519,52 @@ msgid ""
 "But we'll keep hold of these proofs anyway, because it's convenient\n"
 "to have exactly the right tool for a job."
 msgstr ""
+"The first sub-boss of Multiplication Worldは§0です。\n"
+"\n"
+"この定理を証明すると、「余裕」のある証明が得られます。\n"
+"例えば、§2から容易に導かれる§1があります。\n"
+"しかし、これらの証明は手元に置いておくことにします。\n"
+"必要な仕事に適切な道具を持つためです。"
 
+#: Game.Levels.Addition.L05add_right_comm
 #. §0: `add_right_comm a b c`
 #. §1: `(a + b) + c = (a + c) + b`
 #. §2: `a + b + c`
 #. §3: `(a + b) + c`
 #. §4: `a + b + c = a + c + b`
-#: Game.Levels.Addition.L05add_right_comm
 msgid ""
 "§0 is a proof that §1\n"
 "\n"
 "In Lean, §2 means §3, so this result gets displayed\n"
 "as §4."
 msgstr ""
+"§0は§1の証明です\n"
+"\n"
+"Leanでは、§2は§3を意味するので、この結果は§4として表示されます。"
 
 #: Game.Levels.Algorithm.L08decide
 msgid "decide"
-msgstr ""
+msgstr "決定"
 
+#: Game.Levels.Implication.L02exact2
 #. §0: `rw [zero_add] at «{h}»`
 #. §1: `«{h}»`
-#: Game.Levels.Implication.L02exact2
 msgid ""
 "You can use §0 to rewrite at §1 instead\n"
 "of at the goal."
 msgstr ""
+"您可以在§0处重写代码，而不是在目标处进行重写。\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"您可以在§0でコードを改訂し、目標处の重写を避けることができます。"
 
+#: Game.Levels.Tutorial.L05add_zero
 #. §0: `repeat t`
 #. §1: `t`
 #. §2: `repeat rw [add_zero]`
 #. §3: `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
 #. §4: `a = b`
-#: Game.Levels.Tutorial.L05add_zero
 msgid ""
 "## Summary\n"
 "\n"
@@ -395,11 +579,23 @@ msgid ""
 "into the goal\n"
 "§4."
 msgstr ""
+"## 結論\n"
+"\n"
+"§0はタクティク§1を繰り返し適用し、目標を処理します。このタクティクを使用する必要はありませんが、時々処理速度を向上させることがあります。\n"
+"\n"
+"## 例\n"
+"\n"
+"§2を使用すると、目標§3は§4に変更されます。"
 
 #: Game.Levels.Addition
 msgid "Addition World"
 msgstr ""
+" Addition World\n"
+"\n"
+"## 日本語翻訳\n"
+"ワールド::加算"
 
+#: Game.Levels.Implication.L01exact
 #. §0: `P`
 #. §1: `exact h`
 #. §2: `h`
@@ -424,7 +620,6 @@ msgstr ""
 #. §21: `x = x`
 #. §22: `rw`
 #. §23: `add_zero`
-#: Game.Levels.Implication.L01exact
 msgid ""
 "## Summary\n"
 "\n"
@@ -451,19 +646,39 @@ msgid ""
 "and §20 will both change the goal to §21,\n"
 "because §22 guesses the input to the function §23."
 msgstr ""
+"## 結論\n"
+"\n"
+"もし目標が §0 の文である場合、§2 が §3 の証明であれば、目標は §1 で閉じます。\n"
+"\n"
+"### 例\n"
+"\n"
+"もし目標が §4 で、仮定 §5 がある場合、§6 は目標を解決します。\n"
+"\n"
+"### 例\n"
+"\n"
+"もし目標が §7 である場合、§8 は目標を閉じます。\n"
+"\n"
+"### 必ず正確に\n"
+"\n"
+"注意してほしいのは、前の例では §9 は *機能しません*;\n"
+"§10 が機能するためには、§11 は目標の *正確な* 証明である必要があります。\n"
+"§12 は目標の §13 の証明であるか、あるいは §14 の証明で、§15 はユーザーによって提供される必要があります。\n"
+"これは §16 と §17 とは異なり、必要に応じてこれらの関数は *入力の推測* を行います。もし目標が §18 である場合、§19 と §20 "
+"は両方とも目標を §21 に変更します。\n"
+"これは §22 が関数 §23 の入力を推測するからです。"
 
+#: Game.Levels.Implication.L07intro2
 #. §0: `apply succ_inj at h`
 #. §1: `succ`
-#: Game.Levels.Implication.L07intro2
 msgid "Now §0 to cancel the §1s."
-msgstr ""
+msgstr "現在、§0を用いて§1sをキャンセルします。"
 
+#: Game.Levels.Addition
 #. §0: `induction`
 #. §1: `x + y = y + x`
 #. §2: `rw`
 #. §3: `rfl`
 #. §4: `induction`
-#: Game.Levels.Addition
 msgid ""
 "Welcome to Addition World! In this world we'll learn the §0 tactic.\n"
 "This will enable us to defeat the boss level of this world, namely §1.\n"
@@ -478,7 +693,33 @@ msgid ""
 "want to explore the game further (for example if you decide to 100%\n"
 "the game)."
 msgstr ""
+"### 原文 (English)\n"
+"Welcome to Addition World! In this world we'll learn the §0 tactic.\n"
+"This will enable us to defeat the boss level of this world, namely §1.\n"
+"\n"
+"The tactics §2, §3 and §4 are the only tactics you'll need to\n"
+"beat all the levels in Addition World, Multiplication World, and Power "
+"World.\n"
+"Power World contains the final boss of the game.\n"
+"\n"
+"There are plenty more tactics in this game, but you'll only need to know "
+"them if you\n"
+"want to explore the game further (for example if you decide to 100%\n"
+"the game).\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+" Additionワールドへようこそ！このワールドでは§0 タクティクを学びます。\n"
+"これにより、このワールドのボスレベルを攻略することができます、すなわち§1です。\n"
+"\n"
+"§2, §3, §4 のタクティクのみが必要で、これらを用いて\n"
+"加算ワールド、乗算ワールド、乗方ワールドのすべてのレベルを攻略することができます。\n"
+"乗方ワールドにはゲームの最終ボスが含まれています。\n"
+"\n"
+"このゲームにはもっと多くのタクティクがありますが、それらを知る必要はなく、\n"
+"ゲームをさらに探索したい場合（例えば、ゲームを100%攻略したい場合）にのみ必要となります。"
 
+#: Game.Levels.Algorithm.L02add_algo1
 #. §0: `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`
 #. §1: `(a + b) + (c + d) = ((a + c) + d) + b`
 #. §2: `a+b+c+d`
@@ -488,7 +729,6 @@ msgstr ""
 #. §6: `b`
 #. §7: `d`
 #. §8: `add_left_comm`
-#: Game.Levels.Algorithm.L02add_algo1
 msgid ""
 "In some later worlds, we're going to see some much nastier levels,\n"
 "like §0.\n"
@@ -501,11 +741,36 @@ msgid ""
 "and then swap §6 and §7. But this is easier than you\n"
 "think with §8."
 msgstr ""
+"### 原文 (English)\n"
+"In some later worlds, we're going to see some much nastier levels,\n"
+"like §0.\n"
+"Brackets need to be moved around, and variables need to be swapped.\n"
+"\n"
+"In this level, §1,\n"
+"let's forget about the brackets and just think about\n"
+"the variable order.\n"
+"To turn §2 into §3 we need to swap §4 and §5,\n"
+"and then swap §6 and §7. But this is easier than you\n"
+"think with §8.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"いくつかの後続のワールドでは、§0のようなもっとひどいレベルを見ることになります。\n"
+"括弧は移動させ、変数は入れ替える必要があります。\n"
+"\n"
+"このレベルでは、§1、括弧は無視して変数の順序だけを考えましょう。\n"
+"§2を§3に変更するには、§4と§5を、そして§6と§7を入れ替える必要があります。しかし、§8を使うと意外と簡単にできます。"
 
 #: Game.Levels.Algorithm.L01add_left_comm
 msgid "add_left_comm"
 msgstr ""
+"add_left_comm\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"左側交換律（add_left_comm）"
 
+#: Game.Levels.Implication.L10one_ne_zero
 #. §0: `symm`
 #. §1: `X = Y`
 #. §2: `Y = X`
@@ -518,7 +783,6 @@ msgstr ""
 #. §9: `symm at h`
 #. §10: `h`
 #. §11: `5 ≠ 2 + 2`
-#: Game.Levels.Implication.L10one_ne_zero
 msgid ""
 "## Summary\n"
 "\n"
@@ -534,30 +798,45 @@ msgid ""
 "\n"
 "If §8 then §9 will change §10 to §11."
 msgstr ""
+"## 結論\n"
+"\n"
+"タクティク §0 は、目標や仮定が §1 の形式の場合を §2 に変更します。また、§3 や §4 も対象となります。\n"
+"\n"
+"### 例\n"
+"\n"
+"もし目標が §5 の場合、§6 はそれを §7 に変更します。\n"
+"\n"
+"### 例\n"
+"\n"
+"もし §8 の場合、§9 は §10 を §11 に変更します。"
 
+#: Game.Levels.Multiplication.L07mul_add
 #. §0: $a$
 #. §1: $b$
 #. §2: $c$
 #. §3: $a(b + c) = ab + ac$
-#: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "Multiplication is distributive over addition on the left.\n"
 "In other words, for all natural numbers §0, §1 and §2, we have\n"
 "§3."
 msgstr ""
+"乗算は左側で加算に対して分配律を満たします。\n"
+"つまり、すべての自然数 §0, §1, §2 に対して、以下の関係が成り立ちます。\n"
+"§3."
 
-#. §0: `apply`
 #: Game.Levels.Implication.L03apply
+#. §0: `apply`
 msgid "The §0 tactic."
-msgstr ""
+msgstr "The タクティク tactic."
 
-#. §0: `exact h1`
 #: Game.Levels.Implication.L01exact
+#. §0: `exact h1`
 msgid ""
-"The goal in this level is one of our hypotheses. Solve the goal by executing "
-"§0."
-msgstr ""
+"The goal in this level is one of our hypotheses. Solve the goal by "
+"executing §0."
+msgstr "このレベルの目標は、私たちの仮定の一つです。目標を達成するには、§0 を実行してください。"
 
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
 #. §0: `≤`
 #. §1: `a + b = 0`
 #. §2: `a = 0`
@@ -574,7 +853,6 @@ msgstr ""
 #. §13: `h : False`
 #. §14: `cases h`
 #. §15: `False`
-#: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid ""
 "The next result we'll need in §0 World is that if §1 then §2 and §3.\n"
 "Let's prove one of these facts in this level, and the other in the next.\n"
@@ -598,21 +876,59 @@ msgid ""
 "make a proof of §15! So you will end up with no goals, meaning you have "
 "proved everything."
 msgstr ""
+"### 原文 (English)\n"
+"The next result we'll need in §0 World is that if §1 then §2 and §3.\n"
+"Let's prove one of these facts in this level, and the other in the next.\n"
+"\n"
+"## A new tactic: §4\n"
+"\n"
+"The §5 tactic will split an object or hypothesis up into the possible ways\n"
+"that it could have been created.\n"
+"\n"
+"For example, sometimes you want to deal with the two cases §6 and §7 "
+"separately,\n"
+"but don't need the inductive hypothesis §8 that comes with §9.\n"
+"In this situation you can use §10 instead. There are two ways to make\n"
+"a number: it's either zero or a successor. So you will end up with two "
+"goals, one\n"
+"with §11 and one with §12.\n"
+"\n"
+"Another example: if you have a hypothesis §13 then you are done, because a "
+"false statement implies\n"
+"any statement. Here §14 will close the goal, because there are *no* ways to\n"
+"make a proof of §15! So you will end up with no goals, meaning you have "
+"proved everything.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"次に §0 ワールドで必要になる結果は、もし §1 なら §2 と §3 です。\n"
+"このレベルで一つの事実を証明し、次のレベルでもう一つの事実を証明しましょう。\n"
+"\n"
+"## 新しいタクティク: §4\n"
+"\n"
+"§5 タクティクは、オブジェクトや仮定を生成された可能性のある方法に分割します。\n"
+"\n"
+"例えば、時々 §6 と §7 の二つのケースを個別に扱いたい場合がありますが、§9 が伴う §8 の帰納的仮定は必要ありません。\n"
+"この状況では、§10 を使用することができます。数を作る方法は二つあります：ゼロか後続です。したがって、二つの目標が残ります。一つには §11 "
+"があり、もう一つには §12 があります。\n"
+"\n"
+"別の例：仮定 §13 がある場合、証明は完了します。偽の命題は任意の命題を導くからです。ここでは §14 が目標を閉じます。なぜなら §15 "
+"の証明を作る方法は *ありません*！したがって、目標が残らないため、すべてを証明したということになります。"
 
-#. §0: `rfl`
 #: Game.Levels.Tutorial.L01rfl
+#. §0: `rfl`
 msgid ""
 "In order to use the tactic §0 you can enter it in the text box\n"
 "under the goal and hit \"Execute\"."
-msgstr ""
+msgstr "タクティク §0 を使用するには、目標の下のテキストボックスに入力し、「実行」をクリックしてください。"
 
+#: Game.Levels.LessOrEqual.L07or_symm
 #. §0: $x=37$
 #. §1: $y=42$
 #. §2: $y=42$
 #. §3: $x=37$
-#: Game.Levels.LessOrEqual.L07or_symm
 msgid "If §0 or §1, then §2 or §3."
-msgstr ""
+msgstr "もし§0 または §1 ならば, §2 または §3 です。"
 
 #: Game.Levels.Algorithm.L09decide2
 msgid ""
@@ -620,13 +936,18 @@ msgid ""
 "will be helpful for you in Even-Odd World (when someone gets around to\n"
 "implementing it)."
 msgstr ""
+" Congratulations! あなたはAlgorithm Worldを完了しました。これらのアルゴリズムは、Even-Odd "
+"Worldが実装されるまで、あなたにとって役立つでしょう。\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
 
+#: Game.Levels.Tutorial.L08twoaddtwo
 #. §0: `h : X = Y`
 #. §1: `rw [h]`
 #. §2: `X`
 #. §3: `Y`
 #. §4: `nth_rewrite 3 [h]`
-#: Game.Levels.Tutorial.L08twoaddtwo
 msgid ""
 "Good luck!\n"
 "\n"
@@ -634,10 +955,14 @@ msgid ""
 "  If you only want to change one of them, say the 3rd one, then use\n"
 "  §4."
 msgstr ""
+"Good luck!\n"
+"\n"
+"最後のヒント。もし§0であれば、§1はすべての§2を§3に変換します。\n"
+"一方で、一つだけ変換したい場合（例えば3番目のもの）、§4を使用します。"
 
+#: Game.Levels.Addition.L04add_assoc
 #. §0: `add_assoc`
 #. §1: `add_comm`
-#: Game.Levels.Addition.L04add_assoc
 msgid ""
 "A passing mathematician congratulates you on proving that naturals\n"
 "are an additive commutative monoid.\n"
@@ -645,27 +970,31 @@ msgid ""
 "Let's practice using §0 and §1 in one more level,\n"
 "before we leave addition world."
 msgstr ""
+"A 通りすがりの数学者は、自然数が加法的交換半群であることを証明したことに称賛の意を表します。\n"
+"\n"
+"加法的世界を去る前に、§0 と §1 の使用をもう一回練習しましょう。"
 
 #: Game.Levels.Implication.L05succ_inj2
 msgid "Arguing backwards"
-msgstr ""
+msgstr "反論する"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid "mul_right_eq_one"
-msgstr ""
+msgstr "mul_right_eq_one"
 
+#: Game.Levels.Power.L09add_sq
 #. §0: `add_sq a b`
 #. §1: $(a+b)^2=a^2+b^2+2ab.$
-#: Game.Levels.Power.L09add_sq
 msgid "§0 is the statement that §1"
-msgstr ""
+msgstr "§0は§1のステートメントです。"
 
+#: Game.Levels.Implication.L08ne
 #. §0: $x=y$
 #. §1: $x \\neq y$
-#: Game.Levels.Implication.L08ne
 msgid "If §0 and §1 then we can deduce a contradiction."
-msgstr ""
+msgstr "もし§0 と §1 ならば、矛盾を導き出すことができます。"
 
+#: Game.Levels.Tutorial.L05add_zero
 #. §0: `2 + 2 = 4`
 #. §1: $37$
 #. §2: $x$
@@ -688,7 +1017,6 @@ msgstr ""
 #. §19: `? + 0 = ?`
 #. §20: `add_zero x : x + 0 = x`
 #. §21: `proof : statement`
-#: Game.Levels.Tutorial.L05add_zero
 msgid ""
 "We'd like to prove §0 but right now\n"
 "we can't even *state* it\n"
@@ -713,31 +1041,110 @@ msgid ""
 "\n"
 "We write §20, so §21."
 msgstr ""
+"### 原文 (English)\n"
+"We'd like to prove §0 but right now\n"
+"we can't even *state* it\n"
+"because we haven't yet defined addition.\n"
+"\n"
+"## Defining addition.\n"
+"\n"
+"How are we going to add §1 to an arbitrary number §2? Well,\n"
+"there are only two ways to make numbers in this game: §3\n"
+"and successors. So to define §4 we will need\n"
+"to know what §5 is and what §6 is.\n"
+"Let's start with adding §7.\n"
+"\n"
+"### Adding 0\n"
+"\n"
+"To make addition agree with our intuition, we should *define* §8\n"
+"to be §9. More generally, we should define §10 to be §11 for\n"
+"any number §12. The name of this proof in Lean is §13.\n"
+"For example §14 is a proof of §15,\n"
+"§16 is a proof of §17, and §18 is a proof\n"
+"of §19.\n"
+"\n"
+"We write §20, so §21.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"私たちは§0を証明したいですが、現在ではすら\n"
+"その定理を述べることができません。\n"
+"なぜなら、加法をまだ定義していないからです。\n"
+"\n"
+"## 加法の定義\n"
+"\n"
+"任意の数§2に§1を加える方法はどのようなものでしょうか？\n"
+"このゲームでは数を生成する方法は2つしかありません：§3\n"
+"と後続数。したがって、§4を定義するには\n"
+"§5と§6がどのようなものかを知る必要があります。\n"
+"まずは§7を加えることにしましょう。\n"
+"\n"
+"### 0を加える\n"
+"\n"
+"加法が直感に合致するようにするためには、§8を\n"
+"§9とするべきです。より一般的には、任意の数§12に対して\n"
+"§10を§11とするべきです。Leanでのこの証明の名前は§13です。\n"
+"例えば、§14は§15の証明、§16は§17の証明、§18は§19の証明です。\n"
+"\n"
+"私たちは§20と書きます、つまり§21です。"
 
-#. §0: `t = 0`
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
+#. §0: `t = 0`
 msgid "Let's warm up with an easy one, which works even if §0."
 msgstr ""
+"## 簡単な例題（§0 に関わらず動作します）\n"
+"\n"
+"```lean\n"
+"example : Prop := true\n"
+"```\n"
+"\n"
+"```lean\n"
+"-- 例題: 命題です\n"
+"example : Prop := true\n"
+"```\n"
+"\n"
+"```lean\n"
+"-- 仮定\n"
+"variable (p : Prop)\n"
+"\n"
+"-- 証明\n"
+"example : p → p := assume hp : p, hp\n"
+"```\n"
+"\n"
+"```lean\n"
+"-- タクティクを使用した証明\n"
+"example : p → p := by\n"
+"  intro hp\n"
+"  exact hp\n"
+"```"
 
-#. §0: $x+1=y+1\\implies x=y$
 #: Game.Levels.Implication.L07intro2
+#. §0: $x+1=y+1\\implies x=y$
 msgid ""
 "Let's see if you can use the tactics we've learnt to prove §0.\n"
-"Try this one by yourself; if you need help then click on \"Show more help!\"."
+"Try this one by yourself; if you need help then click on \"Show more "
+"help!\"."
 msgstr ""
+"Let's see if you can use the tactics we've learnt to prove §0.\n"
+"Try this one by yourself; if you need help then click on \"Show more "
+"help!\".\n"
+"\n"
+"## 翻訳\n"
+"タクティクを用いて§0を証明できるかどうか試してみてください。\n"
+"自分で試してみてください；手助けが必要であれば「詳細な手助けを表示！」をクリックしてください。"
 
-#. §0: `apply zero_ne_succ at h`
 #: Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+#. §0: `apply zero_ne_succ at h`
 msgid "Now you can §0."
-msgstr ""
+msgstr "現在、§0 です。"
 
+#: Game.Levels.Implication.L03apply
 #. §0: `h2`
 #. §1: `x = 37`
 #. §2: `y = 42`
 #. §3: `apply`
 #. §4: `apply`
-#: Game.Levels.Implication.L03apply
 msgid ""
 "In this level, the hypothesis §0 is an *implication*. It says\n"
 "that *if* §1 *then* §2. We can use this\n"
@@ -745,7 +1152,10 @@ msgid ""
 "§4 or any other tactic on the right to see a detailed explanation\n"
 "of what it does, with examples."
 msgstr ""
+"このレベルでは、仮定§0は「 implication（ implication）」です。これは「§1 ならば §2」という意味です。この仮定は§3 "
+"tacticを使用して利用できます。右側の任意のtactic（例：§4）をクリックすることで、その詳細な説明と例を見ることができます。"
 
+#: Game.Levels.Tutorial.L01rfl
 #. §0: $37$
 #. §1: $x$
 #. §2: $q$
@@ -758,14 +1168,13 @@ msgstr ""
 #. §9: $X = X$
 #. §10: $37x+q=37x+q$
 #. §11: `rfl`
-#: Game.Levels.Tutorial.L01rfl
 msgid ""
 "# Read this first\n"
 "\n"
 "Each level in this game involves proving a mathematical theorem (the "
 "\"Goal\").\n"
-"The goal will be a statement about *numbers*. Some numbers in this game have "
-"known values.\n"
+"The goal will be a statement about *numbers*. Some numbers in this game "
+"have known values.\n"
 "Those numbers have names like §0. Other numbers will be secret. They're "
 "called things\n"
 "like §1 and §2. We know §3 is a number, we just don't know which one.\n"
@@ -779,38 +1188,63 @@ msgid ""
 "\n"
 "Prove that §10 by executing the §11 tactic."
 msgstr ""
+"# まずはこちらを読む\n"
+"\n"
+"このゲームの各レベルでは、数学的定理（「目標」）を証明します。\n"
+"目標は数に関する主張です。このゲームには既知の値を持つ数がいくつかあります。\n"
+"その数には§0のような名前がついています。他の数は秘密です。§1や§2のような名前で呼ばれます。§3"
+"は数であることは分かっていますが、具体的にはどの数かは分かりません。\n"
+"\n"
+"この最初のレベルでは、§4という定理を証明します。\n"
+"下の*Objects*に§5が表示されているので、§6と§7は数であることが分かります。\n"
+"\n"
+"Leanで目標を解決するには*tactics*を使用します。最初に学ぶtacticは§8で、これは§9のような形式の定理を証明します。\n"
+"\n"
+"§10を証明するために§11 tacticを実行してください。"
 
+#: Game.Levels.Implication.L02exact2
 #. §0: ```
 #. repeat rw [zero_add] at h
 #. exact h
 #. ```
-#: Game.Levels.Implication.L02exact2
 msgid ""
 "Here's a two-line proof:\n"
 "§0"
 msgstr ""
+"以下は二行の証明です:\n"
+"§0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"```html\n"
+"<p>以下は二行の証明です:</p>\n"
+"<§0>\n"
+"```"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `zero_add x`
 #. §1: `0 + x = x`
 #. §2: `zero_add`
 #. §3: `simp`
 #. §4: `0 + x`
 #. §5: `x`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "§0 is the proof of §1.\n"
 "\n"
 "§2 is a §3 lemma, because replacing §4 by §5\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"§2は§3補題であり、§4を§5に置き換えることは、表現を簡略化する際にほとんどが望ましい操作です。"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: `a`
 #. §1: `b`
 #. §2: `succ_inj a b`
 #. §3: `succ a = succ b`
 #. §4: `a = b`
 #. §5: $x+1=4 \\implies x=3$
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "If §0 and §1 are numbers, then §2 is a proof\n"
 "that §3 implies §4. Click on this theorem in the *Peano*\n"
@@ -822,35 +1256,59 @@ msgid ""
 "by manipulating our hypothesis until it becomes the goal. I will\n"
 "walk you through this level."
 msgstr ""
+"もし§0と§1が数値である場合、§2は§3が§4を導く証明です。*Peano*タブでこの定理について詳しく知ることができます。\n"
+"\n"
+"Peanoはこの定理を公理としていましたが、Algorithm "
+"WorldではLeanを使ってこの定理を証明する方法を示すことにします。現在はこの定理を仮定し、§5"
+"を用いて証明しましょう。また、証明は仮定を操作して目標に近づけることで進めていきます。このレベルを一緒に進めていきましょう。"
 
+#: Game.Levels.Implication.L09zero_ne_succ
 #. §0: `2 + 2 ≠ 5`
 #. §1: `0 ≠ 1`
 #. §2: `zero_ne_succ n`
 #. §3: `0 ≠ succ n`
-#: Game.Levels.Implication.L09zero_ne_succ
 msgid ""
 "As warm-up for §0 let's prove §1. To do this we need to\n"
 "introduce Peano's last axiom §2, a proof that §3.\n"
 "To learn about this result, click on it in the list of lemmas on the right."
 msgstr ""
+"### 原文 (English)\n"
+"As warm-up for §0 let's prove §1. To do this we need to\n"
+"introduce Peano's last axiom §2, a proof that §3.\n"
+"To learn about this result, click on it in the list of lemmas on the right.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"§0 の前準備として、§1 を証明しましょう。これを行うために、ペアノの最後の公理 §2 を導入し、§3 "
+"の証明が必要です。この結果について学ぶには、右側の定理一覧から該当項目をクリックしてください。"
 
+#: Game.Levels.Implication.L01exact
 #. §0: $x+y=37$
 #. §1: $3x+z=42$
 #. §2: $x+y=37$
-#: Game.Levels.Implication.L01exact
 msgid "Assuming §0 and §1, we have §2."
-msgstr ""
+msgstr "仮定§0と§1を仮定すると、§2が得られます。"
 
+#: Game.Levels.Addition.L03add_comm
 #. §0: `a`
 #. §1: `b`
 #. §2: $a + b = b + a$
-#: Game.Levels.Addition.L03add_comm
 msgid ""
 "On the set of natural numbers, addition is commutative.\n"
 "In other words, if §0 and §1 are arbitrary natural numbers, then\n"
 "§2."
 msgstr ""
+"自然数の集合において、加算は交換律を満たします。\n"
+"つまり、任意の自然数 §0 と §1 に対して、\n"
+"§2.\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"自然数の集合において、加算は交換律を満たします。\n"
+"つまり、任意の自然数 §0 と §1 に対して、\n"
+"§2."
 
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #. §0: `a * b = a * c`
 #. §1: `a ≠ 0`
 #. §2: `b = c`
@@ -863,7 +1321,6 @@ msgstr ""
 #. §9: `a * b = a * c`
 #. §10: `b = c`
 #. §11: `c`
-#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid ""
 "In this level we prove that if §0 and §1 then §2. It is tricky, for\n"
 "several reasons. One of these is that\n"
@@ -874,42 +1331,69 @@ msgid ""
 "the hypothesis is §4 but what we know is §5,\n"
 "so the induction hypothesis does not apply!\n"
 "\n"
-"Assume §6 is fixed. The actual statement we want to prove by induction on §7 "
-"is\n"
+"Assume §6 is fixed. The actual statement we want to prove by induction on "
+"§7 is\n"
 "\"for all §8, if §9 then §10\". This *can* be proved by induction,\n"
 "because we now have the flexibility to change §11."
 msgstr ""
+"### 原文 (English)\n"
+"In this level we prove that if §0 and §1 then §2. It is tricky, for\n"
+"several reasons. One of these is that\n"
+"we need to introduce a new idea: we will need to understand the concept of\n"
+"mathematical induction a little better.\n"
+"\n"
+"Starting with §3 is too naive, because in the inductive step\n"
+"the hypothesis is §4 but what we know is §5,\n"
+"so the induction hypothesis does not apply!\n"
+"\n"
+"Assume §6 is fixed. The actual statement we want to prove by induction on "
+"§7 is\n"
+"\"for all §8, if §9 then §10\". This *can* be proved by induction,\n"
+"because we now have the flexibility to change §11.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"このレベルでは、§0 と §1 が成り立つ場合、§2 が成り立つことを証明します。これは複雑な理由で、\n"
+"いくつかの理由からです。その一つは、新しいアイデアを導入する必要があるためです：\n"
+"数学的帰納法の概念をもう少し理解する必要があります。\n"
+"\n"
+"§3 から始めることは単純すぎるため、帰納的ステップでは仮定は §4 ですが、実際に知っていることは §5 であり、\n"
+"従って帰納仮定が適用されません！\n"
+"\n"
+"§6 を固定します。実際には、§7 による帰納法で証明したい主張は\n"
+"「全ての §8 について、§9 が成り立つ場合、§10 が成り立つ」です。これは *可能* に帰納法で証明できます。\n"
+"なぜなら、今では §11 を変更できる柔軟性があるからです。"
 
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #. §0: `h2`
 #. §1: `tauto`
-#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid ""
 "Now the goal can be deduced from §0 by pure logic, so use the §1\n"
 "tactic."
-msgstr ""
+msgstr "現在の目標は、§0 から純粋な論理で導き出せますので、§1 のタクティクを使用します。"
 
-#. §0: `rfl`
 #: Game.Levels.Tutorial.L02rw
+#. §0: `rfl`
 msgid "Now §0 will work."
-msgstr ""
+msgstr "現在、§0 が動作するようになります。"
 
+#: Game.Levels.LessOrEqual.L05le_zero
 #. §0: `le_zero x`
 #. §1: `x ≤ 0 → x = 0`
-#: Game.Levels.LessOrEqual.L05le_zero
 msgid "§0 is a proof of the implication §1."
-msgstr ""
+msgstr "§0 は §1 から導かれる命題の証明です。"
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
 msgid "2 + 2 ≠ 5"
-msgstr ""
+msgstr "2 + 2 ≠ 5"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `ℕ`
 #. §1: `0 : ℕ`
 #. §2: `succ (n : ℕ) : ℕ`
 #. §3: `MyNat`
 #. §4: `ℕ`
 #. §5: `Nat`
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
 "§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. "
 "It's\n"
@@ -925,29 +1409,62 @@ msgid ""
 "It is distinct from the Lean natural numbers §5, which should hopefully\n"
 "never leak into the natural number game.*"
 msgstr ""
+"### 原文 (English)\n"
+"§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. "
+"It's\n"
+"defined via two rules:\n"
+"\n"
+"* §1 (zero is a number)\n"
+"* §2 (the successor of a number is a number)\n"
+"\n"
+"## Game Implementation\n"
+"\n"
+"*The game uses its own copy of the natural numbers, called §3 with notation "
+"§4.\n"
+"It is distinct from the Lean natural numbers §5, which should hopefully\n"
+"never leak into the natural number game.*\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"§0は自然数で、このゲームでは単に「数」呼ばれる。これは以下の2つのルールにより定義される：\n"
+"\n"
+"* §1（ゼロは数）\n"
+"* §2（数の後続も数）\n"
+"\n"
+"## ゲーム実装\n"
+"\n"
+"* "
+"このゲームは、自身の自然数のコピーを使用し、その自然数は「§3」として呼び、記号は「§4」で表される。これはLeanの自然数「§5"
+"」とは異なるもので、希望するとおり自然数ゲームには流入することはない。"
 
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #. §0: `a ≠ 0`
 #. §1: `tauto`
-#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid ""
-"Multiplication usually makes a number bigger, but multiplication by zero can "
-"make\n"
+"Multiplication usually makes a number bigger, but multiplication by zero "
+"can make\n"
 "it smaller. Thus many lemmas about inequalities and multiplication need the\n"
 "hypothesis §0. Here is a key lemma that enables us to use this hypothesis.\n"
 "To help us with the proof, we can use the §1 tactic. Click on the tactic's "
 "name\n"
 "on the right to see what it does."
 msgstr ""
+"乗算は通常、数値を大きくしますが、ゼロによる乗算はその数値を小さくすることがあります。そのため、不等式や乗算に関する多くの補題では、§0 "
+"の仮定が必要です。この仮定を使用するための重要な補題があります。証明の助けとなるために、§1 "
+"のタクティクを使用できます。タクティクの名前を右側でクリックすると、その機能が表示されます。"
 
+#: Game.Levels.LessOrEqual.L04le_trans
 #. §0: `cases`
 #. §1: `hxy`
-#: Game.Levels.LessOrEqual.L04le_trans
 msgid ""
 "In this level, we see inequalities as *hypotheses*. We have not seen this "
 "before.\n"
 "The §0 tactic can be used to take §1 apart."
 msgstr ""
+"このレベルでは、不等式が仮定(*hypothesis*)として扱われます。これまでに見られなかった手法です。\n"
+"§0 タクティクは、§1 を分解するのに使用できます。"
 
+#: Game.Levels.Algorithm.L07succ_ne_succ
 #. §0: `a`
 #. §1: `b`
 #. §2: `a = b`
@@ -974,7 +1491,6 @@ msgstr ""
 #. §23: `rfl`
 #. §24: `a ≠ b`
 #. §25: `succ a ≠ succ b`
-#: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
 "Here we begin to\n"
 "develop an algorithm which, given two naturals §0 and §1, returns the "
@@ -997,11 +1513,47 @@ msgid ""
 "§21 is §22 and then §23. This level is a proof of the one\n"
 "remaining job we have to do: if §24 then §25."
 msgstr ""
+"### 原文 (English)\n"
+"Here we begin to\n"
+"develop an algorithm which, given two naturals §0 and §1, returns the "
+"answer\n"
+"to \"does §2?\"\n"
+"\n"
+"Here is the algorithm. First note that §3 and §4 are numbers, and hence\n"
+"are either §5 or successors.\n"
+"\n"
+"*) If §6 and §7 are both §8, return \"yes\".\n"
+"\n"
+"*) If one is §9 and the other is §10, return \"no\".\n"
+"\n"
+"*) If §11 and §12, then return the answer to \"does §13?\"\n"
+"\n"
+"Our job now is to *prove* that this algorithm always gives the correct "
+"answer. The proof that\n"
+"§14 is §15. The proof that §16 is §17, and the proof\n"
+"that §18 is §19. The proof that if §20 then\n"
+"§21 is §22 and then §23. This level is a proof of the one\n"
+"remaining job we have to do: if §24 then §25.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"ここでは、与えられた二つの自然数 §0 と §1 に対して、\"§2?\" という質問の答えを返すアルゴリズムを開発します。\n"
+"\n"
+"このアルゴリズムは以下のようになっています。まず、§3 と §4 は数であり、したがって §5 または §5 の後継者です。\n"
+"\n"
+"1. §6 と §7 が両方とも §8 の場合、\"yes\" を返す。\n"
+"2. 一方が §9 で他方が §10 の場合、\"no\" を返す。\n"
+"3. §11 と §12 の場合、\"§13?\" という質問の答えを返す。\n"
+"\n"
+"現在の仕事は、このアルゴリズムが常に正しい答えを返すことを証明することです。§14 が §15 であることを証明します。§16 が §17 "
+"であることを証明します。§18 が §19 であることを証明します。§20 が真である場合、§21 が §22 であり、さらに §23 "
+"であることを証明します。このレベルでは、残る一つの仕事であることを証明します：§24 が真である場合、§25 であることを。"
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
 msgid "x ≤ y and y ≤ x implies x = y"
-msgstr ""
+msgstr "x ≤ y と y ≤ x は x = y を意味します。"
 
+#: Game.Levels.LessOrEqual.L07or_symm
 #. §0: `left`
 #. §1: `P ∨ Q`
 #. §2: `P`
@@ -1009,7 +1561,6 @@ msgstr ""
 #. §4: `P`
 #. §5: `apply`
 #. §6: $P \\implies P \\lor Q.$
-#: Game.Levels.LessOrEqual.L07or_symm
 msgid ""
 "# Summary\n"
 "The §0 tactic changes a goal of §1 into a goal of §2.\n"
@@ -1022,42 +1573,57 @@ msgid ""
 "Note that this tactic can turn a solvable goal into an unsolvable\n"
 "one."
 msgstr ""
+"### 翻訳\n"
+"# まとめ\n"
+"§0 タクティクは、目標 §1 を §2 に変更します。\n"
+"仮定が §3 が真である理由は実際には §4 が真であるからである場合に使用します。\n"
+"\n"
+"内部的には、このタクティクは §6 という定理を §5 し、\n"
+"§6\n"
+"\n"
+"注意していただきたいのは、このタクティクが解決可能な目標を解決不能な目標に変更する可能性があることです。"
 
 #: Game.Levels.Multiplication
 msgid "Multiplication World"
-msgstr ""
+msgstr "乗算ワールド"
 
+#: Game.Levels.LessOrEqual.L10le_one
 #. §0: `le_zero`
 #. §1: `x ≤ 0`
 #. §2: `x = 0`
 #. §3: `x ≤ 1`
 #. §4: `x = 0`
 #. §5: `x = 1`
-#: Game.Levels.LessOrEqual.L10le_one
 msgid ""
 "We've seen §0, the proof that if §1 then §2.\n"
 "Now we'll prove that if §3 then §4 or §5."
 msgstr ""
+"We've seen §0, 仮定§1 から §2 が成り立つことを証明した。\n"
+"次に、仮定§3 から §4 または §5 が成り立つことを証明する。"
 
-#. §0: $\\mathbb{N}$
 #: Game
+#. §0: $\\mathbb{N}$
 msgid ""
 "In this game you recreate the natural numbers §0 from the Peano axioms,\n"
 "learning the basics about theorem proving in Lean.\n"
 "\n"
 "This is a good first introduction to Lean!"
 msgstr ""
+"このゲームでは、ペanoの公理から自然数§0を再構築し、Leanでの定理証明の基本を学びます。\n"
+"\n"
+"これはLeanへの良い初歩的な入門となります！"
 
-#. §0: $x+1=4$
-#. §1: $x=3$
 #: Game.Levels.Implication.L04succ_inj Game.Levels.Implication.L05succ_inj2
 #: Game.Levels.Algorithm.L05pred Game.Levels.Algorithm.L07succ_ne_succ
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
 #: Game.Levels.LessOrEqual.L09succ_le_succ
+#. §0: $x+1=4$
+#. §1: $x=3$
 msgid "If §0 then §1."
-msgstr ""
+msgstr "もし§0 then §1。"
 
+#: Game.Levels.Addition.L04add_assoc
 #. §0: $x+y+z$
 #. §1: $(x+y)+z$
 #. §2: $x+(y+z)$
@@ -1065,7 +1631,6 @@ msgstr ""
 #. §4: $(x+y)+z$
 #. §5: $(x+y)+z$
 #. §6: $x+(y+z)$
-#: Game.Levels.Addition.L04add_assoc
 msgid ""
 "We've been adding up two numbers; in this level we will add up three.\n"
 "\n"
@@ -1076,7 +1641,27 @@ msgid ""
 "\n"
 "  That's true, but we didn't prove it yet. Let's prove it now by induction."
 msgstr ""
+"### 原文 (English)\n"
+"We've been adding up two numbers; in this level we will add up three.\n"
+"\n"
+"  What does §0 *mean*? It could either mean §1, or it\n"
+"  could mean §2. In Lean, §3 means §4.\n"
+"\n"
+"  But why do we care which one it means; §5 and §6 are *equal*!\n"
+"\n"
+"  That's true, but we didn't prove it yet. Let's prove it now by induction.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"二つの数を足し合わせてきました；このレベルでは三つの数を足し合わせます。\n"
+"\n"
+"  §0は何を意味するのでしょうか？それは §1 か §2 のどちらかです。Leanでは、§3 は §4 と意味が同じです。\n"
+"\n"
+"  しかし、どの意味を持つべきかを気にする必要があるのでしょうか；§5 と §6 は *等しい* のです！\n"
+"\n"
+"  その通りですが、まだ証明していません。 inducution で証明しましょう。"
 
+#: Game.Levels.AdvAddition.L04add_right_eq_self
 #. §0: `add_left_eq_self`
 #. §1: ```
 #. rw [add_comm]
@@ -1100,7 +1685,6 @@ msgstr ""
 #. apply hd at h
 #. exact h
 #. ```
-#: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid ""
 "Here's a proof using §0:\n"
 "§1\n"
@@ -1112,26 +1696,40 @@ msgid ""
 "\n"
 "§4"
 msgstr ""
+"以下は§0を使用した証明です：\n"
+"§1\n"
+"\n"
+"そして、同じアイデアを使用したさらに短い証明は以下の通りです：\n"
+"§2\n"
+"\n"
+"あるいは、§3 について帰納法で証明することができます：\n"
+"§4"
 
+#: Game.Levels.LessOrEqual.L05le_zero
 #. §0: `add_right_eq_zero`
 #. §1: `symm at`
-#: Game.Levels.LessOrEqual.L05le_zero
 msgid ""
 "You want to use §0, which you already\n"
 "proved, but you'll have to start with §1 your hypothesis."
-msgstr ""
+msgstr "あなたは既に証明した§0を使用したいですが、仮定から始める必要がありますので、§1から始めなければなりません。"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `1`
 #. §1: `succ 0`
 #. §2: `rw [one_eq_succ_zero]`
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Next turn §0 into §1 with §2."
-msgstr ""
+msgstr "次に、§0 を §1 に変更し、§2 を実行します。"
 
 #: Game.Levels.Implication.L07intro2
 msgid "intro practice"
 msgstr ""
+"## intro practice\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"入門練習"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `n : ℕ`
 #. §1: `n`
 #. §2: `induction n with d hd`
@@ -1145,7 +1743,6 @@ msgstr ""
 #. §8: `0 + 0 = 0`
 #. §9: `hd : 0 + d = d`
 #. §10: `0 + succ d = succ d`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "## Summary\n"
 "\n"
@@ -1169,34 +1766,67 @@ msgid ""
 "Note that you must prove the first\n"
 "goal before you can access the second one."
 msgstr ""
+"## 結論\n"
+"\n"
+"もし§0がオブジェクトであり、目標に§1が含まれている場合、§2は目標を§3による帰納法で証明しようとします。帰納変数は後続ケースで§4"
+"であり、帰納仮定は§5です。\n"
+"\n"
+"### 例：\n"
+"もし目標が\n"
+"§6\n"
+"\n"
+"である場合、\n"
+"\n"
+"§7\n"
+"\n"
+"は目標を2つの目標に変換します。最初の目標は§8であり、次の目標には仮定§9と目標\n"
+"§10\n"
+"が含まれます。\n"
+"\n"
+"注意していただきたいのは、最初の目標を証明する前に、次の目標にアクセスすることはできないということです。"
 
 #: Game.Levels.Implication.L09zero_ne_succ
 msgid "zero_ne_succ"
 msgstr ""
+"zero_ne_succ\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"零と成功の命題は異なる（zero_ne_succ）"
 
+#: Game.Levels.Multiplication.L05one_mul
 #. §0: $1\\times m=m$
 #. §1: `succ_mul`
-#: Game.Levels.Multiplication.L05one_mul
 msgid ""
 "You can prove §0 in at least three ways.\n"
 "Either by induction, or by using §1, or\n"
 "by using commutativity. Which do you think is quickest?"
 msgstr ""
+"您は§0を証明する方法として、少なくとも3つの方法があります。\n"
+" induksiонで証明するか、§1を使用するか、または交換律を使用するかです。\n"
+"どの方法が最も速いかどうか、どのように思われますか？"
 
+#: Game.Levels.Addition.L02succ_add
 #. §0: `succ a + «{d}»`
 #. §1: `(succ a) + «{d}»`
 #. §2: `succ`
-#: Game.Levels.Addition.L02succ_add
 msgid ""
 "Note that §0 means §1. Put your cursor\n"
 "on any §2 in the goal or assumptions to see what exactly it's eating."
-msgstr ""
+msgstr "ノート：§0は§1を意味します。目標や仮定内の任意の§2にカーソルを置くと、それが何を食べているかがわかります。"
 
-#. §0: `cases «{h}» with hx hy`
 #: Game.Levels.LessOrEqual.L07or_symm
+#. §0: `cases «{h}» with hx hy`
 msgid "We don't know whether to go left or right yet. So start with §0."
 msgstr ""
+"### 原文 (English)\n"
+"We don't know whether to go left or right yet. So start with §0.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"まだ左に進むべきか右に進むべきかは分かりません。そのため、§0から始めてみましょう。"
 
+#: Game.Levels.AdvMultiplication.L05le_mul_right
 #. §0: $2$
 #. §1: $2 = 37 × 42.$
 #. §2: $2$
@@ -1204,7 +1834,6 @@ msgstr ""
 #. §4: `mul_left_ne_zero`
 #. §5: `one_le_of_ne_zero`
 #. §6: `mul_le_mul_right`
-#: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid ""
 "One day this game will have a Prime Number World, with a final boss\n"
 "of proving that §0 is prime.\n"
@@ -1215,58 +1844,74 @@ msgid ""
 "until it becomes the goal, using §4, §5 and\n"
 "§6."
 msgstr ""
+"One dayこのゲームには素数ワールドが存在し、最終ボスは§0が素数であることを証明することになる。\n"
+"これを達成するためには、§1のようなものを排除する必要がある。\n"
+"これは、§2の任意の約数が最多§3"
+"であることを証明することで行う。その証明はこの補題を使用する。私は考えている証明は、仮定を操作し、最終的に目標になるようにする。これには§4、§5、§6"
+"を使用する。"
 
+#: Game.Levels.Algorithm.L06is_zero
 #. §0: `False`
 #. §1: `True`
 #. §2: `is_zero (succ a)`
 #. §3: `rw [← is_zero_succ a]`
-#: Game.Levels.Algorithm.L06is_zero
 msgid ""
 "We're going to change that §0 into §1. Start by changing it into\n"
 "§2 by executing §3."
 msgstr ""
+"We're going to change that §0 into §1. Start by changing it into\n"
+"§2 by executing §3.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"§0 を §1 に変更します。まず、§3 を実行して §0 を §2 に変更します。"
 
-#. §0: `contrapose! h`
 #: Game.Levels.Algorithm.L07succ_ne_succ
+#. §0: `contrapose! h`
 msgid ""
 "Can you take it from here? (note: if you try §0 again, it will\n"
 "take you back to where you started!)"
-msgstr ""
+msgstr "Can you continue from here? (注: §0を再度試すと、元の場所に戻ってしまいます!)"
 
+#: Game.Levels.Power.L05pow_two
 #. §0: `pow_two a`
 #. §1: `a ^ 2 = a * a`
-#: Game.Levels.Power.L05pow_two
 msgid "§0 says that §1."
-msgstr ""
+msgstr "§0 は §1 を言います。"
 
 #: Game.Levels.Implication.L04succ_inj
 msgid "In the next level, we'll do the same proof but backwards."
-msgstr ""
+msgstr "次のレベルでは、証明を逆方向に進める同じ手続きを行います。"
 
+#: Game.Levels.Multiplication.L08add_mul
+#: Game.Levels.LessOrEqual.L09succ_le_succ
 #. §0: ```
 #. rw [mul_comm, mul_add]
 #. repeat rw [mul_comm c]
 #. rfl
 #. ```
-#: Game.Levels.Multiplication.L08add_mul
-#: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid ""
 "Here's my proof:\n"
 "§0"
 msgstr ""
+"以下は私の証明です:\n"
+"§0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
 
-#. §0: `exact`
 #: Game.Levels.Implication.L03apply
+#. §0: `exact`
 msgid "Now finish using the §0 tactic."
-msgstr ""
+msgstr "現在、§0 タクティクを使用して完了してください。"
 
+#: Game.Levels.Power
 #. §0: `37 ^ n`
 #. §1: `37 ^ 0`
 #. §2: `37 ^ (succ d)`
 #. §3: `37 ^ d`
 #. §4: `pow_zero (a : ℕ) : a ^ 0 = 1`
 #. §5: `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`
-#: Game.Levels.Power
 msgid ""
 "This world introduces exponentiation. If you want to define §0\n"
 "then, as always, you will need to know what §1 is, and\n"
@@ -1284,59 +1929,103 @@ msgid ""
 "in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
 "College for funding her."
 msgstr ""
+"### 原文 (English)\n"
+"This world introduces exponentiation. If you want to define §0\n"
+"then, as always, you will need to know what §1 is, and\n"
+"what §2 is, given only §3.\n"
+"\n"
+"You can probably guess the names of the general theorems:\n"
+"\n"
+"  * §4\n"
+"  * §5\n"
+"\n"
+"Using only these, can you get past the final boss level?\n"
+"\n"
+"The levels in this world were designed by Sian Carey, a UROP student\n"
+"at Imperial College London, funded by a Mary Lister McCammon Fellowship\n"
+"in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
+"College for funding her.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"この世界では指数演算が導入されます。§0を定義するには、常に §1 と §2 が何であるかを知る必要があります。そして、それらを §3 "
+"だけを使って推測する必要があります。\n"
+"\n"
+"一般的な定理の名前はおそらく予想できるでしょう：\n"
+"\n"
+"  * §4\n"
+"  * §5\n"
+"\n"
+"これらのものだけを使って最終ボスレベルを突破できるでしょうか？\n"
+"\n"
+"この世界のレベルは、2019"
+"年夏にマリー・リスト・マッカモン助成金によりインペリアルコロッゲン・ロンドン大学のUROP学生であるシアン・ケアリーによって設計されました。シアンに感謝"
+"します。また、インペリアルコロッゲンの助成にも感謝します。"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: `h`
 #. §1: `succ x = succ 3`
 #. §2: `succ_inj`
 #. §3: `rw [four_eq_succ_three] at h`
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "Let's first get §0 into the form §1 so we can\n"
 "apply §2. First execute §3\n"
 "to change the 4 on the right hand side."
 msgstr ""
+"Let's first get §0 into the form §1 so we can\n"
+"apply §2. First execute §3\n"
+"to change the 4 on the right hand side.\n"
+"\n"
+"\n"
+"## 翻訳\n"
+"§0 を §1 の形式に変更してから、§2 を適用することができます。まず、§3 を実行して右辺の 4 を変更します。"
 
+#: Game.Levels.Tutorial.L04rw_backwards Game.Levels.Tutorial.L05add_zero
 #. §0: `rw [← two_eq_succ_one]`
 #. §1: `succ 1`
 #. §2: `2`
-#: Game.Levels.Tutorial.L04rw_backwards Game.Levels.Tutorial.L05add_zero
 msgid "Now §0 will change §1 into §2."
-msgstr ""
+msgstr "現在、§0は§1を§2に変換します。"
 
+#: Game.Levels.Implication.L07intro2
 #. §0: ```
 #. intro h
 #. apply succ_inj
 #. repeat rw [succ_eq_add_one]
 #. exact h
 #. ```
-#: Game.Levels.Implication.L07intro2
 msgid ""
 "Here's a completely backwards proof:\n"
 "§0"
 msgstr ""
+"以下は完全に逆順の証明です:\n"
+"§0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
 
 #: Game.Levels.LessOrEqual.L05le_zero
 msgid "x ≤ 0 → x = 0"
-msgstr ""
+msgstr "x ≤ 0 → x = 0"
 
 #: Game.Levels.AdvAddition
 msgid "Advanced Addition World"
-msgstr ""
+msgstr "高度な追加ワールド"
 
+#: Game.Levels.Tutorial.L01rfl
 #. §0: $x$
 #. §1: $q$
 #. §2: $37x+q=37x+q.$
-#: Game.Levels.Tutorial.L01rfl
 msgid "If §0 and §1 are arbitrary natural numbers, then §2"
-msgstr ""
+msgstr "任意の自然数§0と§1が与えられた場合、§2"
 
-#. §0: `left`
 #: Game.Levels.LessOrEqual.L07or_symm
+#. §0: `left`
 msgid "This time, use the §0 tactic."
-msgstr ""
+msgstr "この回は、§0 タクティクを使用します。"
 
-#. §0: $(a+b)^2=a^2+b^2$
 #: Game.Levels.Power.L09add_sq
+#. §0: $(a+b)^2=a^2+b^2$
 msgid ""
 "It's all over! You have proved a theorem which has tripped up\n"
 "schoolkids for generations (some of them think §0:\n"
@@ -1347,69 +2036,86 @@ msgid ""
 "But wait! This boss is stirring...and mutating into a second more powerful "
 "form!"
 msgstr ""
+"すべて終了しました！命題を証明し、世紀にわたる学校の問題を解決しました（一部の人は§0: 「若者の夢」と思っているかもしれません）。\n"
+"\n"
+"あなたはいくつの書き換えを行いましたか？私は12回でできます。\n"
+"\n"
+"でも待ってください！このボスが動き始め、さらに強力な形に変異しています！"
 
+#: Game.Levels.Multiplication.L08add_mul
 #. §0: $a$
 #. §1: $b$
 #. §2: $c$
 #. §3: $(a + b) \\times c = ac + bc$
-#: Game.Levels.Multiplication.L08add_mul
 msgid ""
 "Addition is distributive over multiplication.\n"
 "In other words, for all natural numbers §0, §1 and §2, we have\n"
 "§3."
 msgstr ""
+"加法は乗法に対して分配法則を満たします。\n"
+"つまり、すべての自然数 §0, §1, §2 に対して\n"
+"§3.\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"加法は乗法に対して分配法則を満たします。\n"
+"つまり、すべての自然数 §0, §1, §2 に対して\n"
+"§3."
 
+#: Game.Levels.Multiplication.L05one_mul
 #. §0: `one_mul m`
 #. §1: `1 * m = m`
-#: Game.Levels.Multiplication.L05one_mul
 msgid "§0 is the proof §1."
-msgstr ""
+msgstr "§0は証明§1です。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 msgid "making life simple"
-msgstr ""
+msgstr "生活を単純にする"
 
-#. §0: `four_eq_succ_three`
 #: Game.Levels.Implication.L05succ_inj2
+#. §0: `four_eq_succ_three`
 msgid ""
 "Now rewrite §0 backwards to make the goal\n"
 "equal to the hypothesis."
-msgstr ""
+msgstr "現在、§0 を逆順に書き換えることで、目標を仮定に等しくします。"
 
 #: Game.Levels.Addition.L04add_assoc
 msgid "add_assoc (associativity of addition)"
-msgstr ""
+msgstr "add_assoc (加法の結合律)"
 
+#: Game.Levels.Addition.L04add_assoc
 #. §0: `add_assoc a b c`
 #. §1: `(a + b) + c = a + (b + c)`
 #. §2: `(a + b) + c`
 #. §3: `a + b + c`
-#: Game.Levels.Addition.L04add_assoc
 msgid ""
 "§0 is a proof\n"
 "that §1. Note that in Lean §2 prints\n"
 "as §3, because the notation for addition is defined to be left\n"
 "associative."
 msgstr ""
+"§0は§1の証明です。\n"
+"Leanでは§2は左結合的に定義されるため、§3として表示されます。"
 
-#. §0: `intro h`
 #: Game.Levels.Implication.L07intro2
+#. §0: `intro h`
 msgid "Start with §0 to assume the hypothesis."
-msgstr ""
+msgstr "開始するには、§0 を使用して仮定を仮定します。"
 
 #: Game.Levels.Multiplication.L04mul_comm
 msgid "mul_comm"
-msgstr ""
+msgstr "mul_comm"
 
-#. §0: `2 + 2 ≠ 5`
 #: Game.Levels.Algorithm.L09decide2
+#. §0: `2 + 2 ≠ 5`
 msgid ""
-"We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer one."
-msgstr ""
+"We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer "
+"one."
+msgstr "## 前回の証明は不十分でしたので、今回はより良い証明方法を示します。"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: $n = 0$
 #. §1: `X = Y`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "Now you have two goals. Once you proved the first, you will jump to the "
 "second one.\n"
@@ -1419,11 +2125,16 @@ msgid ""
 "in your inventory, or of any assumption displayed above the goal,\n"
 "as long as it is of the form §1."
 msgstr ""
+"現在、2つの目標があります。最初の目標を証明すると、次の目標に移ります。\n"
+"この最初の目標は基本ケース §0 です。\n"
+"\n"
+"あなたのインベントリで表示されている任意の補題の証明、または目標の上に表示されている任意の仮定の証明を再書き換えることができます。ただし、その形式は "
+"§1 である必要があります。"
 
+#: Game.Levels.Implication.L05succ_inj2
 #. §0: `x + 1 = 4`
 #. §1: `x = 3`
 #. §2: `apply`
-#: Game.Levels.Implication.L05succ_inj2
 msgid ""
 "In the last level, we manipulated the hypothesis §0\n"
 "  until it became the goal §1. In this level we'll manipulate\n"
@@ -1432,7 +2143,10 @@ msgid ""
 "  Again I will walk you through this one (assuming you're in\n"
 "  command line mode)."
 msgstr ""
+"最後のレベルでは、仮定§0を操作して目標§1にしました。このレベルでは、目標を操作して仮定にします！つまり、「逆向きに議論」することです。§2 "
+"タクティクもこれを行うことができます。また、コマンドラインモードで操作していると仮定して、この例を一緒に見ていきましょう。"
 
+#: Game.Levels.Tutorial.L06add_zero2
 #. §0: `add_zero c`
 #. §1: `c + 0 = c`
 #. §2: `b + 0`
@@ -1440,32 +2154,41 @@ msgstr ""
 #. §4: `rw [add_zero]`
 #. §5: `rw [add_zero b]`
 #. §6: `rw [add_zero]`
-#: Game.Levels.Tutorial.L06add_zero2
 msgid ""
 "§0 is a proof of §1 so that was what got rewritten.\n"
 "You can now change §2 to §3 with §4 or §5. You\n"
 "can usually stick to §6 unless you need real precision."
 msgstr ""
+"§0は§1の証明なので、それが書き換えられた理由です。\n"
+"現在、§2を§3に変更することができます。通常は§6を使用していれば問題ありませんが、実際の精度が必要な場合は§4や§5を使用してください。"
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
 msgid "add_right_cancel"
 msgstr ""
+"add_right_cancel\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"右側キャンセル定理"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: `succ_eq_add_one`
 #. §1: `h`
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "Now rewrite §0 backwards at §1\n"
 "to get the right hand side."
 msgstr ""
+"現在、§1 に §0 を逆順で書き換え\n"
+"右辺を得ます。"
 
-#. §0: `decide`
 #: Game.Levels.Algorithm.L08decide
+#. §0: `decide`
 msgid ""
 "You can read more about the §0 tactic by clicking\n"
 "on it in the top right."
-msgstr ""
+msgstr "以下の§0 タクティクについて詳しく知るには、右上にクリックしてください。"
 
+#: Game.Levels.Implication.L08ne
 #. §0: `a ≠ b`
 #. §1: `(a = b) → False`
 #. §2: `P`
@@ -1482,7 +2205,6 @@ msgstr ""
 #. §13: `apply h at h1`
 #. §14: `h1`
 #. §15: `a = b`
-#: Game.Levels.Implication.L08ne
 msgid ""
 "§0 is *notation* for §1.\n"
 "\n"
@@ -1498,7 +2220,14 @@ msgid ""
 "form §12 then you can §13 if §14 is a proof\n"
 "of §15."
 msgstr ""
+"§0は§1の*表記*です。\n"
+"\n"
+"この数学的に有効な理由は、§2が真偽の主張であれば、§3は§4の論理的否定であるからです。実際、§5は偽であり、§6は真です！\n"
+"\n"
+"このことから、§7は任意の推論§8と同じように扱うことができます。例えば、あなたの*目標*が§9のような形であれば、§10"
+"で進展が可能です。また、仮定§11が§12のような形であれば、§13を行うことができます（ただし、§14が§15の証明である場合）です。"
 
+#: Game.Levels.Multiplication.L09mul_assoc
 #. §0: `mul_assoc a b c`
 #. §1: `(a * b) * c = a * (b * c)`
 #. §2: `a * b * c`
@@ -1506,7 +2235,6 @@ msgstr ""
 #. §4: `(a * b) * c = a * (b * c)`
 #. §5: `(6 - 2) - 1`
 #. §6: `6 - (2 - 1)`
-#: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
 "§0 is a proof that §1.\n"
 "\n"
@@ -1516,38 +2244,57 @@ msgid ""
 "for example subtraction is not associative, as §5 is not\n"
 "equal to §6."
 msgstr ""
+"§0は§1を証明します。\n"
+"\n"
+"Leanが§2と言った場合、それは§3を意味します。\n"
+"\n"
+"Leanでは、§4は「純粋な思考」で証明できません：\n"
+"例えば、減算は結合法則を満たさないため、§5は\n"
+"§6とは等しくありません。"
 
 #: Game.Levels.AdvAddition.L03add_left_eq_self
 msgid "add_left_eq_self"
 msgstr ""
+"add_left_eq_self\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"左側への追加が自身と等しいという命題の定理です。"
 
 #: GameServer.RpcHandlers
 msgid "level completed with warnings… 🎭"
-msgstr ""
+msgstr "レベルが警告付きで完了しました… 🎭"
 
+#: Game.Levels.Implication.L08ne
 #. §0: `h2`
 #. §1: `x = y → False`
 #. §2: `apply`
 #. §3: `h2`
 #. §4: `at h1`
-#: Game.Levels.Implication.L08ne
 msgid ""
 "Remember that §0 is a proof of §1. Try\n"
 "§2ing §3 either §4 or directly to the goal."
 msgstr ""
+"Remember that §0は§1の証明です。試してみてください。\n"
+"§2ing §3 は目標に直接または§4から行うことができます。"
 
-#. §0: `apply mul_left_cancel at h`
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+#. §0: `apply mul_left_cancel at h`
 msgid "You can now §0"
 msgstr ""
+"你现在可以 §0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"你现在可以 §0"
 
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `x * y = 1 → x = 1`
 #. §1: `x + y = 0 → x = 0`
 #. §2: `x ≤ 1`
 #. §3: `le_one`
 #. §4: `≤`
 #. §5: `have`
-#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid ""
 "This level proves §0, the multiplicative analogue of Advanced Addition\n"
 "World's §1. The strategy is to prove that §2 and then use the\n"
@@ -1555,20 +2302,24 @@ msgid ""
 "\n"
 "We'll prove it using a new and very useful tactic called §5."
 msgstr ""
+"このレベルでは、進んだ加算ワールドの§1の乗法的な類似物である§0を証明します。戦略は、§2を証明し、その後、§4ワールドから§3"
+"の補題を使用することです。\n"
+"\n"
+"新しい非常に有用なタクティク§5を使用して証明します。"
 
 #: Game.Levels.Power.L06pow_add
 msgid "pow_add"
-msgstr ""
+msgstr "pow_add"
 
-#. §0: `rw [add_zero c]`
 #: Game.Levels.Tutorial.L06add_zero2 Game.Levels.LessOrEqual.L08le_total
+#. §0: `rw [add_zero c]`
 msgid "Try §0."
-msgstr ""
+msgstr "試してみましょう§0。"
 
+#: Game
 #. §0: `{0,1,2,3,4,...}`
 #. §1: `2 + 2 = 4`
 #. §2: `x + y = y + x`
-#: Game
 msgid ""
 "# Welcome to the Natural Number Game\n"
 "#### An introduction to mathematical proof.\n"
@@ -1592,8 +2343,8 @@ msgid ""
 "such as Strong Induction World, Even/Odd World and Prime Number World\n"
 "are in development; if you want to see their state or even help out, "
 "checkout\n"
-"out the [issues in the github repo](https://github.com/leanprover-community/"
-"NNG4/issues).\n"
+"out the [issues in the github "
+"repo](https://github.com/leanprover-community/NNG4/issues).\n"
 "\n"
 "## More\n"
 "\n"
@@ -1601,21 +2352,43 @@ msgid ""
 "resources,\n"
 "links, and ways to interact with the Lean community."
 msgstr ""
+"# 自然数ゲームへようこそ\n"
+"#### 数学的証明への入門\n"
+"\n"
+"このゲームでは、自然数 §0 の基本理論をゼロから構築します。最初の目標は §1 を証明することです。次に §2 "
+"を証明します。そして最後には、フェルマーの最終定理を証明できるかどうかを見ていきます。これらの目標を達成するために、コンピュータパズルゲーム「Lean」"
+"のレベルを解いていきます。\n"
+"\n"
+"# 読んでください。\n"
+"\n"
+"インタラクティブ証明システムの使い方を学ぶには時間がかかります。テスト結果によれば、このゲームで最も効果的なのは、このようなヘルプテキストを読む人です。"
+"\n"
+"\n"
+"開始するには、「チュートリアルワールド」をクリックしてください。\n"
+"\n"
+"注意：これは、旧Lean 3版に存在しなかった複数のワールドを含む新しいLean 4版のゲームです。強 induc "
+"世界、偶数/奇数世界、素数世界などの新しいワールドの開発が進行中です；これらの状態を確認したいか、甚至は協力したい場合は、["
+"githubリポジトリのissues](https://github.com/leanprover-community/NNG4/issues) "
+"をチェックしてください。\n"
+"\n"
+"## 追加情報\n"
+"\n"
+"右上隅の三本線をクリックし、「ゲーム情報」を選択してリソース、リンク、Leanコミュニティとの互动方法を確認してください。"
 
-#. §0: $a$
-#. §1: $a ^ 1 = a$
 #: Game.Levels.Power.L03pow_one Game.Levels.Power.L04one_pow
 #: Game.Levels.Power.L05pow_two
+#. §0: $a$
+#. §1: $a ^ 1 = a$
 msgid "For all naturals §0, §1."
-msgstr ""
+msgstr "すべての自然数 §0, §1 について。"
 
+#: Game.Levels.Algorithm.L08decide
 #. §0: `decide`
 #. §1: `DecidableEq ℕ`
 #. §2: `instance`
 #. §3: `decide`
 #. §4: `a = b`
 #. §5: `a ≠ b`
-#: Game.Levels.Algorithm.L08decide
 msgid ""
 "# Summary\n"
 "\n"
@@ -1628,17 +2401,26 @@ msgid ""
 "are equal or different. Hence, once this term is made and made into an §2,\n"
 "the §3 tactic can use it to solve goals of the form §4 or §5."
 msgstr ""
+"# 概要\n"
+"\n"
+"§0は、解決アルゴリズムを見つけることができれば、目標を解決しようとします。\n"
+"\n"
+"## 例\n"
+"\n"
+"型§1の項は、2つの自然数が等しいか異なるかを決定するアルゴリズムです。したがって、この項が作成され、§2に変換されると、§3タクティクは、§4"
+"または§5のような目標を解決するためにそれを使用することができます。"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: `apply`
 #. §1: `apply succ_inj at h`
 #. §2: `h`
 #. §3: `x = 3`
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "Now let's §0 our new theorem. Execute §1\n"
 "to change §2 to a proof of §3."
-msgstr ""
+msgstr "現在、新しい定理を証明しましょう。§0を実行して§1を変更し、§2を§3の証明にします。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: `repeat t`
 #. §1: `t`
 #. §2: `repeat rw [add_zero]`
@@ -1654,7 +2436,6 @@ msgstr ""
 #. §12: `2 + succ 1 = 4`
 #. §13: `rw [two_eq_succ_one]`
 #. §14: `succ 1 + succ 1 = 4`
-#: Game.Levels.Tutorial.L02rw
 msgid ""
 "## Summary\n"
 "\n"
@@ -1682,19 +2463,70 @@ msgid ""
 "will change the goal to §12. In contrast, §13\n"
 "will change the goal to §14."
 msgstr ""
+"### 原文 (English)\n"
+"## Summary\n"
+"\n"
+"§0 repeatedly applies the tactic §1\n"
+"to the goal. You don't need to use this\n"
+"tactic, it just speeds things up sometimes.\n"
+"\n"
+"## Example\n"
+"\n"
+"§2 will turn the goal\n"
+"§3\n"
+"into the goal\n"
+"§4.\n"
+"\"\n"
+"\n"
+"TacticDoc nth_rewrite \"\n"
+"## Summary\n"
+"\n"
+"If §5 and there are several §6s in the goal, then\n"
+"§7 will just change the third §8 to a §9.\n"
+"\n"
+"## Example\n"
+"\n"
+"If the goal is §10 then §11\n"
+"will change the goal to §12. In contrast, §13\n"
+"will change the goal to §14.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"## 結論\n"
+"\n"
+"§0 は目標に対して §1 のタクティクを繰り返し適用します。このタクティクを使用する必要はありませんが、時々処理が早くなります。\n"
+"\n"
+"## 例\n"
+"\n"
+"§2 は目標\n"
+"§3\n"
+"を\n"
+"§4\n"
+"に変更します。\n"
+"\n"
+"---\n"
+"\n"
+"## 結論\n"
+"\n"
+"§5 が成り立つ場合で、目標に複数の §6 がある場合、\n"
+"§7 は第三の §8 を §9 に変更します。\n"
+"\n"
+"## 例\n"
+"\n"
+"目標が §10 の場合、§11 は目標を §12 に変更します。一方で、§13 は目標を §14 に変更します。"
 
 #: Game.Levels.Tutorial.L01rfl
 msgid "The rfl tactic"
-msgstr ""
+msgstr "The rfl タクティク"
 
+#: Game.Levels.Algorithm.L04add_algo3
 #. §0: ```
 #. macro \"simp_add\" : tactic => `(tactic|(
-#.   simp only [add_assoc, add_left_comm, add_comm]))
+#. simp only [add_assoc, add_left_comm, add_comm]))
 #. ```
 #. §1: `simp_add`
 #. §2: `simp only [add_assoc, add_left_comm, add_comm]`
 #. §3: `simp_add`
-#: Game.Levels.Algorithm.L04add_algo3
 msgid ""
 "You can make your own tactics in Lean.\n"
 "This code here\n"
@@ -1703,27 +2535,42 @@ msgid ""
 "§2.\n"
 "Try running §3 to solve this level!"
 msgstr ""
+"Leanで独自のタクティクを作成することができます。\n"
+"以下のコード\n"
+"§0\n"
+"は新しいタクティク§1の作成に使用され、§2を実行します。\n"
+"§3を実行してこのレベルを解いてみてください！"
 
+#: Game.Levels.LessOrEqual.L10le_one
 #. §0: $x \\leq 1$
 #. §1: $x = 0$
 #. §2: $x = 1$
-#: Game.Levels.LessOrEqual.L10le_one
 msgid "If §0 then either §1 or §2."
-msgstr ""
+msgstr "もし§0であるなら、§1または§2のいずれかである。"
 
 #: Game.Levels.Addition.L02succ_add
 msgid "succ_add"
 msgstr ""
+"succ_add\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"成功加算"
 
+#: Game.Levels.Algorithm.L02add_algo1
 #. §0: `add_comm`
 #. §1: `b`
 #. §2: `d`
-#: Game.Levels.Algorithm.L02add_algo1
 msgid "Finally use a targeted §0 to switch §1 and §2."
 msgstr ""
+"Finally use a targeted §0 to switch §1 and §2.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"最終的に、§0を使用して§1と§2を切り替えてください。"
 
-#. §0: `≤`
 #: Game.Levels.LessOrEqual.L11le_two
+#. §0: `≤`
 msgid ""
 "Nice!\n"
 "\n"
@@ -1732,13 +2579,18 @@ msgid ""
 "If you've already done Multiplication World, you're now ready for\n"
 "Advanced Multiplication World. Click on \"Home\" to access it."
 msgstr ""
+"Nice!\n"
+"\n"
+"順序理論の開発の次のステップは、§0"
+"と乗算の相互作用の理論を発展させることがです。既に乗算ワールドを学習した場合、現在では高度な乗算ワールドに進むことができます。\"Home\""
+"をクリックしてアクセスしてください。"
 
+#: Game.Levels.Implication.L02exact2
 #. §0: `rw [zero_add] at «{h}»`
 #. §1: `zero_add`
 #. §2: `«{x}»`
 #. §3: `0 + «{x}»`
 #. §4: `0 + «{y}»`
-#: Game.Levels.Implication.L02exact2
 msgid ""
 "Do that again!\n"
 "\n"
@@ -1746,41 +2598,55 @@ msgid ""
 "the arguments to §1 (finding §2) then it replaces all occurrences of\n"
 "§3 it finds. Therefor, it did not rewrite §4, yet."
 msgstr ""
+"再度やってみましょう！\n"
+"\n"
+"§0は§1の引数を埋めようとします（§2を見つけます）然後，它会替换找到的所有§3。因此，它还没有重写§4。"
 
+#: Game.Levels.Multiplication.L07mul_add
 #. §0: `a`
 #. §1: `b`
 #. §2: `c`
-#: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "Induction on §0 is the most troublesome, then §1,\n"
 "and §2 is the easiest."
-msgstr ""
+msgstr "帰納法は§0が最も難しい然後に§1で、§2は最も簡単です。"
 
-#. §0: $a+(b+0)+(c+0)=a+b+c.$
 #: Game.Levels.Tutorial.L05add_zero Game.Levels.Tutorial.L06add_zero2
 #: Game.Levels.Power.L01zero_pow_zero Game.Levels.Algorithm.L09decide2
 #: Game.Levels.AdvAddition.L03add_left_eq_self
+#. §0: $a+(b+0)+(c+0)=a+b+c.$
 msgid "§0"
 msgstr ""
+"## \n"
+"\n"
+"§0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"タクティクは証明手法を指し、定理は命題の証明を含む数学的命題を表します。Lean 4では、対話型の証明環境でこれらの要素を操作します。"
 
+#: Game.Levels.Implication.L11two_add_two_ne_five
 #. §0: `zero_ne_succ`
 #. §1: `succ_inj`
-#: Game.Levels.Implication.L11two_add_two_ne_five
 msgid ""
 "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have "
 "currently.\n"
 "To make it a bit less painful, I have unfolded all of the numerals for you.\n"
 "See if you can use §0 and §1 to prove this."
 msgstr ""
+"2 + 2 ≠ 5 を完全に証明するのは、現在のツールで与えられた限りでは退屈です。\n"
+"少し痛みが減るよう、すべての数値を展開しました。\n"
+"§0 と §1 を使ってこの証明ができるか試してみてください。"
 
+#: Game.Levels.LessOrEqual.L08le_total
 #. §0: $x$
 #. §1: $y$
 #. §2: $x \\leq y$
 #. §3: $y \\leq x$
-#: Game.Levels.LessOrEqual.L08le_total
 msgid "If §0 and §1 are numbers, then either §2 or §3."
-msgstr ""
+msgstr "もし§0と§1が数値である場合、§2または§3が成り立つ。"
 
+#: Game.Levels.LessOrEqual
 #. §0: `a ≤ b`
 #. §1: `a ≤ b`
 #. §2: `b ≤ c`
@@ -1788,7 +2654,6 @@ msgstr ""
 #. §4: `a ≤ b`
 #. §5: `c`
 #. §6: `b = a + c`
-#: Game.Levels.LessOrEqual
 msgid ""
 "In this world we define §0 and prove standard facts\n"
 "about it, such as \"if §1 and §2 then §3.\"\n"
@@ -1800,19 +2665,38 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
+"### 原文 (English)\n"
+"In this world we define §0 and prove standard facts\n"
+"about it, such as \"if §1 and §2 then §3.\"\n"
+"\n"
+"The definition of §4 is \"there exists a number §5\n"
+"such that §6. \" So we're going to have to learn\n"
+"a tactic to prove \"exists\" theorems, and another one\n"
+"to use \"exists\" hypotheses.\n"
+"\n"
+"Click on \"Start\" to proceed.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"このワールドで §0 を定義し、その標準的な事実を証明します。例えば、「§1 と §2 が成り立つなら §3 が成り立つ」などです。\n"
+"\n"
+"§4 の定義は「ある数 §5 が存在して、§6 "
+"が成り立つ」です。そのため、「存在」に関する定理を証明するタクティクと、「存在」に関する仮定を使うタクティクを学ぶ必要があります。\n"
+"\n"
+"\"開始\" をクリックして進みましょう。"
 
+#: Game.Levels.Power.L06pow_add Game.Levels.Power.L07mul_pow
+#: Game.Levels.Power.L08pow_pow
 #. §0: $a$
 #. §1: $m$
 #. §2: $n$
 #. §3: $a^{m + n} = a ^ m  a ^ n$
-#: Game.Levels.Power.L06pow_add Game.Levels.Power.L07mul_pow
-#: Game.Levels.Power.L08pow_pow
 msgid "For all naturals §0, §1, §2, we have §3."
-msgstr ""
+msgstr "すべての自然数 §0, §1, §2 について、§3 が成り立ちます。"
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid "mul_left_cancel"
-msgstr ""
+msgstr "mul_left_cancel"
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
 msgid ""
@@ -1820,7 +2704,12 @@ msgid ""
 "out a way\n"
 "of using it."
 msgstr ""
+"以下の訳文は、提供された参考訳を考慮して翻訳しました。\n"
+"\n"
+"### 翻訳 (日本語)\n"
+"前の証明を模倣してこれを行うこともできます -- または、それを活用する方法を考え出すこともできます。"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `0`
 #. §1: `n`
 #. §2: `succ n`
@@ -1836,7 +2725,6 @@ msgstr ""
 #. §12: `2 = succ 1`
 #. §13: `two_eq_succ_one`
 #. §14: $2$
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
 "## The birth of number.\n"
 "\n"
@@ -1860,41 +2748,60 @@ msgid ""
 "\n"
 "Let's prove that §14 is the number after the number after zero."
 msgstr ""
+"## 数字の誕生。\n"
+"\n"
+"Leanにおける数字は2つのルールで定義されます。\n"
+"\n"
+"* §0 は数字です。\n"
+"* §1 が数字である場合、§2 の *後続* §3 は数字です。\n"
+"\n"
+"§4 の後続とは §5 の次の数字を意味します。数を数えることと、いくつかの小さな数字の名前を学びましょう。\n"
+"\n"
+"## 4まで数える。\n"
+"\n"
+"§6 が数字であるため、§7 も数字です。この新しい数字を §8 と呼びましょう。同様に §9, §10, §11 "
+"を定義します。これで十分な数を手に入れました。\n"
+"\n"
+"§12 が数字であることを証明する *証明* §13 があります。証明リストの右側の「012」タブを確認してください。\n"
+"\n"
+"次に、0の後ろの後ろの数字である §14 を証明しましょう。"
 
-#. §0: `rw [← succ_eq_add_one] at h`
 #: Game.Levels.Implication.L04succ_inj
+#. §0: `rw [← succ_eq_add_one] at h`
 msgid "Concretely: §0."
-msgstr ""
+msgstr "具体的には: §0."
 
-#. §0: `pow_zero a : a ^ 0 = 1`
 #: Game.Levels.Power.L01zero_pow_zero
+#. §0: `pow_zero a : a ^ 0 = 1`
 msgid ""
 "§0 is one of the two axioms\n"
 "defining exponentiation in this game."
-msgstr ""
+msgstr "§0はこのゲームで指数関数を定義する2つの公理の1つです。"
 
+#: Game.Levels.Addition.L05add_right_comm
 #. §0: $a, b$
 #. §1: $c$
 #. §2: $(a + b) + c = (a + c) + b$
-#: Game.Levels.Addition.L05add_right_comm
 msgid ""
 "If §0 and §1 are arbitrary natural numbers, we have\n"
 "§2."
 msgstr ""
+"任意の自然数§0と§1について、以下の関係が成り立ちます。\n"
+"§2。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid ""
 "The lemma proved in the final level of this world will be helpful\n"
 "in Divisibility World."
-msgstr ""
+msgstr "最終レベルで証明された補題は、整除世界で役立つでしょう。"
 
+#: Game.Levels.Power.L03pow_one
 #. §0: `pow_one a`
 #. §1: `a ^ 1 = a`
 #. §2: `a ^ 1`
 #. §3: `a ^ 0 * a`
 #. §4: `1 * a`
 #. §5: `a`
-#: Game.Levels.Power.L03pow_one
 msgid ""
 "§0 says that §1.\n"
 "\n"
@@ -1902,86 +2809,108 @@ msgid ""
 "defined to be §3 so it's §4, and to prove\n"
 "that this is equal to §5 you need to use induction somewhere."
 msgstr ""
+"§0 は §1 です。\n"
+"\n"
+"ただし、これは定義によって正確には真ではありません：§2 は §3 と定義されており、§4 "
+"となります。この等しいことを証明するには、どこかで帰納法を使用する必要があります。"
 
+#: Game.Levels.AdvAddition.L04add_right_eq_self
 #. §0: `add_right_eq_self x y`
 #. §1: $x + y = x\\implies y=0.$
-#: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid ""
 "§0 is the theorem that §1\n"
 "Two ways to do it spring to mind; I'll mention them when you've solved it."
 msgstr ""
+"§0は、§1の定理です。\n"
+"二つの方法が思い浮かびますが、あなたがそれを解いた後で述べます。"
 
+#: Game.Levels.Algorithm
 #. §0: $2+2=4$
 #. §1: $a+b+c+d+e=e+d+c+b+a$
-#: Game.Levels.Algorithm
 msgid ""
 "Proofs like §0 and §1 are very tedious to do by hand.\n"
 "In Algorithm World we learn how to get the computer to do them for us.\n"
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
+"証明如き§0や§1は手作業で行うと非常に退屈です。\n"
+"Algorithm Worldでは、コンピュータにその作業を任せることを学びます。\n"
+"\n"
+"\"開始\"をクリックして進みましょう。"
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
 "If the goal is not *exactly* a hypothesis, we can sometimes\n"
 "use rewrites to fix things up."
-msgstr ""
+msgstr "もし目標が*正確に*仮定でない場合、時としてリライトを使用して修正することができます。"
 
 #: Game.Levels.Algorithm.L06is_zero
 msgid ""
 "See if you can take it from here. Look at the new lemmas and tactic\n"
 "available on the right."
-msgstr ""
+msgstr "見られる範囲で新しい命題とタクティクが追加されています。それらを活用してみてください。"
 
+#: Game.Levels.Algorithm.L02add_algo1
 #. §0: `rw [add_left_comm b c]`
 #. §1: `b`
 #. §2: `c`
-#: Game.Levels.Algorithm.L02add_algo1
 msgid ""
 "Now use §0 to switch §1 and §2 on the left\n"
 "hand side."
-msgstr ""
+msgstr "現在、§0 を使用して左側の §1 と §2 を入れ替えます。"
 
 #: Game.Levels.Implication
 msgid "Implication World"
-msgstr ""
+msgstr "推論ワールド"
 
-#. §0: `add_succ`
 #: Game.Levels.Tutorial.L06add_zero2
+#. §0: `add_succ`
 msgid "Let's now learn about Peano's second axiom for addition, §0."
-msgstr ""
+msgstr "## ペアノの加法に関する第2の公理について、§0 を学んでみましょう。"
 
+#: Game.Levels.Algorithm.L03add_algo2 Game.Levels.Algorithm.L04add_algo3
 #. §0: $a, b,\\ldots h$
 #. §1: $(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$
-#: Game.Levels.Algorithm.L03add_algo2 Game.Levels.Algorithm.L04add_algo3
 msgid ""
 "If §0 are arbitrary natural numbers, we have\n"
 "§1."
 msgstr ""
+"任意の自然数§0について、\n"
+"§1.\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"任意の自然数§0について、\n"
+"§1.\n"
+"\n"
+"\n"
+"### 翻訳結果\n"
+"任意の自然数§0について、\n"
+"§1."
 
+#: Game.Levels.Algorithm.L08decide
 #. §0: ```
 #. instance instDecidableEq : DecidableEq ℕ
 #. | 0, 0 => isTrue <| by
-#.   show 0 = 0
-#.   rfl
+#. show 0 = 0
+#. rfl
 #. | succ m, 0 => isFalse <| by
-#.   show succ m ≠ 0
-#.   exact succ_ne_zero m
+#. show succ m ≠ 0
+#. exact succ_ne_zero m
 #. | 0, succ n => isFalse <| by
-#.   show 0 ≠ succ n
-#.   exact zero_ne_succ n
+#. show 0 ≠ succ n
+#. exact zero_ne_succ n
 #. | succ m, succ n =>
-#.   match instDecidableEq m n with
-#.   | isTrue (h : m = n) => isTrue <| by
-#.     show succ m = succ n
-#.     rw [h]
-#.     rfl
-#.   | isFalse (h : m ≠ n) => isFalse <| by
-#.     show succ m ≠ succ n
-#.     exact succ_ne_succ m n h
+#. match instDecidableEq m n with
+#. | isTrue (h : m = n) => isTrue <| by
+#. show succ m = succ n
+#. rw [h]
+#. rfl
+#. | isFalse (h : m ≠ n) => isFalse <| by
+#. show succ m ≠ succ n
+#. exact succ_ne_succ m n h
 #. ```
 #. §1: `decide`
-#: Game.Levels.Algorithm.L08decide
 msgid ""
 "Implementing the algorithm for equality of naturals, and the proof that it "
 "is correct,\n"
@@ -1994,7 +2923,14 @@ msgid ""
 "Because the algorithm is formally verified to be correct, we can\n"
 "use it in Lean proofs. You can run the algorithm with the §1 tactic."
 msgstr ""
+"自然数の等価性アルゴリズムの実装とその正確性の証明は、以下のようになります：\n"
+"\n"
+"§0\n"
+"\n"
+"このLeanコードは、二つの自然数間の等価性を決定する形式的に検証されたアルゴリズムです。私たちは既にこのコードをバックヤードで入力しています。アルゴリ"
+"ズムが形式的に正確性を保証されているため、Leanの証明内で使用できます。§1タクティクでアルゴリズムを実行できます。"
 
+#: Game.Levels.Implication.L06intro
 #. §0: `P → Q`
 #. §1: `intro h`
 #. §2: `h : P`
@@ -2008,7 +2944,6 @@ msgstr ""
 #. §10: $x+1=y+1$
 #. §11: `h`
 #. §12: $x=y$
-#: Game.Levels.Implication.L06intro
 msgid ""
 "## Summary\n"
 "\n"
@@ -2022,28 +2957,36 @@ msgid ""
 "then §9 will give you a hypothesis §10 named §11, and the goal\n"
 "will change to §12."
 msgstr ""
+"## 結論\n"
+"\n"
+"もし目標が§0である場合、§1は§2を仮定として導入し、目標を§3に変更します。数学的には、§4を証明するためには、§5を仮定し、その後§6"
+"を証明すればよいということです。\n"
+"\n"
+"### 例：\n"
+"\n"
+"もし目標が§7（Leanで書かれた§8）である場合、§9は§10という名前の仮定§11を導入し、目標は§12に変更されます。"
 
+#: Game.Levels.Tutorial.L05add_zero
 #. §0: `rw [add_zero]`
 #. §1: `b + 0`
 #. §2: `b`
-#: Game.Levels.Tutorial.L05add_zero
 msgid "§0 will change §1 into §2."
-msgstr ""
+msgstr "§0は§1を§2に変換します。"
 
+#: Game.Levels.Implication.L03apply
 #. §0: `apply h2 at h1`
 #. §1: `h1`
 #. §2: `y = 42`
-#: Game.Levels.Implication.L03apply
 msgid "Start with §0. This will change §1 to §2."
-msgstr ""
+msgstr "開始します。§0を入力すると、§1が§2に変更されます。"
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "[dramatic music]. Now are you ready to face the first boss of the game?"
-msgstr ""
+msgstr "[dramatic music]. 今でしょ、ゲーム最初のボス戦に臨む準備はできていますか？"
 
+#: Game.Levels.AdvAddition
 #. §0: $x+y=x\\implies y=0$
 #. §1: `≤`
-#: Game.Levels.AdvAddition
 msgid ""
 "In Advanced Addition World we will prove some basic\n"
 "addition facts such as §0. The theorems\n"
@@ -2052,7 +2995,12 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
+"### Advanced Addition World "
+"では、基本的な加法に関するいくつかの事実（§0）を証明します。このワールドで証明された定理は、§1 世界で不等式の理論を構築するために使用されます。\n"
+"\n"
+"「開始」をクリックして進みましょう。"
 
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #. §0: `tauto`
 #. §1: `tauto`
 #. §2: `add_zero`
@@ -2088,7 +3036,6 @@ msgstr ""
 #. §32: `a * b ≠ 0 → a ≠ 0`
 #. §33: `tauto`
 #. §34: `tauto`
-#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid ""
 "# Summary\n"
 "\n"
@@ -2142,56 +3089,100 @@ msgid ""
 "If you switch the goal and hypothesis in this example, §34 would solve it "
 "too."
 msgstr ""
+"### Summary\n"
+"\n"
+"§0 タクティクは、論理だけで解決できる目標（つまり、真偽表で解決できる目標）を解決します。\n"
+"\n"
+"## 詳細\n"
+"\n"
+"§1 は *魔法を施すわけではない*！加算や乗算については何も知らないし、すら §2 も知らない。§3 が数について知っているのは、まず §4 "
+"であり、二つ目は §5, §6, §7 などである。§8 の強みは *論理* にある。仮定 §9 と仮定 §10 があり、目標が §11 "
+"の場合、§12 はこの目標を解決します。なぜなら、目標を解決するには不等式や加算に関する事実を知る必要がないし、必要なのは論理のルールだけです。\n"
+"\n"
+"## 例\n"
+"\n"
+"仮定として §13 がある場合、§14 は目標を解決します。これは、偽の仮定は任意の仮定を推論するからです。\n"
+"\n"
+"## 例\n"
+"\n"
+"目標が §15 の場合、§16 は目標を解決します。\n"
+"\n"
+"## 例\n"
+"\n"
+"仮定が §17 と §18 である場合、§19 は目標を解決します。なぜなら、§19 はあなたの仮定から §20 "
+"を証明でき、したがって目標を証明できるからです（§21 は何かを推論するためのもの）。\n"
+"\n"
+"## 例\n"
+"\n"
+"仮定が §22 である場合、§23 は目標を解決します。なぜなら、§24 は §25 が真であることを知っているので、これは求めている矛盾を与えます。\n"
+"\n"
+"## 例\n"
+"\n"
+"仮定が §26 の形式である場合、目標が §32 の場合、§33 "
+"は目標を解決します。なぜなら、目標は仮定と論理的に等価であるからです。この例で目標と仮定を入れ替えると、§34 も解決します。\n"
+"\n"
+"## 例\n"
+"\n"
+"仮定が §31 の形式であり、目標が §32 の場合、§33 "
+"は目標を解決します。なぜなら、目標は仮定と論理的に等価であるからです。この例で目標と仮定を入れ替えると、§34 も解決します。"
 
-#. §0: `rfl`
 #: Game.Levels.Tutorial.L03two_eq_ss0
+#. §0: `rfl`
 msgid "Now finish the job with §0."
 msgstr ""
+"現在の作業を完了してください。§0\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"現在の作業を完了してください。§0"
 
-#. §0: `nth_rewrite 2 [← mul_one a] at h`
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+#. §0: `nth_rewrite 2 [← mul_one a] at h`
 msgid "Reduce to the previous lemma with §0"
-msgstr ""
+msgstr "以前の補題に §0 をReduceします。"
 
+#: Game.Levels.AdvMultiplication.L05le_mul_right
 #. §0: `le_mul_right a b`
 #. §1: `a * b ≠ 0 → a ≤ a * b`
-#: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid ""
 "§0 is a proof that §1.\n"
 "\n"
 "It's one way of saying that a divisor of a positive number\n"
 "has to be at most that number."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"これは正の数の約数がその数以下のことを表現する一方の方法です。"
 
+#: Game.Levels.Power.L02zero_pow_succ
 #. §0: $m$
 #. §1: $0 ^{\\operatorname{succ} (m)} = 0$
-#: Game.Levels.Power.L02zero_pow_succ
 msgid "For all numbers §0, §1."
-msgstr ""
+msgstr "すべての数 §0, §1 について。"
 
-#. §0: `n`
 #: Game.Levels.AdvAddition.L01add_right_cancel
+#. §0: `n`
 msgid "Start with induction on §0."
-msgstr ""
+msgstr "開始は §0 に対する帰納法からです。"
 
 #: Game.Levels.LessOrEqual.L08le_total
 msgid "x ≤ y or y ≤ x"
-msgstr ""
+msgstr "x ≤ y または y ≤ x"
 
+#: Game.Levels.LessOrEqual.L02zero_le
 #. §0: `use`
 #. §1: `c`
 #. §2: `x = 0 + c`
-#: Game.Levels.LessOrEqual.L02zero_le
 msgid "To solve this level, you need to §0 a number §1 such that §2."
-msgstr ""
+msgstr "このレベルを解くためには、§0 に数字 §1 を §2 する必要があります。"
 
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `le_mul_right`
 #. §1: `x * y ≠ 0`
 #. §2: `have h2 : x * y ≠ 0`
 #. §3: `≠`
 #. §4: `\\ne`
 #. §5: `le_mul_right`
-#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid ""
 "We want to use §0, but we need a hypothesis §1\n"
 "which we don't have. Yet. Execute §2 (you can type §3 with §4).\n"
@@ -2199,14 +3190,18 @@ msgid ""
 "prove it, and then you'll have a new hypothesis which you can apply\n"
 "§5 to."
 msgstr ""
+"We want to use §0, ですが、§1 という仮定が必要で、現在持正在りません。まだありません。§2 を実行してください（§3 を §4 "
+"で入力できます）。\n"
+"求められるまでは証明が必要ですが、証明後には新しい仮定が得られ、それを §5 で適用できます。"
 
+#: Game.Levels.Implication.L03apply
 #. §0: $x=37$
 #. §1: $x=37\\implies y=42$
 #. §2: $y=42$
-#: Game.Levels.Implication.L03apply
 msgid "If §0 and we know that §1 then we can deduce §2."
-msgstr ""
+msgstr "もし§0であり、§1を知っているなら、§2を導くことができます。"
 
+#: Game.Levels.Tutorial.L01rfl
 #. §0: `rfl`
 #. §1: `X = X`
 #. §2: `rfl`
@@ -2229,7 +3224,6 @@ msgstr ""
 #. §17: `mathlib`
 #. §18: `zero_add`
 #. §19: `add_zero`
-#: Game.Levels.Tutorial.L01rfl
 msgid ""
 "## Summary\n"
 "\n"
@@ -2267,6 +3261,33 @@ msgid ""
 "as mathematicians are concerned, and who cares what the definition of "
 "addition is).*"
 msgstr ""
+"## 結論\n"
+"\n"
+"§0は、形式§1の目標を証明します。\n"
+"\n"
+"つまり、§2タクティクは、§4と§5が*完全に一致*する場合、形式§3の任意の目標を閉じます。\n"
+"\n"
+"§6は、「等号の反射律」の略です。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし目標が以下のようであれば：\n"
+"\n"
+"§7\n"
+"\n"
+"§8はそれを閉じます。しかし、もし目標が§9のように見える場合、§10は機能しません。なぜなら、§11と§12"
+"は常に数値としては等しいですが、項としては等しくないからです。§13と完全に一致する項は§14だけです。\n"
+"\n"
+"## 詳細\n"
+"\n"
+"§15は「等号の反射律」の略です。\n"
+"\n"
+"## ゲーム実装\n"
+"\n"
+"注意していただきたいのは、当の§16は、コア Lean "
+"と§17"
+"で使用されるバージョンよりも弱く、教育的な目的のためにそう設計されていることです。数学的には、論理的等価と定義的等価を区別しない理由は、定義の考え方がタ"
+"イプ理論家と異なるからです（数学的には§18と§19はどちらも「事実」であり、加法の定義などは誰がどう思っても構いません）。"
 
 #: Game
 msgid ""
@@ -2296,8 +3317,9 @@ msgid ""
 "## Resources\n"
 "\n"
 "* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n"
-"* [Original Lean3 version](https://github.com/ImperialCollegeLondon/"
-"natural_number_game/) (no longer maintained)\n"
+"* [Original Lean3 "
+"version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no "
+"longer maintained)\n"
 "\n"
 "## Problems?\n"
 "\n"
@@ -2307,38 +3329,142 @@ msgid ""
 "the Lean Zulip chat is a professional research forum.\n"
 "Please use your full real name there, stay on topic, and be nice. If you're\n"
 "looking for somewhere less formal (e.g. you want to post natural number\n"
-"game memes) then head on over to the [Lean Discord](https://discord.gg/"
-"WZ9bs9UCvx).\n"
+"game memes) then head on over to the [Lean "
+"Discord](https://discord.gg/WZ9bs9UCvx).\n"
 "\n"
 "Alternatively, if you experience issues / bugs you can also open github "
 "issues:\n"
 "\n"
 "* For issues with the game engine, please open an\n"
-"[issue at the lean4game](https://github.com/leanprover-community/lean4game/"
-"issues) repo.\n"
+"[issue at the "
+"lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n"
 "* For issues about the game's content, please open an\n"
 "[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo."
 msgstr ""
+"### 原文 (English)\n"
+"*Game version: 4.3*\n"
+"\n"
+"*Recent additions: bug fixes*\n"
+"\n"
+"## Progress saving\n"
+"\n"
+"The game stores your progress in your local browser storage.\n"
+"If you delete it, your progress will be lost!\n"
+"\n"
+"Warning: In most browsers, deleting cookies will also clear the local "
+"storage\n"
+"(or \"local site data\"). Make sure to download your game progress first!\n"
+"\n"
+"## Credits\n"
+"\n"
+"* **Creators:** Kevin Buzzard, Jon Eugster\n"
+"* **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar\n"
+"* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n"
+"* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.\n"
+"* **Additional thanks:** All the student beta testers, all the schools\n"
+"who invited Kevin to speak, and all the schoolkids who asked him questions\n"
+"about the material.\n"
+"\n"
+"## Resources\n"
+"\n"
+"* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n"
+"* [Original Lean3 "
+"version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no "
+"longer maintained)\n"
+"\n"
+"## Problems?\n"
+"\n"
+"Please ask any questions about this game in the\n"
+"[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in\n"
+"the stream \"New Members\". The community will happily help. Note that\n"
+"the Lean Zulip chat is a professional research forum.\n"
+"Please use your full real name there, stay on topic, and be nice. If you're\n"
+"looking for somewhere less formal (e.g. you want to post natural number\n"
+"game memes) then head on over to the [Lean "
+"Discord](https://discord.gg/WZ9bs9UCvx).\n"
+"\n"
+"Alternatively, if you experience issues / bugs you can also open github "
+"issues:\n"
+"\n"
+"* For issues with the game engine, please open an\n"
+"[issue at the "
+"lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n"
+"* For issues about the game's content, please open an\n"
+"[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo.\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"*ゲームバージョン: 4.3*\n"
+"\n"
+"*最近の追加: バグ修正*\n"
+"\n"
+"## プログレス保存\n"
+"\n"
+"ゲームはあなたのプログレスをローカルブラウザストレージに保存します。\n"
+"これを削除すると、プログレスは失われます！\n"
+"\n"
+"注意: "
+"多くのブラウザでは、クッキーを削除するとローカルストレージ（または「ローカルサイトデータ」）もクリアされます。プログレスをダウンロードしてから削除するこ"
+"とを確認してください！\n"
+"\n"
+"## 謝辞\n"
+"\n"
+"* **クリエイター:** ケビン・バズラー、ジョン・ユージストー\n"
+"* **元のLean3版:** ケビン・バズラー、モハマド・ペドラムファール\n"
+"* **ゲームエンジン:** アレクサンダー・バンクトamp、ジョン・ユージストー、パトリック・マッソット\n"
+"* **追加レベル:** シアン・ケアリー、イバン・ファラベラ、アーチー・ブラウン\n"
+"* **追加感謝:** 全ての学生ベータテスト者、ケビンを講演に招待した全ての学校、質問をした全ての学校の子供たち\n"
+"\n"
+"## リソース\n"
+"\n"
+"* [Lean Zulipチャット](https://leanprover.zulipchat.com/) フォーラム\n"
+"* "
+"[元のLean3版](https://github.com/ImperialCollegeLondon/natural_number_game/)"
+"（現在メンテナンスされていません）\n"
+"\n"
+"## お困りですか？\n"
+"\n"
+"このゲームに関する質問は、[Lean Zulipチャット](https://leanprover.zulipchat.com/) "
+"フォーラムで質問してください。例えば、「New Members」ストリームで質問できます。コミュニティは喜んでお手伝いします。注意: Lean "
+"Zulipチャットはプロフェッショナルな研究フォーラムです。そこでフルネームを使用し、トピックに集中し、丁寧に接してください。より非公式な場所（例えば、"
+"自然数ゲームのメモを投稿したい場合）を探している場合は、[Lean Discord](https://discord.gg/WZ9bs9UCvx) "
+"に移動してください。\n"
+"\n"
+"または、問題やバグが発生した場合は、GitHubの問題をオープンすることもできます：\n"
+"\n"
+"* "
+"ゲームエンジンに関する問題は、[lean4game](https://github.com/leanprover-community/lean4"
+"game/issues) リポジトリで問題をオープンしてください。\n"
+"* ゲームの内容に関する問題は、[NNG](https://github.com/hhu-adam/NNG4/issues) "
+"リポジトリで問題をオープンしてください。"
 
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #. §0: `b = 0`
 #. §1: `a * b = 0`
 #. §2: `X ≠ 0`
 #. §3: `X = 0 → False`
 #. §4: `Show more help!`
-#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid ""
 "We want to reduce this to a hypothesis §0 and a goal §1,\n"
 "which is logically equivalent but much easier to prove. Remember that §2\n"
 "is notation for §3. Click on §4 if you need hints."
 msgstr ""
+"We want to reduce this to a hypothesis §0 and a goal §1,\n"
+"which is logically equivalent but much easier to prove. Remember that §2\n"
+"is notation for §3. Click on §4 if you need hints.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"この部分を仮定§0と目標§1に簡略化したいです。これは論理的に同等ですが、証明がはるかに簡単になります。§2は§3の表記法です。ヒントが必要な場合は§4"
+"をクリックしてください。"
 
-#. §0: `repeat rw [add_zero]`
 #: Game.Levels.Tutorial.L05add_zero
+#. §0: `repeat rw [add_zero]`
 msgid ""
 "Those of you interested in speedrunning the game may want to know\n"
 "that §0 will do both rewrites at once."
-msgstr ""
+msgstr "ゲームの速 Exterior に興味がある方は、§0 が一度に両方のリライトを行うことを知るかもしれません。"
 
+#: Game.Levels.Tutorial.L07add_succ
 #. §0: $0$
 #. §1: $0$
 #. §2: `37 + d = q`
@@ -2358,7 +3484,6 @@ msgstr ""
 #. §16: `rw [add_succ]`
 #. §17: `+`
 #. §18: `012`
-#: Game.Levels.Tutorial.L07add_succ
 msgid ""
 "Every number in Lean is either §0 or a successor. We know how to add §1,\n"
 "but we need to figure out how to add successors. Let's say we already know\n"
@@ -2377,65 +3502,108 @@ msgid ""
 "§18 (numerals) tabs under \"Theorems\" on the right to\n"
 "see which proofs you can rewrite."
 msgstr ""
+"### 原文 (English)\n"
+"Every number in Lean is either §0 or a successor. We know how to add §1,\n"
+"but we need to figure out how to add successors. Let's say we already know\n"
+"that §2. What should the answer to §3 be? Well,\n"
+"§4 is one bigger than §5, so §6 should be §7,\n"
+"the number one bigger than §8. More generally §9 should\n"
+"be §10. Let's add this as a lemma.\n"
+"\n"
+"* §11\n"
+"\n"
+"If you ever see §12 in your goal, §13 is\n"
+"normally a good idea.\n"
+"\n"
+"Let's now prove that §14. Figure out how to get §15 into\n"
+"the picture, and then §16. Switch between the §17 (addition) and\n"
+"§18 (numerals) tabs under \"Theorems\" on the right to\n"
+"see which proofs you can rewrite.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"Leanの数は、§0 "
+"または後続数のいずれかです。§1を加算する方法は分かっていますが、後続数を加算する方法はまだ分かりません。例えば、§2が分かっているとします。那么，§3"
+"の答えは何になるべきでしょうか？ §4は §5よりも1大きいので、§6は §7、つまり §8よりも1大きい数になるべきです。より一般的には、§9は "
+"§10になります。この事実を補題として追加しましょう。\n"
+"\n"
+"* §11\n"
+"\n"
+"もし目標に §12が見つかったら、通常 §13は良いアイデアです。\n"
+"\n"
+"次に、§14を証明しましょう。§15を図に取り入れる方法を考え、その後 §16を証明します。\"Theorems\" の右側にある \"追加\" と "
+"\"数\" のタブを切り替えて、どの証明を書き換えることができるか確認します。"
 
+#: Game.Levels.Algorithm.L06is_zero
 #. §0: `trivial`
 #. §1: `True`
-#: Game.Levels.Algorithm.L06is_zero
 msgid ""
 "# Summary\n"
 "\n"
 "§0 will solve the goal §1."
 msgstr ""
+"# 結果\n"
+"\n"
+"§0 は目標 §1 を解決します。"
 
+#: Game.Levels.Power.L02zero_pow_succ
 #. §0: $0^0=1$
 #. §1: $0^n=0$
 #. §2: $n>0$
 #. §3: $n$
-#: Game.Levels.Power.L02zero_pow_succ
 msgid ""
 "Although §0 in this game, §1 if §2, i.e., if\n"
 "§3 is a successor."
 msgstr ""
+"### 原文 (English)\n"
+"Although §0 in this game, §1 if §2, i.e., if\n"
+"§3 is a successor.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"このゲームにおいて §0 であり、§1 は §2 である場合、すなわち §3 が後继者である場合。"
 
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
 #. §0: `b = 0`
 #. §1: `b ≠ 0`
 #. §2: `cases b with d`
-#: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid ""
 "Here we want to deal with the cases §0 and §1 separately,\n"
 "so start with §2."
-msgstr ""
+msgstr "ここでは§0と§1のケースを別々に扱いたいので、まずは§2から始めます。"
 
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #. §0: `hd`
 #. §1: `c`
 #. §2: `a * d = a * c → d = c`
 #. §3: `apply`
 #. §4: `at`
 #. §5: `a * d = a * ?`
-#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid ""
 "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\n"
 "You can §3 it §4 any hypothesis of the form §5."
 msgstr ""
+" induktive 仮定 §0 は \"全ての自然数 §1 について §2\" です。\n"
+"あなたは §3 その §4 仮定 §5 の任意の形で §6 できます。"
 
 #: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "You can do induction on any of the three variables. Some choices\n"
 "are harder to push through than others. Can you do the inductive step in\n"
 "5 rewrites only?"
-msgstr ""
+msgstr "任意の3つの変数について帰納法を適用できます。いくつかの選択肢はもう少し難しいかもしれません。5回の書き換えで帰納的ステップを実行できるでしょうか？"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `0 + «{d}»`
 #. §1: `rw [«{hd}»]`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "At this point you see the term §0, so you can use the\n"
 "induction hypothesis with §1."
-msgstr ""
+msgstr "現在、項§0が表示されているので、項§1を使用してインベントリ仮定を適用することができます。"
 
+#: Game.Levels.Power.L01zero_pow_zero
 #. §0: `0 ^ 0`
 #. §1: `0 ^ 0 = 1`
-#: Game.Levels.Power.L01zero_pow_zero
 msgid ""
 "Mathematicians sometimes debate what §0 is;\n"
 "the answer depends, of course, on your definitions. In this\n"
@@ -2444,18 +3612,28 @@ msgid ""
 "Check out the *Pow* tab in your list of theorems\n"
 "to see the new proofs which are available."
 msgstr ""
+"数学家中で、§0 は何であるかについて時々議論があります；\n"
+"その答えは、もちろん、定義によって異なります。このゲームでは、§1 です。証明できるか試してみてください。\n"
+"\n"
+"証明一覧のタブから *Pow* をチェックして、利用可能な新しい証明を確認してください。"
 
+#: Game.Levels.Implication.L09zero_ne_succ
 #. §0: `1`
 #. §1: `succ 0`
 #. §2: `h`
-#: Game.Levels.Implication.L09zero_ne_succ
 msgid "Now change §0 to §1 in §2."
 msgstr ""
+"現在、§0 を §1 に変更してください。\n"
+"\n"
+"\n"
+"```html\n"
+"<p>現在、§0 を §1 に変更してください。</p>\n"
+"```"
 
+#: Game.Levels.Implication.L05succ_inj2
 #. §0: `apply t at h`
 #. §1: `apply t`
 #. §2: `apply`
-#: Game.Levels.Implication.L05succ_inj2
 msgid ""
 "Many people find §0 easy, but some find §1 confusing.\n"
 "If you find it confusing, then just argue forwards.\n"
@@ -2464,11 +3642,22 @@ msgid ""
 "view by\n"
 "clicking on the tactic in the list on the right."
 msgstr ""
+"多くの人は§0を容易に感じますが、一部の人々は§1を混乱させることがあります。\n"
+"混乱する場合は、証明を前向きに進めましょう。\n"
+"\n"
+"§2"
+"のタクティクについては、そのドキュメンテーションで詳しく説明しています。タクティクをリストの右側でクリックすることでドキュメンテーションを表示できます。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 msgid "Let's now make our own tactic to do this."
 msgstr ""
+"Let's now make our own tactic to do this.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"自分独自のタクティクを作成しましょう。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: `h`
 #. §1: `X = Y`
 #. §2: `rw [h]`
@@ -2561,7 +3750,6 @@ msgstr ""
 #. §84: `X`
 #. §85: `Y`
 #. §86: `nth_rewrite 37 [h]`
-#: Game.Levels.Tutorial.L02rw
 msgid ""
 "## Summary\n"
 "\n"
@@ -2654,37 +3842,159 @@ msgid ""
 "If you only want to change the 37th occurrence of §84\n"
 "to §85 then do §86."
 msgstr ""
+"## 結論\n"
+"\n"
+"§0が等式§1の証明である場合、§2は目標内のすべての§3を§4に変更します。これは「代入」を行う方法です。\n"
+"\n"
+"## バリエーション\n"
+"\n"
+"* §5 (目標内の§6を§7に変更；バックアローは§8または§9を入力することで取得します。)\n"
+"\n"
+"* §10 (一連の変換)\n"
+"\n"
+"* §11 (仮定§14内を§12から§13に変更)\n"
+"\n"
+"* §15 (目標と2つの仮定内を§16から§17に変更；§18のシンボルは§19で取得します。)\n"
+"\n"
+"* §20は§21を§22に変更し続けるまで、§23の一致がなくなるまで変更します。\n"
+"\n"
+"* §24は目標内の第2の§25のみを§26に変更します。\n"
+"\n"
+"### 例：\n"
+"\n"
+"仮定§27があり、目標が§28の場合、\n"
+"\n"
+"§29\n"
+"\n"
+"は目標を§30に変更し、\n"
+"\n"
+"§31\n"
+"\n"
+"は目標を§32に変更し、\n"
+"\n"
+"§33で解決できます。\n"
+"\n"
+"### 例：\n"
+"\n"
+"仮定を変更することもできます。例えば、仮定が2つある場合、\n"
+"\n"
+"§35\n"
+"\n"
+"§36は§37を§38に変換します。\n"
+"\n"
+"## 一般的なエラー\n"
+"\n"
+"* クエート記号が必要です。§39は常に正しくありません。\n"
+"\n"
+"* §40が等式（形式§41のステートメント）の証明でない場合、例えば§42が関数または推論である場合、\n"
+"\n"
+"§43は使用したいタクティクではありません。例えば、\n"
+"\n"
+"§44は常に正しくありません：§45は定理のステートメントであり、\n"
+"\n"
+"証明ではありません。§46が証明である場合、§47は機能します。\n"
+"\n"
+"## 詳細\n"
+"\n"
+"§48タクティクは「代入」を行う方法です。このタクティクを使用できる2つの異なる状況があります。\n"
+"\n"
+"1) 基本的な使用法：§49が仮定または定理の証明であり、目標内に1つ以上の§50が含まれている場合、\n"
+"\n"
+"§51はそれら全てを§52に変更します。タクティクは目標内に§53が存在しない場合にエラーを発生させます。\n"
+"\n"
+"2) 高度な使用法：定理の証明から得られる仮定はしばしば欠落している部分を持っています。例えば、\n"
+"\n"
+"§54は§55であることを証明しており、\n"
+"\n"
+"§56は実際には関数であり、\n"
+"\n"
+"§57は入力です。この状況では、\n"
+"\n"
+"§58は目標内を検索し、\n"
+"\n"
+"§59のサブタームを見つけた瞬間に、\n"
+"\n"
+"§60を§61に固定し、\n"
+"\n"
+"すべての§62を§63に変更します。\n"
+"\n"
+"演習：なぜ§64は項§65を§66に変更するのか考えてみてください。\n"
+"\n"
+"等式の証明の名前を忘れた場合は、\n"
+"\n"
+"右側の補題一覧で調べてください。\n"
+"\n"
+"## 対象的な使用法\n"
+"\n"
+"目標が§67であり、\n"
+"\n"
+"§68を§69に書き換えることを望む場合、\n"
+"\n"
+"§70はLeanが別の加算を見つけ、\n"
+"\n"
+"その入力を交換するためには機能しません。§71を使用して、\n"
+"\n"
+"Leanが§72を§73に書き換えることを保証します。これは、\n"
+"\n"
+"§74は§75を証明しており、\n"
+"\n"
+"§76は§77を証明しており、\n"
+"\n"
+"§78は§79を証明しているためです。\n"
+"\n"
+"§80が成立する場合、\n"
+"\n"
+"§81はすべての§82を§83に変換します。\n"
+"\n"
+"§84の37番目の出現のみを§85に変更したい場合は、\n"
+"\n"
+"§86を行います。"
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
 msgid "add_left_eq_zero"
-msgstr ""
+msgstr "add_left_eq_zero"
 
-#. §0: `rw [add_succ]`
 #: Game.Levels.Tutorial.L07add_succ Game.Levels.Tutorial.L08twoaddtwo
+#. §0: `rw [add_succ]`
 msgid "Now you can §0"
 msgstr ""
+"現在、§0\n"
+"\n"
+"\n"
+"## 原文 (English)\n"
+"Now you can use the tactic `§1` to prove `§2` by applying it to `§3`.\n"
+"\n"
+"### 日本語翻訳\n"
+"現在、`§1` タクティクを用いて`§2`を`§3`に適用して証明することができます。"
 
+#: Game.Levels.Implication.L04succ_inj
 #. §0: `←`
 #. §1: `rw`
 #. §2: `rw`
 #. §3: `←`
 #. §4: `\\l`
-#: Game.Levels.Implication.L04succ_inj
 msgid ""
 "You can put a §0 in front of any theorem provided to §1 to rewrite\n"
 "the other way around. Look at the docs for §2 for an explanation. Type §3 "
 "with §4."
 msgstr ""
+"以下の定理を任意の §0 に先頭に付けることで、逆方向に書き換えることができます。詳細は §1 のドキュメントを参照してください。型 §2 "
+"を入力してください。"
 
-#. §0: `exact h`
 #: Game.Levels.Implication.L05succ_inj2
+#. §0: `exact h`
 msgid "You can now finish with §0."
-msgstr ""
+msgstr "你现在可以完成 §0。"
 
 #: Game
 msgid "Natural Number Game"
 msgstr ""
+"自然数ゲーム\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
 
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
 #. §0: `n`
 #. §1: `cases n with d`
 #. §2: `n = 0`
@@ -2710,7 +4020,6 @@ msgstr ""
 #. §22: `hc : b = a + c`
 #. §23: `a ≤ b`
 #. §24: `∃ c, b = a + c`
-#: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid ""
 "## Summary\n"
 "\n"
@@ -2747,29 +4056,52 @@ msgid ""
 "and a proof §22. This is because the *definition* of §23 is\n"
 "§24."
 msgstr ""
+"## まとめ\n"
+"\n"
+"もし§0が数値である場合、§1は目標を二つに分割し、一つには§2、もう一つには§3が含まれます。\n"
+"\n"
+"もし§4が証明（例えば、仮定）である場合、§5はその証明を証明に使用された部分に分割します。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし§6が数値である場合、§7は目標を二つに分割し、一つには§8を0に置き換えたもの、もう一つには§9を§10"
+"に置き換えたものが含まれます。これは数学的な考え方に即して、すべての自然数は§11または後続数であることを示します。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし§12が仮定である場合、§13は一つの目標を二つに分割し、一つには§14という仮定が含まれ、もう一つには§15という仮定が含まれます。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし§16が仮定である場合、§17は一つの目標を無数の目標に分割しません。なぜなら、§18"
+"の証明方法が存在しないからです！そして、目標が残っていない場合、レベルは終了します。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし§19が仮定である場合、§20は新しい数値§21と証明§22を作成します。これは§23の定義が§24であるからです。"
 
+#: Game.Levels.LessOrEqual.L04le_trans
 #. §0: `«{ha}»`
 #. §1: `«{y}» = «{x}» + «{a}»`
 #. §2: `hxy`
 #. §3: `«{hyz}»`
 #. §4: `cases «{hyz}» with b hb`
-#: Game.Levels.LessOrEqual.L04le_trans
 msgid ""
 "Now §0 is a proof that §1, and §2 has vanished. Similarly, you can destruct\n"
 "§3 into its parts with §4."
-msgstr ""
+msgstr "現在、§0 は §1 の証明です。また、§2 は消えました。同様に、§4 を使用して §3 をその部分に分解できます。"
 
 #: Game.Levels.Implication.L04succ_inj
 msgid "succ_inj : the successor function is injective"
-msgstr ""
+msgstr " successor_function_inj : サクセッサー関数は単射です"
 
+#: Game.Levels.Tutorial.L06add_zero2
 #. §0: `b + 0`
 #. §1: `c + 0`
 #. §2: `rw [add_zero]`
 #. §3: `b + 0`
 #. §4: `c + 0`
 #. §5: `add_zero`
-#: Game.Levels.Tutorial.L06add_zero2
 msgid ""
 "## Precision rewriting\n"
 "\n"
@@ -2779,14 +4111,20 @@ msgid ""
 "to change §4 first by giving §5 an\n"
 "explicit input."
 msgstr ""
+"## 精度の再編纂\n"
+"\n"
+"最後のレベルでは、§0 と §1 があり、\n"
+"§2 は最初に見つけたものを §3 に変更しました。\n"
+"Lean に §4 を最初に変更させる方法を学びましょう。\n"
+"§5 に明示的な入力を与えることで実現します。"
 
+#: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `a ≤ b`
 #. §1: `∃ c, b = a + c`
 #. §2: `a ≤ b`
 #. §3: `use`
 #. §4: `h : a ≤ b`
 #. §5: `cases h with c hc`
-#: Game.Levels.LessOrEqual.L01le_refl
 msgid ""
 "§0 is *notation* for §1.\n"
 "\n"
@@ -2797,28 +4135,41 @@ msgid ""
 "make progress with the §3 tactic, and if you have a hypothesis\n"
 "§4, you can make progress with §5."
 msgstr ""
+"§0は§1の記号表記です。\n"
+"\n"
+"このゲームには負の数が存在しないので、この定義は数学的に有効です。\n"
+"\n"
+"这意味着如果你的目标形式为§2，你可以使用§3タクティク進展，如果你有仮定§4，你可以使用§5タクティク進展。"
 
-#. §0: `exact h`
 #: Game.Levels.Implication.L06intro
+#. §0: `exact h`
 msgid "Now §0 finishes the job."
-msgstr ""
+msgstr "現在、§0 が仕事の完了を告げる。"
 
+#: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `«{x}» ≤ «{x}»`
 #. §1: `«{x}» = «{x}» + 0`
 #. §2: `use 0`
-#: Game.Levels.LessOrEqual.L01le_refl
 msgid ""
 "The reason §0 is because §1.\n"
 "So you should start this proof with §2."
 msgstr ""
+"The reason §0 is because §1.\n"
+"So you should start this proof with §2.\n"
+"\n"
+"\n"
+"## 翻訳\n"
+"理由§0は§1である。\n"
+"従って、この証明は§2から始めるべきである。"
 
+#: Game.Levels.LessOrEqual.L04le_trans Game.Levels.LessOrEqual.L06le_antisymm
 #. §0: $x \\leq y$
 #. §1: $y \\leq z$
 #. §2: $x \\leq z$
-#: Game.Levels.LessOrEqual.L04le_trans Game.Levels.LessOrEqual.L06le_antisymm
 msgid "If §0 and §1, then §2."
-msgstr ""
+msgstr "もし§0 と §1 なら §2。"
 
+#: Game.Levels.AdvMultiplication.L05le_mul_right
 #. §0: ```
 #. apply mul_left_ne_zero at h
 #. apply one_le_of_ne_zero at h
@@ -2826,39 +4177,49 @@ msgstr ""
 #. rw [one_mul, mul_comm] at h
 #. exact h
 #. ```
-#: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid ""
 "Here's what I was thinking of:\n"
 "§0"
 msgstr ""
+"以下は私の考えでした：\n"
+"§0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"以下は私の考えでした：\n"
+"§0"
 
+#: Game.Levels.Tutorial.L08twoaddtwo
 #. §0: `nth_rewrite 2 [two_eq_succ_one]`
 #. §1: `rw [two_eq_succ_one]`
-#: Game.Levels.Tutorial.L08twoaddtwo
 msgid "§0 is I think quicker than §1."
-msgstr ""
+msgstr "§0は、§1より迅速です。"
 
 #: GameServer.RpcHandlers
 msgid "intermediate goal solved! 🎉"
-msgstr ""
+msgstr "中間目標解決しました！🎉"
 
+#: Game.Levels.Addition.L04add_assoc
 #. §0: $a, b$
 #. §1: $c$
 #. §2: $ (a + b) + c = a + (b + c). $
-#: Game.Levels.Addition.L04add_assoc
 msgid ""
 "On the set of natural numbers, addition is associative.\n"
 "In other words, if §0 and §1 are arbitrary natural numbers, we have\n"
 "§2"
 msgstr ""
+"自然数の集合において、加法は結合法則を満たします。\n"
+"つまり、任意の自然数 §0 と §1 に対して、以下の関係が成り立ちます。\n"
+"§2"
 
-#. §0: `use`
 #: Game.Levels.LessOrEqual.L04le_trans
+#. §0: `use`
 msgid ""
 "Now you need to figure out which number to §0. See if you can take it from "
 "here."
-msgstr ""
+msgstr "今度は §0 の部分に何を入力するか考えなさい。ここから進められるようなら自分で進めてみてください。"
 
+#: Game.Levels.Implication.L03apply
 #. §0: `t : P → Q`
 #. §1: $P \\implies Q$
 #. §2: `h : P`
@@ -2887,7 +4248,6 @@ msgstr ""
 #. §25: `a * b = 7`
 #. §26: `apply succ_inj`
 #. §27: `succ (a * b) = succ 7`
-#: Game.Levels.Implication.L03apply
 msgid ""
 "## Summary\n"
 "\n"
@@ -2914,59 +4274,88 @@ msgid ""
 "If the goal is §25, then §26 will turn the\n"
 "goal into §27."
 msgstr ""
+"## 結論\n"
+"\n"
+"もし§0が§1の証明であり、§2が§3の証明であるなら、§4は§5を§6の証明に変更します。つまり、§7が真であることを知っているなら、§8から§9"
+"が真であることを導くことができます。\n"
+"\n"
+"もし*目標*が§10であるなら、§11は「逆向きに議論」し、目標を§12に変更します。ここでの考え方は、§13を証明したいなら、§14から§15"
+"を証明すれば十分であるので、目標を§16の証明に減らすことができるということです。\n"
+"\n"
+"### 例：\n"
+"\n"
+"§17が§18の証明であるとします。\n"
+"\n"
+"もし仮定§19があるなら、§20は§21を§22に変更します。§23のように書くこともできますが、Leanは§24の入力を見抜くことができます。\n"
+"\n"
+"### 例\n"
+"\n"
+"もし目標が§25であるなら、§26は目標を§27に変更します。"
 
-#. §0: `cases «{h2}» with e he`
 #: Game.Levels.LessOrEqual.L08le_total
+#. §0: `cases «{h2}» with e he`
 msgid "Now §0."
-msgstr ""
+msgstr "現在、§0。"
 
-#. §0: `add_mul`
 #: Game.Levels.Multiplication.L08add_mul
+#. §0: `add_mul`
 msgid ""
 "§0 is just as fiddly to prove by induction; but there's a trick\n"
 "which avoids it. Can you spot it?"
-msgstr ""
+msgstr "§0は帰納法で証明するのと同じくらい手間がかかるが、回避するトリックがある。見つけることができるだろうか？"
 
+#: Game.Levels.Implication.L07intro2
 #. §0: `repeat rw [← succ_eq_add_one] at h`
 #. §1: `h`
 #. §2: `succ x = succ y`
-#: Game.Levels.Implication.L07intro2
 msgid ""
 "Now §0 is the quickest way to\n"
 "change §1 to §2."
-msgstr ""
+msgstr "現在、§0は§1を§2に変更する最も迅速な方法です。"
 
+#: Game.Levels.LessOrEqual.L03le_succ_self
 #. §0: ```
 #. use 1
 #. exact succ_eq_add_one x
 #. ```
 #. §1: `succ_eq_add_one x`
 #. §2: `succ x = x + 1`
-#: Game.Levels.LessOrEqual.L03le_succ_self
 msgid ""
 "Here's a two-liner:\n"
 "§0\n"
 "\n"
 "This works because §1 is a proof of §2."
 msgstr ""
+"以下は二行分です：\n"
+"§0\n"
+"\n"
+"これは §1 が §2 の証明であるため Works します。"
 
+#: Game.Levels.Algorithm.L06is_zero
 #. §0: `intro h`
 #. §1: `X ≠ Y`
 #. §2: `X = Y → False`
-#: Game.Levels.Algorithm.L06is_zero
 msgid ""
 "Start with §0 (remembering that §1 is just notation\n"
 "for §2)."
-msgstr ""
+msgstr "開始は §0 から (§1 は §2 の表記法であることを覚えておいてください)。"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `n`
 #. §1: `induction n with d hd`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "You can start a proof by induction on §0 by typing:\n"
 "§1."
 msgstr ""
+"You can start a proof by induction on §0 by typing:\n"
+"§1.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+" induksi法による証明を開始するには、§0について帰納法で証明を開始するためには以下のように入力します:\n"
+"§1."
 
+#: Game.Levels.Tutorial.L08twoaddtwo
 #. §0: ```lean
 #. nth_rewrite 2 [two_eq_succ_one] -- only change the second `2` to `succ 1`.
 #. rw [add_succ]
@@ -2979,7 +4368,6 @@ msgstr ""
 #. §1: `</>`
 #. §2: `>_`
 #. §3: `induction`
-#: Game.Levels.Tutorial.L08twoaddtwo
 msgid ""
 "Here is an example proof of 2+2=4 showing off various techniques.\n"
 "\n"
@@ -3000,13 +4388,24 @@ msgid ""
 "overworld, and select Addition World, where you will learn\n"
 "about the §3 tactic."
 msgstr ""
+"以下は2+2=4を示す証明の例で、様々な手法を披露しています。\n"
+"\n"
+"§0\n"
+"\n"
+"オプション：自分でこの証明を実行することもできます。右上の§1"
+"ボタンをクリックしてゲームを「エディタモード」に切り替えることができます。現在の証明は、複数行のコードとして表示されます。行の間でカーソルを動かすことで"
+"、任意のポイントでの目標状態を確認できます。証明を保存したい場合は、コードを他の場所に切り貼りし、上の証明を代入できます。カーソルを動かして調査してくだ"
+"さい。終了したら、右上の§2ボタンをクリックして「タイピングモード」に戻ります。\n"
+"\n"
+"チュートリアルワールドを終了しました！\n"
+"「ホーム」をクリックしてオーバワールドに戻り、加算ワールドを選択して§3タクティクについて学びます。"
 
+#: Game.Levels.Power.L01zero_pow_zero
 #. §0: `Pow a b`
 #. §1: `a ^ b`
 #. §2: `pow_zero a : a ^ 0 = 1`
 #. §3: `pow_succ a b : a ^ succ b = a ^ b * a`
 #. §4: `0 ^ 0 = 1`
-#: Game.Levels.Power.L01zero_pow_zero
 msgid ""
 "§0, with notation §1, is the usual\n"
 "  exponentiation of natural numbers. Internally it is\n"
@@ -3018,7 +4417,17 @@ msgid ""
 "\n"
 "Note in particular that §4."
 msgstr ""
+"§0、符号§1を用いたものは通常の自然数の累乗を表します。内部的には、\n"
+"\n"
+"  * §2\n"
+"\n"
+"  * §3\n"
+"\n"
+"の2つの公理により定義されています。\n"
+"\n"
+"特に注意すべきは§4です。"
 
+#: Game.Levels.LessOrEqual.L07or_symm
 #. §0: `≤`
 #. §1: `a`
 #. §2: `b`
@@ -3031,7 +4440,6 @@ msgstr ""
 #. §9: `right`
 #. §10: `h`
 #. §11: `cases h with h1 h2`
-#: Game.Levels.LessOrEqual.L07or_symm
 msgid ""
 "Totality of §0 is the boss level of this world, and it's coming up next. It "
 "says that\n"
@@ -3049,60 +4457,101 @@ msgid ""
 "§11 will create two goals, one where you went left,\n"
 "and the other where you went right."
 msgstr ""
+"### 原文 (English)\n"
+"Totality of §0 is the boss level of this world, and it's coming up next. It "
+"says that\n"
+"if §1 and §2 are naturals then either §3 or §4.\n"
+"But we haven't talked about §5 at all. Here's a run-through.\n"
+"\n"
+"1) The notation for \"or\" is §6. You won't need to type it, but you can\n"
+"type it with §7.\n"
+"\n"
+"2) If you have an \"or\" statement in the *goal*, then two tactics make\n"
+"progress: §8 and §9. But don't choose a direction unless your\n"
+"hypotheses guarantee that it's the correct one.\n"
+"\n"
+"3) If you have an \"or\" statement as a *hypothesis* §10, then\n"
+"§11 will create two goals, one where you went left,\n"
+"and the other where you went right.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"完全性の §0 はこのワールドのボスレベルであり、次に登場します。これは、§1 と §2 が自然数である場合、§3 または §4 "
+"であることを言います。\n"
+"しかし、§5 については全く話していません。以下は概要です。\n"
+"\n"
+"1) \"または\" の表記は §6 です。直接入力する必要はありませんが、§7 で入力することができます。\n"
+"\n"
+"2) 目的 §8 に \"または\" の文がある場合、2 つのタクティク §9 "
+"が進行します。ただし、方向を選択する前に、仮定が正しい方向を保証していることを確認してください。\n"
+"\n"
+"3) 仮定 §10 に \"または\" の文がある場合、§11 は 2 つの目的を作成します。一つは左に進んだ場合、もう一つは右に進んだ場合です。"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `one_eq_succ_zero`
 #. §1: `1 = succ 0`
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "§0 is a proof of §1.\""
-msgstr ""
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Addition.L01zero_add
 msgid "zero_add"
 msgstr ""
+"zero_add\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"0との加算"
 
-#. §0: `induction b with d hd generalizing c`
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
+#. §0: `induction b with d hd generalizing c`
 msgid "The way to start this proof is §0."
-msgstr ""
+msgstr "この証明を始める方法は §0。"
 
+#: Game.Levels.Power.L02zero_pow_succ
 #. §0: `0 ^ 0 = 1`
 #. §1: `n`
 #. §2: `0 ^ n = 0`
-#: Game.Levels.Power.L02zero_pow_succ
 msgid ""
 "We've just seen that §0, but if §1\n"
 "is a successor, then §2. We prove that here."
-msgstr ""
+msgstr "We've just seen that §0, ですが、もし §1 が後继者である場合、則 §2。ここではそのことを証明します。"
 
+#: Game.Levels.Multiplication.L02zero_mul
 #. §0: `zero_mul x`
 #. §1: `0 * x = 0`
 #. §2: `zero_mul`
 #. §3: `simp`
-#: Game.Levels.Multiplication.L02zero_mul
 msgid ""
 "§0 is the proof that §1.\n"
 "\n"
 "Note: §2 is a §3 lemma."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"Note: §2は§3の補題です。"
 
+#: Game.Levels.LessOrEqual.L06le_antisymm
 #. §0: $\\leq$
 #. §1: $x \\leq y$
 #. §2: $y \\leq x$
 #. §3: $x = y$
-#: Game.Levels.LessOrEqual.L06le_antisymm
 msgid ""
 "This level asks you to prove *antisymmetry* of §0.\n"
 "In other words, if §1 and §2 then §3.\n"
 "It's the trickiest one so far. Good luck!"
 msgstr ""
+"このレベルでは、§0 の *反対称性* を証明する必要があります。\n"
+"つまり、§1 かつ §2 ならば §3 です。\n"
+"これまでで最も難しい問題です。運を祈ります！"
 
-#. §0: `contrapose!`
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+#. §0: `contrapose!`
 msgid ""
 "If you have completed Algorithm World then you can use the §0 tactic\n"
 "here. If not then I'll talk you through a manual approach."
-msgstr ""
+msgstr "もしAlgorithm Worldを完了しているなら、ここでは§0タクティクを使用できます。もし完了していなければ、手動のアプローチを説明します。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: $2y=2(x+7)$
 #. §1: `h`
 #. §2: $y = x + 7$
@@ -3113,7 +4562,6 @@ msgstr ""
 #. §7: $y$
 #. §8: `h`
 #. §9: `rw`
-#: Game.Levels.Tutorial.L02rw
 msgid ""
 "In this level the *goal* is §0 but to help us we\n"
 "have an *assumption* §1 saying that §2. Check that you can see §3 in\n"
@@ -3124,7 +4572,24 @@ msgid ""
 "We do this in Lean by *rewriting* the goal with §8,\n"
 "using the §9 tactic."
 msgstr ""
+"### 原文 (English)\n"
+"In this level the *goal* is §0 but to help us we\n"
+"have an *assumption* §1 saying that §2. Check that you can see §3 in\n"
+"your list of assumptions. Lean thinks of §4 as being a secret proof of the\n"
+"assumption, rather like §5 is a secret number.\n"
+"\n"
+"Before we can use §6, we have to \"substitute in for §7\".\n"
+"We do this in Lean by *rewriting* the goal with §8,\n"
+"using the §9 tactic.\n"
+"\n"
+"\n"
+"### 日本語翻訳\n"
+"このレベルでは、目標は§0ですが、それを手助けするために、§1という仮定があります。§2がその内容です。§3"
+"が仮定リストに表示されていることを確認してください。Leanは§4を仮定の秘密の証明と見なし、§5は秘密の数値に似ています。\n"
+"\n"
+"§6を使用する前に、「§7に置き換える」必要があります。Leanでは、§8を使用して目標を書き換え、§9タクティクを使用してこれを実行します。"
 
+#: Game.Levels.Implication.L09zero_ne_succ
 #. §0: `zero_ne_succ n`
 #. §1: `0 ≠ succ n`
 #. §2: `a ≠ b`
@@ -3135,7 +4600,6 @@ msgstr ""
 #. §7: `apply zero_ne_succ at h`
 #. §8: `h`
 #. §9: `0 = succ n`
-#: Game.Levels.Implication.L09zero_ne_succ
 msgid ""
 "§0 is the proof that §1.\n"
 "\n"
@@ -3144,100 +4608,124 @@ msgid ""
 "Here §6 is a generic false statement. This means that\n"
 "you can §7 if §8 is a proof of §9."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"Leanでは、§2は§3に*定義されており*、 "
+"§§4は実質的に§5の証明です。ここで§6は一般的な偽の命題です。つまり、§8が§9の証明である場合、§7を行うことができます。"
 
 #: Game.Levels.Multiplication.L01mul_one
 msgid "mul_one"
 msgstr ""
+"mul_one\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"乗法の単位元定理です。"
 
+#: Game.Levels.AdvAddition.L02add_left_cancel
 #. §0: `add_left_cancel a b n`
 #. §1: $n+a=n+b\\implies a=b$
 #. §2: `n`
 #. §3: `add_right_cancel`
-#: Game.Levels.AdvAddition.L02add_left_cancel
 msgid ""
 "§0 is the theorem that §1.\n"
 "You can prove it by induction on §2 or you can deduce it from §3."
 msgstr ""
+"§0は§1の定理です。\n"
+"これを証明するには、§2についての帰納法を使用するか、§3から導き出せます。"
 
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `rw [«{h}»] at «{h2}»`
 #. §1: `apply le_one at «{h2}»`
-#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid "Now §0 so you can §1."
-msgstr ""
+msgstr "現在 §0 なので、§1 です。"
 
+#: Game.Levels.LessOrEqual.L11le_two
 #. §0: $x \\leq 2$
 #. §1: $x = 0$
 #. §2: $1$
 #. §3: $2$
-#: Game.Levels.LessOrEqual.L11le_two
 msgid "If §0 then §1 or §2 or §3."
-msgstr ""
+msgstr "もし§0 then §1または§2または§3。"
 
-#. §0: `two_eq_succ_one`
-#. §1: `2 = succ 1`
 #: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Addition.L03add_comm
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.Algorithm.L05pred
 #: Game.Levels.Algorithm.L06is_zero Game.Levels.LessOrEqual.L05le_zero
+#. §0: `two_eq_succ_one`
+#. §1: `2 = succ 1`
 msgid "§0 is a proof of §1."
-msgstr ""
+msgstr "§0は§1の証明です。"
 
+#: Game.Levels.Power.L10FLT
 #. §0: $a$
 #. §1: $b$
 #. §2: $c$
 #. §3: $n$
 #. §4: $$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$
-#: Game.Levels.Power.L10FLT
 msgid ""
 "For all naturals §0 §1 §2 and §3, we have\n"
 "§4"
 msgstr ""
+"すべての自然数 §0, §1, §2, §3 に対して、以下の関係が成り立ちます。\n"
+"§4"
 
-#. §0: `le_antisymm x y`
-#. §1: `x ≤ y`
-#. §2: `y ≤ x`
-#. §3: `x = y`
 #: Game.Levels.LessOrEqual.L06le_antisymm
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+#. §0: `le_antisymm x y`
+#. §1: `x ≤ y`
+#. §2: `y ≤ x`
+#. §3: `x = y`
 msgid "§0 is a proof that if §1 and §2 then §3."
-msgstr ""
+msgstr "§0は、§1と§2ならば§3であることを証明します。"
 
+#: Game.Levels.AdvAddition.L02add_left_cancel
 #. §0: ```
 #. repeat rw [add_comm n]
 #. exact add_right_cancel a b n
 #. ```
-#: Game.Levels.AdvAddition.L02add_left_cancel
 msgid ""
 "How about this for a proof:\n"
 "§0"
 msgstr ""
+"以下は証明です：\n"
+"§0"
 
+#: Game.Levels.Implication.L07intro2
 #. §0: `rw [h]`
 #. §1: `rfl`
 #. §2: `exact h`
-#: Game.Levels.Implication.L07intro2
 msgid "Now §0 then §1 works, but §2 is quicker."
-msgstr ""
+msgstr "現在、§0 と §1 は正常に動作しますが、§2 はより速いです。"
 
+#: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `le_refl x`
 #. §1: `x ≤ x`
 #. §2: $\\le$
-#: Game.Levels.LessOrEqual.L01le_refl
 msgid ""
 "§0 is a proof of §1.\n"
 "\n"
 "The reason for the name is that this lemma is \"reflexivity of §2\""
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"この名前の理由は、この補題が\"§2の反射性\"であるためです。"
 
 #: Game.Levels.Addition.L03add_comm
 msgid "add_comm (level boss)"
 msgstr ""
+"add_comm (レベルボス)\n"
+"\n"
+"\n"
+"## 備考\n"
+"- `add_comm` は「加算の交換律を追加する」という意味です。\n"
+"- `level boss` は「レベルボス」と翻訳しています。"
 
+#: Game.Levels.Multiplication.L02zero_mul
 #. §0: `mul_comm x y : x * y = y * x`
 #. §1: `mul_zero`
 #. §2: `zero_mul`
-#: Game.Levels.Multiplication.L02zero_mul
 msgid ""
 "Our first challenge is §0,\n"
 "and we want to prove it by induction. The zero\n"
@@ -3245,53 +4733,73 @@ msgid ""
 "and §2 (which we don't), so let's\n"
 "start with this."
 msgstr ""
+"## 原文 (English)\n"
+"Our first challenge is §0,\n"
+"and we want to prove it by induction. The zero\n"
+"case will need §1 (which we have)\n"
+"and §2 (which we don't), so let's\n"
+"start with this.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"私たちの最初の挑戦は§0です。\n"
+"これは帰納法によって証明したいと思います。\n"
+"零の場合には§1（持っています）\n"
+"と§2（持っていない）が必要なので、まずはこれから始めましょう。"
 
+#: Game.Levels.Algorithm.L04add_algo3
 #. §0: `simp_add`
 #. §1: `a + (b + c) + (d + e) = e + (d + (c + b)) + a`
-#: Game.Levels.Algorithm.L04add_algo3
 msgid ""
 "# Overview\n"
 "\n"
 "Our home-made tactic §0 will solve arbitrary goals of\n"
 "the form §1."
 msgstr ""
+"# 概要\n"
+"\n"
+"私たちが作成したタクティク §0 は、§1 のような任意の目標を解決します。"
 
-#. §0: `20 + 20 = 40`
 #: Game.Levels.Algorithm.L04add_algo3
+#. §0: `20 + 20 = 40`
 msgid ""
 "Let's now move on to a more efficient approach to questions\n"
 "involving numerals, such as §0."
 msgstr ""
+"## 数値に関連する質問に対するより効率的なアプローチ\n"
+"\n"
+"### 参考訳\n"
+"数値に関連する質問、例えば§0 に対するより効率的なアプローチについて見ていきましょう。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
 "We now have enough to prove that multiplication is associative,\n"
 "the boss level of multiplication world. Good luck!"
-msgstr ""
+msgstr "現在、乗算が結合的であることを証明できるようになりました。これは乗算ワールドのボスレベルです。お運びください！"
 
 #: Game.Levels.Power.L08pow_pow
 msgid "pow_pow"
-msgstr ""
+msgstr "pow_pow"
 
 #: Game.Levels.Implication.L04succ_inj
 msgid "Now finish in one line."
-msgstr ""
+msgstr "今、一行で完了してください。"
 
+#: Game.Levels.LessOrEqual.L11le_two
 #. §0: `le_two x`
 #. §1: `x ≤ 2`
 #. §2: `x = 0`
 #. §3: `x = 1`
 #. §4: `x = 2`
-#: Game.Levels.LessOrEqual.L11le_two
 msgid "§0 is a proof that if §1 then §2 or §3 or §4."
-msgstr ""
+msgstr "§0は、§1ならば§2または§3または§4であることを証明します。"
 
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
 #. §0: ```
 #. rw [add_comm]
 #. exact add_right_eq_zero b a
 #. ```
 #. §1: `≤`
-#: Game.Levels.AdvAddition.L06add_left_eq_zero
 msgid ""
 "How about this for a proof:\n"
 "\n"
@@ -3300,13 +4808,24 @@ msgid ""
 "That's the end of Advanced Addition World! You'll need these theorems\n"
 "for the next world, §1 World. Click on \"Home\" to access it."
 msgstr ""
+"以下の訳文です：\n"
+"\n"
+"### 日本語\n"
+"証明としては、以下のようなものはどうでしょうか：\n"
+"\n"
+"§0\n"
+"\n"
+"この「進階加算ワールド」は終了しました。次の「§1ワールド」では、これらの定理が必要になるでしょう。\"ホーム\"をクリックしてアクセスしてください。\n"
+"\n"
+"\n"
+"##"
 
+#: Game.Levels.Multiplication.L01mul_one
 #. §0: `Mul a b`
 #. §1: `a * b`
 #. §2: `mul_zero a : a * 0 = 0`
 #. §3: `mul_succ a b : a * succ b = a * b + a`
 #. §4: `zero_mul`
-#: Game.Levels.Multiplication.L01mul_one
 msgid ""
 "§0, with notation §1, is the usual\n"
 "  product of natural numbers. Internally it is\n"
@@ -3319,7 +4838,15 @@ msgid ""
 "Other theorems about naturals, such as §4,\n"
 "are proved by induction from these two basic theorems."
 msgstr ""
+"§0、符号§1を用いたものは、通常の自然数の積です。内部的には、以下の2つの公理によって定義されます：\n"
+"\n"
+"* §2\n"
+"\n"
+"* §3\n"
+"\n"
+"他の自然数に関する定理、例えば§4は、これらの2つの基本定理から帰納的に証明されます。"
 
+#: Game.Levels.Tutorial.L05add_zero
 #. §0: `add_zero a`
 #. §1: `a + 0 = a`
 #. §2: `add_zero`
@@ -3330,7 +4857,6 @@ msgstr ""
 #. §7: `add_zero`
 #. §8: $\\forall n ∈ ℕ, n + 0 = n$
 #. §9: `n + 0 = n`
-#: Game.Levels.Tutorial.L05add_zero
 msgid ""
 "§0 is a proof that §1.\n"
 "\n"
@@ -3352,21 +4878,40 @@ msgid ""
 "This is just another way of saying that it's a function which\n"
 "can eat any number n and will return a proof that §9."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"## まとめ\n"
+"\n"
+"§2は実際には関数で、数字を入力するとその数字に関する定理の証明を返します。例えば§3は§4の証明です。\n"
+"\n"
+"§5のタクティクは§6を受け取り、省略された数字を推測しようとします。\n"
+"\n"
+"## 詳細\n"
+"\n"
+"数学者は時として§7を\\\\\"一つのもの\\\\\"と捉え、それは§8の証明であると言えます。これは、任意の数字nを入力すると§9"
+"の証明を返す関数であるという別の表現方法です。"
 
+#: Game.Levels.Power.L09add_sq
 #. §0: $a$
 #. §1: $b$
 #. §2: $$(a+b)^2=a^2+b^2+2ab.$$
-#: Game.Levels.Power.L09add_sq
 msgid ""
 "For all numbers §0 and §1, we have\n"
 "§2"
 msgstr ""
+"すべての数値 §0 と §1 に対して、\n"
+"§2\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"すべての数値 §0 と §1 に対して、\n"
+"§2"
 
+#: Game.Levels.Tutorial.L01rfl
 #. §0: `rfl`
 #. §1: `rfl`
 #. §2: `rfl`
 #. §3: `rw`
-#: Game.Levels.Tutorial.L01rfl
 msgid ""
 "Congratulations! You completed your first verified proof!\n"
 "\n"
@@ -3376,56 +4921,72 @@ msgid ""
 "\n"
 "Now click on \"Next\" to learn about the §3 tactic."
 msgstr ""
+" Congratulations! あなたは初めての検証証明を完了しました！\n"
+"\n"
+"記憶に留めておきましょう。§0は*tactic*です。§1のtacticについての情報が必要な場合は、右側のtactic一覧の§2をクリックできます。\n"
+"\n"
+"今、\"Next\"をクリックして§3のtacticについて学びましょう。"
 
+#: Game.Levels.Implication.L02exact2
 #. §0: $0+x=(0+y)+2$
 #. §1: $x=y+2$
-#: Game.Levels.Implication.L02exact2
 msgid "Assuming §0, we have §1."
-msgstr ""
+msgstr "仮定§0を仮定すると、§1が成り立ちます。"
 
+#: Game.Levels.AdvAddition.L01add_right_cancel
 #. §0: `add_right_cancel a b n`
 #. §1: $a+n=b+n\\implies a=b$
-#: Game.Levels.AdvAddition.L01add_right_cancel
 msgid ""
 "In this world I will mostly leave you on your own.\n"
 "\n"
 "§0 is the theorem that §1."
 msgstr ""
+"このワールドでは、主にあなたを自分で残します。\n"
+"\n"
+"§0は、§1の定理です。"
 
 #: Game.Levels.Power.L06pow_add
 msgid ""
 "Let's now begin our approach to the final boss,\n"
 "by proving some more subtle facts about powers."
 msgstr ""
+"## 最終ボスへのアプローチ\n"
+"powersに関するより細かい事実を証明することで始めましょう。"
 
+#: Game.Levels.LessOrEqual.L09succ_le_succ
 #. §0: `succ_le_succ x y`
 #. §1: `succ x ≤ succ y`
 #. §2: `x ≤ y`
-#: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid "§0 is a proof that if §1 then §2."
-msgstr ""
+msgstr "§0は、§1ならば§2であることを証明します。"
 
 #: Game.Levels.Implication.L08ne
 msgid "≠"
 msgstr ""
+"≠\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"不等号"
 
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #. §0: `c = 0`
 #. §1: `c = succ e`
 #. §2: `cases c with e`
-#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid "Split into cases §0 and §1 with §2."
-msgstr ""
+msgstr "ケース分けして §0 と §1 に分ける。"
 
+#: Game.Levels.Implication.L06intro
 #. §0: `intro h`
 #. §1: `h`
-#: Game.Levels.Implication.L06intro
 msgid "Start with §0 to assume the hypothesis and call its proof §1."
-msgstr ""
+msgstr "開始する際は、§0 を使用して仮定を仮定し、その証明を§1と呼びます。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid "mul_right_eq_self"
-msgstr ""
+msgstr "mul_right_eq_self"
 
+#: Game.Levels.Addition.L02succ_add
 #. §0: `add_comm`
 #. §1: `succ_add`
 #. §2: `succ_add a b`
@@ -3436,7 +4997,6 @@ msgstr ""
 #. §7: `b`
 #. §8: `b = 0`
 #. §9: `b`
-#: Game.Levels.Addition.L02succ_add
 msgid ""
 "Oh no! On the way to §0, a wild §1 appears. §2\n"
 "is the proof that §3 for §4 and §5 numbers.\n"
@@ -3444,11 +5004,14 @@ msgid ""
 "we have the problem that we are adding §7 to things, so we need\n"
 "to use induction to split into the cases where §8 and §9 is a successor."
 msgstr ""
+"Oh no!  §0 に向かう途中で、野生の §1 が現れました。 §2 は、 §3 が §4 と §5 "
+"の数値に対して成り立つことを証明しています。この結果が §6 の道を阻んでいます。また\n"
+"私たちは §7 を何かに加算している問題に直面しており、そのためには §8 と §9 が後继者である場合に分けて帰納法を使用する必要があります。"
 
+#: Game.Levels.Algorithm.L03add_algo2
 #. §0: `simp`
 #. §1: `simp`
 #. §2: `add_comm`
-#: Game.Levels.Algorithm.L03add_algo2
 msgid ""
 "# Overview\n"
 "\n"
@@ -3458,13 +5021,16 @@ msgid ""
 "fed\n"
 "lemmas such as §2, so that it does not go into an infinite loop."
 msgstr ""
+"#  Overview\n"
+"\n"
+"Leanの簡略化処理器§0は、§1でタグ付けされたすべての lemmas およびユーザーから与えられたすべての lemmas "
+"をできる限り簡略化します。さらに、§2のようなlemmasを与えると、内部の順序に変数を並び替える試みも行い、無限ループに陥らないようにします。"
 
-#. §0: `cases ha with n hn`
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+#. §0: `cases ha with n hn`
 msgid "Now take apart the existence statement with §0."
-msgstr ""
+msgstr "現在、存在文 §0 を分解します。"
 
-#. §0: $2+2=4$
 #: Game.Levels.Tutorial.L08twoaddtwo Game.Levels.Implication.L06intro
 #: Game.Levels.Implication.L07intro2 Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.Implication.L10one_ne_zero
@@ -3473,9 +5039,17 @@ msgstr ""
 #: Game.Levels.Algorithm.L08decide Game.Levels.AdvAddition.L01add_right_cancel
 #: Game.Levels.AdvAddition.L02add_left_cancel
 #: Game.Levels.AdvAddition.L04add_right_eq_self
+#. §0: $2+2=4$
 msgid "§0."
 msgstr ""
+"### 原文 (English)\n"
+"§0.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"§0."
 
+#: Game.Levels.Power.L10FLT
 #. §0: $x,y,z>0$
 #. §1: $m \\geq 3$
 #. §2: $x^m+y^m\\not =z^m$
@@ -3484,7 +5058,6 @@ msgstr ""
 #. §5: `m`
 #. §6: `x > 0`
 #. §7: `a + 1`
-#: Game.Levels.Power.L10FLT
 msgid ""
 "We now have enough to state a mathematically accurate, but slightly\n"
 "clunky, version of Fermat's Last Theorem.\n"
@@ -3506,46 +5079,102 @@ msgid ""
 "You've finished the main quest of the natural number game!\n"
 "If you would like to learn more about how to use Lean to\n"
 "prove theorems in mathematics, then take a look\n"
-"at [Mathematics In Lean](https://leanprover-community.github.io/"
-"mathematics_in_lean/),\n"
+"at [Mathematics In "
+"Lean](https://leanprover-community.github.io/mathematics_in_lean/),\n"
 "an interactive textbook which you can read in your browser,\n"
 "and which explains how to work with many more mathematical concepts in Lean."
 msgstr ""
+"### 原文 (English)\n"
+"We now have enough to state a mathematically accurate, but slightly\n"
+"clunky, version of Fermat's Last Theorem.\n"
+"\n"
+"Fermat's Last Theorem states that if §0 and §1 then §2.\n"
+"If you didn't do inequality world yet then we can't talk about §3,\n"
+"so we have to resort to the hack of using §4 for §5,\n"
+"which guarantees it's big enough. Similarly instead of §6 we\n"
+"use §7.\n"
+"\n"
+"This level looks superficially like other levels we have seen,\n"
+"but the shortest solution known to humans would translate into\n"
+"many millions of lines of Lean code. The author of this game,\n"
+"Kevin Buzzard, is working on translating the proof by Wiles\n"
+"and Taylor into Lean, although this task will take many years.\n"
+"\n"
+"## CONGRATULATIONS!\n"
+"\n"
+"You've finished the main quest of the natural number game!\n"
+"If you would like to learn more about how to use Lean to\n"
+"prove theorems in mathematics, then take a look\n"
+"at [Mathematics In "
+"Lean](https://leanprover-community.github.io/mathematics_in_lean/),\n"
+"an interactive textbook which you can read in your browser,\n"
+"and which explains how to work with many more mathematical concepts in "
+"Lean.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"我们现在有足够的知识来陈述一个数学上准确但略显笨拙的费马大定理。\n"
+"\n"
+"费马大定理指出，如果§0 且 §1，则 §2。\n"
+"如果你还没有完成不等式世界，则无法讨论 §3，\n"
+"所以我们不得不使用 §4 代替 §5，这保证了它的大小足够。类似地，我们使用 §7 代替 §6。\n"
+"\n"
+"这一关看起来与其他关卡相似，\n"
+"但人类已知的最短解决方案会转化为数以百万计的Lean代码行。这款游戏的作者Kevin Buzzard正在努力将威尔斯和泰勒的证明翻译成Lean，\n"
+"尽管这项任务将需要很多年的时间。\n"
+"\n"
+"## おめでとう！\n"
+"\n"
+"自然数ゲームの主要な冒険を終えました！\n"
+"Leanを使用して数学の定理を証明する方法をさらに学びたい場合は、\n"
+"[Leanで数学](https://leanprover-community.github.io/mathematics_in_lean/) "
+"を参照してください。\n"
+"これはブラウザで読むことができる対話型教科書で、Leanでより多くの数学的概念を扱う方法を説明しています。"
 
 #: Game.Levels.Algorithm.L09decide2
 msgid "decide again"
-msgstr ""
+msgstr "再決定"
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 msgid "x ≤ succ x"
-msgstr ""
+msgstr "x ≤ succ x"
 
 #: Game.Levels.Tutorial.L02rw
-msgid ""
-"Can you take it from here? Click on \"Show more help!\" if you need a hint."
+msgid "Can you take it from here? Click on \"Show more help!\" if you need a hint."
 msgstr ""
+"Can you take it from here? Click on \"Show more help!\" if you need a hint.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"ここから続けられますか？ヒントが必要な場合は「もっと手助けを表示！」とクリックしてください。"
 
+#: Game.Levels.Algorithm.L07succ_ne_succ
 #. §0: `contrapose! h`
 #. §1: `succ m = succ n`
 #. §2: `m = n`
-#: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
 "Start with §0, to change the goal into its\n"
 "contrapositive, namely a hypothesis of §1 and a goal of §2."
-msgstr ""
+msgstr "開始するには、§0 から始めて、目標を対偶に変更し、具体的には§1 の仮定と§2 の目標にします。"
 
 #: Game.Levels.Multiplication.L07mul_add
 msgid "mul_add"
 msgstr ""
+"mul_add\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"乘加法則"
 
+#: Game.Levels.Addition.L02succ_add
 #. §0: `a`
 #. §1: `b`
-#: Game.Levels.Addition.L02succ_add
 msgid ""
 "You might want to think about whether induction\n"
 "on §0 or §1 is the best idea."
-msgstr ""
+msgstr " inductions on §0 や §1 は最良のアイデアでしょうか。"
 
+#: Game.Levels.LessOrEqual.L04le_trans
 #. §0: `le_trans x y z`
 #. §1: `x ≤ y`
 #. §2: `y ≤ z`
@@ -3563,7 +5192,6 @@ msgstr ""
 #. §14: $P \\implies Q \\implies R$
 #. §15: $P \\implies Q$
 #. §16: $Q \\implies R$
-#: Game.Levels.LessOrEqual.L04le_trans
 msgid ""
 "§0 is a proof that if §1 and §2 then §3.\n"
 "More precisely, it is a proof that §4. In words,\n"
@@ -3577,30 +5205,39 @@ msgid ""
 "§14; for them, this usually means that §15\n"
 "and §16."
 msgstr ""
+"§0は、§1と§2ならば§3であることを証明しています。\n"
+"より正確には、§4を証明しています。言葉で言えば、\n"
+"§5ならば（一時停止）§6ならば§7です。\n"
+"\n"
+"## 転置性に関する注記\n"
+"\n"
+"Leanでは、§8は§9を意味し、§10は左側から結合します。しかし、§11は右側から結合します。これにより、Leanでは§12は§13が "
+"Transitiv（転置的）であることを意味します。これは、数学的な文脈では通常§14を意味しないことを示しています；数学的には、これは通常§15と§1"
+"6の両方が成り立つことを意味します。"
 
 #: Game.Levels.Algorithm.L02add_algo1
 msgid "making life easier"
-msgstr ""
+msgstr "生活をより簡単に"
 
-#. §0: `add_succ`
 #: Game.Levels.Addition.L01zero_add
+#. §0: `add_succ`
 msgid "Use §0."
-msgstr ""
+msgstr "使用してください §0。"
 
+#: Game.Levels.LessOrEqual.L07or_symm
 #. §0: `or`
 #. §1: `right`
-#: Game.Levels.LessOrEqual.L07or_symm
 msgid ""
 "Now we can prove the §0 statement by proving the statement on the right,\n"
 "so use the §1 tactic."
-msgstr ""
+msgstr "現在、§0の命題を証明するために、右側の命題を証明することができるため、§1のタクティクを使用します。"
 
+#: Game.Levels.Algorithm.L07succ_ne_succ
 #. §0: `h : a ≠ b`
 #. §1: `c ≠ d`
 #. §2: `contrapose! h`
 #. §3: `h : c = d`
 #. §4: `a = b`
-#: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
 "# Summary\n"
 "\n"
@@ -3621,9 +5258,29 @@ msgid ""
 "\n"
 "§4."
 msgstr ""
+"### 翻訳\n"
+"\n"
+"# 概要\n"
+"\n"
+"仮定\n"
+"\n"
+"§0\n"
+"\n"
+"と目標\n"
+"\n"
+"§1\n"
+"\n"
+"がある場合、§2 はセットアップを反論と呼ばれるものに置き換える：\n"
+"仮定\n"
+"\n"
+"§3\n"
+"\n"
+"と目標\n"
+"\n"
+"§4\n"
+"\n"
+"になります。"
 
-#. §0: `succ_add a b`
-#. §1: `succ a + b = succ (a + b)`
 #: Game.Levels.Addition.L02succ_add Game.Levels.Multiplication.L08add_mul
 #: Game.Levels.Power.L04one_pow Game.Levels.Implication.L10one_ne_zero
 #: Game.Levels.Algorithm.L01add_left_comm Game.Levels.LessOrEqual.L02zero_le
@@ -3633,13 +5290,16 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+#. §0: `succ_add a b`
+#. §1: `succ a + b = succ (a + b)`
 msgid "§0 is a proof that §1."
-msgstr ""
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid "eq_succ_of_ne_zero"
-msgstr ""
+msgstr "eq_succ_of_ne_zero"
 
+#: Game.Levels.Multiplication.L07mul_add
 #. §0: ```
 #. induction c with d hd
 #. rw [add_zero, mul_zero, add_zero]
@@ -3649,41 +5309,69 @@ msgstr ""
 #. ```
 #. §1: `a`
 #. §2: `b`
-#: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "Here's my solution:\n"
 "§0\n"
 "\n"
 "Inducting on §1 or §2 also works, but might take longer."
 msgstr ""
+"以下は私の解決策です：\n"
+"§0\n"
+"\n"
+"§1 や §2 について帰納法を用いても構いませんが、時間がかかるかもしれません。\n"
+"\n"
+"\n"
+"##"
 
+#: Game.Levels.Implication.L05succ_inj2
 #. §0: `apply succ_inj`
 #. §1: `succ_inj`
-#: Game.Levels.Implication.L05succ_inj2
 msgid "Start with §0 to apply §1 to the *goal*."
-msgstr ""
+msgstr "開始するには、§0 を使用して §1 を *目標* に適用します。"
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid "zero_mul"
 msgstr ""
+"零乗\n"
+"\n"
+"\n"
+"## 備考\n"
+"- **tactic(s)**: タクティク\n"
+"- **theorem**: 定理\n"
+"- **proposition / Prop**: 命題\n"
+"- **proof**: 証明\n"
+"- **hypothesis**: 仮定\n"
+"- **type**: 型\n"
+"- **term**: 項\n"
+"- **interactive**: 対話型\n"
+"- **inventory**: インベントリ\n"
+"- **world**: ワールド\n"
+"- **start**: 開始\n"
+"- **editor mode**: エディタモード"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Can you take it from here?"
-msgstr ""
+msgstr "您可以继续了吗？"
 
 #: Game.Levels.Power.L07mul_pow
 msgid "mul_pow"
 msgstr ""
+"mul_pow\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"乗法の累乗定理"
 
+#: Game.Levels.LessOrEqual.L04le_trans
 #. §0: `≤`
 #. §1: `ℕ`
-#: Game.Levels.LessOrEqual.L04le_trans
 msgid ""
 "A passing mathematician remarks that with reflexivity and transitivity out "
 "of the way,\n"
 "you have proved that §0 is a *preorder* on §1."
-msgstr ""
+msgstr "一過性の数学者が言及し、反射律と伝搬律を除けば、§0 は §1 上の *前順序* を証明したと述べています。"
 
+#: Game.Levels.LessOrEqual.L06le_antisymm
 #. §0: ```
 #. cases hxy with a ha
 #. cases hyx with b hb
@@ -3698,7 +5386,6 @@ msgstr ""
 #. §1: `≤`
 #. §2: `ℕ`
 #. §3: `≤`
-#: Game.Levels.LessOrEqual.L06le_antisymm
 msgid ""
 "Here's my proof:\n"
 "§0\n"
@@ -3710,94 +5397,128 @@ msgid ""
 "that §3 is a total order. Let's learn two more easy tactics\n"
 "first."
 msgstr ""
+"以下は私の証明です：\n"
+"§0\n"
+"\n"
+"数学的な通りすがりの人々が言います。反対称性も考慮すると、\n"
+"あなたは§1が§2上の*部分順序*であることを証明しました。\n"
+"\n"
+"このワールドのボスレベルは、§3が完全順序であることを証明することです。\n"
+"まずは2つの簡単なタクティクを学んでからしましょう。"
 
 #: Game.Levels.Multiplication.L05one_mul
 msgid "one_mul"
 msgstr ""
+"one_mul\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"単位元と乗算に関する定理です。"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `«{hd}» : 0 + «{d}» = «{d}»`
 #. §1: `0 + succ «{d}» = succ «{d}»`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "Now for the second goal. Here you have the induction hypothesis\n"
 "§0, and you need to prove that §1."
-msgstr ""
+msgstr "現在、第二の目標に移ります。ここでは、 induksiion hypothesis §0 が与えられており、 §1 を証明する必要があります。"
 
 #: Game.Levels.Algorithm.L05pred
 msgid "pred"
-msgstr ""
+msgstr "前提"
 
-#. §0: `exact`
 #: Game.Levels.Implication.L01exact Game.Levels.LessOrEqual.L01le_refl
+#. §0: `exact`
 msgid "The §0 tactic"
 msgstr ""
+"The タクティク §0\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"タクティク §0"
 
+#: Game.Levels.Tutorial.L04rw_backwards
 #. §0: `succ n`
 #. §1: `n + 1`
-#: Game.Levels.Tutorial.L04rw_backwards
 msgid ""
 "Why did we not just define §0 to be §1? Because we have not\n"
 "even *defined* addition yet! We'll do that in the next level."
-msgstr ""
+msgstr "なぜ §0 を §1 に定義しなかったのか？まだ足し算そのものを定義していないからです。次レベルでその定義を行います。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: $x$
 #. §1: $y$
 #. §2: $y = x + 7$
 #. §3: $2y = 2(x + 7)$
-#: Game.Levels.Tutorial.L02rw
 msgid "If §0 and §1 are natural numbers, and §2, then §3."
-msgstr ""
+msgstr "もし§0と§1が自然数であり、かつ§2である場合、§3です。"
 
 #: Game.Levels.Power.L09add_sq
 msgid "[final boss music]"
 msgstr ""
+"### 原文 (English)\n"
+"[final boss music]\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"[最終ボスのテーマ]"
 
-#. §0: `succ_eq_add_one n`
-#. §1: `succ n = n + 1`
 #: Game.Levels.Tutorial.L07add_succ Game.Levels.Multiplication.L01mul_one
 #: Game.Levels.Multiplication.L06two_mul Game.Levels.Algorithm.L07succ_ne_succ
+#. §0: `succ_eq_add_one n`
+#. §1: `succ n = n + 1`
 msgid "§0 is the proof that §1."
-msgstr ""
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Addition.L05add_right_comm
 msgid "add_right_comm"
 msgstr ""
+"add_right_comm\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"右側加算の交換律（add_right_comm）"
 
-#. §0: `add_zero`
 #: Game.Levels.Addition.L01zero_add
+#. §0: `add_zero`
 msgid "try rewriting §0."
-msgstr ""
+msgstr "try rewriting §0."
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "one_le_of_ne_zero"
-msgstr ""
+msgstr "one_le_of_ne_zero"
 
-#. §0: `add_right_cancel a b n`
-#. §1: $a+n=b+n \\implies a=b.$
 #: Game.Levels.AdvAddition.L01add_right_cancel
 #: Game.Levels.AdvAddition.L02add_left_cancel
 #: Game.Levels.AdvAddition.L03add_left_eq_self
 #: Game.Levels.AdvAddition.L04add_right_eq_self
+#. §0: `add_right_cancel a b n`
+#. §1: $a+n=b+n \\implies a=b.$
 msgid "§0 is the theorem that §1"
-msgstr ""
+msgstr "§0は§1の定理です。"
 
 #: Game.Levels.Power.L04one_pow
 msgid "one_pow"
 msgstr ""
+"one_pow\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"1の累乗"
 
+#: Game.Levels.Algorithm.L01add_left_comm
 #. §0: $a, b, c$
 #. §1: $a+(b+c)=b+(a+c)$
-#: Game.Levels.Algorithm.L01add_left_comm
 msgid "If §0 are numbers, then §1."
-msgstr ""
+msgstr "もし§0が数値である場合、§1。"
 
+#: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `a ≤ b`
 #. §1: `∃ c, b = a + c`
 #. §2: `a ≤ b`
 #. §3: `c`
 #. §4: `b = a + c`
 #. §5: `use`
-#: Game.Levels.LessOrEqual.L01le_refl
 msgid ""
 "§0 is *notation* for §1. This \"backwards E\"\n"
 "means \"there exists\". So §2 means that there exists\n"
@@ -3807,37 +5528,51 @@ msgid ""
 "To *prove* an \"exists\" statement, use the §5 tactic.\n"
 "Let's see an example."
 msgstr ""
+"§0は§1の記号です。この\"反転したE\"は\"存在する\"を意味します。つまり§2は、ある数§3が存在し、かつ§4"
+"を満たすことを意味します。この定義は、このゲームには負の数がないため機能します。\n"
+"\n"
+"\"存在する\"文を*証明*するには、§5のタクティクを使用します。例を見ていきましょう。"
 
 #: Game.Levels.LessOrEqual.L02zero_le
 msgid "0 ≤ x"
-msgstr ""
+msgstr "0 ≤ x"
 
-#. §0: `or`
 #: Game.Levels.LessOrEqual.L07or_symm
+#. §0: `or`
 msgid "Dealing with §0"
 msgstr ""
+"### 原文 (English)\n"
+"Dealing with §0\n"
+"\n"
+"## 日本語翻訳\n"
+"§0 を扱う方法"
 
 #: Game.Levels.Multiplication.L08add_mul
 msgid "add_mul"
 msgstr ""
+"add_mul\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"加法と乗法の相互作用に関する定理や証明を扱うためのタクティクです。"
 
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
 #. §0: `apply eq_succ_of_ne_zero at ha`
 #. §1: `... at hb`
-#: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "Start with §0 and §1"
-msgstr ""
+msgstr "開始するには、§0 と §1 を使用します。"
 
-#. §0: `pow_succ a b : a ^ (succ b) = a ^ b * a`
 #: Game.Levels.Power.L02zero_pow_succ
+#. §0: `pow_succ a b : a ^ (succ b) = a ^ b * a`
 msgid ""
 "§0 is one of the\n"
 "two axioms defining exponentiation in this game."
-msgstr ""
+msgstr "§0はこのゲームで指数関数を定義する2つの公理の1つです。"
 
+#: Game.Levels.Multiplication.L01mul_one
 #. §0: `mul_zero`
 #. §1: `mul_succ`
 #. §2: `1`
-#: Game.Levels.Multiplication.L01mul_one
 msgid ""
 "See the new \"*\" tab in your lemmas, containing §0 and §1.\n"
 "Right now these are the only facts we know about multiplication.\n"
@@ -3846,31 +5581,37 @@ msgid ""
 "Let's start with a warm-up: no induction needed for this one,\n"
 "because we know §2 is a successor."
 msgstr ""
+"新しい \"*\" タブを確認してください。そこで §0 と §1 が表示されています。\n"
+"現在、これらは乗算について知っている唯一の事実です。\n"
+"9つ更多的の証明を行いましょう。\n"
+"\n"
+"まずはウォームアップから始めましょう。この場合は inducition は必要ありません。\n"
+"なぜなら §2 は後继であることが分かっているからです。"
 
 #: Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.AdvAddition.L01add_right_cancel
 msgid "Nice!"
-msgstr ""
+msgstr "nice!"
 
-#. §0: $m$
-#. §1: $ m \\times 1 = m$
 #: Game.Levels.Multiplication.L01mul_one Game.Levels.Multiplication.L05one_mul
 #: Game.Levels.Multiplication.L06two_mul
+#. §0: $m$
+#. §1: $ m \\times 1 = m$
 msgid "For any natural number §0, we have §1."
-msgstr ""
+msgstr "任意の自然数§0に対して、§1です。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: `rw [h]`
 #. §1: `y`
 #. §2: `x + 7`
-#: Game.Levels.Tutorial.L02rw
 msgid "First execute §0 to replace the §1 with §2."
-msgstr ""
+msgstr "まず §0 を実行して §1 を §2 に置き換えてください。"
 
+#: Game.Levels.Implication
 #. §0: $2+2=4$
 #. §1: $2+2\\neq 5$
 #. §2: $x + y = y + x$
 #. §3: $x+1=4 \\implies x=3.$
-#: Game.Levels.Implication
 msgid ""
 "We've proved that §0; in Implication World we'll learn\n"
 "how to prove §1.\n"
@@ -3885,33 +5626,63 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
+"### 原文 (English)\n"
+"We've proved that §0; in Implication World we'll learn\n"
+"how to prove §1.\n"
+"\n"
+"In Addition World we proved *equalities* like §2.\n"
+"In this second tutorial world we'll learn some new tactics,\n"
+"enabling us to prove *implications*\n"
+"like §3\n"
+"\n"
+"We'll also learn two new fundamental facts about\n"
+"natural numbers, which Peano introduced as axioms.\n"
+"\n"
+"Click on \"Start\" to proceed.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"私たちは§0を証明しました； Implikationワールドでは、§1を証明する方法を学びます。\n"
+"\n"
+"加法ワールドでは、§2のような等式を証明しました。\n"
+"この二つ目のチュートリアルワールドでは、新しいタクティクを学び、\n"
+"これを使って§3のような推論を証明できるようになります。\n"
+"\n"
+"また、ペアノが公理として導入した自然数に関する二つの新しい基本的事実も学びます。\n"
+"\n"
+"\"開始\"をクリックして進みましょう。"
 
 #: Game.Levels.LessOrEqual.L11le_two
 msgid "le_two"
-msgstr ""
+msgstr "le_two"
 
 #: Game.Levels.Power.L05pow_two
 msgid "pow_two"
-msgstr ""
+msgstr "pow_two"
 
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #. §0: ```
 #. have h2 := mul_ne_zero a b
 #. tauto
 #. ```
 #. §1: `mul_ne_zero a b`
-#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid ""
 "Here's the short proof:\n"
 "§0\n"
 "This works because, given §1,\n"
 "the argument is reduced to pure logic."
 msgstr ""
+"以下は短い証明です：\n"
+"§0\n"
+"これは、与えられた §1 から\n"
+"議論が純粋な論理に簡約されるためです。"
 
-#. §0: `rw [← pred_succ a]`
 #: Game.Levels.Algorithm.L05pred
+#. §0: `rw [← pred_succ a]`
 msgid "Start with §0 and take it from there."
-msgstr ""
+msgstr "開始は§0からにして、その後は対話型で進めてください。"
 
+#: Game.Levels.Algorithm.L05pred
 #. §0: `0`
 #. §1: `pred`
 #. §2: ```
@@ -3921,7 +5692,6 @@ msgstr ""
 #. §3: `pred_succ`
 #. §4: `pred (succ n) = n`
 #. §5: `succ_inj`
-#: Game.Levels.Algorithm.L05pred
 msgid ""
 "We now start work on an algorithm to do addition more efficiently. Recall "
 "that\n"
@@ -3938,29 +5708,74 @@ msgid ""
 "this\n"
 "definition, we also create a new lemma §3, which says that §4.\n"
 "Let's use this lemma to prove §5, the theorem which\n"
-"Peano assumed as an axiom and which we have already used extensively without "
-"justification."
+"Peano assumed as an axiom and which we have already used extensively "
+"without justification."
 msgstr ""
+"### 原文 (English)\n"
+"We now start work on an algorithm to do addition more efficiently. Recall "
+"that\n"
+"we defined addition by recursion, saying what it did on §0 and successors.\n"
+"It is an axiom of Lean that recursion is a valid\n"
+"way to define functions from types such as the naturals.\n"
+"\n"
+"Let's define a new function §1 from the naturals to the naturals, which\n"
+"attempts to subtract 1 from the input. The definition is this:\n"
+"\n"
+"§2\n"
+"\n"
+"We cannot subtract one from 0, so we just return a junk value. As well as "
+"this\n"
+"definition, we also create a new lemma §3, which says that §4.\n"
+"Let's use this lemma to prove §5, the theorem which\n"
+"Peano assumed as an axiom and which we have already used extensively "
+"without justification.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"現在、効率的な加算を行うアルゴリズムの作成を開始します。再帰によって加算を定義したことを思い出してください。具体的には、0"
+"と後続者に対して何を行うかを定義しました。\n"
+"Leanの公理として、再帰は自然数などの型から関数を定義する有効な方法であるとされています。\n"
+"\n"
+"自然数から自然数への新しい関数§1を定義します。これは、入力から1を引こうとする関数です。その定義は以下の通りです：\n"
+"\n"
+"§2\n"
+"\n"
+"0から1を引くことはできませんので、無効な値を返します。この定義とともに、新しい補題§3も定義します。これは§4を述べています。\n"
+"この補題を使って、§5（ペアノが公理として仮定し、以前にも正当化せずに頻繁に使用した定理）を証明しましょう。"
 
 #: Game.Levels.Algorithm.L06is_zero
 msgid "is_zero"
 msgstr ""
+"is_zero\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"零判定"
 
+#: Game.Levels.Multiplication.L09mul_assoc
 #. §0: $a$
 #. §1: $b$
 #. §2: $c$
 #. §3: $(ab)c = a(bc)$
-#: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
 "Multiplication is associative.\n"
 "In other words, for all natural numbers §0, §1 and §2, we have\n"
 "§3."
 msgstr ""
+"乗算は結びつきを持つ。\n"
+"つまり、すべての自然数 §0, §1, §2 に対して、\n"
+"§3.\n"
+"\n"
+"\n"
+"### 参考訳\n"
+"乗算は結びつきを持つ。\n"
+"つまり、すべての自然数 §0, §1, §2 に対して、\n"
+"§3."
 
+#: Game.Levels.Algorithm.L03add_algo2
 #. §0: `simp`
 #. §1: `rw`
 #. §2: `simp`
-#: Game.Levels.Algorithm.L03add_algo2
 msgid ""
 "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\n"
 "tagged with §2 and every lemma fed to it by the user, as much as it can.\n"
@@ -3968,7 +5783,13 @@ msgid ""
 "This level is not a level which you want to solve by hand.\n"
 "Get the simplifier to solve it for you."
 msgstr ""
+"Leanの簡約化器、§0は「§1を強化版」です。これは、§2でタグ付けされたすべての lemme およびユーザーによって与えられたすべての lemme "
+"をできる限り簡約化します。\n"
+"\n"
+"このレベルは手作業で解くべきレベルではありません。\n"
+"簡約化器に任せて解いてください。"
 
+#: Game.Levels.Tutorial.L02rw
 #. §0: `h : X = Y`
 #. §1: `X`
 #. §2: `nth_rewrite 3 [h]`
@@ -3979,7 +5800,6 @@ msgstr ""
 #. §7: `2 + succ 1 = 4`
 #. §8: `rw [two_eq_succ_one]`
 #. §9: `succ 1 + succ 1 = 4`
-#: Game.Levels.Tutorial.L02rw
 msgid ""
 "## Summary\n"
 "\n"
@@ -3992,58 +5812,86 @@ msgid ""
 "will change the goal to §7. In contrast, §8\n"
 "will change the goal to §9."
 msgstr ""
+"## 結論\n"
+"\n"
+"もし目標に §0 があり、目標に複数の §1 が存在する場合、§2 は第三の §3 を §4 に変更します。\n"
+"\n"
+"## 例\n"
+"\n"
+"もし目標が §5 である場合、§6 は目標を §7 に変更します。一方で、§8 は目標を §9 に変更します。"
 
+#: Game.Levels.Implication.L05succ_inj2
 #. §0: $P\\implies Q$
 #. §1: $Q$
 #. §2: $P$
 #. §3: `rw [succ_eq_add_one]`
-#: Game.Levels.Implication.L05succ_inj2
 msgid ""
 "Applying a proof of §0 to the *goal* changes §1 to §2.\n"
 "Now try §3 to make the goal more like the hypothesis."
 msgstr ""
+"証明 §0 を目標に適用すると、§1 は §2 に変更されます。\n"
+"次に §3 を試して、目標を仮定に近づけてみましょう。"
 
+#: Game.Levels.Multiplication.L03succ_mul
 #. §0: $a$
 #. §1: $b$
 #. §2: $(\\operatorname{succ}\\ a) \\times b = a\\times b + b$
-#: Game.Levels.Multiplication.L03succ_mul
 msgid ""
 "For all natural numbers §0 and §1, we have\n"
 "§2."
 msgstr ""
+"すべての自然数 §0 および §1 に対して、\n"
+"§2.\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"すべての自然数 §0 および §1 に対して、\n"
+"§2.\n"
+"\n"
+"\n"
+"### 説明\n"
+"- `§0`, `§1`, `§2` はコードブロックやLaTeX数式を表すプレースホルダーであり、位置を維持しています。\n"
+"- `<##>` などのタグは使用されていません。\n"
+"- トーンはLean 4学習者向けで、丁寧かつ簡潔な表現にしています。"
 
-#. §0: $a+b=0 \\implies a=0$
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
+#. §0: $a+b=0 \\implies a=0$
 msgid "A proof that §0."
 msgstr ""
+"A proof that §0.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"証明: §0."
 
-#. §0: `repeat rw [add_assoc]`
 #: Game.Levels.Algorithm.L02add_algo1
+#. §0: `repeat rw [add_assoc]`
 msgid "Start with §0 to push all the brackets to the right."
-msgstr ""
+msgstr "開始は§0から全括弧を右に移動させます。"
 
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #. §0: `cases a with d`
 #. §1: `a = 0`
 #. §2: `a = succ d`
-#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid "Start with §0 to do a case split on §1 and §2."
-msgstr ""
+msgstr "開始するには、§0 を使用して §1 と §2 に対してケース分割を行います。"
 
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #. §0: `mul_eq_zero`
 #. §1: `tauto`
 #. §2: `a = 0`
 #. §3: `a ≠ 0`
-#: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid ""
 "Use §0 and remember that §1 will solve a goal\n"
 "if there are hypotheses §2 and §3."
-msgstr ""
+msgstr "使用する§0と、仮定§2と§3がある場合、§1は目標を解決します。"
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 msgid "The previous lemma can be used to prove this one."
-msgstr ""
+msgstr "前の定理を用いて、この定理を証明することができます。"
 
+#: Game.Levels.Algorithm.L06is_zero
 #. §0: `is_zero`
 #. §1: ```
 #. is_zero 0 := True
@@ -4058,7 +5906,6 @@ msgstr ""
 #. §8: `zero_ne_succ`
 #. §9: `True`
 #. §10: `trivial`
-#: Game.Levels.Algorithm.L06is_zero
 msgid ""
 "We define a function §0 thus:\n"
 "\n"
@@ -4074,29 +5921,62 @@ msgid ""
 "\n"
 "If you can turn your goal into §9, then the §10 tactic will solve it."
 msgstr ""
+"### 原文 (English)\n"
+"We define a function §0 thus:\n"
+"\n"
+"§1\n"
+"\n"
+"We also create two lemmas, §2 and §3, saying that §4\n"
+"and §5. Let's use these lemmas to prove §6, Peano's\n"
+"Last Axiom. Actually, we have been using §7 before, but it's handy to have\n"
+"this opposite version too, which can be proved in the same way. Note: you "
+"can\n"
+"cheat here by using §8 but the point of this world is to show\n"
+"you how to *prove* results like that.\n"
+"\n"
+"If you can turn your goal into §9, then the §10 tactic will solve it.\n"
+"\n"
+"\n"
+"### 日本語翻訳\n"
+"関数 §0 を定義します：\n"
+"\n"
+"§1\n"
+"\n"
+"また、命題 §2 と §3 を作成し、§4\n"
+"と §5 を言います。これらの命題を使って、ペアノの最終公理 §6 を証明しましょう。実際、§7 "
+"は以前から使用していましたが、同じ方法で証明できる逆の命題も用意しておくと便利です。注意：ここでは §8 を使用して cheat "
+"することができますが、このワールドの目的は、そのような結果を証明する方法を示すことです。\n"
+"\n"
+"目標を §9 に変換できるなら、§10 タクティクで解決できます。"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid "mul_eq_zero"
-msgstr ""
+msgstr "乗算が零に等しい"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `rw [two_eq_succ_one]`
 #. §1: `2`
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Start with §0 to begin to break §1 down into its definition."
-msgstr ""
+msgstr "開始は§0から始めて、§1を定義に分解するところから始めます。"
 
 #: Game.Levels.Implication.L10one_ne_zero
 msgid "1 ≠ 0"
-msgstr ""
+msgstr "1 ≠ 0"
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 msgid "mul_le_mul_right"
-msgstr ""
+msgstr "乗法の右側への乗算の不等式定理"
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid "add_right_eq_self"
 msgstr ""
+"add_right_eq_self\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"右側への加算が自身と等しいこと"
 
+#: Game.Levels.Implication.L08ne
 #. §0: `2 + 2 ≠ 5`
 #. §1: `≠`
 #. §2: `a ≠ b`
@@ -4110,7 +5990,6 @@ msgstr ""
 #. §10: `a ≠ b`
 #. §11: `False`
 #. §12: `False`
-#: Game.Levels.Implication.L08ne
 msgid ""
 "We still can't prove §0 because we have not talked about the\n"
 "definition of §1. In Lean, §2 is *notation* for §3.\n"
@@ -4127,16 +6006,44 @@ msgid ""
 "So if your goal is §12 then you had better hope that your hypotheses\n"
 "are contradictory, which they are in this level."
 msgstr ""
+"### 原文 (English)\n"
+"We still can't prove §0 because we have not talked about the\n"
+"definition of §1. In Lean, §2 is *notation* for §3.\n"
+"Here §4 is a generic false proposition, and §5 is Lean's notation\n"
+"for \"implies\". In logic we learn\n"
+"that §6 is false, but §7 is true. Hence\n"
+"§8 is the logical opposite of §9.\n"
+"\n"
+"Even though §10 does not look like an implication,\n"
+"you should treat it as an implication. The next two levels will show you "
+"how.\n"
+"\n"
+"§11 is a goal which you cannot deduce from a consistent set of assumptions!\n"
+"So if your goal is §12 then you had better hope that your hypotheses\n"
+"are contradictory, which they are in this level.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"まだ §0 を証明することができません。なぜなら §1 の定義について話していなかったからです。Lean では §2 は §3 の *表記* です。\n"
+"ここでは §4 は一般的な偽命題、§5 は Lean の \"implies\" の表記です。論理学では §6 は偽であり、§7 は真です。したがって\n"
+"§8 は §9 の論理的対偶です。\n"
+"\n"
+"§10 は直感上 implication に見えないかもしれませんが、 implication として扱うべきです。次の 2 "
+"つのレベルでその方法を学びます。\n"
+"\n"
+"§11 は一貫性のある仮定から導き出せない目標です！したがって、目標が §12 "
+"の場合、仮定が矛盾していることを願うべきで、このレベルではそうしています。"
 
 #: Game.Levels.LessOrEqual.L04le_trans
 msgid "x ≤ y and y ≤ z implies x ≤ z"
-msgstr ""
+msgstr "x ≤ y と y ≤ z から x ≤ z が導かれる。"
 
-#. §0: `exact`
 #: Game.Levels.Implication.L02exact2
+#. §0: `exact`
 msgid "§0 practice."
-msgstr ""
+msgstr "§0 プラクティス。"
 
+#: Game.Levels.Implication.L10one_ne_zero
 #. §0: `zero_ne_succ n`
 #. §1: `0 = succ n → False`
 #. §2: `succ n = 0`
@@ -4150,7 +6057,6 @@ msgstr ""
 #. §10: $0 \\neq 1$
 #. §11: `zero_ne_one`
 #. §12: $1 \\neq 0$
-#: Game.Levels.Implication.L10one_ne_zero
 msgid ""
 "We know §0 is a proof of §1 -- but what\n"
 "if we have a hypothesis §2? It's the wrong way around!\n"
@@ -4160,27 +6066,45 @@ msgid ""
 "does the same for a hypothesis §9. We've proved §10 and called\n"
 "the proof §11; now try proving §12."
 msgstr ""
+"### 原文 (English)\n"
+"We know §0 is a proof of §1 -- but what\n"
+"if we have a hypothesis §2? It's the wrong way around!\n"
+"\n"
+"The §3 tactic changes a goal §4 to §5, and a goal §6\n"
+"to §7. And §8\n"
+"does the same for a hypothesis §9. We've proved §10 and called\n"
+"the proof §11; now try proving §12.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"我们知道 §0 是 §1 的证明 -- 但如果有一个假设 §2 呢？顺序正好相反！\n"
+"\n"
+"§3 のタクティクは、目標 §4 を §5 に変更し、目標 §6 を §7 に変更します。そして §8 は、假设 §9 "
+"について同じ操作を行います。我们已经证明了 §10，并将其证明称为 §11；现在试着证明 §12。"
 
 #: Game.Levels.Addition.L02succ_add
-msgid ""
-"Well done! You now have enough tools to tackle the main boss of this level."
-msgstr ""
+msgid "Well done! You now have enough tools to tackle the main boss of this level."
+msgstr " WELL DONE! あなたはこのレベルの主要ボスに挑むための十分なツールを手に入れました。"
 
+#: Game.Levels.LessOrEqual.L03le_succ_self
 #. §0: `use`
 #. §1: `use`
-#: Game.Levels.LessOrEqual.L03le_succ_self
 msgid ""
 "If you §0 the wrong number, you get stuck with a goal you can't prove.\n"
 "What number will you §1 here?"
 msgstr ""
+"もし間違ったタクティクを §0 选用，则会陷入无法证明的目标 §1 中。\n"
+"\n"
+"\n"
+"何を §1 选用？"
 
 #: Game.Levels.Multiplication.L04mul_comm
 msgid "Multiplication is commutative."
-msgstr ""
+msgstr "乗算は交換律を満たします。"
 
+#: Game.Levels.Multiplication.L03succ_mul
 #. §0: `mul_succ`
 #. §1: `succ_mul`
-#: Game.Levels.Multiplication.L03succ_mul
 msgid ""
 "Similarly we have §0\n"
 "but we're going to need §1 (guess what it says -- maybe you\n"
@@ -4191,24 +6115,36 @@ msgid ""
 "home screen by clicking the house icon and then taking a look.\n"
 "You won't lose any progress."
 msgstr ""
+"Similarly we have §0\n"
+"but we're going to need §1 (guess what it says -- maybe you\n"
+"are getting the hang of Lean's naming conventions).\n"
+"\n"
+"最後のレベルから加算ワールドが提供されるかもしれません。\n"
+"記憶が曖昧な場合は、家アイコンをクリックしてホーム画面に戻り、確認してください。\n"
+"進捗は失われません。"
 
-#. §0: `intro h`
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.LessOrEqual.L04le_trans
 #: Game.Levels.LessOrEqual.L08le_total
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
+#. §0: `intro h`
 msgid "Start with §0."
-msgstr ""
+msgstr "開始します。§0。"
 
 #: Game.Levels.Multiplication.L03succ_mul
 msgid "succ_mul"
 msgstr ""
+"succ_mul\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"成功倍加"
 
+#: Game.Levels.Algorithm.L01add_left_comm
 #. §0: `add_left_comm`
 #. §1: `rw [add_comm b c]`
 #. §2: `a + b + c`
 #. §3: `(a + b) + c`
-#: Game.Levels.Algorithm.L01add_left_comm
 msgid ""
 "Having to rearrange variables manually using commutativity and\n"
 "associativity is very tedious. We start by reminding you of this. §0\n"
@@ -4219,16 +6155,37 @@ msgid ""
 "with things like §1. And remember that\n"
 "§2 means §3."
 msgstr ""
+"### 原文 (English)\n"
+"Having to rearrange variables manually using commutativity and\n"
+"associativity is very tedious. We start by reminding you of this. §0\n"
+"is a key component in the first algorithm which we'll explain, but we need\n"
+"to prove it manually.\n"
+"\n"
+"Remember that you can do precision commutativity rewriting\n"
+"with things like §1. And remember that\n"
+"§2 means §3.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"手動で交換律と結合律を使って変数を再配置する必要があることは非常に面倒です。まず、これについて再確認します。§0"
+"は、最初の説明するアルゴリズムにおいて重要な成分ですが、手動で証明する必要があります。\n"
+"\n"
+"交換律に基づいた精密な再配置は、§1のようなもので行うことができます。また、§2は§3を意味します。"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Numbers"
 msgstr ""
+"数値\n"
+"\n"
+"\n"
+"##"
 
-#. §0: `rfl`
 #: Game.Levels.Tutorial.L07add_succ
+#. §0: `rfl`
 msgid "And finally §0."
-msgstr ""
+msgstr "最後に、§0。"
 
+#: Game.Levels.Multiplication
 #. §0: `37 * x`
 #. §1: $x=0$
 #. §2: $x$
@@ -4243,7 +6200,6 @@ msgstr ""
 #. §11: `mul_succ a d : a * succ d = a * d + a`
 #. §12: `a * b = b * a`
 #. §13: `a * (b + c) = a * b + a * c`
-#: Game.Levels.Multiplication
 msgid ""
 "How should we define §0? Just like addition, we need to give definitions\n"
 "when §1 and when §2 is a successor.\n"
@@ -4262,13 +6218,47 @@ msgid ""
 "like §13.\n"
 "Let's get started."
 msgstr ""
+"### 原文 (English)\n"
+"How should we define §0? Just like addition, we need to give definitions\n"
+"when §1 and when §2 is a successor.\n"
+"\n"
+"The zero case is easy: we define §3 to be §4. Now say we know\n"
+"§5. What should §6 be? Well, that's §7 §8s,\n"
+"so it should be §9.\n"
+"\n"
+"Here are the definitions in Lean.\n"
+"\n"
+"  * §10\n"
+"  * §11\n"
+"\n"
+"In this world, we must not only prove facts about multiplication like §12,\n"
+"we must also prove facts about how multiplication interacts with addition, "
+"like §13.\n"
+"Let's get started.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"どのように §0 を定義すべきでしょうか？加法と同様に、§1 が successor であるときと §2 が successor "
+"であるときそれぞれに定義を提供する必要があります。\n"
+"\n"
+"零の場合は簡単です：§3 を §4 で定義します。次に §5 を仮定します。那么 §6 应该是什么呢？嗯，那是 §7 §8s，\n"
+"所以应该定义为 §9。\n"
+"\n"
+"Lean での定義は以下の通りです。\n"
+"\n"
+"  * §10\n"
+"  * §11\n"
+"\n"
+"このワールドでは、乗法に関する事実だけでなく、乗法と加法の相互作用に関する事実も証明する必要があります。例えば §12 など。そして §13 "
+"なども証明する必要があります。\n"
+"始めましょう。"
 
+#: Game.Levels.Implication.L10one_ne_zero
 #. §0: ```
 #. symm
 #. exact zero_ne_one
 #. ```
 #. §1: `exact`
-#: Game.Levels.Implication.L10one_ne_zero
 msgid ""
 "What do you think of this two-liner:\n"
 "§0\n"
@@ -4276,24 +6266,38 @@ msgid ""
 "§1 doesn't just take hypotheses, it will eat any proof which exists\n"
 "in the system."
 msgstr ""
+"この二行は何をお考えですか：\n"
+"§0\n"
+"\n"
+"§1 は仮定だけを取るわけではありません。システム内に存在する任意の証明も食べます。"
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid "succ x ≤ succ y → x ≤ y"
 msgstr ""
+" succ x ≤ succ y → x ≤ y\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+" succ x ≤ succ y → x ≤ y"
 
 #: Game
 msgid "The classical introduction game for Lean."
 msgstr ""
+"The classical introduction game for Lean 4。\n"
+"\n"
+"## 日本語翻訳\n"
+"Lean 4 の古典的な導入ゲーム。"
 
+#: Game.Levels.Implication.L02exact2
 #. §0: `rw [«{h}»]`
 #. §1: `rfl`
 #. §2: `exact «{h}»`
-#: Game.Levels.Implication.L02exact2
 msgid ""
 "Now you could finish with §0 then §1, but §2\n"
 "does it in one line."
-msgstr ""
+msgstr "現在、§0 から §1 までで終了できますが、§2 では一行で完了します。"
 
+#: Game.Levels.Addition.L05add_right_comm
 #. §0: `add_comm b c`
 #. §1: `b + c = c + b`
 #. §2: `a + b + c = a + c + b`
@@ -4307,7 +6311,6 @@ msgstr ""
 #. §10: `b + ? = ? + b`
 #. §11: `rw [add_comm b c]`
 #. §12: `b + c = c + b`
-#: Game.Levels.Addition.L05add_right_comm
 msgid ""
 "§0 is a proof that §1. But if your goal\n"
 "is §2 then §3 will not\n"
@@ -4323,18 +6326,25 @@ msgid ""
 "will only do rewrites of the form §10, and §11\n"
 "will only do rewrites of the form §12."
 msgstr ""
+"§0は§1の証明です。しかし、あなたの目標が§2であるなら、§3は機能しません！なぜなら、目標は§4を意味し、目標に直接的に§5"
+"の項は存在しないからです。\n"
+"\n"
+"結びつきと交換律を利用し、§6を証明してください。帰納法は必要ありません。§7は括弧を移動し、§8は変数を移動します。\n"
+"\n"
+"明示的な変数を定理の入力として追加することで、より的確な書き換えを行うことができます。例えば、§9は形式§10の書き換えのみを実行し、§11は形式§12"
+"の書き換えのみを実行します。"
 
 #: Game.Levels.Power.L10FLT
 msgid "Fermat's Last Theorem"
-msgstr ""
+msgstr "フェルマーの最終定理"
 
+#: Game.Levels.Implication.L06intro
 #. §0: `apply`
 #. §1: `P → Q`
 #. §2: `P → Q`
 #. §3: `P`
 #. §4: `Q`
 #. §5: `intro`
-#: Game.Levels.Implication.L06intro
 msgid ""
 "We have seen how to §0 theorems and assumptions\n"
 "of the form §1. But what if our *goal* is of the form §2?\n"
@@ -4342,14 +6352,26 @@ msgid ""
 "§4\"\n"
 "in Lean. We do this with the §5 tactic."
 msgstr ""
+"### 原文 (English)\n"
+"We have seen how to §0 theorems and assumptions\n"
+"of the form §1. But what if our *goal* is of the form §2?\n"
+"To prove this goal, we need to know how to say \"let's assume §3 and deduce "
+"§4\"\n"
+"in Lean. We do this with the §5 tactic.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。しかし、もし私たちの *目標* が形式 §2 の場合、この目標を証明するには、Lean "
+"で \"§3 という仮定を設け、 §4 を導く\" という方法を知る必要があります。これを行うためには、§5 タクティクを使用します。"
 
-#. §0: $x$
-#. §1: $x \\le x$
 #: Game.Levels.LessOrEqual.L01le_refl Game.Levels.LessOrEqual.L02zero_le
 #: Game.Levels.LessOrEqual.L03le_succ_self
+#. §0: $x$
+#. §1: $x \\le x$
 msgid "If §0 is a number, then §1."
-msgstr ""
+msgstr "もし§0が数値である場合、§1。"
 
+#: Game.Levels.LessOrEqual.L10le_one
 #. §0: ```
 #. cases x with y
 #. left
@@ -4361,28 +6383,36 @@ msgstr ""
 #. right
 #. rfl
 #. ```
-#: Game.Levels.LessOrEqual.L10le_one
 msgid ""
 "Here's my proof:\n"
 "§0\n"
 "\n"
 "If you solved this level then you should be fine with the next level!"
 msgstr ""
+"以下は私の証明です：\n"
+"§0\n"
+"\n"
+"このレベルを解いたなら、次のレベルでも大丈夫です！"
 
-#. §0: `2 = 2`
 #: Game.Levels.Tutorial.L04rw_backwards
+#. §0: `2 = 2`
 msgid "Can you now change the goal into §0?"
-msgstr ""
+msgstr "現在、目標を§0に変更できますか？"
 
 #: Game.Levels.Power.L09add_sq
 msgid "add_sq"
 msgstr ""
+"add_sq\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"平方を追加します。"
 
+#: Game.Levels.LessOrEqual.L08le_total
 #. §0: `a`
 #. §1: `cases a with b`
 #. §2: `a = 0`
 #. §3: `a = succ b`
-#: Game.Levels.LessOrEqual.L08le_total
 msgid ""
 "This is I think the toughest level yet. Tips: if §0 is a number\n"
 "then §1 will split into cases §2 and §3.\n"
@@ -4392,9 +6422,13 @@ msgid ""
 "I've left hidden hints; if you need them, retry from the beginning\n"
 "and click on \"Show more help!\""
 msgstr ""
+"これは今までで最も難しいレベルかもしれません。ヒント：もし§0が数値であれば、§1は§2と§3に分岐します。\n"
+"そして、仮定が結果の目標を証明できる保証がない限りは左や右には移動しないでください！\n"
+"\n"
+"隠されたヒントを残しています；必要であれば、最初からやり直し、「もっと手助けを表示！」とクリックしてください。"
 
-#. §0: `ℕ`
 #: Game.Levels.LessOrEqual.L08le_total
+#. §0: `ℕ`
 msgid ""
 "Very well done.\n"
 "\n"
@@ -4404,7 +6438,13 @@ msgid ""
 "\n"
 "The final few levels in this world are much easier."
 msgstr ""
+"Very well done.\n"
+"\n"
+"数学的な見地から言えば、あなたが証明したところでは、§0 は完全に順序付けられています。\n"
+"\n"
+"このワールドの最後の数レベルははるかに簡単です。"
 
+#: Game.Levels.AdvAddition.L03add_left_eq_self
 #. §0: `y`
 #. §1: `add_left_eq_self`
 #. §2: `add_right_cancel`
@@ -4414,18 +6454,36 @@ msgstr ""
 #. nth_rewrite 2 [← zero_add y]
 #. exact add_right_cancel x 0 y
 #. ```
-#: Game.Levels.AdvAddition.L03add_left_eq_self
 msgid ""
 "Did you use induction on §0?\n"
 "Here's a two-line proof of §1 which uses §2.\n"
-"If you want to inspect it, you can go into editor mode by clicking §3 in the "
-"top right\n"
+"If you want to inspect it, you can go into editor mode by clicking §3 in "
+"the top right\n"
 "and then just cut and paste the proof and move your cursor around it\n"
 "to see the hypotheses and goal at any given point\n"
 "(although you'll lose your own proof this way). Click §4 to get\n"
 "back to command line mode.\n"
 "§5"
 msgstr ""
+"Did you use induction on §0?\n"
+"Here's a two-line proof of §1 which uses §2.\n"
+"If you want to inspect it, you can go into editor mode by clicking §3 in "
+"the top right\n"
+"and then just cut and paste the proof and move your cursor around it\n"
+"to see the hypotheses and goal at any given point\n"
+"(although you'll lose your own proof this way). Click §4 to get\n"
+"back to command line mode.\n"
+"§5\n"
+"\n"
+"\n"
+"### 翻訳\n"
+"§0について帰納法を使ったでしょうか？\n"
+"§2を使用して§1の二行証明があります。\n"
+"証明を確認したい場合は、右上にある§3をクリックしてエディタモードに入り、\n"
+"その後証明を切り取り、貼り付け、カーソルを動かして任意のポイントでの仮定と目標を確認できます。\n"
+"（ただし、この方法で自分の証明は失われます）。§4をクリックして\n"
+"コマンドラインモードに戻りましょう。\n"
+"§5"
 
 #: Game.Levels.LessOrEqual.L05le_zero
 msgid ""
@@ -4433,58 +6491,89 @@ msgid ""
 "but to prove it you will need a result which you showed in advanced\n"
 "addition world."
 msgstr ""
+"### 原文 (English)\n"
+"It's \"intuitively obvious\" that there are no numbers less than zero,\n"
+"but to prove it you will need a result which you showed in advanced\n"
+"addition world.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"「零未満の数は存在しない」ということは直感的に明らかですが、それを証明するには、先に学んだ加算ワールドで示した結果が必要です。"
 
-#. §0: `exact h`
 #: Game.Levels.Implication.L04succ_inj
+#. §0: `exact h`
 msgid ""
 "And now we've deduced what we wanted to prove: the goal is one of our "
 "assumptions.\n"
 "Finish the level with §0."
 msgstr ""
+"そして、証明したい命題を導き出しました：目標は私たちの仮定の一つです。\n"
+"レベルを終了するには、§0 を使用してください。"
 
-#. §0: `rw [add_zero]`
 #: Game.Levels.Tutorial.L07add_succ
+#. §0: `rw [add_zero]`
 msgid "And now §0"
 msgstr ""
+"```html\n"
+"And now §0\n"
+"\n"
+"```\n"
+"```html\n"
+"現在 §0\n"
+"```"
 
-#. §0: `pow_add a m n`
-#. §1: $a^{m+n}=a^ma^n.$
 #: Game.Levels.Power.L06pow_add Game.Levels.Power.L07mul_pow
 #: Game.Levels.Power.L08pow_pow
+#. §0: `pow_add a m n`
+#. §1: $a^{m+n}=a^ma^n.$
 msgid "§0 is a proof that §1"
-msgstr ""
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.LessOrEqual
 msgid "≤ World"
 msgstr ""
+"≤ ワールド\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"ワールド"
 
+#: Game.Levels.Multiplication.L05one_mul Game.Levels.Multiplication.L06two_mul
 #. §0: ```
 #. rw [mul_comm, mul_one]
 #. rfl
 #. ```
-#: Game.Levels.Multiplication.L05one_mul Game.Levels.Multiplication.L06two_mul
 msgid ""
 "Here's my solution:\n"
 "§0"
 msgstr ""
+"以下是我的解決方法：\n"
+"§0\n"
+"\n"
+"\n"
+"##"
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid "An algorithm for equality"
-msgstr ""
+msgstr "等価性のアルゴリズム"
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
 msgid "le_mul_right"
 msgstr ""
+"le_mul_right\n"
+"\n"
+"## 日本語翻訳\n"
+"右側乗算に関する定理です。"
 
 #: Game.Levels.Power
 msgid "Power World"
-msgstr ""
+msgstr "パワー・ワールド"
 
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: ```
 #. nth_rewrite 2 [← mul_one a] at h
 #. exact mul_left_cancel a b 1 ha h
 #. ```
-#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid ""
 "A two-line proof is\n"
 "\n"
@@ -4493,21 +6582,26 @@ msgid ""
 "We now have all the tools necessary to set up the basic theory of "
 "divisibility of naturals."
 msgstr ""
+"二行の証明は\n"
+"\n"
+"§0\n"
+"\n"
+"現在、自然数の除法の基本理論を設定するために必要なすべてのツールを備えています。"
 
 #: Game.Levels.Multiplication.L06two_mul
 msgid "two_mul"
-msgstr ""
+msgstr "二倍定理"
 
 #: Game.Levels.Algorithm.L04add_algo3
 msgid "the simplest approach"
-msgstr ""
+msgstr "最简单的方法"
 
+#: Game.Levels.Implication.L01exact
 #. §0: $P\\implies Q$
 #. §1: $P$
 #. §2: $Q$
 #. §3: `exact`
 #. §4: `exact h`
-#: Game.Levels.Implication.L01exact
 msgid ""
 "In this world we'll learn how to prove theorems of the form §0.\n"
 "In other words, how to prove theorems of the form \"if §1 is true, then §2 "
@@ -4517,19 +6611,35 @@ msgid ""
 "The §3 tactic can be used to close a goal which is exactly one of\n"
 "the hypotheses. It takes the name of the hypothesis as argument: §4."
 msgstr ""
+"### 原文 (English)\n"
+"In this world we'll learn how to prove theorems of the form §0.\n"
+"In other words, how to prove theorems of the form \"if §1 is true, then §2 "
+"is true.\"\n"
+"To do that we need to learn some more tactics.\n"
+"\n"
+"The §3 tactic can be used to close a goal which is exactly one of\n"
+"the hypotheses. It takes the name of the hypothesis as argument: §4.\n"
+"\n"
+"\n"
+"### 翻訳 (Japanese)\n"
+"このワールドでは、形式 §0 の定理を証明する方法を学びます。\n"
+"つまり、「§1 が真なら、§2 が真である」という形式の定理を証明する方法です。\n"
+"そのためには、いくつかのタクティクを学ぶ必要があります。\n"
+"\n"
+"§3 のタクティクは、仮定のうち厳密に一つの目標を閉じるために使用できます。このタクティクには仮定の名前が引数として与えられます：§4。"
 
 #: Game.Levels.Algorithm.L02add_algo1
 msgid ""
 "So that's the algorithm: now let's use automation to perform it\n"
 "automatically."
-msgstr ""
+msgstr "そのアルゴリズムはこれです：今度は自動化を使って自動的に実行させましょう。"
 
+#: Game.Levels.AdvMultiplication
 #. §0: `x + y = 0 → x = 0`
 #. §1: `x + y = x → y = 0`
 #. §2: `x * y = 1 → x = 1`
 #. §3: `x * y = x → y = 1`
 #. §4: `x ≠ 0`
-#: Game.Levels.AdvMultiplication
 msgid ""
 "Advanced *Addition* World proved various implications\n"
 "involving addition, such as §0 and §1.\n"
@@ -4546,40 +6656,74 @@ msgid ""
 "true under the additional hypothesis that one of the variables is non-zero.\n"
 "This causes some unexpected extra twists."
 msgstr ""
+"### 原文 (English)\n"
+"Advanced *Addition* World proved various implications\n"
+"involving addition, such as §0 and §1.\n"
+"These lemmas were used to prove basic facts about ≤ in ≤ World.\n"
+"\n"
+"In Advanced Multiplication World we prove analogous\n"
+"facts about multiplication, such as §2, and\n"
+"§3 (assuming §4 in the latter result). This will prepare\n"
+"us for Divisibility World.\n"
+"\n"
+"Multiplication World is more complex than Addition World. In the same\n"
+"way, Advanced Multiplication world is more complex than Advanced Addition\n"
+"World. One reason for this is that certain intermediate results are only\n"
+"true under the additional hypothesis that one of the variables is non-zero.\n"
+"This causes some unexpected extra twists.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"Advanced *加算*ワールドでは、加算に関する様々な命題（§0, §1など）が証明されました。\n"
+"これらの補題は、≤ワールドにおける≤に関する基本的な事実の証明に使用されました。\n"
+"\n"
+"Advanced *乗算*ワールドでは、乗算に関する類似した事実（§2など）が証明され、\n"
+"§3（後者の結果では§4を仮定）も証明されました。これにより、*除算*ワールドに備えることができます。\n"
+"\n"
+"*乗算*ワールドは、*加算*ワールドよりも複雑です。同様に、Advanced *乗算*ワールドは、Advanced "
+"*加算*"
+"ワールドよりも複雑です。これは、ある変数が非零であるという追加の仮定の下でのみ成り立つ特定の中間結果があるためです。これにより、予想外の追加の複雑さが生"
+"じます。"
 
-#. §0: `simp only [add_left_comm, add_comm]`
 #: Game.Levels.Algorithm.L03add_algo2
+#. §0: `simp only [add_left_comm, add_comm]`
 msgid "Solve this level in one line with §0"
-msgstr ""
+msgstr "このレベルを一行で解いてください§0"
 
+#: Game.Levels.Algorithm.L05pred
 #. §0: `succ_inj`
 #. §1: $0$
-#: Game.Levels.Algorithm.L05pred
 msgid ""
 "Nice! You've proved §0!\n"
 "Let's now prove Peano's other axiom, that successors can't be §1."
 msgstr ""
+"Nice! あなたは§0を証明しました！\n"
+"\n"
+"今度はペアノの他の公理、すなわち後続が§1にならないことを証明しましょう。"
 
-#. §0: $a$
-#. §1: $\\operatorname{succ}(a) = a+1$
 #: Game.Levels.Tutorial.L07add_succ Game.Levels.Addition.L01zero_add
 #: Game.Levels.Multiplication.L02zero_mul
+#. §0: $a$
+#. §1: $\\operatorname{succ}(a) = a+1$
 msgid "For all natural numbers §0, we have §1."
-msgstr ""
+msgstr "すべての自然数 §0 に対して、§1 が成り立ちます。"
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid "Well done!"
-msgstr ""
+msgstr " WELL DONE!"
 
 #: Game.Levels.Tutorial.L06add_zero2
 msgid "Precision rewriting"
 msgstr ""
+"精密な書き換え\n"
+"\n"
+"##"
 
+#: Game.Levels.Multiplication.L07mul_add
 #. §0: $a(b+c)=ab+ac$
 #. §1: $(b+c)a=ba+ca$
 #. §2: `mul_add a b c`
 #. §3: `a * (b + c) = a * b + a * c`
-#: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "Our next goal is \"left and right distributivity\",\n"
 "meaning §0 and §1. Rather than\n"
@@ -4589,51 +6733,62 @@ msgid ""
 "Note that the left hand side contains a multiplication\n"
 "and then an addition."
 msgstr ""
+"次々目標は「左側と右側の分配律」です、つまり§0と§1。これらのやや冠礼的な名前とは異なり、Leanの証明の名前は説明的です。まずは§2"
+"から始めましょう、§3の証明です。注意してほしいのは、左辺に乘算が含まれていて、その後に加算があることです。"
 
+#: Game.Levels.Power.L10FLT
 #. §0: `xyzzy`
 #. §1: `sorry`
 #. §2: `xyzzy`
-#: Game.Levels.Power.L10FLT
 msgid ""
 "§0 is an ancient magic spell, believed to be the origin of the\n"
 "modern word §1. The game won't complain - or notice - if you\n"
 "prove anything with §2."
 msgstr ""
+"§0は古くから伝わる魔法の呪文で、現代の単語§1の起源とされています。ゲームはあなたの証明に関わらず、§2"
+"で何を証明しても文句を言わなかったり、気づかないでしょう。"
 
+#: Game.Levels.Power.L01zero_pow_zero
 #. §0: `0 ^ 0 = 0`
 #. §1: `0 ^ 0 = 1`
-#: Game.Levels.Power.L01zero_pow_zero
 msgid ""
 "Mathematicians sometimes argue that §0 is also\n"
 "a good convention. But it is not a good convention in this\n"
 "game; all the later levels come out beautifully with the\n"
 "convention that §1."
 msgstr ""
+"数学的には、§0 も良い慣習であると主張する学者もいます。しかし、このゲームではその慣習は適切ではありません；§1 "
+"の慣習を採用すると、後のすべてのレベルが美しく解決されます。"
 
+#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 #. §0: ```
 #. cases h with d hd
 #. use d * t
 #. rw [hd, add_mul]
 #. rfl
 #. ```
-#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 msgid ""
 "My proof:\n"
 "§0"
 msgstr ""
+"私の証明:\n"
+"§0\n"
+"\n"
+"\n"
+"##"
 
 #: Game.Levels.Multiplication.L06two_mul
 msgid ""
 "This level is more important than you think; it plays\n"
 "a useful role when battling a big boss later on."
-msgstr ""
+msgstr "このレベルは想像以上に重要です；後で大ボスとの戦いにおいて有用な役割を果たします。"
 
+#: Game.Levels.Tutorial.L05add_zero
 #. §0: `Add a b`
 #. §1: `a + b`
 #. §2: `add_zero a : a + 0 = a`
 #. §3: `add_succ a b : a + succ b = succ (a + b)`
 #. §4: `zero_add a : 0 + a = a`
-#: Game.Levels.Tutorial.L05add_zero
 msgid ""
 "§0, with notation §1, is\n"
 "the usual sum of natural numbers. Internally it is defined\n"
@@ -4646,13 +6801,20 @@ msgid ""
 "Other theorems about naturals, such as §4, are proved\n"
 "by induction using these two basic theorems."
 msgstr ""
+"§0、記法§1は通常の自然数の和です。内部では、以下の2つの仮定を用いて定義されています：\n"
+"\n"
+"* §2\n"
+"\n"
+"* §3\n"
+"\n"
+"他の自然数に関する定理、例えば§4は、これらの2つの基本定理を使用して帰納法で証明されます。"
 
-#. §0: `cases h2 with h0 h1`
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+#. §0: `cases h2 with h0 h1`
 msgid ""
 "Now §0 and deal with the two\n"
 "cases separately."
-msgstr ""
+msgstr "現在、§0 で、二つの場合を別々に処理します。"
 
 #: Game.Levels.Power.L08pow_pow
 msgid ""
@@ -4666,48 +6828,62 @@ msgid ""
 "\n"
 "Suddenly the music starts up again. This really is the final boss."
 msgstr ""
+"音楽が静まり返る。これで終わり？\n"
+"\n"
+"まだ二つ目のレベルが残っていることは明らかだ。\n"
+"\n"
+"通りすがりの数学者が言うには、あなたが構築した構造には数学の名前がないらしい。だまされた気分だ。\n"
+"\n"
+"突然、音楽が再開する。これで本当に最終ボスだ。"
 
+#: Game.Levels.LessOrEqual.L10le_one
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #. §0: `le_one x`
 #. §1: `x ≤ 1`
 #. §2: `x = 0`
 #. §3: `x = 1`
-#: Game.Levels.LessOrEqual.L10le_one
-#: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid "§0 is a proof that if §1 then §2 or §3."
-msgstr ""
+msgstr "§0は、§1ならば§2または§3であることを証明します。"
 
 #: Game.Levels.Tutorial
 msgid "Tutorial World"
-msgstr ""
+msgstr "チュートリアルワールド"
 
-#. §0: `rw [one_eq_succ_zero]`
 #: Game.Levels.Tutorial.L07add_succ
+#. §0: `rw [one_eq_succ_zero]`
 msgid "§0 will do this."
-msgstr ""
+msgstr "§0はこれを行います。"
 
+#: Game.Levels.LessOrEqual.L09succ_le_succ
 #. §0: `x ≤ 0`
 #. §1: `x = 0`
 #. §2: `≤ 1`
 #. §3: `≤ 2`
-#: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid ""
 "We've proved that §0 implies §1. The last two levels\n"
 "in this world will prove which numbers are §2 and §3.\n"
 "This lemma will be helpful for them."
 msgstr ""
+"We've proved that §0 から §1 が導かれる。このワールドの最後の2つのレベルでは、どの数が §2 と §3 "
+"であるかを証明する。この補題は彼らにとって役立つだろう。"
 
-#. §0: `cases «{e}» with a`
 #: Game.Levels.LessOrEqual.L08le_total
+#. §0: `cases «{e}» with a`
 msgid "You still don't know which way to go, so do §0."
 msgstr ""
+"You still don't know which way to go, so do §0.\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"まだ進むべき道がわからないので、§0の指示に従いましょう。"
 
 #: Game.Levels.AdvMultiplication
 msgid "Advanced Multiplication World"
-msgstr ""
+msgstr "高度な乗算ワールド"
 
+#: Game.Levels.Addition.L05add_right_comm
 #. §0: `a = 0`
 #. §1: `x + a = x`
-#: Game.Levels.Addition.L05add_right_comm
 msgid ""
 "You've now seen all the tactics you need to beat the final boss of the "
 "game.\n"
@@ -4721,40 +6897,51 @@ msgid ""
 "\n"
 "Click \"Home\" and make your choice."
 msgstr ""
+"以下の最終ボスを倒すためのタクティクスを全部学びました。\n"
+"ゲームの最終ボスに向かう旅を始めるには、Multiplication Worldに入り始めることができます。\n"
+"\n"
+"または、Implication "
+"Worldで新しいタクティクスを学んでみるのも良いでしょう。これらのタクティクスは、加算に関するより多くの事実を証明するのに役立ちます。例えば、§0"
+"から§1を導き出す方法を学ぶことができます。\n"
+"\n"
+"\"Home\"をクリックして選択してください。"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Tutorial.L04rw_backwards
 #. §0: $2$
 #. §1: $0$
-#: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Tutorial.L04rw_backwards
 msgid "§0 is the number after the number after §1."
-msgstr ""
+msgstr "§0は§1の後の数値の後の数値です。"
 
-#. §0: `2 + 2 = 4`
 #: Game.Levels.Tutorial.L02rw
+#. §0: `2 + 2 = 4`
 msgid "You now know enough tactics to prove §0! Let's begin the journey."
-msgstr ""
+msgstr "あなたはすでに十分なタクティクを習得し、§0を証明することができます！旅程の始まりです。"
 
+#: Game.Levels.Multiplication.L03succ_mul
 #. §0: `succ_mul a b`
 #. §1: `succ a * b = a * b + b`
 #. §2: `mul_succ`
 #. §3: `mul_comm`
 #. §4: `mul_comm`
 #. §5: `mul_succ`
-#: Game.Levels.Multiplication.L03succ_mul
 msgid ""
 "§0 is the proof that §1.\n"
 "\n"
 "It could be deduced from §2 and §3, however this argument\n"
 "would be circular because the proof of §4 uses §5."
 msgstr ""
+"§0は§1の証明です。\n"
+"\n"
+"しかし、§2と§3から導くことはできますが、この議論は円環的で、§4の証明は§5を使用しているためです。"
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
-msgstr ""
+msgstr "レベル完成しました！🎉"
 
+#: Game.Levels.Power.L07mul_pow
 #. §0: `a * b`
 #. §1: `rw [mul_comm]`
 #. §2: `rw`
-#: Game.Levels.Power.L07mul_pow
 msgid ""
 "The music gets ever more dramatic, as we explore\n"
 "the interplay between exponentiation and multiplication.\n"
@@ -4763,30 +6950,47 @@ msgid ""
 "because §1 swaps the wrong multiplication,\n"
 "then read the documentation of §2 for tips on how to fix this."
 msgstr ""
+"The music gets ever more dramatic, as we explore\n"
+"指数乗と乗算の相互作用。\n"
+"\n"
+"もし指数乗と乗算の順序を正しく交換できずに\n"
+"§1 が誤った乗算を交換してしまう場合、\n"
+"§2 のドキュメンテーションを参照して修正方法を確認してください。"
 
+#: Game.Levels.LessOrEqual.L08le_total
 #. §0: `le_total x y`
 #. §1: `x ≤ y`
 #. §2: `y ≤ x`
-#: Game.Levels.LessOrEqual.L08le_total
 msgid "§0 is a proof that §1 or §2."
-msgstr ""
+msgstr "§0は§1または§2の証明です。"
 
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #. §0: `ha : 0 ≠ 0`
 #. §1: `tauto`
-#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 msgid ""
 "In the \"base case\" we have a hypothesis §0, and you can deduce anything\n"
 "from a false statement. The §1 tactic will close this goal."
-msgstr ""
+msgstr "### 基本的なケースでは、仮定§0が存在します。偽の文から何でも導くことができます。タクティク§1はこの目標を閉じます。"
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "add_succ"
 msgstr ""
+"add_succ\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"自然数の加算に関する定理を証明するタクティクです。"
 
 #: Game.Levels.Power.L03pow_one
 msgid "pow_one"
 msgstr ""
+"pow_one\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
+"べき一度"
 
+#: Game.Levels.Implication.L11two_add_two_ne_five
 #. §0: ```
 #. intro h
 #. rw [add_succ, add_succ, add_zero] at h
@@ -4795,7 +6999,6 @@ msgstr ""
 #. exact h
 #. ```
 #. §1: $20 + 20 ≠ 41$
-#: Game.Levels.Implication.L11two_add_two_ne_five
 msgid ""
 "Here's my proof:\n"
 "§0\n"
@@ -4811,22 +7014,34 @@ msgid ""
 "and\n"
 "decide your route."
 msgstr ""
+"以下は私の証明です：\n"
+"§0\n"
+"\n"
+"Leanは定理証明システムですが、現在では十分な量の理論が開発されておらず、適切な計算機としての機能を発揮するまでには至っていません。アルゴリズムワール"
+"ドでは、よりコンピュータサイエンス寄りのワールドで、このような問題を扱うための機械を開発し、§1"
+"のような目標を達成することが可能になります。あるいは、不等式の理論を実現するための補題を証明する高度な加算ワールドでより多くの数学を学ぶこともできます。"
+"\"ホーム\"をクリックし、あなたのルートを選択してください。"
 
+#: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `rw [two_eq_succ_one, one_eq_succ_zero]`
 #. §1: `rfl`
-#: Game.Levels.Tutorial.L03two_eq_ss0
 msgid ""
 "Note that you can do §0\n"
 "and then §1 to solve this level in two lines."
-msgstr ""
+msgstr "注文しますと、§0 を実行し、その後 §1 を実行することで、このレベルを二行で解くことができます。"
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid "add_right_eq_zero"
-msgstr ""
+msgstr "add_right_eq_zero"
 
 #: Game.Levels.Tutorial.L05add_zero
 msgid "Adding zero"
 msgstr ""
+"追加するゼロ\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"追加するゼロ"
 
 #: Game.Levels.Addition.L03add_comm
 msgid ""
@@ -4835,17 +7050,24 @@ msgid ""
 "Look in your inventory to see the proofs you have available.\n"
 "These should be enough."
 msgstr ""
+"[boss battle music]\n"
+"\n"
+"あなたのインベントリを確認して、利用可能な証明を確認してください。\n"
+"これらの証明は十分なはずです。"
 
+#: Game.Levels.Algorithm.L02add_algo1
 #. §0: $a, b$
 #. §1: $c$
 #. §2: $d$
 #. §3: $(a + b) + (c + d) = ((a + c) + d) + b.$
-#: Game.Levels.Algorithm.L02add_algo1
 msgid ""
 "If §0, §1 and §2 are numbers, we have\n"
 "§3"
 msgstr ""
+"もし§0, §1, §2 が数値である場合、以下のようになります。\n"
+"§3"
 
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
 #. §0: `a ≠ 0`
 #. §1: `b ≠ 0`
 #. §2: `a * b ≠ 0`
@@ -4855,40 +7077,49 @@ msgstr ""
 #. §6: `a * b`
 #. §7: `succ`
 #. §8: `apply zero_ne_succ`
-#: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid ""
 "This level proves that if §0 and §1 then §2. One strategy\n"
 "is to write both §3 and §4 as §5 of something, deduce that §6 is\n"
 "also §7 of something, and then §8."
 msgstr ""
+"このレベルでは、§0 と §1 であることを示す必要があります。一つの戦略は、§3 と §4 を両方とも §5 の何かの §6 であると書き、それから "
+"§7 であることを導き、最後に §8 とします。"
 
 #: Game.Levels.Power.L02zero_pow_succ
 msgid "zero_pow_succ"
 msgstr ""
+"零冪乗成功\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"零冪乗成功"
 
 #: Game.Levels.LessOrEqual.L07or_symm
 msgid "Ready for the boss level of this world?"
-msgstr ""
+msgstr "このワールドのボスレベルに備えていますか？"
 
+#: Game.Levels.Multiplication.L07mul_add
 #. §0: `mul_add a b c`
 #. §1: `a * (b + c) = a * b + a * c`
-#: Game.Levels.Multiplication.L07mul_add
 msgid ""
 "Multiplication distributes\n"
 "over addition on the left.\n"
 "\n"
 "§0 is the proof that §1."
 msgstr ""
+"乗算は左側で加算に分配します。\n"
+"\n"
+"§0は§1の証明です。"
 
 #: Game.Levels.Algorithm
 msgid "Algorithm World"
-msgstr ""
+msgstr "アルゴリズムワールド"
 
+#: Game.Levels.Tutorial.L07add_succ
 #. §0: `add_succ a b`
 #. §1: `a + succ b = succ (a + b)`
-#: Game.Levels.Tutorial.L07add_succ
 msgid "§0 is the proof of §1."
-msgstr ""
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Power.L10FLT
 msgid ""
@@ -4896,20 +7127,34 @@ msgid ""
 "\n"
 "Either that, or you used magic..."
 msgstr ""
+" Congratulations! あなたはフェルマーの最終定理を証明しました！\n"
+"\n"
+"もしくは、魔法を使用したかもしれません...\n"
+"\n"
+"\n"
+"## 日本語翻訳\n"
 
+#: Game.Levels.Multiplication.L04mul_comm
 #. §0: `mul_comm`
 #. §1: `mul_comm a b`
 #. §2: `a * b = b * a`
-#: Game.Levels.Multiplication.L04mul_comm
 msgid ""
 "§0 is the proof that multiplication is commutative. More precisely,\n"
 "§1 is the proof that §2."
 msgstr ""
+"§0は乗法が交換律を満たすことを示す証明です。より正確には，\n"
+"§1は§2が交換律を満たすことを示す証明です。"
 
 #: Game.Levels.Tutorial.L04rw_backwards
 msgid "rewriting backwards"
 msgstr ""
+"反転して書き換えます\n"
+"\n"
+"\n"
+"## 参考訳\n"
+"反転して書き換えます"
 
+#: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `use`
 #. §1: `x`
 #. §2: `x = 37`
@@ -4925,7 +7170,6 @@ msgstr ""
 #. §12: `use 37`
 #. §13: `use a`
 #. §14: `use a * a + 1`
-#: Game.Levels.LessOrEqual.L01le_refl
 msgid ""
 "## Summary\n"
 "\n"
@@ -4944,14 +7188,27 @@ msgid ""
 "- §13\n"
 "- §14"
 msgstr ""
+"## 結論\n"
+"\n"
+"§0 タクティクは、何かが存在することを主張する目標に対して進展を遂げます。\n"
+"もし目標が何かが特定の性質を持つ存在することを主張し、その存在を知る方法が §2 である場合、§3 は進展を遂げます。\n"
+"\n"
+"§4 は \"存在する §5 が §6 である\" という主張を表す記号であり、目標が §7 のような形の場合、§8 することで、道徳的に §9 "
+"(つまり §10) とみなされる番号で進展を遂げることができます。\n"
+"\n"
+"以下の例のいずれかが可能であると仮定して、§11 関数に渡される引数の型が正確である場合：\n"
+"\n"
+"- §12\n"
+"- §13\n"
+"- §14"
 
+#: Game.Levels.Addition.L01zero_add
 #. §0: `x + y = y + x`
 #. §1: `add_comm`
 #. §2: `add_zero`
 #. §3: `zero_add`
 #. §4: `add_comm`
 #. §5: `x + y = y + x`
-#: Game.Levels.Addition.L01zero_add
 msgid ""
 "This lemma would have been easy if we had known that §0. That theorem\n"
 "  is called §1 and it is *true*, but unfortunately its proof *uses* both\n"
@@ -4959,3 +7216,7 @@ msgid ""
 "\n"
 "  Let's continue on our journey to §4, the proof of §5."
 msgstr ""
+"この補題は、§0を知っていたら簡単だったでしょう。その定理は§1と呼ばれ、**真**です。しかし、残念ながらその証明は§2と§3を**使用**"
+"しています！\n"
+"\n"
+"§4の証明へと進みましょう、§5の証明に。"
