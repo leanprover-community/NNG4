@@ -1,0 +1,620 @@
+{"≤ World": "",
+ "≠": "",
+ "§0.": "",
+ "§0, with notation §1, is the usual\n  product of natural numbers. Internally it is\n  via two axioms:\n\n  * §2\n\n  * §3\n\nOther theorems about naturals, such as §4,\nare proved by induction from these two basic theorems.":
+ "",
+ "§0, with notation §1, is the usual\n  exponentiation of natural numbers. Internally it is\n  defined via two axioms:\n\n  * §2\n\n  * §3\n\nNote in particular that §4.":
+ "",
+ "§0, with notation §1, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* §2\n\n* §3\n\nOther theorems about naturals, such as §4, are proved\nby induction using these two basic theorems.":
+ "",
+ "§0 will do this.": "",
+ "§0 will change §1 into §2.": "",
+ "§0 says that §1.\n\nNote that this is not quite true by definition: §2 is\ndefined to be §3 so it's §4, and to prove\nthat this is equal to §5 you need to use induction somewhere.":
+ "",
+ "§0 says that §1.": "",
+ "§0 practice.": "",
+ "§0 is the theorem that §1.\nYou can prove it by induction on §2 or you can deduce it from §3.":
+ "",
+ "§0 is the theorem that §1\nTwo ways to do it spring to mind; I'll mention them when you've solved it.":
+ "",
+ "§0 is the theorem that §1": "",
+ "§0 is the statement that §1": "",
+ "§0 is the proof §1.": "",
+ "§0 is the proof that §1.\n\nNote: §2 is a §3 lemma.": "",
+ "§0 is the proof that §1.\n\nIt could be deduced from §2 and §3, however this argument\nwould be circular because the proof of §4 uses §5.":
+ "",
+ "§0 is the proof that §1.\n\nIn Lean, §2 is *defined to mean* §3. Hence\n§4 is really a proof of §5.\nHere §6 is a generic false statement. This means that\nyou can §7 if §8 is a proof of §9.":
+ "",
+ "§0 is the proof that §1.": "",
+ "§0 is the proof that multiplication is commutative. More precisely,\n§1 is the proof that §2.":
+ "",
+ "§0 is the proof of §1.\n\n§2 is a §3 lemma, because replacing §4 by §5\nis almost always what you want to do if you're simplifying an expression.":
+ "",
+ "§0 is the proof of §1.": "",
+ "§0 is the number after the number after §1.": "",
+ "§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. It's\ndefined via two rules:\n\n* §1 (zero is a number)\n* §2 (the successor of a number is a number)\n\n## Game Implementation\n\n*The game uses its own copy of the natural numbers, called §3 with notation §4.\nIt is distinct from the Lean natural numbers §5, which should hopefully\nnever leak into the natural number game.*":
+ "",
+ "§0 is one of the two axioms\ndefining exponentiation in this game.": "",
+ "§0 is one of the\ntwo axioms defining exponentiation in this game.": "",
+ "§0 is just as fiddly to prove by induction; but there's a trick\nwhich avoids it. Can you spot it?":
+ "",
+ "§0 is good enough to solve this goal.": "",
+ "§0 is an ancient magic spell, believed to be the origin of the\nmodern word §1. The game won't complain - or notice - if you\nprove anything with §2.":
+ "",
+ "§0 is a proof that §1. But if your goal\nis §2 then §3 will not\nwork! Because the goal means §4 so there\nis no §5 term *directly* in the goal.\n\nUse associativity and commutativity to prove §6.\nYou don't need induction. §7 moves brackets around,\nand §8 moves variables around.\n\nRemember that you can do more targeted rewrites by\nadding explicit variables as inputs to theorems. For example §9\nwill only do rewrites of the form §10, and §11\nwill only do rewrites of the form §12.":
+ "",
+ "§0 is a proof that §1.\n\nNote that when Lean says §2 it means §3.\n\nNote that §4 cannot be proved by \\\\\"pure thought\\\\\":\nfor example subtraction is not associative, as §5 is not\nequal to §6.":
+ "",
+ "§0 is a proof that §1.\n\nIt's one way of saying that a divisor of a positive number\nhas to be at most that number.":
+ "",
+ "§0 is a proof that §1.\n\n## Summary\n\n§2 is really a function, which\neats a number, and returns a proof of a theorem\nabout that number. For example §3 is\na proof that §4.\n\nThe §5 tactic will accept §6\nand will try to figure out which number you omitted\nto input.\n\n## Details\n\nA mathematician sometimes thinks of §7\nas \\\\\"one thing\\\\\", namely a proof of §8.\nThis is just another way of saying that it's a function which\ncan eat any number n and will return a proof that §9.":
+ "",
+ "§0 is a proof that §1.": "",
+ "§0 is a proof that §1 or §2.": "",
+ "§0 is a proof that §1\n\nIn Lean, §2 means §3, so this result gets displayed\nas §4.":
+ "",
+ "§0 is a proof that §1": "",
+ "§0 is a proof that if §1 then §2.": "",
+ "§0 is a proof that if §1 then §2 or §3.": "",
+ "§0 is a proof that if §1 then §2 or §3 or §4.": "",
+ "§0 is a proof that if §1 and §2 then §3.\nMore precisely, it is a proof that §4. In words,\nIf §5 then (pause) if §6 then §7.\n\n## A note on associativity\n\nIn Lean, §8 means §9, because §10 is left associative. However\n§11 is right associative. This means that §12 in Lean means\nexactly that §13 is transitive. This is different to how mathematicians use\n§14; for them, this usually means that §15\nand §16.":
+ "",
+ "§0 is a proof that if §1 and §2 then §3.": "",
+ "§0 is a proof of §1.\"": "",
+ "§0 is a proof of §1.\n\nThe reason for the name is that this lemma is \"reflexivity of §2\"":
+ "",
+ "§0 is a proof of §1.": "",
+ "§0 is a proof of §1 so that was what got rewritten.\nYou can now change §2 to §3 with §4 or §5. You\ncan usually stick to §6 unless you need real precision.":
+ "",
+ "§0 is a proof of the implication §1.": "",
+ "§0 is a proof\nthat §1. Note that in Lean §2 prints\nas §3, because the notation for addition is defined to be left\nassociative.":
+ "",
+ "§0 is I think quicker than §1.": "",
+ "§0 is *notation* for §1. This \"backwards E\"\nmeans \"there exists\". So §2 means that there exists\na number §3 such that §4. This definition works\nbecause there are no negative numbers in this game.\n\nTo *prove* an \"exists\" statement, use the §5 tactic.\nLet's see an example.":
+ "",
+ "§0 is *notation* for §1.\n\nThe reason this is mathematically\nvalid is that if §2 is a true-false statement then §3\nis the logical opposite of §4. Indeed §5 is false,\nand §6 is true!\n\nThe upshot of this is that you can treat §7 in exactly\nthe same way as you treat any implication §8. For example,\nif your *goal* is of the form §9 then you can make progress\nwith §10, and if you have a hypothesis §11 of the\nform §12 then you can §13 if §14 is a proof\nof §15.":
+ "",
+ "§0 is *notation* for §1.\n\nBecause this game doesn't have negative numbers, this definition\nis mathematically valid.\n\nThis means that if you have a goal of the form §2 you can\nmake progress with the §3 tactic, and if you have a hypothesis\n§4, you can make progress with §5.":
+ "",
+ "§0": "",
+ "zero_pow_zero": "",
+ "zero_pow_succ": "",
+ "zero_ne_succ": "",
+ "zero_mul": "",
+ "zero_add": "",
+ "x ≤ y or y ≤ x": "",
+ "x ≤ y and y ≤ z implies x ≤ z": "",
+ "x ≤ y and y ≤ x implies x = y": "",
+ "x ≤ succ x": "",
+ "x ≤ 1": "",
+ "x ≤ 0 → x = 0": "",
+ "two_mul": "",
+ "try rewriting §0.": "",
+ "the simplest approach": "",
+ "the rw tactic": "",
+ "succ_mul": "",
+ "succ_inj : the successor function is injective": "",
+ "succ_add": "",
+ "succ x ≤ succ y → x ≤ y": "",
+ "rewriting backwards": "",
+ "pred": "",
+ "pow_two": "",
+ "pow_pow": "",
+ "pow_one": "",
+ "pow_add": "",
+ "one_pow": "",
+ "one_mul": "",
+ "one_le_of_ne_zero": "",
+ "mul_right_eq_self": "",
+ "mul_right_eq_one": "",
+ "mul_pow": "",
+ "mul_one": "",
+ "mul_ne_zero": "",
+ "mul_left_ne_zero": "",
+ "mul_left_cancel": "",
+ "mul_le_mul_right": "",
+ "mul_eq_zero": "",
+ "mul_comm": "",
+ "mul_assoc": "",
+ "mul_add": "",
+ "making life simple": "",
+ "making life easier": "",
+ "level completed! 🎉": "",
+ "level completed with warnings… 🎭": "",
+ "le_two": "",
+ "le_mul_right": "",
+ "is_zero": "",
+ "intro practice": "",
+ "intro": "",
+ "intermediate goal solved! 🎉": "",
+ "eq_succ_of_ne_zero": "",
+ "decide again": "",
+ "decide": "",
+ "add_succ": "",
+ "add_sq": "",
+ "add_right_eq_zero": "",
+ "add_right_eq_self": "",
+ "add_right_comm": "",
+ "add_right_cancel": "",
+ "add_mul": "",
+ "add_left_eq_zero": "",
+ "add_left_eq_self": "",
+ "add_left_comm": "",
+ "add_left_cancel": "",
+ "add_comm (level boss)": "",
+ "add_assoc (associativity of addition)": "",
+ "[final boss music]": "",
+ "[dramatic music]. Now are you ready to face the first boss of the game?": "",
+ "[boss battle music]\n\nLook in your inventory to see the proofs you have available.\nThese should be enough.":
+ "",
+ "You've now seen all the tactics you need to beat the final boss of the game.\nYou can begin the journey towards this boss by entering Multiplication World.\n\nOr you can go off the beaten track and learn some new tactics in Implication\nWorld. These tactics let you prove more facts about addition, such as\nhow to deduce §0 from §1.\n\nClick \"Home\" and make your choice.":
+ "",
+ "You want to use §0, which you already\nproved, but you'll have to start with §1 your hypothesis.":
+ "",
+ "You still don't know which way to go, so do §0.": "",
+ "You now know enough tactics to prove §0! Let's begin the journey.": "",
+ "You might want to think about whether induction\non §0 or §1 is the best idea.":
+ "",
+ "You can use §0 to rewrite at §1 instead\nof at the goal.": "",
+ "You can start a proof by induction on §0 by typing:\n§1.": "",
+ "You can read more about the §0 tactic by clicking\non it in the top right.":
+ "",
+ "You can put a §0 in front of any theorem provided to §1 to rewrite\nthe other way around. Look at the docs for §2 for an explanation. Type §3 with §4.":
+ "",
+ "You can prove §0 in at least three ways.\nEither by induction, or by using §1, or\nby using commutativity. Which do you think is quickest?":
+ "",
+ "You can probably take it from here.": "",
+ "You can now §0": "",
+ "You can now finish with §0.": "",
+ "You can make your own tactics in Lean.\nThis code here\n§0\nwas used to create a new tactic §1, which runs\n§2.\nTry running §3 to solve this level!":
+ "",
+ "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
+ "",
+ "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
+ "",
+ "Why did we not just define §0 to be §1? Because we have not\neven *defined* addition yet! We'll do that in the next level.":
+ "",
+ "What do you think of this two-liner:\n§0\n\n§1 doesn't just take hypotheses, it will eat any proof which exists\nin the system.":
+ "",
+ "Well done! You now have enough tools to tackle the main boss of this level.":
+ "",
+ "Well done!": "",
+ "Welcome to tutorial world! In this world we learn the basics\nof proving theorems. The boss level of this world\nis the theorem §0.\n\nYou prove theorems by solving puzzles using tools called *tactics*.\nThe aim is to prove the theorem by applying tactics\nin the right order.\n\nLet's learn some basic tactics. Click on \"Start\" below\nto begin your quest.":
+ "",
+ "Welcome to Addition World! In this world we'll learn the §0 tactic.\nThis will enable us to defeat the boss level of this world, namely §1.\n\nThe tactics §2, §3 and §4 are the only tactics you'll need to\nbeat all the levels in Addition World, Multiplication World, and Power World.\nPower World contains the final boss of the game.\n\nThere are plenty more tactics in this game, but you'll only need to know them if you\nwant to explore the game further (for example if you decide to 100%\nthe game).":
+ "",
+ "We've seen §0, the proof that if §1 then §2.\nNow we'll prove that if §3 then §4 or §5.":
+ "",
+ "We've proved that §0; in Implication World we'll learn\nhow to prove §1.\n\nIn Addition World we proved *equalities* like §2.\nIn this second tutorial world we'll learn some new tactics,\nenabling us to prove *implications*\nlike §3\n\nWe'll also learn two new fundamental facts about\nnatural numbers, which Peano introduced as axioms.\n\nClick on \"Start\" to proceed.":
+ "",
+ "We've proved that §0 implies §1. The last two levels\nin this world will prove which numbers are §2 and §3.\nThis lemma will be helpful for them.":
+ "",
+ "We've just seen that §0, but if §1\nis a successor, then §2. We prove that here.":
+ "",
+ "We've been adding up two numbers; in this level we will add up three.\n\n  What does §0 *mean*? It could either mean §1, or it\n  could mean §2. In Lean, §3 means §4.\n\n  But why do we care which one it means; §5 and §6 are *equal*!\n\n  That's true, but we didn't prove it yet. Let's prove it now by induction.":
+ "",
+ "We're going to change that §0 into §1. Start by changing it into\n§2 by executing §3.":
+ "",
+ "We'll need this lemma to prove that two is prime!\n\nYou'll need to know that §0 is right associative. This means that\n§1 actually means §2.\nThis affects how §3 and §4 work.":
+ "",
+ "We'd like to prove §0 but right now\nwe can't even *state* it\nbecause we haven't yet defined addition.\n\n## Defining addition.\n\nHow are we going to add §1 to an arbitrary number §2? Well,\nthere are only two ways to make numbers in this game: §3\nand successors. So to define §4 we will need\nto know what §5 is and what §6 is.\nLet's start with adding §7.\n\n### Adding 0\n\nTo make addition agree with our intuition, we should *define* §8\nto be §9. More generally, we should define §10 to be §11 for\nany number §12. The name of this proof in Lean is §13.\nFor example §14 is a proof of §15,\n§16 is a proof of §17, and §18 is a proof\nof §19.\n\nWe write §20, so §21.":
+ "",
+ "We want to use §0, but we need a hypothesis §1\nwhich we don't have. Yet. Execute §2 (you can type §3 with §4).\nYou'll be asked to\nprove it, and then you'll have a new hypothesis which you can apply\n§5 to.":
+ "",
+ "We want to reduce this to a hypothesis §0 and a goal §1,\nwhich is logically equivalent but much easier to prove. Remember that §2\nis notation for §3. Click on §4 if you need hints.":
+ "",
+ "We still can't prove §0 because we have not talked about the\ndefinition of §1. In Lean, §2 is *notation* for §3.\nHere §4 is a generic false proposition, and §5 is Lean's notation\nfor \"implies\". In logic we learn\nthat §6 is false, but §7 is true. Hence\n§8 is the logical opposite of §9.\n\nEven though §10 does not look like an implication,\nyou should treat it as an implication. The next two levels will show you how.\n\n§11 is a goal which you cannot deduce from a consistent set of assumptions!\nSo if your goal is §12 then you had better hope that your hypotheses\nare contradictory, which they are in this level.":
+ "",
+ "We now start work on an algorithm to do addition more efficiently. Recall that\nwe defined addition by recursion, saying what it did on §0 and successors.\nIt is an axiom of Lean that recursion is a valid\nway to define functions from types such as the naturals.\n\nLet's define a new function §1 from the naturals to the naturals, which\nattempts to subtract 1 from the input. The definition is this:\n\n§2\n\nWe cannot subtract one from 0, so we just return a junk value. As well as this\ndefinition, we also create a new lemma §3, which says that §4.\nLet's use this lemma to prove §5, the theorem which\nPeano assumed as an axiom and which we have already used extensively without justification.":
+ "",
+ "We now have enough to state a mathematically accurate, but slightly\nclunky, version of Fermat's Last Theorem.\n\nFermat's Last Theorem states that if §0 and §1 then §2.\nIf you didn't do inequality world yet then we can't talk about §3,\nso we have to resort to the hack of using §4 for §5,\nwhich guarantees it's big enough. Similarly instead of §6 we\nuse §7.\n\nThis level looks superficially like other levels we have seen,\nbut the shortest solution known to humans would translate into\nmany millions of lines of Lean code. The author of this game,\nKevin Buzzard, is working on translating the proof by Wiles\nand Taylor into Lean, although this task will take many years.\n\n## CONGRATULATIONS!\n\nYou've finished the main quest of the natural number game!\nIf you would like to learn more about how to use Lean to\nprove theorems in mathematics, then take a look\nat [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\nan interactive textbook which you can read in your browser,\nand which explains how to work with many more mathematical concepts in Lean.":
+ "",
+ "We now have enough to prove that multiplication is associative,\nthe boss level of multiplication world. Good luck!":
+ "",
+ "We know §0 is a proof of §1 -- but what\nif we have a hypothesis §2? It's the wrong way around!\n\nThe §3 tactic changes a goal §4 to §5, and a goal §6\nto §7. And §8\ndoes the same for a hypothesis §9. We've proved §10 and called\nthe proof §11; now try proving §12.":
+ "",
+ "We have seen how to §0 theorems and assumptions\nof the form §1. But what if our *goal* is of the form §2?\nTo prove this goal, we need to know how to say \"let's assume §3 and deduce §4\"\nin Lean. We do this with the §5 tactic.":
+ "",
+ "We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer one.":
+ "",
+ "We don't know whether to go left or right yet. So start with §0.": "",
+ "We define a function §0 thus:\n\n§1\n\nWe also create two lemmas, §2 and §3, saying that §4\nand §5. Let's use these lemmas to prove §6, Peano's\nLast Axiom. Actually, we have been using §7 before, but it's handy to have\nthis opposite version too, which can be proved in the same way. Note: you can\ncheat here by using §8 but the point of this world is to show\nyou how to *prove* results like that.\n\nIf you can turn your goal into §9, then the §10 tactic will solve it.":
+ "",
+ "Very well done.\n\nA passing mathematician remarks that with you've just proved that §0 is totally\nordered.\n\nThe final few levels in this world are much easier.":
+ "",
+ "Use §0.": "",
+ "Use §0 and remember that §1 will solve a goal\nif there are hypotheses §2 and §3.":
+ "",
+ "Use the previous lemma with §0.": "",
+ "Tutorial World": "",
+ "Try §0.": "",
+ "Try §0 to change §1 into §2.": "",
+ "Totality of §0 is the boss level of this world, and it's coming up next. It says that\nif §1 and §2 are naturals then either §3 or §4.\nBut we haven't talked about §5 at all. Here's a run-through.\n\n1) The notation for \"or\" is §6. You won't need to type it, but you can\ntype it with §7.\n\n2) If you have an \"or\" statement in the *goal*, then two tactics make\nprogress: §8 and §9. But don't choose a direction unless your\nhypotheses guarantee that it's the correct one.\n\n3) If you have an \"or\" statement as a *hypothesis* §10, then\n§11 will create two goals, one where you went left,\nand the other where you went right.":
+ "",
+ "To solve this level, you need to §0 a number §1 such that §2.": "",
+ "Those of you interested in speedrunning the game may want to know\nthat §0 will do both rewrites at once.":
+ "",
+ "This world introduces exponentiation. If you want to define §0\nthen, as always, you will need to know what §1 is, and\nwhat §2 is, given only §3.\n\nYou can probably guess the names of the general theorems:\n\n  * §4\n  * §5\n\nUsing only these, can you get past the final boss level?\n\nThe levels in this world were designed by Sian Carey, a UROP student\nat Imperial College London, funded by a Mary Lister McCammon Fellowship\nin the summer of 2019. Thanks to Sian and also thanks to Imperial\nCollege for funding her.":
+ "",
+ "This time, use the §0 tactic.": "",
+ "This level proves §0, the multiplicative analogue of Advanced Addition\nWorld's §1. The strategy is to prove that §2 and then use the\nlemma §3 from §4 world.\n\nWe'll prove it using a new and very useful tactic called §5.":
+ "",
+ "This level proves that if §0 then §1 or §2. It is\nlogically equivalent to the last level, so there is a very short proof.":
+ "",
+ "This level proves that if §0 and §1 then §2. One strategy\nis to write both §3 and §4 as §5 of something, deduce that §6 is\nalso §7 of something, and then §8.":
+ "",
+ "This level is more important than you think; it plays\na useful role when battling a big boss later on.":
+ "",
+ "This level asks you to prove *antisymmetry* of §0.\nIn other words, if §1 and §2 then §3.\nIt's the trickiest one so far. Good luck!":
+ "",
+ "This lemma would have been easy if we had known that §0. That theorem\n  is called §1 and it is *true*, but unfortunately its proof *uses* both\n  §2 and §3!\n\n  Let's continue on our journey to §4, the proof of §5.":
+ "",
+ "This is I think the toughest level yet. Tips: if §0 is a number\nthen §1 will split into cases §2 and §3.\nAnd don't go left or right until your hypotheses guarantee that\nyou can prove the resulting goal!\n\nI've left hidden hints; if you need them, retry from the beginning\nand click on \"Show more help!\"":
+ "",
+ "The §0 tactic.": "",
+ "The §0 tactic": "",
+ "The way to start this proof is §0.": "",
+ "The rfl tactic": "",
+ "The reason §0 is because §1.\nSo you should start this proof with §2.": "",
+ "The previous lemma can be used to prove this one.": "",
+ "The next result we'll need in §0 World is that if §1 then §2 and §3.\nLet's prove one of these facts in this level, and the other in the next.\n\n## A new tactic: §4\n\nThe §5 tactic will split an object or hypothesis up into the possible ways\nthat it could have been created.\n\nFor example, sometimes you want to deal with the two cases §6 and §7 separately,\nbut don't need the inductive hypothesis §8 that comes with §9.\nIn this situation you can use §10 instead. There are two ways to make\na number: it's either zero or a successor. So you will end up with two goals, one\nwith §11 and one with §12.\n\nAnother example: if you have a hypothesis §13 then you are done, because a false statement implies\nany statement. Here §14 will close the goal, because there are *no* ways to\nmake a proof of §15! So you will end up with no goals, meaning you have proved everything.":
+ "",
+ "The music gets ever more dramatic, as we explore\nthe interplay between exponentiation and multiplication.\n\nIf you're having trouble exchanging the right §0\nbecause §1 swaps the wrong multiplication,\nthen read the documentation of §2 for tips on how to fix this.":
+ "",
+ "The music dies down. Is that it?\n\nCourse it isn't, you can\nclearly see that there are two levels left.\n\nA passing mathematician says that mathematicians don't have a name\nfor the structure you just constructed. You feel cheated.\n\nSuddenly the music starts up again. This really is the final boss.":
+ "",
+ "The lemma proved in the final level of this world will be helpful\nin Divisibility World.":
+ "",
+ "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\nYou can §3 it §4 any hypothesis of the form §5.":
+ "",
+ "The goal in this level is one of our hypotheses. Solve the goal by executing §0.":
+ "",
+ "The first sub-boss of Multiplication World is §0.\n\nWhen you've proved this theorem we will have \"spare\" proofs\nsuch as §1, which is now easily deducible from §2.\nBut we'll keep hold of these proofs anyway, because it's convenient\nto have exactly the right tool for a job.":
+ "",
+ "The classical introduction game for Lean.": "",
+ "Start with §0. This will change §1 to §2.": "",
+ "Start with §0.": "",
+ "Start with §0, to change the goal into its\ncontrapositive, namely a hypothesis of §1 and a goal of §2.":
+ "",
+ "Start with §0 to push all the brackets to the right.": "",
+ "Start with §0 to do a case split on §1 and §2.": "",
+ "Start with §0 to begin to break §1 down into its definition.": "",
+ "Start with §0 to assume the hypothesis.": "",
+ "Start with §0 to assume the hypothesis and call its proof §1.": "",
+ "Start with §0 to apply §1 to the *goal*.": "",
+ "Start with §0 and §1": "",
+ "Start with §0 and take it from there.": "",
+ "Start with §0 (remembering that §1 is just notation\nfor §2).": "",
+ "Start with induction on §0.": "",
+ "Start by unravelling the §0.": "",
+ "Split into cases §0 and §1 with §2.": "",
+ "Solve this level in one line with §0": "",
+ "So that's the algorithm: now let's use automation to perform it\nautomatically.":
+ "",
+ "Similarly we have §0\nbut we're going to need §1 (guess what it says -- maybe you\nare getting the hang of Lean's naming conventions).\n\nThe last level from addition world might help you in this level.\nIf you can't remember what it is, you can go back to the\nhome screen by clicking the house icon and then taking a look.\nYou won't lose any progress.":
+ "",
+ "See the new \"*\" tab in your lemmas, containing §0 and §1.\nRight now these are the only facts we know about multiplication.\nLet's prove nine more.\n\nLet's start with a warm-up: no induction needed for this one,\nbecause we know §2 is a successor.":
+ "",
+ "See if you can take it from here. Look at the new lemmas and tactic\navailable on the right.":
+ "",
+ "Remember, §0 is *notation* for §1.": "",
+ "Remember that §0 is a proof of §1. Try\n§2ing §3 either §4 or directly to the goal.":
+ "",
+ "Remember that when Lean writes §0, it means §1.\nIf you are not sure where the brackets are in an expression, just hover\nyour cursor over it and look at what gets highlighted. For example,\nhover over both §2 symbols on the left hand side of the goal and\nyou'll see where the invisible brackets are.":
+ "",
+ "Reduce to the previous lemma with §0": "",
+ "Ready for the boss level of this world?": "",
+ "Proofs like §0 and §1 are very tedious to do by hand.\nIn Algorithm World we learn how to get the computer to do them for us.\n\nClick on \"Start\" to proceed.":
+ "",
+ "Precision rewriting": "",
+ "Power World": "",
+ "Our next goal is \"left and right distributivity\",\nmeaning §0 and §1. Rather than\nthese slightly pompous names, the name of the proofs\nin Lean are descriptive. Let's start with\n§2, the proof of §3.\nNote that the left hand side contains a multiplication\nand then an addition.":
+ "",
+ "Our first challenge is §0,\nand we want to prove it by induction. The zero\ncase will need §1 (which we have)\nand §2 (which we don't), so let's\nstart with this.":
+ "",
+ "One of the best named levels in the game, a savage §0\nsub-boss appears as the music reaches a frenzy. What\nelse could there be to prove about powers after this?":
+ "",
+ "One day this game will have a Prime Number World, with a final boss\nof proving that §0 is prime.\nTo do this, we will have to rule out things like §1\nWe will do this by proving that any factor of §2 is at most §3,\nwhich we will do using this lemma. The proof I have in mind manipulates the hypothesis\nuntil it becomes the goal, using §4, §5 and\n§6.":
+ "",
+ "On the set of natural numbers, addition is commutative.\nIn other words, if §0 and §1 are arbitrary natural numbers, then\n§2.":
+ "",
+ "On the set of natural numbers, addition is associative.\nIn other words, if §0 and §1 are arbitrary natural numbers, we have\n§2":
+ "",
+ "Oh no! On the way to §0, a wild §1 appears. §2\nis the proof that §3 for §4 and §5 numbers.\nThis result is what's standing in the way of §6. Again\nwe have the problem that we are adding §7 to things, so we need\nto use induction to split into the cases where §8 and §9 is a successor.":
+ "",
+ "Numbers": "",
+ "Now §0.": "",
+ "Now §0 will work.": "",
+ "Now §0 will change §1 into §2.": "",
+ "Now §0 to cancel the §1s.": "",
+ "Now §0 then §1 works, but §2 is quicker.": "",
+ "Now §0 so you can §1.": "",
+ "Now §0 is the quickest way to\nchange §1 to §2.": "",
+ "Now §0 is a proof that §1, and §2 has vanished. Similarly, you can destruct\n§3 into its parts with §4.":
+ "",
+ "Now §0 finishes the job.": "",
+ "Now §0 and you can probably take it from here.": "",
+ "Now §0 and deal with the two\ncases separately.": "",
+ "Now you need to figure out which number to §0. See if you can take it from here.":
+ "",
+ "Now you have two goals. Once you proved the first, you will jump to the second one.\nThis first goal is the base case §0.\n\nRecall that you can rewrite the proof of any lemma which is visible\nin your inventory, or of any assumption displayed above the goal,\nas long as it is of the form §1.":
+ "",
+ "Now you could finish with §0 then §1, but §2\ndoes it in one line.": "",
+ "Now you can §0.": "",
+ "Now you can §0": "",
+ "Now we can prove the §0 statement by proving the statement on the right,\nso use the §1 tactic.":
+ "",
+ "Now use §0 to switch §1 and §2 on the left\nhand side.": "",
+ "Now the goal can be deduced from §0 by pure logic, so use the §1\ntactic.":
+ "",
+ "Now take apart the existence statement with §0.": "",
+ "Now rewrite §0 backwards to make the goal\nequal to the hypothesis.": "",
+ "Now rewrite §0 backwards at §1\nto get the right hand side.": "",
+ "Now let's §0 our new theorem. Execute §1\nto change §2 to a proof of §3.": "",
+ "Now for the second goal. Here you have the induction hypothesis\n§0, and you need to prove that §1.":
+ "",
+ "Now finish using the §0 tactic.": "",
+ "Now finish the job with §0.": "",
+ "Now finish in one line.": "",
+ "Now change §0 to §1 in §2.": "",
+ "Note: this lemma will be useful for the final boss!": "",
+ "Note that §0 means §1. Put your cursor\non any §2 in the goal or assumptions to see what exactly it's eating.":
+ "",
+ "Note that you can do §0\nand then §1 to solve this level in two lines.": "",
+ "Nice! You've proved §0!\nLet's now prove Peano's other axiom, that successors can't be §1.":
+ "",
+ "Nice!\n\nThe next step in the development of order theory is to develop\nthe theory of the interplay between §0 and multiplication.\nIf you've already done Multiplication World, you're now ready for\nAdvanced Multiplication World. Click on \"Home\" to access it.":
+ "",
+ "Nice!": "",
+ "Next turn §0 into §1 with §2.": "",
+ "Natural Number Game": "",
+ "My proof:\n§0": "",
+ "Multiplication usually makes a number bigger, but multiplication by zero can make\nit smaller. Thus many lemmas about inequalities and multiplication need the\nhypothesis §0. Here is a key lemma that enables us to use this hypothesis.\nTo help us with the proof, we can use the §1 tactic. Click on the tactic's name\non the right to see what it does.":
+ "",
+ "Multiplication is distributive over addition on the left.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "",
+ "Multiplication is commutative.": "",
+ "Multiplication is associative.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "",
+ "Multiplication distributes\nover addition on the left.\n\n§0 is the proof that §1.":
+ "",
+ "Multiplication World": "",
+ "Mathematicians sometimes debate what §0 is;\nthe answer depends, of course, on your definitions. In this\ngame, §1. See if you can prove it.\n\nCheck out the *Pow* tab in your list of theorems\nto see the new proofs which are available.":
+ "",
+ "Mathematicians sometimes argue that §0 is also\na good convention. But it is not a good convention in this\ngame; all the later levels come out beautifully with the\nconvention that §1.":
+ "",
+ "Many people find §0 easy, but some find §1 confusing.\nIf you find it confusing, then just argue forwards.\n\nYou can read more about the §2 tactic in its documentation, which you can view by\nclicking on the tactic in the list on the right.":
+ "",
+ "Let's warm up with an easy one, which works even if §0.": "",
+ "Let's see if you can use the tactics we've learnt to prove §0.\nTry this one by yourself; if you need help then click on \"Show more help!\".":
+ "",
+ "Let's now move on to a more efficient approach to questions\ninvolving numerals, such as §0.":
+ "",
+ "Let's now make our own tactic to do this.": "",
+ "Let's now learn about Peano's second axiom for addition, §0.": "",
+ "Let's now begin our approach to the final boss,\nby proving some more subtle facts about powers.":
+ "",
+ "Let's first get §0 into the form §1 so we can\napply §2. First execute §3\nto change the 4 on the right hand side.":
+ "",
+ "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\ntagged with §2 and every lemma fed to it by the user, as much as it can.\n\nThis level is not a level which you want to solve by hand.\nGet the simplifier to solve it for you.":
+ "",
+ "It's all over! You have proved a theorem which has tripped up\nschoolkids for generations (some of them think §0:\nthis is \"the freshman's dream\").\n\nHow many rewrites did you use? I can do it in 12.\n\nBut wait! This boss is stirring...and mutating into a second more powerful form!":
+ "",
+ "It's \"intuitively obvious\" that there are no numbers less than zero,\nbut to prove it you will need a result which you showed in advanced\naddition world.":
+ "",
+ "Induction on §0 or §1 -- it's all the same in this one.": "",
+ "Induction on §0 is the most troublesome, then §1,\nand §2 is the easiest.":
+ "",
+ "In this world we'll learn how to prove theorems of the form §0.\nIn other words, how to prove theorems of the form \"if §1 is true, then §2 is true.\"\nTo do that we need to learn some more tactics.\n\nThe §3 tactic can be used to close a goal which is exactly one of\nthe hypotheses. It takes the name of the hypothesis as argument: §4.":
+ "",
+ "In this world we define §0 and prove standard facts\nabout it, such as \"if §1 and §2 then §3.\"\n\nThe definition of §4 is \"there exists a number §5\nsuch that §6. \" So we're going to have to learn\na tactic to prove \"exists\" theorems, and another one\nto use \"exists\" hypotheses.\n\nClick on \"Start\" to proceed.":
+ "",
+ "In this world I will mostly leave you on your own.\n\n§0 is the theorem that §1.":
+ "",
+ "In this level, we see inequalities as *hypotheses*. We have not seen this before.\nThe §0 tactic can be used to take §1 apart.":
+ "",
+ "In this level, the hypothesis §0 is an *implication*. It says\nthat *if* §1 *then* §2. We can use this\nhypothesis with the §3 tactic. Remember you can click on\n§4 or any other tactic on the right to see a detailed explanation\nof what it does, with examples.":
+ "",
+ "In this level we're going to prove that §0, where §1 is a secret natural number.\n\nWait, don't we already know that? No! We know that §2, but that's §3.\nThis is §4, which is different.\n\nThe difficulty with proving §5 is that we do not have a *formula* for\n§6 in general, we can only use §7 and §8 once\nwe know whether §9 is §10 or a successor. The §11 tactic splits into these two cases.\n\nThe base case will require us to prove §12, and the inductive step\nwill ask us to show that if §13 then §14. Because\n§15 and successor are the only way to make numbers, this will cover all the cases.\n\nSee if you can do your first induction proof in Lean.\n\n(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\nback to \"Typewriter mode\" by clicking the §16 button in the top right.)":
+ "",
+ "In this level we prove that if §0 and §1 then §2. It is tricky, for\nseveral reasons. One of these is that\nwe need to introduce a new idea: we will need to understand the concept of\nmathematical induction a little better.\n\nStarting with §3 is too naive, because in the inductive step\nthe hypothesis is §4 but what we know is §5,\nso the induction hypothesis does not apply!\n\nAssume §6 is fixed. The actual statement we want to prove by induction on §7 is\n\"for all §8, if §9 then §10\". This *can* be proved by induction,\nbecause we now have the flexibility to change §11.":
+ "",
+ "In this level the *goal* is §0 but to help us we\nhave an *assumption* §1 saying that §2. Check that you can see §3 in\nyour list of assumptions. Lean thinks of §4 as being a secret proof of the\nassumption, rather like §5 is a secret number.\n\nBefore we can use §6, we have to \"substitute in for §7\".\nWe do this in Lean by *rewriting* the goal with §8,\nusing the §9 tactic.":
+ "",
+ "In this game you recreate the natural numbers §0 from the Peano axioms,\nlearning the basics about theorem proving in Lean.\n\nThis is a good first introduction to Lean!":
+ "",
+ "In the next level, we'll do the same proof but backwards.": "",
+ "In the last level, we manipulated the hypothesis §0\n  until it became the goal §1. In this level we'll manipulate\n  the goal until it becomes our hypothesis! In other words, we\n  will \"argue backwards\". The §2 tactic can do this too.\n  Again I will walk you through this one (assuming you're in\n  command line mode).":
+ "",
+ "In the \"base case\" we have a hypothesis §0, and you can deduce anything\nfrom a false statement. The §1 tactic will close this goal.":
+ "",
+ "In some later worlds, we're going to see some much nastier levels,\nlike §0.\nBrackets need to be moved around, and variables need to be swapped.\n\nIn this level, §1,\nlet's forget about the brackets and just think about\nthe variable order.\nTo turn §2 into §3 we need to swap §4 and §5,\nand then swap §6 and §7. But this is easier than you\nthink with §8.":
+ "",
+ "In order to use the tactic §0 you can enter it in the text box\nunder the goal and hit \"Execute\".":
+ "",
+ "In Advanced Addition World we will prove some basic\naddition facts such as §0. The theorems\nproved in this world will be used to build\na theory of inequalities in §1 World.\n\nClick on \"Start\" to proceed.":
+ "",
+ "Implication World": "",
+ "Implementing the algorithm for equality of naturals, and the proof that it is correct,\nlooks like this:\n\n§0\n\nThis Lean code is a formally verified algorithm for deciding equality\nbetween two naturals. I've typed it in already, behind the scenes.\nBecause the algorithm is formally verified to be correct, we can\nuse it in Lean proofs. You can run the algorithm with the §1 tactic.":
+ "",
+ "If §0, §1 and §2 are numbers, we have\n§3": "",
+ "If §0, then §1.": "",
+ "If §0 then §1.": "",
+ "If §0 then §1 or §2 or §3.": "",
+ "If §0 then either §1 or §2.": "",
+ "If §0 or §1, then §2 or §3.": "",
+ "If §0 is a proof of §1 then §2 will\nturn §3s into §4s. But what if we want to\nturn §5s into §6s? To tell the §7 tactic\nwe want this, we use a left arrow §8. Type\n§9 and then hit the space bar to get this arrow.\n\nLet's prove that §10 is the number after the number\nafter §11 again, this time by changing §12\ninto §13.":
+ "",
+ "If §0 is a number, then §1.": "",
+ "If §0 are numbers, then §1.": "",
+ "If §0 are arbitrary natural numbers, we have\n§1.": "",
+ "If §0 and §1, then §2.": "",
+ "If §0 and §1 then we can deduce a contradiction.": "",
+ "If §0 and §1 are numbers, then §2 is a proof\nthat §3 implies §4. Click on this theorem in the *Peano*\ntab for more information.\n\nPeano had this theorem as an axiom, but in Algorithm World\nwe will show how to prove it in Lean. Right now let's just assume it,\nand let's prove §5 using it. Again, we will proceed\nby manipulating our hypothesis until it becomes the goal. I will\nwalk you through this level.":
+ "",
+ "If §0 and §1 are numbers, then either §2 or §3.": "",
+ "If §0 and §1 are natural numbers, and §2, then §3.": "",
+ "If §0 and §1 are arbitrary natural numbers, we have\n§2.": "",
+ "If §0 and §1 are arbitrary natural numbers, then §2": "",
+ "If §0 and we know that §1 then we can deduce §2.": "",
+ "If you §0 the wrong number, you get stuck with a goal you can't prove.\nWhat number will you §1 here?":
+ "",
+ "If you have completed Algorithm World then you can use the §0 tactic\nhere. If not then I'll talk you through a manual approach.":
+ "",
+ "If the goal is not *exactly* a hypothesis, we can sometimes\nuse rewrites to fix things up.":
+ "",
+ "How should we define §0? Just like addition, we need to give definitions\nwhen §1 and when §2 is a successor.\n\nThe zero case is easy: we define §3 to be §4. Now say we know\n§5. What should §6 be? Well, that's §7 §8s,\nso it should be §9.\n\nHere are the definitions in Lean.\n\n  * §10\n  * §11\n\nIn this world, we must not only prove facts about multiplication like §12,\nwe must also prove facts about how multiplication interacts with addition, like §13.\nLet's get started.":
+ "",
+ "How about this for a proof:\n§0": "",
+ "How about this for a proof:\n\n§0\n\nThat's the end of Advanced Addition World! You'll need these theorems\nfor the next world, §1 World. Click on \"Home\" to access it.":
+ "",
+ "Here's what I was thinking of:\n§0": "",
+ "Here's the short proof:\n§0\nThis works because, given §1,\nthe argument is reduced to pure logic.":
+ "",
+ "Here's my solution:\n§0\n\nInducting on §1 or §2 also works, but might take longer.":
+ "",
+ "Here's my solution:\n§0": "",
+ "Here's my proof:\n§0\n\nIf you solved this level then you should be fine with the next level!":
+ "",
+ "Here's my proof:\n§0\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like §1 feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Home\" and\ndecide your route.":
+ "",
+ "Here's my proof:\n§0\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that §1 is a *partial order* on §2.\n\nThe boss level of this world is to prove\nthat §3 is a total order. Let's learn two more easy tactics\nfirst.":
+ "",
+ "Here's my proof:\n§0": "",
+ "Here's a two-liner:\n§0\n\nThis works because §1 is a proof of §2.": "",
+ "Here's a two-line proof:\n§0": "",
+ "Here's a proof using §0:\n§1\n\nand here's an even shorter one using the same idea:\n§2\n\nAlternatively you can just prove it by induction on §3:\n\n§4":
+ "",
+ "Here's a completely backwards proof:\n§0": "",
+ "Here we want to deal with the cases §0 and §1 separately,\nso start with §2.":
+ "",
+ "Here we begin to\ndevelop an algorithm which, given two naturals §0 and §1, returns the answer\nto \"does §2?\"\n\nHere is the algorithm. First note that §3 and §4 are numbers, and hence\nare either §5 or successors.\n\n*) If §6 and §7 are both §8, return \"yes\".\n\n*) If one is §9 and the other is §10, return \"no\".\n\n*) If §11 and §12, then return the answer to \"does §13?\"\n\nOur job now is to *prove* that this algorithm always gives the correct answer. The proof that\n§14 is §15. The proof that §16 is §17, and the proof\nthat §18 is §19. The proof that if §20 then\n§21 is §22 and then §23. This level is a proof of the one\nremaining job we have to do: if §24 then §25.":
+ "",
+ "Here is an example proof of 2+2=4 showing off various techniques.\n\n§0\n\nOptional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\non the §1 button in the top right. You can now see your proof\nwritten as several lines of code. Move your cursor between lines to see\nthe goal state at any point. Now cut and paste your code elsewhere if you\nwant to save it, and paste the above proof in instead. Move your cursor\naround to investigate. When you've finished, click the §2 button in the top right to\nmove back into \"Typewriter mode\".\n\nYou have finished tutorial world!\nClick \"Home\" to go back to the\noverworld, and select Addition World, where you will learn\nabout the §3 tactic.":
+ "",
+ "Having to rearrange variables manually using commutativity and\nassociativity is very tedious. We start by reminding you of this. §0\nis a key component in the first algorithm which we'll explain, but we need\nto prove it manually.\n\nRemember that you can do precision commutativity rewriting\nwith things like §1. And remember that\n§2 means §3.":
+ "",
+ "Good luck!\n\n  One last hint. If §0 then §1 will change *all* §2s into §3s.\n  If you only want to change one of them, say the 3rd one, then use\n  §4.":
+ "",
+ "For any natural number §0, we have §1.": "",
+ "For all numbers §0, §1.": "",
+ "For all numbers §0 and §1, we have\n§2": "",
+ "For all naturals §0, §1.": "",
+ "For all naturals §0, §1, §2, we have §3.": "",
+ "For all naturals §0 §1 §2 and §3, we have\n§4": "",
+ "For all natural numbers §0, we have §1.": "",
+ "For all natural numbers §0, we have\n§1.": "",
+ "For all natural numbers §0 and §1, we have\n§2.": "",
+ "First execute §0 to replace the §1 with §2.": "",
+ "Finally use a targeted §0 to switch §1 and §2.": "",
+ "Fermat's Last Theorem": "",
+ "Every number in Lean is either §0 or a successor. We know how to add §1,\nbut we need to figure out how to add successors. Let's say we already know\nthat §2. What should the answer to §3 be? Well,\n§4 is one bigger than §5, so §6 should be §7,\nthe number one bigger than §8. More generally §9 should\nbe §10. Let's add this as a lemma.\n\n* §11\n\nIf you ever see §12 in your goal, §13 is\nnormally a good idea.\n\nLet's now prove that §14. Figure out how to get §15 into\nthe picture, and then §16. Switch between the §17 (addition) and\n§18 (numerals) tabs under \"Theorems\" on the right to\nsee which proofs you can rewrite.":
+ "",
+ "Do that again!\n\n§0 tries to fill in\nthe arguments to §1 (finding §2) then it replaces all occurrences of\n§3 it finds. Therefor, it did not rewrite §4, yet.":
+ "",
+ "Did you use induction on §0?\nHere's a two-line proof of §1 which uses §2.\nIf you want to inspect it, you can go into editor mode by clicking §3 in the top right\nand then just cut and paste the proof and move your cursor around it\nto see the hypotheses and goal at any given point\n(although you'll lose your own proof this way). Click §4 to get\nback to command line mode.\n§5":
+ "",
+ "Dealing with §0": "",
+ "Congratulations! You've finished Algorithm World. These algorithms\nwill be helpful for you in Even-Odd World (when someone gets around to\nimplementing it).":
+ "",
+ "Congratulations! You have proved Fermat's Last Theorem!\n\nEither that, or you used magic...":
+ "",
+ "Congratulations! You completed your first verified proof!\n\nRemember that §0 is a *tactic*. If you ever want information about the §1 tactic,\nyou can click on §2 in the list of tactics on the right.\n\nNow click on \"Next\" to learn about the §3 tactic.":
+ "",
+ "Concretely: §0.": "",
+ "Can you take it from here? Click on \"Show more help!\" if you need a hint.":
+ "",
+ "Can you take it from here? (note: if you try §0 again, it will\ntake you back to where you started!)":
+ "",
+ "Can you take it from here?": "",
+ "Can you now change the goal into §0?": "",
+ "At this point you see the term §0, so you can use the\ninduction hypothesis with §1.":
+ "",
+ "Assuming §0, we have §1.": "",
+ "Assuming §0 and §1, we have §2.": "",
+ "As warm-up for §0 let's prove §1. To do this we need to\nintroduce Peano's last axiom §2, a proof that §3.\nTo learn about this result, click on it in the list of lemmas on the right.":
+ "",
+ "Arguing backwards": "",
+ "Applying a proof of §0 to the *goal* changes §1 to §2.\nNow try §3 to make the goal more like the hypothesis.":
+ "",
+ "And now §0": "",
+ "And now we've deduced what we wanted to prove: the goal is one of our assumptions.\nFinish the level with §0.":
+ "",
+ "And finally §0.": "",
+ "An algorithm for equality": "",
+ "Although §0 in this game, §1 if §2, i.e., if\n§3 is a successor.": "",
+ "Algorithm World": "",
+ "Advanced Multiplication World": "",
+ "Advanced Addition World": "",
+ "Advanced *Addition* World proved various implications\ninvolving addition, such as §0 and §1.\nThese lemmas were used to prove basic facts about ≤ in ≤ World.\n\nIn Advanced Multiplication World we prove analogous\nfacts about multiplication, such as §2, and\n§3 (assuming §4 in the latter result). This will prepare\nus for Divisibility World.\n\nMultiplication World is more complex than Addition World. In the same\nway, Advanced Multiplication world is more complex than Advanced Addition\nWorld. One reason for this is that certain intermediate results are only\ntrue under the additional hypothesis that one of the variables is non-zero.\nThis causes some unexpected extra twists.":
+ "",
+ "Addition is distributive over multiplication.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "",
+ "Addition World": "",
+ "Adding zero": "",
+ "A two-line proof is\n\n§0\n\nWe now have all the tools necessary to set up the basic theory of divisibility of naturals.":
+ "",
+ "A proof that §0.": "",
+ "A passing mathematician remarks that with reflexivity and transitivity out of the way,\nyou have proved that §0 is a *preorder* on §1.":
+ "",
+ "A passing mathematician notes that you've proved\nthat the natural numbers are a commutative semiring.\n\nIf you want to begin your journey to the final boss, head for Power World.":
+ "",
+ "A passing mathematician congratulates you on proving that naturals\nare an additive commutative monoid.\n\nLet's practice using §0 and §1 in one more level,\nbefore we leave addition world.":
+ "",
+ "2+2=4": "",
+ "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.\nTo make it a bit less painful, I have unfolded all of the numerals for you.\nSee if you can use §0 and §1 to prove this.":
+ "",
+ "2 + 2 ≠ 5": "",
+ "1 ≠ 0": "",
+ "0 ≤ x": "",
+ "*Game version: 4.3*\n\n*Recent additions: bug fixes*\n\n## Progress saving\n\nThe game stores your progress in your local browser storage.\nIf you delete it, your progress will be lost!\n\nWarning: In most browsers, deleting cookies will also clear the local storage\n(or \"local site data\"). Make sure to download your game progress first!\n\n## Credits\n\n* **Creators:** Kevin Buzzard, Jon Eugster\n* **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar\n* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.\n* **Additional thanks:** All the student beta testers, all the schools\nwho invited Kevin to speak, and all the schoolkids who asked him questions\nabout the material.\n\n## Resources\n\n* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n* [Original Lean3 version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no longer maintained)\n\n## Problems?\n\nPlease ask any questions about this game in the\n[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in\nthe stream \"New Members\". The community will happily help. Note that\nthe Lean Zulip chat is a professional research forum.\nPlease use your full real name there, stay on topic, and be nice. If you're\nlooking for somewhere less formal (e.g. you want to post natural number\ngame memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).\n\nAlternatively, if you experience issues / bugs you can also open github issues:\n\n* For issues with the game engine, please open an\n[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n* For issues about the game's content, please open an\n[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo.":
+ "",
+ "## The birth of number.\n\nNumbers in Lean are defined by two rules.\n\n* §0 is a number.\n* If §1 is a number, then the *successor* §2 of §3 is a number.\n\nThe successor of §4 means the number after §5. Let's learn to\ncount, and name a few small numbers.\n\n## Counting to four.\n\n§6 is a number, so §7 is a number. Let's call this new number §8.\nSimilarly let's define §9, §10 and §11.\nThis gives us plenty of numbers to be getting along with.\n\nThe *proof* that §12 is called §13.\nCheck out the \"012\" tab in the list of lemmas on the right\nfor this and other proofs.\n\nLet's prove that §14 is the number after the number after zero.":
+ "",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.\n\"\n\nTacticDoc nth_rewrite \"\n## Summary\n\nIf §5 and there are several §6s in the goal, then\n§7 will just change the third §8 to a §9.\n\n## Example\n\nIf the goal is §10 then §11\nwill change the goal to §12. In contrast, §13\nwill change the goal to §14.":
+ "",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.":
+ "",
+ "## Summary\n\n§0 proves goals of the form §1.\n\nIn other words, the §2 tactic will close any goal of the\nform §3 if §4 and §5 are *identical*.\n\n§6 is short for \\\\\"reflexivity (of equality)\\\\\".\n\n## Example:\n\nIf the goal looks like this:\n\n§7\n\nthen §8 will close it. But if it looks like §9 then §10 won't work, because even\nthough §11 and §12 are always equal as *numbers*, they are not equal as *terms*.\nThe only term which is identical to §13 is §14.\n\n## Details\n\n§15 is short for \\\\\"reflexivity of equality\\\\\".\n\n## Game Implementation\n\n*Note that our §16 is weaker than the version used in core Lean and §17,\nfor pedagogical purposes; mathematicians do not distinguish between propositional\nand definitional equality because they think about definitions in a different way\nto type theorists (§18 and §19 are both \\\\\"facts\\\\\" as far\nas mathematicians are concerned, and who cares what the definition of addition is).*":
+ "",
+ "## Summary\n\nThe §0 tactic will change a goal or hypothesis of\nthe form §1 to §2. It will also work on §3\nand on §4.\n\n### Example\n\nIf the goal is §5 then §6 will change it to §7.\n\n### Example\n\nIf §8 then §9 will change §10 to §11.":
+ "",
+ "## Summary\n\nThe §0 tactic makes progress with goals which claim something *exists*.\nIf the goal claims that some §1 exists with some property, and you know\nthat §2 will work, then §3 will make progress.\n\nBecause §4 is notation for \\\\\"there exists §5 such that §6\\\\\",\nyou can make progress on goals of the form §7 by §8ing the\nnumber which is morally §9 (i.e. §10)\n\nAny of the following examples is possible assuming the type of the argument passed to the §11 function is accurate:\n\n- §12\n- §13\n- §14":
+ "",
+ "## Summary\n\nIf §0 is an object, and the goal mentions §1, then §2\nattempts to prove the goal by induction on §3, with the inductive\nvariable in the successor case being §4, and the inductive hypothesis being §5.\n\n### Example:\nIf the goal is\n§6\n\nthen\n\n§7\n\nwill turn it into two goals. The first is §8;\nthe second has an assumption §9 and goal\n§10.\n\nNote that you must prove the first\ngoal before you can access the second one.":
+ "",
+ "## Summary\n\nIf §0 is a proof that §1, and §2 is a proof of §3,\nthen §4 will change §5 to a proof of §6. The idea is that if\nyou know §7 is true, then you can deduce from §8 that §9 is true.\n\nIf the *goal* is §10, then §11 will \\\\\"argue backwards\\\\\" and change the\ngoal to §12. The idea here is that if you want to prove §13, then by §14\nit suffices to prove §15, so you can reduce the goal to proving §16.\n\n### Example:\n\n§17 is a proof that §18.\n\nSo if you have a hypothesis §19\nthen §20 will change §21 to §22.\nYou could write §23\nbut Lean is smart enough to figure out the inputs to §24.\n\n### Example\n\nIf the goal is §25, then §26 will turn the\ngoal into §27.":
+ "",
+ "## Summary\n\nIf §0 is a proof of an equality §1, then §2 will change\nall §3s in the goal to §4s. It's the way to \\\\\"substitute in\\\\\".\n\n## Variants\n\n* §5 (changes §6s to §7s; get the back arrow by typing §8 or §9.)\n\n* §10 (a sequence of rewrites)\n\n* §11 (changes §12s to §13s in hypothesis §14)\n\n* §15 (changes §16s to §17s in two hypotheses and the goal;\nget the §18 symbol with §19.)\n\n* §20 will keep changing §21 to §22\nuntil there are no more matches for §23.\n\n* §24 will change only the second §25 in the goal to §26.\n\n### Example:\n\nIf you have the assumption §27 and your goal is\n§28\n\nthen\n\n§29\n\nwill change the goal into §30, and then\n\n§31\n\nwill change the goal into §32, which\ncan be solved with §33.\n\n### Example:\n\nYou can use §34 to change a hypothesis as well.\nFor example, if you have two hypotheses\n§35\nthen §36 will turn §37 into §38.\n\n## Common errors\n\n* You need the square brackets. §39 is never correct.\n\n* If §40 is not a *proof* of an *equality* (a statement of the form §41),\nfor example if §42 is a function or an implication,\nthen §43 is not the tactic you want to use. For example,\n§44 is never correct: §45 is the theorem *statement*,\nnot the proof. If §46 is the proof, then §47 will work.\n\n## Details\n\nThe §48 tactic is a way to do \\\\\"substituting in\\\\\". There\nare two distinct situations where you can use this tactic.\n\n1) Basic usage: if §49 is an assumption or\nthe proof of a theorem, and if the goal contains one or more §50s, then §51\nwill change them all to §52s. The tactic will error\nif there are no §53s in the goal.\n\n2) Advanced usage: Assumptions coming from theorem proofs\noften have missing pieces. For example §54\nis a proof that §55 because §56 really is a function,\nand §57 is the input. In this situation §58 will look through the goal\nfor any subterm of the form §59, and the moment it\nfinds one it fixes §60 to be §61 then changes all §62s to §63s.\n\nExercise: think about why §64 changes the term\n§65 to\n§66\n\nIf you can't remember the name of the proof of an equality, look it up in\nthe list of lemmas on the right.\n\n## Targeted usage\n\nIf your goal is §67 and you want to rewrite §68\nto §69, then §70 will not work because Lean finds another\naddition first and swaps those inputs instead. Use §71 to\nguarantee that Lean rewrites §72 to §73. This works because\n§74 is a proof that §75, §76 is a proof\nthat §77, and §78 is a proof that §79.\n\nIf §80 then §81 will turn all §82s into §83s.\nIf you only want to change the 37th occurrence of §84\nto §85 then do §86.":
+ "",
+ "## Summary\n\nIf §0 is a number, then §1 will break the goal into two goals,\none with §2 and the other with §3.\n\nIf §4 is a proof (for example a hypothesis), then §5 will break the\nproof up into the pieces used to prove it.\n\n## Example\n\nIf §6 is a number, then §7 will break the goal into two goals,\none with §8 replaced by 0 and the other with §9 replaced by §10. This\ncorresponds to the mathematical idea that every natural number is either §11\nor a successor.\n\n## Example\n\nIf §12 is a hypothesis, then §13 will turn one goal\ninto two goals, one with a hypothesis §14 and the other with a\nhypothesis §15.\n\n## Example\n\nIf §16 is a hypothesis, then §17 will turn one goal into no goals,\nbecause there are no ways to make a proof of §18! And if you have no goals left,\nyou have finished the level.\n\n## Example\n\nIf §19 is a hypothesis, then §20 will create a new number §21\nand a proof §22. This is because the *definition* of §23 is\n§24.":
+ "",
+ "## Summary\n\nIf §0 and there are several §1s in the goal, then\n§2 will just change the third §3 to a §4.\n\n## Example\n\nIf the goal is §5 then §6\nwill change the goal to §7. In contrast, §8\nwill change the goal to §9.":
+ "",
+ "## Summary\n\nIf the goal is §0, then §1 will introduce §2 as a hypothesis,\nand change the goal to §3. Mathematically, it says that to prove §4,\nwe can assume §5 and then prove §6.\n\n### Example:\n\nIf your goal is §7 (the way Lean writes §8)\nthen §9 will give you a hypothesis §10 named §11, and the goal\nwill change to §12.":
+ "",
+ "## Summary\n\nIf the goal is a statement §0, then §1 will close the goal if §2 is a proof of §3.\n\n### Example\n\nIf the goal is §4 and you have a hypothesis §5\nthen §6 will solve the goal.\n\n### Example\n\nIf the goal is §7 then §8 will close the goal.\n\n### Exact needs to be exactly right\n\nNote that §9 will *not work* in the previous example;\nfor §10 to work, §11 has to be *exactly* a proof of the goal.\n§12 is a proof of §13 or, if you like,\na proof of §14 where §15 needs to be supplied by the user.\nThis is in contrast to §16 and §17, which will \\\\\"guess the inputs\\\\\"\nif necessary. If the goal is §18 then §19\nand §20 will both change the goal to §21,\nbecause §22 guesses the input to the function §23.":
+ "",
+ "## Precision rewriting\n\nIn the last level, there was §0 and §1,\nand §2 changed the first one it saw,\nwhich was §3. Let's learn how to tell Lean\nto change §4 first by giving §5 an\nexplicit input.":
+ "",
+ "# Welcome to the Natural Number Game\n#### An introduction to mathematical proof.\n\nIn this game, we will build the basic theory of the natural\nnumbers §0 from scratch. Our first goal is to prove\nthat §1. Next we'll prove that §2.\nAnd at the end we'll see if we can prove Fermat's Last Theorem.\nWe'll do this by solving levels of a computer puzzle game called Lean.\n\n# Read this.\n\nLearning how to use an interactive theorem prover takes time.\nTests show that the people who get the most out of this game are\nthose who read the help texts like this one.\n\nTo start, click on \"Tutorial World\".\n\nNote: this is a new Lean 4 version of the game containing several\nworlds which were not present in the old Lean 3 version. More new worlds\nsuch as Strong Induction World, Even/Odd World and Prime Number World\nare in development; if you want to see their state or even help out, checkout\nout the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).\n\n## More\n\nClick on the three lines in the top right and select \"Game Info\" for resources,\nlinks, and ways to interact with the Lean community.":
+ "",
+ "# Summary\nThe §0 tactic changes a goal of §1 into a goal of §2.\nUse it when your hypotheses guarantee that the reason that §3\nis true is because in fact §4 is true.\n\nInternally this tactic is just §5ing a theorem\nsaying that §6\n\nNote that this tactic can turn a solvable goal into an unsolvable\none.":
+ "",
+ "# Summary\n\n§0 will solve the goal §1.": "",
+ "# Summary\n\n§0 will attempt to solve a goal if it can find an algorithm which it\ncan run to solve it.\n\n## Example\n\nA term of type §1 is an algorithm to decide whether two naturals\nare equal or different. Hence, once this term is made and made into an §2,\nthe §3 tactic can use it to solve goals of the form §4 or §5.":
+ "",
+ "# Summary\n\nThe §0 tactic will solve any goal which can be solved purely by logic (that is, by\ntruth tables).\n\n## Details\n\n§1 *does not do magic*! It doesn't know *anything* about addition or multiplication,\nit doesn't even know §2. The only things that §3 knows about numbers\nare firstly that §4 and secondly that §5, §6, §7 and so on.\nWhat §8's strength is, is *logic*. If you have a hypothesis §9\nand another hypothesis §10 and your goal is §11 then §12 will\nsolve this goal, because to solve that goal you don't need to know any facts\nabout inequalities or addition, all you need to know is the rules of logic.\n\n## Example\n\nIf you have §13 as a hypothesis, then §14 will solve\nthe goal. This is because a false hypothesis implies any hypothesis.\n\n## Example\n\nIf your goal is §15, then §16 will solve the goal.\n\n## Example\n\nIf you have two hypotheses §17 and §18 then §19 will\nsolve the goal because it can prove §20 from your hypotheses, and thus\nprove the goal (as §21 implies anything).\n\n## Example\n\nIf you have one hypothesis §22 then §23 will solve the goal because\n§24 is smart enough to know that §25 is true, which gives the contradiction we seek.\n\n## Example\n\nIf you have a hypothesis §26 then §27 will solve the goal, because\n§28 knows §29 and this is enough to prove §30, which implies any goal.\n\n## Example\n\nIf you have a hypothesis of the form §31 and your goal is §32, then\n§33 will solve the goal, because the goal is logically equivalent to the hypothesis.\nIf you switch the goal and hypothesis in this example, §34 would solve it too.":
+ "",
+ "# Summary\n\nThe §0 tactic can be used to add new hypotheses to a level, but of course\nyou have to prove them.\n\n\n## Example\n\nThe simplest usage is like this. If you have §1 in your context and you execute\n\n§2\n\nthen you will get a new goal §3 to prove, and after you've proved\nit you will have a new hypothesis §4 in your original goal.\n\n## Example\n\nIf you already have a proof of what you want to §5, you\ncan just create it immediately. For example, if you have §6 and §7\nnumber objects, then\n\n§8\n\nwill directly add a new hypothesis §9\nto the context, because you just supplied the proof of it (§10).\n\n## Example\n\nIf you have a proof to hand, then you don't even need to state what you\nare proving. For example\n\n§11\n\nwill add §12 as a hypothesis.":
+ "",
+ "# Summary\n\nIf you have a hypothesis\n\n§0\n\nand goal\n\n§1\n\nthen §2 replaces the set-up with its so-called \\\\\"contrapositive\\\\\":\na hypothesis\n\n§3\n\nand goal\n\n§4.":
+ "",
+ "# Statement\n\nIf §0 and §1 are numbers, then\n§2 is the proof that\n§3.\n\n## More technical details\n\nThere are other ways to think about §4.\n\nYou can think about §5 itself as a function which takes two\nnumbers §6 and §7 as input, and outputs a proof of\n§8.\n\nYou can think of §9 itself as a proof; it is the proof\nthat §10 is an injective function. In other words,\n§11 is a proof of\n§12.\n\n§13 was postulated as an axiom by Peano, but\nin Lean it can be proved using §14, a mathematically\npathological function.":
+ "",
+ "# Read this first\n\nEach level in this game involves proving a mathematical theorem (the \"Goal\").\nThe goal will be a statement about *numbers*. Some numbers in this game have known values.\nThose numbers have names like §0. Other numbers will be secret. They're called things\nlike §1 and §2. We know §3 is a number, we just don't know which one.\n\nIn this first level we're going to prove the theorem that §4.\nYou can see §5 in the *Objects* below, which means that §6 and §7\nare numbers.\n\nWe solve goals in Lean using *Tactics*, and the first tactic we're\ngoing to learn is called §8, which proves all theorems of the form §9.\n\nProve that §10 by executing the §11 tactic.":
+ "",
+ "# Overview\n\nOur home-made tactic §0 will solve arbitrary goals of\nthe form §1.":
+ "",
+ "# Overview\n\nLean's simplifier, §0, will rewrite every lemma\ntagged with §1 and every lemma fed to it by the user, as much as it can.\nFurthermore, it will attempt to order variables into an internal order if fed\nlemmas such as §2, so that it does not go into an infinite loop.":
+ ""}
