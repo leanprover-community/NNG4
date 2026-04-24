@@ -2103,7 +2103,7 @@ msgid ""
 "can usually stick to §6 unless you need real precision."
 msgstr ""
 "§0は§1の証明なので、それが書き換えられた理由です。\n"
-"現在、§2を§3に変更することができます。通常は§6を使用していれば問題ありませんが、実際の精度が必要な場合は§4や§5を使用してください。"
+"さて、§4や§5を使用して§2を§3に変更することができます。よほどの精度が必要でなければ通常は§6を使用していれば問題ありません。"
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
 msgid "add_right_cancel"
@@ -2257,7 +2257,7 @@ msgstr "pow_add"
 #: Game.Levels.Tutorial.L06add_zero2 Game.Levels.LessOrEqual.L08le_total
 #. §0: `rw [add_zero c]`
 msgid "Try §0."
-msgstr "試してみましょう§0。"
+msgstr "§0を試しましょう。"
 
 #: Game
 #. §0: `{0,1,2,3,4,...}`
@@ -2773,7 +2773,7 @@ msgstr "推論ワールド"
 #: Game.Levels.Tutorial.L06add_zero2
 #. §0: `add_succ`
 msgid "Let's now learn about Peano's second axiom for addition, §0."
-msgstr "## ペアノの加法に関する第2の公理について、§0 を学んでみましょう。"
+msgstr "ペアノの加法に関する第2の公理について、§0 を学んでみましょう。"
 
 #: Game.Levels.Algorithm.L03add_algo2 Game.Levels.Algorithm.L04add_algo3
 #. §0: $a, b,\\ldots h$
@@ -3959,10 +3959,10 @@ msgid ""
 "to change §4 first by giving §5 an\n"
 "explicit input."
 msgstr ""
-"## 精度の再編纂\n"
+"## 精密な書き換え\n"
 "\n"
-"最後のレベルでは、§0 と §1 があり、\n"
-"§2 は最初に見つけたものを §3 に変更しました。\n"
+"前のレベルでは、§0 と §1 があり、\n"
+"§2 は最初に見つけた§3を変更しました。\n"
 "Lean に §4 を最初に変更させる方法を学びましょう。\n"
 "§5 に明示的な入力を与えることで実現します。"
 
@@ -6542,10 +6542,7 @@ msgstr " WELL DONE!"
 
 #: Game.Levels.Tutorial.L06add_zero2
 msgid "Precision rewriting"
-msgstr ""
-"精密な書き換え\n"
-"\n"
-"##"
+msgstr "精密な書き換え"
 
 #: Game.Levels.Multiplication.L07mul_add
 #. §0: $a(b+c)=ab+ac$
