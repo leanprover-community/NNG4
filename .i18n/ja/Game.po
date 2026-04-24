@@ -150,7 +150,7 @@ msgid ""
 "after §11 again, this time by changing §12\n"
 "into §13."
 msgstr ""
-"もし§0が§1の証明であるなら、§2は§3を§4に変換します。しかし、§5を§6に変換したい場合怎么办？§7"
+"もし§0が§1の証明であるなら、§2は§3を§4に変換します。しかし、§5を§6に変換したい場合は？§7"
 "タクティクに私たちがこの変換を指示するには、左矢印§8を使用します。型§9を入力し、スペースバーを押すとこの矢印が得られます。\n"
 "\n"
 "次の証明で、§10が§11の後ろの数値の後ろの数値であることを証明しましょう。今回は§12を§13に変換して証明します。"
@@ -244,7 +244,7 @@ msgstr ""
 #. §1: `succ 0`
 #. §2: `1`
 msgid "Try §0 to change §1 into §2."
-msgstr "試してみて §0 を使用し、§1 を §2 に変換してください。"
+msgstr "§0 を使用し、§1 を §2 に変換してみてください。"
 
 #: Game.Levels.Tutorial.L07add_succ
 #. §0: `1`
@@ -1954,7 +1954,7 @@ msgstr ""
 #. §1: `succ 1`
 #. §2: `2`
 msgid "Now §0 will change §1 into §2."
-msgstr "現在、§0は§1を§2に変換します。"
+msgstr "§0は§1を§2に変換します。"
 
 #: Game.Levels.Implication.L07intro2
 #. §0: ```
@@ -6258,7 +6258,7 @@ msgstr ""
 #: Game.Levels.Tutorial.L04rw_backwards
 #. §0: `2 = 2`
 msgid "Can you now change the goal into §0?"
-msgstr "現在、目標を§0に変更できますか？"
+msgstr "目標を§0に変更できますか？"
 
 #: Game.Levels.Power.L09add_sq
 msgid "add_sq"
@@ -7008,12 +7008,7 @@ msgstr ""
 
 #: Game.Levels.Tutorial.L04rw_backwards
 msgid "rewriting backwards"
-msgstr ""
-"反転して書き換えます\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"反転して書き換えます"
+msgstr "反転して書き換え\n"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `use`
