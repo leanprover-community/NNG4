@@ -575,11 +575,7 @@ msgstr ""
 
 #: Game.Levels.Addition
 msgid "Addition World"
-msgstr ""
-" Addition World\n"
-"\n"
-"## 日本語翻訳\n"
-"ワールド::加算"
+msgstr "加算ワールド"
 
 #: Game.Levels.Implication.L01exact
 #. §0: `P`
