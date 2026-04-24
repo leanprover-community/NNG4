@@ -1395,23 +1395,6 @@ msgid ""
 "It is distinct from the Lean natural numbers §5, which should hopefully\n"
 "never leak into the natural number game.*"
 msgstr ""
-"### 原文 (English)\n"
-"§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. "
-"It's\n"
-"defined via two rules:\n"
-"\n"
-"* §1 (zero is a number)\n"
-"* §2 (the successor of a number is a number)\n"
-"\n"
-"## Game Implementation\n"
-"\n"
-"*The game uses its own copy of the natural numbers, called §3 with notation "
-"§4.\n"
-"It is distinct from the Lean natural numbers §5, which should hopefully\n"
-"never leak into the natural number game.*\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
 "§0は自然数で、このゲームでは単に「数」呼ばれる。これは以下の2つのルールにより定義される：\n"
 "\n"
 "* §1（ゼロは数）\n"
@@ -1857,7 +1840,7 @@ msgstr ""
 msgid ""
 "Can you take it from here? (note: if you try §0 again, it will\n"
 "take you back to where you started!)"
-msgstr "Can you continue from here? (注: §0を再度試すと、元の場所に戻ってしまいます!)"
+msgstr "ここから続けられますか？(注: §0を再度試すと、元の場所に戻ってしまいます!)"
 
 #: Game.Levels.Power.L05pow_two
 #. §0: `pow_two a`
@@ -3087,11 +3070,7 @@ msgstr ""
 #. §0: `rfl`
 msgid "Now finish the job with §0."
 msgstr ""
-"現在の作業を完了してください。§0\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"現在の作業を完了してください。§0"
+"§0で現在の作業を完了してください。\n"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `nth_rewrite 2 [← mul_one a] at h`
@@ -5237,7 +5216,7 @@ msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Can you take it from here?"
-msgstr "您可以继续了吗？"
+msgstr "ここから続けられますか？"
 
 #: Game.Levels.Power.L07mul_pow
 msgid "mul_pow"
@@ -6060,11 +6039,7 @@ msgstr ""
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 msgid "Numbers"
-msgstr ""
-"数値\n"
-"\n"
-"\n"
-"##"
+msgstr "数値"
 
 #: Game.Levels.Tutorial.L07add_succ
 #. §0: `rfl`
@@ -6914,7 +6889,7 @@ msgstr ""
 msgid ""
 "Note that you can do §0\n"
 "and then §1 to solve this level in two lines."
-msgstr "注文しますと、§0 を実行し、その後 §1 を実行することで、このレベルを二行で解くことができます。"
+msgstr "§0 を実行し、その後 §1 を実行することで、このレベルを二行で解くことができることを留意してください。"
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 msgid "add_right_eq_zero"
