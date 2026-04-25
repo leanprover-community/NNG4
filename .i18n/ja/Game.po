@@ -117,11 +117,6 @@ msgid ""
 "§1."
 msgstr ""
 "すべての自然数 §0 に対して、\n"
-"§1.\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"すべての自然数 §0 に対して、\n"
 "§1."
 
 #: Game.Levels.Tutorial.L04rw_backwards
@@ -2420,12 +2415,7 @@ msgstr "もし§0であるなら、§1または§2のいずれかである。"
 
 #: Game.Levels.Addition.L02succ_add
 msgid "succ_add"
-msgstr ""
-"succ_add\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"成功加算"
+msgstr "succ_add"
 
 #: Game.Levels.Algorithm.L02add_algo1
 #. §0: `add_comm`
@@ -4758,9 +4748,9 @@ msgid ""
 "we have the problem that we are adding §7 to things, so we need\n"
 "to use induction to split into the cases where §8 and §9 is a successor."
 msgstr ""
-"Oh no!  §0 に向かう途中で、野生の §1 が現れました。 §2 は、 §3 が §4 と §5 "
+"うわあ!  §0 に向かう途中で、野生の §1 が現れました。 §2 は、 §3 が §4 と §5 "
 "の数値に対して成り立つことを証明しています。この結果が §6 の道を阻んでいます。また\n"
-"私たちは §7 を何かに加算している問題に直面しており、そのためには §8 と §9 が後继者である場合に分けて帰納法を使用する必要があります。"
+"私たちは §7 を何かに加算している問題に直面しており、そのためには §8 と §9 が後者である場合に分けて帰納法を使用する必要があります。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 #. §0: `simp`
@@ -5828,7 +5818,7 @@ msgstr ""
 
 #: Game.Levels.Addition.L02succ_add
 msgid "Well done! You now have enough tools to tackle the main boss of this level."
-msgstr " WELL DONE! あなたはこのレベルの主要ボスに挑むための十分なツールを手に入れました。"
+msgstr "よくできました! あなたはこのレベルのメインボスに挑むための十分なツールを手に入れました。"
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 #. §0: `use`
