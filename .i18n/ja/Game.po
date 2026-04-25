@@ -1211,12 +1211,6 @@ msgid ""
 msgstr ""
 "自然数の集合において、加算は交換律を満たします。\n"
 "つまり、任意の自然数 §0 と §1 に対して、\n"
-"§2.\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"自然数の集合において、加算は交換律を満たします。\n"
-"つまり、任意の自然数 §0 と §1 に対して、\n"
 "§2."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
@@ -4458,13 +4452,7 @@ msgstr ""
 
 #: Game.Levels.Addition.L03add_comm
 msgid "add_comm (level boss)"
-msgstr ""
-"add_comm (レベルボス)\n"
-"\n"
-"\n"
-"## 備考\n"
-"- `add_comm` は「加算の交換律を追加する」という意味です。\n"
-"- `level boss` は「レベルボス」と翻訳しています。"
+msgstr "add_comm (レベルボス)\n"
 
 #: Game.Levels.Multiplication.L02zero_mul
 #. §0: `mul_comm x y : x * y = y * x`
@@ -6760,7 +6748,7 @@ msgid ""
 "Look in your inventory to see the proofs you have available.\n"
 "These should be enough."
 msgstr ""
-"[boss battle music]\n"
+"[ボスバトルミュージック]\n"
 "\n"
 "あなたのインベントリを確認して、利用可能な証明を確認してください。\n"
 "これらの証明は十分なはずです。"
