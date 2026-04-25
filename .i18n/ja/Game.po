@@ -6210,7 +6210,7 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L06two_mul
 msgid "two_mul"
-msgstr "二倍定理"
+msgstr "two_mul"
 
 #: Game.Levels.Algorithm.L04add_algo3
 msgid "the simplest approach"
