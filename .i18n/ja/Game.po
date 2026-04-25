@@ -5516,18 +5516,7 @@ msgid ""
 "§2."
 msgstr ""
 "すべての自然数 §0 および §1 に対して、\n"
-"§2.\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"すべての自然数 §0 および §1 に対して、\n"
-"§2.\n"
-"\n"
-"\n"
-"### 説明\n"
-"- `§0`, `§1`, `§2` はコードブロックやLaTeX数式を表すプレースホルダーであり、位置を維持しています。\n"
-"- `<##>` などのタグは使用されていません。\n"
-"- トーンはLean 4学習者向けで、丁寧かつ簡潔な表現にしています。"
+"§2。"
 
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
@@ -5790,12 +5779,12 @@ msgid ""
 "home screen by clicking the house icon and then taking a look.\n"
 "You won't lose any progress."
 msgstr ""
-"Similarly we have §0\n"
-"but we're going to need §1 (guess what it says -- maybe you\n"
-"are getting the hang of Lean's naming conventions).\n"
+"同様に §0 もありますが、§1 が必要になります\n"
+"(何と書いてあるか想像してみてください。\n"
+"Lean の命名規則が分かってきたかもしれません)。\n"
 "\n"
-"最後のレベルから加算ワールドが提供されるかもしれません。\n"
-"記憶が曖昧な場合は、家アイコンをクリックしてホーム画面に戻り、確認してください。\n"
+"加算ワールドの最後のレベルがこのレベルを攻略するのに役立つかもしれません。\n"
+"記憶が曖昧な場合は、ホームアイコンをクリックしてホーム画面に戻り、確認してください。\n"
 "進捗は失われません。"
 
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.LessOrEqual.L04le_trans
@@ -5808,12 +5797,7 @@ msgstr "開始します。§0。"
 
 #: Game.Levels.Multiplication.L03succ_mul
 msgid "succ_mul"
-msgstr ""
-"succ_mul\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"成功倍加"
+msgstr "succ_mul"
 
 #: Game.Levels.Algorithm.L01add_left_comm
 #. §0: `add_left_comm`
