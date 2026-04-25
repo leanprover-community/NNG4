@@ -760,7 +760,7 @@ msgstr ""
 #: Game.Levels.Implication.L03apply
 #. §0: `apply`
 msgid "The §0 tactic."
-msgstr "The タクティク tactic."
+msgstr "タクティク §0"
 
 #: Game.Levels.Implication.L01exact
 #. §0: `exact h1`
@@ -1059,8 +1059,8 @@ msgid ""
 "§4 or any other tactic on the right to see a detailed explanation\n"
 "of what it does, with examples."
 msgstr ""
-"このレベルでは、仮定§0は「 implication（ implication）」です。これは「§1 ならば §2」という意味です。この仮定は§3 "
-"tacticを使用して利用できます。右側の任意のtactic（例：§4）をクリックすることで、その詳細な説明と例を見ることができます。"
+"このレベルでは、仮定§0は *含意* です。これは「§1 ならば §2」という意味です。この仮定は§3 "
+"タクティクを使用して利用できます。右側の任意のタクティク（例：§4）をクリックすることで、その詳細な説明と例を見ることができます。"
 
 #: Game.Levels.Tutorial.L01rfl
 #. §0: $37$
@@ -1765,7 +1765,7 @@ msgstr ""
 #: Game.Levels.Implication.L03apply
 #. §0: `exact`
 msgid "Now finish using the §0 tactic."
-msgstr "現在、§0 タクティクを使用して完了してください。"
+msgstr "§0 タクティクを使用して完了してください。"
 
 #: Game.Levels.Power
 #. §0: `37 ^ n`
@@ -2798,7 +2798,7 @@ msgstr "§0は§1を§2に変換します。"
 #. §1: `h1`
 #. §2: `y = 42`
 msgid "Start with §0. This will change §1 to §2."
-msgstr "開始します。§0を入力すると、§1が§2に変更されます。"
+msgstr "0を入力して開始します。すると、§1が§2に変更されます。"
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "[dramatic music]. Now are you ready to face the first boss of the game?"
