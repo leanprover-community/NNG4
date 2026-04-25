@@ -585,7 +585,7 @@ msgstr ""
 #. §0: `apply succ_inj at h`
 #. §1: `succ`
 msgid "Now §0 to cancel the §1s."
-msgstr "現在、§0を用いて§1sをキャンセルします。"
+msgstr "§0を用いて§1を消去します。"
 
 #: Game.Levels.Addition
 #. §0: `induction`
@@ -997,13 +997,8 @@ msgid ""
 "Try this one by yourself; if you need help then click on \"Show more "
 "help!\"."
 msgstr ""
-"Let's see if you can use the tactics we've learnt to prove §0.\n"
-"Try this one by yourself; if you need help then click on \"Show more "
-"help!\".\n"
-"\n"
-"## 翻訳\n"
 "タクティクを用いて§0を証明できるかどうか試してみてください。\n"
-"自分で試してみてください；手助けが必要であれば「詳細な手助けを表示！」をクリックしてください。"
+"自分で試してみてください；手助けが必要であれば「より多くのヘルプを表示！」をクリックしてください。"
 
 #: Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
@@ -1552,12 +1547,7 @@ msgstr "次に、§0 を §1 に変更し、§2 を実行します。"
 
 #: Game.Levels.Implication.L07intro2
 msgid "intro practice"
-msgstr ""
-"## intro practice\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"入門練習"
+msgstr "intro 練習"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: `n : ℕ`
@@ -1821,10 +1811,7 @@ msgid ""
 "§0"
 msgstr ""
 "以下は完全に逆順の証明です:\n"
-"§0\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
+"§0"
 
 #: Game.Levels.LessOrEqual.L05le_zero
 msgid "x ≤ 0 → x = 0"
@@ -1916,7 +1903,7 @@ msgstr ""
 #: Game.Levels.Implication.L07intro2
 #. §0: `intro h`
 msgid "Start with §0 to assume the hypothesis."
-msgstr "開始するには、§0 を使用して仮定を仮定します。"
+msgstr "§0 を使用して仮定を導入します。"
 
 #: Game.Levels.Multiplication.L04mul_comm
 msgid "mul_comm"
@@ -4005,7 +3992,7 @@ msgstr "§0は帰納法で証明するのと同じくらい手間がかかりま
 msgid ""
 "Now §0 is the quickest way to\n"
 "change §1 to §2."
-msgstr "現在、§0は§1を§2に変更する最も迅速な方法です。"
+msgstr "§0は§1を§2に変更する最も迅速な方法です。"
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 #. §0: ```
@@ -4364,7 +4351,7 @@ msgstr ""
 #. §1: `rfl`
 #. §2: `exact h`
 msgid "Now §0 then §1 works, but §2 is quicker."
-msgstr "現在、§0 と §1 は正常に動作しますが、§2 はより速いです。"
+msgstr "§0 と §1 は正常に動作しますが、§2 はより速いです。"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `le_refl x`
