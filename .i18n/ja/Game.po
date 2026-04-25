@@ -390,16 +390,7 @@ msgstr "この補題は最終ボス戦で役立つでしょう！"
 
 #: Game.Levels.Implication.L06intro
 msgid "intro"
-msgstr ""
-"## はじめに\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"## はじめに\n"
-"\n"
-"\n"
-"## 翻訳\n"
-"## はじめに"
+msgstr "intro"
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #. §0: `apply eq_succ_of_ne_zero at ha`
@@ -2746,7 +2737,7 @@ msgid ""
 "then §9 will give you a hypothesis §10 named §11, and the goal\n"
 "will change to §12."
 msgstr ""
-"## 結論\n"
+"## 概要\n"
 "\n"
 "もし目標が§0である場合、§1は§2を仮定として導入し、目標を§3に変更します。数学的には、§4を証明するためには、§5を仮定し、その後§6"
 "を証明すればよいということです。\n"
@@ -3847,7 +3838,7 @@ msgstr ""
 #: Game.Levels.Implication.L06intro
 #. §0: `exact h`
 msgid "Now §0 finishes the job."
-msgstr "現在、§0 が仕事の完了を告げる。"
+msgstr "§0 で完了させましょう。"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `«{x}» ≤ «{x}»`
@@ -4641,7 +4632,7 @@ msgstr "ケース分けして §0 と §1 に分ける。"
 #. §0: `intro h`
 #. §1: `h`
 msgid "Start with §0 to assume the hypothesis and call its proof §1."
-msgstr "開始する際は、§0 を使用して仮定を仮定し、その証明を§1と呼びます。"
+msgstr "§0 を使用して仮定を§1とし、開始します。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 msgid "mul_right_eq_self"
@@ -5897,16 +5888,8 @@ msgid ""
 "§4\"\n"
 "in Lean. We do this with the §5 tactic."
 msgstr ""
-"### 原文 (English)\n"
-"We have seen how to §0 theorems and assumptions\n"
-"of the form §1. But what if our *goal* is of the form §2?\n"
-"To prove this goal, we need to know how to say \"let's assume §3 and deduce "
-"§4\"\n"
-"in Lean. We do this with the §5 tactic.\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
-"私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。しかし、もし私たちの *目標* が形式 §2 の場合、この目標を証明するには、Lean "
+"私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。しかし、もし私たちの *目標* が形式 §2 の場合は、どうすれば良いでしょうか？
+この目標を証明するには、Lean "
 "で \"§3 という仮定を設け、 §4 を導く\" という方法を知る必要があります。これを行うためには、§5 タクティクを使用します。"
 
 #: Game.Levels.LessOrEqual.L01le_refl Game.Levels.LessOrEqual.L02zero_le
