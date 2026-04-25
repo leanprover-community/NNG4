@@ -283,7 +283,7 @@ msgstr "2+2=4"
 #. §0: `x ≠ y`
 #. §1: `x = y → False`
 msgid "Remember, §0 is *notation* for §1."
-msgstr "記憶しておいてください、§0は§1の*表記*です。"
+msgstr "覚えておいてください、§0は§1の*表記*です。"
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 #. §0: `a * b = 0`
@@ -2078,8 +2078,8 @@ msgid ""
 "Remember that §0 is a proof of §1. Try\n"
 "§2ing §3 either §4 or directly to the goal."
 msgstr ""
-"Remember that §0は§1の証明です。試してみてください。\n"
-"§2ing §3 は目標に直接または§4から行うことができます。"
+"§0は§1の証明であることを覚えておいてください。\n"
+"§3 の §2 は目標に直接または§4から行うことができます。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `apply mul_left_cancel at h`
@@ -4601,12 +4601,7 @@ msgstr "§0は、§1ならば§2であることを証明します。"
 
 #: Game.Levels.Implication.L08ne
 msgid "≠"
-msgstr ""
-"≠\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"不等号"
+msgstr "≠"
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
 #. §0: `c = 0`
@@ -5558,29 +5553,11 @@ msgid ""
 "So if your goal is §12 then you had better hope that your hypotheses\n"
 "are contradictory, which they are in this level."
 msgstr ""
-"### 原文 (English)\n"
-"We still can't prove §0 because we have not talked about the\n"
-"definition of §1. In Lean, §2 is *notation* for §3.\n"
-"Here §4 is a generic false proposition, and §5 is Lean's notation\n"
-"for \"implies\". In logic we learn\n"
-"that §6 is false, but §7 is true. Hence\n"
-"§8 is the logical opposite of §9.\n"
-"\n"
-"Even though §10 does not look like an implication,\n"
-"you should treat it as an implication. The next two levels will show you "
-"how.\n"
-"\n"
-"§11 is a goal which you cannot deduce from a consistent set of assumptions!\n"
-"So if your goal is §12 then you had better hope that your hypotheses\n"
-"are contradictory, which they are in this level.\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
 "まだ §0 を証明することができません。なぜなら §1 の定義について話していなかったからです。Lean では §2 は §3 の *表記* です。\n"
 "ここでは §4 は一般的な偽命題、§5 は Lean の \"implies\" の表記です。論理学では §6 は偽であり、§7 は真です。したがって\n"
 "§8 は §9 の論理的対偶です。\n"
 "\n"
-"§10 は直感上 implication に見えないかもしれませんが、 implication として扱うべきです。次の 2 "
+"§10 は含意に見えないかもしれませんが、含意 として扱うべきです。次の 2 "
 "つのレベルでその方法を学びます。\n"
 "\n"
 "§11 は一貫性のある仮定から導き出せない目標です！したがって、目標が §12 "
