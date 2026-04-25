@@ -1198,7 +1198,7 @@ msgstr ""
 #. §1: $3x+z=42$
 #. §2: $x+y=37$
 msgid "Assuming §0 and §1, we have §2."
-msgstr "仮定§0と§1を仮定すると、§2が得られます。"
+msgstr "§0と§1ならば、§2。"
 
 #: Game.Levels.Addition.L03add_comm
 #. §0: `a`
@@ -5088,12 +5088,7 @@ msgstr "前提"
 #: Game.Levels.Implication.L01exact Game.Levels.LessOrEqual.L01le_refl
 #. §0: `exact`
 msgid "The §0 tactic"
-msgstr ""
-"The タクティク §0\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"タクティク §0"
+msgstr "タクティク §0"
 
 #: Game.Levels.Tutorial.L04rw_backwards
 #. §0: `succ n`
@@ -6187,17 +6182,6 @@ msgid ""
 "The §3 tactic can be used to close a goal which is exactly one of\n"
 "the hypotheses. It takes the name of the hypothesis as argument: §4."
 msgstr ""
-"### 原文 (English)\n"
-"In this world we'll learn how to prove theorems of the form §0.\n"
-"In other words, how to prove theorems of the form \"if §1 is true, then §2 "
-"is true.\"\n"
-"To do that we need to learn some more tactics.\n"
-"\n"
-"The §3 tactic can be used to close a goal which is exactly one of\n"
-"the hypotheses. It takes the name of the hypothesis as argument: §4.\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
 "このワールドでは、形式 §0 の定理を証明する方法を学びます。\n"
 "つまり、「§1 が真なら、§2 が真である」という形式の定理を証明する方法です。\n"
 "そのためには、いくつかのタクティクを学ぶ必要があります。\n"
