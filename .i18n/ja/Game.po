@@ -4341,12 +4341,7 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L01mul_one
 msgid "mul_one"
-msgstr ""
-"mul_one\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"乗法の単位元定理です。"
+msgstr "mul_one"
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
 #. §0: `add_left_cancel a b n`
@@ -5288,10 +5283,10 @@ msgid ""
 msgstr ""
 "新しい \"*\" タブを確認してください。そこで §0 と §1 が表示されています。\n"
 "現在、これらは乗算について知っている唯一の事実です。\n"
-"9つ更多的の証明を行いましょう。\n"
+"あと9つの証明を行いましょう。\n"
 "\n"
 "まずはウォームアップから始めましょう。この場合は inducition は必要ありません。\n"
-"なぜなら §2 は後继であることが分かっているからです。"
+"なぜなら §2 は後者であることが分かっているからです。"
 
 #: Game.Levels.Implication.L09zero_ne_succ
 #: Game.Levels.AdvAddition.L01add_right_cancel
