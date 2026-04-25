@@ -23,7 +23,7 @@ msgstr "§0はこの目標を解決するのに十分です。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid "mul_assoc"
-msgstr "乗法の結合律"
+msgstr "mul_assoc"
 
 #: Game.Levels.Implication.L04succ_inj
 #. §0: $a$
@@ -439,9 +439,9 @@ msgid ""
 "\n"
 "If you want to begin your journey to the final boss, head for Power World."
 msgstr ""
-"数学的な通り路人は、自然数が可換半環であることを証明したことを指摘しました。\n"
+"通りすがりの数学者は、自然数が可換半環であることを証明したことを指摘しました。\n"
 "\n"
-"最終ボスへの旅を始めるなら、Power Worldへ向かってください。"
+"最終ボスへの旅を始めるなら、乗法ワールドへ向かってください。"
 
 #: Game.Levels.Power.L08pow_pow
 #. §0: `pow_pow`
@@ -4472,7 +4472,7 @@ msgstr ""
 msgid ""
 "We now have enough to prove that multiplication is associative,\n"
 "the boss level of multiplication world. Good luck!"
-msgstr "現在、乗算が結合的であることを証明できるようになりました。これは乗算ワールドのボスレベルです。お運びください！"
+msgstr "乗算が結合的であることを証明できるようになりました。これは乗算ワールドのボスレベルです。幸運を！"
 
 #: Game.Levels.Power.L08pow_pow
 msgid "pow_pow"
@@ -5410,15 +5410,9 @@ msgid ""
 "In other words, for all natural numbers §0, §1 and §2, we have\n"
 "§3."
 msgstr ""
-"乗算は結びつきを持つ。\n"
+"乗算は結びつきを持ちます。\n"
 "つまり、すべての自然数 §0, §1, §2 に対して、\n"
-"§3.\n"
-"\n"
-"\n"
-"### 参考訳\n"
-"乗算は結びつきを持つ。\n"
-"つまり、すべての自然数 §0, §1, §2 に対して、\n"
-"§3."
+"§3。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 #. §0: `simp`
