@@ -5182,12 +5182,7 @@ msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Addition.L05add_right_comm
 msgid "add_right_comm"
-msgstr ""
-"add_right_comm\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"右側加算の交換律（add_right_comm）"
+msgstr "add_right_comm"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: `add_zero`
@@ -6594,13 +6589,13 @@ msgid ""
 "Click \"Home\" and make your choice."
 msgstr ""
 "以下の最終ボスを倒すためのタクティクスを全部学びました。\n"
-"ゲームの最終ボスに向かう旅を始めるには、Multiplication Worldに入り始めることができます。\n"
+"ゲームの最終ボスに向かう旅を始めるには、乗算ワールドに入り始めることができます。\n"
 "\n"
-"または、Implication "
-"Worldで新しいタクティクスを学んでみるのも良いでしょう。これらのタクティクスは、加算に関するより多くの事実を証明するのに役立ちます。例えば、§0"
+"または、Implication Worldで"
+"新しいタクティクを学んでみるのも良いでしょう。これらのタクティクは、加算に関するより多くの事実を証明するのに役立ちます。例えば、§0"
 "から§1を導き出す方法を学ぶことができます。\n"
 "\n"
-"\"Home\"をクリックして選択してください。"
+"\"ホーム\"をクリックして選択してください。"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Tutorial.L04rw_backwards
 #. §0: $2$
