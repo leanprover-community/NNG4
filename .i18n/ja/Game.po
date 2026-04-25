@@ -1678,9 +1678,9 @@ msgid ""
 "Either by induction, or by using §1, or\n"
 "by using commutativity. Which do you think is quickest?"
 msgstr ""
-"您は§0を証明する方法として、少なくとも3つの方法があります。\n"
-" induksiонで証明するか、§1を使用するか、または交換律を使用するかです。\n"
-"どの方法が最も速いかどうか、どのように思われますか？"
+"§0を証明する方法として、少なくとも3つの方法があります。\n"
+"帰納法で証明するか、§1を使用するか、または交換律を使用するかです。\n"
+"どの方法が最も速いと思いますか？"
 
 #: Game.Levels.Addition.L02succ_add
 #. §0: `succ a + «{d}»`
@@ -1942,7 +1942,7 @@ msgstr ""
 #. §0: `one_mul m`
 #. §1: `1 * m = m`
 msgid "§0 is the proof §1."
-msgstr "§0は証明§1です。"
+msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 msgid "making life simple"
@@ -5088,12 +5088,7 @@ msgstr ""
 
 #: Game.Levels.Multiplication.L05one_mul
 msgid "one_mul"
-msgstr ""
-"one_mul\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"単位元と乗算に関する定理です。"
+msgstr "one_mul"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: `«{hd}» : 0 + «{d}» = «{d}»`
@@ -6175,11 +6170,8 @@ msgid ""
 "Here's my solution:\n"
 "§0"
 msgstr ""
-"以下是我的解決方法：\n"
-"§0\n"
-"\n"
-"\n"
-"##"
+"私の解法:\n"
+"§0"
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid "An algorithm for equality"
