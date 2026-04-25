@@ -883,7 +883,7 @@ msgstr ""
 
 #: Game.Levels.Implication.L05succ_inj2
 msgid "Arguing backwards"
-msgstr "反論する"
+msgstr "逆向きの議論"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 msgid "mul_right_eq_one"
@@ -1902,7 +1902,7 @@ msgstr "生活を単純にする"
 msgid ""
 "Now rewrite §0 backwards to make the goal\n"
 "equal to the hypothesis."
-msgstr "現在、§0 を逆順に書き換えることで、目標を仮定に等しくします。"
+msgstr "§0 を逆順に書き換えることで、目標を仮定に等しくします。"
 
 #: Game.Levels.Addition.L04add_assoc
 msgid "add_assoc (associativity of addition)"
@@ -1968,7 +1968,7 @@ msgid ""
 "  Again I will walk you through this one (assuming you're in\n"
 "  command line mode)."
 msgstr ""
-"最後のレベルでは、仮定§0を操作して目標§1にしました。このレベルでは、目標を操作して仮定にします！つまり、「逆向きに議論」することです。§2 "
+"先程のレベルでは、仮定§0を操作して目標§1にしました。このレベルでは、目標を操作して仮定にします！つまり、「逆向きに議論」することです。§2 "
 "タクティクもこれを行うことができます。また、コマンドラインモードで操作していると仮定して、この例を一緒に見ていきましょう。"
 
 #: Game.Levels.Tutorial.L06add_zero2
@@ -3691,7 +3691,7 @@ msgstr ""
 #: Game.Levels.Implication.L05succ_inj2
 #. §0: `exact h`
 msgid "You can now finish with §0."
-msgstr "你现在可以完成 §0。"
+msgstr "§0 で完了しましょう。"
 
 #: Game
 msgid "Natural Number Game"
@@ -5414,7 +5414,7 @@ msgid ""
 "Applying a proof of §0 to the *goal* changes §1 to §2.\n"
 "Now try §3 to make the goal more like the hypothesis."
 msgstr ""
-"証明 §0 を目標に適用すると、§1 は §2 に変更されます。\n"
+"証明 §0 を *目標* に適用すると、§1 は §2 に変更されます。\n"
 "次に §3 を試して、目標を仮定に近づけてみましょう。"
 
 #: Game.Levels.Multiplication.L03succ_mul
