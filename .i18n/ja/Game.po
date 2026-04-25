@@ -510,11 +510,7 @@ msgid ""
 "You can use §0 to rewrite at §1 instead\n"
 "of at the goal."
 msgstr ""
-"您可以在§0处重写代码，而不是在目标处进行重写。\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"您可以在§0でコードを改訂し、目標处の重写を避けることができます。"
+"§0で、目標ではなく、§1を書き換えることができます。"
 
 #: Game.Levels.Tutorial.L05add_zero
 #. §0: `repeat t`
@@ -1124,13 +1120,6 @@ msgid ""
 msgstr ""
 "以下は二行の証明です:\n"
 "§0\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"```html\n"
-"<p>以下は二行の証明です:</p>\n"
-"<§0>\n"
-"```"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: `zero_add x`
@@ -2433,7 +2422,12 @@ msgid ""
 msgstr ""
 "再度やってみましょう！\n"
 "\n"
-"§0は§1の引数を埋めようとします（§2を見つけます）然後，它会替换找到的所有§3。因此，它还没有重写§4。"
+"§0は§1の引数を埋めようとします（§2を見つけます）。その後§3。因此，它还没有重写§4。"
+"もう一度実行してください！\n"
+"\n"
+"§0 は、§1 の引数を埋める（§2 を見つける）ことを試み、\n"
+"見つけたすべての §3 を置き換えます。そのため、\n"
+"§4 はまだ書き換えられていません。"
 
 #: Game.Levels.Multiplication.L07mul_add
 #. §0: `a`
@@ -5651,7 +5645,7 @@ msgstr "x ≤ y と y ≤ z から x ≤ z が導かれる。"
 #: Game.Levels.Implication.L02exact2
 #. §0: `exact`
 msgid "§0 practice."
-msgstr "§0 プラクティス。"
+msgstr "§0 練習。"
 
 #: Game.Levels.Implication.L10one_ne_zero
 #. §0: `zero_ne_succ n`
@@ -5876,7 +5870,7 @@ msgstr ""
 msgid ""
 "Now you could finish with §0 then §1, but §2\n"
 "does it in one line."
-msgstr "現在、§0 から §1 までで終了できますが、§2 では一行で完了します。"
+msgstr "§0 から §1 までで終了できますが、§2 では一行で完了します。"
 
 #: Game.Levels.Addition.L05add_right_comm
 #. §0: `add_comm b c`
