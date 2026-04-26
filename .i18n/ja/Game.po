@@ -3829,10 +3829,10 @@ msgid ""
 "\n"
 "This works because §1 is a proof of §2."
 msgstr ""
-"以下は二行分です：\n"
+"以下は2行の証明です：\n"
 "§0\n"
 "\n"
-"これは §1 が §2 の証明であるため Works します。"
+"これは §1 が §2 の証明であるため動作します。"
 
 #: Game.Levels.Algorithm.L06is_zero
 #. §0: `intro h`
@@ -5331,10 +5331,8 @@ msgid ""
 "If you §0 the wrong number, you get stuck with a goal you can't prove.\n"
 "What number will you §1 here?"
 msgstr ""
-"もし間違ったタクティクを §0 选用，则会陷入无法证明的目标 §1 中。\n"
-"\n"
-"\n"
-"何を §1 选用？"
+"もし、間違った数字を §0 に使用した場合、証明できない目標に陥ります。\n"
+"どの数値を §1 しますか？"
 
 #: Game.Levels.Multiplication.L04mul_comm
 msgid "Multiplication is commutative."
@@ -5560,7 +5558,7 @@ msgstr ""
 #. §0: $x$
 #. §1: $x \\le x$
 msgid "If §0 is a number, then §1."
-msgstr "もし§0が数値である場合、§1。"
+msgstr "もし§0が数値なら、§1。"
 
 #: Game.Levels.LessOrEqual.L10le_one
 #. §0: ```
