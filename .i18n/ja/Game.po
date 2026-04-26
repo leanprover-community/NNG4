@@ -656,12 +656,7 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L01add_left_comm
 msgid "add_left_comm"
-msgstr ""
-"add_left_comm\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"左側交換律（add_left_comm）"
+msgstr "add_left_comm"
 
 #: Game.Levels.Implication.L10one_ne_zero
 #. §0: `symm`
@@ -829,7 +824,7 @@ msgid ""
 "will be helpful for you in Even-Odd World (when someone gets around to\n"
 "implementing it)."
 msgstr ""
-" Congratulations! あなたはAlgorithm Worldを完了しました。これらのアルゴリズムは、Even-Odd "
+" Congratulations! あなたはアルゴリズムワールドを完了しました。これらのアルゴリズムは、Even-Odd "
 "Worldが実装されるまで、あなたにとって役立つでしょう。\n"
 "\n"
 "\n"
@@ -2564,8 +2559,8 @@ msgid ""
 "\n"
 "Click on \"Start\" to proceed."
 msgstr ""
-"証明如き§0や§1は手作業で行うと非常に退屈です。\n"
-"Algorithm Worldでは、コンピュータにその作業を任せることを学びます。\n"
+"§0や§1のような証明は手作業で行うと非常に退屈です。\n"
+"アルゴリズムワールドでは、コンピュータにその作業を任せることを学びます。\n"
 "\n"
 "\"開始\"をクリックして進みましょう。"
 
@@ -4172,7 +4167,7 @@ msgstr ""
 msgid ""
 "If you have completed Algorithm World then you can use the §0 tactic\n"
 "here. If not then I'll talk you through a manual approach."
-msgstr "もしAlgorithm Worldを完了しているなら、ここでは§0タクティクを使用できます。もし完了していなければ、手動のアプローチを説明します。"
+msgstr "もしアルゴリズムワールドを完了しているなら、ここでは§0タクティクを使用できます。もし完了していなければ、手動のアプローチを説明します。"
 
 #: Game.Levels.Tutorial.L02rw
 #. §0: $2y=2(x+7)$
@@ -5004,7 +4999,7 @@ msgstr "one_pow"
 #. §0: $a, b, c$
 #. §1: $a+(b+c)=b+(a+c)$
 msgid "If §0 are numbers, then §1."
-msgstr "もし§0が数値である場合、§1。"
+msgstr "もし§0が数値ならば、§1。"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `a ≤ b`
@@ -5581,19 +5576,8 @@ msgid ""
 "with things like §1. And remember that\n"
 "§2 means §3."
 msgstr ""
-"### 原文 (English)\n"
-"Having to rearrange variables manually using commutativity and\n"
-"associativity is very tedious. We start by reminding you of this. §0\n"
-"is a key component in the first algorithm which we'll explain, but we need\n"
-"to prove it manually.\n"
-"\n"
-"Remember that you can do precision commutativity rewriting\n"
-"with things like §1. And remember that\n"
-"§2 means §3.\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
-"手動で交換律と結合律を使って変数を再配置する必要があることは非常に面倒です。まず、これについて再確認します。§0"
+"手動で交換律と結合律を使って変数を再配置する必要があることは非常に面倒です。\n"
+"まず、これについて再確認します。§0\n"
 "は、最初の説明するアルゴリズムにおいて重要な成分ですが、手動で証明する必要があります。\n"
 "\n"
 "交換律に基づいた精密な再配置は、§1のようなもので行うことができます。また、§2は§3を意味します。"
