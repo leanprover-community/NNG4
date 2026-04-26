@@ -4491,11 +4491,6 @@ msgid ""
 "§2"
 msgstr ""
 "すべての数値 §0 と §1 に対して、\n"
-"§2\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"すべての数値 §0 と §1 に対して、\n"
 "§2"
 
 #: Game.Levels.Tutorial.L01rfl
@@ -4992,13 +4987,7 @@ msgstr "もし§0と§1が自然数であり、かつ§2である場合、§3で
 
 #: Game.Levels.Power.L09add_sq
 msgid "[final boss music]"
-msgstr ""
-"### 原文 (English)\n"
-"[final boss music]\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"[最終ボスのテーマ]"
+msgstr "[最終ボスのテーマ]"
 
 #: Game.Levels.Tutorial.L07add_succ Game.Levels.Multiplication.L01mul_one
 #: Game.Levels.Multiplication.L06two_mul Game.Levels.Algorithm.L07succ_ne_succ
@@ -5829,12 +5818,7 @@ msgstr "目標を§0に変更できますか？"
 
 #: Game.Levels.Power.L09add_sq
 msgid "add_sq"
-msgstr ""
-"add_sq\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"平方を追加します。"
+msgstr "add_sq"
 
 #: Game.Levels.LessOrEqual.L08le_total
 #. §0: `a`
