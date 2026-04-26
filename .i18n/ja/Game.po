@@ -2780,7 +2780,7 @@ msgstr "x ≤ y または y ≤ x"
 #. §1: `c`
 #. §2: `x = 0 + c`
 msgid "To solve this level, you need to §0 a number §1 such that §2."
-msgstr "このレベルを解くためには、§0 に数字 §1 を §2 する必要があります。"
+msgstr "このレベルを解くためには、§0 に数値 §1 を指定して §2 にする必要があります。"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `le_mul_right`
