@@ -4907,12 +4907,7 @@ msgstr "ここから続けられますか？"
 
 #: Game.Levels.Power.L07mul_pow
 msgid "mul_pow"
-msgstr ""
-"mul_pow\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"乗法の累乗定理"
+msgstr "mul_pow"
 
 #: Game.Levels.LessOrEqual.L04le_trans
 #. §0: `≤`
@@ -6359,8 +6354,8 @@ msgid ""
 "because §1 swaps the wrong multiplication,\n"
 "then read the documentation of §2 for tips on how to fix this."
 msgstr ""
-"The music gets ever more dramatic, as we explore\n"
-"指数乗と乗算の相互作用。\n"
+"音楽はますますドラマチックになり、\n"
+"指数演算と乗算の相互作用を探求します。\n"
 "\n"
 "もし指数乗と乗算の順序を正しく交換できずに\n"
 "§1 が誤った乗算を交換してしまう場合、\n"
