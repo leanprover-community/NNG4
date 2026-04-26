@@ -5036,12 +5036,7 @@ msgstr "§0は§1の定理です。"
 
 #: Game.Levels.Power.L04one_pow
 msgid "one_pow"
-msgstr ""
-"one_pow\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"1の累乗"
+msgstr "one_pow"
 
 #: Game.Levels.Algorithm.L01add_left_comm
 #. §0: $a, b, c$
