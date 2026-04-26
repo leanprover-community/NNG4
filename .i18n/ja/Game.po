@@ -810,11 +810,8 @@ msgid ""
 "will be helpful for you in Even-Odd World (when someone gets around to\n"
 "implementing it)."
 msgstr ""
-" Congratulations! あなたはアルゴリズムワールドを完了しました。これらのアルゴリズムは、Even-Odd "
-"Worldが実装されるまで、あなたにとって役立つでしょう。\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
+"おめでとうございます! あなたはアルゴリズムワールドを完了しました。これらのアルゴリズムは、Even-Odd "
+"ワールドが実装されるまで、あなたにとって役立つでしょう。"
 
 #: Game.Levels.Tutorial.L08twoaddtwo
 #. §0: `h : X = Y`
@@ -1830,7 +1827,7 @@ msgstr "mul_comm"
 msgid ""
 "We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer "
 "one."
-msgstr "## 前回の証明は不十分でしたので、今回はより良い証明方法を示します。"
+msgstr "前回の §0 の証明は不十分でしたので、今回はより良い証明方法を示します。"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: $n = 0$
@@ -4615,7 +4612,7 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L09decide2
 msgid "decide again"
-msgstr "再決定"
+msgstr "もう一度 decide"
 
 #: Game.Levels.LessOrEqual.L03le_succ_self
 msgid "x ≤ succ x"
