@@ -634,24 +634,10 @@ msgid ""
 "and then swap §6 and §7. But this is easier than you\n"
 "think with §8."
 msgstr ""
-"### 原文 (English)\n"
-"In some later worlds, we're going to see some much nastier levels,\n"
-"like §0.\n"
-"Brackets need to be moved around, and variables need to be swapped.\n"
-"\n"
-"In this level, §1,\n"
-"let's forget about the brackets and just think about\n"
-"the variable order.\n"
-"To turn §2 into §3 we need to swap §4 and §5,\n"
-"and then swap §6 and §7. But this is easier than you\n"
-"think with §8.\n"
-"\n"
-"\n"
-"### 翻訳 (Japanese)\n"
 "いくつかの後続のワールドでは、§0のようなもっとひどいレベルを見ることになります。\n"
 "括弧は移動させ、変数は入れ替える必要があります。\n"
 "\n"
-"このレベルでは、§1、括弧は無視して変数の順序だけを考えましょう。\n"
+"このレベル、§1では、括弧は無視して変数の順序だけを考えましょう。\n"
 "§2を§3に変更するには、§4と§5を、そして§6と§7を入れ替える必要があります。しかし、§8を使うと意外と簡単にできます。"
 
 #: Game.Levels.Algorithm.L01add_left_comm
@@ -2290,12 +2276,7 @@ msgstr "succ_add"
 #. §1: `b`
 #. §2: `d`
 msgid "Finally use a targeted §0 to switch §1 and §2."
-msgstr ""
-"Finally use a targeted §0 to switch §1 and §2.\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"最終的に、§0を使用して§1と§2を切り替えてください。"
+msgstr "最終的に、§0を使用して§1と§2を切り替えてください。"
 
 #: Game.Levels.LessOrEqual.L11le_two
 #. §0: `≤`
@@ -2583,7 +2564,7 @@ msgstr "見られる範囲で新しい命題とタクティクが追加されて
 msgid ""
 "Now use §0 to switch §1 and §2 on the left\n"
 "hand side."
-msgstr "現在、§0 を使用して左側の §1 と §2 を入れ替えます。"
+msgstr "§0 を使用して左側の §1 と §2 を入れ替えます。"
 
 #: Game.Levels.Implication
 msgid "Implication World"
@@ -5319,7 +5300,7 @@ msgstr ""
 #: Game.Levels.Algorithm.L02add_algo1
 #. §0: `repeat rw [add_assoc]`
 msgid "Start with §0 to push all the brackets to the right."
-msgstr "開始は§0から全括弧を右に移動させます。"
+msgstr "§0から全括弧を右に移動させて、始めましょう。"
 
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
 #. §0: `cases a with d`
