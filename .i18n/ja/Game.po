@@ -1818,7 +1818,7 @@ msgstr "§0は§1の証明です。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 msgid "making life simple"
-msgstr "生活を単純にする"
+msgstr "生活を単純に"
 
 #: Game.Levels.Implication.L05succ_inj2
 #. §0: `four_eq_succ_three`
@@ -2583,16 +2583,6 @@ msgid ""
 "§1."
 msgstr ""
 "任意の自然数§0について、\n"
-"§1.\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"任意の自然数§0について、\n"
-"§1.\n"
-"\n"
-"\n"
-"### 翻訳結果\n"
-"任意の自然数§0について、\n"
 "§1."
 
 #: Game.Levels.Algorithm.L08decide
@@ -3270,12 +3260,7 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L03add_algo2
 msgid "Let's now make our own tactic to do this."
-msgstr ""
-"Let's now make our own tactic to do this.\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"自分独自のタクティクを作成しましょう。"
+msgstr "自分独自のタクティクを作成しましょう。"
 
 #: Game.Levels.Tutorial.L02rw
 #. §0: `h`
@@ -4578,10 +4563,10 @@ msgid ""
 "fed\n"
 "lemmas such as §2, so that it does not go into an infinite loop."
 msgstr ""
-"#  Overview\n"
+"# 概要\n"
 "\n"
-"Leanの簡略化処理器§0は、§1でタグ付けされたすべての lemmas およびユーザーから与えられたすべての lemmas "
-"をできる限り簡略化します。さらに、§2のようなlemmasを与えると、内部の順序に変数を並び替える試みも行い、無限ループに陥らないようにします。"
+"Leanの簡略化処理器§0は、§1でタグ付けされたすべての補題およびユーザーから与えられたすべての補題"
+"をできる限り簡略化します。さらに、§2のような補題を与えると、内部の順序に変数を並び替える試みも行い、無限ループに陥らないようにします。"
 
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #. §0: `cases ha with n hn`
@@ -5226,11 +5211,11 @@ msgid ""
 "This level is not a level which you want to solve by hand.\n"
 "Get the simplifier to solve it for you."
 msgstr ""
-"Leanの簡約化器、§0は「§1を強化版」です。これは、§2でタグ付けされたすべての lemme およびユーザーによって与えられたすべての lemme "
+"Leanの簡約化処理器、§0は「§1の強化版」です。これは、§2でタグ付けされたすべての補題およびユーザーによって与えられたすべての補題"
 "をできる限り簡約化します。\n"
 "\n"
 "このレベルは手作業で解くべきレベルではありません。\n"
-"簡約化器に任せて解いてください。"
+"簡約化処理器に任せて解いてください。"
 
 #: Game.Levels.Tutorial.L02rw
 #. §0: `h : X = Y`
@@ -6022,7 +6007,7 @@ msgstr ""
 #: Game.Levels.Algorithm.L03add_algo2
 #. §0: `simp only [add_left_comm, add_comm]`
 msgid "Solve this level in one line with §0"
-msgstr "このレベルを一行で解いてください§0"
+msgstr "このレベルを一行で解いてください: §0"
 
 #: Game.Levels.Algorithm.L05pred
 #. §0: `succ_inj`
