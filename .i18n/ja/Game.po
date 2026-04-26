@@ -411,7 +411,7 @@ msgid ""
 "else could there be to prove about powers after this?"
 msgstr ""
 "ゲームで最も適切に名付けられたレベルの一つとして知られる場面で、音楽が狂熱に達すると凶暴な§0\n"
-"サブボスが登場します。それ以降の力について何を証明できるでしょうか？"
+"サブボスが登場します。それ以降の冪乗について何を証明できるでしょうか？"
 
 #: Game.Levels.LessOrEqual.L05le_zero
 #. §0: $x \\leq 0$
@@ -6232,13 +6232,13 @@ msgid ""
 "\n"
 "Suddenly the music starts up again. This really is the final boss."
 msgstr ""
-"音楽が静まり返る。これで終わり？\n"
+"音楽が静まり返ります。これで終わりですか？\n"
 "\n"
-"まだ二つ目のレベルが残っていることは明らかだ。\n"
+"まだレベルが2つ残っていることは明らかです。\n"
 "\n"
-"通りすがりの数学者が言うには、あなたが構築した構造には数学の名前がないらしい。だまされた気分だ。\n"
+"通りすがりの数学者が言うには、あなたが構築した構造には数学の名前がないらしいです。だまされた気分です。\n"
 "\n"
-"突然、音楽が再開する。これで本当に最終ボスだ。"
+"突然、音楽が再開します。これで本当に最終ボスです。"
 
 #: Game.Levels.LessOrEqual.L10le_one
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
