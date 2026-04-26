@@ -5292,12 +5292,7 @@ msgstr "乗法の右側への乗算の不等式定理"
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid "add_right_eq_self"
-msgstr ""
-"add_right_eq_self\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"右側への加算が自身と等しいこと"
+msgstr "add_right_eq_self"
 
 #: Game.Levels.Implication.L08ne
 #. §0: `2 + 2 ≠ 5`
