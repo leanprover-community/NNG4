@@ -112,7 +112,7 @@
  "one_le_of_ne_zero": "one_le_of_ne_zero",
  "mul_right_eq_self": "mul_right_eq_self",
  "mul_right_eq_one": "mul_right_eq_one",
- "mul_pow": "mul_pow\n\n\n## 日本語翻訳\n乗法の累乗定理",
+ "mul_pow": "mul_pow",
  "mul_one": "mul_one",
  "mul_ne_zero": "mul_ne_zero\n\n\n## 日本語翻訳\n乗算が零でない（mul_ne_zero）",
  "mul_left_ne_zero": "mul_left_ne_zero\n\n\n## 日本語翻訳\n左側 multiplicand が非零である定理",
@@ -136,7 +136,7 @@
  "decide again": "再決定",
  "decide": "決定",
  "add_succ": "add_succ",
- "add_sq": "add_sq\n\n\n## 日本語翻訳\n平方を追加します。",
+ "add_sq": "add_sq",
  "add_right_eq_zero": "add_right_eq_zero",
  "add_right_eq_self": "add_right_eq_self\n\n\n## 日本語翻訳\n右側への加算が自身と等しいこと",
  "add_right_comm": "add_right_comm",
@@ -148,8 +148,7 @@
  "add_left_cancel": "add_left_cancel\n\n\n## 日本語翻訳\n左-cancel 付加律",
  "add_comm (level boss)": "add_comm (レベルボス)\n",
  "add_assoc (associativity of addition)": "add_assoc (加法の結合律)",
- "[final boss music]":
- "### 原文 (English)\n[final boss music]\n\n\n## 日本語翻訳\n[最終ボスのテーマ]",
+ "[final boss music]": "[最終ボスのテーマ]",
  "[dramatic music]. Now are you ready to face the first boss of the game?":
  "[ドラマティックな音楽] さあ、ゲーム最初のボス戦に臨む準備はできていますか？",
  "[boss battle music]\n\nLook in your inventory to see the proofs you have available.\nThese should be enough.":
@@ -219,7 +218,7 @@
  "We now start work on an algorithm to do addition more efficiently. Recall that\nwe defined addition by recursion, saying what it did on §0 and successors.\nIt is an axiom of Lean that recursion is a valid\nway to define functions from types such as the naturals.\n\nLet's define a new function §1 from the naturals to the naturals, which\nattempts to subtract 1 from the input. The definition is this:\n\n§2\n\nWe cannot subtract one from 0, so we just return a junk value. As well as this\ndefinition, we also create a new lemma §3, which says that §4.\nLet's use this lemma to prove §5, the theorem which\nPeano assumed as an axiom and which we have already used extensively without justification.":
  "### 原文 (English)\nWe now start work on an algorithm to do addition more efficiently. Recall that\nwe defined addition by recursion, saying what it did on §0 and successors.\nIt is an axiom of Lean that recursion is a valid\nway to define functions from types such as the naturals.\n\nLet's define a new function §1 from the naturals to the naturals, which\nattempts to subtract 1 from the input. The definition is this:\n\n§2\n\nWe cannot subtract one from 0, so we just return a junk value. As well as this\ndefinition, we also create a new lemma §3, which says that §4.\nLet's use this lemma to prove §5, the theorem which\nPeano assumed as an axiom and which we have already used extensively without justification.\n\n\n### 翻訳 (Japanese)\n現在、効率的な加算を行うアルゴリズムの作成を開始します。再帰によって加算を定義したことを思い出してください。具体的には、0と後続者に対して何を行うかを定義しました。\nLeanの公理として、再帰は自然数などの型から関数を定義する有効な方法であるとされています。\n\n自然数から自然数への新しい関数§1を定義します。これは、入力から1を引こうとする関数です。その定義は以下の通りです：\n\n§2\n\n0から1を引くことはできませんので、無効な値を返します。この定義とともに、新しい補題§3も定義します。これは§4を述べています。\nこの補題を使って、§5（ペアノが公理として仮定し、以前にも正当化せずに頻繁に使用した定理）を証明しましょう。",
  "We now have enough to state a mathematically accurate, but slightly\nclunky, version of Fermat's Last Theorem.\n\nFermat's Last Theorem states that if §0 and §1 then §2.\nIf you didn't do inequality world yet then we can't talk about §3,\nso we have to resort to the hack of using §4 for §5,\nwhich guarantees it's big enough. Similarly instead of §6 we\nuse §7.\n\nThis level looks superficially like other levels we have seen,\nbut the shortest solution known to humans would translate into\nmany millions of lines of Lean code. The author of this game,\nKevin Buzzard, is working on translating the proof by Wiles\nand Taylor into Lean, although this task will take many years.\n\n## CONGRATULATIONS!\n\nYou've finished the main quest of the natural number game!\nIf you would like to learn more about how to use Lean to\nprove theorems in mathematics, then take a look\nat [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\nan interactive textbook which you can read in your browser,\nand which explains how to work with many more mathematical concepts in Lean.":
- "### 原文 (English)\nWe now have enough to state a mathematically accurate, but slightly\nclunky, version of Fermat's Last Theorem.\n\nFermat's Last Theorem states that if §0 and §1 then §2.\nIf you didn't do inequality world yet then we can't talk about §3,\nso we have to resort to the hack of using §4 for §5,\nwhich guarantees it's big enough. Similarly instead of §6 we\nuse §7.\n\nThis level looks superficially like other levels we have seen,\nbut the shortest solution known to humans would translate into\nmany millions of lines of Lean code. The author of this game,\nKevin Buzzard, is working on translating the proof by Wiles\nand Taylor into Lean, although this task will take many years.\n\n## CONGRATULATIONS!\n\nYou've finished the main quest of the natural number game!\nIf you would like to learn more about how to use Lean to\nprove theorems in mathematics, then take a look\nat [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\nan interactive textbook which you can read in your browser,\nand which explains how to work with many more mathematical concepts in Lean.\n\n\n### 翻訳 (Japanese)\n我们现在有足够的知识来陈述一个数学上准确但略显笨拙的费马大定理。\n\n费马大定理指出，如果§0 且 §1，则 §2。\n如果你还没有完成不等式世界，则无法讨论 §3，\n所以我们不得不使用 §4 代替 §5，这保证了它的大小足够。类似地，我们使用 §7 代替 §6。\n\n这一关看起来与其他关卡相似，\n但人类已知的最短解决方案会转化为数以百万计的Lean代码行。这款游戏的作者Kevin Buzzard正在努力将威尔斯和泰勒的证明翻译成Lean，\n尽管这项任务将需要很多年的时间。\n\n## おめでとう！\n\n自然数ゲームの主要な冒険を終えました！\nLeanを使用して数学の定理を証明する方法をさらに学びたい場合は、\n[Leanで数学](https://leanprover-community.github.io/mathematics_in_lean/) を参照してください。\nこれはブラウザで読むことができる対話型教科書で、Leanでより多くの数学的概念を扱う方法を説明しています。",
+ "現在、フェルマーの最終定理の数学的に正確だが、\nやや冗長なバージョンを記述するのに十分な情報があります。\n\nフェルマーの最終定理は、§0 と §1 が成り立つならば、§2 が成り立つ、\nと述べることができます。\nもし「不等式世界」をまだ実装していない場合は、\n§3 について議論できません。そのため、§4 を §5 の代わりに使うという「ハック」に頼る必要があります。\nこれにより、十分な大きさになることが保証されます。\n同様に、§6 の代わりに §7 を使用します。\n\nこのレベルは、これまでに見た他のレベルと似ていますが、\n人間が知っている最も短い解は、数百万行の \nLean コードに変換されます。このゲームの作者である Kevin Buzzard は、\nウィルズとテイラーの証明を Lean に翻訳する作業に取り組んでいますが、\nこの作業には数年かかるでしょう。\n\n## おめでとう！\n\n自然数ゲームの主要な冒険を終えました！\nLeanを使用して数学の定理を証明する方法をさらに学びたい場合は、\n[Leanで数学](https://leanprover-community.github.io/mathematics_in_lean/) を参照してください。\nこれはブラウザで読むことができる対話型教科書で、Leanでより多くの数学的概念を扱う方法を説明しています。",
  "We now have enough to prove that multiplication is associative,\nthe boss level of multiplication world. Good luck!":
  "乗算が結合的であることを証明できるようになりました。これは乗算ワールドのボスレベルです。幸運を！",
  "We know §0 is a proof of §1 -- but what\nif we have a hypothesis §2? It's the wrong way around!\n\nThe §3 tactic changes a goal §4 to §5, and a goal §6\nto §7. And §8\ndoes the same for a hypothesis §9. We've proved §10 and called\nthe proof §11; now try proving §12.":
@@ -275,9 +274,9 @@
  "The next result we'll need in §0 World is that if §1 then §2 and §3.\nLet's prove one of these facts in this level, and the other in the next.\n\n## A new tactic: §4\n\nThe §5 tactic will split an object or hypothesis up into the possible ways\nthat it could have been created.\n\nFor example, sometimes you want to deal with the two cases §6 and §7 separately,\nbut don't need the inductive hypothesis §8 that comes with §9.\nIn this situation you can use §10 instead. There are two ways to make\na number: it's either zero or a successor. So you will end up with two goals, one\nwith §11 and one with §12.\n\nAnother example: if you have a hypothesis §13 then you are done, because a false statement implies\nany statement. Here §14 will close the goal, because there are *no* ways to\nmake a proof of §15! So you will end up with no goals, meaning you have proved everything.":
  "### 原文 (English)\nThe next result we'll need in §0 World is that if §1 then §2 and §3.\nLet's prove one of these facts in this level, and the other in the next.\n\n## A new tactic: §4\n\nThe §5 tactic will split an object or hypothesis up into the possible ways\nthat it could have been created.\n\nFor example, sometimes you want to deal with the two cases §6 and §7 separately,\nbut don't need the inductive hypothesis §8 that comes with §9.\nIn this situation you can use §10 instead. There are two ways to make\na number: it's either zero or a successor. So you will end up with two goals, one\nwith §11 and one with §12.\n\nAnother example: if you have a hypothesis §13 then you are done, because a false statement implies\nany statement. Here §14 will close the goal, because there are *no* ways to\nmake a proof of §15! So you will end up with no goals, meaning you have proved everything.\n\n\n### 翻訳 (Japanese)\n次に §0 ワールドで必要になる結果は、もし §1 なら §2 と §3 です。\nこのレベルで一つの事実を証明し、次のレベルでもう一つの事実を証明しましょう。\n\n## 新しいタクティク: §4\n\n§5 タクティクは、オブジェクトや仮定を生成された可能性のある方法に分割します。\n\n例えば、時々 §6 と §7 の二つのケースを個別に扱いたい場合がありますが、§9 が伴う §8 の帰納的仮定は必要ありません。\nこの状況では、§10 を使用することができます。数を作る方法は二つあります：ゼロか後続です。したがって、二つの目標が残ります。一つには §11 があり、もう一つには §12 があります。\n\n別の例：仮定 §13 がある場合、証明は完了します。偽の命題は任意の命題を導くからです。ここでは §14 が目標を閉じます。なぜなら §15 の証明を作る方法は *ありません*！したがって、目標が残らないため、すべてを証明したということになります。",
  "The music gets ever more dramatic, as we explore\nthe interplay between exponentiation and multiplication.\n\nIf you're having trouble exchanging the right §0\nbecause §1 swaps the wrong multiplication,\nthen read the documentation of §2 for tips on how to fix this.":
- "The music gets ever more dramatic, as we explore\n指数乗と乗算の相互作用。\n\nもし指数乗と乗算の順序を正しく交換できずに\n§1 が誤った乗算を交換してしまう場合、\n§2 のドキュメンテーションを参照して修正方法を確認してください。",
+ "音楽はますますドラマチックになり、\n指数演算と乗算の相互作用を探求します。\n\nもし指数乗と乗算の順序を正しく交換できずに\n§1 が誤った乗算を交換してしまう場合、\n§2 のドキュメンテーションを参照して修正方法を確認してください。",
  "The music dies down. Is that it?\n\nCourse it isn't, you can\nclearly see that there are two levels left.\n\nA passing mathematician says that mathematicians don't have a name\nfor the structure you just constructed. You feel cheated.\n\nSuddenly the music starts up again. This really is the final boss.":
- "音楽が静まり返る。これで終わり？\n\nまだ二つ目のレベルが残っていることは明らかだ。\n\n通りすがりの数学者が言うには、あなたが構築した構造には数学の名前がないらしい。だまされた気分だ。\n\n突然、音楽が再開する。これで本当に最終ボスだ。",
+ "音楽が静まり返ります。これで終わりですか？\n\nまだレベルが2つ残っていることは明らかです。\n\n通りすがりの数学者が言うには、あなたが構築した構造には数学の名前がないらしいです。だまされた気分です。\n\n突然、音楽が再開します。これで本当に最終ボスです。",
  "The lemma proved in the final level of this world will be helpful\nin Divisibility World.":
  "最終レベルで証明された補題は、整除世界で役立つでしょう。",
  "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\nYou can §3 it §4 any hypothesis of the form §5.":
@@ -326,7 +325,7 @@
  "Reduce to the previous lemma with §0": "以前の補題に §0 をReduceします。",
  "Ready for the boss level of this world?": "このワールドのボスレベルに備えていますか？",
  "Proofs like §0 and §1 are very tedious to do by hand.\nIn Algorithm World we learn how to get the computer to do them for us.\n\nClick on \"Start\" to proceed.":
- "証明如き§0や§1は手作業で行うと非常に退屈です。\nAlgorithm Worldでは、コンピュータにその作業を任せることを学びます。\n\n\"開始\"をクリックして進みましょう。",
+ "§0や§1のような証明は手作業で行うと非常に退屈です。\nアルゴリズムワールドでは、コンピュータにその作業を任せることを学びます。\n\n\"開始\"をクリックして進みましょう。",
  "Precision rewriting": "精密な書き換え",
  "Power World": "冪乗ワールド",
  "Our next goal is \"left and right distributivity\",\nmeaning §0 and §1. Rather than\nthese slightly pompous names, the name of the proofs\nin Lean are descriptive. Let's start with\n§2, the proof of §3.\nNote that the left hand side contains a multiplication\nand then an addition.":
@@ -334,7 +333,7 @@
  "Our first challenge is §0,\nand we want to prove it by induction. The zero\ncase will need §1 (which we have)\nand §2 (which we don't), so let's\nstart with this.":
  "私たちの最初の挑戦は§0です。\nこれは帰納法によって証明したいと思います。\nゼロの場合には§1（持っています）\nと§2（持っていません）が必要なので、まずはこれから始めましょう。",
  "One of the best named levels in the game, a savage §0\nsub-boss appears as the music reaches a frenzy. What\nelse could there be to prove about powers after this?":
- "ゲームで最も適切に名付けられたレベルの一つとして知られる場面で、音楽が狂熱に達すると凶暴な§0\nサブボスが登場します。それ以降の力について何を証明できるでしょうか？",
+ "ゲームで最も適切に名付けられたレベルの一つとして知られる場面で、音楽が狂熱に達すると凶暴な§0\nサブボスが登場します。それ以降の冪乗について何を証明できるでしょうか？",
  "One day this game will have a Prime Number World, with a final boss\nof proving that §0 is prime.\nTo do this, we will have to rule out things like §1\nWe will do this by proving that any factor of §2 is at most §3,\nwhich we will do using this lemma. The proof I have in mind manipulates the hypothesis\nuntil it becomes the goal, using §4, §5 and\n§6.":
  "One dayこのゲームには素数ワールドが存在し、最終ボスは§0が素数であることを証明することになる。\nこれを達成するためには、§1のようなものを排除する必要がある。\nこれは、§2の任意の約数が最多§3であることを証明することで行う。その証明はこの補題を使用する。私は考えている証明は、仮定を操作し、最終的に目標になるようにする。これには§4、§5、§6を使用する。",
  "On the set of natural numbers, addition is commutative.\nIn other words, if §0 and §1 are arbitrary natural numbers, then\n§2.":
@@ -423,7 +422,7 @@
  "Let's now learn about Peano's second axiom for addition, §0.":
  "ペアノの加法に関する第2の公理について、§0 を学んでみましょう。",
  "Let's now begin our approach to the final boss,\nby proving some more subtle facts about powers.":
- "## 最終ボスへのアプローチ\npowersに関するより細かい事実を証明することで始めましょう。",
+ "冪乗に関するより細かい事実を証明して、\n最終ボスへのアプローチをしましょう。",
  "Let's first get §0 into the form §1 so we can\napply §2. First execute §3\nto change the 4 on the right hand side.":
  "§0 を §1 の形式に変更してから、§2 を適用することができます。\nまず、§3 を実行して右辺の 4 を変更します。",
  "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\ntagged with §2 and every lemma fed to it by the user, as much as it can.\n\nThis level is not a level which you want to solve by hand.\nGet the simplifier to solve it for you.":
@@ -500,7 +499,7 @@
  "If you §0 the wrong number, you get stuck with a goal you can't prove.\nWhat number will you §1 here?":
  "もし間違ったタクティクを §0 选用，则会陷入无法证明的目标 §1 中。\n\n\n何を §1 选用？",
  "If you have completed Algorithm World then you can use the §0 tactic\nhere. If not then I'll talk you through a manual approach.":
- "もしAlgorithm Worldを完了しているなら、ここでは§0タクティクを使用できます。もし完了していなければ、手動のアプローチを説明します。",
+ "もしアルゴリズムワールドを完了しているなら、ここでは§0タクティクを使用できます。もし完了していなければ、手動のアプローチを説明します。",
  "If the goal is not *exactly* a hypothesis, we can sometimes\nuse rewrites to fix things up.":
  "もし目標が*正確に*仮定でない場合、時としてリライトを使用して修正することができます。",
  "How should we define §0? Just like addition, we need to give definitions\nwhen §1 and when §2 is a successor.\n\nThe zero case is easy: we define §3 to be §4. Now say we know\n§5. What should §6 be? Well, that's §7 §8s,\nso it should be §9.\n\nHere are the definitions in Lean.\n\n  * §10\n  * §11\n\nIn this world, we must not only prove facts about multiplication like §12,\nwe must also prove facts about how multiplication interacts with addition, like §13.\nLet's get started.":
@@ -540,8 +539,7 @@
  "幸運を!\n\n最後のヒント。もし§0であれば、§1はすべての§2を§3に変換します。\n一方で、一つだけ変換したい場合（例えば3番目のもの）、§4を使用します。",
  "For any natural number §0, we have §1.": "任意の自然数§0に対して、§1です。",
  "For all numbers §0, §1.": "すべての数 §0 について、 §1 。",
- "For all numbers §0 and §1, we have\n§2":
- "すべての数値 §0 と §1 に対して、\n§2\n\n\n## 参考訳\nすべての数値 §0 と §1 に対して、\n§2",
+ "For all numbers §0 and §1, we have\n§2": "すべての数値 §0 と §1 に対して、\n§2",
  "For all naturals §0, §1.": "すべての自然数 §0 について、 §1 。",
  "For all naturals §0, §1, §2, we have §3.":
  "すべての自然数 §0, §1, §2 について、§3 が成り立ちます。",
@@ -564,9 +562,9 @@
  "Did you use induction on §0?\nHere's a two-line proof of §1 which uses §2.\nIf you want to inspect it, you can go into editor mode by clicking §3 in the top right\nand then just cut and paste the proof and move your cursor around it\nto see the hypotheses and goal at any given point\n(although you'll lose your own proof this way). Click §4 to get\nback to command line mode.\n§5\n\n\n### 翻訳\n§0について帰納法を使ったでしょうか？\n§2を使用して§1の二行証明があります。\n証明を確認したい場合は、右上にある§3をクリックしてエディタモードに入り、\nその後証明を切り取り、貼り付け、カーソルを動かして任意のポイントでの仮定と目標を確認できます。\n（ただし、この方法で自分の証明は失われます）。§4をクリックして\nコマンドラインモードに戻りましょう。\n§5",
  "Dealing with §0": "### 原文 (English)\nDealing with §0\n\n## 日本語翻訳\n§0 を扱う方法",
  "Congratulations! You've finished Algorithm World. These algorithms\nwill be helpful for you in Even-Odd World (when someone gets around to\nimplementing it).":
- " Congratulations! あなたはAlgorithm Worldを完了しました。これらのアルゴリズムは、Even-Odd Worldが実装されるまで、あなたにとって役立つでしょう。\n\n\n## 日本語翻訳\n",
+ " Congratulations! あなたはアルゴリズムワールドを完了しました。これらのアルゴリズムは、Even-Odd Worldが実装されるまで、あなたにとって役立つでしょう。\n\n\n## 日本語翻訳\n",
  "Congratulations! You have proved Fermat's Last Theorem!\n\nEither that, or you used magic...":
- " Congratulations! あなたはフェルマーの最終定理を証明しました！\n\nもしくは、魔法を使用したかもしれません...\n\n\n## 日本語翻訳\n",
+ " おめでとうございます! あなたはフェルマーの最終定理を証明しました！\n\nもしくは、魔法を使用したかもしれません...\n",
  "Congratulations! You completed your first verified proof!\n\nRemember that §0 is a *tactic*. If you ever want information about the §1 tactic,\nyou can click on §2 in the list of tactics on the right.\n\nNow click on \"Next\" to learn about the §3 tactic.":
  "おめでとうございます! あなたは初めての検証証明を完了しました！\n\n記憶に留めておきましょう。§0は*タクティク*です。§1のタクティクについての情報が必要な場合は、右側のタクティク一覧の§2をクリックできます。\n\n\"次\"をクリックして§3のタクティクについて学びましょう。",
  "Concretely: §0.": "具体的には: §0.",
