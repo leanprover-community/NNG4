@@ -2271,7 +2271,7 @@ msgstr ""
 #. §2: $x \\leq y$
 #. §3: $y \\leq x$
 msgid "If §0 and §1 are numbers, then either §2 or §3."
-msgstr "もし§0と§1が数値である場合、§2または§3が成り立つ。"
+msgstr "もし§0と§1が数値ならば、§2または§3。"
 
 #: Game.Levels.LessOrEqual
 #. §0: `a ≤ b`
@@ -3790,7 +3790,7 @@ msgstr ""
 #: Game.Levels.LessOrEqual.L08le_total
 #. §0: `cases «{h2}» with e he`
 msgid "Now §0."
-msgstr "現在、§0。"
+msgstr "§0 をしましょう。"
 
 #: Game.Levels.Multiplication.L08add_mul
 #. §0: `add_mul`
@@ -5577,7 +5577,7 @@ msgstr ""
 "これは今までで最も難しいレベルかもしれません。ヒント：もし§0が数値であれば、§1は§2と§3に分岐します。\n"
 "そして、仮定が結果の目標を証明できる保証がない限りは左や右には移動しないでください！\n"
 "\n"
-"隠されたヒントを残しています；必要であれば、最初からやり直し、「もっと手助けを表示！」とクリックしてください。"
+"隠されたヒントを残しています；必要であれば、最初からやり直し、「より多くのヘルプを表示！」とクリックしてください。"
 
 #: Game.Levels.LessOrEqual.L08le_total
 #. §0: `ℕ`
@@ -5590,9 +5590,9 @@ msgid ""
 "\n"
 "The final few levels in this world are much easier."
 msgstr ""
-"Very well done.\n"
+"よくできました。\n"
 "\n"
-"数学的な見地から言えば、あなたが証明したところでは、§0 は完全に順序付けられています。\n"
+"通りすがりの数学者は、あなたが §0 は完全に順序付けられていることを証明したと述べました。\n"
 "\n"
 "このワールドの最後の数レベルははるかに簡単です。"
 
@@ -5971,11 +5971,7 @@ msgstr ""
 #. §0: `cases «{e}» with a`
 msgid "You still don't know which way to go, so do §0."
 msgstr ""
-"You still don't know which way to go, so do §0.\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"まだ進むべき道がわからないので、§0の指示に従いましょう。"
+"まだ進むべき道がわからないので、§0をしましょう。"
 
 #: Game.Levels.AdvMultiplication
 msgid "Advanced Multiplication World"
