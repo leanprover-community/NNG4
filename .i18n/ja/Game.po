@@ -358,11 +358,11 @@ msgid ""
 "§1 actually means §2.\n"
 "This affects how §3 and §4 work."
 msgstr ""
-"We'll need this lemma to prove that two is prime!\n"
+"この定理を使って、2 が素数であることを証明する必要があります！\n"
 "\n"
-"You'll need to know that §0 is right associative. This means that\n"
-"§1 actually means §2.\n"
-"This affects how §3 and §4 work."
+"§0 が右結合であることを知っておく必要があります。\n"
+"これは、§1 が実際に §2 と同じ意味であることを意味します。\n"
+"これにより、§3 と §4 の動作が影響を受けます。"
 
 #: Game.Levels.Power.L01zero_pow_zero
 msgid "zero_pow_zero"
@@ -2208,10 +2208,10 @@ msgid ""
 "If you've already done Multiplication World, you're now ready for\n"
 "Advanced Multiplication World. Click on \"Home\" to access it."
 msgstr ""
-"Nice!\n"
+"ナイス!\n"
 "\n"
 "順序理論の開発の次のステップは、§0"
-"と乗算の相互作用の理論を発展させることがです。既に乗算ワールドを学習した場合、現在では高度な乗算ワールドに進むことができます。\"Home\""
+"と乗算の相互作用の理論を発展させることがです。既に乗算ワールドを学習した場合、現在では高度な乗算ワールドに進むことができます。\"ホーム\""
 "をクリックしてアクセスしてください。"
 
 #: Game.Levels.Implication.L02exact2
@@ -4095,7 +4095,7 @@ msgstr "現在 §0 なので、§1 です。"
 #. §2: $1$
 #. §3: $2$
 msgid "If §0 then §1 or §2 or §3."
-msgstr "もし§0 then §1または§2または§3。"
+msgstr "§0 ならば §1または§2または§3。"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Addition.L03add_comm
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.Algorithm.L05pred
@@ -4223,7 +4223,7 @@ msgstr "一行で証明を完成させましょう。"
 #. §3: `x = 1`
 #. §4: `x = 2`
 msgid "§0 is a proof that if §1 then §2 or §3 or §4."
-msgstr "§0は、§1ならば§2または§3または§4であることを証明します。"
+msgstr "§0は、§1ならば§2または§3または§4であることの証明。"
 
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
 #. §0: ```
