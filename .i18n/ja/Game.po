@@ -4378,7 +4378,7 @@ msgstr ""
 #. §1: `succ x ≤ succ y`
 #. §2: `x ≤ y`
 msgid "§0 is a proof that if §1 then §2."
-msgstr "§0は、§1ならば§2であることを証明します。"
+msgstr "§0は、§1ならば§2であることの証明。"
 
 #: Game.Levels.Implication.L08ne
 msgid "≠"
@@ -5437,12 +5437,7 @@ msgstr ""
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid "succ x ≤ succ y → x ≤ y"
-msgstr ""
-" succ x ≤ succ y → x ≤ y\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-" succ x ≤ succ y → x ≤ y"
+msgstr " succ x ≤ succ y → x ≤ y"
 
 #: Game
 msgid "The classical introduction game for Lean."
@@ -5964,8 +5959,9 @@ msgid ""
 "in this world will prove which numbers are §2 and §3.\n"
 "This lemma will be helpful for them."
 msgstr ""
-"We've proved that §0 から §1 が導かれる。このワールドの最後の2つのレベルでは、どの数が §2 と §3 "
-"であるかを証明する。この補題は彼らにとって役立つだろう。"
+"§0 から §1 が導かれることを証明しました。\n"
+"このワールドの最後の2つのレベルでは、どの数が §2 と §3 "
+"であるかを証明します。この補題はこれらにとって役立つでしょう。"
 
 #: Game.Levels.LessOrEqual.L08le_total
 #. §0: `cases «{e}» with a`
