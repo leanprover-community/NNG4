@@ -1880,12 +1880,7 @@ msgstr ""
 
 #: Game.Levels.AdvAddition.L01add_right_cancel
 msgid "add_right_cancel"
-msgstr ""
-"add_right_cancel\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"右側キャンセル定理"
+msgstr "add_right_cancel"
 
 #: Game.Levels.Implication.L04succ_inj
 #. §0: `succ_eq_add_one`
@@ -2824,7 +2819,7 @@ msgstr "すべての数 §0 について、 §1 。"
 #: Game.Levels.AdvAddition.L01add_right_cancel
 #. §0: `n`
 msgid "Start with induction on §0."
-msgstr "開始は §0 に対する帰納法からです。"
+msgstr "§0 に対する帰納法から始めてください。"
 
 #: Game.Levels.LessOrEqual.L08le_total
 msgid "x ≤ y or y ≤ x"
@@ -4453,7 +4448,7 @@ msgid ""
 "\n"
 "§0 is the theorem that §1."
 msgstr ""
-"このワールドでは、主にあなたを自分で残します。\n"
+"このワールドでは、基本的にあなた自身で進めていただきます。\n"
 "\n"
 "§0は、§1の定理です。"
 
