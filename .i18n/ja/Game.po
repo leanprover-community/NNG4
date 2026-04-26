@@ -1345,8 +1345,8 @@ msgid ""
 "We've seen §0, the proof that if §1 then §2.\n"
 "Now we'll prove that if §3 then §4 or §5."
 msgstr ""
-"We've seen §0, 仮定§1 から §2 が成り立つことを証明した。\n"
-"次に、仮定§3 から §4 または §5 が成り立つことを証明する。"
+"§0, 仮定§1 から §2 が成り立つことを証明しました。\n"
+"次に、仮定§3 から §4 または §5 が成り立つことを証明します。"
 
 #: Game
 #. §0: $\\mathbb{N}$
@@ -2185,7 +2185,7 @@ msgstr ""
 #. §1: $x = 0$
 #. §2: $x = 1$
 msgid "If §0 then either §1 or §2."
-msgstr "もし§0であるなら、§1または§2のいずれかである。"
+msgstr "§0なら、§1または§2。"
 
 #: Game.Levels.Addition.L02succ_add
 msgid "succ_add"
@@ -5938,7 +5938,7 @@ msgstr ""
 #. §2: `x = 0`
 #. §3: `x = 1`
 msgid "§0 is a proof that if §1 then §2 or §3."
-msgstr "§0は、§1ならば§2または§3であることを証明します。"
+msgstr "§0は、§1ならば§2または§3であることの証明。"
 
 #: Game.Levels.Tutorial
 msgid "Tutorial World"
