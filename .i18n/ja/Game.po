@@ -371,12 +371,7 @@ msgstr ""
 
 #: Game.Levels.Power.L01zero_pow_zero
 msgid "zero_pow_zero"
-msgstr ""
-"零乗零\n"
-"\n"
-"\n"
-"## 参考訳\n"
-"零乗零"
+msgstr "zero_pow_zero"
 
 #: Game.Levels.Addition.L03add_comm
 #. §0: `a`
@@ -3273,10 +3268,10 @@ msgid ""
 "Check out the *Pow* tab in your list of theorems\n"
 "to see the new proofs which are available."
 msgstr ""
-"数学家中で、§0 は何であるかについて時々議論があります；\n"
+"数学者の間で、§0 は何であるかについて時々議論があります；\n"
 "その答えは、もちろん、定義によって異なります。このゲームでは、§1 です。証明できるか試してみてください。\n"
 "\n"
-"証明一覧のタブから *Pow* をチェックして、利用可能な新しい証明を確認してください。"
+"証明一覧のタブから *Pow* (訳注: `^`) をチェックして、利用可能な新しい証明を確認してください。"
 
 #: Game.Levels.Implication.L09zero_ne_succ
 #. §0: `1`
