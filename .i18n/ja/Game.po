@@ -406,7 +406,7 @@ msgid ""
 msgstr ""
 "通りすがりの数学者は、自然数が可換半環であることを証明したことを指摘しました。\n"
 "\n"
-"最終ボスへの旅を始めるなら、乗法ワールドへ向かってください。"
+"最終ボスへの旅を始めるなら、冪乗ワールドへ向かってください。"
 
 #: Game.Levels.Power.L08pow_pow
 #. §0: `pow_pow`
@@ -6024,7 +6024,7 @@ msgstr ""
 
 #: Game.Levels.Power
 msgid "Power World"
-msgstr "パワー・ワールド"
+msgstr "冪乗ワールド"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: ```
