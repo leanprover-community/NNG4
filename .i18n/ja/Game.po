@@ -268,7 +268,7 @@ msgstr "add_left_cancel"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 msgid "You can probably take it from here."
-msgstr "您可能已经可以继续了。"
+msgstr "おそらく、ここから始めても問題ありません。"
 
 #: Game.Levels.Tutorial.L08twoaddtwo
 msgid "2+2=4"
@@ -3646,7 +3646,8 @@ msgstr ""
 "\n"
 "このゲームには負の数が存在しないので、この定義は数学的に有効です。\n"
 "\n"
-"这意味着如果你的目标形式为§2，你可以使用§3タクティク進展，如果你有仮定§4，你可以使用§5タクティク進展。"
+" これは、あなたが§2という形式の目標を持っている場合、\n"
+"§3のタクティクを使って進展できることを意味します。また、仮定§4を持っている場合、§5のタクティクを使って進展できます。"
 
 #: Game.Levels.Implication.L06intro
 #. §0: `exact h`
@@ -3661,13 +3662,8 @@ msgid ""
 "The reason §0 is because §1.\n"
 "So you should start this proof with §2."
 msgstr ""
-"The reason §0 is because §1.\n"
-"So you should start this proof with §2.\n"
-"\n"
-"\n"
-"## 翻訳\n"
-"理由§0は§1である。\n"
-"従って、この証明は§2から始めるべきである。"
+"§0は§1であるため成立します。\n"
+"従って、この証明は§2から始めるべきです。"
 
 #: Game.Levels.LessOrEqual.L04le_trans Game.Levels.LessOrEqual.L06le_antisymm
 #. §0: $x \\leq y$
@@ -6305,7 +6301,7 @@ msgid ""
 "- §13\n"
 "- §14"
 msgstr ""
-"## 結論\n"
+"## 概要\n"
 "\n"
 "§0 タクティクは、何かが存在することを主張する目標に対して進展を遂げます。\n"
 "もし目標が何かが特定の性質を持つ存在することを主張し、その存在を知る方法が §2 である場合、§3 は進展を遂げます。\n"
