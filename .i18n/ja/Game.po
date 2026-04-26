@@ -2147,7 +2147,7 @@ msgstr ""
 #. §0: $a$
 #. §1: $a ^ 1 = a$
 msgid "For all naturals §0, §1."
-msgstr "すべての自然数 §0, §1 について。"
+msgstr "すべての自然数 §0 について、 §1 。"
 
 #: Game.Levels.Algorithm.L08decide
 #. §0: `decide`
@@ -5797,8 +5797,9 @@ msgid ""
 "§4\"\n"
 "in Lean. We do this with the §5 tactic."
 msgstr ""
-"私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。しかし、もし私たちの *目標* が形式 §2 の場合は、どうすれば良いでしょうか？
-この目標を証明するには、Lean "
+"私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。\n"
+"しかし、もし私たちの *目標* が形式 §2 の場合は、どうすれば良いでしょうか？\n"
+"この目標を証明するには、Lean \n"
 "で \"§3 という仮定を設け、 §4 を導く\" という方法を知る必要があります。これを行うためには、§5 タクティクを使用します。"
 
 #: Game.Levels.LessOrEqual.L01le_refl Game.Levels.LessOrEqual.L02zero_le
@@ -6391,12 +6392,7 @@ msgstr "add_succ"
 
 #: Game.Levels.Power.L03pow_one
 msgid "pow_one"
-msgstr ""
-"pow_one\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"べき一度"
+msgstr "pow_one"
 
 #: Game.Levels.Implication.L11two_add_two_ne_five
 #. §0: ```
