@@ -4318,10 +4318,7 @@ msgid ""
 "Let's now move on to a more efficient approach to questions\n"
 "involving numerals, such as §0."
 msgstr ""
-"## 数値に関連する質問に対するより効率的なアプローチ\n"
-"\n"
-"### 参考訳\n"
-"数値に関連する質問、例えば§0 に対するより効率的なアプローチについて見ていきましょう。"
+"数値に関連する問題、例えば§0 に対するより効率的なアプローチについて見ていきましょう。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
@@ -5924,7 +5921,7 @@ msgstr "two_mul"
 
 #: Game.Levels.Algorithm.L04add_algo3
 msgid "the simplest approach"
-msgstr "最简单的方法"
+msgstr "最も単純なアプローチ"
 
 #: Game.Levels.Implication.L01exact
 #. §0: $P\\implies Q$
