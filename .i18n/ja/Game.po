@@ -1300,7 +1300,7 @@ msgstr ""
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
 msgid "x ≤ y and y ≤ x implies x = y"
-msgstr "x ≤ y と y ≤ x は x = y を意味します。"
+msgstr "x ≤ y と y ≤ x ならば x = y"
 
 #: Game.Levels.LessOrEqual.L07or_symm
 #. §0: `left`
@@ -4779,7 +4779,7 @@ msgstr ""
 "私の証明:\n"
 "§0\n"
 "\n"
-"数学的な通りすがりの人々が言います。反対称性も考慮すると、\n"
+"通りすがりの数学は、反対称性も考慮すると、\n"
 "あなたは§1が§2上の*部分順序*であることを証明しました。\n"
 "\n"
 "このワールドのボスレベルは、§3が完全順序であることを証明することです。\n"
