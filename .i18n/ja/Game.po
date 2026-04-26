@@ -264,12 +264,7 @@ msgstr ""
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
 msgid "add_left_cancel"
-msgstr ""
-"add_left_cancel\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"左-cancel 付加律"
+msgstr "add_left_cancel"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 msgid "You can probably take it from here."
