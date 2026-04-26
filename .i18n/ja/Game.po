@@ -412,7 +412,7 @@ msgstr ""
 #. §0: $x \\leq 0$
 #. §1: $x=0$
 msgid "If §0, then §1."
-msgstr "もし§0であるなら、§1です。"
+msgstr "§0ならば、§1。"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #. §0: `apply h`
@@ -5663,14 +5663,7 @@ msgid ""
 "but to prove it you will need a result which you showed in advanced\n"
 "addition world."
 msgstr ""
-"### 原文 (English)\n"
-"It's \"intuitively obvious\" that there are no numbers less than zero,\n"
-"but to prove it you will need a result which you showed in advanced\n"
-"addition world.\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"「零未満の数は存在しない」ということは直感的に明らかですが、それを証明するには、先に学んだ加算ワールドで示した結果が必要です。"
+"ゼロ未満の数は存在しないということは「直感的に明らか」ですが、それを証明するには、高度な加算ワールドで示した結果が必要です。"
 
 #: Game.Levels.Implication.L04succ_inj
 #. §0: `exact h`
