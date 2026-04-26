@@ -1680,7 +1680,7 @@ msgstr "ここから続けられますか？(注: §0を再度試すと、元の
 #. §0: `pow_two a`
 #. §1: `a ^ 2 = a * a`
 msgid "§0 says that §1."
-msgstr "§0 は §1 を言います。"
+msgstr "§0 は §1 を意味します。"
 
 #: Game.Levels.Implication.L04succ_inj
 msgid "In the next level, we'll do the same proof but backwards."
@@ -4541,8 +4541,8 @@ msgid ""
 "Let's now begin our approach to the final boss,\n"
 "by proving some more subtle facts about powers."
 msgstr ""
-"## 最終ボスへのアプローチ\n"
-"powersに関するより細かい事実を証明することで始めましょう。"
+"冪乗に関するより細かい事実を証明して、\n"
+"最終ボスへのアプローチをしましょう。"
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 #. §0: `succ_le_succ x y`
