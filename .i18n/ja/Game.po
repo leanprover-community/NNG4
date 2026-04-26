@@ -1234,7 +1234,7 @@ msgid ""
 "before.\n"
 "The §0 tactic can be used to take §1 apart."
 msgstr ""
-"このレベルでは、不等式が仮定(*hypothesis*)として扱われます。これまでに見られなかった手法です。\n"
+"このレベルでは、不等式が*仮定*として扱われます。これまでに見られなかった手法です。\n"
 "§0 タクティクは、§1 を分解するのに使用できます。"
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
@@ -3720,7 +3720,7 @@ msgstr ""
 msgid ""
 "Now you need to figure out which number to §0. See if you can take it from "
 "here."
-msgstr "今度は §0 の部分に何を入力するか考えなさい。ここから進められるようなら自分で進めてみてください。"
+msgstr "今度は §0 の部分に何を入力するか考えてください。ここから進められるようなら自分で進めてみてください。"
 
 #: Game.Levels.Implication.L03apply
 #. §0: `t : P → Q`
@@ -4614,7 +4614,7 @@ msgstr ""
 "より正確には、§4を証明しています。言葉で言えば、\n"
 "§5ならば（一時停止）§6ならば§7です。\n"
 "\n"
-"## 転置性に関する注記\n"
+"## 結合性に関する注記\n"
 "\n"
 "Leanでは、§8は§9を意味し、§10は左側から結合します。しかし、§11は右側から結合します。これにより、Leanでは§12は§13が "
 "Transitiv（転置的）であることを意味します。これは、数学的な文脈では通常§14を意味しないことを示しています；数学的には、これは通常§15と§1"
@@ -4748,7 +4748,7 @@ msgid ""
 "A passing mathematician remarks that with reflexivity and transitivity out "
 "of the way,\n"
 "you have proved that §0 is a *preorder* on §1."
-msgstr "一過性の数学者が言及し、反射律と伝搬律を除けば、§0 は §1 上の *前順序* を証明したと述べています。"
+msgstr "通りすがりの数学者が、反射律と伝搬律を除けば、§0 は §1 上の *前順序* を証明したと述べています。"
 
 #: Game.Levels.LessOrEqual.L06le_antisymm
 #. §0: ```
