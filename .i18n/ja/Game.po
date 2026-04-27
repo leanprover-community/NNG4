@@ -906,32 +906,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 #. §0: `t = 0`
 msgid "Let's warm up with an easy one, which works even if §0."
-msgstr ""
-"## 簡単な例題（§0 に関わらず動作します）\n"
-"\n"
-"```lean\n"
-"example : Prop := true\n"
-"```\n"
-"\n"
-"```lean\n"
-"-- 例題: 命題です\n"
-"example : Prop := true\n"
-"```\n"
-"\n"
-"```lean\n"
-"-- 仮定\n"
-"variable (p : Prop)\n"
-"\n"
-"-- 証明\n"
-"example : p → p := assume hp : p, hp\n"
-"```\n"
-"\n"
-"```lean\n"
-"-- タクティクを使用した証明\n"
-"example : p → p := by\n"
-"  intro hp\n"
-"  exact hp\n"
-"```"
+msgstr "まずは簡単な問題から始めましょう。これは §0 の場合でも成立します。"
 
 #: Game.Levels.Implication.L07intro2
 #. §0: $x+1=y+1\\implies x=y$
@@ -5201,7 +5176,7 @@ msgstr "1 ≠ 0"
 
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
 msgid "mul_le_mul_right"
-msgstr "乗法の右側への乗算の不等式定理"
+msgstr "mul_le_mul_right"
 
 #: Game.Levels.AdvAddition.L04add_right_eq_self
 msgid "add_right_eq_self"
@@ -5849,10 +5824,7 @@ msgid ""
 "§0"
 msgstr ""
 "私の証明:\n"
-"§0\n"
-"\n"
-"\n"
-"##"
+"§0"
 
 #: Game.Levels.Multiplication.L06two_mul
 msgid ""
