@@ -380,7 +380,7 @@ msgstr "intro"
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #. §0: `apply eq_succ_of_ne_zero at ha`
 msgid "Use the previous lemma with §0."
-msgstr "前の補題を使用し、§0を適用してください。"
+msgstr "§0を使用し、前の補題を適用してください。"
 
 #: Game.Levels.Multiplication.L09mul_assoc
 msgid ""
@@ -2661,13 +2661,13 @@ msgid ""
 "If you switch the goal and hypothesis in this example, §34 would solve it "
 "too."
 msgstr ""
-"### Summary\n"
+"# 概要\n"
 "\n"
 "§0 タクティクは、論理だけで解決できる目標（つまり、真偽表で解決できる目標）を解決します。\n"
 "\n"
 "## 詳細\n"
 "\n"
-"§1 は *魔法を施すわけではない*！加算や乗算については何も知らないし、すら §2 も知らない。§3 が数について知っているのは、まず §4 "
+"§1 は *魔法を施すわけではない*！加算や乗算については何も知らないし、§2 すらも知らない。§3 が数について知っているのは、まず §4 "
 "であり、二つ目は §5, §6, §7 などである。§8 の強みは *論理* にある。仮定 §9 と仮定 §10 があり、目標が §11 "
 "の場合、§12 はこの目標を解決します。なぜなら、目標を解決するには不等式や加算に関する事実を知る必要がないし、必要なのは論理のルールだけです。\n"
 "\n"
@@ -2702,7 +2702,7 @@ msgstr ""
 #. §0: `rfl`
 msgid "Now finish the job with §0."
 msgstr ""
-"§0で現在の作業を完了してください。"
+"§0で作業を完了してください。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `nth_rewrite 2 [← mul_one a] at h`
@@ -4409,7 +4409,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
 #. §0: `cases ha with n hn`
 msgid "Now take apart the existence statement with §0."
-msgstr "現在、存在文 §0 を分解します。"
+msgstr "存在文を §0 で 分解します。"
 
 #: Game.Levels.Tutorial.L08twoaddtwo Game.Levels.Implication.L06intro
 #: Game.Levels.Implication.L07intro2 Game.Levels.Implication.L09zero_ne_succ
@@ -6006,7 +6006,7 @@ msgstr "§0は§1または§2の証明です。"
 msgid ""
 "In the \"base case\" we have a hypothesis §0, and you can deduce anything\n"
 "from a false statement. The §1 tactic will close this goal."
-msgstr "### 基本的なケースでは、仮定§0が存在します。偽の文から何でも導くことができます。タクティク§1はこの目標を閉じます。"
+msgstr "基本的なケースでは、仮定§0が存在します。偽の文から何でも導くことができます。タクティク§1はこの目標を閉じます。"
 
 #: Game.Levels.Tutorial.L07add_succ
 msgid "add_succ"
