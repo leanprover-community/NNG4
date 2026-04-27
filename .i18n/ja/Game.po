@@ -5143,7 +5143,7 @@ msgstr ""
 
 #: Game.Levels.AdvMultiplication.L08mul_eq_zero
 msgid "mul_eq_zero"
-msgstr "乗算が零に等しい"
+msgstr "mul_eq_zero"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
 #. §0: `rw [two_eq_succ_one]`
