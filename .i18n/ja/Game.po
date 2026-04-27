@@ -1022,7 +1022,7 @@ msgid ""
 "§0"
 msgstr ""
 "以下は二行の証明です:\n"
-"§0\n"
+"§0"
 
 #: Game.Levels.Addition.L01zero_add
 #. §0: `zero_add x`
@@ -2732,7 +2732,7 @@ msgstr ""
 #. §0: `rfl`
 msgid "Now finish the job with §0."
 msgstr ""
-"§0で現在の作業を完了してください。\n"
+"§0で現在の作業を完了してください。"
 
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `nth_rewrite 2 [← mul_one a] at h`
@@ -4163,7 +4163,7 @@ msgstr ""
 
 #: Game.Levels.Addition.L03add_comm
 msgid "add_comm (level boss)"
-msgstr "add_comm (レベルボス)\n"
+msgstr "add_comm (レベルボス)"
 
 #: Game.Levels.Multiplication.L02zero_mul
 #. §0: `mul_comm x y : x * y = y * x`
@@ -6201,7 +6201,7 @@ msgid ""
 msgstr ""
 " おめでとうございます! あなたはフェルマーの最終定理を証明しました！\n"
 "\n"
-"もしくは、魔法を使用したかもしれません...\n"
+"もしくは、魔法を使用したかもしれません..."
 
 #: Game.Levels.Multiplication.L04mul_comm
 #. §0: `mul_comm`
@@ -6216,7 +6216,7 @@ msgstr ""
 
 #: Game.Levels.Tutorial.L04rw_backwards
 msgid "rewriting backwards"
-msgstr "反転して書き換え\n"
+msgstr "反転して書き換え"
 
 #: Game.Levels.LessOrEqual.L01le_refl
 #. §0: `use`
