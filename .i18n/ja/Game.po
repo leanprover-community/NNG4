@@ -226,12 +226,7 @@ msgstr "rw タクティク"
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid "mul_left_ne_zero"
-msgstr ""
-"mul_left_ne_zero\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"左側 multiplicand が非零である定理"
+msgstr "mul_left_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "mul_ne_zero"
@@ -417,7 +412,7 @@ msgstr "§0ならば、§1。"
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #. §0: `apply h`
 msgid "Now §0 and you can probably take it from here."
-msgstr "現在、§0 です。ここから大丈夫でしょう。"
+msgstr "§0 をします。ここから大丈夫でしょう。"
 
 #: Game.Levels.Multiplication.L04mul_comm
 #. §0: `mul_comm x y : x * y = y * x`
@@ -2970,14 +2965,9 @@ msgid ""
 "which is logically equivalent but much easier to prove. Remember that §2\n"
 "is notation for §3. Click on §4 if you need hints."
 msgstr ""
-"We want to reduce this to a hypothesis §0 and a goal §1,\n"
-"which is logically equivalent but much easier to prove. Remember that §2\n"
-"is notation for §3. Click on §4 if you need hints.\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"この部分を仮定§0と目標§1に簡略化したいです。これは論理的に同等ですが、証明がはるかに簡単になります。§2は§3の表記法です。ヒントが必要な場合は§4"
-"をクリックしてください。"
+"この部分を仮定§0と目標§1に簡略化したいです。\n"
+"これは論理的に同等ですが、証明がはるかに簡単になります。\n"
+"§2は§3の表記法です。ヒントが必要な場合は§4 (訳注: \"より多くのヘルプを表示！\")をクリックしてください。"
 
 #: Game.Levels.Tutorial.L05add_zero
 #. §0: `repeat rw [add_zero]`
