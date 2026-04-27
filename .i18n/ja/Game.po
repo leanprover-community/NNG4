@@ -175,7 +175,7 @@ msgid ""
 "\n"
 "will add §12 as a hypothesis."
 msgstr ""
-"### Summary\n"
+"# 概要\n"
 "\n"
 "§0 タクティクはレベルに新しい仮定を追加するのに使用できますが、もちろんそれらを証明する必要があります。\n"
 "\n"
@@ -1941,10 +1941,10 @@ msgid ""
 "\n"
 "We'll prove it using a new and very useful tactic called §5."
 msgstr ""
-"このレベルでは、進んだ加算ワールドの§1の乗法的な類似物である§0を証明します。戦略は、§2を証明し、その後、§4ワールドから§3"
+"このレベルでは、高度な加算ワールドの§1の乗法的な類似である§0を証明します。戦略は、§2を証明し、その後、§4ワールドから§3"
 "の補題を使用することです。\n"
 "\n"
-"新しい非常に有用なタクティク§5を使用して証明します。"
+"新しく非常に有用なタクティク§5を使用して証明します。"
 
 #: Game.Levels.Power.L06pow_add
 msgid "pow_add"
@@ -2759,7 +2759,7 @@ msgid ""
 "prove it, and then you'll have a new hypothesis which you can apply\n"
 "§5 to."
 msgstr ""
-"We want to use §0, ですが、§1 という仮定が必要で、現在持正在りません。まだありません。§2 を実行してください（§3 を §4 "
+"§0 を使いたいですが、持っていない §1 という仮定が必要です。§2 を実行してください（§3 を §4 "
 "で入力できます）。\n"
 "求められるまでは証明が必要ですが、証明後には新しい仮定が得られ、それを §5 で適用できます。"
 
@@ -4048,7 +4048,7 @@ msgstr ""
 #. §0: `rw [«{h}»] at «{h2}»`
 #. §1: `apply le_one at «{h2}»`
 msgid "Now §0 so you can §1."
-msgstr "現在 §0 なので、§1 です。"
+msgstr "§0 をすると、§1 ができます。"
 
 #: Game.Levels.LessOrEqual.L11le_two
 #. §0: $x \\leq 2$
@@ -5849,7 +5849,7 @@ msgstr ""
 msgid ""
 "Now §0 and deal with the two\n"
 "cases separately."
-msgstr "現在、§0 で、二つの場合を別々に処理します。"
+msgstr "§0 で、二つの場合を別々に処理します。"
 
 #: Game.Levels.Power.L08pow_pow
 msgid ""
