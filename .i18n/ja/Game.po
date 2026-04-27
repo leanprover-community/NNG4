@@ -230,12 +230,7 @@ msgstr "mul_left_ne_zero"
 
 #: Game.Levels.AdvMultiplication.L07mul_ne_zero
 msgid "mul_ne_zero"
-msgstr ""
-"mul_ne_zero\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"乗算が零でない（mul_ne_zero）"
+msgstr "mul_ne_zero"
 
 #: Game.Levels.Tutorial
 #. §0: `2 + 2 = 4`
