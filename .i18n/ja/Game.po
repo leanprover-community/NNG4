@@ -1899,12 +1899,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `apply mul_left_cancel at h`
 msgid "You can now §0"
-msgstr ""
-"你现在可以 §0\n"
-"\n"
-"\n"
-"## 日本語翻訳\n"
-"你现在可以 §0"
+msgstr "§0 ができます"
 
 #: Game.Levels.AdvMultiplication.L06mul_right_eq_one
 #. §0: `x * y = 1 → x = 1`
@@ -2687,7 +2682,7 @@ msgstr ""
 #: Game.Levels.AdvMultiplication.L10mul_right_eq_self
 #. §0: `nth_rewrite 2 [← mul_one a] at h`
 msgid "Reduce to the previous lemma with §0"
-msgstr "以前の補題に §0 をReduceします。"
+msgstr " §0 を使用して、直前の補題に変換します。"
 
 #: Game.Levels.AdvMultiplication.L05le_mul_right
 #. §0: `le_mul_right a b`
@@ -5700,7 +5695,7 @@ msgstr ""
 "これらの補題は、≤ワールドにおける≤に関する基本的な事実の証明に使用されました。\n"
 "\n"
 "高度な *乗算*ワールドでは、乗算に関する類似した事実（§2など）が証明され、\n"
-"§3（後者の結果では§4を仮定）も証明されました。これにより、*除算*ワールドに備えることができます。\n"
+"§3（後者の結果では§4を仮定）も証明されました。これにより、*整除*ワールドに備えることができます。\n"
 "\n"
 "*乗算*ワールドは、*加算*ワールドよりも複雑です。同様に、高度な *乗算* ワールドは、高度な "
 "*加算*"
