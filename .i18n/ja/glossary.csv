@@ -1,0 +1,35 @@
+# 原語が`/` で始まるものはJavaScript RegExp(iフラグ自動付与)
+原語,対訳,備考
+# 一般的(表記揺れ対策)
+open an issue,issueを作成
+# UI (lean4gameでの表記)
+Show more help!,助けて！
+Next,次
+Home,ホーム
+
+# 数学
+/axioms?/,公理
+associativity,結合性
+totality,全順序性
+implication,含意
+transitivity,推移性
+reflexivity,反射性
+the freshman's dream,一年生の夢,Wikipediaに記述あり
+natural numbers,自然数
+
+# Lean
+/tactics?/,タクティク
+goal,ゴール,一般語句との混在に注意
+
+# Worlds
+world,ワールド
+Addition World,加算ワールド
+Multiplication World,乗算ワールド
+Implication World,含意ワールド
+Power World,冪乗ワールド
+successor,後者,Wikipediaから
+zero,0,ゼロと0で表記揺れが発生
+Advanced Addition World,高度な加算ワールド
+Advanced Multiplication World,高度な乗算ワールド
+# 統一したい語句
+Can you take it from here?,ここから続けられますか？

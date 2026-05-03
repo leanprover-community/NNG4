@@ -1,0 +1,669 @@
+{"≤ World": "≤ ワールド",
+ "≠": "≠",
+ "§0.": "§0.",
+ "§0, with notation §1, is the usual\n  product of natural numbers. Internally it is\n  via two axioms:\n\n  * §2\n\n  * §3\n\nOther theorems about naturals, such as §4,\nare proved by induction from these two basic theorems.":
+ "§1 で表記される §0 は、自然数の積を表す一般的な概念です。内部的には、以下の2つの公理を用いて定義されます：\n\n* §2\n\n* §3\n\nまた、§4のような他の自然数に関する定理は、これらの基本定理から帰納法によって証明されます。",
+ "§0, with notation §1, is the usual\n  exponentiation of natural numbers. Internally it is\n  defined via two axioms:\n\n  * §2\n\n  * §3\n\nNote in particular that §4.":
+ "§0、記号§1を用いる場合は、通常の自然数の累乗を意味します。内部的には、以下の2つの公理によって定義されます。\n\n* §2\n\n* §3\n\n特に注意すべきは§4です。",
+ "§0, with notation §1, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* §2\n\n* §3\n\nOther theorems about naturals, such as §4, are proved\nby induction using these two basic theorems.":
+ "§0、記号§1は、通常の自然数の和を表します。内部的には、以下の2つの仮定を用いて定義されています：\n\n* §2\n\n* §3\n\nまた、§4のような他の自然数に関する定理は、これらの基本定理を用いて帰納法によって証明されます。",
+ "§0 will do this.": "§0 は、この操作を実行します。",
+ "§0 will change §1 into §2.": "§0 は §1 を §2 に変換します。",
+ "§0 says that §1.\n\nNote that this is not quite true by definition: §2 is\ndefined to be §3 so it's §4, and to prove\nthat this is equal to §5 you need to use induction somewhere.":
+ "§0 は §1 を意味します。\n\nただし、これは定義によるものではありません：§2 は §3 と定義されているため、§4 となり、これらが等しいことを証明するためには、どこかで数学的帰納法を用いる必要があります。",
+ "§0 says that §1.": "§0 は、§1 を述べています。",
+ "§0 practice.": "§0 演習。",
+ "§0 is the theorem that §1.\nYou can prove it by induction on §2 or you can deduce it from §3.":
+ "§0 は §1 を示す定理です。\nこの定理を証明するには、§2 に関する数学的帰納法を用いるか、§3 から推論できます。",
+ "§0 is the theorem that §1\nTwo ways to do it spring to mind; I'll mention them when you've solved it.":
+ "§0 は、§1 を証明する定理です。\nこの証明方法は2つ考えられますが、あなたが解決された後に説明します。",
+ "§0 is the theorem that §1": "§0は§1の定理です。",
+ "§0 is the statement that §1": "§0 は §1 を表す命題です。",
+ "§0 is the proof §1.": "§0 は §1 の証明を示す。",
+ "§0 is the proof that §1.\n\nNote: §2 is a §3 lemma.":
+ "§0 は、§1 の証明を示します。\n\n注：§2 は、§3 の補題です。",
+ "§0 is the proof that §1.\n\nIt could be deduced from §2 and §3, however this argument\nwould be circular because the proof of §4 uses §5.":
+ "§0 は §1 の証明を示します。\n\nただし、これは §2 と §3 から導出可能ですが、この議論は循環しており、§4 の証明において §5 が使用されているためです。",
+ "§0 is the proof that §1.\n\nIn Lean, §2 is *defined to mean* §3. Hence\n§4 is really a proof of §5.\nHere §6 is a generic false statement. This means that\nyou can §7 if §8 is a proof of §9.":
+ "§0 は §1 の証明を示します。\n\nLean では、§2 が §3 に *定義されている* ことを意味します。したがって、§4 は実際に §5 の証明です。ここで §6 は一般的な偽の命題です。つまり、§8 が §9 の証明である場合、§7 を実行できます。",
+ "§0 is the proof that §1.": "§0 は、§1 の証明を示しています。",
+ "§0 is the proof that multiplication is commutative. More precisely,\n§1 is the proof that §2.":
+ "§0 は、乗算における交換法則の成立を示す証明です。より具体的には、\n§1 は、§2 が交換法則を満たすことを示す証明です。",
+ "§0 is the proof of §1.\n\n§2 is a §3 lemma, because replacing §4 by §5\nis almost always what you want to do if you're simplifying an expression.":
+ "§0 は §1 の証明です。\n\n§2 は §3 の補題であり、§4 を §5 に置換することは、通常、式を簡略化する場合に望ましい操作です。",
+ "§0 is the proof of §1.": "§0 は §1 の証明です。",
+ "§0 is the number after the number after §1.": "§0 は、§1 の後に続く数値の後に現れる数値です。",
+ "§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. It's\ndefined via two rules:\n\n* §1 (zero is a number)\n* §2 (the successor of a number is a number)\n\n## Game Implementation\n\n*The game uses its own copy of the natural numbers, called §3 with notation §4.\nIt is distinct from the Lean natural numbers §5, which should hopefully\nnever leak into the natural number game.*":
+ "§0 は自然数を指し、「数」と呼ばれています。このゲームでは、以下の2つのルールを用いて定義されます。\n\n* §1（0は数）\n* §2（数の後続も数）\n\n## ゲームの実装\n\n* このゲームは、独自の自然数のコピーを使用します。「§3」という名前で参照され、記号は「§4」で表されます。これは、Leanの自然数「§5」とは異なり、自然数ゲームに影響を与えることはありません。",
+ "§0 is one of the two axioms\ndefining exponentiation in this game.":
+ "§0は、このゲームにおける指数関数の定義を定める公理のうちの1つです。",
+ "§0 is one of the\ntwo axioms defining exponentiation in this game.":
+ "§0は、このゲームにおける指数関数の定義を定める2つの公理のうちの1つです。",
+ "§0 is just as fiddly to prove by induction; but there's a trick\nwhich avoids it. Can you spot it?":
+ "§0を帰納法で証明することは、同様に複雑です。しかし、それを利用せずに証明できる方法があります。それは何かを見抜けますか？",
+ "§0 is good enough to solve this goal.": "§0 は、この問題を解決するために十分な情報を提供します。",
+ "§0 is an ancient magic spell, believed to be the origin of the\nmodern word §1. The game won't complain - or notice - if you\nprove anything with §2.":
+ "§0は、古くから伝わる魔法の呪文であり、現代の単語§1の起源であると考えられています。ゲームは、あなたがどのような方法で証明を行ったとしても、§2を用いて何を証明したかに関わらず、問題を示しません。",
+ "§0 is a proof that §1. But if your goal\nis §2 then §3 will not\nwork! Because the goal means §4 so there\nis no §5 term *directly* in the goal.\n\nUse associativity and commutativity to prove §6.\nYou don't need induction. §7 moves brackets around,\nand §8 moves variables around.\n\nRemember that you can do more targeted rewrites by\nadding explicit variables as inputs to theorems. For example §9\nwill only do rewrites of the form §10, and §11\nwill only do rewrites of the form §12.":
+ "§0 は §1 の証明です。しかし、あなたの目標が §2 である場合、§3 は機能しません！なぜなら、目標は §4 を意味し、目標に直接的に §5 の項が存在しないからです。\n\n結びつきと交換律を利用して、§6 を証明してください。帰納法は不要です。§7 は括弧の配置を変更し、§8 は変数の配置を変更します。\n\n明示的な変数を用意することで、より的確な書き換えを行うことができます。例えば、§9 は形式 §10 の書き換えのみを実行し、§11 は形式 §12 の書き換えのみを実行します。",
+ "§0 is a proof that §1.\n\nNote that when Lean says §2 it means §3.\n\nNote that §4 cannot be proved by \\\\\"pure thought\\\\\":\nfor example subtraction is not associative, as §5 is not\nequal to §6.":
+ "§0 は §1 の証明です。\n\nLean が §2 と言った場合、それは §3 を意味します。\n\nLean では、§4 は「純粋な思考」だけでは証明できません：\n例えば、減算は結合法則を満たさないため、§5 は §6 と等しくありません。",
+ "§0 is a proof that §1.\n\nIt's one way of saying that a divisor of a positive number\nhas to be at most that number.":
+ "§0 は §1 の証明です。\n\nこれは、正の数の約数はその数以下であることを示す一つの方法です。",
+ "§0 is a proof that §1.\n\n## Summary\n\n§2 is really a function, which\neats a number, and returns a proof of a theorem\nabout that number. For example §3 is\na proof that §4.\n\nThe §5 tactic will accept §6\nand will try to figure out which number you omitted\nto input.\n\n## Details\n\nA mathematician sometimes thinks of §7\nas \\\\\"one thing\\\\\", namely a proof of §8.\nThis is just another way of saying that it's a function which\ncan eat any number n and will return a proof that §9.":
+ "§0は§1の証明です。\n\n## 概要\n\n§2は実際には関数で、数字を入力するとその数字に関する定理の証明を返します。例えば§3は§4の証明です。\n\n§5のタクティクは§6を受け取り、省略された数字を推測しようとします。\n\n## 詳細\n\n数学者は時として§7を「一つのもの」と捉え、それは§8の証明であると言えます。これは、任意の数字nを入力すると§9の証明を返す関数であるという別の表現方法です。",
+ "§0 is a proof that §1.": "§0 は、§1 の証明を示します。",
+ "§0 is a proof that §1 or §2.": "§0 は、§1 または §2 の証明を示すものです。",
+ "§0 is a proof that §1\n\nIn Lean, §2 means §3, so this result gets displayed\nas §4.":
+ "§0 は §1 の証明を示す\n\nLean において、§2 は §3 を意味するため、この結果は §4 として表示されます。",
+ "§0 is a proof that §1": "§0 は §1 の証明を示すものです。",
+ "§0 is a proof that if §1 then §2.": "§0 は、§1 が成り立つ場合に §2 が成り立つことを示す証明です。",
+ "§0 is a proof that if §1 then §2 or §3.":
+ "§0 は、もし §1 が成り立つならば、§2 または §3 が成り立つという証明です。",
+ "§0 is a proof that if §1 then §2 or §3 or §4.":
+ "§0 は、もし §1 が真ならば、§2 または §3 または §4 がいずれか真であることを示す証明です。",
+ "§0 is a proof that if §1 and §2 then §3.\nMore precisely, it is a proof that §4. In words,\nIf §5 then (pause) if §6 then §7.\n\n## A note on associativity\n\nIn Lean, §8 means §9, because §10 is left associative. However\n§11 is right associative. This means that §12 in Lean means\nexactly that §13 is transitive. This is different to how mathematicians use\n§14; for them, this usually means that §15\nand §16.":
+ "§0は、§1と§2ならば§3であることを証明しています。\nより正確には、§4を証明しています。具体的には、\n§5ならば（一時停止）、§6ならば§7です。\n\n## 結合性に関する注記\n\nLeanでは、§8は§9を意味し、§10は左から結合します。しかし、§11は右から結合します。これにより、Leanでは§12は§13が転置的であることを意味します。これは、数学的な文脈では通常§14を意味しません；数学的には、これは通常§15と§16の両方が成り立つことを意味します。",
+ "§0 is a proof that if §1 and §2 then §3.":
+ "§0 は、§1 と §2 が成り立つとき、§3 が成り立つことを証明します。",
+ "§0 is a proof of §1.\"": "§0 は §1 の証明である。",
+ "§0 is a proof of §1.\n\nThe reason for the name is that this lemma is \"reflexivity of §2\"":
+ "§0 は §1 の証明です。\n\nこの名称は、「§2 の反射性」であることを示すために付けられました。",
+ "§0 is a proof of §1.": "§0 は §1 の証明です。",
+ "§0 is a proof of §1 so that was what got rewritten.\nYou can now change §2 to §3 with §4 or §5. You\ncan usually stick to §6 unless you need real precision.":
+ "§0 は §1 の証明であるため、それが書き換えられた理由です。\n§4 または §5 を使用して §2 を §3 に変更できます。 通常は §6 を使用すれば十分ですが、より厳密な操作が必要な場合は §4 または §5 を使用してください。",
+ "§0 is a proof of the implication §1.": "§0 は、§1 の推論を示しています。",
+ "§0 is a proof\nthat §1. Note that in Lean §2 prints\nas §3, because the notation for addition is defined to be left\nassociative.":
+ "§0 は §1 の証明です。\nLean では、加算の演算が左結合的に定義されているため、§2 は §3  として表示されます。",
+ "§0 is I think quicker than §1.": "§0 は、§1 よりも高速であると推測されます。",
+ "§0 is *notation* for §1. This \"backwards E\"\nmeans \"there exists\". So §2 means that there exists\na number §3 such that §4. This definition works\nbecause there are no negative numbers in this game.\n\nTo *prove* an \"exists\" statement, use the §5 tactic.\nLet's see an example.":
+ "§0は§1の記号です。「反転したE」とは「存在」を表します。したがって、§2は、「ある数§3が存在し、かつ§4を満たす」ことを意味します。この定義は、このゲームには負の数が含まれないため有効です。\n\n「存在する」文を証明するには、§5のタクティクを使用します。例を見てみましょう。",
+ "§0 is *notation* for §1.\n\nThe reason this is mathematically\nvalid is that if §2 is a true-false statement then §3\nis the logical opposite of §4. Indeed §5 is false,\nand §6 is true!\n\nThe upshot of this is that you can treat §7 in exactly\nthe same way as you treat any implication §8. For example,\nif your *goal* is of the form §9 then you can make progress\nwith §10, and if you have a hypothesis §11 of the\nform §12 then you can §13 if §14 is a proof\nof §15.":
+ "§0は§1の*表記*です。\n\nこのことが数学的に成り立つ理由は、§2が真偽に関する主張である場合、§3は§4の論理的な否定であるからです。実際、§5は偽であり、§6は真です！\n\nこのことから、§7を任意の推論§8と同じように扱うことができます。例えば、あなたの*目標*が§9のような形であれば、§10を用いて進展できます。また、仮定§11が§12のような形である場合、§13を行うことが可能です（ただし、§14が§15の証明である場合に限ります）。",
+ "§0 is *notation* for §1.\n\nBecause this game doesn't have negative numbers, this definition\nis mathematically valid.\n\nThis means that if you have a goal of the form §2 you can\nmake progress with the §3 tactic, and if you have a hypothesis\n§4, you can make progress with §5.":
+ "§0は§1の表記です。\n\nこのゲームには負の数が存在しないため、この定義は数学的に有効です。\n\nこれにより、あなたが§2という形式の目標を持つ場合、§3の手法を用いて進展できます。また、仮定§4を持っている場合、§5の手法を用いて進展できます。",
+ "§0": "§0",
+ "zero_pow_zero": "zero_pow_zero",
+ "zero_pow_succ": "zero_pow_succ",
+ "zero_ne_succ": "zero_ne_succ",
+ "zero_mul": "zero_mul",
+ "zero_add": "zero_add",
+ "x ≤ y or y ≤ x": "x ≤ y または y ≤ x",
+ "x ≤ y and y ≤ z implies x ≤ z": "x ≦ y かつ y ≦ z ならば、x ≦ z が成り立つ。",
+ "x ≤ y and y ≤ x implies x = y": "x ≤ y かつ y ≤ x であるとき x = y",
+ "x ≤ succ x": "x ≤ succ x",
+ "x ≤ 1": "x ≤ 1",
+ "x ≤ 0 → x = 0": "x ≤ 0 → x = 0",
+ "two_mul": "two_mul",
+ "try rewriting §0.": "§0で書き換えてみてください.",
+ "the simplest approach": "最もシンプルなアプローチ",
+ "the rw tactic": "rw タクティク",
+ "succ_mul": "succ_mul",
+ "succ_inj : the successor function is injective": "succ_inj : 後者関数は単射",
+ "succ_add": "succ_add",
+ "succ x ≤ succ y → x ≤ y": " succ x ≤ succ y → x ≤ y",
+ "rewriting backwards": "逆方向に書き換える",
+ "pred": "pred",
+ "pow_two": "pow_two",
+ "pow_pow": "pow_pow",
+ "pow_one": "pow_one",
+ "pow_add": "pow_add",
+ "one_pow": "one_pow",
+ "one_mul": "one_mul",
+ "one_le_of_ne_zero": "one_le_of_ne_zero",
+ "mul_right_eq_self": "mul_right_eq_self",
+ "mul_right_eq_one": "mul_right_eq_one",
+ "mul_pow": "mul_pow",
+ "mul_one": "mul_one",
+ "mul_ne_zero": "mul_ne_zero",
+ "mul_left_ne_zero": "mul_left_ne_zero",
+ "mul_left_cancel": "mul_left_cancel",
+ "mul_le_mul_right": "mul_le_mul_right",
+ "mul_eq_zero": "mul_eq_zero",
+ "mul_comm": "mul_comm",
+ "mul_assoc": "mul_assoc",
+ "mul_add": "mul_add",
+ "making life simple": "よりシンプルな生活を実現する",
+ "making life easier": "生活をより簡単に",
+ "level completed! 🎉": "レベル完了！🎉",
+ "level completed with warnings… 🎭": "レベルが警告付きで完了しました… 🎭",
+ "le_two": "le_two",
+ "le_mul_right": "le_mul_right",
+ "is_zero": "is_zero",
+ "intro practice": "intro 演習",
+ "intro": "intro",
+ "intermediate goal solved! 🎉": "中間目標が達成されました！🎉",
+ "eq_succ_of_ne_zero": "eq_succ_of_ne_zero",
+ "decide again": "もう一度 decide",
+ "decide": "decide",
+ "add_succ": "add_succ",
+ "add_sq": "add_sq",
+ "add_right_eq_zero": "add_right_eq_zero",
+ "add_right_eq_self": "add_right_eq_self",
+ "add_right_comm": "add_right_comm",
+ "add_right_cancel": "add_right_cancel",
+ "add_mul": "add_mul",
+ "add_left_eq_zero": "add_left_eq_zero",
+ "add_left_eq_self": "add_left_eq_self",
+ "add_left_comm": "add_left_comm",
+ "add_left_cancel": "add_left_cancel",
+ "add_comm (level boss)": "add_comm (レベルボス)",
+ "add_assoc (associativity of addition)": "add_assoc (加法に関する結合法則)",
+ "[final boss music]": "[最終ボス戦のテーマ音楽]",
+ "[dramatic music]. Now are you ready to face the first boss of the game?":
+ "[壮大なBGMが流れる]. 続いて、ゲームの最初のボスとの戦闘に備えましょう。",
+ "[boss battle music]\n\nLook in your inventory to see the proofs you have available.\nThese should be enough.":
+ "[ボスバトル音楽]\n\nあなたのインベントリを確認し、利用可能な証明を確認してください。\nこれらで十分であるはずです。",
+ "You've now seen all the tactics you need to beat the final boss of the game.\nYou can begin the journey towards this boss by entering Multiplication World.\n\nOr you can go off the beaten track and learn some new tactics in Implication\nWorld. These tactics let you prove more facts about addition, such as\nhow to deduce §0 from §1.\n\nClick \"Home\" and make your choice.":
+ "ゲームの最終ボスを倒すためのすべてのタクティクを習得しました。\nこの最終ボスの攻略を目指すには、乗算ワールドへ進んでください。\n\nあるいは、含意ワールドで新たなタクティクを学ぶことも可能です。\nこれらのタクティクを用いることで、加算に関するより多くの事実を証明できます。\n例えば、§1から§0を導出する方法を学ぶことができます。\n\n「ホーム」をクリックして選択してください。",
+ "You want to use §0, which you already\nproved, but you'll have to start with §1 your hypothesis.":
+ "既に証明した§0を使用したいですが、まず§1という仮定から始める必要があります。",
+ "You still don't know which way to go, so do §0.": "まだ進むべき方向が不明なため、§0を実行します。",
+ "You now know enough tactics to prove §0! Let's begin the journey.":
+ "あなたは、十分なタクティクを習得し、§0の証明が可能になりました。それでは、学習の旅を始めましょう。",
+ "You might want to think about whether induction\non §0 or §1 is the best idea.":
+ "推論を行う際に、§0 または §1 に対する再帰的なアプローチが最適かどうかを検討する必要があります。",
+ "You can use §0 to rewrite at §1 instead\nof at the goal.":
+ "§0 を使用して、目標ではなく §1 を書き換えることができます。",
+ "You can start a proof by induction on §0 by typing:\n§1.":
+ "帰納法を用いて§0について証明を開始するには、次のように入力してください。\n§1.",
+ "You can read more about the §0 tactic by clicking\non it in the top right.":
+ "§0 タクティクの詳細については、右上のリンクからご確認ください。",
+ "You can put a §0 in front of any theorem provided to §1 to rewrite\nthe other way around. Look at the docs for §2 for an explanation. Type §3 with §4.":
+ "任意の定理 §1 の先頭に §0 を付与することで、その定理を逆方向に記述することができます。詳細については、§2 のドキュメントをご参照ください。「§4」と入力し、その後「§3」を入力してください。",
+ "You can prove §0 in at least three ways.\nEither by induction, or by using §1, or\nby using commutativity. Which do you think is quickest?":
+ "少なくとも3つの方法で§0を証明できます。\nいずれも、帰納法を用いる方法、§1を利用する方法、または交換律を用いる方法です。\nこれらのうち、最も効率的な方法はどれだとお考えですか？",
+ "You can probably take it from here.": "ここからでも進めることができるでしょう。",
+ "You can now §0": "§0 ができます",
+ "You can now finish with §0.": "これで §0 の部分を完了してください。",
+ "You can make your own tactics in Lean.\nThis code here\n§0\nwas used to create a new tactic §1, which runs\n§2.\nTry running §3 to solve this level!":
+ "Leanでは、独自のタクティクを作成できます。\n以下のコード\n§0\nは、§2を実行する、新しいタクティク§1を作成します。\n§3を実行することで、この問題を解決できます！",
+ "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
+ "前の証明の手順を参考に、同様の方法でこの証明を行うことができます。\n-- または、それを活用するための別の手段を見つけることも可能です。",
+ "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
+ "任意の3つの変数に対して、帰納法を適用することができます。しかし、すべての選択肢が容易ではありません。5回の書き換えで、帰納的ステップを実行することは可能でしょうか？",
+ "Why did we not just define §0 to be §1? Because we have not\neven *defined* addition yet! We'll do that in the next level.":
+ "なぜ、§0を§1に定義しなかったのでしょうか？ それは、まだ足し算の演算自体を定義していないからです。この定義は、次の段階で行います。",
+ "What do you think of this two-liner:\n§0\n\n§1 doesn't just take hypotheses, it will eat any proof which exists\nin the system.":
+ "この2行についてどう思いますか：\n§0\n\n§1 は、単に仮定を受け取るだけでなく、システム内に存在する任意の証明を評価します。",
+ "Well done! You now have enough tools to tackle the main boss of this level.":
+ "よくできました！これで、このレベルのメインボスに対抗するための十分なツールが揃いました。",
+ "Well done!": "よくできました！",
+ "Welcome to tutorial world! In this world we learn the basics\nof proving theorems. The boss level of this world\nis the theorem §0.\n\nYou prove theorems by solving puzzles using tools called *tactics*.\nThe aim is to prove the theorem by applying tactics\nin the right order.\n\nLet's learn some basic tactics. Click on \"Start\" below\nto begin your quest.":
+ "チュートリアルワールドへようこそ！この世界では、定理の証明方法の基本を学びます。この世界の最終ボスは定理§0です。\n\n定理を証明するには、*タクティク*と呼ばれるツールを使ってパズルを解きます。目標は、適切な順序でタクティクを適用して定理を証明することです。\n\n基本的なタクティクについて学びましょう。「開始」をクリックして冒険を始めてください。",
+ "Welcome to Addition World! In this world we'll learn the §0 tactic.\nThis will enable us to defeat the boss level of this world, namely §1.\n\nThe tactics §2, §3 and §4 are the only tactics you'll need to\nbeat all the levels in Addition World, Multiplication World, and Power World.\nPower World contains the final boss of the game.\n\nThere are plenty more tactics in this game, but you'll only need to know them if you\nwant to explore the game further (for example if you decide to 100%\nthe game).":
+ "加算ワールドへようこそ！このワールドでは§0 タクティクを学びます。\nこれにより、このワールドのボスレベルを攻略することができます、すなわち§1です。\n\n§2, §3, §4 のタクティクのみが必要で、これらを用いて\n加算ワールド、乗算ワールド、冪乗ワールドのすべてのレベルを攻略することができます。\n冪乗ワールドにはゲームの最終ボスが含まれています。\n\nこのゲームにはもっと多くのタクティクがありますが、それらを知る必要はなく、\nゲームをさらに探索したい場合（例えば、ゲームを100%攻略したい場合）にのみ必要となります。",
+ "We've seen §0, the proof that if §1 then §2.\nNow we'll prove that if §3 then §4 or §5.":
+ "これまでに、仮定 §1 ならば §2 が成り立つことを示す証明 §0 を見てきました。\n次に、仮定 §3 ならば §4 または §5 が成り立つことを証明します。",
+ "We've proved that §0; in Implication World we'll learn\nhow to prove §1.\n\nIn Addition World we proved *equalities* like §2.\nIn this second tutorial world we'll learn some new tactics,\nenabling us to prove *implications*\nlike §3\n\nWe'll also learn two new fundamental facts about\nnatural numbers, which Peano introduced as axioms.\n\nClick on \"Start\" to proceed.":
+ "私たちは§0の証明を示しました； 含意ワールドでは、§1を証明する方法について学びます。\n\n加法ワールドでは、§2のような等式を証明しました。\nこの二つ目のチュートリアルワールドでは、新しいタクティク（証明手法）を学び、これを使って§3のような推論を証明できるようになります。\n\nまた、ペアノが公理として導入した自然数に関する二つの新しい基本的事実についても学びます。\n\n「開始」をクリックして進みましょう。",
+ "We've proved that §0 implies §1. The last two levels\nin this world will prove which numbers are §2 and §3.\nThis lemma will be helpful for them.":
+ "私たちは、§0 が §1 を意味することを示しました。この世界における最後の2つのレベルにおいて、どの数値が §2 および §3 に該当するかを証明します。この定理は、彼らに非常に役立ちます。",
+ "We've just seen that §0, but if §1\nis a successor, then §2. We prove that here.":
+ "これまでに §0 について説明しました。しかし、もし §1 が後続の値であるならば、それは §2 となります。このことの証明を以下に示します。",
+ "We've been adding up two numbers; in this level we will add up three.\n\n  What does §0 *mean*? It could either mean §1, or it\n  could mean §2. In Lean, §3 means §4.\n\n  But why do we care which one it means; §5 and §6 are *equal*!\n\n  That's true, but we didn't prove it yet. Let's prove it now by induction.":
+ "二つの数を足し合わせる練習をしてきました。このレベルでは、三つの数を足し合わせます。\n\n  §0 は何を意味するのでしょうか？それは §1 または §2 のどちらかです。Lean では、§3 と §4 は同じ意味になります。\n\n  しかし、どの意味を持つべきかを気にする必要はありません。なぜなら、§5 と §6 は *等しい* からです！\n\n  その通りですが、まだ証明していません。帰納法(`inducution`)でを用いて証明しましょう。",
+ "We're going to change that §0 into §1. Start by changing it into\n§2 by executing §3.":
+ "§0 を §1 に変更します。まず、§3 を実行して §0 を §2 に変更します。",
+ "We'll need this lemma to prove that two is prime!\n\nYou'll need to know that §0 is right associative. This means that\n§1 actually means §2.\nThis affects how §3 and §4 work.":
+ "この定理を利用して、2 が素数であることを証明できます！\n\n§0 が右結合であるという性質を理解しておく必要があります。\nこれは、§1 が実際に §2 と同じ意味であることを示します。\nこれにより、§3 および §4 の動作が影響を受けます。",
+ "We'd like to prove §0 but right now\nwe can't even *state* it\nbecause we haven't yet defined addition.\n\n## Defining addition.\n\nHow are we going to add §1 to an arbitrary number §2? Well,\nthere are only two ways to make numbers in this game: §3\nand successors. So to define §4 we will need\nto know what §5 is and what §6 is.\nLet's start with adding §7.\n\n### Adding 0\n\nTo make addition agree with our intuition, we should *define* §8\nto be §9. More generally, we should define §10 to be §11 for\nany number §12. The name of this proof in Lean is §13.\nFor example §14 is a proof of §15,\n§16 is a proof of §17, and §18 is a proof\nof §19.\n\nWe write §20, so §21.":
+ "私たちは§0を証明したいですが、現在では\nその定理を*記述すること*すらできません。\nなぜなら、加法をまだ定義していないからです。\n\n## 加法の定義\n\n任意の数§2に§1を加える方法はどのようなものでしょうか？\nこのゲームでは数を生成する方法は2つしかありません：§3\nと後続数。したがって、§4を定義するには\n§5と§6がどのようなものかを知る必要があります。\nまずは§7を加えることにしましょう。\n\n### 0を加える\n\n加法が直感に合致するようにするためには、§8を\n§9とするべきです。より一般的には、任意の数§12に対して\n§10を§11とするべきです。Leanでのこの証明の名前は§13です。\n例えば、§14は§15の証明、§16は§17の証明、§18は§19の証明です。\n\n私たちは§20と書きます、つまり§21です。",
+ "We want to use §0, but we need a hypothesis §1\nwhich we don't have. Yet. Execute §2 (you can type §3 with §4).\nYou'll be asked to\nprove it, and then you'll have a new hypothesis which you can apply\n§5 to.":
+ "§0 の使用を試みますが、それには §1 という仮定が必要です。しかし、現時点ではその仮定は用意されていません。§2 を実行してください（ §4 を入力すると §3 になります）。\n証明が必要ですが、証明後には新しい仮定が得られ、それを §5 で利用できます。",
+ "We want to reduce this to a hypothesis §0 and a goal §1,\nwhich is logically equivalent but much easier to prove. Remember that §2\nis notation for §3. Click on §4 if you need hints.":
+ "この部分を仮定§0と目標§1に簡略化したいと考えています。\nこれは論理的に同等ですが、証明がはるかに簡単になります。\n§2は§3の表記法です。ヒントが必要な場合は§4 (訳注:\"より多くのヘルプを表示！\")をクリックしてください。",
+ "We still can't prove §0 because we have not talked about the\ndefinition of §1. In Lean, §2 is *notation* for §3.\nHere §4 is a generic false proposition, and §5 is Lean's notation\nfor \"implies\". In logic we learn\nthat §6 is false, but §7 is true. Hence\n§8 is the logical opposite of §9.\n\nEven though §10 does not look like an implication,\nyou should treat it as an implication. The next two levels will show you how.\n\n§11 is a goal which you cannot deduce from a consistent set of assumptions!\nSo if your goal is §12 then you had better hope that your hypotheses\nare contradictory, which they are in this level.":
+ "まだ §0 の証明はできません。なぜなら、§1 の定義について議論していないからです。Lean では、§2 は §3 の *表記* です。\nここでは §4 は一般的な偽命題であり、§5 は Lean における \"implies\" の表記です。論理学では §6 が偽であると学習しますが、§7 は真です。したがって §8 は §9 の論理的対偶となります。\n\n§10 は含意のように見えないかもしれませんが、含意として扱うべきです。次の 2 つのレベルでその方法を学びます。\n\n§11 は一貫性のある仮定から導き出せない目標です！したがって、目標が §12 の場合、仮定が矛盾していることを期待し、このレベルではそうしています。",
+ "We now start work on an algorithm to do addition more efficiently. Recall that\nwe defined addition by recursion, saying what it did on §0 and successors.\nIt is an axiom of Lean that recursion is a valid\nway to define functions from types such as the naturals.\n\nLet's define a new function §1 from the naturals to the naturals, which\nattempts to subtract 1 from the input. The definition is this:\n\n§2\n\nWe cannot subtract one from 0, so we just return a junk value. As well as this\ndefinition, we also create a new lemma §3, which says that §4.\nLet's use this lemma to prove §5, the theorem which\nPeano assumed as an axiom and which we have already used extensively without justification.":
+ "効率的な加算を行うアルゴリズムの作成を開始します。再帰によって加算を定義したことを思い出してください。具体的には、0と後者に対して何を行うかを定義しました。Leanの公理として、再帰は自然数などの型から関数を定義する有効な方法であるとされています。\n\n自然数から自然数への新しい関数§1を定義します。これは、入力から1を引こうとする関数です。その定義は以下の通りです：\n\n§2\n\n0から1を引くことはできませんので、無効な値を返します。この定義とともに、新しい補題§3も定義します。これは§4を述べています。この補題を使って、§5（ペアノが公理として仮定し、以前にも正当化せずに頻繁に使用した定理）を証明しましょう。",
+ "We now have enough to state a mathematically accurate, but slightly\nclunky, version of Fermat's Last Theorem.\n\nFermat's Last Theorem states that if §0 and §1 then §2.\nIf you didn't do inequality world yet then we can't talk about §3,\nso we have to resort to the hack of using §4 for §5,\nwhich guarantees it's big enough. Similarly instead of §6 we\nuse §7.\n\nThis level looks superficially like other levels we have seen,\nbut the shortest solution known to humans would translate into\nmany millions of lines of Lean code. The author of this game,\nKevin Buzzard, is working on translating the proof by Wiles\nand Taylor into Lean, although this task will take many years.\n\n## CONGRATULATIONS!\n\nYou've finished the main quest of the natural number game!\nIf you would like to learn more about how to use Lean to\nprove theorems in mathematics, then take a look\nat [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\nan interactive textbook which you can read in your browser,\nand which explains how to work with many more mathematical concepts in Lean.":
+ "現在、フェルマーの最終定理の数学的に正確だが、やや冗長なバージョンを記述するのに十分な情報があります。\n\nフェルマーの最終定理は、 §0 と §1 が成り立つならば、 §2 が成り立つ、と述べることができます。 ≤ ワールド がまだ完了していない場合は、 §3 について議論することができません。そのため、 §4 を §5 の代わりに使うという手法を用いる必要があります。これにより、十分な大きさになることが保証されます。同様に、§6の代わりに§7を使用します。\n\nこのレベルは、これまでに見た他のレベルと似ていますが、人間が知っている最も短い解は、数百万行の Lean コードに変換されます。このゲームの作者である Kevin Buzzard は、ウィルズとテイラーの証明を Lean に翻訳する作業に取り組んでいますが、この作業には数年かかるでしょう。\n\n## おめでとう！\n自然数ゲームの主要な冒険を終えました！\nLeanを使用して数学の定理を証明する方法をさらに学びたい場合は、「Mathematics In Lean」を参照してください。これはブラウザで読むことができる対話型教科書で、Leanでより多くの数学的概念を扱う方法を説明しています。",
+ "We now have enough to prove that multiplication is associative,\nthe boss level of multiplication world. Good luck!":
+ "乗算が結合的であることを証明するための準備は整いました。これは、乗算ワールドのボスレベルです。成功をお祈りします！",
+ "We know §0 is a proof of §1 -- but what\nif we have a hypothesis §2? It's the wrong way around!\n\nThe §3 tactic changes a goal §4 to §5, and a goal §6\nto §7. And §8\ndoes the same for a hypothesis §9. We've proved §10 and called\nthe proof §11; now try proving §12.":
+ "私たちは、§0 が §1 の証明であることを知っています。しかし、もし §2 という仮定がある場合、それは逆になってしまいます。\n\n§3 のタクティクは、目標 §4 を §5 に、目標 §6 を §7 に変更します。また、§8 も仮定 §9 に対して同様の操作を行います。\n\n§10 を証明し、その証明を §11 と命名しました。次に §12 を証明してみてください。",
+ "We have seen how to §0 theorems and assumptions\nof the form §1. But what if our *goal* is of the form §2?\nTo prove this goal, we need to know how to say \"let's assume §3 and deduce §4\"\nin Lean. We do this with the §5 tactic.":
+ "私たちは、形式 §1 の定理や仮定の §0 の方法を見ました。\nしかし、もし私たちの *目標* が形式 §2 の場合は、どうすれば良いでしょうか？\nこの目標を証明するには、Lean で \"§3 という仮定を設け、 §4 を導く\" という方法を知る必要があります。これを行うためには、§5 タクティクを使用します。",
+ "We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer one.":
+ "これまでの§0の証明は不完全であり、より適切な証明方法を提示します。",
+ "We don't know whether to go left or right yet. So start with §0.":
+ "まだどちらに進むべきか決まっていないため、「§0」から開始しましょう。",
+ "We define a function §0 thus:\n\n§1\n\nWe also create two lemmas, §2 and §3, saying that §4\nand §5. Let's use these lemmas to prove §6, Peano's\nLast Axiom. Actually, we have been using §7 before, but it's handy to have\nthis opposite version too, which can be proved in the same way. Note: you can\ncheat here by using §8 but the point of this world is to show\nyou how to *prove* results like that.\n\nIf you can turn your goal into §9, then the §10 tactic will solve it.":
+ "関数 §0 は以下の通り定義します：\n\n§1\n\nまた、補題 §2 と §3 を定義し、それぞれ §4\nと §5 とします。これらの補題を用いて、ペアノの最終公理 §6 の証明を行います。実際、§7 は以前から使用していましたが、同じ方法で証明できる逆の命題も用意しておくと便利です。注意：ここでは §8 を使用して解決することも可能ですが、このワールドの目的は、そのような結果を証明する方法を示すことです。\n\n目標を §9 に変換できれば、§10 タクティクを用いて解決できます。",
+ "Very well done.\n\nA passing mathematician remarks that with you've just proved that §0 is totally\nordered.\n\nThe final few levels in this world are much easier.":
+ "素晴らしい成果です。\n\nある数学者が「あなたは、§0 が完全に順序付けされていることを証明しましたね」とコメントしました。\n\nこのワールドの最後の数レベルは、それほど難しくありません。",
+ "Use §0.": "§0をご利用ください。",
+ "Use §0 and remember that §1 will solve a goal\nif there are hypotheses §2 and §3.":
+ "§0を使用します。仮定として§2と§3が存在する場合、§1を用いることで目標を解決できます。",
+ "Use the previous lemma with §0.": "前の定理を適用するために、§0を使用してください。",
+ "Tutorial World": "チュートリアルワールド",
+ "Try §0.": "§0 を実行してみましょう。",
+ "Try §0 to change §1 into §2.": "§0を使用して、§1を§2に変換することを試みてください。",
+ "Totality of §0 is the boss level of this world, and it's coming up next. It says that\nif §1 and §2 are naturals then either §3 or §4.\nBut we haven't talked about §5 at all. Here's a run-through.\n\n1) The notation for \"or\" is §6. You won't need to type it, but you can\ntype it with §7.\n\n2) If you have an \"or\" statement in the *goal*, then two tactics make\nprogress: §8 and §9. But don't choose a direction unless your\nhypotheses guarantee that it's the correct one.\n\n3) If you have an \"or\" statement as a *hypothesis* §10, then\n§11 will create two goals, one where you went left,\nand the other where you went right.":
+ "§0 の全域性は、このワールドにおけるボスレベルであり、次に登場します。これは、§1 と §2 が自然数である場合に、§3 または §4 であることを示しています。しかし、§5 についてはまだ触れていません。以下に概要を示します。\n\n1) 「または」の表記は §6 です。「または」を直接入力する必要はありませんが、§7 を使用して入力できます。\n\n2) 目標に「または」という文がある場合、2 つのタクティク §8 と §9 を用いて進めます。ただし、方向を選択する前に、仮定が正しい方向であることを保証していることを確認してください。\n\n3) 仮定 §10 に「または」という文がある場合、§11 は 2 つの目標を作成します。一つは左に進んだ場合に生成され、もう一つは右に進んだ場合に生成されます。",
+ "To solve this level, you need to §0 a number §1 such that §2.":
+ "このレベルを解くには、§0 に数値を指定し、§1 とすることで、§2 が成り立つようにする必要があります。",
+ "Those of you interested in speedrunning the game may want to know\nthat §0 will do both rewrites at once.":
+ "ゲームのスピードランにご興味のある方は、`§0` は一度に両方のリライトを実行できます。",
+ "This world introduces exponentiation. If you want to define §0\nthen, as always, you will need to know what §1 is, and\nwhat §2 is, given only §3.\n\nYou can probably guess the names of the general theorems:\n\n  * §4\n  * §5\n\nUsing only these, can you get past the final boss level?\n\nThe levels in this world were designed by Sian Carey, a UROP student\nat Imperial College London, funded by a Mary Lister McCammon Fellowship\nin the summer of 2019. Thanks to Sian and also thanks to Imperial\nCollege for funding her.":
+ "このワールドでは指数演算が導入されます。§0を定義するには、常に §1 と §2 が何であるかを知る必要があります。そして、それらを §3 だけを使って推測する必要があります。\n\n一般的な定理の名前はおそらく予想できるでしょう：\n\n  * §4\n  * §5\n\nこれらのものだけを使って最終ボスレベルを突破できるでしょうか？\n\nこの世界のレベルは、2019年夏にMary Lister McCammon助成金によりImperial College LondonのUROP学生であるSian Careyによって設計されました。Sianに感謝します。また、Imperial Collegeの助成にも感謝します。",
+ "This time, use the §0 tactic.": "この場合は、§0 タクティクを使用します。",
+ "This level proves §0, the multiplicative analogue of Advanced Addition\nWorld's §1. The strategy is to prove that §2 and then use the\nlemma §3 from §4 world.\n\nWe'll prove it using a new and very useful tactic called §5.":
+ "このレベルでは、高度な加算ワールドの§1の乗法的な類似である§0を証明します。その戦略は、まず§2を証明し、その後、§4ワールドから§3の補題を使用することです。\n\n新しく非常に有用なタクティク§5を用いて証明を行います。",
+ "This level proves that if §0 then §1 or §2. It is\nlogically equivalent to the last level, so there is a very short proof.":
+ "このレベルでは、§0ならば§1または§2であることを証明します。これは直前のレベルと同等の論理構造を持つため、非常に短い証明で済みます。",
+ "This level proves that if §0 and §1 then §2. One strategy\nis to write both §3 and §4 as §5 of something, deduce that §6 is\nalso §7 of something, and then §8.":
+ "このレベルでは、§0 と §1 であることを証明する必要があります。一つの戦略は、§3 と §4 をそれぞれ「〜の §6」という形で定義し、そこから §7 が同様に「〜の §7」であると導出し、最後に §8 を示すことです。",
+ "This level is more important than you think; it plays\na useful role when battling a big boss later on.":
+ "このレベルは、想像以上に重要な役割を担います。特に、後で登場する強力なボスとの戦闘において、その有効性が発揮されます。",
+ "This level asks you to prove *antisymmetry* of §0.\nIn other words, if §1 and §2 then §3.\nIt's the trickiest one so far. Good luck!":
+ "このレベルでは、§0の「反対称性」を証明してください。\nすなわち、「§1かつ§2ならば§3」が成り立つことを示します。\nこれまでのところ、最も難易度の高い問題です。頑張ってください！",
+ "This lemma would have been easy if we had known that §0. That theorem\n  is called §1 and it is *true*, but unfortunately its proof *uses* both\n  §2 and §3!\n\n  Let's continue on our journey to §4, the proof of §5.":
+ "この補題は、§0を知っていれば簡単に証明できたでしょう。その定理は§1と呼ばれ、**真**ですが、残念ながらその証明には§2と§3の両方が**使用**されています！\n\n次に、§5の証明である§4へと進みましょう。",
+ "This is I think the toughest level yet. Tips: if §0 is a number\nthen §1 will split into cases §2 and §3.\nAnd don't go left or right until your hypotheses guarantee that\nyou can prove the resulting goal!\n\nI've left hidden hints; if you need them, retry from the beginning\nand click on \"Show more help!\"":
+ "これはこれまでで最も難しいレベルかもしれません。ヒント：もし§0が数値であるならば、§1は§2と§3に分岐します。\nそして、仮説が結果の目標を証明できることを保証するまでは、左または右に進まないでください！\n\n隠されたヒントも残しています。必要であれば、「より多くのヘルプを表示！」をクリックして最初からやり直してください。",
+ "The §0 tactic.": "§0 タクティク",
+ "The §0 tactic": "§0 タクティク",
+ "The way to start this proof is §0.": "この証明を開始する方法は §0 です。",
+ "The rfl tactic": "rfl タクティク",
+ "The reason §0 is because §1.\nSo you should start this proof with §2.":
+ "理由は§0であるため、この命題は正しいと言えます。したがって、この証明は§2から始めるのが適切です。",
+ "The previous lemma can be used to prove this one.":
+ "前の定理を用いることで、この定理の証明が可能となります。",
+ "The next result we'll need in §0 World is that if §1 then §2 and §3.\nLet's prove one of these facts in this level, and the other in the next.\n\n## A new tactic: §4\n\nThe §5 tactic will split an object or hypothesis up into the possible ways\nthat it could have been created.\n\nFor example, sometimes you want to deal with the two cases §6 and §7 separately,\nbut don't need the inductive hypothesis §8 that comes with §9.\nIn this situation you can use §10 instead. There are two ways to make\na number: it's either zero or a successor. So you will end up with two goals, one\nwith §11 and one with §12.\n\nAnother example: if you have a hypothesis §13 then you are done, because a false statement implies\nany statement. Here §14 will close the goal, because there are *no* ways to\nmake a proof of §15! So you will end up with no goals, meaning you have proved everything.":
+ "次に §0 ワールドで必要となる結果は、「もし §1 ならば §2 と §3 である」というものです。\nこのレベルで一つの事実を証明し、次のレベルでもう一つの事実を証明しましょう。\n\n## 新しいタクティク: §4\n\n§5 タクティクは、目的や仮定を生成された可能性のある方法に分割します。\n\n例えば、時々 §6 と §7 の二つのケースを個別に扱いたい場合がありますが、§9 が伴う §8 の帰納的仮定は必要ありません。\nこの状況では、§10 を使用することができます。数を作る方法は二つあります：ゼロか後続です。したがって、二つの目標が残ります。一つには §11 があり、もう一つには §12 があります。\n\n別の例：仮定 §13 がある場合、証明は完了します。偽の命題は任意の命題を導くからです。ここでは §14 が目標を閉じます。なぜなら §15 の証明を作る方法は *ありません*！したがって、目標が残らないため、すべてを証明したということになります。",
+ "The music gets ever more dramatic, as we explore\nthe interplay between exponentiation and multiplication.\n\nIf you're having trouble exchanging the right §0\nbecause §1 swaps the wrong multiplication,\nthen read the documentation of §2 for tips on how to fix this.":
+ "音楽はますますドラマチックになり、指数演算と乗算の関係を探求します。\n\nもし、指数演算と乗算の順序を正しく交換できない場合で、§1 が誤った乗算を交換してしまう場合は、§2 のドキュメンテーションを参照して修正方法を確認してください。",
+ "The music dies down. Is that it?\n\nCourse it isn't, you can\nclearly see that there are two levels left.\n\nA passing mathematician says that mathematicians don't have a name\nfor the structure you just constructed. You feel cheated.\n\nSuddenly the music starts up again. This really is the final boss.":
+ "音楽は静まり返ります。これで終わりですか？\n\nまだ2つのレベルが存在することが分かります。\n\n通りすがりの数学者が、「あなたが構築した構造には、数学的な名称がない」と言います。あなたは落胆します。\n\n突然、再び音楽が流れ始めます。これがまさに最終ボスです。",
+ "The lemma proved in the final level of this world will be helpful\nin Divisibility World.":
+ "最終段階で証明された定理は、整除ワールドの問題を解決する上で役立ちます。",
+ "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\nYou can §3 it §4 any hypothesis of the form §5.":
+ "帰納的仮定 §0 は「全ての自然数 §1 について §2」です。\nあなたは、仮定 §5 の形式に対して、これを§3できます。(訳注: 原文は \"You can §3 it §4 any hypothesis of the form §5.\" です。\nつまり、 §3 §0 §4 §5 のような形で使用できます。)",
+ "The goal in this level is one of our hypotheses. Solve the goal by executing §0.":
+ "このレベルの目標は、当方の仮説の一つです。目標を達成するためには、§0を実行してください。",
+ "The first sub-boss of Multiplication World is §0.\n\nWhen you've proved this theorem we will have \"spare\" proofs\nsuch as §1, which is now easily deducible from §2.\nBut we'll keep hold of these proofs anyway, because it's convenient\nto have exactly the right tool for a job.":
+ "乗算ワールドの最初のサブボスは§0です。\n\nこの定理を証明すると、「余剰」な証明が得られます。\n例えば、§2から容易に導かれる§1があります。\nただし、これらの証明は保持しておきます。\n特定のタスクに適した道具を手元に置いておくためです。",
+ "The classical introduction game for Lean.": "Lean 4 用の、古典的な導入ゲーム。",
+ "Start with §0. This will change §1 to §2.": "§0から開始します。これにより、§1は§2に変わります。",
+ "Start with §0.": "§0 から開始してください。",
+ "Start with §0, to change the goal into its\ncontrapositive, namely a hypothesis of §1 and a goal of §2.":
+ "開始にあたっては、§0 を出発点とし、目標をその対偶に変換します。具体的には、§1 の仮定と §2 の目標を設定します。",
+ "Start with §0 to push all the brackets to the right.":
+ "開始時に §0 を使用し、すべての括弧を右側に移動させます。",
+ "Start with §0 to do a case split on §1 and §2.":
+ "開始にあたり、§0 を用いて §1 と §2 に対してケース分割を実行します。",
+ "Start with §0 to begin to break §1 down into its definition.":
+ "まず§0から開始し、そこから§1を定義へと分解していくことから始めましょう。",
+ "Start with §0 to assume the hypothesis.": "まず、 §0 を使用して仮説を提示します。",
+ "Start with §0 to assume the hypothesis and call its proof §1.":
+ "§0 を使用して仮定を§1とし、開始します。",
+ "Start with §0 to apply §1 to the *goal*.":
+ "*目標*に §1 を適用するために、まず §0 を使用してください。",
+ "Start with §0 and §1": "開始には、§0 と §1 を使用してください。",
+ "Start with §0 and take it from there.": "開始にあたり、§0から始め、それに基づいて進んでください。",
+ "Start with §0 (remembering that §1 is just notation\nfor §2).":
+ "§0 から開始してください（§1 が §2 の表記法であるという点にご留意ください）。",
+ "Start with induction on §0.": "§0 に対する帰納法から始めてください。",
+ "Start by unravelling the §0.": "まず、§0 を解き始めましょう。",
+ "Split into cases §0 and §1 with §2.": "§2 で§0 と §1 にケースを分けましょう。",
+ "Solve this level in one line with §0": "このレベルを、1行で解決してください：§0",
+ "So that's the algorithm: now let's use automation to perform it\nautomatically.":
+ "したがって、このアルゴリズムを使用します。次に、このアルゴリズムを自動的に実行するために、自動化ツールを使用しましょう。",
+ "Similarly we have §0\nbut we're going to need §1 (guess what it says -- maybe you\nare getting the hang of Lean's naming conventions).\n\nThe last level from addition world might help you in this level.\nIf you can't remember what it is, you can go back to the\nhome screen by clicking the house icon and then taking a look.\nYou won't lose any progress.":
+ "同様に §0 もありますが、§1 が必要です (内容を推測してみてください。Lean の命名規則をご理解いただけているかもしれません)。\n\n加算ワールドの最後のレベルが、このレベルを攻略するのに役立つ可能性があります。もし内容を忘れてしまった場合は、ホーム画面に戻るためにアイコンをクリックしてください。進捗は失われません。",
+ "See the new \"*\" tab in your lemmas, containing §0 and §1.\nRight now these are the only facts we know about multiplication.\nLet's prove nine more.\n\nLet's start with a warm-up: no induction needed for this one,\nbecause we know §2 is a successor.":
+ "新しい「*」タブを確認してください。このタブには、§0 と §1 が表示されます。\n現在、これらは乗算に関する唯一の既知的事実です。\nそれでは、さらに9つの定理を証明しましょう。\n\nまずは簡単な例から始めましょう。この場合は、帰納法は不要です。\nなぜなら、§2 は後者であるためです。",
+ "See if you can take it from here. Look at the new lemmas and tactic\navailable on the right.":
+ "右側に表示された、新たに定義された補題とタクティクをご利用ください。",
+ "Remember, §0 is *notation* for §1.": "覚えておいてください。§0 は §1 の *表記* です。",
+ "Remember that §0 is a proof of §1. Try\n§2ing §3 either §4 or directly to the goal.":
+ "§0は§1の証明であることを覚えておいてください。\n§2 §3 を、 §4 または直接目標に対して実行できます。",
+ "Remember that when Lean writes §0, it means §1.\nIf you are not sure where the brackets are in an expression, just hover\nyour cursor over it and look at what gets highlighted. For example,\nhover over both §2 symbols on the left hand side of the goal and\nyou'll see where the invisible brackets are.":
+ "Leanにおいて「§0」と表示された場合、「§1」を意味することを覚えておいてください。もし式内の括弧の位置が不明な場合は、カーソルをその位置にホバーして表示されるハイライトを確認してください。例えば、目標の左側の両方の「§2」をホバーすると、見えない括弧の位置がわかります。",
+ "Reduce to the previous lemma with §0": "§0 を使用して、直前の補題に変換します。",
+ "Ready for the boss level of this world?": "この世界の最終ボス戦に挑戦する準備はできていますか？",
+ "Proofs like §0 and §1 are very tedious to do by hand.\nIn Algorithm World we learn how to get the computer to do them for us.\n\nClick on \"Start\" to proceed.":
+ "手作業での証明、例えば §0 や §1 のようなものは、非常に手間がかかります。\nアルゴリズムワールドでは、コンピュータにこれらの計算を委ねる方法を学習します。\n\n「開始」ボタンをクリックして、次のステップに進んでください。",
+ "Precision rewriting": "精密な書き換え",
+ "Power World": "冪乗ワールド",
+ "Our next goal is \"left and right distributivity\",\nmeaning §0 and §1. Rather than\nthese slightly pompous names, the name of the proofs\nin Lean are descriptive. Let's start with\n§2, the proof of §3.\nNote that the left hand side contains a multiplication\nand then an addition.":
+ "次の目標は「左と右の分配法則」を達成することです。具体的には、式§0と§1についてです。これらの表現はやや冗長ですが、Leanの証明名は説明的であるという原則に従います。まずは、式§3の証明である§2から始めましょう。留意すべき点は、左辺には乗算が含まれており、その後に加算が行われることです。",
+ "Our first challenge is §0,\nand we want to prove it by induction. The zero\ncase will need §1 (which we have)\nand §2 (which we don't), so let's\nstart with this.":
+ "最初の課題は§0ですが、帰納法を用いて証明します。\nゼロの場合には§1（定義済み）と§2（定義されていません）が必要です。まずはこの部分から取り組みます。",
+ "One of the best named levels in the game, a savage §0\nsub-boss appears as the music reaches a frenzy. What\nelse could there be to prove about powers after this?":
+ "ゲーム内で最も適切に名前が付けられたレベルの一つとして知られる場面では、音楽が最高潮に達すると、凶暴なサブボスが出現します。これ以降、冪乗に関するどのようなことが証明可能でしょうか？",
+ "One day this game will have a Prime Number World, with a final boss\nof proving that §0 is prime.\nTo do this, we will have to rule out things like §1\nWe will do this by proving that any factor of §2 is at most §3,\nwhich we will do using this lemma. The proof I have in mind manipulates the hypothesis\nuntil it becomes the goal, using §4, §5 and\n§6.":
+ "いつかこのゲームには「素数ワールド」が追加される予定です。最終的なボス戦は、§0 が素数であることを証明することになります。\nこれを実現するためには、§1 などの要素を排除する必要があります。\n具体的には、§2 の任意の因数のうち、最も大きいものが §3 であることを証明します。この証明には、以下の補題を使用します。\n私が考えている証明では、§4、§5、および §6 を用いて、仮定を操作し、最終的に目標（§0 が素数であること）に到達させるようにします。",
+ "On the set of natural numbers, addition is commutative.\nIn other words, if §0 and §1 are arbitrary natural numbers, then\n§2.":
+ "自然数全体の集合においては、加算は交換法則を満たす。\nすなわち、任意の自然数 §0 と §1 が与えられたとき、\n§2.",
+ "On the set of natural numbers, addition is associative.\nIn other words, if §0 and §1 are arbitrary natural numbers, we have\n§2":
+ "自然数全体の集合においては、加算は結合法則に従います。\n言い換えれば、任意の自然数 §0 と §1 が与えられたとき、以下の関係が成り立ちます。\n§2",
+ "Oh no! On the way to §0, a wild §1 appears. §2\nis the proof that §3 for §4 and §5 numbers.\nThis result is what's standing in the way of §6. Again\nwe have the problem that we are adding §7 to things, so we need\nto use induction to split into the cases where §8 and §9 is a successor.":
+ "大変！ §0 に向かう途中、野生の §1 が現れました。 §2 は、§3 が §4 と §5 の数値に対して成り立つことを証明しています。この結果が §6 を達成するのを妨げています。さらに、私たちは §7 を何かに加算しているため、§8 と §9 が後者である場合に帰納法を用いる必要があります。",
+ "Numbers": "数値",
+ "Now §0.": "§0 をしましょう。",
+ "Now §0 will work.": "現在、§0 は正常に動作します。",
+ "Now §0 will change §1 into §2.": "§0 は §1 を §2 に変更します。",
+ "Now §0 to cancel the §1s.": "`§0` を使用して `§1` を消去します。",
+ "Now §0 then §1 works, but §2 is quicker.":
+ "現在、§0 および §1 は正しく機能しますが、§2 の方が高速です。",
+ "Now §0 so you can §1.": "§0 を実行することで、 §1 が可能になります。",
+ "Now §0 is the quickest way to\nchange §1 to §2.":
+ "現在、§0 は §1 を §2 に変更するための最も効率的な手段です。",
+ "Now §0 is a proof that §1, and §2 has vanished. Similarly, you can destruct\n§3 into its parts with §4.":
+ "現在、§0 は §1 の証明を示します。また、§2 は消えました。同様に、§4 を用いて §3 を構成要素に分解することができます。",
+ "Now §0 finishes the job.": "これで §0 が目的を達成します。",
+ "Now §0 and you can probably take it from here.": "§0を実行し、ここから推論を進めることができます。",
+ "Now §0 and deal with the two\ncases separately.":
+ "次に、§0 の内容と、それとは異なるもう一つのケースについて、それぞれ個別に検討します。",
+ "Now you need to figure out which number to §0. See if you can take it from here.":
+ "今度は、 §0 の部分にどのような数値を入力すれば良いか検討してください。この部分から推論を進めることができれば、ご自身で試してみてください。",
+ "Now you have two goals. Once you proved the first, you will jump to the second one.\nThis first goal is the base case §0.\n\nRecall that you can rewrite the proof of any lemma which is visible\nin your inventory, or of any assumption displayed above the goal,\nas long as it is of the form §1.":
+ "現在、2つの目標があります。最初の目標を証明すると、次の目標に進みます。\nこの最初の目標は基本ケース §0 です。\n\nあなたのインベントリに表示されている任意の補題の証明、または目標の上に表示されている任意の仮定の証明を再利用することができます。ただし、その形式は §1 である必要があります。",
+ "Now you could finish with §0 then §1, but §2\ndoes it in one line.":
+ "現在、§0 と §1 で処理を終えることができますが、§2 は 1 行で完結します。",
+ "Now you can §0.": "§0 を使用できます。",
+ "Now you can §0": "§0ができます。",
+ "Now we can prove the §0 statement by proving the statement on the right,\nso use the §1 tactic.":
+ "今では、§0の命題を証明するために、右側の命題を証明することができます。そのため、§1のタクティクを使用します。",
+ "Now use §0 to switch §1 and §2 on the left\nhand side.":
+ "§0 を使用して左側の §1 と §2 の位置を入れ替えます。",
+ "Now the goal can be deduced from §0 by pure logic, so use the §1\ntactic.":
+ "現在の目標は、§0 から純粋な論理によって導き出すことができます。そのため、§1 のタクティクを使用します。",
+ "Now take apart the existence statement with §0.": "次に、存在文を §0 を用いて分解します。",
+ "Now rewrite §0 backwards to make the goal\nequal to the hypothesis.":
+ "§0 を逆順に書き換えることで、目標と仮定を等価にします。",
+ "Now rewrite §0 backwards at §1\nto get the right hand side.":
+ "§1 を §0 で逆順に書き換えて、右辺を得ます。",
+ "Now let's §0 our new theorem. Execute §1\nto change §2 to a proof of §3.":
+ "それでは、新しい定理を §0 しましょう。§1 を実行することで、`§2` を `§3` の証明に変換します。",
+ "Now for the second goal. Here you have the induction hypothesis\n§0, and you need to prove that §1.":
+ "では、次の目標に進みます。 ここで示された帰納法の仮定 §0 を用いて、§1 を証明する必要があります。",
+ "Now finish using the §0 tactic.": "次に、§0 タクティクを使って処理を完了してください。",
+ "Now finish the job with §0.": "§0を使って作業を完了してください。",
+ "Now finish in one line.": "一行で証明を完結させます。",
+ "Now change §0 to §1 in §2.": "§2 の §0 を §1 に変更してください。",
+ "Note: this lemma will be useful for the final boss!":
+ "この定理は、最終ボスとの戦闘において役立ちます。",
+ "Note that §0 means §1. Put your cursor\non any §2 in the goal or assumptions to see what exactly it's eating.":
+ "注: §0 は §1 を意味します。目標または前提条件内の任意の §2 にカーソルを置くと、実際にどのようなものを参照しているかを確認できます。",
+ "Note that you can do §0\nand then §1 to solve this level in two lines.":
+ "§0を実行し、その後§1を実行することで、このレベルを2行で解くことができます。",
+ "Nice! You've proved §0!\nLet's now prove Peano's other axiom, that successors can't be §1.":
+ "素晴らしい！あなたは§0を証明されました！\n次に、ペアノの別の公理である「後続が§1にならない」ことを証明しましょう。",
+ "Nice!\n\nThe next step in the development of order theory is to develop\nthe theory of the interplay between §0 and multiplication.\nIf you've already done Multiplication World, you're now ready for\nAdvanced Multiplication World. Click on \"Home\" to access it.":
+ "素晴らしい！\n\n順序理論の開発における次のステップは、§0と乗算の相互作用に関する理論を発展させることです。すでに「乗算ワールド」を学習済みの場合、現在では「高度な乗算ワールド」に進むことができます。「ホーム」をクリックしてアクセスしてください。",
+ "Nice!": "素晴らしい！",
+ "Next turn §0 into §1 with §2.": "次のステップとして、§2 を実行して §0 を §1 に変換します。",
+ "Natural Number Game": "自然数ゲーム",
+ "My proof:\n§0": "私の証明:\n§0",
+ "Multiplication usually makes a number bigger, but multiplication by zero can make\nit smaller. Thus many lemmas about inequalities and multiplication need the\nhypothesis §0. Here is a key lemma that enables us to use this hypothesis.\nTo help us with the proof, we can use the §1 tactic. Click on the tactic's name\non the right to see what it does.":
+ "乗算は通常、数値を大きくしますが、ゼロによる乗算はその数値を小さくすることがあります。そのため、不等式や乗算に関する多くの補題では、§0 の仮定が必要です。この仮定を使用するための重要な補題があります。証明の助けとなるために、§1 のタクティクを使用できます。タクティクの名前を右側でクリックすると、その機能が表示されます。",
+ "Multiplication is distributive over addition on the left.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "乗算は、左から加算に関して分配法則に従います。\nすなわち、任意の自然数 §0, §1, §2 について、以下の関係が成立します。\n§3.",
+ "Multiplication is commutative.": "乗算は交換律を満たします。",
+ "Multiplication is associative.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "乗算は結合法則に従います。\n言い換えれば、任意の自然数 §0, §1, §2 について、以下のことが成り立ちます。\n§3。",
+ "Multiplication distributes\nover addition on the left.\n\n§0 is the proof that §1.":
+ "乗算は、加算に対して左側で分配されます。\n\n§0 は §1 の証明です。",
+ "Multiplication World": "乗算ワールド",
+ "Mathematicians sometimes debate what §0 is;\nthe answer depends, of course, on your definitions. In this\ngame, §1. See if you can prove it.\n\nCheck out the *Pow* tab in your list of theorems\nto see the new proofs which are available.":
+ "数学者は、§0 が何であるかを議論することがあります。その答えは、定義によって異なります。このゲームでは、§1 です。証明できるかを試してみてください。\n\n証明一覧のタブから *Pow* (訳注: `^`) を選択して、利用可能な新しい証明を確認してください。",
+ "Mathematicians sometimes argue that §0 is also\na good convention. But it is not a good convention in this\ngame; all the later levels come out beautifully with the\nconvention that §1.":
+ "数学者は、§0も有効な慣習であると主張することもあります。しかし、このゲームにおいては、そのような慣習は適切ではありません。§1の慣習を用いると、以降のすべてのレベルが自然に解決されます。",
+ "Many people find §0 easy, but some find §1 confusing.\nIf you find it confusing, then just argue forwards.\n\nYou can read more about the §2 tactic in its documentation, which you can view by\nclicking on the tactic in the list on the right.":
+ "多くの人は§0を容易に理解しますが、一部の人々は§1について混乱することがあります。\nもし混乱する場合は、証明を前向きに進めてください。\n\n§2のタクティクについては、その詳細な説明がドキュメンテーションに記載されています。リストの右側にあるタクティクをクリックすることで、ドキュメンテーションを表示できます。",
+ "Let's warm up with an easy one, which works even if §0.":
+ "まずは、簡単に問題を解いてみましょう。この問題は、§0 の場合に有効です。",
+ "Let's see if you can use the tactics we've learnt to prove §0.\nTry this one by yourself; if you need help then click on \"Show more help!\".":
+ "これまで学んだタクティクを使って、§0の証明が可能か試してみましょう。\nご自身で試すことをお勧めします。もしお手伝いが必要な場合は、「より多くのヘルプを表示！」をクリックしてください。",
+ "Let's now move on to a more efficient approach to questions\ninvolving numerals, such as §0.":
+ "数値に関連する問題を扱う場合、例えば§0に対して、より効率的なアプローチを検討しましょう。",
+ "Let's now make our own tactic to do this.":
+ "それでは、独自のタクティクを作成して、この機能を実装してみましょう。",
+ "Let's now learn about Peano's second axiom for addition, §0.":
+ "それでは、ペアノの加法の第2の公理、§0 について学びましょう。",
+ "Let's now begin our approach to the final boss,\nby proving some more subtle facts about powers.":
+ "それでは、最終ボスの攻略に向けて、さらに詳細な冪乗に関する事実の証明から始めましょう。",
+ "Let's first get §0 into the form §1 so we can\napply §2. First execute §3\nto change the 4 on the right hand side.":
+ "まず、§0 を §1 の形式に変換し、その後 §2 を適用します。\n最初に、§3 を実行して右辺の 4 を変更します。",
+ "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\ntagged with §2 and every lemma fed to it by the user, as much as it can.\n\nThis level is not a level which you want to solve by hand.\nGet the simplifier to solve it for you.":
+ "Leanの簡約化処理器、§0は「§1の強化版」です。これは、§2でタグ付けされたすべての定理およびユーザーによって与えられたすべての定理をできる限り簡約化します。\n\nこのレベルでは手作業での解決が推奨されません。\n簡約化処理器に任せて解いてください。",
+ "It's all over! You have proved a theorem which has tripped up\nschoolkids for generations (some of them think §0:\nthis is \"the freshman's dream\").\n\nHow many rewrites did you use? I can do it in 12.\n\nBut wait! This boss is stirring...and mutating into a second more powerful form!":
+ "すべて終了しました！あなたは、長年にわたって学校教育で問題となっていた命題を証明しました（一部の人は§0: これを「大学生の夢」と捉えているかもしれません）。\n\nあなたは、この命題を証明するために何回も書き換えたでしょうか？私は12回で解決できます。\n\nしかし、待ってください！この問題はまだ解決していません...そして、さらに複雑な形へと進化しています！",
+ "It's \"intuitively obvious\" that there are no numbers less than zero,\nbut to prove it you will need a result which you showed in advanced\naddition world.":
+ "ゼロ未満の数が存在しないことは、「直感的に明らか」ですが、これを証明するためには、高度な加算ワールドで示された結果が必要となります。",
+ "Induction on §0 or §1 -- it's all the same in this one.":
+ "帰納法を適用して、§0または§1に対して -- どちらの場合でも結果は同じです。",
+ "Induction on §0 is the most troublesome, then §1,\nand §2 is the easiest.":
+ "帰納法における§0のケースが最も困難であり、次に§1、そして§2が最も容易です。",
+ "In this world we'll learn how to prove theorems of the form §0.\nIn other words, how to prove theorems of the form \"if §1 is true, then §2 is true.\"\nTo do that we need to learn some more tactics.\n\nThe §3 tactic can be used to close a goal which is exactly one of\nthe hypotheses. It takes the name of the hypothesis as argument: §4.":
+ "このワールドでは、形式 §0 の定理の証明方法を学びます。\nつまり、「§1 が真ならば、§2 が真である」という形式の定理を証明する方法です。\nそのためには、いくつかのタクティクを学ぶ必要があります。\n\n§3 のタクティクは、仮定のうち厳密に一つの目標を閉じるために使用できます。このタクティクには仮定の名前が引数として与えられます：§4。",
+ "In this world we define §0 and prove standard facts\nabout it, such as \"if §1 and §2 then §3.\"\n\nThe definition of §4 is \"there exists a number §5\nsuch that §6. \" So we're going to have to learn\na tactic to prove \"exists\" theorems, and another one\nto use \"exists\" hypotheses.\n\nClick on \"Start\" to proceed.":
+ "このワールドで §0 を定義し、その標準的な事実を証明します。例えば、「§1 と §2 が成り立つならば §3 が成り立つ」などです。\n\n§4 の定義は「ある数 §5 が存在して、§6 が成り立つ」です。そのため、「存在」に関する定理を証明するタクティクと、「存在」に関する仮定を使うタクティクを学ぶ必要があります。\n\n\"開始\" をクリックして進みましょう。",
+ "In this world I will mostly leave you on your own.\n\n§0 is the theorem that §1.":
+ "このワールドでは、基本的にはご自身で学習を進めていただきます。\n\n§0は、§1という定理です。",
+ "In this level, we see inequalities as *hypotheses*. We have not seen this before.\nThe §0 tactic can be used to take §1 apart.":
+ "このレベルでは、不等式を *仮定* として扱います。これまではこのような扱いがありませんでした。\n§0 タクティクは、§1 を分解するために使用できます。",
+ "In this level, the hypothesis §0 is an *implication*. It says\nthat *if* §1 *then* §2. We can use this\nhypothesis with the §3 tactic. Remember you can click on\n§4 or any other tactic on the right to see a detailed explanation\nof what it does, with examples.":
+ "このレベルでは、仮定 §0 は *含意* です。「もし §1 ならば §2」という形で表現されます。この仮定は、§3というタクティクを用いて利用できます。右側の任意のタクティク（例：§4）をクリックすると、その詳細な説明と例を確認できます。",
+ "In this level we're going to prove that §0, where §1 is a secret natural number.\n\nWait, don't we already know that? No! We know that §2, but that's §3.\nThis is §4, which is different.\n\nThe difficulty with proving §5 is that we do not have a *formula* for\n§6 in general, we can only use §7 and §8 once\nwe know whether §9 is §10 or a successor. The §11 tactic splits into these two cases.\n\nThe base case will require us to prove §12, and the inductive step\nwill ask us to show that if §13 then §14. Because\n§15 and successor are the only way to make numbers, this will cover all the cases.\n\nSee if you can do your first induction proof in Lean.\n\n(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\nback to \"Typewriter mode\" by clicking the §16 button in the top right.)":
+ "このレベルでは、§1という秘密の自然数について、§0を証明します。\n\n待ってください。それでは、既に知っていることではないでしょうか？いいえ！§2は分かっていますが、それは§3です。\nこれは§4で、異なります。\n\n§5を証明する難しさは、一般的に§6に対する*公式*が存在しないことです。§7と§8は、§9が§10であるか後続数であることを知った場合にのみ使用できます。§11のタクティクは、これらの2つの場合に分岐します。\n\n基本的な場合は§12を証明する必要がありますし、帰納的なステップでは、もし§13ならば§14が成り立つことを示す必要があります。なぜなら、§15と後続数が数を作る唯一の方法だからです。これにより、すべてのケースをカバーできます。\n\nLeanで初めての帰納法証明に挑戦してみましょう。\n\n（ちなみに、最後のワールドで「エディタモード」にいた場合は、右上にある§16ボタンをクリックして、「タイプライターモード」に戻ることができます。）",
+ "In this level we prove that if §0 and §1 then §2. It is tricky, for\nseveral reasons. One of these is that\nwe need to introduce a new idea: we will need to understand the concept of\nmathematical induction a little better.\n\nStarting with §3 is too naive, because in the inductive step\nthe hypothesis is §4 but what we know is §5,\nso the induction hypothesis does not apply!\n\nAssume §6 is fixed. The actual statement we want to prove by induction on §7 is\n\"for all §8, if §9 then §10\". This *can* be proved by induction,\nbecause we now have the flexibility to change §11.":
+ "このレベルでは、§0 と §1 が成り立つ場合に、§2 が成り立つことを証明します。\nこれはいくつかの理由から複雑です。\nそのうちの一つは、新しいアイデアを導入する必要があるためです：\n数学的帰納法の概念についてもう少し深く理解する必要があります。\n\n§3 から始めるのは単純すぎるため、帰納的ステップでは仮定が §4 ですが、実際には §5 が成り立っているため、帰納仮定は適用できません！\n\n§6 を固定します。実際に証明したい主張は、§7 に関する帰納法による証明で、「全ての §8 について、§9 が成り立つならば §10 が成り立つ」というものです。\nこの主張は帰納法で証明できます。なぜなら、今では §11 を変更できる柔軟性があるからです。",
+ "In this level the *goal* is §0 but to help us we\nhave an *assumption* §1 saying that §2. Check that you can see §3 in\nyour list of assumptions. Lean thinks of §4 as being a secret proof of the\nassumption, rather like §5 is a secret number.\n\nBefore we can use §6, we have to \"substitute in for §7\".\nWe do this in Lean by *rewriting* the goal with §8,\nusing the §9 tactic.":
+ "このレベルにおける目標は§0ですが、それを達成するために、§1という仮定があります。その内容は§2です。仮定リストに§3が表示されていることを確認してください。Leanは§4を、仮定の秘密の証明と見なします。これは、§5が秘密の数値に似ています。\n\n§6を使用する前に、「§7に置き換える」必要があります。Leanでは、§8を使用して目標を書き換え、§9タクティクを使用してこれを実行します。",
+ "In this game you recreate the natural numbers §0 from the Peano axioms,\nlearning the basics about theorem proving in Lean.\n\nThis is a good first introduction to Lean!":
+ "このゲームでは、ペアノの公理に基づいて自然数 §0 を再構成し、Leanにおける定理証明の基礎を習得します。\n\nこれは、Leanへの優れた入門となるでしょう！",
+ "In the next level, we'll do the same proof but backwards.":
+ "次のレベルでは、同様の手続きを用いて、証明を逆方向に展開します。",
+ "In the last level, we manipulated the hypothesis §0\n  until it became the goal §1. In this level we'll manipulate\n  the goal until it becomes our hypothesis! In other words, we\n  will \"argue backwards\". The §2 tactic can do this too.\n  Again I will walk you through this one (assuming you're in\n  command line mode).":
+ "先程のレベルでは、仮定§0を操作して目標§1にしました。このレベルでは、目標を操作して仮定にします！つまり、「逆向きに議論」することです。§2 タクティクもこれを行うことができます。また、コマンドラインモードで操作していると仮定して、この例を一緒に見ていきましょう。",
+ "In the \"base case\" we have a hypothesis §0, and you can deduce anything\nfrom a false statement. The §1 tactic will close this goal.":
+ "基本的なケースでは、仮定§0が存在します。偽の文から任意の結論を導き出すことができます。§1というタクティクは、この目標を解決します。",
+ "In some later worlds, we're going to see some much nastier levels,\nlike §0.\nBrackets need to be moved around, and variables need to be swapped.\n\nIn this level, §1,\nlet's forget about the brackets and just think about\nthe variable order.\nTo turn §2 into §3 we need to swap §4 and §5,\nand then swap §6 and §7. But this is easier than you\nthink with §8.":
+ "いくつかの後続のワールドでは、より複雑なレベルを見ることになります（例：§0）。\n括弧の位置を調整し、変数の順序を変更する必要があります。\n\nこのレベル（§1）では、括弧は無視して変数の順序のみを考慮しましょう。\n§2から§3への変更には、§4と§5の順序を入れ替え、さらに§6と§7の順序を入れ替える必要があります。しかし、§8を用いることで、意外と簡単に実現できます。",
+ "In order to use the tactic §0 you can enter it in the text box\nunder the goal and hit \"Execute\".":
+ "タクティク §0 を使用するには、目標の下にあるテキストボックスに記述し、「実行」ボタンをクリックしてください。",
+ "In Advanced Addition World we will prove some basic\naddition facts such as §0. The theorems\nproved in this world will be used to build\na theory of inequalities in §1 World.\n\nClick on \"Start\" to proceed.":
+ "高度な加算ワールドでは、基本的な加法に関するいくつかの事実（§0）の証明を行います。このワールドで証明される定理は、§1ワールドで不等式の理論を構築するために使用されます。\n\n「開始」をクリックして進んでください。",
+ "Implication World": "含意ワールド",
+ "Implementing the algorithm for equality of naturals, and the proof that it is correct,\nlooks like this:\n\n§0\n\nThis Lean code is a formally verified algorithm for deciding equality\nbetween two naturals. I've typed it in already, behind the scenes.\nBecause the algorithm is formally verified to be correct, we can\nuse it in Lean proofs. You can run the algorithm with the §1 tactic.":
+ "自然数の等価性アルゴリズムの実装とその正当性の証明は、以下のとおりです：\n\n§0\n\nこのLeanコードは、二つの自然数間の等価性を決定する形式的に検証されたアルゴリズムです。私たちは既にこのコードをバックグラウンドで入力しています。アルゴリズムが形式的に正確であることを保証しているため、Leanの証明内で使用できます。「§1」タクティクを使用してアルゴリズムを実行できます。",
+ "If §0, §1 and §2 are numbers, we have\n§3":
+ "もし §0, §1, §2 が数値である場合、以下のようになります。\n§3",
+ "If §0, then §1.": "もし §0 ならば、§1 。",
+ "If §0 then §1.": "§0 ならば、§1。",
+ "If §0 then §1 or §2 or §3.": "もし §0 が真ならば、§1 または §2 または §3 が少なくとも 1 つが真である。",
+ "If §0 then either §1 or §2.": "もし §0 が真ならば、§1 または §2 のいずれかが真です。",
+ "If §0 or §1, then §2 or §3.": "もし §0 または §1 なら、§2 または §3 。",
+ "If §0 is a proof of §1 then §2 will\nturn §3s into §4s. But what if we want to\nturn §5s into §6s? To tell the §7 tactic\nwe want this, we use a left arrow §8. Type\n§9 and then hit the space bar to get this arrow.\n\nLet's prove that §10 is the number after the number\nafter §11 again, this time by changing §12\ninto §13.":
+ "もし §0 が §1 の証明である場合、§2 は §3 を §4 に変換します。しかし、§5 を §6 に変換したい場合はどうでしょうか？ §7 タクティクに、この変換を指示するために、左矢印 §8 を使用します。 §9 と入力し、スペースキーを押すと、この矢印が得られます。\n\n次の証明で、§10 が §11 の後ろの数値の後ろの数値であることを証明しましょう。今回は §12 を §13 に変換して証明します。",
+ "If §0 is a number, then §1.": "もし §0 が数値であるならば、§1 は真となる。",
+ "If §0 are numbers, then §1.": "もし§0が数値ならば、§1。",
+ "If §0 are arbitrary natural numbers, we have\n§1.": "任意の自然数§0について、\n§1。",
+ "If §0 and §1, then §2.": "もし §0 かつ §1 が真ならば、§2 は真である。",
+ "If §0 and §1 then we can deduce a contradiction.":
+ "もし §0 が真であり、かつ §1 も真であるならば、矛盾を導き出すことができます。",
+ "If §0 and §1 are numbers, then §2 is a proof\nthat §3 implies §4. Click on this theorem in the *Peano*\ntab for more information.\n\nPeano had this theorem as an axiom, but in Algorithm World\nwe will show how to prove it in Lean. Right now let's just assume it,\nand let's prove §5 using it. Again, we will proceed\nby manipulating our hypothesis until it becomes the goal. I will\nwalk you through this level.":
+ "もし §0 と §1 が数値である場合、§2 は §3 が §4 を導くことの証明です。*Peano* タブでこの定理について詳しく知ることができます。\n\nPeanoはこの定理を公理としていましたが、アルゴリズムワールドでは Lean を用いてこの定理を証明する方法を示します。現在ではこの定理を仮定し、§5 を用いて証明しましょう。また、証明は仮定を操作することで目標に近づけることで進めていきます。このレベルについて一緒に学びましょう。",
+ "If §0 and §1 are numbers, then either §2 or §3.":
+ "数値である§0と§1の場合、§2または§3のいずれかが真となる。",
+ "If §0 and §1 are natural numbers, and §2, then §3.":
+ "自然数§0と§1が存在し、かつ§2が真ならば、§3は真である。",
+ "If §0 and §1 are arbitrary natural numbers, we have\n§2.":
+ "任意の自然数§0と§1について、以下の関係が成立します。\n§2。",
+ "If §0 and §1 are arbitrary natural numbers, then §2":
+ "任意の自然数§0と§1が与えられたとき、§2",
+ "If §0 and we know that §1 then we can deduce §2.":
+ "§0が真であることと、§1について知っていれば、§2を導き出すことができます。",
+ "If you §0 the wrong number, you get stuck with a goal you can't prove.\nWhat number will you §1 here?":
+ "もし、間違った数字を §0 した場合、証明不可能な目標に陥ります。\nどのような数字を §1 しますか？",
+ "If you have completed Algorithm World then you can use the §0 tactic\nhere. If not then I'll talk you through a manual approach.":
+ "アルゴリズムワールドを完了している場合は、ここで §0 タクティクを使用できます。\n完了していない場合は、手動での手順をご説明します。",
+ "If the goal is not *exactly* a hypothesis, we can sometimes\nuse rewrites to fix things up.":
+ "目標が *厳密な* 仮説ではない場合、書き換えを利用して問題を解決できることがあります。",
+ "How should we define §0? Just like addition, we need to give definitions\nwhen §1 and when §2 is a successor.\n\nThe zero case is easy: we define §3 to be §4. Now say we know\n§5. What should §6 be? Well, that's §7 §8s,\nso it should be §9.\n\nHere are the definitions in Lean.\n\n  * §10\n  * §11\n\nIn this world, we must not only prove facts about multiplication like §12,\nwe must also prove facts about how multiplication interacts with addition, like §13.\nLet's get started.":
+ "どのように §0 を定義すべきでしょうか？加法と同様に、§1 であるときと §2 が successor であるときそれぞれに定義を提供する必要があります。\n\nゼロの場合は簡単です：§3 を §4 で定義します。次に §5 を仮定します。§6 のときはどうでしょうか？そうですね、§7 §8 になるので、\n§9になるべきでしょう。\n\nLean での定義は以下の通りです。\n\n  * §10\n  * §11\n\nこのワールドでは、乗法に関する事実だけでなく、乗法と加法の相互作用に関する事実も証明する必要があります。例えば §12 など。そして §13 なども証明する必要があります。\n始めましょう。",
+ "How about this for a proof:\n§0": "この証明はどうでしょうか：\n§0",
+ "How about this for a proof:\n\n§0\n\nThat's the end of Advanced Addition World! You'll need these theorems\nfor the next world, §1 World. Click on \"Home\" to access it.":
+ "以下のいずれかの証明方法はいかがでしょうか：\n\n§0\n\n高度な加算ワールドはこれで終了です。次の §1 ワールドでは、これらの定理が必要になります。「ホーム」ボタンをクリックしてアクセスしてください。",
+ "Here's what I was thinking of:\n§0": "以下のように考えていました：\n§0",
+ "Here's the short proof:\n§0\nThis works because, given §1,\nthe argument is reduced to pure logic.":
+ "以下は短い証明です：\n§0\nこれは、与えられた §1 から\n議論が純粋な論理に簡約されるためです。",
+ "Here's my solution:\n§0\n\nInducting on §1 or §2 also works, but might take longer.":
+ "私の解法：\n§0\n\n§1 または §2 に関する帰納法も有効ですが、より時間のかかる場合があります。",
+ "Here's my solution:\n§0": "私の解決策：\n§0",
+ "Here's my proof:\n§0\n\nIf you solved this level then you should be fine with the next level!":
+ "私の証明：\n§0\n\nこの問題を解けた場合、次の問題も理解できるはずです。",
+ "Here's my proof:\n§0\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like §1 feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Home\" and\ndecide your route.":
+ "私の証明：\n§0\n\nLeanは定理証明システムですが、現時点では十分な量の理論が開発されておらず、適切な計算機としての機能を十分に備えていません。アルゴリズムワールドでは、よりコンピュータサイエンスに特化した環境で、このような問題を扱うための機械を開発し、§1のような目標を達成することが可能になります。あるいは、不等式の理論を実現するための補題を証明する高度な加算ワールドで、より多くの数学を学ぶこともできます。「ホーム」をクリックして、ご自身のルートを選択してください。",
+ "Here's my proof:\n§0\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that §1 is a *partial order* on §2.\n\nThe boss level of this world is to prove\nthat §3 is a total order. Let's learn two more easy tactics\nfirst.":
+ "私の証明:\n§0\n\n通りすがりの数学者は、反対称性も考慮すると、\nあなたは§1が§2上の*部分順序*であることを証明しました。\n\nこのワールドのボスレベルは、§3が完全順序であることを証明することです。\nまずは2つの簡単なタクティクを学習しましょう。",
+ "Here's my proof:\n§0": "私の証明：\n§0",
+ "Here's a two-liner:\n§0\n\nThis works because §1 is a proof of §2.":
+ "以下は2行で構成された証明です：\n§0\n\nこれは、§1が§2を証明するため有効です。",
+ "Here's a two-line proof:\n§0": "以下は2行の証明です：\n§0",
+ "Here's a proof using §0:\n§1\n\nand here's an even shorter one using the same idea:\n§2\n\nAlternatively you can just prove it by induction on §3:\n\n§4":
+ "以下は、§0を用いた証明です：\n§1\n\nまた、同様の考え方を用いると、さらに短い証明も可能です：\n§2\n\nあるいは、§3 に対して数学的帰納法を用いて証明することもできます：\n§4",
+ "Here's a completely backwards proof:\n§0": "以下は、完全に逆順の手順で構成された証明です：\n§0",
+ "Here we want to deal with the cases §0 and §1 separately,\nso start with §2.":
+ "ここでは§0と§1のケースについて個別に検討するため、まず§2から説明します。",
+ "Here we begin to\ndevelop an algorithm which, given two naturals §0 and §1, returns the answer\nto \"does §2?\"\n\nHere is the algorithm. First note that §3 and §4 are numbers, and hence\nare either §5 or successors.\n\n*) If §6 and §7 are both §8, return \"yes\".\n\n*) If one is §9 and the other is §10, return \"no\".\n\n*) If §11 and §12, then return the answer to \"does §13?\"\n\nOur job now is to *prove* that this algorithm always gives the correct answer. The proof that\n§14 is §15. The proof that §16 is §17, and the proof\nthat §18 is §19. The proof that if §20 then\n§21 is §22 and then §23. This level is a proof of the one\nremaining job we have to do: if §24 then §25.":
+ "ここでは、与えられた自然数 §0 と §1 に対して、「§2」という質問の答えを返すアルゴリズムを開発します。\n\nこのアルゴリズムは以下の手順で動作します。まず、§3 と §4 が数値であり、したがって §5 または §5 の後者であることに注意してください。\n\n1. §6 と §7 が両方とも §8 である場合、「yes」と返答します。\n2. 一方が §9 で他方が §10 である場合、「no」と返答します。\n3. §11 と §12 の場合、「§13 ?」 という質問の答えを返します。\n\n現在の課題は、このアルゴリズムが常に正しい答えを返すことを証明することです。具体的には、以下の命題を証明する必要があります：§14 が §15 であること、§16 が §17 であること、§18 が §19 であること、そして §20 が真であるならば、§21 が §22 であり、さらに §23 であることを証明します。この段階では、残る最後の課題である「§24 が真であるならば、§25 である」という命題を証明します。",
+ "Here is an example proof of 2+2=4 showing off various techniques.\n\n§0\n\nOptional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\non the §1 button in the top right. You can now see your proof\nwritten as several lines of code. Move your cursor between lines to see\nthe goal state at any point. Now cut and paste your code elsewhere if you\nwant to save it, and paste the above proof in instead. Move your cursor\naround to investigate. When you've finished, click the §2 button in the top right to\nmove back into \"Typewriter mode\".\n\nYou have finished tutorial world!\nClick \"Home\" to go back to the\noverworld, and select Addition World, where you will learn\nabout the §3 tactic.":
+ "以下は2+2=4を示す証明の例で、様々な手法を披露しています。\n\n§0\n\nオプション：自分でこの証明を実行することもできます。「エディタモード」に切り替えるには、右上の§1ボタンをクリックしてください。現在の証明は、複数行のコードとして表示されます。行の間でカーソルを動かすことで、任意のポイントでの目標状態を確認できます。証明を保存したい場合は、コードを他の場所にコピーし、上記の証明を代入できます。カーソルを動かして調査してください。終了したら、右上の§2ボタンをクリックして「タイプライターモード」に戻ります。\n\nチュートリアルワールドを終了しました！\n「ホーム」をクリックしてオーバーワールドに戻り、加算ワールドを選択して§3タクティクについて学びます。",
+ "Having to rearrange variables manually using commutativity and\nassociativity is very tedious. We start by reminding you of this. §0\nis a key component in the first algorithm which we'll explain, but we need\nto prove it manually.\n\nRemember that you can do precision commutativity rewriting\nwith things like §1. And remember that\n§2 means §3.":
+ "手動で変数を再配置するために、交換法則と結合法則を使用することは非常に手間がかかります。まずは、この点について改めて確認しましょう。§0 は、最初のアルゴリズムの説明において重要な要素ですが、手動で証明する必要があります。\n\n交換法則に基づいた精密な再配置は、§1のような操作で行うことができます。また、§2 は §3 を意味します。",
+ "Good luck!\n\n  One last hint. If §0 then §1 will change *all* §2s into §3s.\n  If you only want to change one of them, say the 3rd one, then use\n  §4.":
+ "幸運をお祈りいたします！\n\n最後のヒントです。もし §0 が真ならば、§1 はすべての §2 を §3 に変換します。\n特定の §2 のみを変更したい場合は、§4 を使用してください（例：3番目のもの）。",
+ "For any natural number §0, we have §1.": "任意の自然数 §0 に対しては、§1 が成り立ちます。",
+ "For all numbers §0, §1.": "すべての数 §0 について、 §1 。",
+ "For all numbers §0 and §1, we have\n§2": "全ての数 §0 と §1 について、\n§2",
+ "For all naturals §0, §1.": "全ての自然数 §0 について、 §1 。",
+ "For all naturals §0, §1, §2, we have §3.":
+ "すべての自然数 §0, §1, §2 に対して、 §3 が成り立ちます。",
+ "For all naturals §0 §1 §2 and §3, we have\n§4":
+ "すべての自然数 §0, §1, §2, §3 について、§4 が成立します。",
+ "For all natural numbers §0, we have §1.": "すべての自然数 §0 に対して、§1 が成り立ちます。",
+ "For all natural numbers §0, we have\n§1.": "すべての自然数 0 に対して、\n§1。",
+ "For all natural numbers §0 and §1, we have\n§2.":
+ "すべての自然数 §0 と §1 について、\n§2。",
+ "First execute §0 to replace the §1 with §2.":
+ "まず、 §0 を実行して §1 を §2 に置き換えてください。",
+ "Finally use a targeted §0 to switch §1 and §2.":
+ "最後に、§0 を使用して §1 と §2 を切り替えます。",
+ "Fermat's Last Theorem": "フェルマーの最終定理",
+ "Every number in Lean is either §0 or a successor. We know how to add §1,\nbut we need to figure out how to add successors. Let's say we already know\nthat §2. What should the answer to §3 be? Well,\n§4 is one bigger than §5, so §6 should be §7,\nthe number one bigger than §8. More generally §9 should\nbe §10. Let's add this as a lemma.\n\n* §11\n\nIf you ever see §12 in your goal, §13 is\nnormally a good idea.\n\nLet's now prove that §14. Figure out how to get §15 into\nthe picture, and then §16. Switch between the §17 (addition) and\n§18 (numerals) tabs under \"Theorems\" on the right to\nsee which proofs you can rewrite.":
+ "Leanの数は、§0または後続数のいずれかです。§1を加算する方法は分かっていますが、後続数を加算する方法はまだ分かりません。例えば、§2が分かっているとします。では、§3の答えは何になるべきでしょうか？ §4は §5よりも1大きいので、§6は §7、つまり §8よりも1大きい数になるべきです。より一般的には、§9は §10になります。この事実を補題として追加しましょう。\n\n* §11\n\nもし目標に §12が見つかったら、通常 §13は良いアイデアです。\n\n次に、§14を証明しましょう。§15を図に取り入れる方法を考え、その後 §16を証明します。「Theorems」の右側にある `+` (加算) と `012` (数字) のタブを切り替えて、どの証明を書き換えることができるか確認します。",
+ "Do that again!\n\n§0 tries to fill in\nthe arguments to §1 (finding §2) then it replaces all occurrences of\n§3 it finds. Therefor, it did not rewrite §4, yet.":
+ "再度実行してみてください。\n\n§0は、§1の引数を埋める（§2を見つけます）ことを試みます。その後、見つかったすべての§3を置換します。したがって、§4はまだ書き換えられていません。",
+ "Did you use induction on §0?\nHere's a two-line proof of §1 which uses §2.\nIf you want to inspect it, you can go into editor mode by clicking §3 in the top right\nand then just cut and paste the proof and move your cursor around it\nto see the hypotheses and goal at any given point\n(although you'll lose your own proof this way). Click §4 to get\nback to command line mode.\n§5":
+ "帰納法を用いて §0 を証明しましたか？\n§2 を使用した §1 の 2 行の証明があります。\n証明を確認したい場合は、右上の §3 をクリックしてエディタモードに入り、\nその後証明をコピー＆ペーストし、カーソルを移動させて任意の時点での仮定と目標を確認できます。（ただし、この方法ではご自身の証明は失われます）。§4 をクリックしてコマンドラインモード (タイプライターモード) に戻ってください。\n§5",
+ "Dealing with §0": "§0 を扱う方法",
+ "Congratulations! You've finished Algorithm World. These algorithms\nwill be helpful for you in Even-Odd World (when someone gets around to\nimplementing it).":
+ "おめでとうございます！あなたはアルゴリズムワールドを完了しました。\nこれらのアルゴリズムは、Even-Oddワールド(誰かが実装してくれたら)\nでも、あなたにとって役立ちます。",
+ "Congratulations! You have proved Fermat's Last Theorem!\n\nEither that, or you used magic...":
+ "おめでとうございます！あなたはフェルマーの最終定理を証明されました。\n\nもしくは、魔法を使用したかもしれません...",
+ "Congratulations! You completed your first verified proof!\n\nRemember that §0 is a *tactic*. If you ever want information about the §1 tactic,\nyou can click on §2 in the list of tactics on the right.\n\nNow click on \"Next\" to learn about the §3 tactic.":
+ "おめでとうございます！あなたは初めての検証証明を完了しました！\n\n覚えておいてください。 §0 は*タクティク*と呼ばれる操作です。もし §1 のタクティクに関する情報が必要な場合は、右側のタクティク一覧にある §2 をクリックしてください。\n\n「次」をクリックして、 §3 のタクティクについて学びましょう。",
+ "Concretely: §0.": "具体的に：§0。",
+ "Can you take it from here? Click on \"Show more help!\" if you need a hint.":
+ "引き続きご自身で解決いただけますでしょうか？ ヒントが必要な場合は、「より多くのヘルプを表示！」をクリックしてください。",
+ "Can you take it from here? (note: if you try §0 again, it will\ntake you back to where you started!)":
+ "引き続き作業を進められますでしょうか？（注：§0を再度実行すると、元の開始地点に戻ります！）",
+ "Can you take it from here?": "ここから続けられますか？",
+ "Can you now change the goal into §0?": "目標を§0に変更することは可能ですか？",
+ "At this point you see the term §0, so you can use the\ninduction hypothesis with §1.":
+ "現在、項§0が表示されているため、項§1を用いて帰納法の仮定を適用できます。",
+ "Assuming §0, we have §1.": "前提として§0を仮定するならば、§1は成立します。",
+ "Assuming §0 and §1, we have §2.": "前提として§0および§1を仮定します。その結果、§2が導き出されます。",
+ "As warm-up for §0 let's prove §1. To do this we need to\nintroduce Peano's last axiom §2, a proof that §3.\nTo learn about this result, click on it in the list of lemmas on the right.":
+ "ウォーミングアップとして、§0 の前に §1  を証明します。これを行うためには、ペアノの最後の公理 §2 と §3 の証明が必要です。この結果について学ぶには、右側の定理一覧から該当する項目をクリックしてください。",
+ "Arguing backwards": "推論を逆方向に進める",
+ "Applying a proof of §0 to the *goal* changes §1 to §2.\nNow try §3 to make the goal more like the hypothesis.":
+ "証明 §0 を *目標* に対して適用することで、§1 が §2 になります。\n次に §3 を試し、目標を仮定に近づけることを試みてください。",
+ "And now §0": "§0をしましょう。",
+ "And now we've deduced what we wanted to prove: the goal is one of our assumptions.\nFinish the level with §0.":
+ "そして、目的を証明するために必要な結論を得ることができました。この結論が、当初提示した仮定の一つと一致します。\nレベルを完了するには、§0 を使用してください。",
+ "And finally §0.": "そして、最後に、§0。",
+ "An algorithm for equality": "等価性を扱うためのアルゴリズム",
+ "Although §0 in this game, §1 if §2, i.e., if\n§3 is a successor.":
+ "このゲームでは、§0 が成立し、かつ §1 が §2 となる場合、つまり §3 がその後の値である場合に、以下のことが言えます。",
+ "Algorithm World": "アルゴリズムワールド",
+ "Advanced Multiplication World": "高度な乗算ワールド",
+ "Advanced Addition World": "高度な加算ワールド",
+ "Advanced *Addition* World proved various implications\ninvolving addition, such as §0 and §1.\nThese lemmas were used to prove basic facts about ≤ in ≤ World.\n\nIn Advanced Multiplication World we prove analogous\nfacts about multiplication, such as §2, and\n§3 (assuming §4 in the latter result). This will prepare\nus for Divisibility World.\n\nMultiplication World is more complex than Addition World. In the same\nway, Advanced Multiplication world is more complex than Advanced Addition\nWorld. One reason for this is that certain intermediate results are only\ntrue under the additional hypothesis that one of the variables is non-zero.\nThis causes some unexpected extra twists.":
+ "高度な *加算* ワールドでは、加算に関する様々な命題（§0, §1など）が証明されました。\nこれらの補題は、≤ワールドにおける≤に関する基本的な事実の証明に使用されました。\n\n高度な *乗算* ワールドでは、乗算に関する類似した事実（§2など）が証明され、\n§3（後者の結果では§4を仮定）も証明されました。これにより、*整除*ワールドへの移行準備ができます。\n\n*乗算* ワールドは、 *加算* ワールドよりも複雑です。同様に、高度な *乗算* ワールドは、高度な *加算* ワールドよりも複雑です。これは、ある変数がゼロでないという追加の仮定の下でのみ成り立つ特定の中間結果があるためです。これにより、予期せぬ追加の複雑さが生じます。",
+ "Addition is distributive over multiplication.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "加法は乗法に関して分配法則が成り立ちます。\nすなわち、任意の自然数 §0, §1, §2 について、以下の式が成立します。\n§3。",
+ "Addition World": "加算ワールド",
+ "Adding zero": "ゼロを加える",
+ "A two-line proof is\n\n§0\n\nWe now have all the tools necessary to set up the basic theory of divisibility of naturals.":
+ "二行の証明は\n\n§0\n\nこれまでに得られたツールを用いて、自然数の除法の基本的な理論を構築することが可能になりました。",
+ "A proof that §0.": "§0 の証明。",
+ "A passing mathematician remarks that with reflexivity and transitivity out of the way,\nyou have proved that §0 is a *preorder* on §1.":
+ "「反射律と伝搬律をクリアすれば、あなたは §0 が §1 上の *部分順序関係* であることを証明した」と、通りすがりの数学者が言いました。",
+ "A passing mathematician notes that you've proved\nthat the natural numbers are a commutative semiring.\n\nIf you want to begin your journey to the final boss, head for Power World.":
+ "通りすがりの数学者が、自然数が可換半環であることを証明したことを指摘しました。\n\n最終ボスとの戦いを開始するには、冪乗ワールドへ進んでください。",
+ "A passing mathematician congratulates you on proving that naturals\nare an additive commutative monoid.\n\nLet's practice using §0 and §1 in one more level,\nbefore we leave addition world.":
+ "「自然数の加法的交換半群であることの証明」に際し、通りすがりの数学者がお祝いの言葉を述べます。\n\n加算に関する概念を理解するため、§0 と §1 の使い方をもう一度練習しましょう。",
+ "2+2=4": "2+2=4",
+ "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.\nTo make it a bit less painful, I have unfolded all of the numerals for you.\nSee if you can use §0 and §1 to prove this.":
+ "現在のツールだけでは、2 + 2 ≠ 5 の完全な証明は困難です。\nより簡単に証明できるよう、すべての数字を展開しました。\n§0 および §1 を使用して、この証明を試みてください。",
+ "2 + 2 ≠ 5": "2 + 2 ≠ 5",
+ "1 ≠ 0": "1 ≠ 0",
+ "0 ≤ x": "0 ≤ x",
+ "*Game version: 4.3*\n\n*Recent additions: bug fixes*\n\n## Progress saving\n\nThe game stores your progress in your local browser storage.\nIf you delete it, your progress will be lost!\n\nWarning: In most browsers, deleting cookies will also clear the local storage\n(or \"local site data\"). Make sure to download your game progress first!\n\n## Credits\n\n* **Creators:** Kevin Buzzard, Jon Eugster\n* **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar\n* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.\n* **Additional thanks:** All the student beta testers, all the schools\nwho invited Kevin to speak, and all the schoolkids who asked him questions\nabout the material.\n\n## Resources\n\n* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n* [Original Lean3 version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no longer maintained)\n\n## Problems?\n\nPlease ask any questions about this game in the\n[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in\nthe stream \"New Members\". The community will happily help. Note that\nthe Lean Zulip chat is a professional research forum.\nPlease use your full real name there, stay on topic, and be nice. If you're\nlooking for somewhere less formal (e.g. you want to post natural number\ngame memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).\n\nAlternatively, if you experience issues / bugs you can also open github issues:\n\n* For issues with the game engine, please open an\n[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n* For issues about the game's content, please open an\n[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo.":
+ "*ゲームバージョン: 4.3*\n\n*最近の追加: バグ修正*\n\n## 進捗保存\n\nゲームは、あなたの進捗をローカルブラウザストレージに保存します。\nこれを削除すると、進捗が失われます！\n\n注意：多くのブラウザでは、クッキーを削除するとローカルストレージ（または「ローカルサイトデータ」）もクリアされます。進捗をダウンロードしてから削除することを確認してください！\n\n## 謝辞\n\n* **クリエイター:** Kevin Buzzard, Jon Eugster\n* **オリジナルLean3バージョン:** Kevin Buzzard, Mohammad Pedramfar\n* **ゲームエンジン:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n* **追加レベル:** Sian Carey, Ivan Farabella, Archie Browne.\n* **追加の感謝:** 全ての学生ベータテスト者、Kevinを講演に招待した全ての学校、質問をした全ての学校の子供たち\n\n## リソース\n\n* [Lean Zulipチャット](https://leanprover.zulipchat.com/) フォーラム\n* [元のLean3版](https://github.com/ImperialCollegeLondon/natural_number_game/)（現在メンテナンスされていません）\n\n## お困りですか？\n\nこのゲームに関する質問は、[Lean Zulipチャット](https://leanprover.zulipchat.com/) フォーラムで質問してください。例えば、「New Members」ストリームで質問できます。コミュニティは喜んでお手伝いします。注意: Lean Zulipチャットはプロフェッショナルな研究フォーラムです。そこでフルネームを使用し、トピックに集中し、丁寧に接してください。より非公式な場所（例えば、自然数ゲームのメモを投稿したい場合）を探している場合は、[Lean Discord](https://discord.gg/WZ9bs9UCvx) に移動してください。\n(訳注: これらはいずれも外国語のコミュニティです。もし日本語で質問をしたいのであれば、[Lean の日本語コミュニティ](https://lean-ja.github.io/about/)上で質問すると良いでしょう。)\n\nまたは、問題やバグが発生した場合は、GitHubの問題をオープンすることもできます：\n\n* ゲームエンジンに関する問題は、[lean4game](https://github.com/leanprover-community/lean4game/issues) リポジトリで問題をオープンしてください。\n* ゲームの内容に関する問題は、[NNG](https://github.com/hhu-adam/NNG4/issues) リポジトリで問題をオープンしてください。",
+ "## The birth of number.\n\nNumbers in Lean are defined by two rules.\n\n* §0 is a number.\n* If §1 is a number, then the *successor* §2 of §3 is a number.\n\nThe successor of §4 means the number after §5. Let's learn to\ncount, and name a few small numbers.\n\n## Counting to four.\n\n§6 is a number, so §7 is a number. Let's call this new number §8.\nSimilarly let's define §9, §10 and §11.\nThis gives us plenty of numbers to be getting along with.\n\nThe *proof* that §12 is called §13.\nCheck out the \"012\" tab in the list of lemmas on the right\nfor this and other proofs.\n\nLet's prove that §14 is the number after the number after zero.":
+ "## 数字の誕生。\n\nLeanにおける数字は、以下の2つのルールで定義されます。\n\n* §0 は数字です。\n* もし §1 が数字ならば、§3 の *後続* §2 も数字です。\n\n§4 の「後続」とは、§5 の次の数字を意味します。数を数えることと、いくつかの小さな数字の名前を学びましょう。\n\n## 4まで数える。\n\n§6 は数字なので、§7 も数字です。この新しい数字を §8 と呼びましょう。同様に §9, §10, §11 を定義します。これで十分な数を手に入れることができます。\n\n§12 が数字であることを示す *証明* §13 があります。証明リストの右側の「012」タブを確認してください。\n\n次に、0の後ろの後ろの数字である §14 を証明しましょう。",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.\n\"\n\nTacticDoc nth_rewrite \"\n## Summary\n\nIf §5 and there are several §6s in the goal, then\n§7 will just change the third §8 to a §9.\n\n## Example\n\nIf the goal is §10 then §11\nwill change the goal to §12. In contrast, §13\nwill change the goal to §14.":
+ "## 概要\n\n§0 は、目標に対して §1 のタクティクを繰り返し適用します。このタクティクは必須ではありませんが、場合によっては処理を高速化できます。\n\n## 例\n\n§2 は目標\n§3\nを §4 に書き換えます。\n\n---\n\n## 概要\n\n§5 が成り立つ場合に、目標に複数の §6 が含まれる場合、§7 は第三の §8 を §9 に変更します。\n\n## 例\n\n目標が §10 の場合、§11 は目標を §12 に変更します。一方、§13 は目標を §14 に変更します。",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.":
+ "## 概要\n\n§0 は、タクティク §1 を繰り返し適用することで、目標を解決します。このタクティクの使用は必須ではありませんが、場合によっては処理速度の向上に役立ちます。\n\n## 例\n\n§2 を使用すると、目標 §3 が §4 になります。",
+ "## Summary\n\n§0 proves goals of the form §1.\n\nIn other words, the §2 tactic will close any goal of the\nform §3 if §4 and §5 are *identical*.\n\n§6 is short for \\\\\"reflexivity (of equality)\\\\\".\n\n## Example:\n\nIf the goal looks like this:\n\n§7\n\nthen §8 will close it. But if it looks like §9 then §10 won't work, because even\nthough §11 and §12 are always equal as *numbers*, they are not equal as *terms*.\nThe only term which is identical to §13 is §14.\n\n## Details\n\n§15 is short for \\\\\"reflexivity of equality\\\\\".\n\n## Game Implementation\n\n*Note that our §16 is weaker than the version used in core Lean and §17,\nfor pedagogical purposes; mathematicians do not distinguish between propositional\nand definitional equality because they think about definitions in a different way\nto type theorists (§18 and §19 are both \\\\\"facts\\\\\" as far\nas mathematicians are concerned, and who cares what the definition of addition is).*":
+ "## 概要\n\n§0 は、形式 §1 のような目標を証明します。\n\nつまり、§2 タクティクは、§4 と §5 が *完全に同一* である場合に、形式 §3 の任意の目標を解決します。\n\n§6 は、「等号の反射律」の略です。\n\n## 例\n\nもし目標が以下のようであれば：\n\n§7\n\n§8 でそれを解決できます。しかし、もし目標が §9 のように見えた場合、§10 は機能しません。なぜなら、§11 と §12 は数値としては常に等しいですが、項としては等しくないからです。§13 と完全に一致する項は §14 だけです。\n\n## 詳細\n\n§15 は、「等号の反射律」の略です。\n\n## ゲームの実装\n\n注意点として、当の §16 は、コア Lean および §17 で使用されているバージョンよりも弱く、教育目的のためにそう設計されています。数学的には、論理的等価と定義的等価を区別しない理由は、定義の考え方がタイプ理論家と異なるからです（数学的には §18 と §19 はどちらも「事実」であり、加法の定義などは誰がどう思っても構いません）。",
+ "## Summary\n\nThe §0 tactic will change a goal or hypothesis of\nthe form §1 to §2. It will also work on §3\nand on §4.\n\n### Example\n\nIf the goal is §5 then §6 will change it to §7.\n\n### Example\n\nIf §8 then §9 will change §10 to §11.":
+ "## 概要\n\nタクティク §0 は、目標または仮定が §1 の形式の場合を §2 に変更します。また、§3 および §4 も対象となります。\n\n### 例\n\nもし目標が §5 の場合、§6 によってそれを §7 に変更します。\n\n### 例\n\nもし §8 の場合、§9 によって §10 を §11 に変更します。",
+ "## Summary\n\nThe §0 tactic makes progress with goals which claim something *exists*.\nIf the goal claims that some §1 exists with some property, and you know\nthat §2 will work, then §3 will make progress.\n\nBecause §4 is notation for \\\\\"there exists §5 such that §6\\\\\",\nyou can make progress on goals of the form §7 by §8ing the\nnumber which is morally §9 (i.e. §10)\n\nAny of the following examples is possible assuming the type of the argument passed to the §11 function is accurate:\n\n- §12\n- §13\n- §14":
+ "## 概要\n\n§0 タクティクは、「何かが存在する」という主張を含む目標に対して、進展を促します。\nもし目標が「ある特定の性質を持つものが存在する」と主張し、その存在を示す方法が §2 である場合、§3 は進展を促します。\n\n§4 は「§6 を満たす §5 が存在する」という主張を表す記号であり、目標が §7 のような形式の場合、§8 を行うことで、道徳的に §9 (つまり §10) とみなされる番号を用いて進展させることができます。\n\n以下のいずれかの例が可能です（ただし、§11 関数に渡される引数の型が正確である場合）：\n\n- §12\n- §13\n- §14",
+ "## Summary\n\nIf §0 is an object, and the goal mentions §1, then §2\nattempts to prove the goal by induction on §3, with the inductive\nvariable in the successor case being §4, and the inductive hypothesis being §5.\n\n### Example:\nIf the goal is\n§6\n\nthen\n\n§7\n\nwill turn it into two goals. The first is §8;\nthe second has an assumption §9 and goal\n§10.\n\nNote that you must prove the first\ngoal before you can access the second one.":
+ "## 概要\n\nもし §0 がオブジェクトであり、目標に §1 が含まれている場合、§2 は目標を §3 に対する帰納法によって証明しようとします。帰納変数は後続ケースで §4 であり、帰納仮定は §5 です。\n\n### 例：\nもし目標が\n§6\n\nである場合、\n\n§7\n\nは目標を 2 つの目標に変換します。最初の目標は §8 であり、次の目標には仮定 §9 と目標\n§10\nが含まれます。\n\n注意していただきたいのは、最初の目標を証明する前に、次の目標にアクセスすることはできないということです。",
+ "## Summary\n\nIf §0 is a proof that §1, and §2 is a proof of §3,\nthen §4 will change §5 to a proof of §6. The idea is that if\nyou know §7 is true, then you can deduce from §8 that §9 is true.\n\nIf the *goal* is §10, then §11 will \\\\\"argue backwards\\\\\" and change the\ngoal to §12. The idea here is that if you want to prove §13, then by §14\nit suffices to prove §15, so you can reduce the goal to proving §16.\n\n### Example:\n\n§17 is a proof that §18.\n\nSo if you have a hypothesis §19\nthen §20 will change §21 to §22.\nYou could write §23\nbut Lean is smart enough to figure out the inputs to §24.\n\n### Example\n\nIf the goal is §25, then §26 will turn the\ngoal into §27.":
+ "## 概要\n\nもし §0 が §1 の証明であり、 §2 が §3 の証明である場合、§4 は §5 を §6 の証明に変換します。つまり、§7 が真であることを知っている場合、§8 から §9 が真であることを導くことができます。\n\nもし *目標* が §10 である場合、§11 は「逆向きに推論」し、目標を §12 に変更します。この手法は、§13 を証明するために §14 から §15 を証明すれば十分であるという考えに基づいています。したがって、目標を §16 の証明に簡略化できます。\n\n### 例：\n\n§17 が §18 の証明であるとします。\n\n仮定として §19 がある場合、§20 は §21 を §22 に変更します。 §23 のような記述も可能です。ただし、Lean は §24 の入力を見抜くことができます。\n\n### 例\n\nもし目標が §25 である場合、§26 は目標を §27 に変更します。",
+ "## Summary\n\nIf §0 is a proof of an equality §1, then §2 will change\nall §3s in the goal to §4s. It's the way to \\\\\"substitute in\\\\\".\n\n## Variants\n\n* §5 (changes §6s to §7s; get the back arrow by typing §8 or §9.)\n\n* §10 (a sequence of rewrites)\n\n* §11 (changes §12s to §13s in hypothesis §14)\n\n* §15 (changes §16s to §17s in two hypotheses and the goal;\nget the §18 symbol with §19.)\n\n* §20 will keep changing §21 to §22\nuntil there are no more matches for §23.\n\n* §24 will change only the second §25 in the goal to §26.\n\n### Example:\n\nIf you have the assumption §27 and your goal is\n§28\n\nthen\n\n§29\n\nwill change the goal into §30, and then\n\n§31\n\nwill change the goal into §32, which\ncan be solved with §33.\n\n### Example:\n\nYou can use §34 to change a hypothesis as well.\nFor example, if you have two hypotheses\n§35\nthen §36 will turn §37 into §38.\n\n## Common errors\n\n* You need the square brackets. §39 is never correct.\n\n* If §40 is not a *proof* of an *equality* (a statement of the form §41),\nfor example if §42 is a function or an implication,\nthen §43 is not the tactic you want to use. For example,\n§44 is never correct: §45 is the theorem *statement*,\nnot the proof. If §46 is the proof, then §47 will work.\n\n## Details\n\nThe §48 tactic is a way to do \\\\\"substituting in\\\\\". There\nare two distinct situations where you can use this tactic.\n\n1) Basic usage: if §49 is an assumption or\nthe proof of a theorem, and if the goal contains one or more §50s, then §51\nwill change them all to §52s. The tactic will error\nif there are no §53s in the goal.\n\n2) Advanced usage: Assumptions coming from theorem proofs\noften have missing pieces. For example §54\nis a proof that §55 because §56 really is a function,\nand §57 is the input. In this situation §58 will look through the goal\nfor any subterm of the form §59, and the moment it\nfinds one it fixes §60 to be §61 then changes all §62s to §63s.\n\nExercise: think about why §64 changes the term\n§65 to\n§66\n\nIf you can't remember the name of the proof of an equality, look it up in\nthe list of lemmas on the right.\n\n## Targeted usage\n\nIf your goal is §67 and you want to rewrite §68\nto §69, then §70 will not work because Lean finds another\naddition first and swaps those inputs instead. Use §71 to\nguarantee that Lean rewrites §72 to §73. This works because\n§74 is a proof that §75, §76 is a proof\nthat §77, and §78 is a proof that §79.\n\nIf §80 then §81 will turn all §82s into §83s.\nIf you only want to change the 37th occurrence of §84\nto §85 then do §86.":
+ "## 概要\n\nもし §0 が等式 §1 の証明であるならば、§2 は目標内のすべての §3 を §4 に変更します。これは「代入」を行う方法です。\n\n## バリエーション\n\n* §5 (目標内の §6 を §7 に変更；バックアローは §8 または §9 を入力することで取得します。)\n\n* §10 (一連の変換)\n\n* §11 (仮定 §14 内を §12 から §13 に変更)\n\n* §15 (目標と 2 つの仮定内を §16 から §17 に変更；§18 のシンボルは §19 で取得します。)\n\n* §20 は §21 を §22 に変更し続けるまで、§23 との一致がなくなるまで変更します。\n\n* §24 は目標内の第 2 の §25 のみ §26 に変更します。\n\n### 例：\n\n仮定 §27 があり、目標が §28 の場合、\n\n§29\n\nは目標を §30 に変更し、\n\n§31\n\nは目標を §32 に変更し、\n\n§33 で解決できます。\n\n### 例：\n\n仮定を変更することもできます。例えば、仮定が 2 つある場合、\n\n§35\n\n§36 は §37 を §38 に変換します。\n\n## 一般的なエラー\n\n* クオート記号が必要です。§39 は決して正しくありません。\n\n* §40 が等式 (形式 §41 のステートメント) の証明でない場合、例えば §42 が関数または推論である場合、\n\n§43 は使用したいタクティクではありません。例えば、\n\n§44 は常に正しくありません：§45 は定理のステートメントであり、\n\n証明ではありません。§46 が証明である場合、§47 は機能します。\n\n## 詳細\n\n§48 タクティクは「代入」を行う方法です。このタクティクを使用できる 2 つの異なる状況があります。\n\n1) 基本的な使用法：§49 が仮定または定理の証明であり、目標内に 1 つ以上の §50 が含まれている場合、\n\n§51 はそれら全てを §52 に変更します。タクティクは目標内に §53 が存在しない場合にエラーを発生させます。\n\n2) 高度な使用法：定理の証明から得られる仮定はしばしば欠落している部分を持っています。例えば、\n\n§54 は §55 を証明しており、\n\n§56 は実際には関数であり、\n\n§57 は入力です。この状況では、\n\n§58 は目標内を検索し、\n\n§59 のサブタームを見つけた瞬間に、\n\n§60 を §61 に固定し、\n\nすべての §62 を §63 に変更します。\n\n演習：なぜ §64 は項 §65 を §66 に変更するのか考えてみてください。\n\n等式の証明の名前を忘れた場合は、\n\n右側の補題一覧で調べてください。\n\n## 対象的な使用法\n\n目標が §67 であり、\n\n§68 を §69 に書き換えることを望む場合、\n\n§70 は Lean が別の加算を見つけ、\n\nその入力を交換するためには機能しません。 §71 を使用して、\n\nLean が §72 を §73 に書き換えることを保証します。これは、\n\n§74 は §75 を証明しており、\n\n§76 は §77 を証明しており、\n\n§78 は §79 を証明しているためです。\n\n§80 が成立する場合、\n\n§81 はすべての §82 を §83 に変換します。\n\n§84 の 37 番目の出現のみを §85 に変更したい場合は、\n\n§86 を実行します。",
+ "## Summary\n\nIf §0 is a number, then §1 will break the goal into two goals,\none with §2 and the other with §3.\n\nIf §4 is a proof (for example a hypothesis), then §5 will break the\nproof up into the pieces used to prove it.\n\n## Example\n\nIf §6 is a number, then §7 will break the goal into two goals,\none with §8 replaced by 0 and the other with §9 replaced by §10. This\ncorresponds to the mathematical idea that every natural number is either §11\nor a successor.\n\n## Example\n\nIf §12 is a hypothesis, then §13 will turn one goal\ninto two goals, one with a hypothesis §14 and the other with a\nhypothesis §15.\n\n## Example\n\nIf §16 is a hypothesis, then §17 will turn one goal into no goals,\nbecause there are no ways to make a proof of §18! And if you have no goals left,\nyou have finished the level.\n\n## Example\n\nIf §19 is a hypothesis, then §20 will create a new number §21\nand a proof §22. This is because the *definition* of §23 is\n§24.":
+ "## 概要\n\nもし §0 が数値である場合、§1 は目標を二つに分割し、一つには §2 を、もう一つには §3 を含めます。\n\nもし §4 が証明（例えば仮定）である場合、§5 はその証明に使用された部分に分割します。\n\n## 例\n\nもし §6 が数値である場合、§7 は目標を二つに分割し、一つには §8 を 0 に置き換えたもの、もう一つには §9 を §10 に置き換えたものが含まれます。これは、すべての自然数が §11 または後続数であることを示す数学的な考え方に合致します。\n\n## 例\n\nもし §12 が仮定である場合、§13 は一つの目標を二つに分割し、一つには §14 という仮定が含まれ、もう一つには §15 という仮定が含まれます。\n\n## 例\n\nもし §16 が仮定である場合、§17 は一つの目標を無数の目標に分割しません。なぜなら、§18 の証明方法が存在しないからです！そして、目標が残っていない場合、レベルは終了します。\n\n## 例\n\nもし §19 が仮定である場合、§20 は新しい数値 §21 と証明 §22 を作成します。これは §23 の定義が §24 であるからです。",
+ "## Summary\n\nIf §0 and there are several §1s in the goal, then\n§2 will just change the third §3 to a §4.\n\n## Example\n\nIf the goal is §5 then §6\nwill change the goal to §7. In contrast, §8\nwill change the goal to §9.":
+ "## 概要\n\n目標に §0 が存在し、かつ目標に複数の §1 が存在する場合には、§2 は第三の §3 を §4 に変更します。\n\n## 例\n\nもし目標が §5 である場合、§6 は目標を §7 に変更します。一方、§8 は目標を §9 に変更します。",
+ "## Summary\n\nIf the goal is §0, then §1 will introduce §2 as a hypothesis,\nand change the goal to §3. Mathematically, it says that to prove §4,\nwe can assume §5 and then prove §6.\n\n### Example:\n\nIf your goal is §7 (the way Lean writes §8)\nthen §9 will give you a hypothesis §10 named §11, and the goal\nwill change to §12.":
+ "## 概要\n\nもし目標が§0である場合、§1は§2を仮定として導入し、目標を§3に変更します。数学的には、§4の証明のために、§5を仮定し、その後§6を証明すればよいということです。\n\n### 例：\n\nもし目標が§7（Leanで記述された§8）である場合、§9は§10という名前の仮定§11を導入し、目標は§12に変更されます。",
+ "## Summary\n\nIf the goal is a statement §0, then §1 will close the goal if §2 is a proof of §3.\n\n### Example\n\nIf the goal is §4 and you have a hypothesis §5\nthen §6 will solve the goal.\n\n### Example\n\nIf the goal is §7 then §8 will close the goal.\n\n### Exact needs to be exactly right\n\nNote that §9 will *not work* in the previous example;\nfor §10 to work, §11 has to be *exactly* a proof of the goal.\n§12 is a proof of §13 or, if you like,\na proof of §14 where §15 needs to be supplied by the user.\nThis is in contrast to §16 and §17, which will \\\\\"guess the inputs\\\\\"\nif necessary. If the goal is §18 then §19\nand §20 will both change the goal to §21,\nbecause §22 guesses the input to the function §23.":
+ "## 概要\n\n目標が §0 である場合に、§2 が §3 の証明ならば、目標は §1 で解決されます。\n\n### 例\n\n目標が §4 である場合、仮定 §5 があるならば、§6 は目標を解決します。\n\n### 例\n\n目標が §7 である場合、§8 は目標を解決します。\n\n### 正確な記述が必要\n\n注意点として、前の例では §9 は *機能しません*;\n§10 が機能するためには、§11 は目標の *正確な* 証明である必要があります。\n§12 は目標の §13 の証明であるか、あるいは §14 の証明で、§15 はユーザーによって提供される必要があります。\nこれは §16 と §17 とは異なり、必要に応じてこれらの関数は *入力の推測* を行います。もし目標が §18 である場合、§19 と §20 は両方とも目標を §21 に変更します。\nこれは §22 が関数 §23 の入力を推測するからです。",
+ "## Precision rewriting\n\nIn the last level, there was §0 and §1,\nand §2 changed the first one it saw,\nwhich was §3. Let's learn how to tell Lean\nto change §4 first by giving §5 an\nexplicit input.":
+ "## 精密な書き換え\n\n直前のレベルでは、§0 と §1 が存在し、\n§2 は最初に見つかった §3 を変更しました。\nLean に §4 を最初に変更させる方法を学びましょう。\nこれを行うには、§5 に明示的な入力を与えます。",
+ "# Welcome to the Natural Number Game\n#### An introduction to mathematical proof.\n\nIn this game, we will build the basic theory of the natural\nnumbers §0 from scratch. Our first goal is to prove\nthat §1. Next we'll prove that §2.\nAnd at the end we'll see if we can prove Fermat's Last Theorem.\nWe'll do this by solving levels of a computer puzzle game called Lean.\n\n# Read this.\n\nLearning how to use an interactive theorem prover takes time.\nTests show that the people who get the most out of this game are\nthose who read the help texts like this one.\n\nTo start, click on \"Tutorial World\".\n\nNote: this is a new Lean 4 version of the game containing several\nworlds which were not present in the old Lean 3 version. More new worlds\nsuch as Strong Induction World, Even/Odd World and Prime Number World\nare in development; if you want to see their state or even help out, checkout\nout the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).\n\n## More\n\nClick on the three lines in the top right and select \"Game Info\" for resources,\nlinks, and ways to interact with the Lean community.":
+ "# 自然数ゲームへようこそ\n#### 数学的証明への入門\n\nこのゲームでは、自然数 §0 の基本理論をゼロから構築します。最初の目標は §1 を証明することです。次に §2 を証明します。そして最後には、フェルマーの最終定理を証明できるかどうかを見ていきます。これらの目標を達成するために、コンピュータパズルゲーム「Lean」のレベルを解いていきます。\n\n# 読んでください。\n\nインタラクティブな定理証明システムの使い方を習得するには時間がかかります。テストの結果から、このゲームで最も効果的なのは、このようなヘルプテキストを読む人です。\n\n開始するには、「チュートリアルワールド」をクリックしてください。\n\n注意：これは、旧Lean 3版に存在しなかった複数のワールドを含む新しいLean 4版のゲームです。強い帰納法ワールド、偶数/奇数ワールド、素数ワールドなどの新しいワールドの開発が進行中です；これらの状態を確認したいか、協力したい場合は、[GitHubリポジトリのissues](https://github.com/leanprover-community/NNG4/issues) をチェックしてください。\n\n## 追加情報\n\n右上隅の三本線をクリックし、「ゲーム情報」を選択して、リソース、リンク、Leanコミュニティとの交流方法を確認してください。",
+ "# Summary\nThe §0 tactic changes a goal of §1 into a goal of §2.\nUse it when your hypotheses guarantee that the reason that §3\nis true is because in fact §4 is true.\n\nInternally this tactic is just §5ing a theorem\nsaying that §6\n\nNote that this tactic can turn a solvable goal into an unsolvable\none.":
+ "# 概要\n§0 タクティクは、目標 §1 を §2 に変更します。\n仮定が、§3 が真である理由は実際には §4 が真であることを保証する場合に使用します。\n\n内部的には、このタクティクは §6 という定理を §5 します。\n\n注意していただきたいのは、このタクティクが、解決可能な目標を解決不能な目標に変更する可能性があることです。",
+ "# Summary\n\n§0 will solve the goal §1.": "# 概要\n\n§0 は、目標 §1 を解決します。",
+ "# Summary\n\n§0 will attempt to solve a goal if it can find an algorithm which it\ncan run to solve it.\n\n## Example\n\nA term of type §1 is an algorithm to decide whether two naturals\nare equal or different. Hence, once this term is made and made into an §2,\nthe §3 tactic can use it to solve goals of the form §4 or §5.":
+ "# 概要\n\n§0 は、解決可能なアルゴリズムが存在する場合に、目標を解決しようとします。\n\n## 例\n\n型 §1 の項は、2 つの自然数が等しいか異なるかを判定するアルゴリズムです。したがって、この項が作成され、§2 に変換されると、§3 タクティクは、§4 または §5 のような目標を解決するために使用できます。",
+ "# Summary\n\nThe §0 tactic will solve any goal which can be solved purely by logic (that is, by\ntruth tables).\n\n## Details\n\n§1 *does not do magic*! It doesn't know *anything* about addition or multiplication,\nit doesn't even know §2. The only things that §3 knows about numbers\nare firstly that §4 and secondly that §5, §6, §7 and so on.\nWhat §8's strength is, is *logic*. If you have a hypothesis §9\nand another hypothesis §10 and your goal is §11 then §12 will\nsolve this goal, because to solve that goal you don't need to know any facts\nabout inequalities or addition, all you need to know is the rules of logic.\n\n## Example\n\nIf you have §13 as a hypothesis, then §14 will solve\nthe goal. This is because a false hypothesis implies any hypothesis.\n\n## Example\n\nIf your goal is §15, then §16 will solve the goal.\n\n## Example\n\nIf you have two hypotheses §17 and §18 then §19 will\nsolve the goal because it can prove §20 from your hypotheses, and thus\nprove the goal (as §21 implies anything).\n\n## Example\n\nIf you have one hypothesis §22 then §23 will solve the goal because\n§24 is smart enough to know that §25 is true, which gives the contradiction we seek.\n\n## Example\n\nIf you have a hypothesis §26 then §27 will solve the goal, because\n§28 knows §29 and this is enough to prove §30, which implies any goal.\n\n## Example\n\nIf you have a hypothesis of the form §31 and your goal is §32, then\n§33 will solve the goal, because the goal is logically equivalent to the hypothesis.\nIf you switch the goal and hypothesis in this example, §34 would solve it too.":
+ "# 概要\n\n§0 タクティクは、論理のみを用いて解決できる目標（つまり、真偽表で解決できる目標）を解決します。\n\n## 詳細\n\n§1 は *魔法ではありません*！加算や乗算について何も知りませんし、§2 についても同様です。§3 が数について知っているのは、まず §4 であり、次に §5, §6, §7 などです。§8 の強みは *論理* です。仮定 §9 と仮定 §10 があり、目標が §11 の場合、§12 はこの目標を解決します。なぜなら、目標を解決するには不等式や加算に関する事実を知る必要がなく、必要なのは論理のルールだけです。\n\n## 例\n\n仮定として §13 がある場合、§14 は目標を解決します。これは、偽の仮定は任意の仮定を推論するからです。\n\n## 例\n\n目標が §15 の場合、§16 は目標を解決します。\n\n## 例\n\n仮定が §17 と §18 である場合、§19 は目標を解決します。なぜなら、§19 はあなたの仮定から §20 を証明でき、したがって目標を証明できるからです（§21 は任意のものを推論できます）。\n\n## 例\n\n仮定が §22 である場合、§23 は目標を解決します。なぜなら、§24 は §25 が真であることを知っているので、これは求めている矛盾を与えます。\n\n## 例\n\n仮定が §26 の形式である場合、目標が §32 の場合、§33 は目標を解決します。なぜなら、目標は仮定と論理的に等価であるからです。この例で目標と仮定を入れ替えると、§34 も解決します。\n\n## 例\n\n仮定が §31 の形式であり、目標が §32 の場合、§33 は目標を解決します。なぜなら、目標は仮定と論理的に等価であるからです。この例で目標と仮定を入れ替えると、§34 も解決します。",
+ "# Summary\n\nThe §0 tactic can be used to add new hypotheses to a level, but of course\nyou have to prove them.\n\n\n## Example\n\nThe simplest usage is like this. If you have §1 in your context and you execute\n\n§2\n\nthen you will get a new goal §3 to prove, and after you've proved\nit you will have a new hypothesis §4 in your original goal.\n\n## Example\n\nIf you already have a proof of what you want to §5, you\ncan just create it immediately. For example, if you have §6 and §7\nnumber objects, then\n\n§8\n\nwill directly add a new hypothesis §9\nto the context, because you just supplied the proof of it (§10).\n\n## Example\n\nIf you have a proof to hand, then you don't even need to state what you\nare proving. For example\n\n§11\n\nwill add §12 as a hypothesis.":
+ "# 概要\n\n§0 タクティックは、レベルに新しい仮定を追加するために使用できますが、それらを証明する必要があります。\n\n## 例\n\n最も単純な使用法は以下の通りです。コンテキストに§1がある場合、§2を実行すると、新しい目標§3が生成され、それを証明すると元の目標に新しい仮定§4が追加されます。\n\n## 例\n\n既に証明したいものを持っている場合、それをすぐに作成することができます。例えば、§6と§7で番号付けされたオブジェクトがある場合、§8を実行すると、その証明（§10）を提供したため、コンテキストに新しい仮定§9が追加されます。\n\n## 例\n\n証明を持っている場合、証明したいものを明示する必要すらありません。例えば、§11を実行すると、§12が仮定として追加されます。",
+ "# Summary\n\nIf you have a hypothesis\n\n§0\n\nand goal\n\n§1\n\nthen §2 replaces the set-up with its so-called \\\\\"contrapositive\\\\\":\na hypothesis\n\n§3\n\nand goal\n\n§4.":
+ "# 概要\n\n仮説\n\n§0\n\nと目標\n\n§1\n\nがある場合、§2 は、設定を「反証」というものに置き換えます：\n仮説\n\n§3\n\nと目標\n\n§4\n\nです。",
+ "# Statement\n\nIf §0 and §1 are numbers, then\n§2 is the proof that\n§3.\n\n## More technical details\n\nThere are other ways to think about §4.\n\nYou can think about §5 itself as a function which takes two\nnumbers §6 and §7 as input, and outputs a proof of\n§8.\n\nYou can think of §9 itself as a proof; it is the proof\nthat §10 is an injective function. In other words,\n§11 is a proof of\n§12.\n\n§13 was postulated as an axiom by Peano, but\nin Lean it can be proved using §14, a mathematically\npathological function.":
+ "# 命題\n\n§0 と §1 が数値である場合、\n§2 は §3 の証明です。\n\n## さらなる技術的な詳細\n\n§4 について考える方法は他にもあります。\n\n§5 を、入力として 2 つの数値 §6 と §7 を受け取り、出力として §8 の証明を生成する関数と捉えることができます。\n\n§9 は自身が証明であり、これは §10 が単射関数であることを示す証明です。言い換えれば、\n§11 は §12 の証明となります。\n\nペアノによって公理として導入された §13 ですが、Lean では §14、すなわち数学的に異常な関数を用いて証明できます。",
+ "# Read this first\n\nEach level in this game involves proving a mathematical theorem (the \"Goal\").\nThe goal will be a statement about *numbers*. Some numbers in this game have known values.\nThose numbers have names like §0. Other numbers will be secret. They're called things\nlike §1 and §2. We know §3 is a number, we just don't know which one.\n\nIn this first level we're going to prove the theorem that §4.\nYou can see §5 in the *Objects* below, which means that §6 and §7\nare numbers.\n\nWe solve goals in Lean using *Tactics*, and the first tactic we're\ngoing to learn is called §8, which proves all theorems of the form §9.\n\nProve that §10 by executing the §11 tactic.":
+ "# まずはこちらを読む\n\nこのゲームの各レベルでは、数学的な定理（「目標」）を証明します。\n目標は数に関する主張です。このゲームには既知の値を持つ数がいくつかあります。\nその数には§0のような名前がついています。他の数は秘密です。§1や§2のような名前で呼ばれます。§3は数であることは分かっていますが、具体的にはどの数かは分かりません。\n\nこの最初のレベルでは、§4という定理を証明します。\n下の*対象*に§5が表示されているので、§6と§7は数であることが分かります。\n\nLeanで目標を解決するには*タクティク*を使用します。最初に学ぶタクティクは§8で、これは§9のような形式の定理を証明します。\n\n§10を証明するために§11 タクティクを実行してください。",
+ "# Overview\n\nOur home-made tactic §0 will solve arbitrary goals of\nthe form §1.":
+ "# 概要\n\n私たちが開発したタクティク §0 は、§1 の形式の目標を解決します。",
+ "# Overview\n\nLean's simplifier, §0, will rewrite every lemma\ntagged with §1 and every lemma fed to it by the user, as much as it can.\nFurthermore, it will attempt to order variables into an internal order if fed\nlemmas such as §2, so that it does not go into an infinite loop.":
+ "# 概要\n\nLeanの簡略化処理器 §0 は、§1 でタグ付けされたすべての定理およびユーザーから与えられたすべての定理をできる限り簡略化します。さらに、§2 のような定理を与えると、内部的な順序で変数を並べ替える試みも行い、無限ループに陥らないようにします。"}
