@@ -6,6 +6,7 @@ open an issue,issueを作成
 Show more help!,助けて！
 Next,次
 Home,ホーム
+progress,セーブデータ,意訳 進捗でも良いかと思ったが、こちらのほうが概念として伝わりやすそう UIも同じ表記
 
 # 数学
 /axioms?/,公理
@@ -16,20 +17,24 @@ transitivity,推移性
 reflexivity,反射性
 the freshman's dream,一年生の夢,Wikipediaに記述あり
 natural numbers,自然数
+mathematical proof,数学の証明,数学的は一般的ではなさそうと判断
 
 # Lean
 /tactics?/,タクティク
 goal,ゴール,一般語句との混在に注意
 
 # Worlds
-world,ワールド
+successor,後者,Wikipediaから
+zero,0,ゼロと0で表記揺れが発生 この0は数学の0に対して使用し、"ゼロから作る" のようなものには当てはめない
+Strong Induction World,強帰納法ワールド,fuzzy WIISは強数学的帰納法 強い帰納法などの表現もあり
+Advanced Addition World,高度な加算ワールド
+Advanced Multiplication World,高度な乗算ワールド
 Addition World,加算ワールド
 Multiplication World,乗算ワールド
 Implication World,含意ワールド
 Power World,冪乗ワールド
-successor,後者,Wikipediaから
-zero,0,ゼロと0で表記揺れが発生
-Advanced Addition World,高度な加算ワールド
-Advanced Multiplication World,高度な乗算ワールド
+Even/Odd World,偶数/奇数ワールド
+world,ワールド
 # 統一したい語句
 Can you take it from here?,ここから続けられますか？
+

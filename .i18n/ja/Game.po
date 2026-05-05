@@ -1,3 +1,5 @@
+# no-translate: 翻訳不要(タクティク名のみなど)
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Game v4.23.0\n"
