@@ -16,7 +16,6 @@ msgstr ""
 
 #: Game
 #. §0: $\\mathbb{N}$
-#, fuzzy
 msgid ""
 "In this game you recreate the natural numbers §0 from the Peano axioms,\n"
 "learning the basics about theorem proving in Lean.\n"
@@ -25,13 +24,12 @@ msgid ""
 msgstr ""
 "このゲームでは、ペアノの公理に基づいて自然数 §0 を再構成し、Leanにおける定理証明の基礎を習得します。\n"
 "\n"
-"これは、Leanへの優れた入門となるでしょう！"
+"これは、Leanへの良い入門となるでしょう！"
 
 #: Game
 #. §0: `{0,1,2,3,4,...}`
 #. §1: `2 + 2 = 4`
 #. §2: `x + y = y + x`
-#, fuzzy
 msgid ""
 "# Welcome to the Natural Number Game\n"
 "#### An introduction to mathematical proof.\n"
@@ -65,30 +63,31 @@ msgid ""
 "links, and ways to interact with the Lean community."
 msgstr ""
 "# 自然数ゲームへようこそ\n"
-"#### 数学的証明への入門\n"
+"#### 数学の証明への入門\n"
 "\n"
-"このゲームでは、自然数 §0 の基本理論をゼロから構築します。最初の目標は §1 を証明することです。次に §2 "
-"を証明します。そして最後には、フェルマーの最終定理を証明できるかどうかを見ていきます。これらの目標を達成するために、コンピュータパズルゲーム「Lean」"
+"このゲームでは、自然数 §0 の基礎理論をゼロから構築します。最初の目標は §1 を証明することです。次に §2 "
+"を証明します。そして最後には、フェルマーの最終定理を証明できるかどうかを見ていきます。これらの目標を達成するために、Leanと呼ばれるコンピュータパズルゲーム"
 "のレベルを解いていきます。\n"
 "\n"
 "# 読んでください。\n"
 "\n"
-"インタラクティブな定理証明システムの使い方を習得するには時間がかかります。テストの結果から、このゲームで最も効果的なのは、このようなヘルプテキストを読む"
-"人です。\n"
+"インタラクティブな定理証明システムの使い方を習得するには時間がかかります。"
+"テストの結果から、このゲームで最も効果的なのは、"
+"このようなヘルプテキストを読む人です。\n"
 "\n"
 "開始するには、「チュートリアルワールド」をクリックしてください。\n"
 "\n"
-"注意：これは、旧Lean 3版に存在しなかった複数のワールドを含む新しいLean "
-"4版のゲームです。強い帰納法ワールド、偶数/"
-"奇数ワールド、素数ワールドなどの新しいワールドの開発が進行中です；これらの状態を確認したいか、協力したい場合は、[GitHubリポジトリのissues]"
+"注意：これは、旧Lean 3版に存在しなかった複数のワールドを含む"
+"新しいLean 4版のゲームです。強帰納法ワールド、偶数/奇数ワールド、"
+"素数ワールドなどの新しいワールドの開発が進行中です；これらの状態を確認したいか、協力したい場合は、[GitHubリポジトリのissues]"
 "(https://github.com/leanprover-community/NNG4/issues) をチェックしてください。\n"
 "\n"
 "## 追加情報\n"
 "\n"
 "右上隅の三本線をクリックし、「ゲーム情報」を選択して、リソース、リンク、Leanコミュニティとの交流方法を確認してください。"
 
+# Progress savingはUIと同じ内容
 #: Game
-#, fuzzy
 msgid ""
 "*Game version: 4.3*\n"
 "\n"
@@ -144,56 +143,53 @@ msgstr ""
 "\n"
 "*最近の追加: バグ修正*\n"
 "\n"
-"## 進捗保存\n"
+"## セーブデータの保存\n"
 "\n"
-"ゲームは、あなたの進捗をローカルブラウザストレージに保存します。\n"
-"これを削除すると、進捗が失われます！\n"
+"このゲームは、あなたのセーブデータをローカルブラウザストレージに保存します。\n"
+"これを削除すると、セーブデータが失われます！\n"
 "\n"
-"注意：多くのブラウザでは、クッキーを削除するとローカルストレージ（または「ローカルサイトデータ」）もクリアされます。進捗をダウンロードしてから削除するこ"
-"とを確認してください！\n"
+"注意：多くのブラウザでは、クッキーを削除するとローカルストレージ"
+"（または「ローカルサイトデータ」）も削除されます。"
+"セーブデータを削除する前に、必ずセーブデータをダウンロードしてください！\n"
 "\n"
-"## 謝辞\n"
+"## クレジット\n"
 "\n"
 "* **クリエイター:** Kevin Buzzard, Jon Eugster\n"
 "* **オリジナルLean3バージョン:** Kevin Buzzard, Mohammad Pedramfar\n"
 "* **ゲームエンジン:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n"
 "* **追加レベル:** Sian Carey, Ivan Farabella, Archie Browne.\n"
-"* **追加の感謝:** 全ての学生ベータテスト者、Kevinを講演に招待した全ての学校、質問をした全ての学校の子供たち\n"
+"* **協力・謝辞:** ベータテストに参加した全ての学生達、Kevinを講演に招待した全ての学校、内容について質問をしてくれた全ての学校の子供たち\n"
 "\n"
 "## リソース\n"
 "\n"
 "* [Lean Zulipチャット](https://leanprover.zulipchat.com/) フォーラム\n"
 "* "
-"[元のLean3版](https://github.com/ImperialCollegeLondon/natural_number_game/)"
-"（現在メンテナンスされていません）\n"
+"[オリジナルのLean3バージョン](https://github.com/ImperialCollegeLondon/natural_number_game/)"
+"（メンテナンス終了）\n"
 "\n"
 "## お困りですか？\n"
 "\n"
 "このゲームに関する質問は、[Lean Zulipチャット](https://leanprover.zulipchat.com/) "
 "フォーラムで質問してください。例えば、「New Members」ストリームで質問できます。コミュニティは喜んでお手伝いします。注意: Lean "
-"Zulipチャットはプロフェッショナルな研究フォーラムです。そこでフルネームを使用し、トピックに集中し、丁寧に接してください。より非公式な場所（例えば、"
-"自然数ゲームのメモを投稿したい場合）を探している場合は、[Lean Discord](https://discord.gg/WZ9bs9UCvx) "
-"に移動してください。\n"
+"Zulipチャットはプロフェッショナルな研究フォーラムです。そこでは本名（フルネーム）を使用し、トピックに集中し、丁寧に接してください。よりカジュアルな場所（例えば、"
+"自然数ゲームのミームを投稿したい場合）を探している場合は、"
+"[Lean Discord](https://discord.gg/WZ9bs9UCvx) にアクセスしてください。\n"
 "(訳注: これらはいずれも外国語のコミュニティです。もし日本語で質問をしたいのであれば、[Lean "
 "の日本語コミュニティ](https://lean-ja.github.io/about/)上で質問すると良いでしょう。)\n"
 "\n"
-"または、問題やバグが発生した場合は、GitHubの問題をオープンすることもできます：\n"
+"あるいは、問題やバグが発生した場合は、GitHubのissueを作成することもできます：\n"
 "\n"
-"* "
-"ゲームエンジンに関する問題は、[lean4game](https://github.com/leanprover-community/lean4"
-"game/issues) リポジトリで問題をオープンしてください。\n"
-"* ゲームの内容に関する問題は、[NNG](https://github.com/hhu-adam/NNG4/issues) "
-"リポジトリで問題をオープンしてください。"
+"* ゲームエンジンに関する問題は、[lean4gameリポジトリでissueを作成]"
+"(https://github.com/leanprover-community/lean4game/issues) してください。\n"
+"* ゲームの内容に関する問題は、[NNGリポジトリでissueを作成](https://github.com/hhu-adam/NNG4/issues) してください。"
 
 #: Game
-#, fuzzy
 msgid "Natural Number Game"
 msgstr "自然数ゲーム"
 
 #: Game
-#, fuzzy
 msgid "The classical introduction game for Lean."
-msgstr "Lean 4 用の、古典的な導入ゲーム。"
+msgstr "古典的なLeanの導入ゲーム。"
 
 #: Game.Levels.Tutorial
 #. §0: `2 + 2 = 4`
@@ -6623,12 +6619,12 @@ msgstr ""
 #: GameServer.RpcHandlers
 #, fuzzy
 msgid "level completed with warnings… 🎭"
-msgstr "レベルが警告付きで完了しました… 🎭"
+msgstr "レベル完了（警告あり） 🎭"
 
 #: GameServer.RpcHandlers
 #, fuzzy
 msgid "intermediate goal solved! 🎉"
-msgstr "中間目標が達成されました！🎉"
+msgstr "中間ゴール解決！🎉"
 
 # UIと揃える
 #: GameServer.RpcHandlers
