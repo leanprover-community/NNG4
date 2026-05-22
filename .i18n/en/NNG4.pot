@@ -1,0 +1,4689 @@
+msgid ""
+msgstr "Project-Id-Version: NNG4 v4.23.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-23\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.LessOrEqual.L10le_one
+msgid "x ≤ 1"
+msgstr ""
+
+#. §0: `tauto`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "§0 is good enough to solve this goal."
+msgstr ""
+
+#: Game.Levels.Multiplication.L09mul_assoc
+msgid "mul_assoc"
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: `succ_inj a b`
+#. §3: $ (\\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$
+#. §4: `succ_inj`
+#. §5: `succ_inj`
+#. §6: $$a$$
+#. §7: $$b$$
+#. §8: $ ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$
+#. §9: `succ_inj`
+#. §10: `succ`
+#. §11: `succ_inj`
+#. §12: $\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$
+#. §13: `succ_inj`
+#. §14: `pred`
+#: Game.Levels.Implication.L04succ_inj
+msgid "# Statement\n"
+"\n"
+"If §0 and §1 are numbers, then\n"
+"§2 is the proof that\n"
+"§3.\n"
+"\n"
+"## More technical details\n"
+"\n"
+"There are other ways to think about §4.\n"
+"\n"
+"You can think about §5 itself as a function which takes two\n"
+"numbers §6 and §7 as input, and outputs a proof of\n"
+"§8.\n"
+"\n"
+"You can think of §9 itself as a proof; it is the proof\n"
+"that §10 is an injective function. In other words,\n"
+"§11 is a proof of\n"
+"§12.\n"
+"\n"
+"§13 was postulated as an axiom by Peano, but\n"
+"in Lean it can be proved using §14, a mathematically\n"
+"pathological function."
+msgstr ""
+
+#. §0: $a, b$
+#. §1: $ \\operatorname{succ}(a) + b = \\operatorname{succ}(a + b)$
+#: Game.Levels.Addition.L02succ_add
+msgid "For all natural numbers §0, we have\n"
+"§1."
+msgstr ""
+
+#. §0: `h`
+#. §1: `X = Y`
+#. §2: `rw [h]`
+#. §3: `X`
+#. §4: `Y`
+#. §5: `Y`
+#. §6: `X`
+#. §7: `rw`
+#. §8: `←`
+#. §9: `\\l`
+#. §10: $2$
+#. §11: $0$
+#. §12: `succ (succ 0)`
+#. §13: `2`
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "If §0 is a proof of §1 then §2 will\n"
+"turn §3s into §4s. But what if we want to\n"
+"turn §5s into §6s? To tell the §7 tactic\n"
+"we want this, we use a left arrow §8. Type\n"
+"§9 and then hit the space bar to get this arrow.\n"
+"\n"
+"Let's prove that §10 is the number after the number\n"
+"after §11 again, this time by changing §12\n"
+"into §13."
+msgstr ""
+
+#. §0: `have`
+#. §1: `a`
+#. §2: `have ha : a = 0`
+#. §3: `a = 0`
+#. §4: `ha : a = 0`
+#. §5: `have`
+#. §6: `a`
+#. §7: `b`
+#. §8: `have h2 : succ a = succ b → a = b := succ_inj a b`
+#. §9: `h2 : succ a = succ b → a = b`
+#. §10: `succ_inj a b`
+#. §11: `have h2 := succ_inj a b`
+#. §12: `h2 : succ a = succ b → a = b`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "# Summary\n"
+"\n"
+"The §0 tactic can be used to add new hypotheses to a level, but of course\n"
+"you have to prove them.\n"
+"\n"
+"\n"
+"## Example\n"
+"\n"
+"The simplest usage is like this. If you have §1 in your context and you execute\n"
+"\n"
+"§2\n"
+"\n"
+"then you will get a new goal §3 to prove, and after you've proved\n"
+"it you will have a new hypothesis §4 in your original goal.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you already have a proof of what you want to §5, you\n"
+"can just create it immediately. For example, if you have §6 and §7\n"
+"number objects, then\n"
+"\n"
+"§8\n"
+"\n"
+"will directly add a new hypothesis §9\n"
+"to the context, because you just supplied the proof of it (§10).\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have a proof to hand, then you don't even need to state what you\n"
+"are proving. For example\n"
+"\n"
+"§11\n"
+"\n"
+"will add §12 as a hypothesis."
+msgstr ""
+
+#. §0: `a + b + c`
+#. §1: `(a + b) + c`
+#. §2: `+`
+#: Game.Levels.Addition.L04add_assoc
+msgid "Remember that when Lean writes §0, it means §1.\n"
+"If you are not sure where the brackets are in an expression, just hover\n"
+"your cursor over it and look at what gets highlighted. For example,\n"
+"hover over both §2 symbols on the left hand side of the goal and\n"
+"you'll see where the invisible brackets are."
+msgstr ""
+
+#. §0: `rw [← one_eq_succ_zero]`
+#. §1: `succ 0`
+#. §2: `1`
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "Try §0 to change §1 into §2."
+msgstr ""
+
+#. §0: `1`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "Start by unravelling the §0."
+msgstr ""
+
+#: Game.Levels.Tutorial.L02rw
+msgid "the rw tactic"
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+msgid "mul_left_ne_zero"
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
+msgid "mul_ne_zero"
+msgstr ""
+
+#. §0: `2 + 2 = 4`
+#: Game.Levels.Tutorial
+msgid "Welcome to tutorial world! In this world we learn the basics\n"
+"of proving theorems. The boss level of this world\n"
+"is the theorem §0.\n"
+"\n"
+"You prove theorems by solving puzzles using tools called *tactics*.\n"
+"The aim is to prove the theorem by applying tactics\n"
+"in the right order.\n"
+"\n"
+"Let's learn some basic tactics. Click on \"Start\" below\n"
+"to begin your quest."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L02add_left_cancel
+msgid "add_left_cancel"
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "You can probably take it from here."
+msgstr ""
+
+#: Game.Levels.Tutorial.L08twoaddtwo
+msgid "2+2=4"
+msgstr ""
+
+#. §0: `x ≠ y`
+#. §1: `x = y → False`
+#: Game.Levels.Implication.L08ne
+msgid "Remember, §0 is *notation* for §1."
+msgstr ""
+
+#. §0: `a * b = 0`
+#. §1: `a = 0`
+#. §2: `b = 0`
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "This level proves that if §0 then §1 or §2. It is\n"
+"logically equivalent to the last level, so there is a very short proof."
+msgstr ""
+
+#. §0: $0+n=n$
+#. §1: $n$
+#. §2: $n+0=n$
+#. §3: `add_zero`
+#. §4: `zero_add`
+#. §5: `0 + n = n`
+#. §6: `0 + n`
+#. §7: `add_zero`
+#. §8: `add_succ`
+#. §9: `n`
+#. §10: `0`
+#. §11: `induction`
+#. §12: `0 + 0 = 0`
+#. §13: `0 + d = d`
+#. §14: `0 + succ d = succ d`
+#. §15: `0`
+#. §16: `>_`
+#: Game.Levels.Addition.L01zero_add
+msgid "In this level we're going to prove that §0, where §1 is a secret natural number.\n"
+"\n"
+"Wait, don't we already know that? No! We know that §2, but that's §3.\n"
+"This is §4, which is different.\n"
+"\n"
+"The difficulty with proving §5 is that we do not have a *formula* for\n"
+"§6 in general, we can only use §7 and §8 once\n"
+"we know whether §9 is §10 or a successor. The §11 tactic splits into these two cases.\n"
+"\n"
+"The base case will require us to prove §12, and the inductive step\n"
+"will ask us to show that if §13 then §14. Because\n"
+"§15 and successor are the only way to make numbers, this will cover all the cases.\n"
+"\n"
+"See if you can do your first induction proof in Lean.\n"
+"\n"
+"(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\n"
+"back to \"Typewriter mode\" by clicking the §16 button in the top right.)"
+msgstr ""
+
+#. §0: `∨`
+#. §1: `x = 0 ∨ x = 1 ∨ x = 2`
+#. §2: `x = 0 ∨ (x = 1 ∨ x = 2)`
+#. §3: `left`
+#. §4: `right`
+#: Game.Levels.LessOrEqual.L11le_two
+msgid "We'll need this lemma to prove that two is prime!\n"
+"\n"
+"You'll need to know that §0 is right associative. This means that\n"
+"§1 actually means §2.\n"
+"This affects how §3 and §4 work."
+msgstr ""
+
+#: Game.Levels.Power.L01zero_pow_zero
+msgid "zero_pow_zero"
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#: Game.Levels.Addition.L03add_comm
+msgid "Induction on §0 or §1 -- it's all the same in this one."
+msgstr ""
+
+#: Game.Levels.Power.L05pow_two
+msgid "Note: this lemma will be useful for the final boss!"
+msgstr ""
+
+#: Game.Levels.Implication.L06intro
+msgid "intro"
+msgstr ""
+
+#. §0: `apply eq_succ_of_ne_zero at ha`
+#: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+msgid "Use the previous lemma with §0."
+msgstr ""
+
+#: Game.Levels.Multiplication.L09mul_assoc
+msgid "A passing mathematician notes that you've proved\n"
+"that the natural numbers are a commutative semiring.\n"
+"\n"
+"If you want to begin your journey to the final boss, head for Power World."
+msgstr ""
+
+#. §0: `pow_pow`
+#: Game.Levels.Power.L08pow_pow
+msgid "One of the best named levels in the game, a savage §0\n"
+"sub-boss appears as the music reaches a frenzy. What\n"
+"else could there be to prove about powers after this?"
+msgstr ""
+
+#. §0: $x \\leq 0$
+#. §1: $x=0$
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "If §0, then §1."
+msgstr ""
+
+#. §0: `apply h`
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+msgid "Now §0 and you can probably take it from here."
+msgstr ""
+
+#. §0: `mul_comm x y : x * y = y * x`
+#. §1: `zero_mul`
+#. §2: `mul_zero`
+#: Game.Levels.Multiplication.L04mul_comm
+msgid "The first sub-boss of Multiplication World is §0.\n"
+"\n"
+"When you've proved this theorem we will have \"spare\" proofs\n"
+"such as §1, which is now easily deducible from §2.\n"
+"But we'll keep hold of these proofs anyway, because it's convenient\n"
+"to have exactly the right tool for a job."
+msgstr ""
+
+#. §0: `add_right_comm a b c`
+#. §1: `(a + b) + c = (a + c) + b`
+#. §2: `a + b + c`
+#. §3: `(a + b) + c`
+#. §4: `a + b + c = a + c + b`
+#: Game.Levels.Addition.L05add_right_comm
+msgid "§0 is a proof that §1\n"
+"\n"
+"In Lean, §2 means §3, so this result gets displayed\n"
+"as §4."
+msgstr ""
+
+#: Game.Levels.Algorithm.L08decide
+msgid "decide"
+msgstr ""
+
+#. §0: `rw [zero_add] at «{h}»`
+#. §1: `«{h}»`
+#: Game.Levels.Implication.L02exact2
+msgid "You can use §0 to rewrite at §1 instead\n"
+"of at the goal."
+msgstr ""
+
+#. §0: `repeat t`
+#. §1: `t`
+#. §2: `repeat rw [add_zero]`
+#. §3: `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
+#. §4: `a = b`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "## Summary\n"
+"\n"
+"§0 repeatedly applies the tactic §1\n"
+"to the goal. You don't need to use this\n"
+"tactic, it just speeds things up sometimes.\n"
+"\n"
+"## Example\n"
+"\n"
+"§2 will turn the goal\n"
+"§3\n"
+"into the goal\n"
+"§4."
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "Addition World"
+msgstr ""
+
+#. §0: `P`
+#. §1: `exact h`
+#. §2: `h`
+#. §3: `P`
+#. §4: `x = 37`
+#. §5: `h : x = 37`
+#. §6: `exact h`
+#. §7: `x + 0 = x`
+#. §8: `exact add_zero x`
+#. §9: `exact add_zero`
+#. §10: `exact h`
+#. §11: `h`
+#. §12: `add_zero`
+#. §13: `∀ n, n + 0 = n`
+#. §14: `? + 0 = ?`
+#. §15: `?`
+#. §16: `rw`
+#. §17: `apply`
+#. §18: `x + 0 = x`
+#. §19: `rw [add_zero]`
+#. §20: `rw [add_zero x]`
+#. §21: `x = x`
+#. §22: `rw`
+#. §23: `add_zero`
+#: Game.Levels.Implication.L01exact
+msgid "## Summary\n"
+"\n"
+"If the goal is a statement §0, then §1 will close the goal if §2 is a proof of §3.\n"
+"\n"
+"### Example\n"
+"\n"
+"If the goal is §4 and you have a hypothesis §5\n"
+"then §6 will solve the goal.\n"
+"\n"
+"### Example\n"
+"\n"
+"If the goal is §7 then §8 will close the goal.\n"
+"\n"
+"### Exact needs to be exactly right\n"
+"\n"
+"Note that §9 will *not work* in the previous example;\n"
+"for §10 to work, §11 has to be *exactly* a proof of the goal.\n"
+"§12 is a proof of §13 or, if you like,\n"
+"a proof of §14 where §15 needs to be supplied by the user.\n"
+"This is in contrast to §16 and §17, which will \\\\\"guess the inputs\\\\\"\n"
+"if necessary. If the goal is §18 then §19\n"
+"and §20 will both change the goal to §21,\n"
+"because §22 guesses the input to the function §23."
+msgstr ""
+
+#. §0: `apply succ_inj at h`
+#. §1: `succ`
+#: Game.Levels.Implication.L07intro2
+msgid "Now §0 to cancel the §1s."
+msgstr ""
+
+#. §0: `induction`
+#. §1: `x + y = y + x`
+#. §2: `rw`
+#. §3: `rfl`
+#. §4: `induction`
+#: Game.Levels.Addition
+msgid "Welcome to Addition World! In this world we'll learn the §0 tactic.\n"
+"This will enable us to defeat the boss level of this world, namely §1.\n"
+"\n"
+"The tactics §2, §3 and §4 are the only tactics you'll need to\n"
+"beat all the levels in Addition World, Multiplication World, and Power World.\n"
+"Power World contains the final boss of the game.\n"
+"\n"
+"There are plenty more tactics in this game, but you'll only need to know them if you\n"
+"want to explore the game further (for example if you decide to 100%\n"
+"the game)."
+msgstr ""
+
+#. §0: `(a + a + 1) + (b + b + 1) = (a + b + 1) + (a + b + 1)`
+#. §1: `(a + b) + (c + d) = ((a + c) + d) + b`
+#. §2: `a+b+c+d`
+#. §3: `a+c+d+b`
+#. §4: `b`
+#. §5: `c`
+#. §6: `b`
+#. §7: `d`
+#. §8: `add_left_comm`
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "In some later worlds, we're going to see some much nastier levels,\n"
+"like §0.\n"
+"Brackets need to be moved around, and variables need to be swapped.\n"
+"\n"
+"In this level, §1,\n"
+"let's forget about the brackets and just think about\n"
+"the variable order.\n"
+"To turn §2 into §3 we need to swap §4 and §5,\n"
+"and then swap §6 and §7. But this is easier than you\n"
+"think with §8."
+msgstr ""
+
+#: Game.Levels.Algorithm.L01add_left_comm
+msgid "add_left_comm"
+msgstr ""
+
+#. §0: `symm`
+#. §1: `X = Y`
+#. §2: `Y = X`
+#. §3: `X ≠ Y`
+#. §4: `X ↔ Y`
+#. §5: `2 + 2 = 4`
+#. §6: `symm`
+#. §7: `4 = 2 + 2`
+#. §8: `h : 2 + 2 ≠ 5`
+#. §9: `symm at h`
+#. §10: `h`
+#. §11: `5 ≠ 2 + 2`
+#: Game.Levels.Implication.L10one_ne_zero
+msgid "## Summary\n"
+"\n"
+"The §0 tactic will change a goal or hypothesis of\n"
+"the form §1 to §2. It will also work on §3\n"
+"and on §4.\n"
+"\n"
+"### Example\n"
+"\n"
+"If the goal is §5 then §6 will change it to §7.\n"
+"\n"
+"### Example\n"
+"\n"
+"If §8 then §9 will change §10 to §11."
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $c$
+#. §3: $a(b + c) = ab + ac$
+#: Game.Levels.Multiplication.L07mul_add
+msgid "Multiplication is distributive over addition on the left.\n"
+"In other words, for all natural numbers §0, §1 and §2, we have\n"
+"§3."
+msgstr ""
+
+#. §0: `apply`
+#: Game.Levels.Implication.L03apply
+msgid "The §0 tactic."
+msgstr ""
+
+#. §0: `exact h1`
+#: Game.Levels.Implication.L01exact
+msgid "The goal in this level is one of our hypotheses. Solve the goal by executing §0."
+msgstr ""
+
+#. §0: `≤`
+#. §1: `a + b = 0`
+#. §2: `a = 0`
+#. §3: `b = 0`
+#. §4: `cases`
+#. §5: `cases`
+#. §6: `b = 0`
+#. §7: `b = succ d`
+#. §8: `hd`
+#. §9: `induction b with d hd`
+#. §10: `cases b with d`
+#. §11: `b = 0`
+#. §12: `b = succ d`
+#. §13: `h : False`
+#. §14: `cases h`
+#. §15: `False`
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+msgid "The next result we'll need in §0 World is that if §1 then §2 and §3.\n"
+"Let's prove one of these facts in this level, and the other in the next.\n"
+"\n"
+"## A new tactic: §4\n"
+"\n"
+"The §5 tactic will split an object or hypothesis up into the possible ways\n"
+"that it could have been created.\n"
+"\n"
+"For example, sometimes you want to deal with the two cases §6 and §7 separately,\n"
+"but don't need the inductive hypothesis §8 that comes with §9.\n"
+"In this situation you can use §10 instead. There are two ways to make\n"
+"a number: it's either zero or a successor. So you will end up with two goals, one\n"
+"with §11 and one with §12.\n"
+"\n"
+"Another example: if you have a hypothesis §13 then you are done, because a false statement implies\n"
+"any statement. Here §14 will close the goal, because there are *no* ways to\n"
+"make a proof of §15! So you will end up with no goals, meaning you have proved everything."
+msgstr ""
+
+#. §0: `rfl`
+#: Game.Levels.Tutorial.L01rfl
+msgid "In order to use the tactic §0 you can enter it in the text box\n"
+"under the goal and hit \"Execute\"."
+msgstr ""
+
+#. §0: $x=37$
+#. §1: $y=42$
+#. §2: $y=42$
+#. §3: $x=37$
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "If §0 or §1, then §2 or §3."
+msgstr ""
+
+#: Game.Levels.Algorithm.L09decide2
+msgid "Congratulations! You've finished Algorithm World. These algorithms\n"
+"will be helpful for you in Even-Odd World (when someone gets around to\n"
+"implementing it)."
+msgstr ""
+
+#. §0: `h : X = Y`
+#. §1: `rw [h]`
+#. §2: `X`
+#. §3: `Y`
+#. §4: `nth_rewrite 3 [h]`
+#: Game.Levels.Tutorial.L08twoaddtwo
+msgid "Good luck!\n"
+"\n"
+"  One last hint. If §0 then §1 will change *all* §2s into §3s.\n"
+"  If you only want to change one of them, say the 3rd one, then use\n"
+"  §4."
+msgstr ""
+
+#. §0: `add_assoc`
+#. §1: `add_comm`
+#: Game.Levels.Addition.L04add_assoc
+msgid "A passing mathematician congratulates you on proving that naturals\n"
+"are an additive commutative monoid.\n"
+"\n"
+"Let's practice using §0 and §1 in one more level,\n"
+"before we leave addition world."
+msgstr ""
+
+#: Game.Levels.Implication.L05succ_inj2
+msgid "Arguing backwards"
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "mul_right_eq_one"
+msgstr ""
+
+#. §0: `add_sq a b`
+#. §1: $(a+b)^2=a^2+b^2+2ab.$
+#: Game.Levels.Power.L09add_sq
+msgid "§0 is the statement that §1"
+msgstr ""
+
+#. §0: $x=y$
+#. §1: $x \\neq y$
+#: Game.Levels.Implication.L08ne
+msgid "If §0 and §1 then we can deduce a contradiction."
+msgstr ""
+
+#. §0: `2 + 2 = 4`
+#. §1: $37$
+#. §2: $x$
+#. §3: $0$
+#. §4: `37 + x`
+#. §5: `37 + 0`
+#. §6: `37 + succ x`
+#. §7: `0`
+#. §8: `37 + 0`
+#. §9: `37`
+#. §10: `a + 0`
+#. §11: `a`
+#. §12: `a`
+#. §13: `add_zero a`
+#. §14: `add_zero 37`
+#. §15: `37 + 0 = 37`
+#. §16: `add_zero x`
+#. §17: `x + 0 = x`
+#. §18: `add_zero`
+#. §19: `? + 0 = ?`
+#. §20: `add_zero x : x + 0 = x`
+#. §21: `proof : statement`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "We'd like to prove §0 but right now\n"
+"we can't even *state* it\n"
+"because we haven't yet defined addition.\n"
+"\n"
+"## Defining addition.\n"
+"\n"
+"How are we going to add §1 to an arbitrary number §2? Well,\n"
+"there are only two ways to make numbers in this game: §3\n"
+"and successors. So to define §4 we will need\n"
+"to know what §5 is and what §6 is.\n"
+"Let's start with adding §7.\n"
+"\n"
+"### Adding 0\n"
+"\n"
+"To make addition agree with our intuition, we should *define* §8\n"
+"to be §9. More generally, we should define §10 to be §11 for\n"
+"any number §12. The name of this proof in Lean is §13.\n"
+"For example §14 is a proof of §15,\n"
+"§16 is a proof of §17, and §18 is a proof\n"
+"of §19.\n"
+"\n"
+"We write §20, so §21."
+msgstr ""
+
+#. §0: `t = 0`
+#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
+msgid "Let's warm up with an easy one, which works even if §0."
+msgstr ""
+
+#. §0: $x+1=y+1\\implies x=y$
+#: Game.Levels.Implication.L07intro2
+msgid "Let's see if you can use the tactics we've learnt to prove §0.\n"
+"Try this one by yourself; if you need help then click on \"Show more help!\"."
+msgstr ""
+
+#. §0: `apply zero_ne_succ at h`
+#: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "Now you can §0."
+msgstr ""
+
+#. §0: `h2`
+#. §1: `x = 37`
+#. §2: `y = 42`
+#. §3: `apply`
+#. §4: `apply`
+#: Game.Levels.Implication.L03apply
+msgid "In this level, the hypothesis §0 is an *implication*. It says\n"
+"that *if* §1 *then* §2. We can use this\n"
+"hypothesis with the §3 tactic. Remember you can click on\n"
+"§4 or any other tactic on the right to see a detailed explanation\n"
+"of what it does, with examples."
+msgstr ""
+
+#. §0: $37$
+#. §1: $x$
+#. §2: $q$
+#. §3: $x$
+#. §4: $37x + q = 37x + q$
+#. §5: `x q : ℕ`
+#. §6: `x`
+#. §7: `q`
+#. §8: `rfl`
+#. §9: $X = X$
+#. §10: $37x+q=37x+q$
+#. §11: `rfl`
+#: Game.Levels.Tutorial.L01rfl
+msgid "# Read this first\n"
+"\n"
+"Each level in this game involves proving a mathematical theorem (the \"Goal\").\n"
+"The goal will be a statement about *numbers*. Some numbers in this game have known values.\n"
+"Those numbers have names like §0. Other numbers will be secret. They're called things\n"
+"like §1 and §2. We know §3 is a number, we just don't know which one.\n"
+"\n"
+"In this first level we're going to prove the theorem that §4.\n"
+"You can see §5 in the *Objects* below, which means that §6 and §7\n"
+"are numbers.\n"
+"\n"
+"We solve goals in Lean using *Tactics*, and the first tactic we're\n"
+"going to learn is called §8, which proves all theorems of the form §9.\n"
+"\n"
+"Prove that §10 by executing the §11 tactic."
+msgstr ""
+
+#. §0: ```
+#. repeat rw [zero_add] at h
+#. exact h
+#. ```
+#: Game.Levels.Implication.L02exact2
+msgid "Here's a two-line proof:\n"
+"§0"
+msgstr ""
+
+#. §0: `zero_add x`
+#. §1: `0 + x = x`
+#. §2: `zero_add`
+#. §3: `simp`
+#. §4: `0 + x`
+#. §5: `x`
+#: Game.Levels.Addition.L01zero_add
+msgid "§0 is the proof of §1.\n"
+"\n"
+"§2 is a §3 lemma, because replacing §4 by §5\n"
+"is almost always what you want to do if you're simplifying an expression."
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#. §2: `succ_inj a b`
+#. §3: `succ a = succ b`
+#. §4: `a = b`
+#. §5: $x+1=4 \\implies x=3$
+#: Game.Levels.Implication.L04succ_inj
+msgid "If §0 and §1 are numbers, then §2 is a proof\n"
+"that §3 implies §4. Click on this theorem in the *Peano*\n"
+"tab for more information.\n"
+"\n"
+"Peano had this theorem as an axiom, but in Algorithm World\n"
+"we will show how to prove it in Lean. Right now let's just assume it,\n"
+"and let's prove §5 using it. Again, we will proceed\n"
+"by manipulating our hypothesis until it becomes the goal. I will\n"
+"walk you through this level."
+msgstr ""
+
+#. §0: `2 + 2 ≠ 5`
+#. §1: `0 ≠ 1`
+#. §2: `zero_ne_succ n`
+#. §3: `0 ≠ succ n`
+#: Game.Levels.Implication.L09zero_ne_succ
+msgid "As warm-up for §0 let's prove §1. To do this we need to\n"
+"introduce Peano's last axiom §2, a proof that §3.\n"
+"To learn about this result, click on it in the list of lemmas on the right."
+msgstr ""
+
+#. §0: $x+y=37$
+#. §1: $3x+z=42$
+#. §2: $x+y=37$
+#: Game.Levels.Implication.L01exact
+msgid "Assuming §0 and §1, we have §2."
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#. §2: $a + b = b + a$
+#: Game.Levels.Addition.L03add_comm
+msgid "On the set of natural numbers, addition is commutative.\n"
+"In other words, if §0 and §1 are arbitrary natural numbers, then\n"
+"§2."
+msgstr ""
+
+#. §0: `a * b = a * c`
+#. §1: `a ≠ 0`
+#. §2: `b = c`
+#. §3: `induction b with d hd`
+#. §4: `a * d = a * c → d = c`
+#. §5: `a * succ d = a * c`
+#. §6: `a ≠ 0`
+#. §7: `b`
+#. §8: `c`
+#. §9: `a * b = a * c`
+#. §10: `b = c`
+#. §11: `c`
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "In this level we prove that if §0 and §1 then §2. It is tricky, for\n"
+"several reasons. One of these is that\n"
+"we need to introduce a new idea: we will need to understand the concept of\n"
+"mathematical induction a little better.\n"
+"\n"
+"Starting with §3 is too naive, because in the inductive step\n"
+"the hypothesis is §4 but what we know is §5,\n"
+"so the induction hypothesis does not apply!\n"
+"\n"
+"Assume §6 is fixed. The actual statement we want to prove by induction on §7 is\n"
+"\"for all §8, if §9 then §10\". This *can* be proved by induction,\n"
+"because we now have the flexibility to change §11."
+msgstr ""
+
+#. §0: `h2`
+#. §1: `tauto`
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "Now the goal can be deduced from §0 by pure logic, so use the §1\n"
+"tactic."
+msgstr ""
+
+#. §0: `rfl`
+#: Game.Levels.Tutorial.L02rw
+msgid "Now §0 will work."
+msgstr ""
+
+#. §0: `le_zero x`
+#. §1: `x ≤ 0 → x = 0`
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "§0 is a proof of the implication §1."
+msgstr ""
+
+#: Game.Levels.Implication.L11two_add_two_ne_five
+msgid "2 + 2 ≠ 5"
+msgstr ""
+
+#. §0: `ℕ`
+#. §1: `0 : ℕ`
+#. §2: `succ (n : ℕ) : ℕ`
+#. §3: `MyNat`
+#. §4: `ℕ`
+#. §5: `Nat`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. It's\n"
+"defined via two rules:\n"
+"\n"
+"* §1 (zero is a number)\n"
+"* §2 (the successor of a number is a number)\n"
+"\n"
+"## Game Implementation\n"
+"\n"
+"*The game uses its own copy of the natural numbers, called §3 with notation §4.\n"
+"It is distinct from the Lean natural numbers §5, which should hopefully\n"
+"never leak into the natural number game.*"
+msgstr ""
+
+#. §0: `a ≠ 0`
+#. §1: `tauto`
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+msgid "Multiplication usually makes a number bigger, but multiplication by zero can make\n"
+"it smaller. Thus many lemmas about inequalities and multiplication need the\n"
+"hypothesis §0. Here is a key lemma that enables us to use this hypothesis.\n"
+"To help us with the proof, we can use the §1 tactic. Click on the tactic's name\n"
+"on the right to see what it does."
+msgstr ""
+
+#. §0: `cases`
+#. §1: `hxy`
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "In this level, we see inequalities as *hypotheses*. We have not seen this before.\n"
+"The §0 tactic can be used to take §1 apart."
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#. §2: `a = b`
+#. §3: `a`
+#. §4: `b`
+#. §5: `0`
+#. §6: `a`
+#. §7: `b`
+#. §8: `0`
+#. §9: `0`
+#. §10: `succ n`
+#. §11: `a = succ m`
+#. §12: `b = succ n`
+#. §13: `m = n`
+#. §14: `0 = 0`
+#. §15: `rfl`
+#. §16: `0 ≠ succ n`
+#. §17: `zero_ne_succ n`
+#. §18: `succ m ≠ 0`
+#. §19: `succ_ne_zero m`
+#. §20: `h : m = n`
+#. §21: `succ m = succ n`
+#. §22: `rw [h]`
+#. §23: `rfl`
+#. §24: `a ≠ b`
+#. §25: `succ a ≠ succ b`
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "Here we begin to\n"
+"develop an algorithm which, given two naturals §0 and §1, returns the answer\n"
+"to \"does §2?\"\n"
+"\n"
+"Here is the algorithm. First note that §3 and §4 are numbers, and hence\n"
+"are either §5 or successors.\n"
+"\n"
+"*) If §6 and §7 are both §8, return \"yes\".\n"
+"\n"
+"*) If one is §9 and the other is §10, return \"no\".\n"
+"\n"
+"*) If §11 and §12, then return the answer to \"does §13?\"\n"
+"\n"
+"Our job now is to *prove* that this algorithm always gives the correct answer. The proof that\n"
+"§14 is §15. The proof that §16 is §17, and the proof\n"
+"that §18 is §19. The proof that if §20 then\n"
+"§21 is §22 and then §23. This level is a proof of the one\n"
+"remaining job we have to do: if §24 then §25."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L06le_antisymm
+msgid "x ≤ y and y ≤ x implies x = y"
+msgstr ""
+
+#. §0: `left`
+#. §1: `P ∨ Q`
+#. §2: `P`
+#. §3: `P ∨ Q`
+#. §4: `P`
+#. §5: `apply`
+#. §6: $P \\implies P \\lor Q.$
+#: Game.Levels.LessOrEqual.L07or_symm
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "# Summary\n"
+"The §0 tactic changes a goal of §1 into a goal of §2.\n"
+"Use it when your hypotheses guarantee that the reason that §3\n"
+"is true is because in fact §4 is true.\n"
+"\n"
+"Internally this tactic is just §5ing a theorem\n"
+"saying that §6\n"
+"\n"
+"Note that this tactic can turn a solvable goal into an unsolvable\n"
+"one."
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication World"
+msgstr ""
+
+#. §0: `le_zero`
+#. §1: `x ≤ 0`
+#. §2: `x = 0`
+#. §3: `x ≤ 1`
+#. §4: `x = 0`
+#. §5: `x = 1`
+#: Game.Levels.LessOrEqual.L10le_one
+msgid "We've seen §0, the proof that if §1 then §2.\n"
+"Now we'll prove that if §3 then §4 or §5."
+msgstr ""
+
+#. §0: $\\mathbb{N}$
+#: Game
+msgid "In this game you recreate the natural numbers §0 from the Peano axioms,\n"
+"learning the basics about theorem proving in Lean.\n"
+"\n"
+"This is a good first introduction to Lean!"
+msgstr ""
+
+#. §0: $x+1=4$
+#. §1: $x=3$
+#: Game.Levels.Implication.L04succ_inj
+#: Game.Levels.Implication.L05succ_inj2
+#: Game.Levels.Algorithm.L05pred
+#: Game.Levels.Algorithm.L07succ_ne_succ
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
+#: Game.Levels.LessOrEqual.L09succ_le_succ
+msgid "If §0 then §1."
+msgstr ""
+
+#. §0: $x+y+z$
+#. §1: $(x+y)+z$
+#. §2: $x+(y+z)$
+#. §3: $x+y+z$
+#. §4: $(x+y)+z$
+#. §5: $(x+y)+z$
+#. §6: $x+(y+z)$
+#: Game.Levels.Addition.L04add_assoc
+msgid "We've been adding up two numbers; in this level we will add up three.\n"
+"\n"
+"  What does §0 *mean*? It could either mean §1, or it\n"
+"  could mean §2. In Lean, §3 means §4.\n"
+"\n"
+"  But why do we care which one it means; §5 and §6 are *equal*!\n"
+"\n"
+"  That's true, but we didn't prove it yet. Let's prove it now by induction."
+msgstr ""
+
+#. §0: `add_left_eq_self`
+#. §1: ```
+#. rw [add_comm]
+#. intro h
+#. apply add_left_eq_self at h
+#. exact h
+#. ```
+#. §2: ```
+#. rw [add_comm]
+#. exact add_left_eq_self y x
+#. ```
+#. §3: `x`
+#. §4: ```
+#. induction x with d hd
+#. intro h
+#. rw [zero_add] at h
+#. exact h
+#. intro h
+#. rw [succ_add] at h
+#. apply succ_inj at h
+#. apply hd at h
+#. exact h
+#. ```
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "Here's a proof using §0:\n"
+"§1\n"
+"\n"
+"and here's an even shorter one using the same idea:\n"
+"§2\n"
+"\n"
+"Alternatively you can just prove it by induction on §3:\n"
+"\n"
+"§4"
+msgstr ""
+
+#. §0: `add_right_eq_zero`
+#. §1: `symm at`
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "You want to use §0, which you already\n"
+"proved, but you'll have to start with §1 your hypothesis."
+msgstr ""
+
+#. §0: `1`
+#. §1: `succ 0`
+#. §2: `rw [one_eq_succ_zero]`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Next turn §0 into §1 with §2."
+msgstr ""
+
+#: Game.Levels.Implication.L07intro2
+msgid "intro practice"
+msgstr ""
+
+#. §0: `n : ℕ`
+#. §1: `n`
+#. §2: `induction n with d hd`
+#. §3: `n`
+#. §4: `d`
+#. §5: `hd`
+#. §6: ```
+#. 0 + n = n
+#. ```
+#. §7: `induction n with d hd`
+#. §8: `0 + 0 = 0`
+#. §9: `hd : 0 + d = d`
+#. §10: `0 + succ d = succ d`
+#: Game.Levels.Addition.L01zero_add
+msgid "## Summary\n"
+"\n"
+"If §0 is an object, and the goal mentions §1, then §2\n"
+"attempts to prove the goal by induction on §3, with the inductive\n"
+"variable in the successor case being §4, and the inductive hypothesis being §5.\n"
+"\n"
+"### Example:\n"
+"If the goal is\n"
+"§6\n"
+"\n"
+"then\n"
+"\n"
+"§7\n"
+"\n"
+"will turn it into two goals. The first is §8;\n"
+"the second has an assumption §9 and goal\n"
+"§10.\n"
+"\n"
+"Note that you must prove the first\n"
+"goal before you can access the second one."
+msgstr ""
+
+#: Game.Levels.Implication.L09zero_ne_succ
+msgid "zero_ne_succ"
+msgstr ""
+
+#. §0: $1\\times m=m$
+#. §1: `succ_mul`
+#: Game.Levels.Multiplication.L05one_mul
+msgid "You can prove §0 in at least three ways.\n"
+"Either by induction, or by using §1, or\n"
+"by using commutativity. Which do you think is quickest?"
+msgstr ""
+
+#. §0: `succ a + «{d}»`
+#. §1: `(succ a) + «{d}»`
+#. §2: `succ`
+#: Game.Levels.Addition.L02succ_add
+msgid "Note that §0 means §1. Put your cursor\n"
+"on any §2 in the goal or assumptions to see what exactly it's eating."
+msgstr ""
+
+#. §0: `cases «{h}» with hx hy`
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "We don't know whether to go left or right yet. So start with §0."
+msgstr ""
+
+#. §0: $2$
+#. §1: $2 = 37 × 42.$
+#. §2: $2$
+#. §3: $2$
+#. §4: `mul_left_ne_zero`
+#. §5: `one_le_of_ne_zero`
+#. §6: `mul_le_mul_right`
+#: Game.Levels.AdvMultiplication.L05le_mul_right
+msgid "One day this game will have a Prime Number World, with a final boss\n"
+"of proving that §0 is prime.\n"
+"To do this, we will have to rule out things like §1\n"
+"We will do this by proving that any factor of §2 is at most §3,\n"
+"which we will do using this lemma. The proof I have in mind manipulates the hypothesis\n"
+"until it becomes the goal, using §4, §5 and\n"
+"§6."
+msgstr ""
+
+#. §0: `False`
+#. §1: `True`
+#. §2: `is_zero (succ a)`
+#. §3: `rw [← is_zero_succ a]`
+#: Game.Levels.Algorithm.L06is_zero
+msgid "We're going to change that §0 into §1. Start by changing it into\n"
+"§2 by executing §3."
+msgstr ""
+
+#. §0: `contrapose! h`
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "Can you take it from here? (note: if you try §0 again, it will\n"
+"take you back to where you started!)"
+msgstr ""
+
+#. §0: `pow_two a`
+#. §1: `a ^ 2 = a * a`
+#: Game.Levels.Power.L05pow_two
+msgid "§0 says that §1."
+msgstr ""
+
+#: Game.Levels.Implication.L04succ_inj
+msgid "In the next level, we'll do the same proof but backwards."
+msgstr ""
+
+#. §0: ```
+#. rw [mul_comm, mul_add]
+#. repeat rw [mul_comm c]
+#. rfl
+#. ```
+#: Game.Levels.Multiplication.L08add_mul
+#: Game.Levels.LessOrEqual.L09succ_le_succ
+msgid "Here's my proof:\n"
+"§0"
+msgstr ""
+
+#. §0: `exact`
+#: Game.Levels.Implication.L03apply
+msgid "Now finish using the §0 tactic."
+msgstr ""
+
+#. §0: `37 ^ n`
+#. §1: `37 ^ 0`
+#. §2: `37 ^ (succ d)`
+#. §3: `37 ^ d`
+#. §4: `pow_zero (a : ℕ) : a ^ 0 = 1`
+#. §5: `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`
+#: Game.Levels.Power
+msgid "This world introduces exponentiation. If you want to define §0\n"
+"then, as always, you will need to know what §1 is, and\n"
+"what §2 is, given only §3.\n"
+"\n"
+"You can probably guess the names of the general theorems:\n"
+"\n"
+"  * §4\n"
+"  * §5\n"
+"\n"
+"Using only these, can you get past the final boss level?\n"
+"\n"
+"The levels in this world were designed by Sian Carey, a UROP student\n"
+"at Imperial College London, funded by a Mary Lister McCammon Fellowship\n"
+"in the summer of 2019. Thanks to Sian and also thanks to Imperial\n"
+"College for funding her."
+msgstr ""
+
+#. §0: `h`
+#. §1: `succ x = succ 3`
+#. §2: `succ_inj`
+#. §3: `rw [four_eq_succ_three] at h`
+#: Game.Levels.Implication.L04succ_inj
+msgid "Let's first get §0 into the form §1 so we can\n"
+"apply §2. First execute §3\n"
+"to change the 4 on the right hand side."
+msgstr ""
+
+#. §0: `rw [← two_eq_succ_one]`
+#. §1: `succ 1`
+#. §2: `2`
+#: Game.Levels.Tutorial.L04rw_backwards
+#: Game.Levels.Tutorial.L05add_zero
+msgid "Now §0 will change §1 into §2."
+msgstr ""
+
+#. §0: ```
+#. intro h
+#. apply succ_inj
+#. repeat rw [succ_eq_add_one]
+#. exact h
+#. ```
+#: Game.Levels.Implication.L07intro2
+msgid "Here's a completely backwards proof:\n"
+"§0"
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "x ≤ 0 → x = 0"
+msgstr ""
+
+#: Game.Levels.AdvAddition
+msgid "Advanced Addition World"
+msgstr ""
+
+#. §0: $x$
+#. §1: $q$
+#. §2: $37x+q=37x+q.$
+#: Game.Levels.Tutorial.L01rfl
+msgid "If §0 and §1 are arbitrary natural numbers, then §2"
+msgstr ""
+
+#. §0: `left`
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "This time, use the §0 tactic."
+msgstr ""
+
+#. §0: $(a+b)^2=a^2+b^2$
+#: Game.Levels.Power.L09add_sq
+msgid "It's all over! You have proved a theorem which has tripped up\n"
+"schoolkids for generations (some of them think §0:\n"
+"this is \"the freshman's dream\").\n"
+"\n"
+"How many rewrites did you use? I can do it in 12.\n"
+"\n"
+"But wait! This boss is stirring...and mutating into a second more powerful form!"
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $c$
+#. §3: $(a + b) \\times c = ac + bc$
+#: Game.Levels.Multiplication.L08add_mul
+msgid "Addition is distributive over multiplication.\n"
+"In other words, for all natural numbers §0, §1 and §2, we have\n"
+"§3."
+msgstr ""
+
+#. §0: `one_mul m`
+#. §1: `1 * m = m`
+#: Game.Levels.Multiplication.L05one_mul
+msgid "§0 is the proof §1."
+msgstr ""
+
+#: Game.Levels.Algorithm.L03add_algo2
+msgid "making life simple"
+msgstr ""
+
+#. §0: `four_eq_succ_three`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "Now rewrite §0 backwards to make the goal\n"
+"equal to the hypothesis."
+msgstr ""
+
+#: Game.Levels.Addition.L04add_assoc
+msgid "add_assoc (associativity of addition)"
+msgstr ""
+
+#. §0: `add_assoc a b c`
+#. §1: `(a + b) + c = a + (b + c)`
+#. §2: `(a + b) + c`
+#. §3: `a + b + c`
+#: Game.Levels.Addition.L04add_assoc
+msgid "§0 is a proof\n"
+"that §1. Note that in Lean §2 prints\n"
+"as §3, because the notation for addition is defined to be left\n"
+"associative."
+msgstr ""
+
+#. §0: `intro h`
+#: Game.Levels.Implication.L07intro2
+msgid "Start with §0 to assume the hypothesis."
+msgstr ""
+
+#: Game.Levels.Multiplication.L04mul_comm
+msgid "mul_comm"
+msgstr ""
+
+#. §0: `2 + 2 ≠ 5`
+#: Game.Levels.Algorithm.L09decide2
+msgid "We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer one."
+msgstr ""
+
+#. §0: $n = 0$
+#. §1: `X = Y`
+#: Game.Levels.Addition.L01zero_add
+msgid "Now you have two goals. Once you proved the first, you will jump to the second one.\n"
+"This first goal is the base case §0.\n"
+"\n"
+"Recall that you can rewrite the proof of any lemma which is visible\n"
+"in your inventory, or of any assumption displayed above the goal,\n"
+"as long as it is of the form §1."
+msgstr ""
+
+#. §0: `x + 1 = 4`
+#. §1: `x = 3`
+#. §2: `apply`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "In the last level, we manipulated the hypothesis §0\n"
+"  until it became the goal §1. In this level we'll manipulate\n"
+"  the goal until it becomes our hypothesis! In other words, we\n"
+"  will \"argue backwards\". The §2 tactic can do this too.\n"
+"  Again I will walk you through this one (assuming you're in\n"
+"  command line mode)."
+msgstr ""
+
+#. §0: `add_zero c`
+#. §1: `c + 0 = c`
+#. §2: `b + 0`
+#. §3: `b`
+#. §4: `rw [add_zero]`
+#. §5: `rw [add_zero b]`
+#. §6: `rw [add_zero]`
+#: Game.Levels.Tutorial.L06add_zero2
+msgid "§0 is a proof of §1 so that was what got rewritten.\n"
+"You can now change §2 to §3 with §4 or §5. You\n"
+"can usually stick to §6 unless you need real precision."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L01add_right_cancel
+msgid "add_right_cancel"
+msgstr ""
+
+#. §0: `succ_eq_add_one`
+#. §1: `h`
+#: Game.Levels.Implication.L04succ_inj
+msgid "Now rewrite §0 backwards at §1\n"
+"to get the right hand side."
+msgstr ""
+
+#. §0: `decide`
+#: Game.Levels.Algorithm.L08decide
+msgid "You can read more about the §0 tactic by clicking\n"
+"on it in the top right."
+msgstr ""
+
+#. §0: `a ≠ b`
+#. §1: `(a = b) → False`
+#. §2: `P`
+#. §3: `P → False`
+#. §4: `P`
+#. §5: `True → False`
+#. §6: `False → False`
+#. §7: `a ≠ b`
+#. §8: `P → Q`
+#. §9: `a ≠ b`
+#. §10: `intro h`
+#. §11: `h`
+#. §12: `a ≠ b`
+#. §13: `apply h at h1`
+#. §14: `h1`
+#. §15: `a = b`
+#: Game.Levels.Implication.L08ne
+msgid "§0 is *notation* for §1.\n"
+"\n"
+"The reason this is mathematically\n"
+"valid is that if §2 is a true-false statement then §3\n"
+"is the logical opposite of §4. Indeed §5 is false,\n"
+"and §6 is true!\n"
+"\n"
+"The upshot of this is that you can treat §7 in exactly\n"
+"the same way as you treat any implication §8. For example,\n"
+"if your *goal* is of the form §9 then you can make progress\n"
+"with §10, and if you have a hypothesis §11 of the\n"
+"form §12 then you can §13 if §14 is a proof\n"
+"of §15."
+msgstr ""
+
+#. §0: `mul_assoc a b c`
+#. §1: `(a * b) * c = a * (b * c)`
+#. §2: `a * b * c`
+#. §3: `(a * b) * c`
+#. §4: `(a * b) * c = a * (b * c)`
+#. §5: `(6 - 2) - 1`
+#. §6: `6 - (2 - 1)`
+#: Game.Levels.Multiplication.L09mul_assoc
+msgid "§0 is a proof that §1.\n"
+"\n"
+"Note that when Lean says §2 it means §3.\n"
+"\n"
+"Note that §4 cannot be proved by \\\\\"pure thought\\\\\":\n"
+"for example subtraction is not associative, as §5 is not\n"
+"equal to §6."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L03add_left_eq_self
+msgid "add_left_eq_self"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#. §0: `h2`
+#. §1: `x = y → False`
+#. §2: `apply`
+#. §3: `h2`
+#. §4: `at h1`
+#: Game.Levels.Implication.L08ne
+msgid "Remember that §0 is a proof of §1. Try\n"
+"§2ing §3 either §4 or directly to the goal."
+msgstr ""
+
+#. §0: `apply mul_left_cancel at h`
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "You can now §0"
+msgstr ""
+
+#. §0: `x * y = 1 → x = 1`
+#. §1: `x + y = 0 → x = 0`
+#. §2: `x ≤ 1`
+#. §3: `le_one`
+#. §4: `≤`
+#. §5: `have`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "This level proves §0, the multiplicative analogue of Advanced Addition\n"
+"World's §1. The strategy is to prove that §2 and then use the\n"
+"lemma §3 from §4 world.\n"
+"\n"
+"We'll prove it using a new and very useful tactic called §5."
+msgstr ""
+
+#: Game.Levels.Power.L06pow_add
+msgid "pow_add"
+msgstr ""
+
+#. §0: `rw [add_zero c]`
+#: Game.Levels.Tutorial.L06add_zero2
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "Try §0."
+msgstr ""
+
+#. §0: `{0,1,2,3,4,...}`
+#. §1: `2 + 2 = 4`
+#. §2: `x + y = y + x`
+#: Game
+msgid "# Welcome to the Natural Number Game\n"
+"#### An introduction to mathematical proof.\n"
+"\n"
+"In this game, we will build the basic theory of the natural\n"
+"numbers §0 from scratch. Our first goal is to prove\n"
+"that §1. Next we'll prove that §2.\n"
+"And at the end we'll see if we can prove Fermat's Last Theorem.\n"
+"We'll do this by solving levels of a computer puzzle game called Lean.\n"
+"\n"
+"# Read this.\n"
+"\n"
+"Learning how to use an interactive theorem prover takes time.\n"
+"Tests show that the people who get the most out of this game are\n"
+"those who read the help texts like this one.\n"
+"\n"
+"To start, click on \"Tutorial World\".\n"
+"\n"
+"Note: this is a new Lean 4 version of the game containing several\n"
+"worlds which were not present in the old Lean 3 version. More new worlds\n"
+"such as Strong Induction World, Even/Odd World and Prime Number World\n"
+"are in development; if you want to see their state or even help out, checkout\n"
+"out the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).\n"
+"\n"
+"## More\n"
+"\n"
+"Click on the three lines in the top right and select \"Game Info\" for resources,\n"
+"links, and ways to interact with the Lean community."
+msgstr ""
+
+#. §0: $a$
+#. §1: $a ^ 1 = a$
+#: Game.Levels.Power.L03pow_one
+#: Game.Levels.Power.L04one_pow
+#: Game.Levels.Power.L05pow_two
+msgid "For all naturals §0, §1."
+msgstr ""
+
+#. §0: `decide`
+#. §1: `DecidableEq ℕ`
+#. §2: `instance`
+#. §3: `decide`
+#. §4: `a = b`
+#. §5: `a ≠ b`
+#: Game.Levels.Algorithm.L08decide
+msgid "# Summary\n"
+"\n"
+"§0 will attempt to solve a goal if it can find an algorithm which it\n"
+"can run to solve it.\n"
+"\n"
+"## Example\n"
+"\n"
+"A term of type §1 is an algorithm to decide whether two naturals\n"
+"are equal or different. Hence, once this term is made and made into an §2,\n"
+"the §3 tactic can use it to solve goals of the form §4 or §5."
+msgstr ""
+
+#. §0: `apply`
+#. §1: `apply succ_inj at h`
+#. §2: `h`
+#. §3: `x = 3`
+#: Game.Levels.Implication.L04succ_inj
+msgid "Now let's §0 our new theorem. Execute §1\n"
+"to change §2 to a proof of §3."
+msgstr ""
+
+#. §0: `repeat t`
+#. §1: `t`
+#. §2: `repeat rw [add_zero]`
+#. §3: `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
+#. §4: `a = b`
+#. §5: `h : X = Y`
+#. §6: `X`
+#. §7: `nth_rewrite 3 [h]`
+#. §8: `X`
+#. §9: `Y`
+#. §10: `2 + 2 = 4`
+#. §11: `nth_rewrite 2 [two_eq_succ_one]`
+#. §12: `2 + succ 1 = 4`
+#. §13: `rw [two_eq_succ_one]`
+#. §14: `succ 1 + succ 1 = 4`
+#: Game.Levels.Tutorial.L02rw
+msgid "## Summary\n"
+"\n"
+"§0 repeatedly applies the tactic §1\n"
+"to the goal. You don't need to use this\n"
+"tactic, it just speeds things up sometimes.\n"
+"\n"
+"## Example\n"
+"\n"
+"§2 will turn the goal\n"
+"§3\n"
+"into the goal\n"
+"§4.\n"
+"\"\n"
+"\n"
+"TacticDoc nth_rewrite \"\n"
+"## Summary\n"
+"\n"
+"If §5 and there are several §6s in the goal, then\n"
+"§7 will just change the third §8 to a §9.\n"
+"\n"
+"## Example\n"
+"\n"
+"If the goal is §10 then §11\n"
+"will change the goal to §12. In contrast, §13\n"
+"will change the goal to §14."
+msgstr ""
+
+#: Game.Levels.Tutorial.L01rfl
+msgid "The rfl tactic"
+msgstr ""
+
+#. §0: ```
+#. macro \"simp_add\" : tactic => `(tactic|(
+#.   simp only [add_assoc, add_left_comm, add_comm]))
+#. ```
+#. §1: `simp_add`
+#. §2: `simp only [add_assoc, add_left_comm, add_comm]`
+#. §3: `simp_add`
+#: Game.Levels.Algorithm.L04add_algo3
+msgid "You can make your own tactics in Lean.\n"
+"This code here\n"
+"§0\n"
+"was used to create a new tactic §1, which runs\n"
+"§2.\n"
+"Try running §3 to solve this level!"
+msgstr ""
+
+#. §0: $x \\leq 1$
+#. §1: $x = 0$
+#. §2: $x = 1$
+#: Game.Levels.LessOrEqual.L10le_one
+msgid "If §0 then either §1 or §2."
+msgstr ""
+
+#: Game.Levels.Addition.L02succ_add
+msgid "succ_add"
+msgstr ""
+
+#. §0: `add_comm`
+#. §1: `b`
+#. §2: `d`
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "Finally use a targeted §0 to switch §1 and §2."
+msgstr ""
+
+#. §0: `≤`
+#: Game.Levels.LessOrEqual.L11le_two
+msgid "Nice!\n"
+"\n"
+"The next step in the development of order theory is to develop\n"
+"the theory of the interplay between §0 and multiplication.\n"
+"If you've already done Multiplication World, you're now ready for\n"
+"Advanced Multiplication World. Click on \"Home\" to access it."
+msgstr ""
+
+#. §0: `rw [zero_add] at «{h}»`
+#. §1: `zero_add`
+#. §2: `«{x}»`
+#. §3: `0 + «{x}»`
+#. §4: `0 + «{y}»`
+#: Game.Levels.Implication.L02exact2
+msgid "Do that again!\n"
+"\n"
+"§0 tries to fill in\n"
+"the arguments to §1 (finding §2) then it replaces all occurrences of\n"
+"§3 it finds. Therefor, it did not rewrite §4, yet."
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#. §2: `c`
+#: Game.Levels.Multiplication.L07mul_add
+msgid "Induction on §0 is the most troublesome, then §1,\n"
+"and §2 is the easiest."
+msgstr ""
+
+#. §0: $a+(b+0)+(c+0)=a+b+c.$
+#: Game.Levels.Tutorial.L05add_zero
+#: Game.Levels.Tutorial.L06add_zero2
+#: Game.Levels.Power.L01zero_pow_zero
+#: Game.Levels.Algorithm.L09decide2
+#: Game.Levels.AdvAddition.L03add_left_eq_self
+msgid "§0"
+msgstr ""
+
+#. §0: `zero_ne_succ`
+#. §1: `succ_inj`
+#: Game.Levels.Implication.L11two_add_two_ne_five
+msgid "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.\n"
+"To make it a bit less painful, I have unfolded all of the numerals for you.\n"
+"See if you can use §0 and §1 to prove this."
+msgstr ""
+
+#. §0: $x$
+#. §1: $y$
+#. §2: $x \\leq y$
+#. §3: $y \\leq x$
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "If §0 and §1 are numbers, then either §2 or §3."
+msgstr ""
+
+#. §0: `a ≤ b`
+#. §1: `a ≤ b`
+#. §2: `b ≤ c`
+#. §3: `a ≤ c`
+#. §4: `a ≤ b`
+#. §5: `c`
+#. §6: `b = a + c`
+#: Game.Levels.LessOrEqual
+msgid "In this world we define §0 and prove standard facts\n"
+"about it, such as \"if §1 and §2 then §3.\"\n"
+"\n"
+"The definition of §4 is \"there exists a number §5\n"
+"such that §6. \" So we're going to have to learn\n"
+"a tactic to prove \"exists\" theorems, and another one\n"
+"to use \"exists\" hypotheses.\n"
+"\n"
+"Click on \"Start\" to proceed."
+msgstr ""
+
+#. §0: $a$
+#. §1: $m$
+#. §2: $n$
+#. §3: $a^{m + n} = a ^ m  a ^ n$
+#: Game.Levels.Power.L06pow_add
+#: Game.Levels.Power.L07mul_pow
+#: Game.Levels.Power.L08pow_pow
+msgid "For all naturals §0, §1, §2, we have §3."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "mul_left_cancel"
+msgstr ""
+
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
+msgid "You can just mimic the previous proof to do this one -- or you can figure out a way\n"
+"of using it."
+msgstr ""
+
+#. §0: `0`
+#. §1: `n`
+#. §2: `succ n`
+#. §3: `n`
+#. §4: `n`
+#. §5: `n`
+#. §6: `0`
+#. §7: `succ 0`
+#. §8: `1`
+#. §9: `2 = succ 1`
+#. §10: `3 = succ 2`
+#. §11: `4 = succ 3`
+#. §12: `2 = succ 1`
+#. §13: `two_eq_succ_one`
+#. §14: $2$
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "## The birth of number.\n"
+"\n"
+"Numbers in Lean are defined by two rules.\n"
+"\n"
+"* §0 is a number.\n"
+"* If §1 is a number, then the *successor* §2 of §3 is a number.\n"
+"\n"
+"The successor of §4 means the number after §5. Let's learn to\n"
+"count, and name a few small numbers.\n"
+"\n"
+"## Counting to four.\n"
+"\n"
+"§6 is a number, so §7 is a number. Let's call this new number §8.\n"
+"Similarly let's define §9, §10 and §11.\n"
+"This gives us plenty of numbers to be getting along with.\n"
+"\n"
+"The *proof* that §12 is called §13.\n"
+"Check out the \"012\" tab in the list of lemmas on the right\n"
+"for this and other proofs.\n"
+"\n"
+"Let's prove that §14 is the number after the number after zero."
+msgstr ""
+
+#. §0: `rw [← succ_eq_add_one] at h`
+#: Game.Levels.Implication.L04succ_inj
+msgid "Concretely: §0."
+msgstr ""
+
+#. §0: `pow_zero a : a ^ 0 = 1`
+#: Game.Levels.Power.L01zero_pow_zero
+msgid "§0 is one of the two axioms\n"
+"defining exponentiation in this game."
+msgstr ""
+
+#. §0: $a, b$
+#. §1: $c$
+#. §2: $(a + b) + c = (a + c) + b$
+#: Game.Levels.Addition.L05add_right_comm
+msgid "If §0 and §1 are arbitrary natural numbers, we have\n"
+"§2."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "The lemma proved in the final level of this world will be helpful\n"
+"in Divisibility World."
+msgstr ""
+
+#. §0: `pow_one a`
+#. §1: `a ^ 1 = a`
+#. §2: `a ^ 1`
+#. §3: `a ^ 0 * a`
+#. §4: `1 * a`
+#. §5: `a`
+#: Game.Levels.Power.L03pow_one
+msgid "§0 says that §1.\n"
+"\n"
+"Note that this is not quite true by definition: §2 is\n"
+"defined to be §3 so it's §4, and to prove\n"
+"that this is equal to §5 you need to use induction somewhere."
+msgstr ""
+
+#. §0: `add_right_eq_self x y`
+#. §1: $x + y = x\\implies y=0.$
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "§0 is the theorem that §1\n"
+"Two ways to do it spring to mind; I'll mention them when you've solved it."
+msgstr ""
+
+#. §0: $2+2=4$
+#. §1: $a+b+c+d+e=e+d+c+b+a$
+#: Game.Levels.Algorithm
+msgid "Proofs like §0 and §1 are very tedious to do by hand.\n"
+"In Algorithm World we learn how to get the computer to do them for us.\n"
+"\n"
+"Click on \"Start\" to proceed."
+msgstr ""
+
+#: Game.Levels.Implication.L02exact2
+msgid "If the goal is not *exactly* a hypothesis, we can sometimes\n"
+"use rewrites to fix things up."
+msgstr ""
+
+#: Game.Levels.Algorithm.L06is_zero
+msgid "See if you can take it from here. Look at the new lemmas and tactic\n"
+"available on the right."
+msgstr ""
+
+#. §0: `rw [add_left_comm b c]`
+#. §1: `b`
+#. §2: `c`
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "Now use §0 to switch §1 and §2 on the left\n"
+"hand side."
+msgstr ""
+
+#: Game.Levels.Implication
+msgid "Implication World"
+msgstr ""
+
+#. §0: `add_succ`
+#: Game.Levels.Tutorial.L06add_zero2
+msgid "Let's now learn about Peano's second axiom for addition, §0."
+msgstr ""
+
+#. §0: $a, b,\\ldots h$
+#. §1: $(d + f) + (h + (a + c)) + (g + e + b) = a + b + c + d + e + f + g + h$
+#: Game.Levels.Algorithm.L03add_algo2
+#: Game.Levels.Algorithm.L04add_algo3
+msgid "If §0 are arbitrary natural numbers, we have\n"
+"§1."
+msgstr ""
+
+#. §0: ```
+#. instance instDecidableEq : DecidableEq ℕ
+#. | 0, 0 => isTrue <| by
+#.   show 0 = 0
+#.   rfl
+#. | succ m, 0 => isFalse <| by
+#.   show succ m ≠ 0
+#.   exact succ_ne_zero m
+#. | 0, succ n => isFalse <| by
+#.   show 0 ≠ succ n
+#.   exact zero_ne_succ n
+#. | succ m, succ n =>
+#.   match instDecidableEq m n with
+#.   | isTrue (h : m = n) => isTrue <| by
+#.     show succ m = succ n
+#.     rw [h]
+#.     rfl
+#.   | isFalse (h : m ≠ n) => isFalse <| by
+#.     show succ m ≠ succ n
+#.     exact succ_ne_succ m n h
+#. ```
+#. §1: `decide`
+#: Game.Levels.Algorithm.L08decide
+msgid "Implementing the algorithm for equality of naturals, and the proof that it is correct,\n"
+"looks like this:\n"
+"\n"
+"§0\n"
+"\n"
+"This Lean code is a formally verified algorithm for deciding equality\n"
+"between two naturals. I've typed it in already, behind the scenes.\n"
+"Because the algorithm is formally verified to be correct, we can\n"
+"use it in Lean proofs. You can run the algorithm with the §1 tactic."
+msgstr ""
+
+#. §0: `P → Q`
+#. §1: `intro h`
+#. §2: `h : P`
+#. §3: `Q`
+#. §4: $P \\implies Q$
+#. §5: $P$
+#. §6: $Q$
+#. §7: `x + 1 = y + 1 → x = y`
+#. §8: $x+1=y+1 \\implies x=y$
+#. §9: `intro h`
+#. §10: $x+1=y+1$
+#. §11: `h`
+#. §12: $x=y$
+#: Game.Levels.Implication.L06intro
+msgid "## Summary\n"
+"\n"
+"If the goal is §0, then §1 will introduce §2 as a hypothesis,\n"
+"and change the goal to §3. Mathematically, it says that to prove §4,\n"
+"we can assume §5 and then prove §6.\n"
+"\n"
+"### Example:\n"
+"\n"
+"If your goal is §7 (the way Lean writes §8)\n"
+"then §9 will give you a hypothesis §10 named §11, and the goal\n"
+"will change to §12."
+msgstr ""
+
+#. §0: `rw [add_zero]`
+#. §1: `b + 0`
+#. §2: `b`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "§0 will change §1 into §2."
+msgstr ""
+
+#. §0: `apply h2 at h1`
+#. §1: `h1`
+#. §2: `y = 42`
+#: Game.Levels.Implication.L03apply
+msgid "Start with §0. This will change §1 to §2."
+msgstr ""
+
+#: Game.Levels.Tutorial.L07add_succ
+msgid "[dramatic music]. Now are you ready to face the first boss of the game?"
+msgstr ""
+
+#. §0: $x+y=x\\implies y=0$
+#. §1: `≤`
+#: Game.Levels.AdvAddition
+msgid "In Advanced Addition World we will prove some basic\n"
+"addition facts such as §0. The theorems\n"
+"proved in this world will be used to build\n"
+"a theory of inequalities in §1 World.\n"
+"\n"
+"Click on \"Start\" to proceed."
+msgstr ""
+
+#. §0: `tauto`
+#. §1: `tauto`
+#. §2: `add_zero`
+#. §3: `tauto`
+#. §4: `a = a`
+#. §5: `0 ≠ 1`
+#. §6: `0 ≠ 2`
+#. §7: `1 ≠ 2`
+#. §8: `tauto`
+#. §9: `x < 37`
+#. §10: `x < 37 → y + z = 42`
+#. §11: `y + z = 42`
+#. §12: `tauto`
+#. §13: `False`
+#. §14: `tauto`
+#. §15: `True`
+#. §16: `tauto`
+#. §17: `h1 : a = 37`
+#. §18: `h2 : a ≠ 37`
+#. §19: `tauto`
+#. §20: `False`
+#. §21: `False`
+#. §22: `h : a ≠ a`
+#. §23: `tauto`
+#. §24: `tauto`
+#. §25: `a = a`
+#. §26: `h : 0 = 1`
+#. §27: `tauto`
+#. §28: `tauto`
+#. §29: `0 ≠ 1`
+#. §30: `False`
+#. §31: `a = 0 → a * b = 0`
+#. §32: `a * b ≠ 0 → a ≠ 0`
+#. §33: `tauto`
+#. §34: `tauto`
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+msgid "# Summary\n"
+"\n"
+"The §0 tactic will solve any goal which can be solved purely by logic (that is, by\n"
+"truth tables).\n"
+"\n"
+"## Details\n"
+"\n"
+"§1 *does not do magic*! It doesn't know *anything* about addition or multiplication,\n"
+"it doesn't even know §2. The only things that §3 knows about numbers\n"
+"are firstly that §4 and secondly that §5, §6, §7 and so on.\n"
+"What §8's strength is, is *logic*. If you have a hypothesis §9\n"
+"and another hypothesis §10 and your goal is §11 then §12 will\n"
+"solve this goal, because to solve that goal you don't need to know any facts\n"
+"about inequalities or addition, all you need to know is the rules of logic.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have §13 as a hypothesis, then §14 will solve\n"
+"the goal. This is because a false hypothesis implies any hypothesis.\n"
+"\n"
+"## Example\n"
+"\n"
+"If your goal is §15, then §16 will solve the goal.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have two hypotheses §17 and §18 then §19 will\n"
+"solve the goal because it can prove §20 from your hypotheses, and thus\n"
+"prove the goal (as §21 implies anything).\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have one hypothesis §22 then §23 will solve the goal because\n"
+"§24 is smart enough to know that §25 is true, which gives the contradiction we seek.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have a hypothesis §26 then §27 will solve the goal, because\n"
+"§28 knows §29 and this is enough to prove §30, which implies any goal.\n"
+"\n"
+"## Example\n"
+"\n"
+"If you have a hypothesis of the form §31 and your goal is §32, then\n"
+"§33 will solve the goal, because the goal is logically equivalent to the hypothesis.\n"
+"If you switch the goal and hypothesis in this example, §34 would solve it too."
+msgstr ""
+
+#. §0: `rfl`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Now finish the job with §0."
+msgstr ""
+
+#. §0: `nth_rewrite 2 [← mul_one a] at h`
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "Reduce to the previous lemma with §0"
+msgstr ""
+
+#. §0: `le_mul_right a b`
+#. §1: `a * b ≠ 0 → a ≤ a * b`
+#: Game.Levels.AdvMultiplication.L05le_mul_right
+msgid "§0 is a proof that §1.\n"
+"\n"
+"It's one way of saying that a divisor of a positive number\n"
+"has to be at most that number."
+msgstr ""
+
+#. §0: $m$
+#. §1: $0 ^{\\operatorname{succ} (m)} = 0$
+#: Game.Levels.Power.L02zero_pow_succ
+msgid "For all numbers §0, §1."
+msgstr ""
+
+#. §0: `n`
+#: Game.Levels.AdvAddition.L01add_right_cancel
+msgid "Start with induction on §0."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "x ≤ y or y ≤ x"
+msgstr ""
+
+#. §0: `use`
+#. §1: `c`
+#. §2: `x = 0 + c`
+#: Game.Levels.LessOrEqual.L02zero_le
+msgid "To solve this level, you need to §0 a number §1 such that §2."
+msgstr ""
+
+#. §0: `le_mul_right`
+#. §1: `x * y ≠ 0`
+#. §2: `have h2 : x * y ≠ 0`
+#. §3: `≠`
+#. §4: `\\ne`
+#. §5: `le_mul_right`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "We want to use §0, but we need a hypothesis §1\n"
+"which we don't have. Yet. Execute §2 (you can type §3 with §4).\n"
+"You'll be asked to\n"
+"prove it, and then you'll have a new hypothesis which you can apply\n"
+"§5 to."
+msgstr ""
+
+#. §0: $x=37$
+#. §1: $x=37\\implies y=42$
+#. §2: $y=42$
+#: Game.Levels.Implication.L03apply
+msgid "If §0 and we know that §1 then we can deduce §2."
+msgstr ""
+
+#. §0: `rfl`
+#. §1: `X = X`
+#. §2: `rfl`
+#. §3: `A = B`
+#. §4: `A`
+#. §5: `B`
+#. §6: `rfl`
+#. §7: ```
+#. x + 37 = x + 37
+#. ```
+#. §8: `rfl`
+#. §9: `0 + x = x`
+#. §10: `rfl`
+#. §11: $0+x$
+#. §12: $x$
+#. §13: `0 + x`
+#. §14: `0 + x`
+#. §15: `rfl`
+#. §16: `rfl`
+#. §17: `mathlib`
+#. §18: `zero_add`
+#. §19: `add_zero`
+#: Game.Levels.Tutorial.L01rfl
+msgid "## Summary\n"
+"\n"
+"§0 proves goals of the form §1.\n"
+"\n"
+"In other words, the §2 tactic will close any goal of the\n"
+"form §3 if §4 and §5 are *identical*.\n"
+"\n"
+"§6 is short for \\\\\"reflexivity (of equality)\\\\\".\n"
+"\n"
+"## Example:\n"
+"\n"
+"If the goal looks like this:\n"
+"\n"
+"§7\n"
+"\n"
+"then §8 will close it. But if it looks like §9 then §10 won't work, because even\n"
+"though §11 and §12 are always equal as *numbers*, they are not equal as *terms*.\n"
+"The only term which is identical to §13 is §14.\n"
+"\n"
+"## Details\n"
+"\n"
+"§15 is short for \\\\\"reflexivity of equality\\\\\".\n"
+"\n"
+"## Game Implementation\n"
+"\n"
+"*Note that our §16 is weaker than the version used in core Lean and §17,\n"
+"for pedagogical purposes; mathematicians do not distinguish between propositional\n"
+"and definitional equality because they think about definitions in a different way\n"
+"to type theorists (§18 and §19 are both \\\\\"facts\\\\\" as far\n"
+"as mathematicians are concerned, and who cares what the definition of addition is).*"
+msgstr ""
+
+#: Game
+msgid "*Game version: 4.3*\n"
+"\n"
+"*Recent additions: bug fixes*\n"
+"\n"
+"## Progress saving\n"
+"\n"
+"The game stores your progress in your local browser storage.\n"
+"If you delete it, your progress will be lost!\n"
+"\n"
+"Warning: In most browsers, deleting cookies will also clear the local storage\n"
+"(or \"local site data\"). Make sure to download your game progress first!\n"
+"\n"
+"## Credits\n"
+"\n"
+"* **Creators:** Kevin Buzzard, Jon Eugster\n"
+"* **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar\n"
+"* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n"
+"* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.\n"
+"* **Additional thanks:** All the student beta testers, all the schools\n"
+"who invited Kevin to speak, and all the schoolkids who asked him questions\n"
+"about the material.\n"
+"\n"
+"## Resources\n"
+"\n"
+"* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n"
+"* [Original Lean3 version](https://github.com/ImperialCollegeLondon/natural_number_game/) (no longer maintained)\n"
+"\n"
+"## Problems?\n"
+"\n"
+"Please ask any questions about this game in the\n"
+"[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in\n"
+"the stream \"New Members\". The community will happily help. Note that\n"
+"the Lean Zulip chat is a professional research forum.\n"
+"Please use your full real name there, stay on topic, and be nice. If you're\n"
+"looking for somewhere less formal (e.g. you want to post natural number\n"
+"game memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).\n"
+"\n"
+"Alternatively, if you experience issues / bugs you can also open github issues:\n"
+"\n"
+"* For issues with the game engine, please open an\n"
+"[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n"
+"* For issues about the game's content, please open an\n"
+"[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo."
+msgstr ""
+
+#. §0: `b = 0`
+#. §1: `a * b = 0`
+#. §2: `X ≠ 0`
+#. §3: `X = 0 → False`
+#. §4: `Show more help!`
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+msgid "We want to reduce this to a hypothesis §0 and a goal §1,\n"
+"which is logically equivalent but much easier to prove. Remember that §2\n"
+"is notation for §3. Click on §4 if you need hints."
+msgstr ""
+
+#. §0: `repeat rw [add_zero]`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "Those of you interested in speedrunning the game may want to know\n"
+"that §0 will do both rewrites at once."
+msgstr ""
+
+#. §0: $0$
+#. §1: $0$
+#. §2: `37 + d = q`
+#. §3: `37 + succ d`
+#. §4: `succ d`
+#. §5: `d`
+#. §6: `37 + succ d`
+#. §7: `succ q`
+#. §8: `q`
+#. §9: `x + succ d`
+#. §10: `succ (x + d)`
+#. §11: `add_succ x d : x + succ d = succ (x + d)`
+#. §12: `... + succ ...`
+#. §13: `rw [add_succ]`
+#. §14: `succ n = n + 1`
+#. §15: `+ succ`
+#. §16: `rw [add_succ]`
+#. §17: `+`
+#. §18: `012`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "Every number in Lean is either §0 or a successor. We know how to add §1,\n"
+"but we need to figure out how to add successors. Let's say we already know\n"
+"that §2. What should the answer to §3 be? Well,\n"
+"§4 is one bigger than §5, so §6 should be §7,\n"
+"the number one bigger than §8. More generally §9 should\n"
+"be §10. Let's add this as a lemma.\n"
+"\n"
+"* §11\n"
+"\n"
+"If you ever see §12 in your goal, §13 is\n"
+"normally a good idea.\n"
+"\n"
+"Let's now prove that §14. Figure out how to get §15 into\n"
+"the picture, and then §16. Switch between the §17 (addition) and\n"
+"§18 (numerals) tabs under \"Theorems\" on the right to\n"
+"see which proofs you can rewrite."
+msgstr ""
+
+#. §0: `trivial`
+#. §1: `True`
+#: Game.Levels.Algorithm.L06is_zero
+msgid "# Summary\n"
+"\n"
+"§0 will solve the goal §1."
+msgstr ""
+
+#. §0: $0^0=1$
+#. §1: $0^n=0$
+#. §2: $n>0$
+#. §3: $n$
+#: Game.Levels.Power.L02zero_pow_succ
+msgid "Although §0 in this game, §1 if §2, i.e., if\n"
+"§3 is a successor."
+msgstr ""
+
+#. §0: `b = 0`
+#. §1: `b ≠ 0`
+#. §2: `cases b with d`
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+msgid "Here we want to deal with the cases §0 and §1 separately,\n"
+"so start with §2."
+msgstr ""
+
+#. §0: `hd`
+#. §1: `c`
+#. §2: `a * d = a * c → d = c`
+#. §3: `apply`
+#. §4: `at`
+#. §5: `a * d = a * ?`
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\n"
+"You can §3 it §4 any hypothesis of the form §5."
+msgstr ""
+
+#: Game.Levels.Multiplication.L07mul_add
+msgid "You can do induction on any of the three variables. Some choices\n"
+"are harder to push through than others. Can you do the inductive step in\n"
+"5 rewrites only?"
+msgstr ""
+
+#. §0: `0 + «{d}»`
+#. §1: `rw [«{hd}»]`
+#: Game.Levels.Addition.L01zero_add
+msgid "At this point you see the term §0, so you can use the\n"
+"induction hypothesis with §1."
+msgstr ""
+
+#. §0: `0 ^ 0`
+#. §1: `0 ^ 0 = 1`
+#: Game.Levels.Power.L01zero_pow_zero
+msgid "Mathematicians sometimes debate what §0 is;\n"
+"the answer depends, of course, on your definitions. In this\n"
+"game, §1. See if you can prove it.\n"
+"\n"
+"Check out the *Pow* tab in your list of theorems\n"
+"to see the new proofs which are available."
+msgstr ""
+
+#. §0: `1`
+#. §1: `succ 0`
+#. §2: `h`
+#: Game.Levels.Implication.L09zero_ne_succ
+msgid "Now change §0 to §1 in §2."
+msgstr ""
+
+#. §0: `apply t at h`
+#. §1: `apply t`
+#. §2: `apply`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "Many people find §0 easy, but some find §1 confusing.\n"
+"If you find it confusing, then just argue forwards.\n"
+"\n"
+"You can read more about the §2 tactic in its documentation, which you can view by\n"
+"clicking on the tactic in the list on the right."
+msgstr ""
+
+#: Game.Levels.Algorithm.L03add_algo2
+msgid "Let's now make our own tactic to do this."
+msgstr ""
+
+#. §0: `h`
+#. §1: `X = Y`
+#. §2: `rw [h]`
+#. §3: `X`
+#. §4: `Y`
+#. §5: `rw [← h]`
+#. §6: `Y`
+#. §7: `X`
+#. §8: `\\left `
+#. §9: `\\l`
+#. §10: `rw [h1, h2]`
+#. §11: `rw [h] at h2`
+#. §12: `X`
+#. §13: `Y`
+#. §14: `h2`
+#. §15: `rw [h] at h1 h2 ⊢`
+#. §16: `X`
+#. §17: `Y`
+#. §18: `⊢`
+#. §19: `\\|-`
+#. §20: `repeat rw [add_zero]`
+#. §21: `? + 0`
+#. §22: `?`
+#. §23: `? + 0`
+#. §24: `nth_rewrite 2 [h]`
+#. §25: `X`
+#. §26: `Y`
+#. §27: `h : x = y + y`
+#. §28: ```
+#. succ (x + 0) = succ (y + y)
+#. ```
+#. §29: `rw [add_zero]`
+#. §30: `succ x = succ (y + y)`
+#. §31: `rw [h]`
+#. §32: `succ (y + y) = succ (y + y)`
+#. §33: `rfl`
+#. §34: `rw`
+#. §35: ```
+#. h1 : x = y + 3
+#. h2 : 2 * y = x
+#. ```
+#. §36: `rw [h1] at h2`
+#. §37: `h2`
+#. §38: `h2 : 2 * y = y + 3`
+#. §39: `rw h`
+#. §40: `h`
+#. §41: `A = B`
+#. §42: `h`
+#. §43: `rw`
+#. §44: `rw [P = Q]`
+#. §45: `P = Q`
+#. §46: `h : P = Q`
+#. §47: `rw [h]`
+#. §48: `rw`
+#. §49: `h : A = B`
+#. §50: `A`
+#. §51: `rw [h]`
+#. §52: `B`
+#. §53: `A`
+#. §54: `add_zero`
+#. §55: `? + 0 = ?`
+#. §56: `add_zero`
+#. §57: `?`
+#. §58: `rw`
+#. §59: `x + 0`
+#. §60: `?`
+#. §61: `x`
+#. §62: `x + 0`
+#. §63: `x`
+#. §64: `rw [add_zero]`
+#. §65: `(0 + 0) + (x + 0) + (0 + 0) + (x + 0)`
+#. §66: `0 + (x + 0) + 0 + (x + 0)`
+#. §67: `b + c + a = b + (a + c)`
+#. §68: `a + c`
+#. §69: `c + a`
+#. §70: `rw [add_comm]`
+#. §71: `rw [add_comm a c]`
+#. §72: `a + c`
+#. §73: `c + a`
+#. §74: `add_comm`
+#. §75: `?1 + ?2 = ?2 + ?1`
+#. §76: `add_comm a`
+#. §77: `a + ? = ? + a`
+#. §78: `add_comm a c`
+#. §79: `a + c = c + a`
+#. §80: `h : X = Y`
+#. §81: `rw [h]`
+#. §82: `X`
+#. §83: `Y`
+#. §84: `X`
+#. §85: `Y`
+#. §86: `nth_rewrite 37 [h]`
+#: Game.Levels.Tutorial.L02rw
+msgid "## Summary\n"
+"\n"
+"If §0 is a proof of an equality §1, then §2 will change\n"
+"all §3s in the goal to §4s. It's the way to \\\\\"substitute in\\\\\".\n"
+"\n"
+"## Variants\n"
+"\n"
+"* §5 (changes §6s to §7s; get the back arrow by typing §8 or §9.)\n"
+"\n"
+"* §10 (a sequence of rewrites)\n"
+"\n"
+"* §11 (changes §12s to §13s in hypothesis §14)\n"
+"\n"
+"* §15 (changes §16s to §17s in two hypotheses and the goal;\n"
+"get the §18 symbol with §19.)\n"
+"\n"
+"* §20 will keep changing §21 to §22\n"
+"until there are no more matches for §23.\n"
+"\n"
+"* §24 will change only the second §25 in the goal to §26.\n"
+"\n"
+"### Example:\n"
+"\n"
+"If you have the assumption §27 and your goal is\n"
+"§28\n"
+"\n"
+"then\n"
+"\n"
+"§29\n"
+"\n"
+"will change the goal into §30, and then\n"
+"\n"
+"§31\n"
+"\n"
+"will change the goal into §32, which\n"
+"can be solved with §33.\n"
+"\n"
+"### Example:\n"
+"\n"
+"You can use §34 to change a hypothesis as well.\n"
+"For example, if you have two hypotheses\n"
+"§35\n"
+"then §36 will turn §37 into §38.\n"
+"\n"
+"## Common errors\n"
+"\n"
+"* You need the square brackets. §39 is never correct.\n"
+"\n"
+"* If §40 is not a *proof* of an *equality* (a statement of the form §41),\n"
+"for example if §42 is a function or an implication,\n"
+"then §43 is not the tactic you want to use. For example,\n"
+"§44 is never correct: §45 is the theorem *statement*,\n"
+"not the proof. If §46 is the proof, then §47 will work.\n"
+"\n"
+"## Details\n"
+"\n"
+"The §48 tactic is a way to do \\\\\"substituting in\\\\\". There\n"
+"are two distinct situations where you can use this tactic.\n"
+"\n"
+"1) Basic usage: if §49 is an assumption or\n"
+"the proof of a theorem, and if the goal contains one or more §50s, then §51\n"
+"will change them all to §52s. The tactic will error\n"
+"if there are no §53s in the goal.\n"
+"\n"
+"2) Advanced usage: Assumptions coming from theorem proofs\n"
+"often have missing pieces. For example §54\n"
+"is a proof that §55 because §56 really is a function,\n"
+"and §57 is the input. In this situation §58 will look through the goal\n"
+"for any subterm of the form §59, and the moment it\n"
+"finds one it fixes §60 to be §61 then changes all §62s to §63s.\n"
+"\n"
+"Exercise: think about why §64 changes the term\n"
+"§65 to\n"
+"§66\n"
+"\n"
+"If you can't remember the name of the proof of an equality, look it up in\n"
+"the list of lemmas on the right.\n"
+"\n"
+"## Targeted usage\n"
+"\n"
+"If your goal is §67 and you want to rewrite §68\n"
+"to §69, then §70 will not work because Lean finds another\n"
+"addition first and swaps those inputs instead. Use §71 to\n"
+"guarantee that Lean rewrites §72 to §73. This works because\n"
+"§74 is a proof that §75, §76 is a proof\n"
+"that §77, and §78 is a proof that §79.\n"
+"\n"
+"If §80 then §81 will turn all §82s into §83s.\n"
+"If you only want to change the 37th occurrence of §84\n"
+"to §85 then do §86."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
+msgid "add_left_eq_zero"
+msgstr ""
+
+#. §0: `rw [add_succ]`
+#: Game.Levels.Tutorial.L07add_succ
+#: Game.Levels.Tutorial.L08twoaddtwo
+msgid "Now you can §0"
+msgstr ""
+
+#. §0: `←`
+#. §1: `rw`
+#. §2: `rw`
+#. §3: `←`
+#. §4: `\\l`
+#: Game.Levels.Implication.L04succ_inj
+msgid "You can put a §0 in front of any theorem provided to §1 to rewrite\n"
+"the other way around. Look at the docs for §2 for an explanation. Type §3 with §4."
+msgstr ""
+
+#. §0: `exact h`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "You can now finish with §0."
+msgstr ""
+
+#: Game
+msgid "Natural Number Game"
+msgstr ""
+
+#. §0: `n`
+#. §1: `cases n with d`
+#. §2: `n = 0`
+#. §3: `n = succ d`
+#. §4: `h`
+#. §5: `cases h with...`
+#. §6: `n : ℕ`
+#. §7: `cases n with d`
+#. §8: `n`
+#. §9: `n`
+#. §10: `succ d`
+#. §11: `0`
+#. §12: `h : P ∨ Q`
+#. §13: `cases h with hp hq`
+#. §14: `hp : P`
+#. §15: `hq : Q`
+#. §16: `h : False`
+#. §17: `cases h`
+#. §18: `False`
+#. §19: `h : a ≤ b`
+#. §20: `cases h with c hc`
+#. §21: `c`
+#. §22: `hc : b = a + c`
+#. §23: `a ≤ b`
+#. §24: `∃ c, b = a + c`
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+msgid "## Summary\n"
+"\n"
+"If §0 is a number, then §1 will break the goal into two goals,\n"
+"one with §2 and the other with §3.\n"
+"\n"
+"If §4 is a proof (for example a hypothesis), then §5 will break the\n"
+"proof up into the pieces used to prove it.\n"
+"\n"
+"## Example\n"
+"\n"
+"If §6 is a number, then §7 will break the goal into two goals,\n"
+"one with §8 replaced by 0 and the other with §9 replaced by §10. This\n"
+"corresponds to the mathematical idea that every natural number is either §11\n"
+"or a successor.\n"
+"\n"
+"## Example\n"
+"\n"
+"If §12 is a hypothesis, then §13 will turn one goal\n"
+"into two goals, one with a hypothesis §14 and the other with a\n"
+"hypothesis §15.\n"
+"\n"
+"## Example\n"
+"\n"
+"If §16 is a hypothesis, then §17 will turn one goal into no goals,\n"
+"because there are no ways to make a proof of §18! And if you have no goals left,\n"
+"you have finished the level.\n"
+"\n"
+"## Example\n"
+"\n"
+"If §19 is a hypothesis, then §20 will create a new number §21\n"
+"and a proof §22. This is because the *definition* of §23 is\n"
+"§24."
+msgstr ""
+
+#. §0: `«{ha}»`
+#. §1: `«{y}» = «{x}» + «{a}»`
+#. §2: `hxy`
+#. §3: `«{hyz}»`
+#. §4: `cases «{hyz}» with b hb`
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "Now §0 is a proof that §1, and §2 has vanished. Similarly, you can destruct\n"
+"§3 into its parts with §4."
+msgstr ""
+
+#: Game.Levels.Implication.L04succ_inj
+msgid "succ_inj : the successor function is injective"
+msgstr ""
+
+#. §0: `b + 0`
+#. §1: `c + 0`
+#. §2: `rw [add_zero]`
+#. §3: `b + 0`
+#. §4: `c + 0`
+#. §5: `add_zero`
+#: Game.Levels.Tutorial.L06add_zero2
+msgid "## Precision rewriting\n"
+"\n"
+"In the last level, there was §0 and §1,\n"
+"and §2 changed the first one it saw,\n"
+"which was §3. Let's learn how to tell Lean\n"
+"to change §4 first by giving §5 an\n"
+"explicit input."
+msgstr ""
+
+#. §0: `a ≤ b`
+#. §1: `∃ c, b = a + c`
+#. §2: `a ≤ b`
+#. §3: `use`
+#. §4: `h : a ≤ b`
+#. §5: `cases h with c hc`
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "§0 is *notation* for §1.\n"
+"\n"
+"Because this game doesn't have negative numbers, this definition\n"
+"is mathematically valid.\n"
+"\n"
+"This means that if you have a goal of the form §2 you can\n"
+"make progress with the §3 tactic, and if you have a hypothesis\n"
+"§4, you can make progress with §5."
+msgstr ""
+
+#. §0: `exact h`
+#: Game.Levels.Implication.L06intro
+msgid "Now §0 finishes the job."
+msgstr ""
+
+#. §0: `«{x}» ≤ «{x}»`
+#. §1: `«{x}» = «{x}» + 0`
+#. §2: `use 0`
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "The reason §0 is because §1.\n"
+"So you should start this proof with §2."
+msgstr ""
+
+#. §0: $x \\leq y$
+#. §1: $y \\leq z$
+#. §2: $x \\leq z$
+#: Game.Levels.LessOrEqual.L04le_trans
+#: Game.Levels.LessOrEqual.L06le_antisymm
+msgid "If §0 and §1, then §2."
+msgstr ""
+
+#. §0: ```
+#. apply mul_left_ne_zero at h
+#. apply one_le_of_ne_zero at h
+#. apply mul_le_mul_right 1 b a at h
+#. rw [one_mul, mul_comm] at h
+#. exact h
+#. ```
+#: Game.Levels.AdvMultiplication.L05le_mul_right
+msgid "Here's what I was thinking of:\n"
+"§0"
+msgstr ""
+
+#. §0: `nth_rewrite 2 [two_eq_succ_one]`
+#. §1: `rw [two_eq_succ_one]`
+#: Game.Levels.Tutorial.L08twoaddtwo
+msgid "§0 is I think quicker than §1."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "intermediate goal solved! 🎉"
+msgstr ""
+
+#. §0: $a, b$
+#. §1: $c$
+#. §2: $ (a + b) + c = a + (b + c). $
+#: Game.Levels.Addition.L04add_assoc
+msgid "On the set of natural numbers, addition is associative.\n"
+"In other words, if §0 and §1 are arbitrary natural numbers, we have\n"
+"§2"
+msgstr ""
+
+#. §0: `use`
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "Now you need to figure out which number to §0. See if you can take it from here."
+msgstr ""
+
+#. §0: `t : P → Q`
+#. §1: $P \\implies Q$
+#. §2: `h : P`
+#. §3: `P`
+#. §4: `apply t at h`
+#. §5: `h`
+#. §6: `Q`
+#. §7: `P`
+#. §8: `t`
+#. §9: `Q`
+#. §10: `Q`
+#. §11: `apply t`
+#. §12: `P`
+#. §13: `Q`
+#. §14: `t`
+#. §15: `P`
+#. §16: `P`
+#. §17: `succ_inj x y`
+#. §18: `succ x = succ y → x = y`
+#. §19: `h : succ (a + 37) = succ (b + 42)`
+#. §20: `apply succ_inj at h`
+#. §21: `h`
+#. §22: `a + 37 = b + 42`
+#. §23: `apply succ_inj (a + 37) (b + 42) at h`
+#. §24: `succ_inj`
+#. §25: `a * b = 7`
+#. §26: `apply succ_inj`
+#. §27: `succ (a * b) = succ 7`
+#: Game.Levels.Implication.L03apply
+msgid "## Summary\n"
+"\n"
+"If §0 is a proof that §1, and §2 is a proof of §3,\n"
+"then §4 will change §5 to a proof of §6. The idea is that if\n"
+"you know §7 is true, then you can deduce from §8 that §9 is true.\n"
+"\n"
+"If the *goal* is §10, then §11 will \\\\\"argue backwards\\\\\" and change the\n"
+"goal to §12. The idea here is that if you want to prove §13, then by §14\n"
+"it suffices to prove §15, so you can reduce the goal to proving §16.\n"
+"\n"
+"### Example:\n"
+"\n"
+"§17 is a proof that §18.\n"
+"\n"
+"So if you have a hypothesis §19\n"
+"then §20 will change §21 to §22.\n"
+"You could write §23\n"
+"but Lean is smart enough to figure out the inputs to §24.\n"
+"\n"
+"### Example\n"
+"\n"
+"If the goal is §25, then §26 will turn the\n"
+"goal into §27."
+msgstr ""
+
+#. §0: `cases «{h2}» with e he`
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "Now §0."
+msgstr ""
+
+#. §0: `add_mul`
+#: Game.Levels.Multiplication.L08add_mul
+msgid "§0 is just as fiddly to prove by induction; but there's a trick\n"
+"which avoids it. Can you spot it?"
+msgstr ""
+
+#. §0: `repeat rw [← succ_eq_add_one] at h`
+#. §1: `h`
+#. §2: `succ x = succ y`
+#: Game.Levels.Implication.L07intro2
+msgid "Now §0 is the quickest way to\n"
+"change §1 to §2."
+msgstr ""
+
+#. §0: ```
+#. use 1
+#. exact succ_eq_add_one x
+#. ```
+#. §1: `succ_eq_add_one x`
+#. §2: `succ x = x + 1`
+#: Game.Levels.LessOrEqual.L03le_succ_self
+msgid "Here's a two-liner:\n"
+"§0\n"
+"\n"
+"This works because §1 is a proof of §2."
+msgstr ""
+
+#. §0: `intro h`
+#. §1: `X ≠ Y`
+#. §2: `X = Y → False`
+#: Game.Levels.Algorithm.L06is_zero
+msgid "Start with §0 (remembering that §1 is just notation\n"
+"for §2)."
+msgstr ""
+
+#. §0: `n`
+#. §1: `induction n with d hd`
+#: Game.Levels.Addition.L01zero_add
+msgid "You can start a proof by induction on §0 by typing:\n"
+"§1."
+msgstr ""
+
+#. §0: ```lean
+#. nth_rewrite 2 [two_eq_succ_one] -- only change the second `2` to `succ 1`.
+#. rw [add_succ]
+#. rw [one_eq_succ_zero]
+#. rw [add_succ, add_zero] -- two rewrites at once
+#. rw [← three_eq_succ_two] -- change `succ 2` to `3`
+#. rw [← four_eq_succ_three]
+#. rfl
+#. ```
+#. §1: `</>`
+#. §2: `>_`
+#. §3: `induction`
+#: Game.Levels.Tutorial.L08twoaddtwo
+msgid "Here is an example proof of 2+2=4 showing off various techniques.\n"
+"\n"
+"§0\n"
+"\n"
+"Optional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\n"
+"on the §1 button in the top right. You can now see your proof\n"
+"written as several lines of code. Move your cursor between lines to see\n"
+"the goal state at any point. Now cut and paste your code elsewhere if you\n"
+"want to save it, and paste the above proof in instead. Move your cursor\n"
+"around to investigate. When you've finished, click the §2 button in the top right to\n"
+"move back into \"Typewriter mode\".\n"
+"\n"
+"You have finished tutorial world!\n"
+"Click \"Home\" to go back to the\n"
+"overworld, and select Addition World, where you will learn\n"
+"about the §3 tactic."
+msgstr ""
+
+#. §0: `Pow a b`
+#. §1: `a ^ b`
+#. §2: `pow_zero a : a ^ 0 = 1`
+#. §3: `pow_succ a b : a ^ succ b = a ^ b * a`
+#. §4: `0 ^ 0 = 1`
+#: Game.Levels.Power.L01zero_pow_zero
+msgid "§0, with notation §1, is the usual\n"
+"  exponentiation of natural numbers. Internally it is\n"
+"  defined via two axioms:\n"
+"\n"
+"  * §2\n"
+"\n"
+"  * §3\n"
+"\n"
+"Note in particular that §4."
+msgstr ""
+
+#. §0: `≤`
+#. §1: `a`
+#. §2: `b`
+#. §3: `a ≤ b`
+#. §4: `b ≤ a`
+#. §5: `or`
+#. §6: `∨`
+#. §7: `\\or`
+#. §8: `left`
+#. §9: `right`
+#. §10: `h`
+#. §11: `cases h with h1 h2`
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "Totality of §0 is the boss level of this world, and it's coming up next. It says that\n"
+"if §1 and §2 are naturals then either §3 or §4.\n"
+"But we haven't talked about §5 at all. Here's a run-through.\n"
+"\n"
+"1) The notation for \"or\" is §6. You won't need to type it, but you can\n"
+"type it with §7.\n"
+"\n"
+"2) If you have an \"or\" statement in the *goal*, then two tactics make\n"
+"progress: §8 and §9. But don't choose a direction unless your\n"
+"hypotheses guarantee that it's the correct one.\n"
+"\n"
+"3) If you have an \"or\" statement as a *hypothesis* §10, then\n"
+"§11 will create two goals, one where you went left,\n"
+"and the other where you went right."
+msgstr ""
+
+#. §0: `one_eq_succ_zero`
+#. §1: `1 = succ 0`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "§0 is a proof of §1.\""
+msgstr ""
+
+#: Game.Levels.Addition.L01zero_add
+msgid "zero_add"
+msgstr ""
+
+#. §0: `induction b with d hd generalizing c`
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "The way to start this proof is §0."
+msgstr ""
+
+#. §0: `0 ^ 0 = 1`
+#. §1: `n`
+#. §2: `0 ^ n = 0`
+#: Game.Levels.Power.L02zero_pow_succ
+msgid "We've just seen that §0, but if §1\n"
+"is a successor, then §2. We prove that here."
+msgstr ""
+
+#. §0: `zero_mul x`
+#. §1: `0 * x = 0`
+#. §2: `zero_mul`
+#. §3: `simp`
+#: Game.Levels.Multiplication.L02zero_mul
+msgid "§0 is the proof that §1.\n"
+"\n"
+"Note: §2 is a §3 lemma."
+msgstr ""
+
+#. §0: $\\leq$
+#. §1: $x \\leq y$
+#. §2: $y \\leq x$
+#. §3: $x = y$
+#: Game.Levels.LessOrEqual.L06le_antisymm
+msgid "This level asks you to prove *antisymmetry* of §0.\n"
+"In other words, if §1 and §2 then §3.\n"
+"It's the trickiest one so far. Good luck!"
+msgstr ""
+
+#. §0: `contrapose!`
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+msgid "If you have completed Algorithm World then you can use the §0 tactic\n"
+"here. If not then I'll talk you through a manual approach."
+msgstr ""
+
+#. §0: $2y=2(x+7)$
+#. §1: `h`
+#. §2: $y = x + 7$
+#. §3: `h`
+#. §4: `h`
+#. §5: `x`
+#. §6: `rfl`
+#. §7: $y$
+#. §8: `h`
+#. §9: `rw`
+#: Game.Levels.Tutorial.L02rw
+msgid "In this level the *goal* is §0 but to help us we\n"
+"have an *assumption* §1 saying that §2. Check that you can see §3 in\n"
+"your list of assumptions. Lean thinks of §4 as being a secret proof of the\n"
+"assumption, rather like §5 is a secret number.\n"
+"\n"
+"Before we can use §6, we have to \"substitute in for §7\".\n"
+"We do this in Lean by *rewriting* the goal with §8,\n"
+"using the §9 tactic."
+msgstr ""
+
+#. §0: `zero_ne_succ n`
+#. §1: `0 ≠ succ n`
+#. §2: `a ≠ b`
+#. §3: `a = b → False`
+#. §4: `zero_ne_succ n`
+#. §5: `0 = succ n → False`
+#. §6: `False`
+#. §7: `apply zero_ne_succ at h`
+#. §8: `h`
+#. §9: `0 = succ n`
+#: Game.Levels.Implication.L09zero_ne_succ
+msgid "§0 is the proof that §1.\n"
+"\n"
+"In Lean, §2 is *defined to mean* §3. Hence\n"
+"§4 is really a proof of §5.\n"
+"Here §6 is a generic false statement. This means that\n"
+"you can §7 if §8 is a proof of §9."
+msgstr ""
+
+#: Game.Levels.Multiplication.L01mul_one
+msgid "mul_one"
+msgstr ""
+
+#. §0: `add_left_cancel a b n`
+#. §1: $n+a=n+b\\implies a=b$
+#. §2: `n`
+#. §3: `add_right_cancel`
+#: Game.Levels.AdvAddition.L02add_left_cancel
+msgid "§0 is the theorem that §1.\n"
+"You can prove it by induction on §2 or you can deduce it from §3."
+msgstr ""
+
+#. §0: `rw [«{h}»] at «{h2}»`
+#. §1: `apply le_one at «{h2}»`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "Now §0 so you can §1."
+msgstr ""
+
+#. §0: $x \\leq 2$
+#. §1: $x = 0$
+#. §2: $1$
+#. §3: $2$
+#: Game.Levels.LessOrEqual.L11le_two
+msgid "If §0 then §1 or §2 or §3."
+msgstr ""
+
+#. §0: `two_eq_succ_one`
+#. §1: `2 = succ 1`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+#: Game.Levels.Tutorial.L03two_eq_ss0
+#: Game.Levels.Tutorial.L03two_eq_ss0
+#: Game.Levels.Addition.L03add_comm
+#: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.Algorithm.L05pred
+#: Game.Levels.Algorithm.L06is_zero
+#: Game.Levels.Algorithm.L06is_zero
+#: Game.Levels.Algorithm.L06is_zero
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "§0 is a proof of §1."
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $c$
+#. §3: $n$
+#. §4: $$(a+1)^{n+3}+(b+1)^{n+3}\\not=(c+1)^{n+3}.$$
+#: Game.Levels.Power.L10FLT
+msgid "For all naturals §0 §1 §2 and §3, we have\n"
+"§4"
+msgstr ""
+
+#. §0: `le_antisymm x y`
+#. §1: `x ≤ y`
+#. §2: `y ≤ x`
+#. §3: `x = y`
+#: Game.Levels.LessOrEqual.L06le_antisymm
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "§0 is a proof that if §1 and §2 then §3."
+msgstr ""
+
+#. §0: ```
+#. repeat rw [add_comm n]
+#. exact add_right_cancel a b n
+#. ```
+#: Game.Levels.AdvAddition.L02add_left_cancel
+msgid "How about this for a proof:\n"
+"§0"
+msgstr ""
+
+#. §0: `rw [h]`
+#. §1: `rfl`
+#. §2: `exact h`
+#: Game.Levels.Implication.L07intro2
+msgid "Now §0 then §1 works, but §2 is quicker."
+msgstr ""
+
+#. §0: `le_refl x`
+#. §1: `x ≤ x`
+#. §2: $\\le$
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "§0 is a proof of §1.\n"
+"\n"
+"The reason for the name is that this lemma is \"reflexivity of §2\""
+msgstr ""
+
+#: Game.Levels.Addition.L03add_comm
+msgid "add_comm (level boss)"
+msgstr ""
+
+#. §0: `mul_comm x y : x * y = y * x`
+#. §1: `mul_zero`
+#. §2: `zero_mul`
+#: Game.Levels.Multiplication.L02zero_mul
+msgid "Our first challenge is §0,\n"
+"and we want to prove it by induction. The zero\n"
+"case will need §1 (which we have)\n"
+"and §2 (which we don't), so let's\n"
+"start with this."
+msgstr ""
+
+#. §0: `simp_add`
+#. §1: `a + (b + c) + (d + e) = e + (d + (c + b)) + a`
+#: Game.Levels.Algorithm.L04add_algo3
+msgid "# Overview\n"
+"\n"
+"Our home-made tactic §0 will solve arbitrary goals of\n"
+"the form §1."
+msgstr ""
+
+#. §0: `20 + 20 = 40`
+#: Game.Levels.Algorithm.L04add_algo3
+msgid "Let's now move on to a more efficient approach to questions\n"
+"involving numerals, such as §0."
+msgstr ""
+
+#: Game.Levels.Multiplication.L09mul_assoc
+msgid "We now have enough to prove that multiplication is associative,\n"
+"the boss level of multiplication world. Good luck!"
+msgstr ""
+
+#: Game.Levels.Power.L08pow_pow
+msgid "pow_pow"
+msgstr ""
+
+#: Game.Levels.Implication.L04succ_inj
+msgid "Now finish in one line."
+msgstr ""
+
+#. §0: `le_two x`
+#. §1: `x ≤ 2`
+#. §2: `x = 0`
+#. §3: `x = 1`
+#. §4: `x = 2`
+#: Game.Levels.LessOrEqual.L11le_two
+msgid "§0 is a proof that if §1 then §2 or §3 or §4."
+msgstr ""
+
+#. §0: ```
+#. rw [add_comm]
+#. exact add_right_eq_zero b a
+#. ```
+#. §1: `≤`
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
+msgid "How about this for a proof:\n"
+"\n"
+"§0\n"
+"\n"
+"That's the end of Advanced Addition World! You'll need these theorems\n"
+"for the next world, §1 World. Click on \"Home\" to access it."
+msgstr ""
+
+#. §0: `Mul a b`
+#. §1: `a * b`
+#. §2: `mul_zero a : a * 0 = 0`
+#. §3: `mul_succ a b : a * succ b = a * b + a`
+#. §4: `zero_mul`
+#: Game.Levels.Multiplication.L01mul_one
+msgid "§0, with notation §1, is the usual\n"
+"  product of natural numbers. Internally it is\n"
+"  via two axioms:\n"
+"\n"
+"  * §2\n"
+"\n"
+"  * §3\n"
+"\n"
+"Other theorems about naturals, such as §4,\n"
+"are proved by induction from these two basic theorems."
+msgstr ""
+
+#. §0: `add_zero a`
+#. §1: `a + 0 = a`
+#. §2: `add_zero`
+#. §3: `add_zero 37`
+#. §4: `37 + 0 = 37`
+#. §5: `rw`
+#. §6: `rw [add_zero]`
+#. §7: `add_zero`
+#. §8: $\\forall n ∈ ℕ, n + 0 = n$
+#. §9: `n + 0 = n`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "§0 is a proof that §1.\n"
+"\n"
+"## Summary\n"
+"\n"
+"§2 is really a function, which\n"
+"eats a number, and returns a proof of a theorem\n"
+"about that number. For example §3 is\n"
+"a proof that §4.\n"
+"\n"
+"The §5 tactic will accept §6\n"
+"and will try to figure out which number you omitted\n"
+"to input.\n"
+"\n"
+"## Details\n"
+"\n"
+"A mathematician sometimes thinks of §7\n"
+"as \\\\\"one thing\\\\\", namely a proof of §8.\n"
+"This is just another way of saying that it's a function which\n"
+"can eat any number n and will return a proof that §9."
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $$(a+b)^2=a^2+b^2+2ab.$$
+#: Game.Levels.Power.L09add_sq
+msgid "For all numbers §0 and §1, we have\n"
+"§2"
+msgstr ""
+
+#. §0: `rfl`
+#. §1: `rfl`
+#. §2: `rfl`
+#. §3: `rw`
+#: Game.Levels.Tutorial.L01rfl
+msgid "Congratulations! You completed your first verified proof!\n"
+"\n"
+"Remember that §0 is a *tactic*. If you ever want information about the §1 tactic,\n"
+"you can click on §2 in the list of tactics on the right.\n"
+"\n"
+"Now click on \"Next\" to learn about the §3 tactic."
+msgstr ""
+
+#. §0: $0+x=(0+y)+2$
+#. §1: $x=y+2$
+#: Game.Levels.Implication.L02exact2
+msgid "Assuming §0, we have §1."
+msgstr ""
+
+#. §0: `add_right_cancel a b n`
+#. §1: $a+n=b+n\\implies a=b$
+#: Game.Levels.AdvAddition.L01add_right_cancel
+msgid "In this world I will mostly leave you on your own.\n"
+"\n"
+"§0 is the theorem that §1."
+msgstr ""
+
+#: Game.Levels.Power.L06pow_add
+msgid "Let's now begin our approach to the final boss,\n"
+"by proving some more subtle facts about powers."
+msgstr ""
+
+#. §0: `succ_le_succ x y`
+#. §1: `succ x ≤ succ y`
+#. §2: `x ≤ y`
+#: Game.Levels.LessOrEqual.L09succ_le_succ
+msgid "§0 is a proof that if §1 then §2."
+msgstr ""
+
+#: Game.Levels.Implication.L08ne
+msgid "≠"
+msgstr ""
+
+#. §0: `c = 0`
+#. §1: `c = succ e`
+#. §2: `cases c with e`
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "Split into cases §0 and §1 with §2."
+msgstr ""
+
+#. §0: `intro h`
+#. §1: `h`
+#: Game.Levels.Implication.L06intro
+msgid "Start with §0 to assume the hypothesis and call its proof §1."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "mul_right_eq_self"
+msgstr ""
+
+#. §0: `add_comm`
+#. §1: `succ_add`
+#. §2: `succ_add a b`
+#. §3: `(succ a) + b = succ (a + b)`
+#. §4: `a`
+#. §5: `b`
+#. §6: `x + y = y + x`
+#. §7: `b`
+#. §8: `b = 0`
+#. §9: `b`
+#: Game.Levels.Addition.L02succ_add
+msgid "Oh no! On the way to §0, a wild §1 appears. §2\n"
+"is the proof that §3 for §4 and §5 numbers.\n"
+"This result is what's standing in the way of §6. Again\n"
+"we have the problem that we are adding §7 to things, so we need\n"
+"to use induction to split into the cases where §8 and §9 is a successor."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `simp`
+#. §2: `add_comm`
+#: Game.Levels.Algorithm.L03add_algo2
+msgid "# Overview\n"
+"\n"
+"Lean's simplifier, §0, will rewrite every lemma\n"
+"tagged with §1 and every lemma fed to it by the user, as much as it can.\n"
+"Furthermore, it will attempt to order variables into an internal order if fed\n"
+"lemmas such as §2, so that it does not go into an infinite loop."
+msgstr ""
+
+#. §0: `cases ha with n hn`
+#: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+msgid "Now take apart the existence statement with §0."
+msgstr ""
+
+#. §0: $2+2=4$
+#: Game.Levels.Tutorial.L08twoaddtwo
+#: Game.Levels.Implication.L06intro
+#: Game.Levels.Implication.L07intro2
+#: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.Implication.L10one_ne_zero
+#: Game.Levels.Implication.L11two_add_two_ne_five
+#: Game.Levels.Algorithm.L02add_algo1
+#: Game.Levels.Algorithm.L06is_zero
+#: Game.Levels.Algorithm.L08decide
+#: Game.Levels.AdvAddition.L01add_right_cancel
+#: Game.Levels.AdvAddition.L02add_left_cancel
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "§0."
+msgstr ""
+
+#. §0: $x,y,z>0$
+#. §1: $m \\geq 3$
+#. §2: $x^m+y^m\\not =z^m$
+#. §3: $m \\geq 3$
+#. §4: `n + 3`
+#. §5: `m`
+#. §6: `x > 0`
+#. §7: `a + 1`
+#: Game.Levels.Power.L10FLT
+msgid "We now have enough to state a mathematically accurate, but slightly\n"
+"clunky, version of Fermat's Last Theorem.\n"
+"\n"
+"Fermat's Last Theorem states that if §0 and §1 then §2.\n"
+"If you didn't do inequality world yet then we can't talk about §3,\n"
+"so we have to resort to the hack of using §4 for §5,\n"
+"which guarantees it's big enough. Similarly instead of §6 we\n"
+"use §7.\n"
+"\n"
+"This level looks superficially like other levels we have seen,\n"
+"but the shortest solution known to humans would translate into\n"
+"many millions of lines of Lean code. The author of this game,\n"
+"Kevin Buzzard, is working on translating the proof by Wiles\n"
+"and Taylor into Lean, although this task will take many years.\n"
+"\n"
+"## CONGRATULATIONS!\n"
+"\n"
+"You've finished the main quest of the natural number game!\n"
+"If you would like to learn more about how to use Lean to\n"
+"prove theorems in mathematics, then take a look\n"
+"at [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\n"
+"an interactive textbook which you can read in your browser,\n"
+"and which explains how to work with many more mathematical concepts in Lean."
+msgstr ""
+
+#: Game.Levels.Algorithm.L09decide2
+msgid "decide again"
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L03le_succ_self
+msgid "x ≤ succ x"
+msgstr ""
+
+#: Game.Levels.Tutorial.L02rw
+msgid "Can you take it from here? Click on \"Show more help!\" if you need a hint."
+msgstr ""
+
+#. §0: `contrapose! h`
+#. §1: `succ m = succ n`
+#. §2: `m = n`
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "Start with §0, to change the goal into its\n"
+"contrapositive, namely a hypothesis of §1 and a goal of §2."
+msgstr ""
+
+#: Game.Levels.Multiplication.L07mul_add
+msgid "mul_add"
+msgstr ""
+
+#. §0: `a`
+#. §1: `b`
+#: Game.Levels.Addition.L02succ_add
+msgid "You might want to think about whether induction\n"
+"on §0 or §1 is the best idea."
+msgstr ""
+
+#. §0: `le_trans x y z`
+#. §1: `x ≤ y`
+#. §2: `y ≤ z`
+#. §3: `x ≤ z`
+#. §4: `x ≤ y → (y ≤ z → x ≤ z)`
+#. §5: $x \\le y$
+#. §6: $y \\le z$
+#. §7: $x \\le z$
+#. §8: `a + b + c`
+#. §9: `(a + b) + c`
+#. §10: `+`
+#. §11: `→`
+#. §12: `x ≤ y → y ≤ z → x ≤ z`
+#. §13: `≤`
+#. §14: $P \\implies Q \\implies R$
+#. §15: $P \\implies Q$
+#. §16: $Q \\implies R$
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "§0 is a proof that if §1 and §2 then §3.\n"
+"More precisely, it is a proof that §4. In words,\n"
+"If §5 then (pause) if §6 then §7.\n"
+"\n"
+"## A note on associativity\n"
+"\n"
+"In Lean, §8 means §9, because §10 is left associative. However\n"
+"§11 is right associative. This means that §12 in Lean means\n"
+"exactly that §13 is transitive. This is different to how mathematicians use\n"
+"§14; for them, this usually means that §15\n"
+"and §16."
+msgstr ""
+
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "making life easier"
+msgstr ""
+
+#. §0: `add_succ`
+#: Game.Levels.Addition.L01zero_add
+msgid "Use §0."
+msgstr ""
+
+#. §0: `or`
+#. §1: `right`
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "Now we can prove the §0 statement by proving the statement on the right,\n"
+"so use the §1 tactic."
+msgstr ""
+
+#. §0: `h : a ≠ b`
+#. §1: `c ≠ d`
+#. §2: `contrapose! h`
+#. §3: `h : c = d`
+#. §4: `a = b`
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "# Summary\n"
+"\n"
+"If you have a hypothesis\n"
+"\n"
+"§0\n"
+"\n"
+"and goal\n"
+"\n"
+"§1\n"
+"\n"
+"then §2 replaces the set-up with its so-called \\\\\"contrapositive\\\\\":\n"
+"a hypothesis\n"
+"\n"
+"§3\n"
+"\n"
+"and goal\n"
+"\n"
+"§4."
+msgstr ""
+
+#. §0: `succ_add a b`
+#. §1: `succ a + b = succ (a + b)`
+#: Game.Levels.Addition.L02succ_add
+#: Game.Levels.Multiplication.L08add_mul
+#: Game.Levels.Power.L04one_pow
+#: Game.Levels.Implication.L10one_ne_zero
+#: Game.Levels.Algorithm.L01add_left_comm
+#: Game.Levels.LessOrEqual.L02zero_le
+#: Game.Levels.LessOrEqual.L03le_succ_self
+#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+#: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "§0 is a proof that §1."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+msgid "eq_succ_of_ne_zero"
+msgstr ""
+
+#. §0: ```
+#. induction c with d hd
+#. rw [add_zero, mul_zero, add_zero]
+#. rfl
+#. rw [add_succ, mul_succ, hd, mul_succ, add_assoc]
+#. rfl
+#. ```
+#. §1: `a`
+#. §2: `b`
+#: Game.Levels.Multiplication.L07mul_add
+msgid "Here's my solution:\n"
+"§0\n"
+"\n"
+"Inducting on §1 or §2 also works, but might take longer."
+msgstr ""
+
+#. §0: `apply succ_inj`
+#. §1: `succ_inj`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "Start with §0 to apply §1 to the *goal*."
+msgstr ""
+
+#: Game.Levels.Multiplication.L02zero_mul
+msgid "zero_mul"
+msgstr ""
+
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Can you take it from here?"
+msgstr ""
+
+#: Game.Levels.Power.L07mul_pow
+msgid "mul_pow"
+msgstr ""
+
+#. §0: `≤`
+#. §1: `ℕ`
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "A passing mathematician remarks that with reflexivity and transitivity out of the way,\n"
+"you have proved that §0 is a *preorder* on §1."
+msgstr ""
+
+#. §0: ```
+#. cases hxy with a ha
+#. cases hyx with b hb
+#. rw [ha]
+#. rw [ha, add_assoc] at hb
+#. symm at hb
+#. apply add_right_eq_self at hb
+#. apply add_right_eq_zero at hb
+#. rw [hb, add_zero]
+#. rfl
+#. ```
+#. §1: `≤`
+#. §2: `ℕ`
+#. §3: `≤`
+#: Game.Levels.LessOrEqual.L06le_antisymm
+msgid "Here's my proof:\n"
+"§0\n"
+"\n"
+"A passing mathematician remarks that with antisymmetry as well,\n"
+"you have proved that §1 is a *partial order* on §2.\n"
+"\n"
+"The boss level of this world is to prove\n"
+"that §3 is a total order. Let's learn two more easy tactics\n"
+"first."
+msgstr ""
+
+#: Game.Levels.Multiplication.L05one_mul
+msgid "one_mul"
+msgstr ""
+
+#. §0: `«{hd}» : 0 + «{d}» = «{d}»`
+#. §1: `0 + succ «{d}» = succ «{d}»`
+#: Game.Levels.Addition.L01zero_add
+msgid "Now for the second goal. Here you have the induction hypothesis\n"
+"§0, and you need to prove that §1."
+msgstr ""
+
+#: Game.Levels.Algorithm.L05pred
+msgid "pred"
+msgstr ""
+
+#. §0: `exact`
+#: Game.Levels.Implication.L01exact
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "The §0 tactic"
+msgstr ""
+
+#. §0: `succ n`
+#. §1: `n + 1`
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "Why did we not just define §0 to be §1? Because we have not\n"
+"even *defined* addition yet! We'll do that in the next level."
+msgstr ""
+
+#. §0: $x$
+#. §1: $y$
+#. §2: $y = x + 7$
+#. §3: $2y = 2(x + 7)$
+#: Game.Levels.Tutorial.L02rw
+msgid "If §0 and §1 are natural numbers, and §2, then §3."
+msgstr ""
+
+#: Game.Levels.Power.L09add_sq
+msgid "[final boss music]"
+msgstr ""
+
+#. §0: `succ_eq_add_one n`
+#. §1: `succ n = n + 1`
+#: Game.Levels.Tutorial.L07add_succ
+#: Game.Levels.Multiplication.L01mul_one
+#: Game.Levels.Multiplication.L01mul_one
+#: Game.Levels.Multiplication.L01mul_one
+#: Game.Levels.Multiplication.L06two_mul
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "§0 is the proof that §1."
+msgstr ""
+
+#: Game.Levels.Addition.L05add_right_comm
+msgid "add_right_comm"
+msgstr ""
+
+#. §0: `add_zero`
+#: Game.Levels.Addition.L01zero_add
+msgid "try rewriting §0."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+msgid "one_le_of_ne_zero"
+msgstr ""
+
+#. §0: `add_right_cancel a b n`
+#. §1: $a+n=b+n \\implies a=b.$
+#: Game.Levels.AdvAddition.L01add_right_cancel
+#: Game.Levels.AdvAddition.L02add_left_cancel
+#: Game.Levels.AdvAddition.L03add_left_eq_self
+#: Game.Levels.AdvAddition.L03add_left_eq_self
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "§0 is the theorem that §1"
+msgstr ""
+
+#: Game.Levels.Power.L04one_pow
+msgid "one_pow"
+msgstr ""
+
+#. §0: $a, b, c$
+#. §1: $a+(b+c)=b+(a+c)$
+#: Game.Levels.Algorithm.L01add_left_comm
+msgid "If §0 are numbers, then §1."
+msgstr ""
+
+#. §0: `a ≤ b`
+#. §1: `∃ c, b = a + c`
+#. §2: `a ≤ b`
+#. §3: `c`
+#. §4: `b = a + c`
+#. §5: `use`
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "§0 is *notation* for §1. This \"backwards E\"\n"
+"means \"there exists\". So §2 means that there exists\n"
+"a number §3 such that §4. This definition works\n"
+"because there are no negative numbers in this game.\n"
+"\n"
+"To *prove* an \"exists\" statement, use the §5 tactic.\n"
+"Let's see an example."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L02zero_le
+msgid "0 ≤ x"
+msgstr ""
+
+#. §0: `or`
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "Dealing with §0"
+msgstr ""
+
+#: Game.Levels.Multiplication.L08add_mul
+msgid "add_mul"
+msgstr ""
+
+#. §0: `apply eq_succ_of_ne_zero at ha`
+#. §1: `... at hb`
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
+msgid "Start with §0 and §1"
+msgstr ""
+
+#. §0: `pow_succ a b : a ^ (succ b) = a ^ b * a`
+#: Game.Levels.Power.L02zero_pow_succ
+msgid "§0 is one of the\n"
+"two axioms defining exponentiation in this game."
+msgstr ""
+
+#. §0: `mul_zero`
+#. §1: `mul_succ`
+#. §2: `1`
+#: Game.Levels.Multiplication.L01mul_one
+msgid "See the new \"*\" tab in your lemmas, containing §0 and §1.\n"
+"Right now these are the only facts we know about multiplication.\n"
+"Let's prove nine more.\n"
+"\n"
+"Let's start with a warm-up: no induction needed for this one,\n"
+"because we know §2 is a successor."
+msgstr ""
+
+#: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.AdvAddition.L01add_right_cancel
+msgid "Nice!"
+msgstr ""
+
+#. §0: $m$
+#. §1: $ m \\times 1 = m$
+#: Game.Levels.Multiplication.L01mul_one
+#: Game.Levels.Multiplication.L05one_mul
+#: Game.Levels.Multiplication.L06two_mul
+msgid "For any natural number §0, we have §1."
+msgstr ""
+
+#. §0: `rw [h]`
+#. §1: `y`
+#. §2: `x + 7`
+#: Game.Levels.Tutorial.L02rw
+msgid "First execute §0 to replace the §1 with §2."
+msgstr ""
+
+#. §0: $2+2=4$
+#. §1: $2+2\\neq 5$
+#. §2: $x + y = y + x$
+#. §3: $x+1=4 \\implies x=3.$
+#: Game.Levels.Implication
+msgid "We've proved that §0; in Implication World we'll learn\n"
+"how to prove §1.\n"
+"\n"
+"In Addition World we proved *equalities* like §2.\n"
+"In this second tutorial world we'll learn some new tactics,\n"
+"enabling us to prove *implications*\n"
+"like §3\n"
+"\n"
+"We'll also learn two new fundamental facts about\n"
+"natural numbers, which Peano introduced as axioms.\n"
+"\n"
+"Click on \"Start\" to proceed."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L11le_two
+msgid "le_two"
+msgstr ""
+
+#: Game.Levels.Power.L05pow_two
+msgid "pow_two"
+msgstr ""
+
+#. §0: ```
+#. have h2 := mul_ne_zero a b
+#. tauto
+#. ```
+#. §1: `mul_ne_zero a b`
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "Here's the short proof:\n"
+"§0\n"
+"This works because, given §1,\n"
+"the argument is reduced to pure logic."
+msgstr ""
+
+#. §0: `rw [← pred_succ a]`
+#: Game.Levels.Algorithm.L05pred
+msgid "Start with §0 and take it from there."
+msgstr ""
+
+#. §0: `0`
+#. §1: `pred`
+#. §2: ```
+#. pred 0 := 37
+#. pred (succ n) := n
+#. ```
+#. §3: `pred_succ`
+#. §4: `pred (succ n) = n`
+#. §5: `succ_inj`
+#: Game.Levels.Algorithm.L05pred
+msgid "We now start work on an algorithm to do addition more efficiently. Recall that\n"
+"we defined addition by recursion, saying what it did on §0 and successors.\n"
+"It is an axiom of Lean that recursion is a valid\n"
+"way to define functions from types such as the naturals.\n"
+"\n"
+"Let's define a new function §1 from the naturals to the naturals, which\n"
+"attempts to subtract 1 from the input. The definition is this:\n"
+"\n"
+"§2\n"
+"\n"
+"We cannot subtract one from 0, so we just return a junk value. As well as this\n"
+"definition, we also create a new lemma §3, which says that §4.\n"
+"Let's use this lemma to prove §5, the theorem which\n"
+"Peano assumed as an axiom and which we have already used extensively without justification."
+msgstr ""
+
+#: Game.Levels.Algorithm.L06is_zero
+msgid "is_zero"
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $c$
+#. §3: $(ab)c = a(bc)$
+#: Game.Levels.Multiplication.L09mul_assoc
+msgid "Multiplication is associative.\n"
+"In other words, for all natural numbers §0, §1 and §2, we have\n"
+"§3."
+msgstr ""
+
+#. §0: `simp`
+#. §1: `rw`
+#. §2: `simp`
+#: Game.Levels.Algorithm.L03add_algo2
+msgid "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\n"
+"tagged with §2 and every lemma fed to it by the user, as much as it can.\n"
+"\n"
+"This level is not a level which you want to solve by hand.\n"
+"Get the simplifier to solve it for you."
+msgstr ""
+
+#. §0: `h : X = Y`
+#. §1: `X`
+#. §2: `nth_rewrite 3 [h]`
+#. §3: `X`
+#. §4: `Y`
+#. §5: `2 + 2 = 4`
+#. §6: `nth_rewrite 2 [two_eq_succ_one]`
+#. §7: `2 + succ 1 = 4`
+#. §8: `rw [two_eq_succ_one]`
+#. §9: `succ 1 + succ 1 = 4`
+#: Game.Levels.Tutorial.L02rw
+msgid "## Summary\n"
+"\n"
+"If §0 and there are several §1s in the goal, then\n"
+"§2 will just change the third §3 to a §4.\n"
+"\n"
+"## Example\n"
+"\n"
+"If the goal is §5 then §6\n"
+"will change the goal to §7. In contrast, §8\n"
+"will change the goal to §9."
+msgstr ""
+
+#. §0: $P\\implies Q$
+#. §1: $Q$
+#. §2: $P$
+#. §3: `rw [succ_eq_add_one]`
+#: Game.Levels.Implication.L05succ_inj2
+msgid "Applying a proof of §0 to the *goal* changes §1 to §2.\n"
+"Now try §3 to make the goal more like the hypothesis."
+msgstr ""
+
+#. §0: $a$
+#. §1: $b$
+#. §2: $(\\operatorname{succ}\\ a) \\times b = a\\times b + b$
+#: Game.Levels.Multiplication.L03succ_mul
+msgid "For all natural numbers §0 and §1, we have\n"
+"§2."
+msgstr ""
+
+#. §0: $a+b=0 \\implies a=0$
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+#: Game.Levels.AdvAddition.L06add_left_eq_zero
+msgid "A proof that §0."
+msgstr ""
+
+#. §0: `repeat rw [add_assoc]`
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "Start with §0 to push all the brackets to the right."
+msgstr ""
+
+#. §0: `cases a with d`
+#. §1: `a = 0`
+#. §2: `a = succ d`
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+msgid "Start with §0 to do a case split on §1 and §2."
+msgstr ""
+
+#. §0: `mul_eq_zero`
+#. §1: `tauto`
+#. §2: `a = 0`
+#. §3: `a ≠ 0`
+#: Game.Levels.AdvMultiplication.L09mul_left_cancel
+msgid "Use §0 and remember that §1 will solve a goal\n"
+"if there are hypotheses §2 and §3."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L04one_le_of_ne_zero
+msgid "The previous lemma can be used to prove this one."
+msgstr ""
+
+#. §0: `is_zero`
+#. §1: ```
+#. is_zero 0 := True
+#. is_zero (succ n) := False
+#. ```
+#. §2: `is_zero_zero`
+#. §3: `is_zero_succ n`
+#. §4: `is_zero 0 = True`
+#. §5: `is_zero (succ n) = False`
+#. §6: `succ_ne_zero`
+#. §7: `zero_ne_succ`
+#. §8: `zero_ne_succ`
+#. §9: `True`
+#. §10: `trivial`
+#: Game.Levels.Algorithm.L06is_zero
+msgid "We define a function §0 thus:\n"
+"\n"
+"§1\n"
+"\n"
+"We also create two lemmas, §2 and §3, saying that §4\n"
+"and §5. Let's use these lemmas to prove §6, Peano's\n"
+"Last Axiom. Actually, we have been using §7 before, but it's handy to have\n"
+"this opposite version too, which can be proved in the same way. Note: you can\n"
+"cheat here by using §8 but the point of this world is to show\n"
+"you how to *prove* results like that.\n"
+"\n"
+"If you can turn your goal into §9, then the §10 tactic will solve it."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "mul_eq_zero"
+msgstr ""
+
+#. §0: `rw [two_eq_succ_one]`
+#. §1: `2`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Start with §0 to begin to break §1 down into its definition."
+msgstr ""
+
+#: Game.Levels.Implication.L10one_ne_zero
+msgid "1 ≠ 0"
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
+msgid "mul_le_mul_right"
+msgstr ""
+
+#: Game.Levels.AdvAddition.L04add_right_eq_self
+msgid "add_right_eq_self"
+msgstr ""
+
+#. §0: `2 + 2 ≠ 5`
+#. §1: `≠`
+#. §2: `a ≠ b`
+#. §3: `a = b → False`
+#. §4: `False`
+#. §5: `→`
+#. §6: `True → False`
+#. §7: `False → False`
+#. §8: `X → False`
+#. §9: `X`
+#. §10: `a ≠ b`
+#. §11: `False`
+#. §12: `False`
+#: Game.Levels.Implication.L08ne
+msgid "We still can't prove §0 because we have not talked about the\n"
+"definition of §1. In Lean, §2 is *notation* for §3.\n"
+"Here §4 is a generic false proposition, and §5 is Lean's notation\n"
+"for \"implies\". In logic we learn\n"
+"that §6 is false, but §7 is true. Hence\n"
+"§8 is the logical opposite of §9.\n"
+"\n"
+"Even though §10 does not look like an implication,\n"
+"you should treat it as an implication. The next two levels will show you how.\n"
+"\n"
+"§11 is a goal which you cannot deduce from a consistent set of assumptions!\n"
+"So if your goal is §12 then you had better hope that your hypotheses\n"
+"are contradictory, which they are in this level."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L04le_trans
+msgid "x ≤ y and y ≤ z implies x ≤ z"
+msgstr ""
+
+#. §0: `exact`
+#: Game.Levels.Implication.L02exact2
+msgid "§0 practice."
+msgstr ""
+
+#. §0: `zero_ne_succ n`
+#. §1: `0 = succ n → False`
+#. §2: `succ n = 0`
+#. §3: `symm`
+#. §4: `x = y`
+#. §5: `y = x`
+#. §6: `x ≠ y`
+#. §7: `y ≠ x`
+#. §8: `symm at h`
+#. §9: `h`
+#. §10: $0 \\neq 1$
+#. §11: `zero_ne_one`
+#. §12: $1 \\neq 0$
+#: Game.Levels.Implication.L10one_ne_zero
+msgid "We know §0 is a proof of §1 -- but what\n"
+"if we have a hypothesis §2? It's the wrong way around!\n"
+"\n"
+"The §3 tactic changes a goal §4 to §5, and a goal §6\n"
+"to §7. And §8\n"
+"does the same for a hypothesis §9. We've proved §10 and called\n"
+"the proof §11; now try proving §12."
+msgstr ""
+
+#: Game.Levels.Addition.L02succ_add
+msgid "Well done! You now have enough tools to tackle the main boss of this level."
+msgstr ""
+
+#. §0: `use`
+#. §1: `use`
+#: Game.Levels.LessOrEqual.L03le_succ_self
+msgid "If you §0 the wrong number, you get stuck with a goal you can't prove.\n"
+"What number will you §1 here?"
+msgstr ""
+
+#: Game.Levels.Multiplication.L04mul_comm
+msgid "Multiplication is commutative."
+msgstr ""
+
+#. §0: `mul_succ`
+#. §1: `succ_mul`
+#: Game.Levels.Multiplication.L03succ_mul
+msgid "Similarly we have §0\n"
+"but we're going to need §1 (guess what it says -- maybe you\n"
+"are getting the hang of Lean's naming conventions).\n"
+"\n"
+"The last level from addition world might help you in this level.\n"
+"If you can't remember what it is, you can go back to the\n"
+"home screen by clicking the house icon and then taking a look.\n"
+"You won't lose any progress."
+msgstr ""
+
+#. §0: `intro h`
+#: Game.Levels.Implication.L09zero_ne_succ
+#: Game.Levels.LessOrEqual.L04le_trans
+#: Game.Levels.LessOrEqual.L08le_total
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "Start with §0."
+msgstr ""
+
+#: Game.Levels.Multiplication.L03succ_mul
+msgid "succ_mul"
+msgstr ""
+
+#. §0: `add_left_comm`
+#. §1: `rw [add_comm b c]`
+#. §2: `a + b + c`
+#. §3: `(a + b) + c`
+#: Game.Levels.Algorithm.L01add_left_comm
+msgid "Having to rearrange variables manually using commutativity and\n"
+"associativity is very tedious. We start by reminding you of this. §0\n"
+"is a key component in the first algorithm which we'll explain, but we need\n"
+"to prove it manually.\n"
+"\n"
+"Remember that you can do precision commutativity rewriting\n"
+"with things like §1. And remember that\n"
+"§2 means §3."
+msgstr ""
+
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Numbers"
+msgstr ""
+
+#. §0: `rfl`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "And finally §0."
+msgstr ""
+
+#. §0: `37 * x`
+#. §1: $x=0$
+#. §2: $x$
+#. §3: `37 * 0`
+#. §4: `0`
+#. §5: `37 * d`
+#. §6: `37 * succ d`
+#. §7: $(d+1)$
+#. §8: $37$
+#. §9: `37 * d + 37`
+#. §10: `mul_zero a : a * 0 = 0`
+#. §11: `mul_succ a d : a * succ d = a * d + a`
+#. §12: `a * b = b * a`
+#. §13: `a * (b + c) = a * b + a * c`
+#: Game.Levels.Multiplication
+msgid "How should we define §0? Just like addition, we need to give definitions\n"
+"when §1 and when §2 is a successor.\n"
+"\n"
+"The zero case is easy: we define §3 to be §4. Now say we know\n"
+"§5. What should §6 be? Well, that's §7 §8s,\n"
+"so it should be §9.\n"
+"\n"
+"Here are the definitions in Lean.\n"
+"\n"
+"  * §10\n"
+"  * §11\n"
+"\n"
+"In this world, we must not only prove facts about multiplication like §12,\n"
+"we must also prove facts about how multiplication interacts with addition, like §13.\n"
+"Let's get started."
+msgstr ""
+
+#. §0: ```
+#. symm
+#. exact zero_ne_one
+#. ```
+#. §1: `exact`
+#: Game.Levels.Implication.L10one_ne_zero
+msgid "What do you think of this two-liner:\n"
+"§0\n"
+"\n"
+"§1 doesn't just take hypotheses, it will eat any proof which exists\n"
+"in the system."
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L09succ_le_succ
+msgid "succ x ≤ succ y → x ≤ y"
+msgstr ""
+
+#: Game
+msgid "The classical introduction game for Lean."
+msgstr ""
+
+#. §0: `rw [«{h}»]`
+#. §1: `rfl`
+#. §2: `exact «{h}»`
+#: Game.Levels.Implication.L02exact2
+msgid "Now you could finish with §0 then §1, but §2\n"
+"does it in one line."
+msgstr ""
+
+#. §0: `add_comm b c`
+#. §1: `b + c = c + b`
+#. §2: `a + b + c = a + c + b`
+#. §3: `rw [add_comm b c]`
+#. §4: `(a + b) + c = (a + c) + b`
+#. §5: `b + c`
+#. §6: `add_right_comm`
+#. §7: `add_assoc`
+#. §8: `add_comm`
+#. §9: `rw [add_comm b]`
+#. §10: `b + ? = ? + b`
+#. §11: `rw [add_comm b c]`
+#. §12: `b + c = c + b`
+#: Game.Levels.Addition.L05add_right_comm
+msgid "§0 is a proof that §1. But if your goal\n"
+"is §2 then §3 will not\n"
+"work! Because the goal means §4 so there\n"
+"is no §5 term *directly* in the goal.\n"
+"\n"
+"Use associativity and commutativity to prove §6.\n"
+"You don't need induction. §7 moves brackets around,\n"
+"and §8 moves variables around.\n"
+"\n"
+"Remember that you can do more targeted rewrites by\n"
+"adding explicit variables as inputs to theorems. For example §9\n"
+"will only do rewrites of the form §10, and §11\n"
+"will only do rewrites of the form §12."
+msgstr ""
+
+#: Game.Levels.Power.L10FLT
+msgid "Fermat's Last Theorem"
+msgstr ""
+
+#. §0: `apply`
+#. §1: `P → Q`
+#. §2: `P → Q`
+#. §3: `P`
+#. §4: `Q`
+#. §5: `intro`
+#: Game.Levels.Implication.L06intro
+msgid "We have seen how to §0 theorems and assumptions\n"
+"of the form §1. But what if our *goal* is of the form §2?\n"
+"To prove this goal, we need to know how to say \"let's assume §3 and deduce §4\"\n"
+"in Lean. We do this with the §5 tactic."
+msgstr ""
+
+#. §0: $x$
+#. §1: $x \\le x$
+#: Game.Levels.LessOrEqual.L01le_refl
+#: Game.Levels.LessOrEqual.L02zero_le
+#: Game.Levels.LessOrEqual.L03le_succ_self
+msgid "If §0 is a number, then §1."
+msgstr ""
+
+#. §0: ```
+#. cases x with y
+#. left
+#. rfl
+#. rw [one_eq_succ_zero] at hx ⊢
+#. apply succ_le_succ at hx
+#. apply le_zero at hx
+#. rw [hx]
+#. right
+#. rfl
+#. ```
+#: Game.Levels.LessOrEqual.L10le_one
+msgid "Here's my proof:\n"
+"§0\n"
+"\n"
+"If you solved this level then you should be fine with the next level!"
+msgstr ""
+
+#. §0: `2 = 2`
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "Can you now change the goal into §0?"
+msgstr ""
+
+#: Game.Levels.Power.L09add_sq
+msgid "add_sq"
+msgstr ""
+
+#. §0: `a`
+#. §1: `cases a with b`
+#. §2: `a = 0`
+#. §3: `a = succ b`
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "This is I think the toughest level yet. Tips: if §0 is a number\n"
+"then §1 will split into cases §2 and §3.\n"
+"And don't go left or right until your hypotheses guarantee that\n"
+"you can prove the resulting goal!\n"
+"\n"
+"I've left hidden hints; if you need them, retry from the beginning\n"
+"and click on \"Show more help!\""
+msgstr ""
+
+#. §0: `ℕ`
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "Very well done.\n"
+"\n"
+"A passing mathematician remarks that with you've just proved that §0 is totally\n"
+"ordered.\n"
+"\n"
+"The final few levels in this world are much easier."
+msgstr ""
+
+#. §0: `y`
+#. §1: `add_left_eq_self`
+#. §2: `add_right_cancel`
+#. §3: `</>`
+#. §4: `>_`
+#. §5: ```
+#. nth_rewrite 2 [← zero_add y]
+#. exact add_right_cancel x 0 y
+#. ```
+#: Game.Levels.AdvAddition.L03add_left_eq_self
+msgid "Did you use induction on §0?\n"
+"Here's a two-line proof of §1 which uses §2.\n"
+"If you want to inspect it, you can go into editor mode by clicking §3 in the top right\n"
+"and then just cut and paste the proof and move your cursor around it\n"
+"to see the hypotheses and goal at any given point\n"
+"(although you'll lose your own proof this way). Click §4 to get\n"
+"back to command line mode.\n"
+"§5"
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L05le_zero
+msgid "It's \"intuitively obvious\" that there are no numbers less than zero,\n"
+"but to prove it you will need a result which you showed in advanced\n"
+"addition world."
+msgstr ""
+
+#. §0: `exact h`
+#: Game.Levels.Implication.L04succ_inj
+msgid "And now we've deduced what we wanted to prove: the goal is one of our assumptions.\n"
+"Finish the level with §0."
+msgstr ""
+
+#. §0: `rw [add_zero]`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "And now §0"
+msgstr ""
+
+#. §0: `pow_add a m n`
+#. §1: $a^{m+n}=a^ma^n.$
+#: Game.Levels.Power.L06pow_add
+#: Game.Levels.Power.L07mul_pow
+#: Game.Levels.Power.L08pow_pow
+msgid "§0 is a proof that §1"
+msgstr ""
+
+#: Game.Levels.LessOrEqual
+msgid "≤ World"
+msgstr ""
+
+#. §0: ```
+#. rw [mul_comm, mul_one]
+#. rfl
+#. ```
+#: Game.Levels.Multiplication.L05one_mul
+#: Game.Levels.Multiplication.L06two_mul
+msgid "Here's my solution:\n"
+"§0"
+msgstr ""
+
+#: Game.Levels.Algorithm.L07succ_ne_succ
+msgid "An algorithm for equality"
+msgstr ""
+
+#: Game.Levels.AdvMultiplication.L05le_mul_right
+msgid "le_mul_right"
+msgstr ""
+
+#: Game.Levels.Power
+msgid "Power World"
+msgstr ""
+
+#. §0: ```
+#. nth_rewrite 2 [← mul_one a] at h
+#. exact mul_left_cancel a b 1 ha h
+#. ```
+#: Game.Levels.AdvMultiplication.L10mul_right_eq_self
+msgid "A two-line proof is\n"
+"\n"
+"§0\n"
+"\n"
+"We now have all the tools necessary to set up the basic theory of divisibility of naturals."
+msgstr ""
+
+#: Game.Levels.Multiplication.L06two_mul
+msgid "two_mul"
+msgstr ""
+
+#: Game.Levels.Algorithm.L04add_algo3
+msgid "the simplest approach"
+msgstr ""
+
+#. §0: $P\\implies Q$
+#. §1: $P$
+#. §2: $Q$
+#. §3: `exact`
+#. §4: `exact h`
+#: Game.Levels.Implication.L01exact
+msgid "In this world we'll learn how to prove theorems of the form §0.\n"
+"In other words, how to prove theorems of the form \"if §1 is true, then §2 is true.\"\n"
+"To do that we need to learn some more tactics.\n"
+"\n"
+"The §3 tactic can be used to close a goal which is exactly one of\n"
+"the hypotheses. It takes the name of the hypothesis as argument: §4."
+msgstr ""
+
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "So that's the algorithm: now let's use automation to perform it\n"
+"automatically."
+msgstr ""
+
+#. §0: `x + y = 0 → x = 0`
+#. §1: `x + y = x → y = 0`
+#. §2: `x * y = 1 → x = 1`
+#. §3: `x * y = x → y = 1`
+#. §4: `x ≠ 0`
+#: Game.Levels.AdvMultiplication
+msgid "Advanced *Addition* World proved various implications\n"
+"involving addition, such as §0 and §1.\n"
+"These lemmas were used to prove basic facts about ≤ in ≤ World.\n"
+"\n"
+"In Advanced Multiplication World we prove analogous\n"
+"facts about multiplication, such as §2, and\n"
+"§3 (assuming §4 in the latter result). This will prepare\n"
+"us for Divisibility World.\n"
+"\n"
+"Multiplication World is more complex than Addition World. In the same\n"
+"way, Advanced Multiplication world is more complex than Advanced Addition\n"
+"World. One reason for this is that certain intermediate results are only\n"
+"true under the additional hypothesis that one of the variables is non-zero.\n"
+"This causes some unexpected extra twists."
+msgstr ""
+
+#. §0: `simp only [add_left_comm, add_comm]`
+#: Game.Levels.Algorithm.L03add_algo2
+msgid "Solve this level in one line with §0"
+msgstr ""
+
+#. §0: `succ_inj`
+#. §1: $0$
+#: Game.Levels.Algorithm.L05pred
+msgid "Nice! You've proved §0!\n"
+"Let's now prove Peano's other axiom, that successors can't be §1."
+msgstr ""
+
+#. §0: $a$
+#. §1: $\\operatorname{succ}(a) = a+1$
+#: Game.Levels.Tutorial.L07add_succ
+#: Game.Levels.Addition.L01zero_add
+#: Game.Levels.Multiplication.L02zero_mul
+msgid "For all natural numbers §0, we have §1."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+msgid "Well done!"
+msgstr ""
+
+#: Game.Levels.Tutorial.L06add_zero2
+msgid "Precision rewriting"
+msgstr ""
+
+#. §0: $a(b+c)=ab+ac$
+#. §1: $(b+c)a=ba+ca$
+#. §2: `mul_add a b c`
+#. §3: `a * (b + c) = a * b + a * c`
+#: Game.Levels.Multiplication.L07mul_add
+msgid "Our next goal is \"left and right distributivity\",\n"
+"meaning §0 and §1. Rather than\n"
+"these slightly pompous names, the name of the proofs\n"
+"in Lean are descriptive. Let's start with\n"
+"§2, the proof of §3.\n"
+"Note that the left hand side contains a multiplication\n"
+"and then an addition."
+msgstr ""
+
+#. §0: `xyzzy`
+#. §1: `sorry`
+#. §2: `xyzzy`
+#: Game.Levels.Power.L10FLT
+msgid "§0 is an ancient magic spell, believed to be the origin of the\n"
+"modern word §1. The game won't complain - or notice - if you\n"
+"prove anything with §2."
+msgstr ""
+
+#. §0: `0 ^ 0 = 0`
+#. §1: `0 ^ 0 = 1`
+#: Game.Levels.Power.L01zero_pow_zero
+msgid "Mathematicians sometimes argue that §0 is also\n"
+"a good convention. But it is not a good convention in this\n"
+"game; all the later levels come out beautifully with the\n"
+"convention that §1."
+msgstr ""
+
+#. §0: ```
+#. cases h with d hd
+#. use d * t
+#. rw [hd, add_mul]
+#. rfl
+#. ```
+#: Game.Levels.AdvMultiplication.L01mul_le_mul_right
+msgid "My proof:\n"
+"§0"
+msgstr ""
+
+#: Game.Levels.Multiplication.L06two_mul
+msgid "This level is more important than you think; it plays\n"
+"a useful role when battling a big boss later on."
+msgstr ""
+
+#. §0: `Add a b`
+#. §1: `a + b`
+#. §2: `add_zero a : a + 0 = a`
+#. §3: `add_succ a b : a + succ b = succ (a + b)`
+#. §4: `zero_add a : 0 + a = a`
+#: Game.Levels.Tutorial.L05add_zero
+msgid "§0, with notation §1, is\n"
+"the usual sum of natural numbers. Internally it is defined\n"
+"via the following two hypotheses:\n"
+"\n"
+"* §2\n"
+"\n"
+"* §3\n"
+"\n"
+"Other theorems about naturals, such as §4, are proved\n"
+"by induction using these two basic theorems."
+msgstr ""
+
+#. §0: `cases h2 with h0 h1`
+#: Game.Levels.AdvMultiplication.L06mul_right_eq_one
+msgid "Now §0 and deal with the two\n"
+"cases separately."
+msgstr ""
+
+#: Game.Levels.Power.L08pow_pow
+msgid "The music dies down. Is that it?\n"
+"\n"
+"Course it isn't, you can\n"
+"clearly see that there are two levels left.\n"
+"\n"
+"A passing mathematician says that mathematicians don't have a name\n"
+"for the structure you just constructed. You feel cheated.\n"
+"\n"
+"Suddenly the music starts up again. This really is the final boss."
+msgstr ""
+
+#. §0: `le_one x`
+#. §1: `x ≤ 1`
+#. §2: `x = 0`
+#. §3: `x = 1`
+#: Game.Levels.LessOrEqual.L10le_one
+#: Game.Levels.AdvMultiplication.L08mul_eq_zero
+msgid "§0 is a proof that if §1 then §2 or §3."
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "Tutorial World"
+msgstr ""
+
+#. §0: `rw [one_eq_succ_zero]`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "§0 will do this."
+msgstr ""
+
+#. §0: `x ≤ 0`
+#. §1: `x = 0`
+#. §2: `≤ 1`
+#. §3: `≤ 2`
+#: Game.Levels.LessOrEqual.L09succ_le_succ
+msgid "We've proved that §0 implies §1. The last two levels\n"
+"in this world will prove which numbers are §2 and §3.\n"
+"This lemma will be helpful for them."
+msgstr ""
+
+#. §0: `cases «{e}» with a`
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "You still don't know which way to go, so do §0."
+msgstr ""
+
+#: Game.Levels.AdvMultiplication
+msgid "Advanced Multiplication World"
+msgstr ""
+
+#. §0: `a = 0`
+#. §1: `x + a = x`
+#: Game.Levels.Addition.L05add_right_comm
+msgid "You've now seen all the tactics you need to beat the final boss of the game.\n"
+"You can begin the journey towards this boss by entering Multiplication World.\n"
+"\n"
+"Or you can go off the beaten track and learn some new tactics in Implication\n"
+"World. These tactics let you prove more facts about addition, such as\n"
+"how to deduce §0 from §1.\n"
+"\n"
+"Click \"Home\" and make your choice."
+msgstr ""
+
+#. §0: $2$
+#. §1: $0$
+#: Game.Levels.Tutorial.L03two_eq_ss0
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "§0 is the number after the number after §1."
+msgstr ""
+
+#. §0: `2 + 2 = 4`
+#: Game.Levels.Tutorial.L02rw
+msgid "You now know enough tactics to prove §0! Let's begin the journey."
+msgstr ""
+
+#. §0: `succ_mul a b`
+#. §1: `succ a * b = a * b + b`
+#. §2: `mul_succ`
+#. §3: `mul_comm`
+#. §4: `mul_comm`
+#. §5: `mul_succ`
+#: Game.Levels.Multiplication.L03succ_mul
+msgid "§0 is the proof that §1.\n"
+"\n"
+"It could be deduced from §2 and §3, however this argument\n"
+"would be circular because the proof of §4 uses §5."
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#. §0: `a * b`
+#. §1: `rw [mul_comm]`
+#. §2: `rw`
+#: Game.Levels.Power.L07mul_pow
+msgid "The music gets ever more dramatic, as we explore\n"
+"the interplay between exponentiation and multiplication.\n"
+"\n"
+"If you're having trouble exchanging the right §0\n"
+"because §1 swaps the wrong multiplication,\n"
+"then read the documentation of §2 for tips on how to fix this."
+msgstr ""
+
+#. §0: `le_total x y`
+#. §1: `x ≤ y`
+#. §2: `y ≤ x`
+#: Game.Levels.LessOrEqual.L08le_total
+msgid "§0 is a proof that §1 or §2."
+msgstr ""
+
+#. §0: `ha : 0 ≠ 0`
+#. §1: `tauto`
+#: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
+msgid "In the \"base case\" we have a hypothesis §0, and you can deduce anything\n"
+"from a false statement. The §1 tactic will close this goal."
+msgstr ""
+
+#: Game.Levels.Tutorial.L07add_succ
+msgid "add_succ"
+msgstr ""
+
+#: Game.Levels.Power.L03pow_one
+msgid "pow_one"
+msgstr ""
+
+#. §0: ```
+#. intro h
+#. rw [add_succ, add_succ, add_zero] at h
+#. repeat apply succ_inj at h
+#. apply zero_ne_succ at h
+#. exact h
+#. ```
+#. §1: $20 + 20 ≠ 41$
+#: Game.Levels.Implication.L11two_add_two_ne_five
+msgid "Here's my proof:\n"
+"§0\n"
+"\n"
+"Even though Lean is a theorem prover, right now it's pretty clear that we have not\n"
+"developed enough material to make it an adequate calculator. In Algorithm\n"
+"World, a more computer-sciency world, we will develop machinery which makes\n"
+"questions like this much easier, and goals like §1 feasible.\n"
+"Alternatively you can do more mathematics in Advanced Addition World, where we prove\n"
+"the lemmas needed to get a working theory of inequalities. Click \"Home\" and\n"
+"decide your route."
+msgstr ""
+
+#. §0: `rw [two_eq_succ_one, one_eq_succ_zero]`
+#. §1: `rfl`
+#: Game.Levels.Tutorial.L03two_eq_ss0
+msgid "Note that you can do §0\n"
+"and then §1 to solve this level in two lines."
+msgstr ""
+
+#: Game.Levels.AdvAddition.L05add_right_eq_zero
+msgid "add_right_eq_zero"
+msgstr ""
+
+#: Game.Levels.Tutorial.L05add_zero
+msgid "Adding zero"
+msgstr ""
+
+#: Game.Levels.Addition.L03add_comm
+msgid "[boss battle music]\n"
+"\n"
+"Look in your inventory to see the proofs you have available.\n"
+"These should be enough."
+msgstr ""
+
+#. §0: $a, b$
+#. §1: $c$
+#. §2: $d$
+#. §3: $(a + b) + (c + d) = ((a + c) + d) + b.$
+#: Game.Levels.Algorithm.L02add_algo1
+msgid "If §0, §1 and §2 are numbers, we have\n"
+"§3"
+msgstr ""
+
+#. §0: `a ≠ 0`
+#. §1: `b ≠ 0`
+#. §2: `a * b ≠ 0`
+#. §3: `a`
+#. §4: `b`
+#. §5: `succ`
+#. §6: `a * b`
+#. §7: `succ`
+#. §8: `apply zero_ne_succ`
+#: Game.Levels.AdvMultiplication.L07mul_ne_zero
+msgid "This level proves that if §0 and §1 then §2. One strategy\n"
+"is to write both §3 and §4 as §5 of something, deduce that §6 is\n"
+"also §7 of something, and then §8."
+msgstr ""
+
+#: Game.Levels.Power.L02zero_pow_succ
+msgid "zero_pow_succ"
+msgstr ""
+
+#: Game.Levels.LessOrEqual.L07or_symm
+msgid "Ready for the boss level of this world?"
+msgstr ""
+
+#. §0: `mul_add a b c`
+#. §1: `a * (b + c) = a * b + a * c`
+#: Game.Levels.Multiplication.L07mul_add
+msgid "Multiplication distributes\n"
+"over addition on the left.\n"
+"\n"
+"§0 is the proof that §1."
+msgstr ""
+
+#: Game.Levels.Algorithm
+msgid "Algorithm World"
+msgstr ""
+
+#. §0: `add_succ a b`
+#. §1: `a + succ b = succ (a + b)`
+#: Game.Levels.Tutorial.L07add_succ
+msgid "§0 is the proof of §1."
+msgstr ""
+
+#: Game.Levels.Power.L10FLT
+msgid "Congratulations! You have proved Fermat's Last Theorem!\n"
+"\n"
+"Either that, or you used magic..."
+msgstr ""
+
+#. §0: `mul_comm`
+#. §1: `mul_comm a b`
+#. §2: `a * b = b * a`
+#: Game.Levels.Multiplication.L04mul_comm
+msgid "§0 is the proof that multiplication is commutative. More precisely,\n"
+"§1 is the proof that §2."
+msgstr ""
+
+#: Game.Levels.Tutorial.L04rw_backwards
+msgid "rewriting backwards"
+msgstr ""
+
+#. §0: `use`
+#. §1: `x`
+#. §2: `x = 37`
+#. §3: `use 37`
+#. §4: `a ≤ b`
+#. §5: `c`
+#. §6: `b = a + c`
+#. §7: `a ≤ b`
+#. §8: `use`
+#. §9: `b - a`
+#. §10: `use b - a`
+#. §11: `use`
+#. §12: `use 37`
+#. §13: `use a`
+#. §14: `use a * a + 1`
+#: Game.Levels.LessOrEqual.L01le_refl
+msgid "## Summary\n"
+"\n"
+"The §0 tactic makes progress with goals which claim something *exists*.\n"
+"If the goal claims that some §1 exists with some property, and you know\n"
+"that §2 will work, then §3 will make progress.\n"
+"\n"
+"Because §4 is notation for \\\\\"there exists §5 such that §6\\\\\",\n"
+"you can make progress on goals of the form §7 by §8ing the\n"
+"number which is morally §9 (i.e. §10)\n"
+"\n"
+"Any of the following examples is possible assuming the type of the argument passed to the §11 function is accurate:\n"
+"\n"
+"- §12\n"
+"- §13\n"
+"- §14"
+msgstr ""
+
+#. §0: `x + y = y + x`
+#. §1: `add_comm`
+#. §2: `add_zero`
+#. §3: `zero_add`
+#. §4: `add_comm`
+#. §5: `x + y = y + x`
+#: Game.Levels.Addition.L01zero_add
+msgid "This lemma would have been easy if we had known that §0. That theorem\n"
+"  is called §1 and it is *true*, but unfortunately its proof *uses* both\n"
+"  §2 and §3!\n"
+"\n"
+"  Let's continue on our journey to §4, the proof of §5."
+msgstr ""
