@@ -16,14 +16,14 @@ tactic.hygienic = false
 trace.debug = true
 
 [[require]]
-name = "mathlib"
-scope = "leanprover-community"
-rev = "v4.23.0"
-
-[[require]]
 name = "GameServer"
 scope = "leanprover-community"
-source = { type = "git", url = "https://github.com/leanprover-community/lean4game", subDir = "server", rev = "v4.23.0" }
+source = { type = "git", url = "https://github.com/leanprover-community/lean4game", subDir = "server", rev = "v4.28.0" }
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.28.0"
 
 [[lean_lib]]
 name = "Game"
