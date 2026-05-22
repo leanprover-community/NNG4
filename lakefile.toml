@@ -16,14 +16,20 @@ tactic.hygienic = false
 trace.debug = true
 
 [[require]]
-name = "GameServer"
-scope = "leanprover-community"
-source = { type = "git", url = "https://github.com/leanprover-community/lean4game", subDir = "server", rev = "v4.28.0" }
-
-[[require]]
 name = "mathlib"
 scope = "leanprover-community"
-rev = "v4.28.0"
+rev = "73ff1bf4b25fb7ed4b2413eed2f991aa0794dc3f"
+
+[[require]]
+name = "I18n"
+scope = "hhu-adam"
+rev = "main"
+
+[[require]]
+name = "GameServer"
+scope = "leanprover-community"
+source = { type = "git", url = "https://github.com/leanprover-community/lean4game", subDir = "server", rev = "master" }
+
 
 [[lean_lib]]
 name = "Game"
