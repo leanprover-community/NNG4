@@ -763,8 +763,8 @@ msgid "add_left_comm"
 msgstr "add_left_comm"
 
 #: Game.Levels.Tutorial.L03two_eq_ss0
-msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`.\""
-msgstr "`one_eq_succ_zero` è la dimostrazione di `1 = succ 0`.\""
+msgid "`one_eq_succ_zero` is a proof of `1 = succ 0`."
+msgstr "`one_eq_succ_zero` è la dimostrazione di `1 = succ 0`."
 
 #: Game.Levels.Power.L02zero_pow_succ
 msgid ""
@@ -1655,15 +1655,15 @@ msgstr ""
 
 #: Game.Levels.Addition.L01zero_add
 msgid ""
-"`zero_add x` is the proof of `0 + x = x`.\n"
+"`zero_add n` is the proof of `0 + n = n`.\n"
 "\n"
-"`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`\n"
+"`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`\n"
 "is almost always what you want to do if you're simplifying an expression."
 msgstr ""
-"`zero_add x` è la dimostrazione di `0 + x = x`.\n"
+"`zero_add n` è la dimostrazione di `0 + n = n`.\n"
 "\n"
 "`zero_add` è un lemma del tipo `simp` (semplificazione), infatti sostituire "
-"`0 + x` con `x`\n"
+"`0 + n` con `n`\n"
 "è quasi sempre uno dei passi più ovvi della semplificazione di "
 "un'espressione."
 
@@ -4989,7 +4989,7 @@ msgid ""
 "* `add_succ a b : a + succ b = succ (a + b)`\n"
 "\n"
 "Other theorems about naturals, such as `zero_add a : 0 + a = a`, are proved\n"
-"by induction using these two basic theorems.\""
+"by induction using these two basic theorems."
 msgstr ""
 "`Add a b`, con la notazione `a + b`, è\n"
 "l'operazione di addizione sui numeri naturali. Dentro Lean è definita\n"
@@ -5001,7 +5001,7 @@ msgstr ""
 "\n"
 "Gli altri teoremi sui numeri naturali e l'addizione, come `zero_add a : 0 + "
 "a = a`, si dimostrano\n"
-"per induzione usando questi due teoremi fondamentali.\""
+"per induzione usando questi due teoremi fondamentali."
 
 #: Game.Levels.Implication.L10one_ne_zero
 msgid "1 ≠ 0"
@@ -5049,8 +5049,8 @@ msgid "Multiplication is commutative."
 msgstr "La moltiplicazione è commutativa."
 
 #: Game.Levels.Addition.L03add_comm
-msgid "`add_comm x y` is a proof of `x + y = y + x`."
-msgstr "`add_comm x y` è la dimostrazione di `x + y = y + x`."
+msgid "`add_comm a b` is a proof of `a + b = b + a`."
+msgstr "`add_comm a b` è la dimostrazione di `a + b = b + a`."
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
@@ -5720,11 +5720,11 @@ msgstr "livello completato! 🎉"
 
 #: Game.Levels.Multiplication.L02zero_mul
 msgid ""
-"`zero_mul x` is the proof that `0 * x = 0`.\n"
+"`zero_mul m` is the proof that `0 * m = 0`.\n"
 "\n"
 "Note: `zero_mul` is a `simp` lemma."
 msgstr ""
-"`zero_mul x` è la dimostrazione di `0 * x = 0`.\n"
+"`zero_mul m` è la dimostrazione di `0 * m = 0`.\n"
 "\n"
 "NB: `zero_mul` è un lemma di semplificazione (`simp`)."
 

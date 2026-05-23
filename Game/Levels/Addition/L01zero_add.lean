@@ -34,9 +34,9 @@ back to \"Typewriter mode\" by clicking the `>_` button in the top right.)
 "
 
 /--
-`zero_add x` is the proof of `0 + x = x`.
+`zero_add n` is the proof of `0 + n = n`.
 
-`zero_add` is a `simp` lemma, because replacing `0 + x` by `x`
+`zero_add` is a `simp` lemma, because replacing `0 + n` by `n`
 is almost always what you want to do if you're simplifying an expression.
 -/
 TheoremDoc MyNat.zero_add as "zero_add" in "+"

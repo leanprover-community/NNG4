@@ -16,7 +16,7 @@ start with this.
 "
 
 /--
-`zero_mul x` is the proof that `0 * x = 0`.
+`zero_mul m` is the proof that `0 * m = 0`.
 
 Note: `zero_mul` is a `simp` lemma.
 -/

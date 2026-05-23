@@ -1017,7 +1017,7 @@ msgid "§0, with notation §1, is\n"
 "* §3\n"
 "\n"
 "Other theorems about naturals, such as §4, are proved\n"
-"by induction using these two basic theorems.\""
+"by induction using these two basic theorems."
 msgstr ""
 
 #. §0: $x+1=4$
