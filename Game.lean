@@ -110,5 +110,9 @@ learning the basics about theorem proving in Lean.
 This is a good first introduction to Lean!"
 CoverImage "images/cover.png"
 
+Settings
+  -- do not display bundled `A B : Prop`.
+  (unbundleHyps := true)
+
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame
