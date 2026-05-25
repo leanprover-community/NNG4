@@ -1,0 +1,30 @@
+name = "NNG4"
+description = "Natural Number Game"
+license = "Apache-2.0"
+licenseFiles = ["LICENSE"]
+
+defaultTargets = ["Game"]
+
+[leanOptions]
+# linter warnings might block the player. (IMPORTANT)
+linter.all = false
+# make all assumptions always accessible.
+tactic.hygienic = false
+
+[moreServerOptions]
+# TODO: replace with `lean4game.verbose`
+trace.debug = true
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[require]]
+name = "GameServer"
+scope = "leanprover-community"
+source = { type = "git", url = "https://github.com/leanprover-community/lean4game", subDir = "server", rev = "main" }
+
+[[lean_lib]]
+name = "Game"
+# TODO: replace with `lean4game.verbose`
+moreLeanArgs = ["-Dtrace.debug=false"]
