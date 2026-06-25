@@ -18,7 +18,7 @@ Statement (x y : ℕ) (h : 0 + x = 0 + y + 2) : x = y + 2 := by
 
   `rw [zero_add] at {h}` tries to fill in
   the arguments to `zero_add` (finding `{x}`) then it replaces all occurrences of
-  `0 + {x}` it finds. Therefor, it did not rewrite `0 + {y}`, yet."
+  `0 + {x}` it finds. Therefore, it did not rewrite `0 + {y}`, yet."
   rw [zero_add] at h
   Hint "Now you could finish with `rw [{h}]` then `rfl`, but `exact {h}`
   does it in one line."

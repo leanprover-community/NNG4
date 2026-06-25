@@ -42,7 +42,7 @@ Statement
     -- defeq option in hints would help
     Hint "Now you have to prove `False`. I guess that means you must be proving something by
     contradiction. Or are you?"
-    Hint (hidden := true) "If you `apply {h}` the `False` magically dissappears again. Can you make
+    Hint (hidden := true) "If you `apply {h}` the `False` magically disappears again. Can you make
     mathematical sense of these two steps?"
     apply h
     apply f
@@ -57,7 +57,7 @@ Statement
   Hint "If you're stuck, you could do `rw [Not] at {h}`. Maybe that helps."
   Branch
     rw [Not] at h
-    Hint "If you `apply {h}` the `False` magically dissappears again. Can you make
+    Hint "If you `apply {h}` the `False` magically disappears again. Can you make
     mathematical sense of these two steps?"
   apply h
   apply f

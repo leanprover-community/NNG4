@@ -76,7 +76,7 @@ and this proof of `succ_inj` will only use `pred` on
 positive naturals, just like today's cultured mathematician
 never divides by zero.
 
-We need to learn how to deal wiht a goal of the form `P → Q`
+We need to learn how to deal with a goal of the form `P → Q`
 
 -/
 
@@ -128,7 +128,7 @@ unsafe def collatz : ℕ → ℕ
 --  sorry
 
 Here is a crank proof I was sent of the 3n+1
-problem. Explanaiton of problem. Proof: By induction.
+problem. Explanation of problem. Proof: By induction.
 Define f(1)=stop.
 Got to prove that for all n, it terminates.
 

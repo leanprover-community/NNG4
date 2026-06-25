@@ -53,7 +53,7 @@ Statement
 
   Note that while in mathematics you might write $h(p)$, in Lean you always avoid brackets
   for function application: `h p`. Brackets are only used for grouping elements, for
-  example for repeated funciton application, you could write `g (h p)`.
+  example for repeated function application, you could write `g (h p)`.
   "
   Hint (hidden := true) "
   **Important note**: Note that `exact h P,` won't work (with a capital $P$);
