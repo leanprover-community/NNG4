@@ -8,7 +8,7 @@ namespace MyNat
 
 Introduction
 "
-To solve this level, you need to `use x` such that `x = 0 + x`.
+To solve this level, you need to `use` something such that `x = 0 + _`.
 "
 
 /-- `zero_le x` is a proof that `0 ≤ x`. -/
