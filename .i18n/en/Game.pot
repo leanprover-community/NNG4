@@ -4102,7 +4102,7 @@ msgid "In this level the *goal* is §0 but to help us we\n"
 "assumption, rather like §5 is a secret number.\n"
 "\n"
 "Before we can use §6, we have to \"substitute in for §7\".\n"
-"We do this in Lean by *rewriting* the proof §8,\n"
+"We do this in Lean by *rewriting* the goal with §8,\n"
 "using the §9 tactic."
 msgstr ""
 
