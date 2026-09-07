@@ -332,7 +332,7 @@ msgstr ""
 "O objetivo é provar o teorema aplicando táticas\n"
 "na ordem certa.\n"
 "\n"
-"Vamos aprender algumas táticas básicas. Clique em \"Start\" abaixo\n"
+"Vamos aprender algumas táticas básicas. Clique em \"Começar\" abaixo\n"
 "para começar sua jornada."
 
 #: Game.Levels.AdvAddition.L02add_left_cancel
@@ -614,7 +614,6 @@ msgstr "Mundo da Adição"
 #. §22: `rw`
 #. §23: `add_zero`
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -676,7 +675,6 @@ msgstr "Agora faça §0 para cancelar os §1."
 #. §3: `rfl`
 #. §4: `induction`
 #: Game.Levels.Addition
-#, fuzzy
 msgid ""
 "Welcome to Addition World! In this world we'll learn the §0 tactic.\n"
 "This will enable us to defeat the boss level of this world, namely §1.\n"
@@ -690,7 +688,7 @@ msgid ""
 "the game)."
 msgstr ""
 "Bem-vindo ao Mundo da Adição! Neste mundo vamos aprender a tática §0.\n"
-"Isso vai nos permitir derrotar o nível chefão deste mundo, a saber, §1.\n"
+"Isso vai nos permitir derrotar o chefão deste mundo, a saber, §1.\n"
 "\n"
 "As táticas §2, §3 e §4 são as únicas de que você vai precisar para\n"
 "vencer todos os níveis do Mundo da Adição, do Mundo da Multiplicação e do Mundo da Potência.\n"
@@ -710,7 +708,6 @@ msgstr ""
 #. §7: `d`
 #. §8: `add_left_comm`
 #: Game.Levels.Algorithm.L02add_algo1
-#, fuzzy
 msgid ""
 "In some later worlds, we're going to see some much nastier levels,\n"
 "like §0.\n"
@@ -751,7 +748,6 @@ msgstr "add_left_comm"
 #. §10: `h`
 #. §11: `5 ≠ 2 + 2`
 #: Game.Levels.Implication.L10one_ne_zero
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -822,7 +818,6 @@ msgstr "O objetivo deste nível é uma das nossas hipóteses. Resolva o objetivo
 #. §14: `cases h`
 #. §15: `False`
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-#, fuzzy
 msgid ""
 "The next result we'll need in §0 World is that if §1 then §2 and §3.\n"
 "Let's prove one of these facts in this level, and the other in the next.\n"
@@ -965,7 +960,6 @@ msgstr "Se §0 e §1 então podemos deduzir uma contradição."
 #. §20: `add_zero x : x + 0 = x`
 #. §21: `proof : statement`
 #: Game.Levels.Tutorial.L05add_zero
-#, fuzzy
 msgid ""
 "We'd like to prove §0 but right now\n"
 "we can't even *state* it\n"
@@ -1011,7 +1005,7 @@ msgstr ""
 "§16 é uma prova de §17, e §18 é uma prova\n"
 "de §19.\n"
 "\n"
-"Escrevemos §20, ou seja, §21."
+"Escrevemos §20, ou seja, `prova : enunciado`."
 
 #. §0: `t = 0`
 #: Game.Levels.AdvMultiplication.L01mul_le_mul_right
@@ -1183,7 +1177,6 @@ msgstr ""
 #. §10: `b = c`
 #. §11: `c`
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
-#, fuzzy
 msgid ""
 "In this level we prove that if §0 and §1 then §2. It is tricky, for\n"
 "several reasons. One of these is that\n"
@@ -1198,7 +1191,7 @@ msgid ""
 "\"for all §8, if §9 then §10\". This *can* be proved by induction,\n"
 "because we now have the flexibility to change §11."
 msgstr ""
-"Neste nível provamos que se §0 e §1 então §2. É complicado, por\n"
+"Neste nível provamos que se §0 e §1, então §2. É complicado, por\n"
 "várias razões. Uma delas é que\n"
 "precisamos introduzir uma ideia nova: vamos precisar entender um pouco melhor\n"
 "o conceito de indução matemática.\n"
@@ -1319,7 +1312,6 @@ msgstr ""
 #. §24: `a ≠ b`
 #. §25: `succ a ≠ succ b`
 #: Game.Levels.Algorithm.L07succ_ne_succ
-#, fuzzy
 msgid ""
 "Here we begin to\n"
 "develop an algorithm which, given two naturals §0 and §1, returns the answer\n"
@@ -1470,7 +1462,6 @@ msgstr "Se §0 então §1."
 #. §5: $(x+y)+z$
 #. §6: $x+(y+z)$
 #: Game.Levels.Addition.L04add_assoc
-#, fuzzy
 msgid ""
 "We've been adding up two numbers; in this level we will add up three.\n"
 "\n"
@@ -1570,7 +1561,6 @@ msgstr "praticando intro"
 #. §9: `hd : 0 + d = d`
 #. §10: `0 + succ d = succ d`
 #: Game.Levels.Addition.L01zero_add
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -1727,7 +1717,6 @@ msgstr "Agora termine usando a tática §0."
 #. §4: `pow_zero (a : ℕ) : a ^ 0 = 1`
 #. §5: `pow_succ (a b : ℕ) : a ^ succ b = a ^ b * a`
 #: Game.Levels.Power
-#, fuzzy
 msgid ""
 "This world introduces exponentiation. If you want to define §0\n"
 "then, as always, you will need to know what §1 is, and\n"
@@ -1754,7 +1743,7 @@ msgstr ""
 "  * §4\n"
 "  * §5\n"
 "\n"
-"Usando apenas esses, você consegue passar do nível chefão final?\n"
+"Usando apenas esses, você consegue passar do chefão final?\n"
 "\n"
 "Os níveis deste mundo foram criados por Sian Carey, estudante de UROP\n"
 "no Imperial College London, financiada por uma Mary Lister McCammon Fellowship\n"
@@ -1905,7 +1894,6 @@ msgstr "Demos uma prova bem insatisfatória de §0 lá atrás; agora dê uma mai
 #. §0: $n = 0$
 #. §1: `X = Y`
 #: Game.Levels.Addition.L01zero_add
-#, fuzzy
 msgid ""
 "Now you have two goals. Once you proved the first, you will jump to the second one.\n"
 "This first goal is the base case §0.\n"
@@ -2180,7 +2168,6 @@ msgstr "Para quaisquer naturais §0, §1."
 #. §4: `a = b`
 #. §5: `a ≠ b`
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -2232,7 +2219,6 @@ msgstr ""
 #. §13: `rw [two_eq_succ_one]`
 #. §14: `succ 1 + succ 1 = 4`
 #: Game.Levels.Tutorial.L02rw
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -2388,7 +2374,6 @@ msgstr "Se §0 e §1 são números, então §2 ou §3."
 #. §5: `c`
 #. §6: `b = a + c`
 #: Game.Levels.LessOrEqual
-#, fuzzy
 msgid ""
 "In this world we define §0 and prove standard facts\n"
 "about it, such as \"if §1 and §2 then §3.\"\n"
@@ -2408,7 +2393,7 @@ msgstr ""
 "uma tática para provar teoremas de \"existe\", e outra\n"
 "para usar hipóteses de \"existe\".\n"
 "\n"
-"Clique em \"Start\" para prosseguir."
+"Clique em \"Começar\" para prosseguir."
 
 #: Game
 msgid ""
@@ -2524,7 +2509,6 @@ msgstr "Para quaisquer naturais §0, §1, §2, temos §3."
 #. §2: `>_`
 #. §3: `induction`
 #: Game.Levels.Tutorial.L08twoaddtwo
-#, fuzzy
 msgid ""
 "Here is an example proof of 2+2=4 showing off various techniques.\n"
 "\n"
@@ -2547,15 +2531,15 @@ msgstr ""
 "\n"
 "§0\n"
 "\n"
-"Extra opcional: você pode rodar essa prova você mesmo. Mude o jogo para o \"Editor mode\" clicando\n"
+"Extra opcional: você pode rodar essa prova você mesmo. Mude o jogo para o \"Modo editor\" clicando\n"
 "no botão §1 no canto superior direito. Agora você pode ver sua prova\n"
 "escrita como várias linhas de código. Mova o cursor entre as linhas para ver\n"
 "o estado do objetivo em qualquer ponto. Agora recorte e cole seu código em outro lugar se\n"
 "quiser salvá-lo, e cole a prova acima no lugar. Mova o cursor\n"
 "para investigar. Quando terminar, clique no botão §2 no canto superior direito para\n"
-"voltar ao \"Typewriter mode\".\n"
+"voltar ao \"Modo máquina de escrever\".\n"
 "\n"
-"Você terminou o mundo do tutorial!\n"
+"Você terminou o mundo tutorial!\n"
 "Clique em \"Leave World\" para voltar ao\n"
 "mapa geral, e selecione o Mundo da Adição, onde você vai aprender\n"
 "sobre a tática §3."
@@ -2588,7 +2572,6 @@ msgstr ""
 #. §13: `two_eq_succ_one`
 #. §14: $2$
 #: Game.Levels.Tutorial.L03two_eq_ss0
-#, fuzzy
 msgid ""
 "## The birth of number.\n"
 "\n"
@@ -2709,7 +2692,7 @@ msgstr ""
 "Provas como §0 e §1 são bem tediosas de fazer na mão.\n"
 "No Mundo dos Algoritmos aprendemos como fazer o computador fazê-las por nós.\n"
 "\n"
-"Clique em \"Start\" para continuar."
+"Clique em \"Começar\" para continuar."
 
 #: Game.Levels.Implication.L02exact2
 msgid ""
@@ -2902,7 +2885,6 @@ msgstr ""
 #. §85: `Y`
 #. §86: `nth_rewrite 37 [h]`
 #: Game.Levels.Tutorial.L02rw
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -3009,7 +2991,7 @@ msgstr ""
 "* §11 (troca §12 por §13 na hipótese §14)\n"
 "\n"
 "* §15 (troca §16 por §17 em duas hipóteses e no objetivo;\n"
-"obtenha o símbolo §18 com §19.)\n"
+"consiga o símbolo §18 com §19.)\n"
 "\n"
 "* §20 vai continuar trocando §21 por §22\n"
 "até não haver mais ocorrências de §23.\n"
@@ -3119,7 +3101,6 @@ msgstr ""
 #. ```
 #. §1: `decide`
 #: Game.Levels.Algorithm.L08decide
-#, fuzzy
 msgid ""
 "Implementing the algorithm for equality of naturals, and the proof that it is correct,\n"
 "looks like this:\n"
@@ -3155,7 +3136,6 @@ msgstr ""
 #. §11: `h`
 #. §12: $x=y$
 #: Game.Levels.Implication.L06intro
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -3215,7 +3195,7 @@ msgstr ""
 "provados neste mundo serão usados para construir\n"
 "uma teoria de desigualdades no Mundo do §1.\n"
 "\n"
-"Clique em \"Start\" para continuar."
+"Clique em \"Começar\" para continuar."
 
 #. §0: `tauto`
 #. §1: `tauto`
@@ -3253,7 +3233,6 @@ msgstr ""
 #. §33: `tauto`
 #. §34: `tauto`
 #: Game.Levels.AdvMultiplication.L03eq_succ_of_ne_zero
-#, fuzzy
 msgid ""
 "# Summary\n"
 "\n"
@@ -3443,7 +3422,6 @@ msgstr "Se §0 e sabemos que §1 então podemos deduzir §2."
 #. §18: `zero_add`
 #. §19: `add_zero`
 #: Game.Levels.Tutorial.L01rfl
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -3499,9 +3477,9 @@ msgstr ""
 "\n"
 "§15 é abreviação de \\\"reflexividade da igualdade\\\".\n"
 "\n"
-"## Implementação do jogo\n"
+"## Implementação no jogo\n"
 "\n"
-"*Note que nosso §16 é mais fraco que a versão usada no núcleo do Lean e no §17,\n"
+"*Note que nosso §16 é mais fraco que a versão usada no núcleo do Lean e na §17,\n"
 "por motivos pedagógicos; matemáticos não distinguem entre igualdade proposicional\n"
 "e definicional porque pensam sobre definições de um jeito diferente dos\n"
 "teóricos de tipos (§18 e §19 são ambos \\\"fatos\\\" no que diz respeito\n"
@@ -3779,7 +3757,6 @@ msgstr ""
 #. §23: `a ≤ b`
 #. §24: `∃ c, b = a + c`
 #: Game.Levels.AdvAddition.L05add_right_eq_zero
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -4009,7 +3986,6 @@ msgstr "Agora você precisa descobrir qual número usar no §0. Veja se você co
 #. §26: `apply succ_inj`
 #. §27: `succ (a * b) = succ 7`
 #: Game.Levels.Implication.L03apply
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
@@ -4677,7 +4653,6 @@ msgstr "§0."
 #. §6: `x > 0`
 #. §7: `a + 1`
 #: Game.Levels.Power.L10FLT
-#, fuzzy
 msgid ""
 "We now have enough to state a mathematically accurate, but slightly\n"
 "clunky, version of Fermat's Last Theorem.\n"
@@ -5172,7 +5147,7 @@ msgstr ""
 "Também vamos aprender dois novos fatos fundamentais sobre\n"
 "os números naturais, que Peano introduziu como axiomas.\n"
 "\n"
-"Clique em \"Start\" para continuar."
+"Clique em \"Começar\" para continuar."
 
 #: Game.Levels.LessOrEqual.L11le_two
 msgid "le_two"
@@ -5214,7 +5189,6 @@ msgstr "Comece com §0 e siga a partir daí."
 #. §4: `pred (succ n) = n`
 #. §5: `succ_inj`
 #: Game.Levels.Algorithm.L05pred
-#, fuzzy
 msgid ""
 "We now start work on an algorithm to do addition more efficiently. Recall that\n"
 "we defined addition by recursion, saying what it did on §0 and successors.\n"
@@ -5245,7 +5219,7 @@ msgstr ""
 "Não podemos subtrair um de 0, então simplesmente devolvemos um valor lixo. Além dessa\n"
 "definição, também criamos um novo lema §3, que diz que §4.\n"
 "Vamos usar esse lema para provar §5, o teorema que\n"
-"Peano assumiu como axioma e que já usamos bastante sem justificativa."
+"Peano presumiu como axioma e que já usamos bastante sem justificativa."
 
 #: Game.Levels.Algorithm.L06is_zero
 msgid "is_zero"
@@ -5387,7 +5361,6 @@ msgstr "O lema anterior pode ser usado para provar este."
 #. §9: `True`
 #. §10: `trivial`
 #: Game.Levels.Algorithm.L06is_zero
-#, fuzzy
 msgid ""
 "We define a function §0 thus:\n"
 "\n"
@@ -5451,7 +5424,6 @@ msgstr "add_right_eq_self"
 #. §11: `False`
 #. §12: `False`
 #: Game.Levels.Implication.L08ne
-#, fuzzy
 msgid ""
 "We still can't prove §0 because we have not talked about the\n"
 "definition of §1. In Lean, §2 is *notation* for §3.\n"
@@ -5542,7 +5514,6 @@ msgstr "A multiplicação é comutativa."
 #. §0: `mul_succ`
 #. §1: `succ_mul`
 #: Game.Levels.Multiplication.L03succ_mul
-#, fuzzy
 msgid ""
 "Similarly we have §0\n"
 "but we're going to need §1 (guess what it says -- maybe you\n"
@@ -5621,7 +5592,6 @@ msgstr "E finalmente §0."
 #. §12: `a * b = b * a`
 #. §13: `a * (b + c) = a * b + a * c`
 #: Game.Levels.Multiplication
-#, fuzzy
 msgid ""
 "How should we define §0? Just like addition, we need to give definitions\n"
 "when §1 and when §2 is a successor.\n"
@@ -5666,7 +5636,6 @@ msgstr ""
 #. §8: `h`
 #. §9: `rw`
 #: Game.Levels.Tutorial.L02rw
-#, fuzzy
 msgid ""
 "In this level the *goal* is §0 but to help us we\n"
 "have an *assumption* §1 saying that §2. Check that you can see §3 in\n"
@@ -5965,7 +5934,6 @@ msgstr "a abordagem mais simples"
 #. §3: `exact`
 #. §4: `exact h`
 #: Game.Levels.Implication.L01exact
-#, fuzzy
 msgid ""
 "In this world we'll learn how to prove theorems of the form §0.\n"
 "In other words, how to prove theorems of the form \"if §1 is true, then §2 is true.\"\n"
@@ -6409,7 +6377,6 @@ msgstr "reescrevendo de trás pra frente"
 #. §13: `use a`
 #. §14: `use a * a + 1`
 #: Game.Levels.LessOrEqual.L01le_refl
-#, fuzzy
 msgid ""
 "## Summary\n"
 "\n"
