@@ -17,6 +17,7 @@ import Game.Levels.AdvMultiplication
 --import Game.Levels.StrongInduction
 --import Game.Levels.Hard
 import Game.Levels.Algorithm
+import Game.Levels.Division
 import I18n
 
 -- Here's what we'll put on the title screen
