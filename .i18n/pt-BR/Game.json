@@ -1,0 +1,689 @@
+{"≤ World": "Mundo do ≤",
+ "≠": "≠",
+ "§0.": "§0.",
+ "§0, with notation §1, is the usual\n  product of natural numbers. Internally it is\n  via two axioms:\n\n  * §2\n\n  * §3\n\nOther theorems about naturals, such as §4,\nare proved by induction from these two basic theorems.":
+ "§0, com a notação §1, é o produto usual\n  de números naturais. Internamente, ele é dado\n  por dois axiomas:\n\n  * §2\n\n  * §3\n\nOutros teoremas sobre os naturais, como §4,\nsão provados por indução a partir desses dois teoremas básicos.",
+ "§0, with notation §1, is the usual\n  exponentiation of natural numbers. Internally it is\n  defined via two axioms:\n\n  * §2\n\n  * §3\n\nNote in particular that §4.":
+ "§0, com notação §1, é a exponenciação\n  usual de números naturais. Internamente ela é\n  definida por dois axiomas:\n\n  * §2\n\n  * §3\n\nNote em particular que §4.",
+ "§0, with notation §1, is\nthe usual sum of natural numbers. Internally it is defined\nvia the following two hypotheses:\n\n* §2\n\n* §3\n\nOther theorems about naturals, such as §4, are proved\nby induction using these two basic theorems.\"":
+ "§0, com a notação §1, é\na soma usual de números naturais. Internamente ela é definida\npelas duas hipóteses seguintes:\n\n* §2\n\n* §3\n\nOutros teoremas sobre os naturais, como §4, são provados\npor indução usando esses dois teoremas básicos.\"",
+ "§0 will do this.": "§0 dá conta disso.",
+ "§0 will change §1 into §2.": "§0 vai transformar §1 para §2.",
+ "§0 says that §1.\n\nNote that this is not quite true by definition: §2 is\ndefined to be §3 so it's §4, and to prove\nthat this is equal to §5 you need to use induction somewhere.":
+ "§0 diz que §1.\n\nRepare que isso não é bem verdade por definição: §2 é\ndefinido como §3, ou seja, é §4, e para provar\nque isso é igual a §5 você precisa usar indução em algum momento.",
+ "§0 says that §1.": "§0 diz que §1.",
+ "§0 practice.": "Praticando §0.",
+ "§0 is the theorem that §1.\nYou can prove it by induction on §2 or you can deduce it from §3.":
+ "§0 é o teorema de que §1.\nVocê pode prová-lo por indução em §2 ou pode o deduzir usando §3.",
+ "§0 is the theorem that §1\nTwo ways to do it spring to mind; I'll mention them when you've solved it.":
+ "§0 é o teorema de que §1\nDuas maneiras de fazer isso me vêm à cabeça; vou mencioná-las quando você resolver.",
+ "§0 is the theorem that §1": "§0 é o teorema de que §1",
+ "§0 is the statement that §1": "§0 é o enunciado de que §1",
+ "§0 is the proof §1.": "§0 é a prova de §1.",
+ "§0 is the proof that §1.\n\nNote: §2 is a §3 lemma.":
+ "§0 é a prova de que §1.\n\nObservação: §2 é um lema §3.",
+ "§0 is the proof that §1.\n\nIt could be deduced from §2 and §3, however this argument\nwould be circular because the proof of §4 uses §5.":
+ "§0 é a prova de que §1.\n\nIsso poderia ser deduzido de §2 e §3, porém esse argumento\nseria circular, porque a prova de §4 usa §5.",
+ "§0 is the proof that §1.\n\nIn Lean, §2 is *defined to mean* §3. Hence\n§4 is really a proof of §5.\nHere §6 is a generic false statement. This means that\nyou can §7 if §8 is a proof of §9.":
+ "§0 é a prova de que §1.\n\nEm Lean, §2 é *definido como* §3. Portanto\n§4 é na verdade uma prova de §5.\nAqui §6 é uma afirmação falsa genérica. Isso significa que\nvocê pode fazer §7 se §8 é uma prova de §9.",
+ "§0 is the proof that §1.": "§0 é a prova de que §1.",
+ "§0 is the proof that multiplication is commutative. More precisely,\n§1 is the proof that §2.":
+ "§0 é a prova de que a multiplicação é comutativa. Mais precisamente,\n§1 é a prova de que §2.",
+ "§0 is the proof of §1.\n\n§2 is a §3 lemma, because replacing §4 by §5\nis almost always what you want to do if you're simplifying an expression.":
+ "§0 é a prova de §1.\n\n§2 é um lema §3, porque substituir §4 por §5\né quase sempre o que você quer fazer ao simplificar uma expressão.",
+ "§0 is the proof of §1.": "§0 é a prova de §1.",
+ "§0 is the number after the number after §1.":
+ "§0 é o número depois do número depois de §1.",
+ "§0 is the natural numbers, just called \\\\\"numbers\\\\\" in this game. It's\ndefined via two rules:\n\n* §1 (zero is a number)\n* §2 (the successor of a number is a number)\n\n## Game Implementation\n\n*The game uses its own copy of the natural numbers, called §3 with notation §4.\nIt is distinct from the Lean natural numbers §5, which should hopefully\nnever leak into the natural number game.*":
+ "§0 são os números naturais, chamados apenas de \\\\\"números\\\\\" neste jogo. Eles são\ndefinidos por duas regras:\n\n* §1 (zero é um número)\n* §2 (o sucessor de um número é um número)\n\n## Implementação do jogo\n\n*O jogo usa sua própria cópia dos números naturais, chamada §3 com a notação §4.\nEla é distinta dos números naturais do Lean, §5, que, esperamos,\nnunca vazem para dentro do jogo dos números naturais.*",
+ "§0 is one of the two axioms\ndefining exponentiation in this game.":
+ "§0 é um dos dois axiomas\nque definem a exponenciação neste jogo.",
+ "§0 is one of the\ntwo axioms defining exponentiation in this game.":
+ "§0 é um dos\ndois axiomas que definem a exponenciação neste jogo.",
+ "§0 is just as fiddly to prove by induction; but there's a trick\nwhich avoids it. Can you spot it?":
+ "§0 é igualmente chato de provar por indução; mas existe um truque\nque evita isso. Consegue achá-lo?",
+ "§0 is good enough to solve this goal.":
+ "§0 já é o bastante para chegar no objetivo.",
+ "§0 is an ancient magic spell, believed to be the origin of the\nmodern word §1. The game won't complain - or notice - if you\nprove anything with §2.":
+ "§0 é um antigo feitiço mágico, tido como a origem da\npalavra moderna §1. O jogo não vai reclamar - nem perceber - se você\nprovar qualquer coisa com §2.",
+ "§0 is a proof that §1. But if your goal\nis §2 then §3 will not\nwork! Because the goal means §4 so there\nis no §5 term *directly* in the goal.\n\nUse associativity and commutativity to prove §6.\nYou don't need induction. §7 moves brackets around,\nand §8 moves variables around.\n\nRemember that you can do more targetted rewrites by\nadding explicit variables as inputs to theorems. For example §9\nwill only do rewrites of the form §10, and §11\nwill only do rewrites of the form §12.":
+ "§0 é uma prova de que §1. Mas se o seu objetivo\né §2 então §3 não vai\nfuncionar! Porque o objetivo significa §4, então não\nexiste nenhum termo §5 *diretamente* no objetivo.\n\nUse associatividade e comutatividade para provar §6.\nVocê não precisa de indução. §7 move os parênteses,\ne §8 move as variáveis.\n\nLembre que você pode fazer reescritas mais direcionadas\nadicionando variáveis explícitas como entradas dos teoremas. Por exemplo, §9\nsó vai fazer reescritas da forma §10, e §11\nsó vai fazer reescritas da forma §12.",
+ "§0 is a proof that §1.\n\nNote that when Lean says §2 it means §3.\n\nNote that §4 cannot be proved by \\\\\"pure thought\\\\\":\nfor example subtraction is not associative, as §5 is not\nequal to §6.":
+ "§0 é uma prova de que §1.\n\nNote que, quando Lean escreve §2, ele quer dizer §3.\n\nNote que §4 não pode ser provado por \\\\\"puro pensamento\\\\\":\npor exemplo, a subtração não é associativa, pois §5 não é\nigual a §6.",
+ "§0 is a proof that §1.\n\nIt's one way of saying that a divisor of a positive number\nhas to be at most that number.":
+ "§0 é uma prova de que §1.\n\nÉ um jeito de dizer que um divisor de um número positivo\ntem que ser no máximo esse número.",
+ "§0 is a proof that §1.\n\n## Summary\n\n§2 is really a function, which\neats a number, and returns a proof of a theorem\nabout that number. For example §3 is\na proof that §4.\n\nThe §5 tactic will accept §6\nand will try to figure out which number you omitted\nto input.\n\n## Details\n\nA mathematician sometimes thinks of §7\nas \\\\\"one thing\\\\\", namely a proof of §8.\nThis is just another way of saying that it's a function which\ncan eat any number n and will return a proof that §9.":
+ "§0 é uma prova de que §1.\n\n## Resumo\n\n§2 é na verdade uma função, que\ncome um número e devolve uma prova de um teorema\nsobre esse número. Por exemplo, §3 é\numa prova de que §4.\n\nA tática §5 aceita §6\ne vai tentar descobrir qual número você deixou\nde fornecer.\n\n## Detalhes\n\nMatemáticos às vezes pensam em §7\ncomo \\\\\"uma coisa só\\\\\", a saber, uma prova de que §8.\nIsso é apenas outra maneira de dizer que é uma função que\npode comer qualquer número n e devolver uma prova de que §9.",
+ "§0 is a proof that §1.": "§0 é uma prova de que §1.",
+ "§0 is a proof that §1 or §2.": "§0 é uma prova de que §1 ou §2.",
+ "§0 is a proof that §1\n\nIn Lean, §2 means §3, so this result gets displayed\nas §4.":
+ "§0 é a prova de que §1\n\nEm Lean, §2 significa §3, então esse resultado é exibido\ncomo §4.",
+ "§0 is a proof that §1": "§0 é a prova de que §1",
+ "§0 is a proof that if §1 then §2.": "§0 é uma prova de que, se §1, então §2.",
+ "§0 is a proof that if §1 then §2 or §3.":
+ "§0 é a prova de que se §1 então §2 ou §3.",
+ "§0 is a proof that if §1 then §2 or §3 or §4.":
+ "§0 é a prova de que se §1 então §2 ou §3 ou §4.",
+ "§0 is a proof that if §1 and §2 then §3.\nMore precisely, it is a proof that §4. In words,\nIf §5 then (pause) if §6 then §7.\n\n## A note on associativity\n\nIn Lean, §8 means §9, because §10 is left associative. However\n§11 is right associative. This means that §12 in Lean means\nexactly that §13 is transitive. This is different to how mathematicians use\n§14; for them, this usually means that §15\nand §16.":
+ "§0 é uma prova de que se §1 e §2, então §3.\nMais precisamente, é a prova de que §4. Em palavras,\nse §5 então (pausa) se §6 então §7.\n\n## Uma observação sobre associatividade\n\nEm Lean, §8 significa §9, porque §10 é associativo à esquerda. Já\n§11 é associativo à direita. Isso significa que §12 em Lean quer dizer\nexatamente que §13 é transitiva. Isso é diferente de como os matemáticos usam\n§14; para eles, isso normalmente significa que §15\ne §16.",
+ "§0 is a proof that if §1 and §2 then §3.":
+ "§0 é a prova de que se §1 e §2 então §3.",
+ "§0 is a proof of §1.\"": "§0 é uma prova de §1.\"",
+ "§0 is a proof of §1.\n\nThe reason for the name is that this lemma is \"reflexivity of §2\"":
+ "§0 é uma prova de §1.\n\nO motivo do nome é que este lema é a \"reflexividade de §2\"",
+ "§0 is a proof of §1.": "§0 é uma prova de §1.",
+ "§0 is a proof of §1 so that was what got rewritten.\nYou can now change §2 to §3 with §4 or §5. You\ncan usually stick to §6 unless you need real precision.":
+ "§0 é uma prova de §1, então foi isso que foi reescrito.\nAgora você pode mudar §2 para §3 com §4 ou §5. Em geral você\npode ficar com §6, a menos que precise de precisão de verdade.",
+ "§0 is a proof of the implication §1.": "§0 é uma prova da implicação §1.",
+ "§0 is a proof\nthat §1. Note that in Lean §2 prints\nas §3, because the notation for addition is defined to be left\nassociative.":
+ "§0 é uma prova\nde que §1. Note que no Lean §2 aparece\ncomo §3, porque a notação para adição é definida como associativa\nà esquerda.",
+ "§0 is I think quicker than §1.": "§0 é, eu acho, mais rápido do que §1.",
+ "§0 is *notation* for §1. This \"backwards E\"\nmeans \"there exists\". So §2 means that there exists\na number §3 such that §4. This definition works\nbecause there are no negative numbers in this game.\n\nTo *prove* an \"exists\" statement, use the §5 tactic.\nLet's see an example.":
+ "§0 é *notação* para §1. Esse \"E ao contrário\"\nsignifica \"existe\". Então §2 quer dizer que existe\num número §3 tal que §4. Essa definição funciona\nporque não há números negativos neste jogo.\n\nPara *provar* um enunciado de existência, use a tática §5.\nVamos ver um exemplo.",
+ "§0 is *notation* for §1.\n\nThe reason this is mathematically\nvalid is that if §2 is a true-false statement then §3\nis the logical opposite of §4. Indeed §5 is false,\nand §6 is true!\n\nThe upshot of this is that you can treat §7 in exactly\nthe same way as you treat any implication §8. For example,\nif your *goal* is of the form §9 then you can make progress\nwith §10, and if you have a hypothesis §11 of the\nform §12 then you can §13 if §14 is a proof\nof §15.":
+ "§0 é uma *notação* para §1.\n\nA razão pela qual isso é matematicamente\nválido é que, se §2 é uma afirmação verdadeiro-falso, então §3\né o oposto lógico de §4. De fato, §5 é falso,\ne §6 é verdadeiro!\n\nA consequência disso é que você pode tratar §7 exatamente\nda mesma forma que trata qualquer implicação §8. Por exemplo,\nse seu *objetivo* é da forma §9, então você pode progredir\ncom §10, e se você tem uma hipótese §11 da\nforma §12, então você pode fazer §13 se §14 for uma prova\nde §15.",
+ "§0 is *notation* for §1.\n\nBecause this game doesn't have negative numbers, this definition\nis mathematically valid.\n\nThis means that if you have a goal of the form §2 you can\nmake progress with the §3 tactic, and if you have a hypothesis\n§4, you can make progress with §5.":
+ "§0 é *notação* para §1.\n\nComo este jogo não tem números negativos, essa definição\né matematicamente válida.\n\nIsso significa que, se você tem um objetivo da forma §2, você pode\navançar com a tática §3, e se você tem uma hipótese\n§4, você pode avançar com §5.",
+ "§0": "§0",
+ "zero_pow_zero": "zero_pow_zero",
+ "zero_pow_succ": "zero_pow_succ",
+ "zero_ne_succ": "zero_ne_succ",
+ "zero_mul": "zero_mul",
+ "zero_add": "zero_add",
+ "x ≤ y or y ≤ x": "x ≤ y ou y ≤ x",
+ "x ≤ y and y ≤ z implies x ≤ z": "x ≤ y e y ≤ z implica x ≤ z",
+ "x ≤ y and y ≤ x implies x = y": "x ≤ y e y ≤ x implica x = y",
+ "x ≤ succ x": "x ≤ succ x",
+ "x ≤ 1": "x ≤ 1",
+ "x ≤ 0 → x = 0": "x ≤ 0 → x = 0",
+ "two_mul": "two_mul",
+ "try rewriting §0.": "tente reescrever §0.",
+ "the simplest approach": "a abordagem mais simples",
+ "the rw tactic": "a tática rw",
+ "succ_mul": "succ_mul",
+ "succ_inj : the successor function is injective":
+ "succ_inj : a função sucessor é injetiva",
+ "succ_add": "succ_add",
+ "succ x ≤ succ y → x ≤ y": "succ x ≤ succ y → x ≤ y",
+ "rewriting backwards": "reescrevendo de trás pra frente",
+ "pred": "pred",
+ "pow_two": "pow_two",
+ "pow_pow": "pow_pow",
+ "pow_one": "pow_one",
+ "pow_add": "pow_add",
+ "one_pow": "one_pow",
+ "one_mul": "one_mul",
+ "one_le_of_ne_zero": "one_le_of_ne_zero",
+ "mul_right_eq_self": "mul_right_eq_self",
+ "mul_right_eq_one": "mul_right_eq_one",
+ "mul_pow": "mul_pow",
+ "mul_one": "mul_one",
+ "mul_ne_zero": "mul_ne_zero",
+ "mul_left_ne_zero": "mul_left_ne_zero",
+ "mul_left_cancel": "mul_left_cancel",
+ "mul_le_mul_right": "mul_le_mul_right",
+ "mul_eq_zero": "mul_eq_zero",
+ "mul_comm": "mul_comm",
+ "mul_assoc": "mul_assoc",
+ "mul_add": "mul_add",
+ "making life simple": "simplificando a vida",
+ "making life easier": "facilitando a vida",
+ "level completed! 🎉": "nível completado! 🎉",
+ "level completed with warnings… 🎭": "nível completado com avisos… 🎭",
+ "le_two": "le_two",
+ "le_mul_right": "le_mul_right",
+ "is_zero": "is_zero",
+ "intro practice": "praticando intro",
+ "intro": "intro",
+ "intermediate goal solved! 🎉": "objetivo intermediário resolvido! 🎉",
+ "eq_succ_of_ne_zero": "eq_succ_of_ne_zero",
+ "decide again": "decide de novo",
+ "decide": "decide",
+ "add_succ": "add_succ",
+ "add_sq": "add_sq",
+ "add_right_eq_zero": "add_right_eq_zero",
+ "add_right_eq_self": "add_right_eq_self",
+ "add_right_comm": "add_right_comm",
+ "add_right_cancel": "add_right_cancel",
+ "add_mul": "add_mul",
+ "add_left_eq_zero": "add_left_eq_zero",
+ "add_left_eq_self": "add_left_eq_self",
+ "add_left_comm": "add_left_comm",
+ "add_left_cancel": "add_left_cancel",
+ "add_comm (level boss)": "add_comm (chefão)",
+ "add_assoc (associativity of addition)":
+ "add_assoc (associatividade da adição)",
+ "[final boss music]": "[música de chefão final]",
+ "[dramatic music]. Now are you ready to face the first boss of the game?":
+ "[música dramática]. Você está pronto para encarar o primeiro chefão do jogo?",
+ "[boss battle music]\n\nLook in your inventory to see the proofs you have available.\nThese should be enough.":
+ "[música de batalha contra o chefão]\n\nOlhe no seu inventário para ver as provas que você tem disponíveis.\nElas devem ser suficientes.",
+ "You've now seen all the tactics you need to beat the final boss of the game.\nYou can begin the journey towards this boss by entering Multiplication World.\n\nOr you can go off the beaten track and learn some new tactics in Implication\nWorld. These tactics let you prove more facts about addition, such as\nhow to deduce §0 from §1.\n\nClick \"Leave World\" and make your choice.":
+ "Você já viu todas as táticas de que precisa para derrotar o chefão final do jogo.\nVocê pode começar a jornada até esse chefão entrando no Mundo da Multiplicação.\n\nOu pode sair do caminho comum e aprender algumas táticas novas no Mundo da\nImplicação. Essas táticas permitem provar mais fatos sobre a adição, como\ndeduzir §0 a partir de §1.\n\nClique em \"Leave World\" e faça a sua escolha.",
+ "You want to use §0, which you already\nproved, but you'll have to start with §1 your hypothesis.":
+ "Você quer usar §0, que você já\nprovou, mas vai ter que começar com §1 na sua hipótese.",
+ "You still don't know which way to go, so do §0.":
+ "Você ainda não sabe para que lado ir, então faça §0.",
+ "You now know enough tactics to prove §0! Let's begin the journey.":
+ "Agora você já conhece táticas suficientes para provar §0! Vamos começar a jornada.",
+ "You might want to think about whether induction\non §0 or §1 is the best idea.":
+ "Talvez você queira pensar se indução\nem §0 ou em §1 é a melhor ideia.",
+ "You can use §0 to rewrite at §1 instead\nof at the goal.":
+ "Você pode usar §0 para reescrever em §1 em vez\nde no objetivo.",
+ "You can start a proof by induction on §0 by typing:\n§1.":
+ "Você pode começar uma prova por indução em §0 digitando:\n§1.",
+ "You can read more about the §0 tactic by clicking\non it in the top right.":
+ "Você pode ler mais sobre a tática §0 clicando\nnela no canto superior direito.",
+ "You can put a §0 in front of any theorem provided to §1 to rewrite\nthe other way around. Look at the docs for §2 for an explanation. Type §3 with §4.":
+ "Você pode colocar um §0 na frente de qualquer teorema passado para §1 para reescrever\nno sentido contrário. Veja a documentação de §2 para uma explicação. Digite §3 com §4.",
+ "You can prove §0 in at least three ways.\nEither by induction, or by using §1, or\nby using commutativity. Which do you think is quickest?":
+ "Você pode provar §0 de pelo menos três jeitos.\nOu por indução, ou usando §1, ou\nusando comutatividade. Qual você acha que é o mais rápido?",
+ "You can probably take it from here.":
+ "Você provavelmente consegue seguir daqui.",
+ "You can now §0": "Agora você pode §0",
+ "You can now finish with §0.": "Agora você pode terminar com §0.",
+ "You can make your own tactics in Lean.\nThis code here\n§0\nwas used to create a new tactic §1, which runs\n§2.\nTry running §3 to solve this level!":
+ "Você pode criar suas próprias táticas em Lean.\nEste código aqui\n§0\nfoi usado para criar uma nova tática §1, que executa\n§2.\nTente executar §3 para resolver este nível!",
+ "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
+ "Você pode simplesmente imitar a prova anterior para fazer esta -- ou pode descobrir um jeito\nde usá-la.",
+ "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
+ "Você pode fazer indução em qualquer uma das três variáveis. Algumas escolhas\nsão mais difíceis de levar até o fim do que outras. Você consegue fazer o passo indutivo em\napenas 5 reescritas?",
+ "Why did we not just define §0 to be §1? Because we have not\neven *defined* addition yet! We'll do that in the next level.":
+ "Por que não definimos logo §0 como §1? Porque ainda nem\n*definimos* a adição! Vamos fazer isso no próximo nível.",
+ "What do you think of this two-liner:\n§0\n\n§1 doesn't just take hypotheses, it will eat any proof which exists\nin the system.":
+ "O que você acha destas duas linhas:\n§0\n\n§1 não aceita apenas hipóteses, ele engole qualquer prova que exista\nno sistema.",
+ "Well done! You now have enough tools to tackle the main boss of this level.":
+ "Muito bem! Agora você tem ferramentas suficientes para enfrentar o chefão principal deste nível.",
+ "Well done!": "Muito bem!",
+ "Welcome to tutorial world! In this world we learn the basics\nof proving theorems. The boss level of this world\nis the theorem §0.\n\nYou prove theorems by solving puzzles using tools called *tactics*.\nThe aim is to prove the theorem by applying tactics\nin the right order.\n\nLet's learn some basic tactics. Click on \"Start\" below\nto begin your quest.":
+ "Bem-vindo ao mundo do tutorial! Neste mundo aprendemos o básico\nde como provar teoremas. O chefão deste mundo\né o teorema §0.\n\nVocê prova teoremas resolvendo quebra-cabeças com ferramentas chamadas *táticas*.\nO objetivo é provar o teorema aplicando táticas\nna ordem certa.\n\nVamos aprender algumas táticas básicas. Clique em \"Começar\" abaixo\npara começar sua jornada.",
+ "Welcome to Addition World! In this world we'll learn the §0 tactic.\nThis will enable us to defeat the boss level of this world, namely §1.\n\nThe tactics §2, §3 and §4 are the only tactics you'll need to\nbeat all the levels in Addition World, Multiplication World, and Power World.\nPower World contains the final boss of the game.\n\nThere are plenty more tactics in this game, but you'll only need to know them if you\nwant to explore the game further (for example if you decide to 100%\nthe game).":
+ "Bem-vindo ao Mundo da Adição! Neste mundo vamos aprender a tática §0.\nIsso vai nos permitir derrotar o chefão deste mundo, a saber, §1.\n\nAs táticas §2, §3 e §4 são as únicas de que você vai precisar para\nvencer todos os níveis do Mundo da Adição, do Mundo da Multiplicação e do Mundo da Potência.\nO Mundo da Potência contém o chefão final do jogo.\n\nHá muitas outras táticas neste jogo, mas você só vai precisar conhecê-las se\nquiser explorar o jogo mais a fundo (por exemplo, se você decidir zerar\no jogo em 100%).",
+ "We've seen §0, the proof that if §1 then §2.\nNow we'll prove that if §3 then §4 or §5.":
+ "Já vimos §0, a prova de que se §1 então §2.\nAgora vamos provar que se §3 então §4 ou §5.",
+ "We've proved that §0; in Implication World we'll learn\nhow to prove §1.\n\nIn Addition World we proved *equalities* like §2.\nIn this second tutorial world we'll learn some new tactics,\nenabling us to prove *implications*\nlike §3\n\nWe'll also learn two new fundamental facts about\nnatural numbers, which Peano introduced as axioms.\n\nClick on \"Start\" to proceed.":
+ "Provamos que §0; no Mundo da Implicação vamos aprender\ncomo provar §1.\n\nNo Mundo da Adição provamos *igualdades* como §2.\nNeste segundo mundo tutorial vamos aprender algumas táticas novas,\nque nos permitirão provar *implicações*\ncomo §3\n\nTambém vamos aprender dois novos fatos fundamentais sobre\nos números naturais, que Peano introduziu como axiomas.\n\nClique em \"Começar\" para continuar.",
+ "We've proved that §0 implies §1. The last two levels\nin this world will prove which numbers are §2 and §3.\nThis lemma will be helpful for them.":
+ "Provamos que §0 implica §1. Os dois últimos níveis\ndeste mundo vão provar quais números são §2 e §3.\nEste lema será útil para eles.",
+ "We've just seen that §0, but if §1\nis a successor, then §2. We prove that here.":
+ "Acabamos de ver que §0, mas se §1\né um sucessor, então §2. Vamos provar isso aqui.",
+ "We've been adding up two numbers; in this level we will add up three.\n\n  What does §0 *mean*? It could either mean §1, or it\n  could mean §2. In Lean, §3 means §4.\n\n  But why do we care which one it means; §5 and §6 are *equal*!\n\n  That's true, but we didn't prove it yet. Let's prove it now by induction.":
+ "Estivemos somando dois números; neste nível vamos somar três.\n\n  O que §0 *significa*? Pode significar §1, ou pode\n  significar §2. Em Lean, §3 significa §4.\n\n  Mas por que nos importamos com qual dos dois significa; §5 e §6 são *iguais*!\n\n  É verdade, mas ainda não provamos isso. Vamos provar agora por indução.",
+ "We're going to change that §0 into §1. Start by changing it into\n§2 by executing §3.":
+ "Vamos trocar esse §0 por §1. Comece transformando-o em\n§2 executando §3.",
+ "We'll need this lemma to prove that two is prime!\n\nYou'll need to know that §0 is right associative. This means that\n§1 actually means §2.\nThis affects how §3 and §4 work.":
+ "Vamos precisar deste lema para provar que dois é primo!\n\nVocê precisa saber que §0 é associativo à direita. Isso significa que\n§1 na verdade quer dizer §2.\nIsso afeta como §3 e §4 funcionam.",
+ "We'd like to prove §0 but right now\nwe can't even *state* it\nbecause we haven't yet defined addition.\n\n## Defining addition.\n\nHow are we going to add §1 to an arbitrary number §2? Well,\nthere are only two ways to make numbers in this game: §3\nand successors. So to define §4 we will need\nto know what §5 is and what §6 is.\nLet's start with adding §7.\n\n### Adding 0\n\nTo make addition agree with our intuition, we should *define* §8\nto be §9. More generally, we should define §10 to be §11 for\nany number §12. The name of this proof in Lean is §13.\nFor example §14 is a proof of §15,\n§16 is a proof of §17, and §18 is a proof\nof §19.\n\nWe write §20, so §21.":
+ "Gostaríamos de provar §0 mas neste momento\nnem sequer conseguimos *enunciar* isso\nporque ainda não definimos a adição.\n\n## Definindo a adição.\n\nComo vamos somar §1 a um número arbitrário §2? Bem,\nsó existem duas maneiras de construir números neste jogo: §3\ne sucessores. Então, para definir §4 vamos precisar\nsaber o que é §5 e o que é §6.\nVamos começar somando §7.\n\n### Somando 0\n\nPara que a adição concorde com nossa intuição, devemos *definir* §8\ncomo §9. De modo mais geral, devemos definir §10 como §11 para\nqualquer número §12. O nome dessa prova em Lean é §13.\nPor exemplo, §14 é uma prova de §15,\n§16 é uma prova de §17, e §18 é uma prova\nde §19.\n\nEscrevemos §20, ou seja, `prova : enunciado`.",
+ "We want to use §0, but we need a hypothesis §1\nwhich we don't have. Yet. Execute §2 (you can type §3 with §4).\nYou'll be asked to\nprove it, and then you'll have a new hypothesis which you can apply\n§5 to.":
+ "Queremos usar §0, mas precisamos de uma hipótese §1\nque não temos. Ainda. Execute §2 (você pode digitar §3 com §4).\nVocê terá que\nprová-la, e então terá uma nova hipótese na qual poderá aplicar\n§5.",
+ "We want to reduce this to a hypothesis §0 and a goal §1,\nwhich is logically equivalent but much easier to prove. Remember that §2\nis notation for §3. Click on §4 if you need hints.":
+ "Queremos reduzir isso a uma hipótese §0 e um objetivo §1,\nque é logicamente equivalente mas muito mais fácil de provar. Lembre que §2\né notação para §3. Clique em `Mostrar mais ajuda!` se precisar de dicas.",
+ "We still can't prove §0 because we have not talked about the\ndefinition of §1. In Lean, §2 is *notation* for §3.\nHere §4 is a generic false proposition, and §5 is Lean's notation\nfor \"implies\". In logic we learn\nthat §6 is false, but §7 is true. Hence\n§8 is the logical opposite of §9.\n\nEven though §10 does not look like an implication,\nyou should treat it as an implication. The next two levels will show you how.\n\n§11 is a goal which you cannot deduce from a consistent set of assumptions!\nSo if your goal is §12 then you had better hope that your hypotheses\nare contradictory, which they are in this level.":
+ "Ainda não podemos provar §0 porque não falamos sobre a\ndefinição de §1. Em Lean, §2 é *notação* para §3.\nAqui §4 é uma proposição falsa genérica, e §5 é a notação de Lean\npara \"implica\". Em lógica aprendemos\nque §6 é falso, mas §7 é verdadeiro. Logo,\n§8 é o oposto lógico de §9.\n\nMesmo que §10 não pareça uma implicação,\nvocê deve tratá-lo como uma implicação. Os dois próximos níveis vão te mostrar como.\n\n§11 é um objetivo que você não consegue deduzir de um conjunto consistente de hipóteses!\nEntão, se seu objetivo é §12, é melhor torcer para que suas hipóteses\nsejam contraditórias, o que é o caso neste nível.",
+ "We now start work on an algorithm to do addition more efficiently. Recall that\nwe defined addition by recursion, saying what it did on §0 and successors.\nIt is an axiom of Lean that recursion is a valid\nway to define functions from types such as the naturals.\n\nLet's define a new function §1 from the naturals to the naturals, which\nattempts to subtract 1 from the input. The definition is this:\n\n§2\n\nWe cannot subtract one from 0, so we just return a junk value. As well as this\ndefinition, we also create a new lemma §3, which says that §4.\nLet's use this lemma to prove §5, the theorem which\nPeano assumed as an axiom and which we have already used extensively without justification.":
+ "Agora começamos a trabalhar em um algoritmo para fazer adição de forma mais eficiente. Lembre-se de que\ndefinimos a adição por recursão, dizendo o que ela faz em §0 e em sucessores.\nÉ um axioma de Lean que a recursão é uma maneira válida\nde definir funções a partir de tipos como os naturais.\n\nVamos definir uma nova função §1 dos naturais nos naturais, que\ntenta subtrair 1 da entrada. A definição é esta:\n\n§2\n\nNão podemos subtrair um de 0, então simplesmente devolvemos um valor lixo. Além dessa\ndefinição, também criamos um novo lema §3, que diz que §4.\nVamos usar esse lema para provar §5, o teorema que\nPeano presumiu como axioma e que já usamos bastante sem justificativa.",
+ "We now have enough to state a mathematically accurate, but slightly\nclunky, version of Fermat's Last Theorem.\n\nFermat's Last Theorem states that if §0 and §1 then §2.\nIf you didn't do inequality world yet then we can't talk about §3,\nso we have to resort to the hack of using §4 for §5,\nwhich guarantees it's big enough. Similarly instead of §6 we\nuse §7.\n\nThis level looks superficially like other levels we have seen,\nbut the shortest solution known to humans would translate into\nmany millions of lines of Lean code. The author of this game,\nKevin Buzzard, is working on translating the proof by Wiles\nand Taylor into Lean, although this task will take many years.\n\n## CONGRATULATIONS!\n\nYou've finished the main quest of the natural number game!\nIf you would like to learn more about how to use Lean to\nprove theorems in mathematics, then take a look\nat [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\nan interactive textbook which you can read in your browser,\nand which explains how to work with many more mathematical concepts in Lean.":
+ "Agora já temos o suficiente para enunciar uma versão matematicamente correta, mas\num pouco desajeitada, do Último Teorema de Fermat.\n\nO Último Teorema de Fermat diz que se §0 e §1 então §2.\nSe você ainda não fez o mundo das desigualdades, não podemos falar de §3,\nentão temos que recorrer à gambiarra de usar §4 no lugar de §5,\no que garante que ele é grande o bastante. Da mesma forma, em vez de §6\nusamos §7.\n\nEste nível parece, superficialmente, com outros níveis que já vimos,\nmas a solução mais curta conhecida pela humanidade se traduziria em\nmuitos milhões de linhas de código Lean. O autor deste jogo,\nKevin Buzzard, está trabalhando em traduzir a prova de Wiles\ne Taylor para Lean, embora essa tarefa vá levar muitos anos.\n\n## PARABÉNS!\n\nVocê terminou a missão principal do jogo dos números naturais!\nSe você quiser aprender mais sobre como usar Lean para\nprovar teoremas em matemática, dê uma olhada\nem [Mathematics In Lean](https://leanprover-community.github.io/mathematics_in_lean/),\num livro-texto interativo que você pode ler no navegador,\ne que explica como trabalhar com muitos outros conceitos matemáticos em Lean.",
+ "We now have enough to prove that multiplication is associative,\nthe boss level of multiplication world. Good luck!":
+ "Agora já temos o suficiente para provar que a multiplicação é associativa,\no chefão do Mundo da Multiplicação. Boa sorte!",
+ "We know §0 is a proof of §1 -- but what\nif we have a hypothesis §2? It's the wrong way around!\n\nThe §3 tactic changes a goal §4 to §5, and a goal §6\nto §7. And §8\ndoes the same for a hypothesis §9. We've proved §10 and called\nthe proof §11; now try proving §12.":
+ "Sabemos que §0 é uma prova de §1 -- mas e\nse tivermos uma hipótese §2? Está ao contrário!\n\nA tática §3 muda um objetivo §4 para §5, e um objetivo §6\npara §7. E §8\nfaz o mesmo para uma hipótese §9. Já provamos §10 e chamamos\na prova de §11; agora tente provar §12.",
+ "We have seen how to §0 theorems and assumptions\nof the form §1. But what if our *goal* is of the form §2?\nTo prove this goal, we need to know how to say \"let's assume §3 and deduce §4\"\nin Lean. We do this with the §5 tactic.":
+ "Já vimos como usar §0 em teoremas e hipóteses\nda forma §1. Mas e se o nosso *objetivo* for da forma §2?\nPara provar esse objetivo, precisamos saber como dizer \"vamos supor §3 e deduzir §4\"\nem Lean. Fazemos isso com a tática §5.",
+ "We gave a pretty unsatisfactory proof of §0 earlier on; now give a nicer one.":
+ "Demos uma prova bem insatisfatória de §0 lá atrás; agora dê uma mais bonita.",
+ "We don't know whether to go left or right yet. So start with §0.":
+ "Ainda não sabemos se vamos para a esquerda ou para a direita. Então comece com §0.",
+ "We define a function §0 thus:\n\n§1\n\nWe also create two lemmas, §2 and §3, saying that §4\nand §5. Let's use these lemmas to prove §6, Peano's\nLast Axiom. Actually, we have been using §7 before, but it's handy to have\nthis opposite version too, which can be proved in the same way. Note: you can\ncheat here by using §8 but the point of this world is to show\nyou how to *prove* results like that.\n\nIf you can turn your goal into §9, then the §10 tactic will solve it.":
+ "Definimos uma função §0 assim:\n\n§1\n\nTambém criamos dois lemas, §2 e §3, dizendo que §4\ne §5. Vamos usar esses lemas para provar §6, o Último\nAxioma de Peano. Na verdade, já usamos §7 antes, mas é útil ter\nesta versão oposta também, que pode ser provada da mesma forma. Nota: você pode\ntrapacear aqui usando §8, mas a ideia deste mundo é mostrar\ncomo *provar* resultados desse tipo.\n\nSe você conseguir transformar seu objetivo em §9, então a tática §10 vai resolvê-lo.",
+ "Very well done.\n\nA passing mathematician remarks that with you've just proved that §0 is totally\nordered.\n\nThe final few levels in this world are much easier.":
+ "Muito bem!\n\nUm matemático que passava por aqui observa que você acabou de provar que §0 é totalmente\nordenado.\n\nOs últimos níveis deste mundo são bem mais fáceis.",
+ "Use §0.": "Use §0.",
+ "Use §0 and remember that §1 will solve a goal\nif there are hypotheses §2 and §3.":
+ "Use §0 e lembre que §1 resolve um objetivo\nse houver hipóteses §2 e §3.",
+ "Use the previous lemma with §0.": "Use o lema anterior com §0.",
+ "Tutorial World": "Mundo Tutorial",
+ "Try §0.": "Tente §0.",
+ "Try §0 to change §1 into §2.": "Tente §0 para transformar §1 em §2.",
+ "Totality of §0 is the boss level of this world, and it's coming up next. It says that\nif §1 and §2 are naturals then either §3 or §4.\nBut we haven't talked about §5 at all. Here's a run-through.\n\n1) The notation for \"or\" is §6. You won't need to type it, but you can\ntype it with §7.\n\n2) If you have an \"or\" statement in the *goal*, then two tactics make\nprogress: §8 and §9. But don't choose a direction unless your\nhypotheses guarantee that it's the correct one.\n\n3) If you have an \"or\" statement as a *hypothesis* §10, then\n§11 will create two goals, one where you went left,\nand the other where you went right.":
+ "A totalidade de §0 é o chefão deste mundo, e vem a seguir. Ela diz que,\nse §1 e §2 são naturais, então §3 ou §4.\nMas não falamos nada sobre §5 até agora. Aqui vai uma visão geral.\n\n1) A notação para \"ou\" é §6. Você não vai precisar digitá-la, mas pode\ndigitá-la com §7.\n\n2) Se você tem uma afirmação com \"ou\" no *objetivo*, então duas táticas fazem\nprogresso: §8 e §9. Mas não escolha uma direção a menos que suas\nhipóteses garantam que ela é a correta.\n\n3) Se você tem uma afirmação com \"ou\" como *hipótese* §10, então\n§11 vai criar dois objetivos, um em que você foi para a esquerda,\ne outro em que você foi para a direita.",
+ "To solve this level, you need to §0 a number §1 such that §2.":
+ "Para resolver este nível, você precisa usar §0 com um número §1 tal que §2.",
+ "Those of you interested in speedrunning the game may want to know\nthat §0 will do both rewrites at once.":
+ "Quem tiver interesse em fazer speedrun do jogo talvez queira saber\nque §0 faz as duas reescritas de uma vez só.",
+ "This world introduces exponentiation. If you want to define §0\nthen, as always, you will need to know what §1 is, and\nwhat §2 is, given only §3.\n\nYou can probably guess the names of the general theorems:\n\n  * §4\n  * §5\n\nUsing only these, can you get past the final boss level?\n\nThe levels in this world were designed by Sian Carey, a UROP student\nat Imperial College London, funded by a Mary Lister McCammon Fellowship\nin the summer of 2019. Thanks to Sian and also thanks to Imperial\nCollege for funding her.":
+ "Este mundo apresenta a exponenciação. Se você quiser definir §0\nentão, como sempre, vai precisar saber o que é §1, e\no que é §2, dado apenas §3.\n\nVocê provavelmente consegue adivinhar os nomes dos teoremas gerais:\n\n  * §4\n  * §5\n\nUsando apenas esses, você consegue passar do chefão final?\n\nOs níveis deste mundo foram criados por Sian Carey, estudante de UROP\nno Imperial College London, financiada por uma Mary Lister McCammon Fellowship\nno verão de 2019. Obrigado à Sian e também ao Imperial College por\nfinanciá-la.",
+ "This time, use the §0 tactic.": "Desta vez, use a tática §0.",
+ "This level proves §0, the multiplicative analogue of Advanced Addition\nWorld's §1. The strategy is to prove that §2 and then use the\nlemma §3 from §4 world.\n\nWe'll prove it using a new and very useful tactic called §5.":
+ "Este nível prova §0, o análogo multiplicativo do §1 do Mundo da\nAdição Avançada. A estratégia é provar que §2 e então usar o\nlema §3 do mundo §4.\n\nVamos prová-lo usando uma nova e muito útil tática chamada §5.",
+ "This level proves that if §0 then §1 or §2. It is\nlogically equivalent to the last level, so there is a very short proof.":
+ "Este nível prova que se §0 então §1 ou §2. Isso é\nlogicamente equivalente ao nível anterior, então há uma prova bem curta.",
+ "This level proves that if §0 and §1 then §2. One strategy\nis to write both §3 and §4 as §5 of something, deduce that §6 is\nalso §7 of something, and then §8.":
+ "Este nível prova que se §0 e §1 então §2. Uma estratégia\né escrever tanto §3 quanto §4 como §5 de alguma coisa, deduzir que §6 também\né §7 de alguma coisa, e então §8.",
+ "This level is more important than you think; it plays\na useful role when battling a big boss later on.":
+ "Este nível é mais importante do que você pensa; ele tem\num papel útil na batalha contra um grande chefão mais adiante.",
+ "This level asks you to prove *antisymmetry* of §0.\nIn other words, if §1 and §2 then §3.\nIt's the trickiest one so far. Good luck!":
+ "Este nível pede que você prove a *antissimetria* de §0.\nEm outras palavras, se §1 e §2 então §3.\nÉ o mais complicado até agora. Boa sorte!",
+ "This lemma would have been easy if we had known that §0. That theorem\n  is called §1 and it is *true*, but unfortunately its proof *uses* both\n  §2 and §3!\n\n  Let's continue on our journey to §4, the proof of §5.":
+ "Este lema teria sido fácil se soubéssemos que §0. Esse teorema\n  se chama §1 e é *verdadeiro*, mas infelizmente sua prova *usa* tanto\n  §2 quanto §3!\n\n  Vamos continuar nossa jornada rumo a §4, a prova de que §5.",
+ "This is I think the toughest level yet. Tips: if §0 is a number\nthen §1 will split into cases §2 and §3.\nAnd don't go left or right until your hypotheses guarantee that\nyou can prove the resulting goal!\n\nI've left hidden hints; if you need them, retry from the beginning\nand click on \"Show more help!\"":
+ "Este é, eu acho, o nível mais difícil até agora. Dicas: se §0 é um número,\nentão §1 vai dividir em dois casos, §2 e §3.\nE não vá usando táticas até que suas hipóteses garantam que\nvocê consegue provar o objetivo resultante!\n\nDeixei dicas escondidas; se você precisar delas, recomece do início\ne clique em \"Mostrar mais ajuda!\"",
+ "The §0 tactic.": "A tática §0.",
+ "The §0 tactic": "A tática §0",
+ "The way to start this proof is §0.": "O jeito de começar essa prova é §0.",
+ "The rfl tactic": "A tática rfl",
+ "The reason §0 is because §1.\nSo you should start this proof with §2.":
+ "A razão de §0 é que §1.\nEntão você deve começar esta prova com §2.",
+ "The previous lemma can be used to prove this one.":
+ "O lema anterior pode ser usado para provar este.",
+ "The next result we'll need in §0 World is that if §1 then §2 and §3.\nLet's prove one of these facts in this level, and the other in the next.\n\n## A new tactic: §4\n\nThe §5 tactic will split an object or hypothesis up into the possible ways\nthat it could have been created.\n\nFor example, sometimes you want to deal with the two cases §6 and §7 separately,\nbut don't need the inductive hypothesis §8 that comes with §9.\nIn this situation you can use §10 instead. There are two ways to make\na number: it's either zero or a successor. So you will end up with two goals, one\nwith §11 and one with §12.\n\nAnother example: if you have a hypothesis §13 then you are done, because a false statement implies\nany statement. Here §14 will close the goal, because there are *no* ways to\nmake a proof of §15! So you will end up with no goals, meaning you have proved everything.":
+ "O próximo resultado de que vamos precisar no Mundo do §0 é que, se §1, então §2 e §3.\nVamos provar um desses fatos neste nível, e o outro no próximo.\n\n## Uma nova tática: §4\n\nA tática §5 divide um objeto ou uma hipótese nas possíveis maneiras\npelas quais ele poderia ter sido criado.\n\nPor exemplo, às vezes você quer tratar os dois casos §6 e §7 separadamente,\nmas não precisa da hipótese indutiva §8 que vem junto com §9.\nNessa situação você pode usar §10 no lugar. Há duas maneiras de construir\num número: ele é zero ou é um sucessor. Então você vai acabar com dois objetivos, um\ncom §11 e outro com §12.\n\nOutro exemplo: se você tem uma hipótese §13, então acabou, porque uma afirmação falsa implica\nqualquer afirmação. Aqui §14 fecha o objetivo, porque *não há* maneira de\nconstruir uma prova de §15! Então você vai acabar sem nenhum objetivo, o que significa que provou tudo.",
+ "The music gets ever more dramatic, as we explore\nthe interplay between exponentiation and multiplication.\n\nIf you're having trouble exchanging the right §0\nbecause §1 swaps the wrong multiplication,\nthen read the documentation of §2 for tips on how to fix this.":
+ "A música fica cada vez mais dramática, enquanto exploramos\na interação entre exponenciação e multiplicação.\n\nSe você estiver tendo dificuldade para trocar o §0 certo\nporque §1 troca a multiplicação errada,\nentão leia a documentação de §2 para dicas de como resolver isso.",
+ "The music dies down. Is that it?\n\nCourse it isn't, you can\nclearly see that there are two levels left.\n\nA passing mathematician says that mathematicians don't have a name\nfor the structure you just constructed. You feel cheated.\n\nSuddenly the music starts up again. This really is the final boss.":
+ "A música vai diminuindo. Acabou?\n\nClaro que não, você consegue\nver claramente que ainda faltam dois níveis.\n\nUm matemático que passava por ali diz que os matemáticos não têm um nome\npara a estrutura que você acabou de construir. Você se sente enganado.\n\nDe repente a música recomeça. Este é mesmo o chefão final.",
+ "The lemma proved in the final level of this world will be helpful\nin Divisibility World.":
+ "O lema provado no nível final deste mundo vai ser útil\nno Mundo da Divisibilidade.",
+ "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\nYou can §3 it §4 any hypothesis of the form §5.":
+ "A hipótese indutiva §0 é \"Para todo número natural §1, §2\".\nVocê pode fazer §3 dela §4 qualquer hipótese da forma §5.",
+ "The goal in this level is one of our hypotheses. Solve the goal by executing §0.":
+ "O objetivo deste nível é uma das nossas hipóteses. Resolva o objetivo executando §0.",
+ "The first sub-boss of Multiplication World is §0.\n\nWhen you've proved this theorem we will have \"spare\" proofs\nsuch as §1, which is now easily deducible from §2.\nBut we'll keep hold of these proofs anyway, because it's convenient\nto have exactly the right tool for a job.":
+ "O primeiro sub-chefão do Mundo da Multiplicação é §0.\n\nQuando você tiver provado esse teorema, teremos provas \"sobressalentes\"\ncomo §1, que agora é facilmente dedutível de §2.\nMas vamos guardar essas provas mesmo assim, porque é conveniente\nter exatamente a ferramenta certa para cada trabalho.",
+ "The classical introduction game for Lean.":
+ "O clássico jogo para conhecer o Lean.",
+ "Start with §0. This will change §1 to §2.":
+ "Comece com §0. Isso vai transformar §1 para §2.",
+ "Start with §0.": "Comece com §0.",
+ "Start with §0, to change the goal into its\ncontrapositive, namely a hypothesis of §1 and a goal of §2.":
+ "Comece com §0, para transformar o objetivo na sua\ncontrapositiva, ou seja, uma hipótese §1 e um objetivo §2.",
+ "Start with §0 to push all the brackets to the right.":
+ "Comece com §0 para empurrar todos os parênteses para a direita.",
+ "Start with §0 to do a case split on §1 and §2.":
+ "Comece com §0 para fazer uma divisão em casos entre §1 e §2.",
+ "Start with §0 to begin to break §1 down into its definition.":
+ "Comece com §0 para começar a decompor §1 na sua definição.",
+ "Start with §0 to assume the hypothesis.":
+ "Comece com §0 para supor a hipótese.",
+ "Start with §0 to assume the hypothesis and call its proof §1.":
+ "Comece com §0 para supor a hipótese e chamar sua prova de §1.",
+ "Start with §0 to apply §1 to the *goal*.":
+ "Comece com §0 para aplicar §1 ao *objetivo*.",
+ "Start with §0 and §1": "Comece com §0 e §1",
+ "Start with §0 and take it from there.": "Comece com §0 e siga a partir daí.",
+ "Start with §0 (remembering that §1 is just notation\nfor §2).":
+ "Comece com §0 (lembrando que §1 é apenas notação\npara §2).",
+ "Start with induction on §0.": "Comece com indução em §0.",
+ "Start by unravelling the §0.": "Comece desembrulhando o §0.",
+ "Split into cases §0 and §1 with §2.": "Divida nos casos §0 e §1 com §2.",
+ "Solve this level in one line with §0":
+ "Resolva este nível em uma linha com §0",
+ "So that's the algorithm: now let's use automation to perform it\nautomatically.":
+ "Esse é o algoritmo: agora vamos usar automação para executá-lo\nautomaticamente.",
+ "Similarly we have §0\nbut we're going to need §1 (guess what it says -- maybe you\nare getting the hang of Lean's naming conventions).\n\nThe last level from addition world might help you in this level.\nIf you can't remember what it is, you can go back to the\nhome screen by clicking the house icon and then taking a look.\nYou won't lose any progress.":
+ "De modo semelhante, temos §0,\nmas vamos precisar de §1 (adivinhe o que ele diz -- talvez você\nesteja pegando o jeito das convenções de nomes de Lean).\n\nO último nível do Mundo da Adição pode te ajudar neste nível.\nSe você não lembra qual é, pode voltar para a\ntela inicial clicando no ícone da casa e dar uma olhada.\nVocê não vai perder nenhum progresso.",
+ "See the new \"*\" tab in your lemmas, containing §0 and §1.\nRight now these are the only facts we know about multiplication.\nLet's prove nine more.\n\nLet's start with a warm-up: no induction needed for this one,\nbecause we know §2 is a successor.":
+ "Veja a nova aba \"*\" nos seus lemas, contendo §0 e §1.\nNeste momento esses são os únicos fatos que conhecemos sobre multiplicação.\nVamos provar mais nove.\n\nComecemos com um aquecimento: não é preciso indução para este,\nporque sabemos que §2 é um sucessor.",
+ "See if you can take it from here. Look at the new lemmas and tactic\navailable on the right.":
+ "Veja se você consegue seguir daqui. Olhe os novos lemas e a nova tática\ndisponíveis à direita.",
+ "Remember, §0 is *notation* for §1.": "Lembre-se: §0 é *notação* para §1.",
+ "Remember that §0 is a proof of §1. Try\n§2ing §3 either §4 or directly to the goal.":
+ "Lembre que §0 é uma prova de §1. Tente\nusar §2 com §3, seja §4 ou diretamente no objetivo.",
+ "Remember that when Lean writes §0, it means §1.\nIf you are not sure where the brackets are in an expression, just hover\nyour cursor over it and look at what gets highlighted. For example,\nhover over both §2 symbols on the left hand side of the goal and\nyou'll see where the invisible brackets are.":
+ "Lembre-se de que quando o Lean escreve §0, ele quer dizer §1.\nSe você não tem certeza de onde estão os parênteses em uma expressão, basta passar\no mouse sobre ela e ver o que fica destacado. Por exemplo,\npasse o mouse sobre os dois símbolos §2 no lado esquerdo do objetivo e\nvocê vai ver onde estão os parênteses invisíveis.",
+ "Reduce to the previous lemma with §0": "Reduza ao lema anterior com §0",
+ "Ready for the boss level of this world?": "Pronto para o chefão deste mundo?",
+ "Proofs like §0 and §1 are very tedious to do by hand.\nIn Algorithm World we learn how to get the computer to do them for us.\n\nClick on \"Start\" to proceed.":
+ "Provas como §0 e §1 são bem tediosas de fazer na mão.\nNo Mundo dos Algoritmos aprendemos como fazer o computador fazê-las por nós.\n\nClique em \"Começar\" para continuar.",
+ "Precision rewriting": "Reescrita com precisão",
+ "Power World": "Mundo da Potência",
+ "Our next goal is \"left and right distributivity\",\nmeaning §0 and §1. Rather than\nthese slightly pompous names, the name of the proofs\nin Lean are descriptive. Let's start with\n§2, the proof of §3.\nNote that the left hand side contains a multiplication\nand then an addition.":
+ "Nosso próximo objetivo é a \"distributividade à esquerda e à direita\",\nou seja, §0 e §1. Em vez desses\nnomes um tanto pomposos, os nomes das provas\nem Lean são descritivos. Vamos começar com\n§2, a prova de §3.\nNote que o lado esquerdo contém uma multiplicação\ne depois uma adição.",
+ "Our first challenge is §0,\nand we want to prove it by induction. The zero\ncase will need §1 (which we have)\nand §2 (which we don't), so let's\nstart with this.":
+ "Nosso primeiro desafio é §0,\ne queremos provar isso por indução. O caso zero\nvai precisar de §1 (que já temos)\ne de §2 (que não temos), então vamos\ncomeçar por aí.",
+ "One of the best named levels in the game, a savage §0\nsub-boss appears as the music reaches a frenzy. What\nelse could there be to prove about powers after this?":
+ "Um dos níveis com o melhor nome do jogo: um selvagem sub-chefão §0\naparece enquanto a música chega ao frenesi. O que mais\npoderia restar para provar sobre potências depois disso?",
+ "One day this game will have a Prime Number World, with a final boss\nof proving that §0 is prime.\nTo do this, we will have to rule out things like §1\nWe will do this by proving that any factor of §2 is at most §3,\nwhich we will do using this lemma. The proof I have in mind manipulates the hypothesis\nuntil it becomes the goal, using §4, §5 and\n§6.":
+ "Um dia este jogo vai ter um Mundo dos Números Primos, com um chefão final\nque é provar que §0 é primo.\nPara isso, vamos ter que descartar coisas como §1\nVamos fazer isso provando que qualquer fator de §2 é no máximo §3,\no que faremos usando este lema. A prova que tenho em mente manipula a hipótese\naté ela virar o objetivo, usando §4, §5 e\n§6.",
+ "On the set of natural numbers, addition is commutative.\nIn other words, if §0 and §1 are arbitrary natural numbers, then\n§2.":
+ "No conjunto dos números naturais, a adição é comutativa.\nEm outras palavras, se §0 e §1 são números naturais arbitrários, então\n§2.",
+ "On the set of natural numbers, addition is associative.\nIn other words, if §0 and §1 are arbitrary natural numbers, we have\n§2":
+ "No conjunto dos números naturais, a adição é associativa.\nEm outras palavras, se §0 e §1 são números naturais arbitrários, temos\n§2",
+ "Oh no! On the way to §0, a wild §1 appears. §2\nis the proof that §3 for §4 and §5 numbers.\nThis result is what's standing in the way of §6. Again\nwe have the problem that we are adding §7 to things, so we need\nto use induction to split into the cases where §8 and §9 is a successor.":
+ "Ah, não! No caminho para §0, um §1 selvagem aparece. §2\né a prova de que §3 para §4 e §5 números.\nEsse resultado é o que está no caminho de §6. De novo\ntemos o problema de estarmos somando §7 às coisas, então precisamos\nusar indução para separar nos casos em que §8 e em que §9 é um sucessor.",
+ "Numbers": "Números",
+ "Now §0.": "Agora faça §0.",
+ "Now §0 will work.": "Agora §0 vai funcionar.",
+ "Now §0 will change §1 into §2.": "Agora §0 vai transformar §1 em §2.",
+ "Now §0 to cancel the §1s.": "Agora faça §0 para cancelar os §1.",
+ "Now §0 then §1 works, but §2 is quicker.":
+ "Agora §0 e depois §1 funciona, mas §2 é mais rápido.",
+ "Now §0 so you can §1.": "Agora faça §0, para você poder fazer §1.",
+ "Now §0 is the quickest way to\nchange §1 to §2.":
+ "Agora §0 é o jeito mais rápido de\ntransformar §1 em §2.",
+ "Now §0 is a proof that §1, and §2 has vanished. Similarly, you can destruct\n§3 into its parts with §4.":
+ "Agora §0 é uma prova de que §1, e §2 sumiu. Do mesmo jeito, você pode destrinchar\n§3 em suas partes com §4.",
+ "Now §0 finishes the job.": "Agora §0 termina o serviço.",
+ "Now §0 and you can probably take it from here.":
+ "Agora você faz §0 e provavelmente consegue seguir daqui.",
+ "Now §0 and deal with the two\ncases separately.":
+ "Agora faça §0 e trate os dois\ncasos separadamente.",
+ "Now you need to figure out which number to §0. See if you can take it from here.":
+ "Agora você precisa descobrir qual número usar no §0. Veja se você consegue seguir daqui.",
+ "Now you have two goals. Once you proved the first, you will jump to the second one.\nThis first goal is the base case §0.\n\nRecall that you can rewrite the proof of any lemma which is visible\nin your inventory, or of any assumption displayed above the goal,\nas long as it is of the form §1.":
+ "Agora você tem dois objetivos. Assim que provar o primeiro, você pula para o segundo.\nEste primeiro objetivo é o caso base §0.\n\nLembre que você pode reescrever a prova de qualquer lema que esteja visível\nno seu inventário, ou de qualquer hipótese exibida acima do objetivo,\ndesde que ela seja da forma §1.",
+ "Now you could finish with §0 then §1, but §2\ndoes it in one line.":
+ "Agora você poderia terminar com §0 e depois §1, mas §2\nfaz isso em uma linha só.",
+ "Now you can §0.": "Agora você pode fazer §0.",
+ "Now you can §0": "Agora você pode fazer §0",
+ "Now we can prove the §0 statement by proving the statement on the right,\nso use the §1 tactic.":
+ "Agora podemos provar o enunciado com §0 provando o enunciado da direita,\nentão use a tática §1.",
+ "Now use §0 to switch §1 and §2 on the left\nhand side.":
+ "Agora use §0 para trocar §1 e §2 no lado\nesquerdo.",
+ "Now the goal can be deduced from §0 by pure logic, so use the §1\ntactic.":
+ "Agora o objetivo pode ser deduzido de §0 por lógica pura, então use a tática §1.",
+ "Now take apart the existence statement with §0.":
+ "Agora desmonte o enunciado de existência com §0.",
+ "Now rewrite §0 backwards to make the goal\nequal to the hypothesis.":
+ "Agora reescreva §0 de trás para frente para deixar o objetivo\nigual à hipótese.",
+ "Now rewrite §0 backwards at §1\nto get the right hand side.":
+ "Agora reescreva §0 de trás para frente em §1\npara obter o lado direito.",
+ "Now let's §0 our new theorem. Execute §1\nto change §2 to a proof of §3.":
+ "Agora vamos usar §0 no nosso novo teorema. Execute §1\npara transformar §2 numa prova de §3.",
+ "Now for the second goal. Here you have the induction hypothesis\n§0, and you need to prove that §1.":
+ "Agora o segundo objetivo. Aqui você tem a hipótese de indução\n§0, e precisa provar que §1.",
+ "Now finish using the §0 tactic.": "Agora termine usando a tática §0.",
+ "Now finish the job with §0.": "Agora termine o serviço com §0.",
+ "Now finish in one line.": "Agora termine em uma linha.",
+ "Now change §0 to §1 in §2.": "Agora troque §0 por §1 em §2.",
+ "Note: this lemma will be useful for the final boss!":
+ "Nota: este lema será útil para o chefão final!",
+ "Note that §0 means §1. Put your cursor\non any §2 in the goal or assumptions to see what exactly it's eating.":
+ "Note que §0 significa §1. Coloque o cursor\nsobre qualquer §2 no objetivo ou nas hipóteses para ver exatamente o que ele está comendo.",
+ "Note that you can do §0\nand then §1 to solve this level in two lines.":
+ "Note que você pode fazer §0\ne depois §1 para resolver este nível em duas linhas.",
+ "Nice! You've proved §0!\nLet's now prove Peano's other axiom, that successors can't be §1.":
+ "Muito bem! Você provou §0!\nAgora vamos provar o outro axioma de Peano, de que sucessores não podem ser §1.",
+ "Nice!\n\nThe next step in the development of order theory is to develop\nthe theory of the interplay between §0 and multiplication.\nIf you've already done Multiplication World, you're now ready for\nAdvanced Multiplication World. Click on \"Leave World\" to access it.":
+ "Muito bem!\n\nO próximo passo no desenvolvimento da teoria da ordem é desenvolver\na teoria da interação entre §0 e a multiplicação.\nSe você já passou pelo Mundo da Multiplicação, agora está pronto para\no Mundo da Multiplicação Avançada. Clique em \"Leave World\" para acessá-lo.",
+ "Nice!": "Muito bem!",
+ "Next turn §0 into §1 with §2.": "Em seguida transforme §0 em §1 com §2.",
+ "Natural Number Game": "Jogo dos Números Naturais",
+ "My proof:\n§0": "Minha prova:\n§0",
+ "Multiplication usually makes a number bigger, but multiplication by zero can make\nit smaller. Thus many lemmas about inequalities and multiplication need the\nhypothesis §0. Here is a key lemma that enables us to use this hypothesis.\nTo help us with the proof, we can use the §1 tactic. Click on the tactic's name\non the right to see what it does.":
+ "A multiplicação geralmente deixa um número maior, mas a multiplicação por zero pode deixá-lo\nmenor. Por isso muitos lemas sobre desigualdades e multiplicação precisam da\nhipótese §0. Aqui está um lema chave que nos permite usar essa hipótese.\nPara nos ajudar na prova, podemos usar a tática §1. Clique no nome da tática\nà direita para ver o que ela faz.",
+ "Multiplication is distributive over addition on the left.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "A multiplicação é distributiva sobre a adição à esquerda.\nEm outras palavras, para quaisquer números naturais §0, §1 e §2, temos\n§3.",
+ "Multiplication is commutative.": "A multiplicação é comutativa.",
+ "Multiplication is associative.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "A multiplicação é associativa.\nEm outras palavras, para quaisquer números naturais §0, §1 e §2, temos\n§3.",
+ "Multiplication distributes\nover addition on the left.\n\n§0 is the proof that §1.":
+ "A multiplicação é distributiva\nsobre a adição à esquerda.\n\n§0 é a prova de que §1.",
+ "Multiplication World": "Mundo da Multiplicação",
+ "Mathematicians sometimes debate what §0 is;\nthe answer depends, of course, on your definitions. In this\ngame, §1. See if you can prove it.\n\nCheck out the *Pow* tab in your list of theorems\nto see the new proofs which are available.":
+ "Os matemáticos às vezes discutem quanto vale §0;\na resposta depende, é claro, das suas definições. Neste\njogo, §1. Veja se você consegue provar isso.\n\nDê uma olhada na aba *Pow* na sua lista de teoremas\npara ver as novas provas disponíveis.",
+ "Mathematicians sometimes argue that §0 is also\na good convention. But it is not a good convention in this\ngame; all the later levels come out beautifully with the\nconvention that §1.":
+ "Matemáticos às vezes argumentam que §0 também\né uma boa convenção. Mas ela não é uma boa convenção neste\njogo; todos os níveis seguintes ficam lindos com a\nconvenção de que §1.",
+ "Many people find §0 easy, but some find §1 confusing.\nIf you find it confusing, then just argue forwards.\n\nYou can read more about the §2 tactic in its documentation, which you can view by\nclicking on the tactic in the list on the right.":
+ "Muita gente acha §0 fácil, mas algumas pessoas acham §1 confuso.\nSe você achar confuso, então argumente para frente.\n\nVocê pode ler mais sobre a tática §2 na documentação dela, que você pode ver\nclicando na tática na lista à direita.",
+ "Let's warm up with an easy one, which works even if §0.":
+ "Vamos aquecer com um fácil, que vale mesmo se §0.",
+ "Let's see if you can use the tactics we've learnt to prove §0.\nTry this one by yourself; if you need help then click on \"Show more help!\".":
+ "Vamos ver se você consegue usar as táticas que aprendemos para provar §0.\nTente este sozinho; se precisar de ajuda, clique em \"Mostrar mais ajuda!\".",
+ "Let's now move on to a more efficient approach to questions\ninvolving numerals, such as §0.":
+ "Vamos agora partir para uma abordagem mais eficiente para questões\nenvolvendo numerais, como §0.",
+ "Let's now make our own tactic to do this.":
+ "Vamos agora criar nossa própria tática para fazer isso.",
+ "Let's now learn about Peano's second axiom for addition, §0.":
+ "Vamos agora aprender o segundo axioma de Peano para a adição, §0.",
+ "Let's now begin our approach to the final boss,\nby proving some more subtle facts about powers.":
+ "Vamos agora começar a nos aproximar do chefão final,\nprovando alguns fatos mais sutis sobre potências.",
+ "Let's first get §0 into the form §1 so we can\napply §2. First execute §3\nto change the 4 on the right hand side.":
+ "Vamos primeiro colocar §0 na forma §1 para podermos\naplicar §2. Primeiro execute §3\npara mudar o 4 do lado direito.",
+ "Lean's simplifier, §0, is \"§1 on steroids\". It will rewrite every lemma\ntagged with §2 and every lemma fed to it by the user, as much as it can.\n\nThis level is not a level which you want to solve by hand.\nGet the simplifier to solve it for you.":
+ "O simplificador de Lean, §0, é o \"§1 turbinado\". Ele vai reescrever todo lema\nmarcado com §2 e todo lema fornecido pelo usuário, tanto quanto conseguir.\n\nEste nível não é um nível que você queira resolver na mão.\nFaça o simplificador resolvê-lo para você.",
+ "It's all over! You have proved a theorem which has tripped up\nschoolkids for generations (some of them think §0:\nthis is \"the freshman's dream\").\n\nHow many rewrites did you use? I can do it in 12.\n\nBut wait! This boss is stirring...and mutating into a second more powerful form!":
+ "Acabou! Você provou um teorema que derrubou\ngerações de estudantes (alguns deles acham que §0:\nesse é o \"sonho do calouro\").\n\nQuantas reescritas você usou? Eu consigo em 12.\n\nMas espere! Este chefão está se mexendo... e se transformando numa segunda forma mais poderosa!",
+ "It's \"intuitively obvious\" that there are no numbers less than zero,\nbut to prove it you will need a result which you showed in advanced\naddition world.":
+ "É \"intuitivamente óbvio\" que não existem números menores que zero,\nmas para provar isso você vai precisar de um resultado que você mostrou no\nMundo da Adição Avançada.",
+ "Induction on §0 or §1 -- it's all the same in this one.":
+ "Indução em §0 ou §1 -- neste aqui dá na mesma.",
+ "Induction on §0 is the most troublesome, then §1,\nand §2 is the easiest.":
+ "A indução em §0 é a mais trabalhosa, depois §1,\ne §2 é a mais fácil.",
+ "In this world we'll learn how to prove theorems of the form §0.\nIn other words, how to prove theorems of the form \"if §1 is true, then §2 is true.\"\nTo do that we need to learn some more tactics.\n\nThe §3 tactic can be used to close a goal which is exactly one of\nthe hypotheses. It takes the name of the hypothesis as argument: §4.":
+ "Neste mundo vamos aprender a provar teoremas da forma §0.\nEm outras palavras, como provar teoremas da forma \"se §1 é verdadeiro, então §2 é verdadeiro.\"\nPara isso precisamos aprender mais algumas táticas.\n\nA tática §3 pode ser usada para fechar um objetivo que é exatamente uma\ndas hipóteses. Ela recebe o nome da hipótese como argumento: §4.",
+ "In this world we define §0 and prove standard facts\nabout it, such as \"if §1 and §2 then §3.\"\n\nThe definition of §4 is \"there exists a number §5\nsuch that §6. \" So we're going to have to learn\na tactic to prove \"exists\" theorems, and another one\nto use \"exists\" hypotheses.\n\nClick on \"Start\" to proceed.":
+ "Neste mundo definimos §0 e provamos fatos padrão\nsobre isso, como \"se §1 e §2 então §3.\"\n\nA definição de §4 é \"existe um número §5\ntal que §6. \" Então vamos ter que aprender\numa tática para provar teoremas de \"existe\", e outra\npara usar hipóteses de \"existe\".\n\nClique em \"Começar\" para prosseguir.",
+ "In this world I will mostly leave you on your own.\n\n§0 is the theorem that §1.":
+ "Neste mundo, vou deixar você por sua própria conta na maior parte do tempo.\n\n§0 é o teorema de que §1.",
+ "In this level, we see inequalities as *hypotheses*. We have not seen this before.\nThe §0 tactic can be used to take §1 apart.":
+ "Neste nível, vemos desigualdades como *hipóteses*. Não tínhamos visto isso antes.\nA tática §0 pode ser usada para desmontar §1.",
+ "In this level, the hypotheses §0 is an *implication*. It says\nthat *if* §1 *then* §2. We can use this\nhypothesis with the §3 tactic. Remember you can click on\n§4 or any other tactic on the right to see a detailed explanation\nof what it does, with examples.":
+ "Neste nível, a hipótese §0 é uma *implicação*. Ela diz\nque *se* §1 *então* §2. Podemos usar essa\nhipótese com a tática §3. Lembre que você pode clicar em\n§4 ou em qualquer outra tática à direita para ver uma explicação detalhada\ndo que ela faz, com exemplos.",
+ "In this level we're going to prove that §0, where §1 is a secret natural number.\n\nWait, don't we already know that? No! We know that §2, but that's §3.\nThis is §4, which is different.\n\nThe difficulty with proving §5 is that we do not have a *formula* for\n§6 in general, we can only use §7 and §8 once\nwe know whether §9 is §10 or a successor. The §11 tactic splits into these two cases.\n\nThe base case will require us to prove §12, and the inductive step\nwill ask us to show that if §13 then §14. Because\n§15 and successor are the only way to make numbers, this will cover all the cases.\n\nSee if you can do your first induction proof in Lean.\n\n(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\nback to \"Typewriter mode\" by clicking the §16 button in the top right.)":
+ "Neste nível vamos provar que §0, onde §1 é um número natural secreto.\n\nEspera, a gente já não sabe disso? Não! Sabemos que §2, mas isso é §3.\nAqui é §4, que é diferente.\n\nA dificuldade de provar §5 é que não temos uma *fórmula* para\n§6 em geral; só podemos usar §7 e §8 quando\nsabemos se §9 é §10 ou um sucessor. A tática §11 divide nesses dois casos.\n\nO caso base vai exigir que provemos §12, e o passo indutivo\nvai pedir que mostremos que se §13 então §14. Como\n§15 e o sucessor são as únicas formas de construir números, isso cobre todos os casos.\n\nVeja se você consegue fazer sua primeira prova por indução em Lean.\n\n(A propósito, se você ainda estiver no \"Editor mode\" do mundo anterior, pode voltar\npara o \"Typewriter mode\" clicando no botão §16 no canto superior direito.)",
+ "In this level we prove that if §0 and §1 then §2. It is tricky, for\nseveral reasons. One of these is that\nwe need to introduce a new idea: we will need to understand the concept of\nmathematical induction a little better.\n\nStarting with §3 is too naive, because in the inductive step\nthe hypothesis is §4 but what we know is §5,\nso the induction hypothesis does not apply!\n\nAssume §6 is fixed. The actual statement we want to prove by induction on §7 is\n\"for all §8, if §9 then §10\". This *can* be proved by induction,\nbecause we now have the flexibility to change §11.":
+ "Neste nível provamos que se §0 e §1, então §2. É complicado, por\nvárias razões. Uma delas é que\nprecisamos introduzir uma ideia nova: vamos precisar entender um pouco melhor\no conceito de indução matemática.\n\nComeçar com §3 é ingênuo demais, porque no passo indutivo\na hipótese é §4 mas o que sabemos é §5,\nentão a hipótese de indução não se aplica!\n\nSuponha que §6 esteja fixo. O enunciado que realmente queremos provar por indução em §7 é\n\"para todo §8, se §9 então §10\". Isso *pode* ser provado por indução,\nporque agora temos a flexibilidade de mudar §11.",
+ "In this level the *goal* is §0 but to help us we\nhave an *assumption* §1 saying that §2. Check that you can see §3 in\nyour list of assumptions. Lean thinks of §4 as being a secret proof of the\nassumption, rather like §5 is a secret number.\n\nBefore we can use §6, we have to \"substitute in for §7\".\nWe do this in Lean by *rewriting* the proof §8,\nusing the §9 tactic.":
+ "Neste nível o *objetivo* é §0, mas para nos ajudar temos\numa *hipótese* §1 dizendo que §2. Verifique que você consegue ver §3 na\nsua lista de hipóteses. O Lean pensa em §4 como uma prova secreta da\nhipótese, mais ou menos como §5 é um número secreto.\n\nAntes de podermos usar §6, temos que \"substituir §7\".\nFazemos isso em Lean *reescrevendo* usando a prova §8,\ncom a tática §9.",
+ "In this game you recreate the natural numbers §0 from the Peano axioms,\nlearning the basics about theorem proving in Lean.\n\nThis is a good first introduction to Lean!":
+ "Neste jogo você recria os números naturais §0 a partir dos axiomas de Peano,\naprendendo o básico sobre como provar teoremas em Lean.\n\nEsta é uma boa primeira introdução ao Lean!",
+ "In the next level, we'll do the same proof but backwards.":
+ "No próximo nível, faremos a mesma prova, mas de trás para frente.",
+ "In the last level, we manipulated the hypothesis §0\n  until it became the goal §1. In this level we'll manipulate\n  the goal until it becomes our hypothesis! In other words, we\n  will \"argue backwards\". The §2 tactic can do this too.\n  Again I will walk you through this one (assuming you're in\n  command line mode).":
+ "No nível anterior, manipulamos a hipótese §0\n  até ela virar o objetivo §1. Neste nível vamos manipular\n  o objetivo até ele virar a nossa hipótese! Em outras palavras, vamos\n  \"argumentar de trás para frente\". A tática §2 também consegue fazer isso.\n  De novo, vou te guiar por este (supondo que você esteja no\n  modo linha de comando).",
+ "In the \"base case\" we have a hypothesis §0, and you can deduce anything\nfrom a false statement. The §1 tactic will close this goal.":
+ "No \"caso base\" temos uma hipótese §0, e você pode deduzir qualquer coisa\na partir de um enunciado falso. A tática §1 vai fechar esse objetivo.",
+ "In some later worlds, we're going to see some much nastier levels,\nlike §0.\nBrackets need to be moved around, and variables need to be swapped.\n\nIn this level, §1,\nlet's forget about the brackets and just think about\nthe variable order.\nTo turn §2 into §3 we need to swap §4 and §5,\nand then swap §6 and §7. But this is easier than you\nthink with §8.":
+ "Em alguns mundos mais adiante, vamos ver níveis bem mais desagradáveis,\ncomo §0.\nParênteses precisam ser movidos, e variáveis precisam ser trocadas de lugar.\n\nNeste nível, §1,\nvamos esquecer os parênteses e pensar apenas\nna ordem das variáveis.\nPara transformar §2 em §3 precisamos trocar §4 e §5,\ne depois trocar §6 e §7. Mas isso é mais fácil do que você\npensa com §8.",
+ "In order to use the tactic §0 you can enter it in the text box\nunder the goal and hit \"Execute\".":
+ "Para usar a tática §0 você pode digitá-la na caixa de texto\nabaixo do objetivo e clicar em \"Execute\".",
+ "In Advanced Addition World we will prove some basic\naddition facts such as §0. The theorems\nproved in this world will be used to build\na theory of inequalities in §1 World.\n\nClick on \"Start\" to proceed.":
+ "No Mundo da Adição Avançada vamos provar alguns fatos básicos\nsobre adição, como §0. Os teoremas\nprovados neste mundo serão usados para construir\numa teoria de desigualdades no Mundo do §1.\n\nClique em \"Começar\" para continuar.",
+ "Implication World": "Mundo da Implicação",
+ "Implementing the algorithm for equality of naturals, and the proof that it is correct,\nlooks like this:\n\n§0\n\nThis Lean code is a formally verified algorithm for deciding equality\nbetween two naturals. I've typed it in already, behind the scenes.\nBecause the algorithm is formally verified to be correct, we can\nuse it in Lean proofs. You can run the algorithm with the §1 tactic.":
+ "Implementar o algoritmo para igualdade de naturais, junto com a prova de que ele está correto,\nfica assim:\n\n§0\n\nEsse código Lean é um algoritmo formalmente verificado para decidir a igualdade\nentre dois naturais. Eu já digitei ele, nos bastidores.\nComo o algoritmo é formalmente verificado como correto, podemos\nusá-lo em provas Lean. Você pode rodar o algoritmo com a tática §1.",
+ "If §0, §1 and §2 are numbers, we have\n§3":
+ "Se §0, §1 e §2 são números, temos\n§3",
+ "If §0, then §1.": "Se §0, então §1.",
+ "If §0 then §1.": "Se §0 então §1.",
+ "If §0 then §1 or §2 or §3.": "Se §0 então §1 ou §2 ou §3.",
+ "If §0 then either §1 or §2.": "Se §0 então §1 ou §2.",
+ "If §0 or §1, then §2 or §3.": "Se §0 ou §1, então §2 ou §3.",
+ "If §0 is a proof of §1 then §2 will\nturn §3s into §4s. But what if we want to\nturn §5s into §6s? To tell the §7 tactic\nwe want this, we use a left arrow §8. Type\n§9 and then hit the space bar to get this arrow.\n\nLet's prove that §10 is the number after the number\nafter §11 again, this time by changing §12\ninto §13.":
+ "Se §0 é uma prova de §1, então §2 vai\ntransformar §3 em §4. Mas e se quisermos\ntransformar §5 em §6? Para dizer à tática §7\nque é isso que queremos, usamos uma seta para a esquerda §8. Digite\n§9 e aperte a barra de espaço para obter essa seta.\n\nVamos provar de novo que §10 é o número depois do número\ndepois de §11, desta vez transformando §12\nem §13.",
+ "If §0 is a number, then §1.": "Se §0 é um número, então §1.",
+ "If §0 are numbers, then §1.": "Se §0 são números, então §1.",
+ "If §0 are arbitrary natural numbers, we have\n§1.":
+ "Se §0 são números naturais arbitrários, temos\n§1.",
+ "If §0 and §1, then §2.": "Se §0 e §1, então §2.",
+ "If §0 and §1 then we can deduce a contradiction.":
+ "Se §0 e §1 então podemos deduzir uma contradição.",
+ "If §0 and §1 are numbers, then §2 is a proof\nthat §3 implies §4. Click on this theorem in the *Peano*\ntab for more information.\n\nPeano had this theorem as an axiom, but in Algorithm World\nwe will show how to prove it in Lean. Right now let's just assume it,\nand let's prove §5 using it. Again, we will proceed\nby manipulating our hypothesis until it becomes the goal. I will\nwalk you through this level.":
+ "Se §0 e §1 são números, então §2 é a prova\nde que §3 implica §4. Clique neste teorema na aba *Peano*\npara mais informações.\n\nPeano tinha este teorema como axioma, mas no Mundo dos Algoritmos\nvamos mostrar como prová-lo em Lean. Por enquanto vamos só assumi-lo,\ne vamos provar §5 usando ele. De novo, vamos proceder\nmanipulando nossa hipótese até que ela se torne o objetivo. Vou\nte guiar por este nível.",
+ "If §0 and §1 are numbers, then either §2 or §3.":
+ "Se §0 e §1 são números, então §2 ou §3.",
+ "If §0 and §1 are natural numbers, and §2, then §3.":
+ "Se §0 e §1 são números naturais, e §2, então §3.",
+ "If §0 and §1 are arbitrary natural numbers, we have\n§2.":
+ "Se §0 e §1 são números naturais arbitrários, temos\n§2.",
+ "If §0 and §1 are arbitrary natural numbers, then §2":
+ "Se §0 e §1 são números naturais arbitrários, então §2",
+ "If §0 and we know that §1 then we can deduce §2.":
+ "Se §0 e sabemos que §1 então podemos deduzir §2.",
+ "If you §0 the wrong number, you get stuck with a goal you can't prove.\nWhat number will you §1 here?":
+ "Se você usar §0 com o número errado, fica preso com um objetivo que não consegue provar.\nQual número você vai usar no §1 aqui?",
+ "If you have completed Algorithm World then you can use the §0 tactic\nhere. If not then I'll talk you through a manual approach.":
+ "Se você completou o Mundo dos Algoritmos, então pode usar a tática §0\naqui. Se não, vou te guiar por uma abordagem manual.",
+ "If the goal is not *exactly* a hypothesis, we can sometimes\nuse rewrites to fix things up.":
+ "Se o objetivo não é *exatamente* uma hipótese, às vezes podemos\nusar reescritas para ajeitar as coisas.",
+ "How should we define §0? Just like addition, we need to give definitions\nwhen §1 and when §2 is a successor.\n\nThe zero case is easy: we define §3 to be §4. Now say we know\n§5. What should §6 be? Well, that's §7 §8s,\nso it should be §9.\n\nHere are the definitions in Lean.\n\n  * §10\n  * §11\n\nIn this world, we must not only prove facts about multiplication like §12,\nwe must also prove facts about how multiplication interacts with addition, like §13.\nLet's get started.":
+ "Como devemos definir §0? Assim como na adição, precisamos dar definições\npara quando §1 e para quando §2 é um sucessor.\n\nO caso zero é fácil: definimos §3 como §4. Agora suponha que sabemos\n§5. Quanto deveria ser §6? Bem, isso é §7 §8s,\nentão deveria ser §9.\n\nAqui estão as definições em Lean.\n\n  * §10\n  * §11\n\nNeste mundo, não devemos apenas provar fatos sobre multiplicação como §12,\ndevemos também provar fatos sobre como a multiplicação interage com a adição, como §13.\nVamos começar.",
+ "How about this for a proof:\n§0": "Que tal esta prova:\n§0",
+ "How about this for a proof:\n\n§0\n\nThat's the end of Advanced Addition World! You'll need these theorems\nfor the next world, §1 World. Click on \"Leave World\" to access it.":
+ "Que tal esta prova:\n\n§0\n\nEsse é o fim do Mundo da Adição Avançada! Você vai precisar destes teoremas\nno próximo mundo, o Mundo do §1. Clique em \"Leave World\" para acessá-lo.",
+ "Here's what I was thinking of:\n§0": "Eu pensei assim:\n§0",
+ "Here's the short proof:\n§0\nThis works because, given §1,\nthe argument is reduced to pure logic.":
+ "Aqui está a prova curta:\n§0\nIsso funciona porque, dado §1,\no argumento se reduz a pura lógica.",
+ "Here's my solution:\n§0\n\nInducting on §1 or §2 also works, but might take longer.":
+ "Aqui está a minha solução:\n§0\n\nFazer indução em §1 ou §2 também funciona, mas pode dar mais trabalho.",
+ "Here's my solution:\n§0": "Esta é a minha solução:\n§0",
+ "Here's my proof:\n§0\n\nIf you solved this level then you should be fine with the next level!":
+ "Aqui está a minha prova:\n§0\n\nSe você resolveu este nível, então vai se dar bem no próximo!",
+ "Here's my proof:\n§0\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like §1 feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Leave World\" and\ndecide your route.":
+ "Aqui está a minha prova:\n§0\n\nMesmo o Lean sendo um provador de teoremas, agora está bem claro que ainda não\ndesenvolvemos material suficiente para torná-lo uma calculadora adequada. No Mundo dos\nAlgoritmos, um mundo mais de ciência da computação, vamos desenvolver ferramentas que tornam\nperguntas como esta bem mais fáceis, e objetivos como §1 viáveis.\nComo alternativa, você pode fazer mais matemática no Mundo da Adição Avançada, onde provamos\nos lemas necessários para ter uma teoria funcional das desigualdades. Clique em \"Leave World\" e\ndecida o seu caminho.",
+ "Here's my proof:\n§0\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that §1 is a *partial order* on §2.\n\nThe boss level of this world is to prove\nthat §3 is a total order. Let's learn two more easy tactics\nfirst.":
+ "Aqui está a minha prova:\n§0\n\nUm matemático que passava por aqui observa que, junto com a antissimetria,\nvocê provou que §1 é uma *ordem parcial* em §2.\n\nO chefão deste mundo é provar\nque §3 é uma ordem total. Vamos aprender mais duas táticas fáceis\nantes disso.",
+ "Here's my proof:\n§0": "Aqui está a minha prova:\n§0",
+ "Here's a two-liner:\n§0\n\nThis works because §1 is a proof of §2.":
+ "Aqui vai uma solução de duas linhas:\n§0\n\nIsso funciona porque §1 é uma prova de §2.",
+ "Here's a two-line proof:\n§0": "Aqui está uma prova de duas linhas:\n§0",
+ "Here's a proof using §0:\n§1\n\nand here's an even shorter one using the same idea:\n§2\n\nAlternatively you can just prove it by induction on §3:\n\n§4":
+ "Aqui está uma prova usando §0:\n§1\n\ne aqui está uma ainda mais curta usando a mesma ideia:\n§2\n\nComo alternativa, você pode simplesmente provar por indução em §3:\n\n§4",
+ "Here's a completely backwards proof:\n§0":
+ "Aqui está uma prova completamente de trás para frente:\n§0",
+ "Here we want to deal with the cases §0 and §1 separately,\nso start with §2.":
+ "Aqui queremos tratar os casos §0 e §1 separadamente,\nentão comece com §2.",
+ "Here we begin to\ndevelop an algorithm which, given two naturals §0 and §1, returns the answer\nto \"does §2?\"\n\nHere is the algorithm. First note that §3 and §4 are numbers, and hence\nare either §5 or successors.\n\n*) If §6 and §7 are both §8, return \"yes\".\n\n*) If one is §9 and the other is §10, return \"no\".\n\n*) If §11 and §12, then return the answer to \"does §13?\"\n\nOur job now is to *prove* that this algorithm always gives the correct answer. The proof that\n§14 is §15. The proof that §16 is §17, and the proof\nthat §18 is §19. The proof that if §20 then\n§21 is §22 and then §23. This level is a proof of the one\nremaining job we have to do: if §24 then §25.":
+ "Aqui começamos a\ndesenvolver um algoritmo que, dados dois naturais §0 e §1, devolve a resposta\npara \"será que §2?\"\n\nEis o algoritmo. Primeiro note que §3 e §4 são números e, portanto,\nsão §5 ou sucessores.\n\n*) Se §6 e §7 forem ambos §8, devolva \"sim\".\n\n*) Se um for §9 e o outro for §10, devolva \"não\".\n\n*) Se §11 e §12, então devolva a resposta para \"será que §13?\"\n\nNosso trabalho agora é *provar* que esse algoritmo sempre dá a resposta correta. A prova de que\n§14 é §15. A prova de que §16 é §17, e a prova\nde que §18 é §19. A prova de que, se §20, então\n§21 é §22 e depois §23. Este nível é a prova da única\ntarefa que nos resta: se §24 então §25.",
+ "Here is an example proof of 2+2=4 showing off various techniques.\n\n§0\n\nOptional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\non the §1 button in the top right. You can now see your proof\nwritten as several lines of code. Move your cursor between lines to see\nthe goal state at any point. Now cut and paste your code elsewhere if you\nwant to save it, and paste the above proof in instead. Move your cursor\naround to investigate. When you've finished, click the §2 button in the top right to\nmove back into \"Typewriter mode\".\n\nYou have finished tutorial world!\nClick \"Leave World\" to go back to the\noverworld, and select Addition World, where you will learn\nabout the §3 tactic.":
+ "Aqui está um exemplo de prova de 2+2=4 mostrando várias técnicas.\n\n§0\n\nExtra opcional: você pode rodar essa prova você mesmo. Mude o jogo para o \"Modo editor\" clicando\nno botão §1 no canto superior direito. Agora você pode ver sua prova\nescrita como várias linhas de código. Mova o cursor entre as linhas para ver\no estado do objetivo em qualquer ponto. Agora recorte e cole seu código em outro lugar se\nquiser salvá-lo, e cole a prova acima no lugar. Mova o cursor\npara investigar. Quando terminar, clique no botão §2 no canto superior direito para\nvoltar ao \"Modo máquina de escrever\".\n\nVocê terminou o mundo tutorial!\nClique em \"Leave World\" para voltar ao\nmapa geral, e selecione o Mundo da Adição, onde você vai aprender\nsobre a tática §3.",
+ "Having to rearrange variables manually using commutativity and\nassociativity is very tedious. We start by reminding you of this. §0\nis a key component in the first algorithm which we'll explain, but we need\nto prove it manually.\n\nRemember that you can do precision commutativity rewriting\nwith things like §1. And remember that\n§2 means §3.":
+ "Ter que rearranjar variáveis manualmente usando comutatividade e\nassociatividade é bem tedioso. Começamos te lembrando disso. §0\né uma peça-chave no primeiro algoritmo que vamos explicar, mas precisamos\nprová-lo manualmente.\n\nLembre que você pode fazer reescrita de comutatividade com precisão\ncom coisas como §1. E lembre que\n§2 significa §3.",
+ "Good luck!\n\n  One last hint. If §0 then §1 will change *all* §2s into §3s.\n  If you only want to change one of them, say the 3rd one, then use\n  §4.":
+ "Boa sorte!\n\n  Uma última dica. Se §0, então §1 vai mudar *todos* os §2 em §3.\n  Se você quiser mudar apenas um deles, digamos o terceiro, use\n  §4.",
+ "For any natural number §0, we have §1.":
+ "Para qualquer número natural §0, temos §1.",
+ "For all numbers §0, §1.": "Para qualquer números §0, §1.",
+ "For all numbers §0 and §1, we have\n§2":
+ "Para quaisquer números §0 e §1, temos\n§2",
+ "For all naturals §0, §1.": "Para quaisquer naturais §0, §1.",
+ "For all naturals §0, §1, §2, we have §3.":
+ "Para quaisquer naturais §0, §1, §2, temos §3.",
+ "For all naturals §0 §1 §2 and §3, we have\n§4":
+ "Para quaisquer naturais §0 §1 §2 e §3, temos\n§4",
+ "For all natural numbers §0, we have §1.":
+ "Para todo número natural §0, temos §1.",
+ "For all natural numbers §0, we have\n§1.":
+ "Para quaisquer números naturais §0, temos\r\n§1.",
+ "For all natural numbers §0 and §1, we have\n§2.":
+ "Para quaisquer números naturais §0 e §1, temos\n§2.",
+ "First execute §0 to replace the §1 with §2.":
+ "Primeiro execute §0 para substituir §1 por §2.",
+ "Finally use a targetted §0 to switch §1 and §2":
+ "Por fim, use um §0 direcionado para trocar §1 e §2",
+ "Fermat's Last Theorem": "Último Teorema de Fermat",
+ "Every number in Lean is either §0 or a successor. We know how to add §1,\nbut we need to figure out how to add successors. Let's say we already know\nthat §2. What should the answer to §3 be? Well,\n§4 is one bigger than §5, so §6 should be §7,\nthe number one bigger than §8. More generally §9 should\nbe §10. Let's add this as a lemma.\n\n* §11\n\nIf you ever see §12 in your goal, §13 is\nnormally a good idea.\n\nLet's now prove that §14. Figure out how to get §15 into\nthe picture, and then §16. Switch between the §17 (addition) and\n§18 (numerals) tabs under \"Theorems\" on the right to\nsee which proofs you can rewrite.":
+ "Todo número em Lean é §0 ou um sucessor. Sabemos como somar §1,\nmas precisamos descobrir como somar sucessores. Digamos que já sabemos\nque §2. Qual deveria ser a resposta de §3? Bem,\n§4 é um a mais que §5, então §6 deveria ser §7,\no número um a mais que §8. De forma geral, §9 deveria\nser §10. Vamos adicionar isso como um lema.\n\n* §11\n\nSempre que você vir §12 no seu objetivo, §13 costuma\nser uma boa ideia.\n\nAgora vamos provar que §14. Descubra como colocar §15 em\ncena, e então faça §16. Alterne entre as abas §17 (adição) e\n§18 (numerais) em \"Theorems\" à direita para\nver quais provas você pode reescrever.",
+ "Do that again!\n\n§0 tries to fill in\nthe arguments to §1 (finding §2) then it replaces all occurrences of\n§3 it finds. Therefor, it did not rewrite §4, yet.":
+ "Faça isso de novo!\n\n§0 tenta preencher\nos argumentos de §1 (encontrando §2) e então substitui todas as ocorrências de\n§3 que encontrar. Portanto, ele ainda não reescreveu §4.",
+ "Did you use induction on §0?\nHere's a two-line proof of §1 which uses §2.\nIf you want to inspect it, you can go into editor mode by clicking §3 in the top right\nand then just cut and paste the proof and move your cursor around it\nto see the hypotheses and goal at any given point\n(although you'll lose your own proof this way). Click §4 to get\nback to command line mode.\n§5":
+ "Você usou indução em §0?\nAqui está uma prova de duas linhas de §1 que usa §2.\nSe quiser inspecioná-la, você pode entrar no modo editor clicando em §3 no canto superior direito\ne depois só copiar e colar a prova e mover o cursor por ela\npara ver as hipóteses e o objetivo em cada ponto\n(embora você perca a sua própria prova assim). Clique em §4 para\nvoltar ao modo linha de comando.\n§5",
+ "Dealing with §0": "Lidando com §0",
+ "Congratulations! You've finished Algorithm World. These algorithms\nwill be helpful for you in Even-Odd World (when someone gets around to\nimplementing it).":
+ "Parabéns! Você terminou o Mundo do Algoritmo. Esses algoritmos\nvão te ajudar no Mundo dos Pares e Ímpares (quando alguém finalmente\nimplementá-lo).",
+ "Congratulations! You have proved Fermat's Last Theorem!\n\nEither that, or you used magic...":
+ "Parabéns! Você provou o Último Teorema de Fermat!\n\nOu isso, ou você usou magia...",
+ "Congratulations! You completed your first verified proof!\n\nRemember that §0 is a *tactic*. If you ever want information about the §1 tactic,\nyou can click on §2 in the list of tactics on the right.\n\nNow click on \"Next\" to learn about the §3 tactic.":
+ "Parabéns! Você completou sua primeira prova verificada!\n\nLembre-se de que §0 é uma *tática*. Se algum dia você quiser informações sobre a tática §1,\npode clicar em §2 na lista de táticas à direita.\n\nAgora clique em \"Próximo\" para aprender sobre a tática §3.",
+ "Concretely: §0.": "Concretamente: §0.",
+ "Can you take it from here? Click on \"Show more help!\" if you need a hint.":
+ "Consegue seguir daqui? Clique em \"Mostrar mais ajuda!\" se precisar de uma dica.",
+ "Can you take it from here? (note: if you try §0 again, it will\ntake you back to where you started!)":
+ "Consegue seguir daqui? (nota: se você tentar §0 de novo, ele vai\nte levar de volta para onde você começou!)",
+ "Can you take it from here?": "Consegue continuar daqui?",
+ "Can you now change the goal into §0?":
+ "Agora você consegue transformar o objetivo em §0?",
+ "At this point you see the term §0, so you can use the\ninduction hypothesis with §1.":
+ "Neste ponto você vê o termo §0, então pode usar a\nhipótese de indução com §1.",
+ "Assuming §0, we have §1.": "Supondo que §0, temos §1.",
+ "Assuming §0 and §1, we have §2.": "Supondo §0 e §1, temos §2.",
+ "As warm-up for §0 let's prove §1. To do this we need to\nintroduce Peano's last axiom §2, a proof that §3.\nTo learn about this result, click on it in the list of lemmas on the right.":
+ "Como aquecimento para §0, vamos provar §1. Para isso precisamos\nintroduzir o último axioma de Peano, §2, uma prova de que §3.\nPara aprender sobre esse resultado, clique nele na lista de lemas à direita.",
+ "Arguing backwards": "Argumentando de trás para frente",
+ "Applying a proof of §0 to the *goal* changes §1 to §2.\nNow try §3 to make the goal more like the hypothesis.":
+ "Aplicar uma prova de §0 ao *objetivo* transforma §1 em §2.\nAgora tente fazer §3 para deixar o objetivo mais parecido com a hipótese.",
+ "And now §0": "E agora §0",
+ "And now we've deduced what we wanted to prove: the goal is one of our assumptions.\nFinish the level with §0.":
+ "E agora deduzimos o que queríamos provar: o objetivo é uma das nossas hipóteses.\nTermine o nível com §0.",
+ "And finally §0.": "E finalmente §0.",
+ "An algorithm for equality": "Um algoritmo para igualdade",
+ "Although §0 in this game, §1 if §2, i.e., if\n§3 is a successor.":
+ "Embora §0 neste jogo, §1 se §2, ou seja, se\n§3 for um sucessor.",
+ "Algorithm World": "Mundo do Algoritmo",
+ "Advanced Multiplication World": "Mundo da Multiplicação Avançada",
+ "Advanced Addition World": "Mundo da Adição Avançada",
+ "Advanced *Addition* World proved various implications\ninvolving addition, such as §0 and §1.\nThese lemmas were used to prove basic facts about ≤ in ≤ World.\n\nIn Advanced Multiplication World we prove analogous\nfacts about multiplication, such as §2, and\n§3 (assuming §4 in the latter result). This will prepare\nus for Divisibility World.\n\nMultiplication World is more complex than Addition World. In the same\nway, Advanced Multiplication world is more complex than Advanced Addition\nWorld. One reason for this is that certain intermediate results are only\ntrue under the additional hypothesis that one of the variables is non-zero.\nThis causes some unexpected extra twists.":
+ "No Mundo da *Adição* Avançada provamos várias implicações\nenvolvendo adição, como §0 e §1.\nEsses lemas foram usados para provar fatos básicos sobre ≤ no Mundo do ≤.\n\nNo Mundo da Multiplicação Avançada provamos fatos análogos\nsobre multiplicação, como §2 e\n§3 (supondo §4 neste último resultado). Isso vai nos preparar\npara o Mundo da Divisibilidade.\n\nO Mundo da Multiplicação é mais complexo que o Mundo da Adição. Do mesmo\njeito, o Mundo da Multiplicação Avançada é mais complexo que o Mundo da Adição\nAvançada. Uma razão para isso é que certos resultados intermediários só\nsão verdadeiros sob a hipótese adicional de que uma das variáveis é não nula.\nIsso causa algumas reviravoltas inesperadas.",
+ "Addition is distributive over multiplication.\nIn other words, for all natural numbers §0, §1 and §2, we have\n§3.":
+ "A adição é distributiva sobre a multiplicação.\nEm outras palavras, para quaisquer números naturais §0, §1 e §2, temos\n§3.",
+ "Addition World": "Mundo da Adição",
+ "Adding zero": "Somando zero",
+ "A two-line proof is\n\n§0\n\nWe now have all the tools necessary to set up the basic theory of divisibility of naturals.":
+ "Uma prova de duas linhas é\n\n§0\n\nAgora temos todas as ferramentas necessárias para montar a teoria básica da divisibilidade dos naturais.",
+ "A proof that §0.": "Uma prova de que §0.",
+ "A passing mathematician remarks that with reflexivity and transitivity out of the way,\nyou have proved that §0 is a *preorder* on §1.":
+ "Um matemático que passava por ali comenta que, com a reflexividade e a transitividade resolvidas,\nvocê provou que §0 é uma *pré-ordem* em §1.",
+ "A passing mathematician notes that you've proved\nthat the natural numbers are a commutative semiring.\n\nIf you want to begin your journey to the final boss, head for Power World.":
+ "Um matemático que passava por aqui observa que você provou\nque os números naturais formam um semianel comutativo.\n\nSe quiser começar sua jornada rumo ao chefão final, vá para o Mundo da Potência.",
+ "A passing mathematician congratulates you on proving that naturals\nare an additive commutative monoid.\n\nLet's practice using §0 and §1 in one more level,\nbefore we leave addition world.":
+ "Um matemático que passava por aqui te parabeniza por provar que os naturais\nformam um monoide comutativo aditivo.\n\nVamos praticar o uso de §0 e §1 em mais um nível,\nantes de deixarmos o mundo da adição.",
+ "2+2=4": "2+2=4",
+ "2 + 2 ≠ 5 is boring to prove in full, given only the tools we have currently.\nTo make it a bit less painful, I have unfolded all of the numerals for you.\nSee if you can use §0 and §1 to prove this.":
+ "2 + 2 ≠ 5 é chato de provar por completo, dadas apenas as ferramentas que temos no momento.\nPara deixar isso um pouco menos doloroso, eu já desdobrei todos os numerais para você.\nVeja se você consegue usar §0 e §1 para provar isso.",
+ "2 + 2 ≠ 5": "2 + 2 ≠ 5",
+ "1 ≠ 0": "1 ≠ 0",
+ "0 ≤ x": "0 ≤ x",
+ "*Game version: 4.3*\n\n*Recent additions: bug fixes*\n\n## Progress saving\n\nThe game stores your progress in your local browser storage.\nIf you delete it, your progress will be lost!\n\nWarning: In most browsers, deleting cookies will also clear the local storage\n(or \"local site data\"). Make sure to download your game progress first!\n\n## Credits\n\n* **Creators:** Kevin Buzzard, Jon Eugster\n* **Original Lean3-version:** Kevin Buzzard, Mohammad Pedramfar\n* **Game Engine:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n* **Additional levels:** Sian Carey, Ivan Farabella, Archie Browne.\n* **Additional thanks:** All the student beta testers, all the schools\nwho invited Kevin to speak, and all the schoolkids who asked him questions\nabout the material.\n\n## Resources\n\n* The [Lean Zulip chat](https://leanprover.zulipchat.com/) forum\n* [Original Lean3 version](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) (no longer maintained)\n\n## Problems?\n\nPlease ask any questions about this game in the\n[Lean Zulip chat](https://leanprover.zulipchat.com/) forum, for example in\nthe stream \"New Members\". The community will happily help. Note that\nthe Lean Zulip chat is a professional research forum.\nPlease use your full real name there, stay on topic, and be nice. If you're\nlooking for somewhere less formal (e.g. you want to post natural number\ngame memes) then head on over to the [Lean Discord](https://discord.gg/WZ9bs9UCvx).\n\nAlternatively, if you experience issues / bugs you can also open github issues:\n\n* For issues with the game engine, please open an\n[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n* For issues about the game's content, please open an\n[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo.":
+ "*Versão do jogo: 4.3*\n\n*Adições recentes: correções de bugs*\n\n## Salvamento do progresso\n\nO jogo guarda seu progresso no armazenamento local do seu navegador.\nSe você apagá-lo, seu progresso será perdido!\n\nAtenção: na maioria dos navegadores, apagar os cookies também limpa o armazenamento local\n(ou \"dados locais do site\"). Certifique-se de baixar seu progresso antes!\n\n## Créditos\n\n* **Criadores:** Kevin Buzzard, Jon Eugster\n* **Versão original em Lean3:** Kevin Buzzard, Mohammad Pedramfar\n* **Engine do jogo:** Alexander Bentkamp, Jon Eugster, Patrick Massot\n* **Níveis adicionais:** Sian Carey, Ivan Farabella, Archie Browne.\n* **Tradução para Português Brasileiro:** Luís Felipe Marques.\n* **Agradecimentos adicionais:** Todos os estudantes beta testers, todas as escolas\nque convidaram Kevin para palestrar, e todos os alunos que lhe fizeram perguntas\nsobre o material.\n\n## Recursos\n\n* O fórum [Lean Zulip chat](https://leanprover.zulipchat.com/)\n* [Versão original em Lean3](https://www.ma.imperial.ac.uk/~buzzard/xena/natural_number_game/) (não mantida mais)\n\n## Problemas?\n\nPor favor, faça qualquer pergunta sobre este jogo no fórum\n[Lean Zulip chat](https://leanprover.zulipchat.com/), por exemplo no\ncanal \"New Members\". A comunidade vai ajudar com prazer. Note que\no Lean Zulip chat é um fórum profissional de pesquisa.\nPor favor, use seu nome real completo lá, mantenha-se no tema e seja gentil. Se você\nprocura algo menos formal (por exemplo, se quiser postar memes do jogo dos números\nnaturais), então vá para o [Discord do Lean](https://discord.gg/WZ9bs9UCvx).\n\nAlternativamente, se você encontrar problemas / bugs, também pode abrir issues no github:\n\n* Para problemas com o motor do jogo, por favor abra uma\n[issue no repositório do lean4game](https://github.com/leanprover-community/lean4game/issues).\n* Para problemas com o conteúdo do jogo, por favor abra uma\n[issue no repositório do NNG](https://github.com/hhu-adam/NNG4/issues).",
+ "## The birth of number.\n\nNumbers in Lean are defined by two rules.\n\n* §0 is a number.\n* If §1 is a number, then the *successor* §2 of §3 is a number.\n\nThe successor of §4 means the number after §5. Let's learn to\ncount, and name a few small numbers.\n\n## Counting to four.\n\n§6 is a number, so §7 is a number. Let's call this new number §8.\nSimilarly let's define §9, §10 and §11.\nThis gives us plenty of numbers to be getting along with.\n\nThe *proof* that §12 is called §13.\nCheck out the \"012\" tab in the list of lemmas on the right\nfor this and other proofs.\n\nLet's prove that §14 is the number after the number after zero.":
+ "## O nascimento do número.\n\nOs números em Lean são definidos por duas regras.\n\n* §0 é um número.\n* Se §1 é um número, então o *sucessor* §2 de §3 é um número.\n\nO sucessor de §4 significa o número depois de §5. Vamos aprender a\ncontar e dar nome a alguns números pequenos.\n\n## Contando até quatro.\n\n§6 é um número, então §7 é um número. Vamos chamar esse novo número de §8.\nDo mesmo jeito, vamos definir §9, §10 e §11.\nIsso já nos dá bastante números para trabalhar.\n\nA *prova* de que §12 se chama §13.\nDê uma olhada na aba \"012\" na lista de lemas à direita\npara ver essa e outras provas.\n\nVamos provar que §14 é o número depois do número depois do zero.",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.\n\"\n\nTacticDoc nth_rewrite \"\n## Summary\n\nIf §5 and there are several §6s in the goal, then\n§7 will just change the third §8 to a §9.\n\n## Example\n\nIf the goal is §10 then §11\nwill change the goal to §12. In contrast, §13\nwill change the goal to §14.":
+ "## Resumo\n\n§0 aplica repetidamente a tática §1\nao objetivo. Você não precisa usar essa\ntática, ela só acelera as coisas às vezes.\n\n## Exemplo\n\n§2 vai transformar o objetivo\n§3\nno objetivo\n§4.\n\"\n\nTacticDoc nth_rewrite \"\n## Resumo\n\nSe §5 e há vários §6s no objetivo, então\n§7 vai mudar apenas o terceiro §8 para um §9.\n\n## Exemplo\n\nSe o objetivo é §10 então §11\nvai mudar o objetivo para §12. Em contraste, §13\nvai mudar o objetivo para §14.",
+ "## Summary\n\n§0 repeatedly applies the tactic §1\nto the goal. You don't need to use this\ntactic, it just speeds things up sometimes.\n\n## Example\n\n§2 will turn the goal\n§3\ninto the goal\n§4.":
+ "## Resumo\n\n§0 aplica repetidamente a tática §1\nao objetivo. Você não precisa usar essa\ntática, ela só acelera as coisas às vezes.\n\n## Exemplo\n\n§2 transforma o objetivo\n§3\nno objetivo\n§4.",
+ "## Summary\n\n§0 proves goals of the form §1.\n\nIn other words, the §2 tactic will close any goal of the\nform §3 if §4 and §5 are *identical*.\n\n§6 is short for \\\\\"reflexivity (of equality)\\\\\".\n\n## Example:\n\nIf the goal looks like this:\n\n§7\n\nthen §8 will close it. But if it looks like §9 then §10 won't work, because even\nthough §11 and §12 are always equal as *numbers*, they are not equal as *terms*.\nThe only term which is identical to §13 is §14.\n\n## Details\n\n§15 is short for \\\\\"reflexivity of equality\\\\\".\n\n## Game Implementation\n\n*Note that our §16 is weaker than the version used in core Lean and §17,\nfor pedagogical purposes; mathematicians do not distinguish between propositional\nand definitional equality because they think about definitions in a different way\nto type theorists (§18 and §19 are both \\\\\"facts\\\\\" as far\nas mathematicians are concerned, and who cares what the definition of addition is).*":
+ "## Resumo\n\n§0 prova objetivos da forma §1.\n\nEm outras palavras, a tática §2 fecha qualquer objetivo da\nforma §3 se §4 e §5 forem *idênticos*.\n\n§6 é abreviação de \\\"reflexividade (da igualdade)\\\".\n\n## Exemplo:\n\nSe o objetivo for assim:\n\n§7\n\nentão §8 vai fechá-lo. Mas se for §9 então §10 não vai funcionar, pois mesmo\nque §11 e §12 sejam sempre iguais como *números*, eles não são iguais como *termos*.\nO único termo idêntico a §13 é §14.\n\n## Detalhes\n\n§15 é abreviação de \\\"reflexividade da igualdade\\\".\n\n## Implementação no jogo\n\n*Note que nosso §16 é mais fraco que a versão usada no núcleo do Lean e na §17,\npor motivos pedagógicos; matemáticos não distinguem entre igualdade proposicional\ne definicional porque pensam sobre definições de um jeito diferente dos\nteóricos de tipos (§18 e §19 são ambos \\\"fatos\\\" no que diz respeito\naos matemáticos, e quem se importa com qual é a definição de adição).*",
+ "## Summary\n\nThe §0 tactic will change a goal or hypothesis of\nthe form §1 to §2. It will also work on §3\nand on §4.\n\n### Example\n\nIf the goal is §5 then §6 will change it to §7.\n\n### Example\n\nIf §8 then §9 will change §10 to §11.":
+ "## Resumo\n\nA tática §0 transforma um objetivo ou uma hipótese da\nforma §1 em §2. Ela também funciona com §3\ne com §4.\n\n### Exemplo\n\nSe o objetivo é §5, então §6 vai mudá-lo para §7.\n\n### Exemplo\n\nSe §8, então §9 vai mudar §10 para §11.",
+ "## Summary\n\nThe §0 tactic makes progress with goals which claim something *exists*.\nIf the goal claims that some §1 exists with some property, and you know\nthat §2 will work, then §3 will make progress.\n\nBecause §4 is notation for \\\\\"there exists §5 such that §6\\\\\",\nyou can make progress on goals of the form §7 by §8ing the\nnumber which is morally §9 (i.e. §10)\n\nAny of the following examples is possible assuming the type of the argument passed to the §11 function is accurate:\n\n- §12\n- §13\n- §14":
+ "## Resumo\n\nA tática §0 faz progresso em objetivos que afirmam que algo *existe*.\nSe o objetivo afirma que existe algum §1 com alguma propriedade, e você sabe\nque §2 vai funcionar, então §3 faz progresso.\n\nComo §4 é notação para \\\\\"existe §5 tal que §6\\\\\",\nvocê pode fazer progresso em objetivos da forma §7 aplicando §8 ao\nnúmero que moralmente é §9 (ou seja, §10)\n\nQualquer um dos exemplos a seguir é possível, desde que o tipo do argumento passado para a função §11 esteja correto:\n\n- §12\n- §13\n- §14",
+ "## Summary\n\nIf §0 is an object, and the goal mentions §1, then §2\nattempts to prove the goal by induction on §3, with the inductive\nvariable in the successor case being §4, and the inductive hypothesis being §5.\n\n### Example:\nIf the goal is\n§6\n\nthen\n\n§7\n\nwill turn it into two goals. The first is §8;\nthe second has an assumption §9 and goal\n§10.\n\nNote that you must prove the first\ngoal before you can access the second one.":
+ "## Resumo\n\nSe §0 é um objeto, e o objetivo menciona §1, então §2\ntenta provar o objetivo por indução em §3, sendo a variável indutiva\nno caso do sucessor §4, e a hipótese indutiva §5.\n\n### Exemplo:\nSe o objetivo é\n§6\n\nentão\n\n§7\n\nvai transformá-lo em dois objetivos. O primeiro é §8;\no segundo tem uma hipótese §9 e objetivo\n§10.\n\nNote que você precisa provar o primeiro\nobjetivo antes de poder acessar o segundo.",
+ "## Summary\n\nIf §0 is a proof that §1, and §2 is a proof of §3,\nthen §4 will change §5 to a proof of §6. The idea is that if\nyou know §7 is true, then you can deduce from §8 that §9 is true.\n\nIf the *goal* is §10, then §11 will \\\\\"argue backwards\\\\\" and change the\ngoal to §12. The idea here is that if you want to prove §13, then by §14\nit suffices to prove §15, so you can reduce the goal to proving §16.\n\n### Example:\n\n§17 is a proof that §18.\n\nSo if you have a hypothesis §19\nthen §20 will change §21 to §22.\nYou could write §23\nbut Lean is smart enough to figure out the inputs to §24.\n\n### Example\n\nIf the goal is §25, then §26 will turn the\ngoal into §27.":
+ "## Resumo\n\nSe §0 é uma prova de que §1, e §2 é uma prova de §3,\nentão §4 vai transformar §5 numa prova de §6. A ideia é que, se\nvocê sabe que §7 é verdadeiro, então pode deduzir de §8 que §9 é verdadeiro.\n\nSe o *objetivo* for §10, então §11 vai \\\\\"argumentar de trás para frente\\\\\" e mudar o\nobjetivo para §12. A ideia aqui é que, se você quer provar §13, então por §14\nbasta provar §15, de modo que você pode reduzir o objetivo a provar §16.\n\n### Exemplo:\n\n§17 é uma prova de que §18.\n\nEntão, se você tem uma hipótese §19,\n§20 vai mudar §21 para §22.\nVocê poderia escrever §23,\nmas Lean é esperto o bastante para descobrir sozinho as entradas de §24.\n\n### Exemplo\n\nSe o objetivo é §25, então §26 vai transformar o\nobjetivo em §27.",
+ "## Summary\n\nIf §0 is a proof of an equality §1, then §2 will change\nall §3s in the goal to §4s. It's the way to \\\\\"substitute in\\\\\".\n\n## Variants\n\n* §5 (changes §6s to §7s; get the back arrow by typing §8 or §9.)\n\n* §10 (a sequence of rewrites)\n\n* §11 (changes §12s to §13s in hypothesis §14)\n\n* §15 (changes §16s to §17s in two hypotheses and the goal;\nget the §18 symbol with §19.)\n\n* §20 will keep changing §21 to §22\nuntil there are no more matches for §23.\n\n* §24 will change only the second §25 in the goal to §26.\n\n### Example:\n\nIf you have the assumption §27 and your goal is\n§28\n\nthen\n\n§29\n\nwill change the goal into §30, and then\n\n§31\n\nwill change the goal into §32, which\ncan be solved with §33.\n\n### Example:\n\nYou can use §34 to change a hypothesis as well.\nFor example, if you have two hypotheses\n§35\nthen §36 will turn §37 into §38.\n\n## Common errors\n\n* You need the square brackets. §39 is never correct.\n\n* If §40 is not a *proof* of an *equality* (a statement of the form §41),\nfor example if §42 is a function or an implication,\nthen §43 is not the tactic you want to use. For example,\n§44 is never correct: §45 is the theorem *statement*,\nnot the proof. If §46 is the proof, then §47 will work.\n\n## Details\n\nThe §48 tactic is a way to do \\\\\"substituting in\\\\\". There\nare two distinct situations where you can use this tactic.\n\n1) Basic usage: if §49 is an assumption or\nthe proof of a theorem, and if the goal contains one or more §50s, then §51\nwill change them all to §52s. The tactic will error\nif there are no §53s in the goal.\n\n2) Advanced usage: Assumptions coming from theorem proofs\noften have missing pieces. For example §54\nis a proof that §55 because §56 really is a function,\nand §57 is the input. In this situation §58 will look through the goal\nfor any subterm of the form §59, and the moment it\nfinds one it fixes §60 to be §61 then changes all §62s to §63s.\n\nExercise: think about why §64 changes the term\n§65 to\n§66\n\nIf you can't remember the name of the proof of an equality, look it up in\nthe list of lemmas on the right.\n\n## Targetted usage\n\nIf your goal is §67 and you want to rewrite §68\nto §69, then §70 will not work because Lean finds another\naddition first and swaps those inputs instead. Use §71 to\nguarantee that Lean rewrites §72 to §73. This works because\n§74 is a proof that §75, §76 is a proof\nthat §77, and §78 is a proof that §79.\n\nIf §80 then §81 will turn all §82s into §83s.\nIf you only want to change the 37th occurrence of §84\nto §85 then do §86.":
+ "## Resumo\n\nSe §0 é uma prova de uma igualdade §1, então §2 vai trocar\ntodos os §3 do objetivo por §4. É o jeito de \\\\\"substituir\\\\\".\n\n## Variantes\n\n* §5 (troca §6 por §7; obtenha a seta para trás digitando §8 ou §9.)\n\n* §10 (uma sequência de reescritas)\n\n* §11 (troca §12 por §13 na hipótese §14)\n\n* §15 (troca §16 por §17 em duas hipóteses e no objetivo;\nconsiga o símbolo §18 com §19.)\n\n* §20 vai continuar trocando §21 por §22\naté não haver mais ocorrências de §23.\n\n* §24 vai trocar por §26 apenas o segundo §25 do objetivo.\n\n### Exemplo:\n\nSe você tem a hipótese §27 e o seu objetivo é\n§28\n\nentão\n\n§29\n\nvai mudar o objetivo para §30, e depois\n\n§31\n\nvai mudar o objetivo para §32, que\npode ser resolvido com §33.\n\n### Exemplo:\n\nVocê também pode usar §34 para mudar uma hipótese.\nPor exemplo, se você tem duas hipóteses\n§35\nentão §36 vai transformar §37 em §38.\n\n## Erros comuns\n\n* Você precisa dos colchetes. §39 nunca está correto.\n\n* Se §40 não é uma *prova* de uma *igualdade* (um enunciado da forma §41),\npor exemplo se §42 é uma função ou uma implicação,\nentão §43 não é a tática que você quer usar. Por exemplo,\n§44 nunca está correto: §45 é o *enunciado* do teorema,\nnão a prova. Se §46 é a prova, então §47 vai funcionar.\n\n## Detalhes\n\nA tática §48 é um jeito de \\\\\"substituir\\\\\". Existem\nduas situações distintas em que você pode usar essa tática.\n\n1) Uso básico: se §49 é uma hipótese ou\na prova de um teorema, e se o objetivo contém um ou mais §50, então §51\nvai trocar todos eles por §52. A tática dá erro\nse não houver nenhum §53 no objetivo.\n\n2) Uso avançado: hipóteses vindas de provas de teoremas\nmuitas vezes têm partes faltando. Por exemplo, §54\né uma prova de que §55 porque §56 é na verdade uma função,\ne §57 é a entrada. Nessa situação, §58 vai procurar no objetivo\nqualquer subtermo da forma §59, e no momento em que\nencontra um ele fixa §60 como §61 e então troca todos os §62 por §63.\n\nExercício: pense em por que §64 muda o termo\n§65 para\n§66\n\nSe você não lembrar o nome da prova de uma igualdade, procure\nna lista de lemas à direita.\n\n## Uso direcionado\n\nSe o seu objetivo é §67 e você quer reescrever §68\ncomo §69, então §70 não vai funcionar porque o Lean encontra outra\nadição primeiro e troca as entradas dela. Use §71 para\ngarantir que o Lean reescreva §72 como §73. Isso funciona porque\n§74 é uma prova de que §75, §76 é uma prova\nde que §77, e §78 é uma prova de que §79.\n\nSe §80 então §81 vai transformar todos os §82 em §83.\nSe você só quer mudar a 37ª ocorrência de §84\npara §85, então faça §86.",
+ "## Summary\n\nIf §0 is a number, then §1 will break the goal into two goals,\none with §2 and the other with §3.\n\nIf §4 is a proof (for example a hypothesis), then §5 will break the\nproof up into the pieces used to prove it.\n\n## Example\n\nIf §6 is a number, then §7 will break the goal into two goals,\none with §8 replaced by 0 and the other with §9 replaced by §10. This\ncorresponds to the mathematical idea that every natural number is either §11\nor a successor.\n\n## Example\n\nIf §12 is a hypothesis, then §13 will turn one goal\ninto two goals, one with a hypothesis §14 and the other with a\nhypothesis §15.\n\n## Example\n\nIf §16 is a hypothesis, then §17 will turn one goal into no goals,\nbecause there are no ways to make a proof of §18! And if you have no goals left,\nyou have finished the level.\n\n## Example\n\nIf §19 is a hypothesis, then §20 will create a new number §21\nand a proof §22. This is because the *definition* of §23 is\n§24.":
+ "## Resumo\n\nSe §0 é um número, então §1 vai quebrar o objetivo em dois objetivos,\num com §2 e o outro com §3.\n\nSe §4 é uma prova (por exemplo, uma hipótese), então §5 vai quebrar a\nprova nos pedaços usados para prová-la.\n\n## Exemplo\n\nSe §6 é um número, então §7 vai quebrar o objetivo em dois objetivos,\num com §8 substituído por 0 e o outro com §9 substituído por §10. Isso\ncorresponde à ideia matemática de que todo número natural é §11\nou um sucessor.\n\n## Exemplo\n\nSe §12 é uma hipótese, então §13 vai transformar um objetivo\nem dois objetivos, um com uma hipótese §14 e o outro com uma\nhipótese §15.\n\n## Exemplo\n\nSe §16 é uma hipótese, então §17 vai transformar um objetivo em nenhum objetivo,\nporque não há jeito nenhum de construir uma prova de §18! E se você não tem mais objetivos,\nvocê terminou o nível.\n\n## Exemplo\n\nSe §19 é uma hipótese, então §20 vai criar um novo número §21\ne uma prova §22. Isso porque a *definição* de §23 é\n§24.",
+ "## Summary\n\nIf §0 and there are several §1s in the goal, then\n§2 will just change the third §3 to a §4.\n\n## Example\n\nIf the goal is §5 then §6\nwill change the goal to §7. In contrast, §8\nwill change the goal to §9.":
+ "## Resumo\n\nSe §0 e há vários §1 no objetivo, então\n§2 vai mudar apenas o terceiro §3 para §4.\n\n## Exemplo\n\nSe o objetivo é §5 então §6\nvai mudar o objetivo para §7. Em contraste, §8\nvai mudar o objetivo para §9.",
+ "## Summary\n\nIf the goal is §0, then §1 will introduce §2 as a hypothesis,\nand change the goal to §3. Mathematically, it says that to prove §4,\nwe can assume §5 and then prove §6.\n\n### Example:\n\nIf your goal is §7 (the way Lean writes §8)\nthen §9 will give you a hypothesis §10 named §11, and the goal\nwill change to §12.":
+ "## Resumo\n\nSe o objetivo é §0, então §1 vai introduzir §2 como hipótese,\ne mudar o objetivo para §3. Matematicamente, isso diz que para provar §4,\npodemos supor §5 e então provar §6.\n\n### Exemplo:\n\nSe o seu objetivo é §7 (o jeito que Lean escreve §8)\nentão §9 vai te dar uma hipótese §10 chamada §11, e o objetivo\nvai mudar para §12.",
+ "## Summary\n\nIf the goal is a statement §0, then §1 will close the goal if §2 is a proof of §3.\n\n### Example\n\nIf the goal is §4 and you have a hypothesis §5\nthen §6 will solve the goal.\n\n### Example\n\nIf the goal is §7 then §8 will close the goal.\n\n### Exact needs to be exactly right\n\nNote that §9 will *not work* in the previous example;\nfor §10 to work, §11 has to be *exactly* a proof of the goal.\n§12 is a proof of §13 or, if you like,\na proof of §14 where §15 needs to be supplied by the user.\nThis is in contrast to §16 and §17, which will \\\\\"guess the inputs\\\\\"\nif necessary. If the goal is §18 then §19\nand §20 will both change the goal to §21,\nbecause §22 guesses the input to the function §23.":
+ "## Resumo\n\nSe o objetivo é um enunciado §0, então §1 fecha o objetivo se §2 for uma prova de §3.\n\n### Exemplo\n\nSe o objetivo é §4 e você tem uma hipótese §5\nentão §6 resolve o objetivo.\n\n### Exemplo\n\nSe o objetivo é §7 então §8 fecha o objetivo.\n\n### Exact precisa ser exatamente certo\n\nNote que §9 *não funciona* no exemplo anterior;\npara §10 funcionar, §11 tem que ser *exatamente* uma prova do objetivo.\n§12 é uma prova de §13 ou, se preferir,\numa prova de §14 onde §15 precisa ser fornecido pelo usuário.\nIsso contrasta com §16 e §17, que vão \\\\\"adivinhar as entradas\\\\\"\nse necessário. Se o objetivo é §18 então §19\ne §20 vão ambos mudar o objetivo para §21,\nporque §22 adivinha a entrada da função §23.",
+ "## Precision rewriting\n\nIn the last level, there was §0 and §1,\nand §2 changed the first one it saw,\nwhich was §3. Let's learn how to tell Lean\nto change §4 first by giving §5 an\nexplicit input.":
+ "## Reescrita com precisão\n\nNo nível anterior, havia §0 e §1,\ne §2 mudou o primeiro que encontrou,\nque era §3. Vamos aprender a dizer ao Lean\npara mudar §4 primeiro, dando a §5 uma\nentrada explícita.",
+ "# Welcome to the Natural Number Game\n#### An introduction to mathematical proof.\n\nIn this game, we will build the basic theory of the natural\nnumbers §0 from scratch. Our first goal is to prove\nthat §1. Next we'll prove that §2.\nAnd at the end we'll see if we can prove Fermat's Last Theorem.\nWe'll do this by solving levels of a computer puzzle game called Lean.\n\n# Read this.\n\nLearning how to use an interactive theorem prover takes time.\nTests show that the people who get the most out of this game are\nthose who read the help texts like this one.\n\nTo start, click on \"Tutorial World\".\n\nNote: this is a new Lean 4 version of the game containing several\nworlds which were not present in the old Lean 3 version. More new worlds\nsuch as Strong Induction World, Even/Odd World and Prime Number World\nare in development; if you want to see their state or even help out, checkout\nout the [issues in the github repo](https://github.com/leanprover-community/NNG4/issues).\n\n## More\n\nClick on the three lines in the top right and select \"Game Info\" for resources,\nlinks, and ways to interact with the Lean community.":
+ "# Bem-vindo ao Jogo dos Números Naturais\n#### Uma introdução à prova matemática.\n\nNeste jogo, vamos construir do zero a teoria básica dos números\nnaturais §0. Nosso primeiro objetivo é provar\nque §1. Depois vamos provar que §2.\nE no final vamos ver se conseguimos provar o Último Teorema de Fermat.\nFaremos isso resolvendo níveis de um jogo de quebra-cabeça de computador chamado Lean.\n\n# Leia isto.\n\nAprender a usar um provador de teoremas interativo leva tempo.\nTestes mostram que as pessoas que mais aproveitam este jogo são\naquelas que leem os textos de ajuda como este.\n\nPara começar, clique em \"Mundo Tutorial\".\n\nNota: esta é uma nova versão do jogo em Lean 4, contendo vários\nmundos que não existiam na antiga versão em Lean 3. Novos mundos,\ncomo o Mundo da Indução Forte, o Mundo dos Pares e Ímpares e o Mundo dos Números Primos,\nestão em desenvolvimento; se você quiser ver o estado deles ou até ajudar, dê uma olhada\nnas [issues no repositório do github](https://github.com/leanprover-community/NNG4/issues).\n\n## Mais\n\nClique nas três linhas no canto superior direito e selecione \"Informações do jogo\" para recursos,\nlinks e formas de interagir com a comunidade Lean.",
+ "# Summary\nThe §0 tactic changes a goal of §1 into a goal of §2.\nUse it when your hypotheses guarantee that the reason that §3\nis true is because in fact §4 is true.\n\nInternally this tactic is just §5ing a theorem\nsaying that §6\n\nNote that this tactic can turn a solvable goal into an unsolvable\none.":
+ "# Resumo\nA tática §0 transforma um objetivo §1 em um objetivo §2.\nUse-a quando suas hipóteses garantirem que a razão de §3\nser verdadeiro é que, na verdade, §4 é verdadeiro.\n\nInternamente, essa tática apenas faz §5 de um teorema\ndizendo que §6\n\nNote que essa tática pode transformar um objetivo solúvel em um\ninsolúvel.",
+ "# Summary\n\n§0 will solve the goal §1.":
+ "# Resumo\n\n§0 resolve o objetivo §1.",
+ "# Summary\n\n§0 will attempt to solve a goal if it can find an algorithm which it\ncan run to solve it.\n\n## Example\n\nA term of type §1 is an algorithm to decide whether two naturals\nare equal or different. Hence, once this term is made and made into an §2,\nthe §3 tactic can use it to solve goals of the form §4 or §5.":
+ "# Resumo\n\n§0 vai tentar resolver um objetivo se conseguir encontrar um algoritmo que\npossa executar para resolvê-lo.\n\n## Exemplo\n\nUm termo do tipo §1 é um algoritmo para decidir se dois naturais\nsão iguais ou diferentes. Portanto, uma vez que esse termo seja construído e transformado numa §2,\na tática §3 pode usá-lo para resolver objetivos da forma §4 ou §5.",
+ "# Summary\n\nThe §0 tactic will solve any goal which can be solved purely by logic (that is, by\ntruth tables).\n\n## Details\n\n§1 *does not do magic*! It doesn't know *anything* about addition or multiplication,\nit doesn't even know §2. The only things that §3 knows about numbers\nare firstly that §4 and secondly that §5, §6, §7 and so on.\nWhat §8's strength is, is *logic*. If you have a hypothesis §9\nand another hypothesis §10 and your goal is §11 then §12 will\nsolve this goal, because to solve that goal you don't need to know any facts\nabout inequalities or addition, all you need to know is the rules of logic.\n\n## Example\n\nIf you have §13 as a hypothesis, then §14 will solve\nthe goal. This is because a false hypothesis implies any hypothesis.\n\n## Example\n\nIf your goal is §15, then §16 will solve the goal.\n\n## Example\n\nIf you have two hypotheses §17 and §18 then §19 will\nsolve the goal because it can prove §20 from your hypotheses, and thus\nprove the goal (as §21 implies anything).\n\n## Example\n\nIf you have one hypothesis §22 then §23 will solve the goal because\n§24 is smart enough to know that §25 is true, which gives the contradiction we seek.\n\n## Example\n\nIf you have a hypothesis §26 then §27 will solve the goal, because\n§28 knows §29 and this is enough to prove §30, which implies any goal.\n\n## Example\n\nIf you have a hypothesis of the form §31 and your goal is §32, then\n§33 will solve the goal, because the goal is logically equivalent to the hypothesis.\nIf you switch the goal and hypothesis in this example, §34 would solve it too.":
+ "# Resumo\n\nA tática §0 resolve qualquer objetivo que possa ser resolvido puramente por lógica (ou seja, por\ntabelas-verdade).\n\n## Detalhes\n\n§1 *não faz mágica*! Ela não sabe *nada* sobre adição ou multiplicação,\nnem sequer conhece §2. As únicas coisas que §3 sabe sobre números\nsão, primeiro, que §4 e, segundo, que §5, §6, §7 e assim por diante.\nA força de §8 é a *lógica*. Se você tem uma hipótese §9\ne outra hipótese §10 e seu objetivo é §11, então §12 vai\nresolver esse objetivo, porque para resolvê-lo você não precisa saber nenhum fato\nsobre desigualdades ou adição, só precisa conhecer as regras da lógica.\n\n## Exemplo\n\nSe você tem §13 como hipótese, então §14 resolve\no objetivo. Isso porque uma hipótese falsa implica qualquer hipótese.\n\n## Exemplo\n\nSe o seu objetivo é §15, então §16 resolve o objetivo.\n\n## Exemplo\n\nSe você tem duas hipóteses §17 e §18, então §19 vai\nresolver o objetivo, porque ela consegue provar §20 a partir das suas hipóteses, e assim\nprovar o objetivo (já que §21 implica qualquer coisa).\n\n## Exemplo\n\nSe você tem uma hipótese §22, então §23 resolve o objetivo, porque\n§24 é esperta o bastante para saber que §25 é verdade, o que dá a contradição que queremos.\n\n## Exemplo\n\nSe você tem uma hipótese §26, então §27 resolve o objetivo, porque\n§28 sabe que §29 e isso basta para provar §30, que implica qualquer objetivo.\n\n## Exemplo\n\nSe você tem uma hipótese da forma §31 e seu objetivo é §32, então\n§33 resolve o objetivo, porque o objetivo é logicamente equivalente à hipótese.\nSe você trocar objetivo e hipótese neste exemplo, §34 também resolveria.",
+ "# Summary\n\nThe §0 tactic can be used to add new hypotheses to a level, but of course\nyou have to prove them.\n\n\n## Example\n\nThe simplest usage is like this. If you have §1 in your context and you execute\n\n§2\n\nthen you will get a new goal §3 to prove, and after you've proved\nit you will have a new hypothesis §4 in your original goal.\n\n## Example\n\nIf you already have a proof of what you want to §5, you\ncan just create it immediately. For example, if you have §6 and §7\nnumber objects, then\n\n§8\n\nwill directly add a new hypothesis §9\nto the context, because you just supplied the proof of it (§10).\n\n## Example\n\nIf you have a proof to hand, then you don't even need to state what you\nare proving. For example\n\n§11\n\nwill add §12 as a hypothesis.":
+ "# Resumo\n\nA tática §0 pode ser usada para adicionar novas hipóteses a um nível, mas é claro\nque você tem que prová-las.\n\n\n## Exemplo\n\nO uso mais simples é assim. Se você tem §1 no seu contexto e executa\n\n§2\n\nentão você vai ganhar um novo objetivo §3 para provar, e depois de tê-lo\nprovado você vai ter uma nova hipótese §4 no seu objetivo original.\n\n## Exemplo\n\nSe você já tem uma prova do que quer obter com §5, você\npode criá-la imediatamente. Por exemplo, se você tem os objetos numéricos §6 e §7,\nentão\n\n§8\n\nvai adicionar diretamente uma nova hipótese §9\nao contexto, porque você acabou de fornecer a prova dela (§10).\n\n## Exemplo\n\nSe você tem uma prova em mãos, então você nem precisa enunciar o que\nestá provando. Por exemplo\n\n§11\n\nvai adicionar §12 como hipótese.",
+ "# Summary\n\nIf you have a hypothesis\n\n§0\n\nand goal\n\n§1\n\nthen §2 replaces the set-up with its so-called \\\\\"contrapositive\\\\\":\na hypothesis\n\n§3\n\nand goal\n\n§4.":
+ "# Resumo\n\nSe você tem uma hipótese\n\n§0\n\ne o objetivo\n\n§1\n\nentão §2 substitui essa configuração pela sua chamada \\\\\"contrapositiva\\\\\":\numa hipótese\n\n§3\n\ne o objetivo\n\n§4.",
+ "# Statement\n\nIf §0 and §1 are numbers, then\n§2 is the proof that\n§3.\n\n## More technical details\n\nThere are other ways to think about §4.\n\nYou can think about §5 itself as a function which takes two\nnumbers §6 and §7 as input, and outputs a proof of\n§8.\n\nYou can think of §9 itself as a proof; it is the proof\nthat §10 is an injective function. In other words,\n§11 is a proof of\n§12.\n\n§13 was postulated as an axiom by Peano, but\nin Lean it can be proved using §14, a mathematically\npathological function.":
+ "# Enunciado\r\n\r\nSe §0 e §1 são números, então\r\n§2 é a prova de que\r\n§3.\r\n\r\n## Mais detalhes técnicos\r\n\r\nHá outras formas de interpretar §4.\r\n\r\nVocê pode interpretar a própria §5 como uma função que recebe dois\r\nnúmeros §6 e §7 como entrada, e devolve uma prova de que\r\n§8.\r\n\r\nVocê pode interpretar o próprio §9 como uma prova; é a prova\r\nde que §10 é uma função injetiva. Em outras palavras,\r\n§11 é prova de que\r\n§12.\r\n\r\n§13 foi postulado como axioma por Peano, mas\r\nem Lean pode ser provado usando §14, uma função\r\nmatematicamente patológica.",
+ "# Read this first\n\nEach level in this game involves proving a mathematical theorem (the \"Goal\").\nThe goal will be a statement about *numbers*. Some numbers in this game have known values.\nThose numbers have names like §0. Other numbers will be secret. They're called things\nlike §1 and §2. We know §3 is a number, we just don't know which one.\n\nIn this first level we're going to prove the theorem that §4.\nYou can see §5 in the *Objects* below, which means that §6 and §7\nare numbers.\n\nWe solve goals in Lean using *Tactics*, and the first tactic we're\ngoing to learn is called §8, which proves all theorems of the form §9.\n\nProve that §10 by executing the §11 tactic.":
+ "# Leia isto primeiro\n\nCada nível deste jogo envolve provar um teorema matemático (o \"Goal\", ou objetivo).\nO objetivo será um enunciado sobre *números*. Alguns números neste jogo têm valores conhecidos.\nEsses números têm nomes como §0. Outros números serão secretos. Eles têm nomes\ncomo §1 e §2. Sabemos que §3 é um número, só não sabemos qual.\n\nNeste primeiro nível vamos provar o teorema de que §4.\nVocê pode ver §5 nos *Objetos* abaixo, o que significa que §6 e §7\nsão números.\n\nResolvemos objetivos em Lean usando *Táticas*, e a primeira tática que\nvamos aprender se chama §8, que prova todos os teoremas da forma §9.\n\nProve que §10 executando a tática §11.",
+ "# Overview\n\nOur home-made tactic §0 will solve arbitrary goals of\nthe form §1.":
+ "# Visão geral\n\nNossa tática caseira §0 vai resolver objetivos arbitrários da\nforma §1.",
+ "# Overview\n\nLean's simplifier, §0, will rewrite every lemma\ntagged with §1 and every lemma fed to it by the user, as much as it can.\nFurthermore, it will attempt to order variables into an internal order if fed\nlemmas such as §2, so that it does not go into an infinite loop.":
+ "# Visão geral\n\nO simplificador do Lean, §0, vai reescrever todo lema\nmarcado com §1 e todo lema passado a ele pelo usuário, o máximo que conseguir.\nAlém disso, ele vai tentar ordenar as variáveis segundo uma ordem interna se receber\nlemas como §2, para não entrar em um loop infinito."}
