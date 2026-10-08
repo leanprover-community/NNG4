@@ -15,7 +15,7 @@ Introduction
   the goal until it becomes our hypothesis! In other words, we
   will \"argue backwards\". The `apply` tactic can do this too.
   Again I will walk you through this one (assuming you're in
-  command line mode).
+  \"Typewriter mode\").
 "
 
 /-- If $x+1=4$ then $x=3$. -/

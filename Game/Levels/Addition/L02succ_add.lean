@@ -45,5 +45,5 @@ Statement succ_add (a b : ℕ) : succ a + b = succ (a + b)  := by
 TheoremTab "+"
 
 Conclusion "
-Well done! You now have enough tools to tackle the main boss of this level.
+Well done! You now have enough tools to tackle the main boss of this world.
 "

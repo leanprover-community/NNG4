@@ -17,7 +17,7 @@ which avoids it. Can you spot it?
 -/
 TheoremDoc MyNat.add_mul as "add_mul" in "*"
 
-/-- Addition is distributive over multiplication.
+/-- Multiplication is distributive over addition.
 In other words, for all natural numbers $a$, $b$ and $c$, we have
 $(a + b) \times c = ac + bc$. -/
 Statement add_mul
