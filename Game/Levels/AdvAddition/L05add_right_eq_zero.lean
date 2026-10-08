@@ -84,8 +84,7 @@ Statement add_right_eq_zero (a b : ℕ) : a + b = 0 → a = 0 := by
   exact h
   intro h
   rw [add_succ] at h
-  symm at h
-  apply zero_ne_succ at h
+  apply succ_ne_zero at h
   cases h
 
 Conclusion "Well done!"
