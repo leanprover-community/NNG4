@@ -12,7 +12,7 @@ def LocalGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
   src? := DependencySrc.path "../lean4game/server"
-  version? := none
+  version := .none
   opts := ∅
 }
 
@@ -24,7 +24,7 @@ def RemoteGameServer : Dependency := {
   name := `GameServer
   scope := "hhu-adam"
   src? := DependencySrc.git "https://github.com/leanprover-community/lean4game.git" leanVersion "server"
-  version? := s!"git#{leanVersion}"
+  version := .git leanVersion
   opts := ∅
 }
 
