@@ -1,0 +1,71 @@
+associativity,ассоциативность
+assumption,гипотеза
+base case,базис
+bracket,скобка
+parenthesis,скобка
+commutativity,коммутативность
+distributivity,дистрибутивность
+equality,равенство
+equation,уравнение
+expression,выражение
+false,ложь
+hypothesis,гипотеза
+induction,индукция
+inductive hypothesis,гипотеза индукции
+inductive step,шаг индукции
+injective,инъективная
+distributivity,дистрибутивность
+lemma,лемма
+lemmas,леммы
+theorem,теорема
+monoid,моноид
+natural number,натуральное число
+number,число
+partial order,частичный порядок
+predecessor,предшественник
+preorder,предпорядок
+proof,доказательство
+semiring,полукольцо
+statement,высказывание
+successor,следующее число
+to cancel,убрать
+to do induction on x,проводить индукцию по x
+to prove,доказывать
+totally ordered,линейно упорядоченный
+true,истина
+variable,переменная
+X distributes over Y,дистрибутивность X относительно Y
+argument,аргумент
+input,аргумент
+definition,определение
+function,функция
+goal,цель
+goal state,изменение цели
+notation,обозначение
+proof term,элемент доказательства
+solvable goal,достижимая цель
+tactic,тактика
+term,элемент
+a rewrite (noun),переписывать
+to rewrite (verb),переписывать
+to rewrite backwards,переписывать в обратном порядке
+to solve a goal,достичь цели
+to close a goal,закрыть цель
+to take arguments,принимать аргументы
+type,тип
+boss,сложное задание
+boss level,уровень «Босс»
+main boss,самое сложное задание
+sub-boss,задание повышенной сложности
+button,кнопка
+Editor mode,режим редактора
+final boss,уровень «Босс»
+inventory,набор
+Level,Уровень
+tab,вкладка
+typewriter mode,строчный режим
+editor mode,режим редактора
+World,Мир
+X World,Мир X
+mathematician,математик
+user,пользователь

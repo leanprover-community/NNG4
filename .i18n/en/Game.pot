@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-11\n"
+"POT-Creation-Date: 2026-10-09\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -341,6 +341,16 @@ msgstr ""
 #. §0: `apply h`
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid "Now §0 and you can probably take it from here."
+msgstr ""
+
+#. §0: `b = 0`
+#. §1: `a * b = 0`
+#. §2: `X ≠ 0`
+#. §3: `X = 0 → False`
+#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
+msgid "We want to reduce this to a hypothesis §0 and a goal §1,\n"
+"which is logically equivalent but much easier to prove. Remember that §2\n"
+"is notation for §3. Click on \"Show more help!\" if you need hints."
 msgstr ""
 
 #. §0: `mul_comm x y : x * y = y * x`
@@ -2183,17 +2193,6 @@ msgid "*Game version: 4.3*\n"
 "[issue at the lean4game](https://github.com/leanprover-community/lean4game/issues) repo.\n"
 "* For issues about the game's content, please open an\n"
 "[issue at the NNG](https://github.com/hhu-adam/NNG4/issues) repo."
-msgstr ""
-
-#. §0: `b = 0`
-#. §1: `a * b = 0`
-#. §2: `X ≠ 0`
-#. §3: `X = 0 → False`
-#. §4: `Show more help!`
-#: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
-msgid "We want to reduce this to a hypothesis §0 and a goal §1,\n"
-"which is logically equivalent but much easier to prove. Remember that §2\n"
-"is notation for §3. Click on §4 if you need hints."
 msgstr ""
 
 #. §0: `repeat rw [add_zero]`
