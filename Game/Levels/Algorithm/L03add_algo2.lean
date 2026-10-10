@@ -15,6 +15,15 @@ Lean's simplifier, `simp`, will rewrite every lemma
 tagged with `simp` and every lemma fed to it by the user, as much as it can.
 Furthermore, it will attempt to order variables into an internal order if fed
 lemmas such as `add_comm`, so that it does not go into an infinite loop.
+
+## Variants
+
+* `simp only [h₁, h₂, ...]` restricts the simplifier to *only* the named
+  lemmas `h₁, h₂, ...` and ignores the global `@[simp]` lemma set, giving
+  a smaller and more predictable rewrite step. The same internal ordering
+  for permutation lemmas (such as `add_comm`) still applies, so feeding
+  symmetric lemmas does not loop. This level is solved by
+  `simp only [add_left_comm, add_comm]`.
 -/
 TacticDoc simp
 
