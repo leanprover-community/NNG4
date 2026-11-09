@@ -1,4 +1,4 @@
-import GameServer
+import GameApi
 
 import Game.MyNat.Definition
 
