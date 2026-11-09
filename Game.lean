@@ -1,6 +1,3 @@
--- Here's the import to make Lean know about things called `Game`s
-import GameServer.Commands
-
 -- Here are the imports defining many worlds for the game `Game` (the natural number game,
 -- in this case). Each world consists of a finite number of levels, and levels
 -- are numbered 1,2,3,4... inside the level files.

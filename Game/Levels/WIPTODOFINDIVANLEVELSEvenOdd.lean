@@ -1,4 +1,4 @@
-import GameServer.Commands
+import Game.Metadata
 
 World "EvenOdd"
 Title "Parity World"

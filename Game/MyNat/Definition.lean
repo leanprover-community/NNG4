@@ -1,4 +1,8 @@
-import Game.Tactic.LabelAttr -- MyNat_decide attribute
+module
+
+public import Game.Tactic.LabelAttr -- MyNat_decide attribute
+
+@[expose] public section
 
 /-- Our copy of the natural numbers called `MyNat`, with notation `ℕ`. -/
 inductive MyNat where

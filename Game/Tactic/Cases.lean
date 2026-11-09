@@ -1,5 +1,11 @@
-import Game.MyNat.Definition
-import Mathlib.Tactic.Cases
+module
+
+public import Game.MyNat.Definition
+public import Mathlib.Tactic.Cases
+
+import all Lean.Elab.Tactic.Induction -- for `getElimNameInfo`
+
+@[expose] public section
 
 /-!
 # Modified `cases` tactic
@@ -21,7 +27,6 @@ def casesOn' {P : ℕ → Sort u} (t : ℕ) (zero : P 0)
     apply succ
 
 open Lean Meta Elab Parser Tactic Mathlib.Tactic
-open private getElimNameInfo from Lean.Elab.Tactic.Induction
 
 /-- Modified `cases` tactic for this game.
 
