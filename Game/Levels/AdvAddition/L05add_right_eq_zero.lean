@@ -1,5 +1,4 @@
 import Game.Levels.AdvAddition.L04add_right_eq_self
-import Game.Tactic.Cases
 
 World "AdvAddition"
 Level 5

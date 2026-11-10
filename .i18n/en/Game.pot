@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.35.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-09\n"
+"POT-Creation-Date: 2026-11-10\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -482,7 +482,7 @@ msgstr ""
 #. §22: `hc : b = a + c`
 #. §23: `a ≤ b`
 #. §24: `∃ c, b = a + c`
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:33
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:32
 msgid "## Summary\n"
 "\n"
 "If §0 is a number, then §1 will break the goal into two goals,\n"
@@ -1105,7 +1105,7 @@ msgid "A passing mathematician remarks that with reflexivity and transitivity ou
 msgstr ""
 
 #. §0: $a+b=0 \\implies a=0$
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:71
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:70
 #: Game/Levels/AdvAddition/L06add_left_eq_zero.lean:16
 msgid "A proof that §0."
 msgstr ""
@@ -1561,7 +1561,7 @@ msgstr ""
 #. §0: `b = 0`
 #. §1: `b ≠ 0`
 #. §2: `cases b with d`
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:79
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:78
 msgid "Here we want to deal with the cases §0 and §1 separately,\n"
 "so start with §2."
 msgstr ""
@@ -1980,7 +1980,7 @@ msgstr ""
 #: Game/Levels/Implication/L05succ_inj2.lean:21
 #: Game/Levels/Algorithm/L05pred.lean:38
 #: Game/Levels/Algorithm/L07succ_ne_succ.lean:61
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:77
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:76
 #: Game/Levels/AdvAddition/L06add_left_eq_zero.lean:19
 #: Game/Levels/LessOrEqual/L09succ_le_succ.lean:20
 msgid "If §0 then §1."
@@ -3034,7 +3034,7 @@ msgstr ""
 #. §13: `h : False`
 #. §14: `cases h`
 #. §15: `False`
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:12
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:11
 msgid "The next result we'll need in §0 World is that if §1 then §2 and §3.\n"
 "Let's prove one of these facts in this level, and the other in the next.\n"
 "\n"
@@ -3651,7 +3651,7 @@ msgid "Welcome to tutorial world! In this world we learn the basics\n"
 "to begin your quest."
 msgstr ""
 
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:91
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:90
 msgid "Well done!"
 msgstr ""
 
@@ -3850,7 +3850,7 @@ msgstr ""
 msgid "add_right_eq_self"
 msgstr ""
 
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:6
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:5
 msgid "add_right_eq_zero"
 msgstr ""
 
