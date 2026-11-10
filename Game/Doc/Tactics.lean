@@ -1,4 +1,4 @@
-import GameServer.Commands
+import GameApi
 
 -- TacticDoc rfl
 -- "

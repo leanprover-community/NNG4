@@ -69,4 +69,4 @@ NewTactic «repeat»
 NewDefinition False Not
 
 Conclusion "If you used `rw [Not]` or `rw [Not] at h` anywhere, go through your proof in
-the \"Editor Mode\" and delete them all. Observe that your proof still works."
+the \"Editor mode\" and delete them all. Observe that your proof still works."

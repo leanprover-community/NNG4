@@ -83,7 +83,7 @@ Conclusion
 "
 If you solved the level using `have`, then you might have observed
 that before the final step the context got quite messy by all the intermediate
-variables we introduced. You can click \"Toggle Editor\" and then move the cursor
+variables we introduced. You can switch to \"Editor mode\" and then move the cursor
 around to see the proof you created.
 
 The context was already bad enough to start with, and we added three more
