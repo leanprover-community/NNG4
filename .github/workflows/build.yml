@@ -16,7 +16,7 @@ jobs:
           ./elan-init -y --default-toolchain none
           echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: print lean and lake versions
         run: |
@@ -51,7 +51,7 @@ jobs:
         run: zip game.zip * .lake/ .i18n/ -r
 
       - name: upload compressed game folder
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: build-for-server-import
           path: |
