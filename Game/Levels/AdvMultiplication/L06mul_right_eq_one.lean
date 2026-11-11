@@ -44,7 +44,7 @@ are proving. For example
 
 will add `h2 : succ a = succ b → a = b` as a hypothesis.
 -/
-TacticDoc «have»
+TacticDoc «have» insert "have $_ : $+"
 
 /--
 `mul_right_eq_one a b` is a proof that `a * b = 1 → a = 1`.
