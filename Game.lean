@@ -1,6 +1,3 @@
--- Here's the import to make Lean know about things called `Game`s
-import GameServer.Commands
-
 -- Here are the imports defining many worlds for the game `Game` (the natural number game,
 -- in this case). Each world consists of a finite number of levels, and levels
 -- are numbered 1,2,3,4... inside the level files.
@@ -102,13 +99,17 @@ Alternatively, if you experience issues / bugs you can also open github issues:
 -- Dependency Implication → Power -- `Power` uses `≠` which is introduced in `Implication`
 
 /-! Information to be displayed on the servers landing page. -/
-Languages "de" "en" "fr" "it" "ru" "uk" "zh"
+Languages "de" "en" "fr" "it" "ko" "ru" "uk" "zh"
 CaptionShort "The classical introduction game for Lean."
 CaptionLong "In this game you recreate the natural numbers $\\mathbb{N}$ from the Peano axioms,
 learning the basics about theorem proving in Lean.
 
 This is a good first introduction to Lean!"
 CoverImage "images/cover.png"
+
+Settings
+  -- do not display bundled `A B : Prop`.
+  (unbundleHyps := true)
 
 /-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

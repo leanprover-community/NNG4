@@ -21,5 +21,8 @@ Statement one_le_of_ne_zero (a : ℕ) (ha : a ≠ 0) : 1 ≤ a := by
   Hint (hidden := true) "Now take apart the existence statement with `cases ha with n hn`."
   cases ha with n hn
   use n
+  Branch
+    rw [add_comm, ←succ_eq_add_one]
+    exact hn
   rw [hn, succ_eq_add_one, add_comm]
   rfl
