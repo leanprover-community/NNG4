@@ -107,7 +107,7 @@ If `h : X = Y` then `rw [h]` will turn all `X`s into `Y`s.
 If you only want to change the 37th occurrence of `X`
 to `Y` then do `nth_rewrite 37 [h]`.
 -/
-TacticDoc rw
+TacticDoc rw insert "rw [$+]"
 
 /--
 ## Summary
@@ -136,7 +136,7 @@ If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`
 will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 -/
-TacticDoc «repeat»
+TacticDoc «repeat» insert "repeat $;"
 
 /--
 ## Summary
@@ -150,7 +150,7 @@ If the goal is `2 + 2 = 4` then `nth_rewrite 2 [two_eq_succ_one]`
 will change the goal to `2 + succ 1 = 4`. In contrast, `rw [two_eq_succ_one]`
 will change the goal to `succ 1 + succ 1 = 4`.
 -/
-TacticDoc nth_rewrite
+TacticDoc nth_rewrite insert "nth_rewrite $_ [$+]"
 
 NewTactic rw
 

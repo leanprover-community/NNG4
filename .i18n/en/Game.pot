@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.35.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-10\n"
+"POT-Creation-Date: 2026-11-11\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -3210,10 +3210,9 @@ msgid "Those of you interested in speedrunning the game may want to know\n"
 msgstr ""
 
 #. §0: `use`
-#. §1: `c`
-#. §2: `x = 0 + c`
+#. §1: `x = 0 + _`
 #: Game/Levels/LessOrEqual/L02zero_le.lean:9
-msgid "To solve this level, you need to §0 a number §1 such that §2."
+msgid "To solve this level, you need to §0 something such that §1."
 msgstr ""
 
 #. §0: `≤`
@@ -3651,7 +3650,7 @@ msgid "Welcome to tutorial world! In this world we learn the basics\n"
 "to begin your quest."
 msgstr ""
 
-#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:90
+#: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:89
 msgid "Well done!"
 msgstr ""
 
