@@ -1775,11 +1775,11 @@ msgstr "$20+20=40$."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid ""
-"If you have completed Algorithm World then you can use the `contrapose!` "
+"If you have completed Algorithm World then you can use the `contrapose` "
 "tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
-"如果你已经完成了算法世界，那么你可以在这里使用 `contrapose!` 策略。\n"
+"如果你已经完成了算法世界，那么你可以在这里使用 `contrapose` 策略。\n"
 "如果没有，那么我会指导你使用一种手动方法。"
 
 #: Game.Levels.Multiplication.L03succ_mul
@@ -2130,10 +2130,10 @@ msgstr "【背景音乐】现在你准备好面对游戏里的第一个boss了�
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
+"Can you take it from here? (note: if you try `contrapose h` again, it will\n"
 "take you back to where you started!)"
 msgstr ""
-"你能处理接下来的证明吗？（注意：如果你再次尝试 `contrapose! h`，它会把你带回"
+"你能处理接下来的证明吗？（注意：如果你再次尝试 `contrapose h`，它会把你带回"
 "到开始的地方！）"
 
 #: Game.Levels.Tutorial.L01rfl
@@ -5331,7 +5331,7 @@ msgid ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\"
+"then `contrapose h` replaces the set-up with its so-called \\"
 "\"contrapositive\\\":\n"
 "a hypothesis\n"
 "\n"
@@ -5351,7 +5351,7 @@ msgstr ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"那么 `contrapose! h` 将这个命题替换为所谓的“逆否命题”：\n"
+"那么 `contrapose h` 将这个命题替换为所谓的“逆否命题”：\n"
 "一个假设\n"
 "\n"
 "`h : c = d`\n"
@@ -5471,11 +5471,11 @@ msgstr ""
 #: Game.Levels.Algorithm.L07succ_ne_succ
 #, fuzzy
 msgid ""
-"Start with `contrapose! h`, to change the goal into its\n"
+"Start with `contrapose h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = "
 "n`."
 msgstr ""
-"从 `contrapose! h` 开始，将目标转变为其逆否命题，即假设为 `succ m = succ m`，"
+"从 `contrapose h` 开始，将目标转变为其逆否命题，即假设为 `succ m = succ m`，"
 "目标为 `m = n`。"
 
 #: Game.Levels.Addition.L03add_comm
