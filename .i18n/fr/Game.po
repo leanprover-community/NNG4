@@ -3567,7 +3567,7 @@ msgid ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\\"contrapositive\\\":\n"
+"then `contrapose h` replaces the set-up with its so-called \\\"contrapositive\\\":\n"
 "a hypothesis\n"
 "\n"
 "`h : c = d`\n"
@@ -3586,7 +3586,7 @@ msgstr ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"alors `contrapose! h` remplace la proposition par sa dénommée \"contraposée\" :\n"
+"alors `contrapose h` remplace la proposition par sa dénommée \"contraposée\" :\n"
 "c'est-à-dire une hypothèse\n"
 "\n"
 "`h : c = d`\n"
@@ -3605,18 +3605,18 @@ msgstr "Si $a \\neq b$ alors $\\operatorname{succ}(a) \\neq\\operatorname{succ}(
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Start with `contrapose! h`, to change the goal into its\n"
+"Start with `contrapose h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`."
 msgstr ""
-"Commencez par `contrapose! h`, pour changer le but en sa\n"
+"Commencez par `contrapose h`, pour changer le but en sa\n"
 "contraposée, c'est-à-dire une hypothèse `succ m = succ n` et un but `m = n`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
+"Can you take it from here? (note: if you try `contrapose h` again, it will\n"
 "take you back to where you started!)"
 msgstr ""
-"Pouvez-vous continuer ? (note : si vous essayez `contrapose! h` à nouveau, cela vous\n"
+"Pouvez-vous continuer ? (note : si vous essayez `contrapose h` à nouveau, cela vous\n"
 "ramènera à votre point de départ !)"
 
 #: Game.Levels.Algorithm.L08decide
@@ -4844,10 +4844,10 @@ msgstr "`mul_left_ne_zero a b` est une preuve que `a * b ≠ 0 → b ≠ 0`."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid ""
-"If you have completed Algorithm World then you can use the `contrapose!` tactic\n"
+"If you have completed Algorithm World then you can use the `contrapose` tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
-"Si vous avez terminé le monde Algorithmique, vous pouvez utiliser la tactique `contrapose!`\n"
+"Si vous avez terminé le monde Algorithmique, vous pouvez utiliser la tactique `contrapose`\n"
 "ici. Sinon, je vais vous guider à travers une approche manuelle."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero

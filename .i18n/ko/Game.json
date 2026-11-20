@@ -400,8 +400,8 @@
  "`induction «{y}» with d hd`로 시작하세요.",
  "Start with `have h2 := mul_ne_zero a b`.":
  "`have h2 := mul_ne_zero a b`로 시작하세요.",
- "Start with `contrapose! h`, to change the goal into its\ncontrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`.":
- "`contrapose! h`로 시작해 목표를 그 대우로 바꾸세요. 즉 가정 `succ m = succ n`과 목표 `m = n`로 바꿉니다.",
+ "Start with `contrapose h`, to change the goal into its\ncontrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`.":
+ "`contrapose h`로 시작해 목표를 그 대우로 바꾸세요. 즉 가정 `succ m = succ n`과 목표 `m = n`로 바꿉니다.",
  "Start with `cases «{hxy}» with a ha`.": "`cases «{hxy}» with a ha`로 시작하세요.",
  "Start with `cases a with d` to do a case split on `a = 0` and `a = succ d`.":
  "`cases a with d`로 시작해 `a = 0`과 `a = succ d`에 대해 경우를 나누세요.",
@@ -604,8 +604,8 @@
  "Implication World": "조건문 월드",
  "Implementing the algorithm for equality of naturals, and the proof that it is correct,\nlooks like this:\n\n```\ninstance instDecidableEq : DecidableEq ℕ\n| 0, 0 => isTrue <| by\n  show 0 = 0\n  rfl\n| succ m, 0 => isFalse <| by\n  show succ m ≠ 0\n  exact succ_ne_zero m\n| 0, succ n => isFalse <| by\n  show 0 ≠ succ n\n  exact zero_ne_succ n\n| succ m, succ n =>\n  match instDecidableEq m n with\n  | isTrue (h : m = n) => isTrue <| by\n    show succ m = succ n\n    rw [h]\n    rfl\n  | isFalse (h : m ≠ n) => isFalse <| by\n    show succ m ≠ succ n\n    exact succ_ne_succ m n h\n```\n\nThis Lean code is a formally verified algorithm for deciding equality\nbetween two naturals. I've typed it in already, behind the scenes.\nBecause the algorithm is formally verified to be correct, we can\nuse it in Lean proofs. You can run the algorithm with the `decide` tactic.":
  "자연수의 동등성을 판정하는 알고리즘과 그 정확성 증명을 구현하면 다음과 같습니다:\n\n```\ninstance instDecidableEq : DecidableEq ℕ\n| 0, 0 => isTrue <| by\n  show 0 = 0\n  rfl\n| succ m, 0 => isFalse <| by\n  show succ m ≠ 0\n  exact succ_ne_zero m\n| 0, succ n => isFalse <| by\n  show 0 ≠ succ n\n  exact zero_ne_succ n\n| succ m, succ n =>\n  match instDecidableEq m n with\n  | isTrue (h : m = n) => isTrue <| by\n    show succ m = succ n\n    rw [h]\n    rfl\n  | isFalse (h : m ≠ n) => isFalse <| by\n    show succ m ≠ succ n\n    exact succ_ne_succ m n h\n```\n\n이 Lean 코드는 두 자연수의 동등성을 판정하는 형식 검증된 알고리즘입니다. 이미 뒤에서 입력해 두었습니다. 알고리즘의 정확성까지 형식적으로 검증되었으므로 Lean 증명에서 사용할 수 있습니다. `decide` 택틱으로 이 알고리즘을 실행할 수 있습니다.",
- "If you have completed Algorithm World then you can use the `contrapose!` tactic\nhere. If not then I'll talk you through a manual approach.":
- "만약 알고리즘 월드를 완료했다면 `contrapose!` 택틱을 사용하실 수 있습니다. 그렇지 않다면 우회 방법에 대해 가르쳐 드리겠습니다.",
+ "If you have completed Algorithm World then you can use the `contrapose` tactic\nhere. If not then I'll talk you through a manual approach.":
+ "만약 알고리즘 월드를 완료했다면 `contrapose` 택틱을 사용하실 수 있습니다. 그렇지 않다면 우회 방법에 대해 가르쳐 드리겠습니다.",
  "If you `use` the wrong number, you get stuck with a goal you can't prove.\nWhat number will you `use` here?":
  "잘못된 수를 `use`하면 증명할 수 없는 목표에 막힙니다. 여기서는 어떤 수를 `use`해야 할까요?",
  "If the goal is not *exactly* a hypothesis, we can sometimes\nuse rewrites to fix things up.":
@@ -758,8 +758,8 @@
  "구체적으로는 `rw [← succ_eq_add_one] at h`입니다.",
  "Can you take it from here? Click on \"Show more help!\" if you need a hint.":
  "이제부터는 스스로 할 수 있겠나요? 힌트가 필요하면 \"도움말 더 보기!\"를 누르세요.",
- "Can you take it from here? (note: if you try `contrapose! h` again, it will\ntake you back to where you started!)":
- "이제부터는 스스로 할 수 있겠나요? (주의: `contrapose! h`를 다시 시도하면 시작 지점으로 돌아옵니다!)",
+ "Can you take it from here? (note: if you try `contrapose h` again, it will\ntake you back to where you started!)":
+ "이제부터는 스스로 할 수 있겠나요? (주의: `contrapose h`를 다시 시도하면 시작 지점으로 돌아옵니다!)",
  "Can you take it from here?": "이제부터는 스스로 할 수 있겠나요?",
  "Can you now change the goal into `2 = 2`?": "이제 목표를 `2 = 2`로 바꿀 수 있나요?",
  "At this point you see the term `0 + «{d}»`, so you can use the\ninduction hypothesis with `rw [«{hd}»]`.":
@@ -878,8 +878,8 @@
  "# 요약\n\n`have` 택틱을 사용하면 레벨에 새로운 가정을 추가할 수 있습니다. 물론 그 가정도 직접 증명해야 합니다.\n\n## 예시\n\n가장 간단한 사용법은 다음과 같습니다. context에 `a`이 있을 때\n\n`have ha : a = 0`\n\n를 실행하면 새로운 목표 `a = 0`이 생깁니다. 이를 증명하고 나면 원래 목표에 새로운 가정 `ha : a = 0`가 추가됩니다.\n\n## 예시\n\n`have`하고 싶은 명제의 증명을 이미 가지고 있다면 바로 만들 수도 있습니다. 예를 들어 `a`와 `b`이 수 객체라면\n\n`have h2 : succ a = succ b → a = b := succ_inj a b`\n\n을 실행하면 context에 새로운 가정 `h2 : succ a = succ b → a = b`가 바로 추가됩니다. 그 증명 `succ_inj a b`을 직접 제공했기 때문입니다.\n\n## 예시\n\n이미 증명을 가지고 있다면 무엇을 증명하는지 굳이 명시할 필요도 없습니다. 예를 들어\n\n`have h2 := succ_inj a b`\n\n은 `h2 : succ a = succ b → a = b`를 가정으로 추가합니다.",
  "# Summary\n\nIf you have a hypothesis\n\n§0\n\nand goal\n\n§1\n\nthen §2 replaces the set-up with its so-called \\\\\"contrapositive\\\\\":\na hypothesis\n\n§3\n\nand goal\n\n§4.":
  "# 요약\n\n가정이\n\n§0\n\n이고 목표가\n\n§1\n\n이라면 §2는 이를 이른바 \\\\\"대우\\\\\"로 바꿉니다. 즉 가정\n\n§3\n\n과 목표\n\n§4\n\n로 바꿉니다.",
- "# Summary\n\nIf you have a hypothesis\n\n`h : a ≠ b`\n\nand goal\n\n`c ≠ d`\n\nthen `contrapose! h` replaces the set-up with its so-called \\\"contrapositive\\\":\na hypothesis\n\n`h : c = d`\n\nand goal\n\n`a = b`.":
- "# 요약\n\n다음과 같은 가정\n\n`h : a ≠ b`\n\n과 목표\n\n`c ≠ d`\n\n가 있다고 합시다. 그러면 `contrapose! h`는 현재 상황을 이른바 \\\"대우\\\"로 바꿉니다. 즉,\n가정은\n\n`h : c = d`\n\n가 되고, 목표는\n\n`a = b`\n\n가 됩니다.",
+ "# Summary\n\nIf you have a hypothesis\n\n`h : a ≠ b`\n\nand goal\n\n`c ≠ d`\n\nthen `contrapose h` replaces the set-up with its so-called \\\"contrapositive\\\":\na hypothesis\n\n`h : c = d`\n\nand goal\n\n`a = b`.":
+ "# 요약\n\n다음과 같은 가정\n\n`h : a ≠ b`\n\n과 목표\n\n`c ≠ d`\n\n가 있다고 합시다. 그러면 `contrapose h`는 현재 상황을 이른바 \\\"대우\\\"로 바꿉니다. 즉,\n가정은\n\n`h : c = d`\n\n가 되고, 목표는\n\n`a = b`\n\n가 됩니다.",
  "# Statement\n\nIf $a$ and $b$ are numbers, then\n`succ_inj a b` is the proof that\n$ (\\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n\n## More technical details\n\nThere are other ways to think about `succ_inj`.\n\nYou can think about `succ_inj` itself as a function which takes two\nnumbers $$a$$ and $$b$$ as input, and outputs a proof of\n$ ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n\nYou can think of `succ_inj` itself as a proof; it is the proof\nthat `succ` is an injective function. In other words,\n`succ_inj` is a proof of\n$\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$.\n\n`succ_inj` was postulated as an axiom by Peano, but\nin Lean it can be proved using `pred`, a mathematically\npathological function.":
  "# 진술\n\n$a$와 $b$가 수이면\n`succ_inj a b`는\n$ (\\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$의 증명입니다.\n\n## 까다로운 세부사항\n\n사실 `succ_inj`에 대해 여러 다른 방법으로 생각할 수도 있습니다.\n\n`succ_inj` 자체를 함수로 보아 두 수 $$a$$와 $$b$$를 입력으로 받고,\n출력으로는 $ ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$의\n증명을 내놓는 함수로 생각할 수 있습니다.\n\n`succ_inj` 자체를 증명으로 보아 `succ`이 단사함수라는 증명으로 생각할 수 있습니다.\n즉 `succ_inj`은\n$\\forall a, b \\in  \\mathbb{N}, ( \\operatorname{succ}(a) = \\operatorname{succ}(b)) \\implies a=b$\n의 증명이 됩니다.\n\n`succ_inj`는 페아노에 의해 공리로 세워졌으나,\nLean에서는 수학적으로 병적인 함수 `pred`에 의해 증명될 수 있습니다.",
  "# Read this first\n\nEach level in this game involves proving a mathematical theorem (the \"Goal\").\nThe goal will be a statement about *numbers*. Some numbers in this game have known values.\nThose numbers have names like $37$. Other numbers will be secret. They're called things\nlike $x$ and $q$. We know $x$ is a number, we just don't know which one.\n\nIn this first level we're going to prove the theorem that $37x + q = 37x + q$.\nYou can see `x q : ℕ` in the *Objects* below, which means that `x` and `q`\nare numbers.\n\nWe solve goals in Lean using *Tactics*, and the first tactic we're\ngoing to learn is called `rfl`, which proves all theorems of the form $X = X$.\n\nProve that $37x+q=37x+q$ by executing the `rfl` tactic.":

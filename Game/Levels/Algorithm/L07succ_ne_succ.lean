@@ -41,7 +41,7 @@ and goal
 
 `c ≠ d`
 
-then `contrapose! h` replaces the set-up with its so-called \"contrapositive\":
+then `contrapose h` replaces the set-up with its so-called \"contrapositive\":
 a hypothesis
 
 `h : c = d`
@@ -53,17 +53,17 @@ and goal
 TacticDoc contrapose
 
 NewTactic contrapose
-NewHiddenTactic contrapose!
+NewHiddenTactic contrapose
 
 /-- `succ_ne_succ m n` is the proof that `m ≠ n → succ m ≠ succ n`. -/
 TheoremDoc MyNat.succ_ne_succ as "succ_ne_succ" in "Peano"
 
 /-- If $a \neq b$ then $\operatorname{succ}(a) \neq\operatorname{succ}(b)$. -/
 Statement succ_ne_succ (m n : ℕ) (h : m ≠ n) : succ m ≠ succ n := by
-  Hint "Start with `contrapose! h`, to change the goal into its
+  Hint "Start with `contrapose h`, to change the goal into its
   contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`."
-  contrapose! h
-  Hint "Can you take it from here? (note: if you try `contrapose! h` again, it will
+  contrapose h
+  Hint "Can you take it from here? (note: if you try `contrapose h` again, it will
   take you back to where you started!)"
   apply succ_inj at h
   exact h

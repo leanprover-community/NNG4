@@ -12,7 +12,7 @@ namespace MyNat
 TheoremDoc MyNat.mul_left_ne_zero as "mul_left_ne_zero" in "*"
 
 Introduction
-"If you have completed Algorithm World then you can use the `contrapose!` tactic
+"If you have completed Algorithm World then you can use the `contrapose` tactic
 here. If not then I'll talk you through a manual approach."
 
 Statement mul_left_ne_zero (a b : ℕ) (h : a * b ≠ 0) : b ≠ 0 := by
