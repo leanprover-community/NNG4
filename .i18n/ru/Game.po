@@ -1817,7 +1817,7 @@ msgstr ""
 "Мы собираемся превратить §0 в §1. Для начала преврати его в\n"
 "§2, выполнив §3."
 
-#. §0: `contrapose! h`
+#. §0: `contrapose h`
 #: Game.Levels.Algorithm.L07succ_ne_succ
 #, fuzzy
 msgid ""
@@ -4511,7 +4511,7 @@ msgstr ""
 "Иными словами, если §1 и §2, то §3.\n"
 "Это самое сложное из всего, что было до сих пор. Удачи!"
 
-#. §0: `contrapose!`
+#. §0: `contrapose`
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 #, fuzzy
 msgid ""
@@ -5108,7 +5108,7 @@ msgid ""
 msgstr ""
 "Сможешь дальше самостоятельно? Если что — нажми «Показать дополнительные подсказки!»."
 
-#. §0: `contrapose! h`
+#. §0: `contrapose h`
 #. §1: `succ m = succ n`
 #. §2: `m = n`
 #: Game.Levels.Algorithm.L07succ_ne_succ
@@ -5205,7 +5205,7 @@ msgstr ""
 
 #. §0: `h : a ≠ b`
 #. §1: `c ≠ d`
-#. §2: `contrapose! h`
+#. §2: `contrapose h`
 #. §3: `h : c = d`
 #. §4: `a = b`
 #: Game.Levels.Algorithm.L07succ_ne_succ

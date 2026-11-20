@@ -1773,7 +1773,7 @@ msgstr ""
 "Wir werden dieses §0 in §1 umwandeln. Beginne damit, es in §2 umzuwandeln,\n"
 "indem du §3 ausführst."
 
-#. §0: `contrapose! h`
+#. §0: `contrapose h`
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
 "Can you take it from here? (note: if you try §0 again, it will\n"
@@ -4394,7 +4394,7 @@ msgstr ""
 "Mit anderen Worten: Wenn §1 und §2, dann §3.\n"
 "Es ist das kniffligste bisher. Viel Glück!"
 
-#. §0: `contrapose!`
+#. §0: `contrapose`
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid ""
 "If you have completed Algorithm World then you can use the §0 tactic\n"
@@ -4962,7 +4962,7 @@ msgstr ""
 "Kommst du ab hier alleine weiter? Klicke auf „Mehr Hilfe“, wenn du einen "
 "Tipp brauchst."
 
-#. §0: `contrapose! h`
+#. §0: `contrapose h`
 #. §1: `succ m = succ n`
 #. §2: `m = n`
 #: Game.Levels.Algorithm.L07succ_ne_succ
@@ -5053,7 +5053,7 @@ msgstr ""
 
 #. §0: `h : a ≠ b`
 #. §1: `c ≠ d`
-#. §2: `contrapose! h`
+#. §2: `contrapose h`
 #. §3: `h : c = d`
 #. §4: `a = b`
 #: Game.Levels.Algorithm.L07succ_ne_succ

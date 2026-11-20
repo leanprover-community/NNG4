@@ -1200,9 +1200,9 @@ msgstr "$x=37$이고 $x=37\\implies y=42$임을 알고 있다면 $y=42$를 이�
 #: Game.Levels.AdvAddition.L06add_left_eq_zero
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid ""
-"If you have completed Algorithm World then you can use the `contrapose!` tactic\n"
+"If you have completed Algorithm World then you can use the `contrapose` tactic\n"
 "here. If not then I'll talk you through a manual approach."
-msgstr "만약 알고리즘 월드를 완료했다면 `contrapose!` 택틱을 사용하실 수 있습니다. 그렇지 않다면 우회 방법에 대해 가르쳐 드리겠습니다."
+msgstr "만약 알고리즘 월드를 완료했다면 `contrapose` 택틱을 사용하실 수 있습니다. 그렇지 않다면 우회 방법에 대해 가르쳐 드리겠습니다."
 
 #: Game.Levels.Addition.L04add_assoc
 msgid ""
@@ -1400,9 +1400,9 @@ msgstr "`False`를 `True`로 바꿀 겁니다. 먼저 `rw [← is_zero_succ a]`�
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
+"Can you take it from here? (note: if you try `contrapose h` again, it will\n"
 "take you back to where you started!)"
-msgstr "이제부터는 스스로 할 수 있겠나요? (주의: `contrapose! h`를 다시 시도하면 시작 지점으로 돌아옵니다!)"
+msgstr "이제부터는 스스로 할 수 있겠나요? (주의: `contrapose h`를 다시 시도하면 시작 지점으로 돌아옵니다!)"
 
 #: Game.Levels.Power.L05pow_two
 msgid ""
@@ -2280,7 +2280,7 @@ msgid ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\\"contrapositive\\\":\n"
+"then `contrapose h` replaces the set-up with its so-called \\\"contrapositive\\\":\n"
 "a hypothesis\n"
 "\n"
 "`h : c = d`\n"
@@ -2299,7 +2299,7 @@ msgstr ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"가 있다고 합시다. 그러면 `contrapose! h`는 현재 상황을 이른바 \\\"대우\\\"로 바꿉니다. 즉,\n"
+"가 있다고 합시다. 그러면 `contrapose h`는 현재 상황을 이른바 \\\"대우\\\"로 바꿉니다. 즉,\n"
 "가정은\n"
 "\n"
 "`h : c = d`\n"
@@ -4458,9 +4458,9 @@ msgstr "`cases «{hxy}» with a ha`로 시작하세요."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Start with `contrapose! h`, to change the goal into its\n"
+"Start with `contrapose h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = n`."
-msgstr "`contrapose! h`로 시작해 목표를 그 대우로 바꾸세요. 즉 가정 `succ m = succ n`과 목표 `m = n`로 바꿉니다."
+msgstr "`contrapose h`로 시작해 목표를 그 대우로 바꾸세요. 즉 가정 `succ m = succ n`과 목표 `m = n`로 바꿉니다."
 
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.LessOrEqual.L04le_trans
 #: Game.Levels.LessOrEqual.L08le_total
@@ -6211,7 +6211,7 @@ msgstr ""
 
 #. §0: `h : a ≠ b`
 #. §1: `c ≠ d`
-#. §2: `contrapose! h`
+#. §2: `contrapose h`
 #. §3: `h : c = d`
 #. §4: `a = b`
 #: Game.Levels.Algorithm.L07succ_ne_succ

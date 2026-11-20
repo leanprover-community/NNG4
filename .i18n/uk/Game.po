@@ -3771,7 +3771,7 @@ msgid ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"then `contrapose! h` replaces the set-up with its so-called \\"
+"then `contrapose h` replaces the set-up with its so-called \\"
 "\"contrapositive\\\":\n"
 "a hypothesis\n"
 "\n"
@@ -3791,7 +3791,7 @@ msgstr ""
 "\n"
 "`c ≠ d`\n"
 "\n"
-"тоді `contrapose! h` замінює налаштування на так звану \\\"контрапозитивну\\"
+"тоді `contrapose h` замінює налаштування на так звану \\\"контрапозитивну\\"
 "\":\n"
 "гіпотезу\n"
 "\n"
@@ -3813,20 +3813,20 @@ msgstr ""
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Start with `contrapose! h`, to change the goal into its\n"
+"Start with `contrapose h`, to change the goal into its\n"
 "contrapositive, namely a hypothesis of `succ m = succ n` and a goal of `m = "
 "n`."
 msgstr ""
-"Почніть із `contrapose! h`, щоб змінити мету на її\n"
+"Почніть із `contrapose h`, щоб змінити мету на її\n"
 "контрапозицію, а саме гіпотезу `succ m = succ n` і мету `m = n`."
 
 #: Game.Levels.Algorithm.L07succ_ne_succ
 msgid ""
-"Can you take it from here? (note: if you try `contrapose! h` again, it will\n"
+"Can you take it from here? (note: if you try `contrapose h` again, it will\n"
 "take you back to where you started!)"
 msgstr ""
 "Чи ви можете продовжити звідси? (примітка: якщо ви знову спробуєте "
-"`contrapose! h`, це\n"
+"`contrapose h`, це\n"
 "поверне вас туди, звідки ви починали!)"
 
 #: Game.Levels.Algorithm.L08decide
@@ -5137,12 +5137,12 @@ msgstr "`mul_left_ne_zero a b` є доказом того, що `a * b ≠ 0 →
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
 msgid ""
-"If you have completed Algorithm World then you can use the `contrapose!` "
+"If you have completed Algorithm World then you can use the `contrapose` "
 "tactic\n"
 "here. If not then I'll talk you through a manual approach."
 msgstr ""
 "Якщо ви завершили Світ алгоритмів, ви можете використовувати тактику "
-"`contrapose!`\n"
+"`contrapose`\n"
 "тут. Якщо ні, я покажу вам ручний підхід."
 
 #: Game.Levels.AdvMultiplication.L02mul_left_ne_zero
