@@ -45,13 +45,13 @@ rw [← four_eq_succ_three]
 rfl
 ```
 
-Optional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking
-on the `</>` button in the top right. You can now see your proof
+Optional extra: you can run this proof yourself. Switch the game into \"Raw code\" mode by clicking
+on the `>_` button in the top left. You can now see your proof
 written as several lines of code. Move your cursor between lines to see
 the goal state at any point. Now cut and paste your code elsewhere if you
 want to save it, and paste the above proof in instead. Move your cursor
-around to investigate. When you've finished, click the `>_` button in the top right to
-move back into \"Typewriter mode\".
+around to investigate. When you've finished, use the `>_` menu again to
+move back into \"Typewriter\" mode.
 
 You have finished tutorial world!
 Click \"Home\" to go back to the
