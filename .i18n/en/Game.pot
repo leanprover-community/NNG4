@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-20\n"
+"POT-Creation-Date: 2026-11-21\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1293,7 +1293,7 @@ msgstr ""
 #. §0: `y`
 #. §1: `add_left_eq_self`
 #. §2: `add_right_cancel`
-#. §3: `</>`
+#. §3: `>_`
 #. §4: `>_`
 #. §5: ```
 #. nth_rewrite 2 [← zero_add y]
@@ -1302,11 +1302,11 @@ msgstr ""
 #: Game/Levels/AdvAddition/L03add_left_eq_self.lean:26
 msgid "Did you use induction on §0?\n"
 "Here's a two-line proof of §1 which uses §2.\n"
-"If you want to inspect it, you can go into \"Editor mode\" by clicking §3 in the top right\n"
+"If you want to inspect it, you can go into \"Raw code\" mode by clicking §3 in the top left\n"
 "and then just cut and paste the proof and move your cursor around it\n"
 "to see the hypotheses and goal at any given point\n"
 "(although you'll lose your own proof this way). Click §4 to get\n"
-"back to \"Typewriter mode\".\n"
+"back to \"Typewriter\" mode.\n"
 "§5"
 msgstr ""
 
@@ -1489,7 +1489,7 @@ msgstr ""
 #. rw [← four_eq_succ_three]
 #. rfl
 #. ```
-#. §1: `</>`
+#. §1: `>_`
 #. §2: `>_`
 #. §3: `induction`
 #: Game/Levels/Tutorial/L08twoaddtwo.lean:34
@@ -1497,13 +1497,13 @@ msgid "Here is an example proof of 2+2=4 showing off various techniques.\n"
 "\n"
 "§0\n"
 "\n"
-"Optional extra: you can run this proof yourself. Switch the game into \"Editor mode\" by clicking\n"
-"on the §1 button in the top right. You can now see your proof\n"
+"Optional extra: you can run this proof yourself. Switch the game into \"Raw code\" mode by clicking\n"
+"on the §1 button in the top left. You can now see your proof\n"
 "written as several lines of code. Move your cursor between lines to see\n"
 "the goal state at any point. Now cut and paste your code elsewhere if you\n"
 "want to save it, and paste the above proof in instead. Move your cursor\n"
-"around to investigate. When you've finished, click the §2 button in the top right to\n"
-"move back into \"Typewriter mode\".\n"
+"around to investigate. When you've finished, use the §2 menu again to\n"
+"move back into \"Typewriter\" mode.\n"
 "\n"
 "You have finished tutorial world!\n"
 "Click \"Home\" to go back to the\n"
@@ -2094,7 +2094,7 @@ msgid "In the last level, we manipulated the hypothesis §0\n"
 "  the goal until it becomes our hypothesis! In other words, we\n"
 "  will \"argue backwards\". The §2 tactic can do this too.\n"
 "  Again I will walk you through this one (assuming you're in\n"
-"  \"Typewriter mode\")."
+"  \"Typewriter\" mode)."
 msgstr ""
 
 #: Game/Levels/Implication/L04succ_inj.lean:72
@@ -2190,8 +2190,8 @@ msgid "In this level we're going to prove that §0, where §1 is a secret natura
 "\n"
 "See if you can do your first induction proof in Lean.\n"
 "\n"
-"(By the way, if you are still in the \"Editor mode\" from the last world, you can swap\n"
-"back to \"Typewriter mode\" by clicking the §16 button in the top right.)"
+"(By the way, if you are still in the \"Raw code\" mode from the last world, you can swap\n"
+"back to \"Typewriter\" mode by clicking the §16 button in the top right.)"
 msgstr ""
 
 #. §0: `h2`
