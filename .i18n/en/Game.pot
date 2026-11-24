@@ -3769,6 +3769,11 @@ msgstr ""
 msgid "You now know enough tactics to prove §0! Let's begin the journey."
 msgstr ""
 
+#. §0: `induction`
+#: Game/Levels/Multiplication/L02zero_mul.lean:28
+msgid "You should start using §0"
+msgstr ""
+
 #. §0: `cases «{e}» with a`
 #: Game/Levels/LessOrEqual/L08le_total.lean:38
 msgid "You still don't know which way to go, so do §0."
