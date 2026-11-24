@@ -3771,7 +3771,7 @@ msgstr ""
 
 #. §0: `induction`
 #: Game/Levels/Multiplication/L02zero_mul.lean:28
-msgid "You should start using §0"
+msgid "You should start with §0."
 msgstr ""
 
 #. §0: `cases «{e}» with a`
