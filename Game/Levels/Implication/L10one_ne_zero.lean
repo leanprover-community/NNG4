@@ -13,7 +13,8 @@ if we have a hypothesis `succ n = 0`? It's the wrong way around!
 
 The `symm` tactic changes a goal `x = y` to `y = x`, and a goal `x ≠ y`
 to `y ≠ x`. And `symm at h`
-does the same for a hypothesis `h`. We've proved $0 \\neq 1$ and called
+does the same for a hypothesis `h`. The name is short for \"symmetry\".
+We've proved $0 \\neq 1$ and called
 the proof `zero_ne_one`; now try proving $1 \\neq 0$.
 "
 
