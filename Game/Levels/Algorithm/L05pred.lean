@@ -17,7 +17,8 @@ It is an axiom of Lean that recursion is a valid
 way to define functions from types such as the naturals.
 
 Let's define a new function `pred` from the naturals to the naturals, which
-attempts to subtract 1 from the input. The definition is this:
+attempts to subtract 1 from the input. The name is short for \"predecessor\".
+The definition is this:
 
 ```
 pred 0 := 37

@@ -23,6 +23,7 @@ NewTheorem MyNat.zero_ne_succ
 Introduction "
 As warm-up for `2 + 2 ≠ 5` let's prove `0 ≠ 1`. To do this we need to
 introduce Peano's last axiom `zero_ne_succ n`, a proof that `0 ≠ succ n`.
+The `ne` in the name is short for \"not equal\".
 To learn about this result, click on it in the list of lemmas on the right.
 "
 
