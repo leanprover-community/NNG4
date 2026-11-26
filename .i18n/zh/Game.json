@@ -91,8 +91,8 @@
  "`succ_ne_succ m n` 是 `m ≠ n → succ m ≠ succ n` 的证明。",
  "`succ_mul a b` is the proof that `succ a * b = a * b + b`.\n\nIt could be deduced from `mul_succ` and `mul_comm`, however this argument\nwould be circular because the proof of `mul_comm` uses `mul_succ`.":
  "`succ_mul a b` 是 `succ a * b = a * b + b` 的证明。\n\n可以从 `mul_succ` 和 `mul_comm` 推导出来，但是这个是循环论证，\n因为 `mul_comm` 的证明使用了 `mul_succ`。",
- "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
- "`succ_le_succ x y` 是如果 `succ x ≤ succ y` 那么 `x ≤ y` 的证明。",
+ "`le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
+ "`le_of_succ_le_succ x y` 是如果 `succ x ≤ succ y` 那么 `x ≤ y` 的证明。",
  "`succ_eq_add_one n` is the proof that `succ n = n + 1`.":
  "`succ_eq_add_one n` 是 `succ n = n + 1` 的证明。",
  "`succ_add a b` is a proof that `succ a + b = succ (a + b)`.":
@@ -649,8 +649,8 @@
  "这是我的证明：\n```\nrw [mul_comm, mul_add]\nrepeat rw [mul_comm c]\nrfl\n```",
  "Here's my proof:\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Home\" and\ndecide your route.":
  "这是一个证明：\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\n\n尽管 Lean 是一个定理证明器，但很明显我们还没有开发足够的材料使其成为一个合适的计算器。在算法世界，一个更具计算机科学色彩的世界中，我们将开发使这类问题变得更容易的机制（比如快速证明 $20 + 20 \\neq 41$ ）。或者，你也可以在高级加法世界中进行更多数学学习，我们在那里证明了建立不等式理论所需的引理。点击“离开世界”并决定你的路线。",
- "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
- "这是我的证明：\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\n如果你解决了这个关卡，那么你应该可以顺利进入下一个关卡！",
+ "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
+ "这是我的证明：\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\n如果你解决了这个关卡，那么你应该可以顺利进入下一个关卡！",
  "Here's my proof:\n```\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that `≤` is a *partial order* on `ℕ`.\n\nThe boss level of this world is to prove\nthat `≤` is a total order. Let's learn two more easy tactics\nfirst.":
  "这是我的证明：\n```\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\n\n一位路过的数学家评论说，你已经运用“反对称性”证明了 `≤` 在 `ℕ` 上是一个*偏序*。\n\n这个世界中的 Boss 关卡是证明 `≤` 是一个全序。我们先学习两个更简单的策略。",
  "Here's my proof:\n```\ncases hx with d hd\nuse d\nrw [succ_add] at hd\napply succ_inj at hd\nexact hd\n```":

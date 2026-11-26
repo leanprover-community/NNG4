@@ -1590,7 +1590,7 @@ msgstr ""
 #. left
 #. rfl
 #. rw [one_eq_succ_zero] at hx ⊢
-#. apply succ_le_succ at hx
+#. apply le_of_succ_le_succ at hx
 #. apply le_zero at hx
 #. rw [hx]
 #. right
@@ -1604,7 +1604,7 @@ msgid ""
 "left\n"
 "rfl\n"
 "rw [one_eq_succ_zero] at hx ⊢\n"
-"apply succ_le_succ at hx\n"
+"apply le_of_succ_le_succ at hx\n"
 "apply le_zero at hx\n"
 "rw [hx]\n"
 "right\n"
@@ -1619,7 +1619,7 @@ msgstr ""
 "left\n"
 "rfl\n"
 "rw [one_eq_succ_zero] at hx ⊢\n"
-"apply succ_le_succ at hx\n"
+"apply le_of_succ_le_succ at hx\n"
 "apply le_zero at hx\n"
 "rw [hx]\n"
 "right\n"
@@ -5496,8 +5496,8 @@ msgid "`succ_add a b` is a proof that `succ a + b = succ (a + b)`."
 msgstr "`succ_add a b`는 `succ a + b = succ (a + b)`.의 증명입니다."
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
-msgid "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
-msgstr "`succ_le_succ x y`는 `succ x ≤ succ y`이면 `x ≤ y`라는 것의 증명입니다."
+msgid "`le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`."
+msgstr "`le_of_succ_le_succ x y`는 `succ x ≤ succ y`이면 `x ≤ y`라는 것의 증명입니다."
 
 #: Game.Levels.Tutorial.L03two_eq_ss0 Game.Levels.Addition.L03add_comm
 #: Game.Levels.Implication.L09zero_ne_succ Game.Levels.Algorithm.L05pred

@@ -95,8 +95,8 @@
  "`succ_ne_succ m n` є доказом того, що `m ≠ n → succ m ≠ succ n`.",
  "`succ_mul a b` is the proof that `succ a * b = a * b + b`.\n\nIt could be deduced from `mul_succ` and `mul_comm`, however this argument\nwould be circular because the proof of `mul_comm` uses `mul_succ`.":
  "`succ_mul a b` є доказом того, що `succ a * b = a * b + b`.\n\nЙого можна вивести із `mul_succ` та `mul_comm`, однак цей аргумент\nбуде циклічним, тому що доказ `mul_comm` використовує `mul_succ`.",
- "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
- "`succ_le_succ x y` є доказом того, що якщо `succ x ≤ succ y`, то `x ≤ y`.",
+ "`le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
+ "`le_of_succ_le_succ x y` є доказом того, що якщо `succ x ≤ succ y`, то `x ≤ y`.",
  "`succ_eq_add_one n` is the proof that `succ n = n + 1`.":
  "`succ_eq_add_one n` є доказом того, що `succ n = n + 1`.",
  "`succ_add a b` is a proof that `succ a + b = succ (a + b)`.":
@@ -673,8 +673,8 @@
  "Ось мій доказ:\n```\nrw [mul_comm, mul_add]\nrepeat rw [mul_comm c]\nrfl\n```",
  "Here's my proof:\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Home\" and\ndecide your route.":
  "Ось мій доказ:\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\nНезважаючи на те, що Lean є інструментом доказу теорем, наразі цілком зрозуміло, що ми не\nрозробили достатньо матеріалу, щоб зробити його адекватним калькулятором. В Світі\nАлгоритмів, більш комп’ютерно-науковому світі, ми будемо розробляти машинерію, яка зробить\nподібні запитання набагато простішими, а таку мета, як $20 + 20 ≠ 41$, здійсненною.\nКрім того, ви можете робити більше математики в Світі продвинотого додавання, де ми перевіряємо\nлеми, необхідні для отримання робочої теорії нерівностей. Натисніть «Залишити світ» і\nвиріште свій подальшій маршрут.",
- "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
- "Ось мій доказ:\n```\n\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nЯкщо ви вирішите цей рівень, то у вас буде все добре з наступним рівнем!",
+ "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
+ "Ось мій доказ:\n```\n\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nЯкщо ви вирішите цей рівень, то у вас буде все добре з наступним рівнем!",
  "Here's my proof:\n```\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that `≤` is a *partial order* on `ℕ`.\n\nThe boss level of this world is to prove\nthat `≤` is a total order. Let's learn two more easy tactics\nfirst.":
  "Ось мій доказ:\n```\n\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\nПерехожий математик зауважує, що з антисиметрією також,\nви довели, що `≤` є *частковим порядком* на `ℕ`.\n\nРівень боса цього світу - довести\nщо `≤` є тотальним порядком. Давайте вивчимо ще дві прості тактики\nпершими.",
  "Here's my proof:\n```\ncases hx with d hd\nuse d\nrw [succ_add] at hd\napply succ_inj at hd\nexact hd\n```":

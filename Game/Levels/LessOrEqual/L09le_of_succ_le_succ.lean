@@ -8,8 +8,8 @@ TheoremTab "≤"
 
 namespace MyNat
 
-/-- `succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
-TheoremDoc MyNat.succ_le_succ as "succ_le_succ" in "≤"
+/-- `le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`. -/
+TheoremDoc MyNat.le_of_succ_le_succ as "le_of_succ_le_succ" in "≤"
 
 Introduction "
 We've proved that `x ≤ 0` implies `x = 0`. The last two levels
@@ -18,7 +18,7 @@ This lemma will be helpful for them.
 "
 
 /-- If $\operatorname{succ}(x) \leq \operatorname{succ}(y)$ then $x \leq y$. -/
-Statement succ_le_succ (x y : ℕ) (hx : succ x ≤ succ y) : x ≤ y := by
+Statement le_of_succ_le_succ (x y : ℕ) (hx : succ x ≤ succ y) : x ≤ y := by
   cases hx with d hd
   use d
   rw [succ_add] at hd
