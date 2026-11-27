@@ -10,7 +10,7 @@ TheoremTab "+"
 namespace MyNat
 
 macro "simp_add" : tactic => `(tactic|(
-  simp only [add_assoc, add_left_comm, add_comm]))
+  simp [add_assoc, add_left_comm, add_comm]))
 
 /--
 # Overview
@@ -28,10 +28,10 @@ You can make your own tactics in Lean.
 This code here
 ```
 macro \"simp_add\" : tactic => `(tactic|(
-  simp only [add_assoc, add_left_comm, add_comm]))
+  simp [add_assoc, add_left_comm, add_comm]))
 ```
 was used to create a new tactic `simp_add`, which runs
-`simp only [add_assoc, add_left_comm, add_comm]`.
+`simp [add_assoc, add_left_comm, add_comm]`.
 Try running `simp_add` to solve this level!
 "
 

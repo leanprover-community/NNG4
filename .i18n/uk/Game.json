@@ -265,8 +265,8 @@
  "Тепер ви можете закінчити із `exact h`.",
  "You can now `apply mul_left_cancel at h`":
  "Тепер ви можете виконати `apply mul_left_cancel at h`",
- "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp only [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
- "Ви можете створити власні тактики в Lean.\nЦей код нижче\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nбуло використано для створення нової тактики `simp_add`, яка запускає\n`simp only [add_assoc, add_left_comm, add_comm]`.\nСпробуйте запустити `simp_add`, щоб вирішити цей рівень!",
+ "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
+ "Ви можете створити власні тактики в Lean.\nЦей код нижче\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nбуло використано для створення нової тактики `simp_add`, яка запускає\n`simp [add_assoc, add_left_comm, add_comm]`.\nСпробуйте запустити `simp_add`, щоб вирішити цей рівень!",
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "Ви можете просто імітувати попередній доказ, щоб виконати це завдання -- або ви можете знайти спосіб\nвикористати його.",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":

@@ -262,8 +262,8 @@
  "You can now finish with `exact h`.": "이제 `exact h`로 마무리할 수 있습니다.",
  "You can now `apply mul_left_cancel at h`":
  "이제 `apply mul_left_cancel at h`를 할 수 있습니다.",
- "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp only [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
- "Lean에서는 자신만의 택틱을 만들 수 있습니다. 여기의 코드\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\n로 새로운 택틱 `simp_add`을 만들었고, 이 택틱은 `simp only [add_assoc, add_left_comm, add_comm]`를 실행합니다. `simp_add`을 실행해서 이 레벨을 해결해 보세요!",
+ "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
+ "Lean에서는 자신만의 택틱을 만들 수 있습니다. 여기의 코드\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\n로 새로운 택틱 `simp_add`을 만들었고, 이 택틱은 `simp [add_assoc, add_left_comm, add_comm]`를 실행합니다. `simp_add`을 실행해서 이 레벨을 해결해 보세요!",
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "이전 증명을 그대로 흉내 내도 되고, 그 결과를 이용하는 방법을 찾아도 됩니다.",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
@@ -414,8 +414,8 @@
  "Start by unravelling the `1`.": "먼저 `1`을 풀어 써 보세요.",
  "Split into cases `c = 0` and `c = succ e` with `cases c with e`.":
  "`cases c with e`를 사용해 `c = 0`와 `c = succ e`의 경우로 나누세요.",
- "Solve this level in one line with `simp only [add_left_comm, add_comm]`":
- "`simp only [add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요.",
+ "Solve this level in one line with `simp [add_left_comm, add_comm]`":
+ "`simp [add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요.",
  "Solve this level in one line with `simp only [add_assoc, add_left_comm, add_comm]`":
  "`simp only [add_assoc, add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요.",
  "So that's the algorithm: now let's use automation to perform it\nautomatically.":
