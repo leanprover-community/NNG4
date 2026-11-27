@@ -41,5 +41,8 @@ right
 rfl
 ```
 
+The `⊢` in `at hx ⊢` stands for the goal, so that line rewrites
+in `hx` and in the goal at the same time. Type `⊢` with `\\|-`.
+
 If you solved this level then you should be fine with the next level!
 "
