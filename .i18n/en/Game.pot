@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-26\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -2416,9 +2416,9 @@ msgstr ""
 #. §0: $a$
 #. §1: $b$
 #. §2: $c$
-#. §3: $(a + b) \\times c = ac + bc$
+#. §3: $(a + b)c = ac + bc$
 #: Game/Levels/Multiplication/L08add_mul.lean:20
-msgid "Multiplication is distributive over addition.\n"
+msgid "Multiplication is distributive over addition on the right.\n"
 "In other words, for all natural numbers §0, §1 and §2, we have\n"
 "§3."
 msgstr ""
