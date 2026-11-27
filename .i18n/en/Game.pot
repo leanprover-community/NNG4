@@ -444,7 +444,7 @@ msgstr ""
 #. §7: `2 + succ 1 = 4`
 #. §8: `rw [two_eq_succ_one]`
 #. §9: `succ 1 + succ 1 = 4`
-#: Game/Levels/Tutorial/L02rw.lean:141
+#: Game/Levels/Tutorial/L02rw.lean:128
 msgid "## Summary\n"
 "\n"
 "If §0 and there are several §1s in the goal, then\n"
@@ -913,6 +913,7 @@ msgstr ""
 #. §2: `repeat rw [add_zero]`
 #. §3: `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
 #. §4: `a = b`
+#: Game/Levels/Tutorial/L02rw.lean:112
 #: Game/Levels/Tutorial/L05add_zero.lean:51
 msgid "## Summary\n"
 "\n"
@@ -926,49 +927,6 @@ msgid "## Summary\n"
 "§3\n"
 "into the goal\n"
 "§4."
-msgstr ""
-
-#. §0: `repeat t`
-#. §1: `t`
-#. §2: `repeat rw [add_zero]`
-#. §3: `a + 0 + (0 + (0 + 0)) = b + 0 + 0`
-#. §4: `a = b`
-#. §5: `h : X = Y`
-#. §6: `X`
-#. §7: `nth_rewrite 3 [h]`
-#. §8: `X`
-#. §9: `Y`
-#. §10: `2 + 2 = 4`
-#. §11: `nth_rewrite 2 [two_eq_succ_one]`
-#. §12: `2 + succ 1 = 4`
-#. §13: `rw [two_eq_succ_one]`
-#. §14: `succ 1 + succ 1 = 4`
-#: Game/Levels/Tutorial/L02rw.lean:112
-msgid "## Summary\n"
-"\n"
-"§0 repeatedly applies the tactic §1\n"
-"to the goal. You don't need to use this\n"
-"tactic, it just speeds things up sometimes.\n"
-"\n"
-"## Example\n"
-"\n"
-"§2 will turn the goal\n"
-"§3\n"
-"into the goal\n"
-"§4.\n"
-"\"\n"
-"\n"
-"TacticDoc nth_rewrite \"\n"
-"## Summary\n"
-"\n"
-"If §5 and there are several §6s in the goal, then\n"
-"§7 will just change the third §8 to a §9.\n"
-"\n"
-"## Example\n"
-"\n"
-"If the goal is §10 then §11\n"
-"will change the goal to §12. In contrast, §13\n"
-"will change the goal to §14."
 msgstr ""
 
 #. §0: `0`
@@ -1251,7 +1209,7 @@ msgid "Can you take it from here? (note: if you try §0 again, it will\n"
 "take you back to where you started!)"
 msgstr ""
 
-#: Game/Levels/Tutorial/L02rw.lean:176
+#: Game/Levels/Tutorial/L02rw.lean:163
 msgid "Can you take it from here? Click on \"Show more help!\" if you need a hint."
 msgstr ""
 
@@ -1375,7 +1333,7 @@ msgstr ""
 #. §0: `rw [h]`
 #. §1: `y`
 #. §2: `x + 7`
-#: Game/Levels/Tutorial/L02rw.lean:174
+#: Game/Levels/Tutorial/L02rw.lean:161
 msgid "First execute §0 to replace the §1 with §2."
 msgstr ""
 
@@ -1867,7 +1825,7 @@ msgstr ""
 #. §1: $y$
 #. §2: $y = x + 7$
 #. §3: $2y = 2(x + 7)$
-#: Game/Levels/Tutorial/L02rw.lean:171
+#: Game/Levels/Tutorial/L02rw.lean:158
 msgid "If §0 and §1 are natural numbers, and §2, then §3."
 msgstr ""
 
@@ -2127,7 +2085,7 @@ msgstr ""
 #. §7: $y$
 #. §8: `h`
 #. §9: `rw`
-#: Game/Levels/Tutorial/L02rw.lean:159
+#: Game/Levels/Tutorial/L02rw.lean:146
 msgid "In this level the *goal* is §0 but to help us we\n"
 "have an *assumption* §1 saying that §2. Check that you can see §3 in\n"
 "your list of assumptions. Lean thinks of §4 as being a secret proof of the\n"
@@ -2679,7 +2637,7 @@ msgid "Now §0 will change §1 into §2."
 msgstr ""
 
 #. §0: `rfl`
-#: Game/Levels/Tutorial/L02rw.lean:177
+#: Game/Levels/Tutorial/L02rw.lean:164
 msgid "Now §0 will work."
 msgstr ""
 
@@ -3773,7 +3731,7 @@ msgid "You might want to think about whether induction\n"
 msgstr ""
 
 #. §0: `2 + 2 = 4`
-#: Game/Levels/Tutorial/L02rw.lean:180
+#: Game/Levels/Tutorial/L02rw.lean:167
 msgid "You now know enough tactics to prove §0! Let's begin the journey."
 msgstr ""
 
