@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-26\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1703,9 +1703,17 @@ msgstr ""
 #. right
 #. rfl
 #. ```
+#. §1: `⊢`
+#. §2: `at hx ⊢`
+#. §3: `hx`
+#. §4: `⊢`
+#. §5: `\\|-`
 #: Game/Levels/LessOrEqual/L10le_one.lean:30
 msgid "Here's my proof:\n"
 "§0\n"
+"\n"
+"The §1 in §2 stands for the goal, so that line rewrites\n"
+"in §3 and in the goal at the same time. Type §4 with §5.\n"
 "\n"
 "If you solved this level then you should be fine with the next level!"
 msgstr ""
