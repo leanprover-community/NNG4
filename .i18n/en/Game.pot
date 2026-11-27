@@ -57,6 +57,7 @@ msgid "# Read this first\n"
 "\n"
 "We solve goals in Lean using *Tactics*, and the first tactic we're\n"
 "going to learn is called §8, which proves all theorems of the form §9.\n"
+"The name is short for \"reflexivity\".\n"
 "\n"
 "Prove that §10 by executing the §11 tactic."
 msgstr ""
@@ -837,7 +838,7 @@ msgstr ""
 #. §9: `symm at h`
 #. §10: `h`
 #. §11: `5 ≠ 2 + 2`
-#: Game/Levels/Implication/L10one_ne_zero.lean:20
+#: Game/Levels/Implication/L10one_ne_zero.lean:21
 msgid "## Summary\n"
 "\n"
 "The §0 tactic will change a goal or hypothesis of\n"
@@ -1222,7 +1223,7 @@ msgstr ""
 #. §1: `rfl`
 #. §2: `rfl`
 #. §3: `rw`
-#: Game/Levels/Tutorial/L01rfl.lean:77
+#: Game/Levels/Tutorial/L01rfl.lean:78
 msgid "Congratulations! You completed your first verified proof!\n"
 "\n"
 "Remember that §0 is a *tactic*. If you ever want information about the §1 tactic,\n"
@@ -1809,7 +1810,7 @@ msgstr ""
 #. §0: $x$
 #. §1: $q$
 #. §2: $37x+q=37x+q.$
-#: Game/Levels/Tutorial/L01rfl.lean:70
+#: Game/Levels/Tutorial/L01rfl.lean:71
 msgid "If §0 and §1 are arbitrary natural numbers, then §2"
 msgstr ""
 
@@ -2017,7 +2018,7 @@ msgid "In Advanced Addition World we will prove some basic\n"
 msgstr ""
 
 #. §0: `rfl`
-#: Game/Levels/Tutorial/L01rfl.lean:73
+#: Game/Levels/Tutorial/L01rfl.lean:74
 msgid "In order to use the tactic §0 you can enter it in the text box\n"
 "under the goal and hit \"Execute\"."
 msgstr ""
@@ -2093,7 +2094,7 @@ msgid "In this level the *goal* is §0 but to help us we\n"
 "\n"
 "Before we can use §6, we have to \"substitute in for §7\".\n"
 "We do this in Lean by *rewriting* the goal with §8,\n"
-"using the §9 tactic."
+"using the §9 tactic. The name is short for \"rewrite\"."
 msgstr ""
 
 #. §0: `a * b = a * c`
@@ -2395,8 +2396,8 @@ msgstr ""
 msgid "Multiplication usually makes a number bigger, but multiplication by zero can make\n"
 "it smaller. Thus many lemmas about inequalities and multiplication need the\n"
 "hypothesis §0. Here is a key lemma that enables us to use this hypothesis.\n"
-"To help us with the proof, we can use the §1 tactic. Click on the tactic's name\n"
-"on the right to see what it does."
+"To help us with the proof, we can use the §1 tactic. The name is short for\n"
+"\"tautology\". Click on the tactic's name on the right to see what it does."
 msgstr ""
 
 #. §0: ```
@@ -3327,7 +3328,8 @@ msgid "We know §0 is a proof of §1 -- but what\n"
 "\n"
 "The §3 tactic changes a goal §4 to §5, and a goal §6\n"
 "to §7. And §8\n"
-"does the same for a hypothesis §9. We've proved §10 and called\n"
+"does the same for a hypothesis §9. The name is short for \"symmetry\".\n"
+"We've proved §10 and called\n"
 "the proof §11; now try proving §12."
 msgstr ""
 
@@ -3629,7 +3631,7 @@ msgstr ""
 #. exact zero_ne_one
 #. ```
 #. §1: `exact`
-#: Game/Levels/Implication/L10one_ne_zero.lean:47
+#: Game/Levels/Implication/L10one_ne_zero.lean:48
 msgid "What do you think of this two-liner:\n"
 "§0\n"
 "\n"
@@ -4267,7 +4269,7 @@ msgstr ""
 #: Game/Levels/Addition/L02succ_add.lean:19
 #: Game/Levels/Multiplication/L08add_mul.lean:15
 #: Game/Levels/Power/L04one_pow.lean:9
-#: Game/Levels/Implication/L10one_ne_zero.lean:39
+#: Game/Levels/Implication/L10one_ne_zero.lean:40
 #: Game/Levels/Algorithm/L01add_left_comm.lean:11
 #: Game/Levels/LessOrEqual/L02zero_le.lean:14
 #: Game/Levels/LessOrEqual/L03le_succ_self.lean:9
@@ -4638,7 +4640,7 @@ msgstr ""
 #: Game/Levels/Implication/L06intro.lean:34
 #: Game/Levels/Implication/L07intro2.lean:14
 #: Game/Levels/Implication/L09zero_ne_succ.lean:32
-#: Game/Levels/Implication/L10one_ne_zero.lean:42
+#: Game/Levels/Implication/L10one_ne_zero.lean:43
 #: Game/Levels/Implication/L11two_add_two_ne_five.lean:17
 #: Game/Levels/Algorithm/L02add_algo1.lean:34
 #: Game/Levels/Algorithm/L06is_zero.lean:51

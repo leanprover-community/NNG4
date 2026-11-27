@@ -63,6 +63,7 @@ are numbers.
 
 We solve goals in Lean using *Tactics*, and the first tactic we're
 going to learn is called `rfl`, which proves all theorems of the form $X = X$.
+The name is short for \"reflexivity\".
 
 Prove that $37x+q=37x+q$ by executing the `rfl` tactic.
 "

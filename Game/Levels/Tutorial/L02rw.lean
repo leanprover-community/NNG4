@@ -152,7 +152,7 @@ assumption, rather like `x` is a secret number.
 
 Before we can use `rfl`, we have to \"substitute in for $y$\".
 We do this in Lean by *rewriting* the goal with `h`,
-using the `rw` tactic.
+using the `rw` tactic. The name is short for \"rewrite\".
 "
 
 /-- If $x$ and $y$ are natural numbers, and $y = x + 7$, then $2y = 2(x + 7)$. -/
