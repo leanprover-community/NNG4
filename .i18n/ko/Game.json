@@ -97,8 +97,8 @@
  "`succ_ne_succ m n`는 `m ≠ n → succ m ≠ succ n`의 증명입니다.",
  "`succ_mul a b` is the proof that `succ a * b = a * b + b`.\n\nIt could be deduced from `mul_succ` and `mul_comm`, however this argument\nwould be circular because the proof of `mul_comm` uses `mul_succ`.":
  "`succ_mul a b`는 `succ a * b = a * b + b`의 증명입니다.\n\n`mul_succ`와 `mul_comm`에서 이끌어낼 수도 있지만, `mul_comm`의 증명이 `mul_succ`를 사용하므로 그렇게 하면 순환 논증이 됩니다.",
- "`succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
- "`succ_le_succ x y`는 `succ x ≤ succ y`이면 `x ≤ y`라는 것의 증명입니다.",
+ "`le_of_succ_le_succ x y` is a proof that if `succ x ≤ succ y` then `x ≤ y`.":
+ "`le_of_succ_le_succ x y`는 `succ x ≤ succ y`이면 `x ≤ y`라는 것의 증명입니다.",
  "`succ_eq_add_one n` is the proof that `succ n = n + 1`.":
  "`succ_eq_add_one n`는 `succ n = n + 1`의 증명입니다.",
  "`succ_add a b` is a proof that `succ a + b = succ (a + b)`.":
@@ -676,8 +676,8 @@
  "제 증명은 이렇습니다:\n```\nrw [mul_comm, mul_add]\nrepeat rw [mul_comm c]\nrfl\n```",
  "Here's my proof:\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\nEven though Lean is a theorem prover, right now it's pretty clear that we have not\ndeveloped enough material to make it an adequate calculator. In Algorithm\nWorld, a more computer-sciency world, we will develop machinery which makes\nquestions like this much easier, and goals like $20 + 20 ≠ 41$ feasible.\nAlternatively you can do more mathematics in Advanced Addition World, where we prove\nthe lemmas needed to get a working theory of inequalities. Click \"Home\" and\ndecide your route.":
  "제 증명은 이렇습니다:\n```\nintro h\nrw [add_succ, add_succ, add_zero] at h\nrepeat apply succ_inj at h\napply zero_ne_succ at h\nexact h\n```\n\nLean은 정리 증명기지만, 지금까지 만든 것만으로는 계산기로 쓰기에 아직 부족하다는 게 분명합니다. 좀 더 컴퓨터과학적인 알고리즘 월드에서는 이런 문제를 훨씬 쉽게 만들고 $20 + 20 ≠ 41$ 같은 목표도 다룰 수 있게 해 주는 도구를 개발합니다.\n대신 고급 덧셈 월드로 가서 수학을 더 진행할 수도 있습니다. 거기서는 부등식 이론을 제대로 만들기 위해 필요한 정리들을 증명합니다. \"홈\"을 누르고 어느 길로 갈지 선택하세요.",
- "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
- "제 증명은 이렇습니다:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\n이 레벨을 풀었다면 다음 레벨도 문제없을 겁니다!",
+ "Here's my proof:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\nIf you solved this level then you should be fine with the next level!":
+ "제 증명은 이렇습니다:\n```\ncases x with y\nleft\nrfl\nrw [one_eq_succ_zero] at hx ⊢\napply le_of_succ_le_succ at hx\napply le_zero at hx\nrw [hx]\nright\nrfl\n```\n\n이 레벨을 풀었다면 다음 레벨도 문제없을 겁니다!",
  "Here's my proof:\n```\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\nA passing mathematician remarks that with antisymmetry as well,\nyou have proved that `≤` is a *partial order* on `ℕ`.\n\nThe boss level of this world is to prove\nthat `≤` is a total order. Let's learn two more easy tactics\nfirst.":
  "제 증명은 이렇습니다:\n```\ncases hxy with a ha\ncases hyx with b hb\nrw [ha]\nrw [ha, add_assoc] at hb\nsymm at hb\napply add_right_eq_self at hb\napply add_right_eq_zero at hb\nrw [hb, add_zero]\nrfl\n```\n\n지나가던 수학자가 이제 반대칭성까지 있으므로 `ℕ` 위의 `≤`이 *부분순서* 임을 증명했다고 말합니다.\n\n이 월드의 보스 레벨은 `≤`가 전순서임을 증명하는 것입니다. 그 전에 쉬운 택틱 두 개를 더 배워 봅시다.",
  "Here's my proof:\n```\ncases hx with d hd\nuse d\nrw [succ_add] at hd\napply succ_inj at hd\nexact hd\n```":
