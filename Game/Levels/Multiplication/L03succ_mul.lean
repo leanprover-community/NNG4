@@ -12,11 +12,6 @@ Introduction
 Similarly we have `mul_succ`
 but we're going to need `succ_mul` (guess what it says -- maybe you
 are getting the hang of Lean's naming conventions).
-
-The last level from addition world might help you in this level.
-If you can't remember what it is, you can go back to the
-home screen by clicking the house icon and then taking a look.
-You won't lose any progress.
 "
 
 /--
@@ -31,12 +26,15 @@ TheoremDoc MyNat.succ_mul as "succ_mul" in "*"
 $(\operatorname{succ}\ a) \times b = a\times b + b$. -/
 Statement succ_mul
     (a b : ℕ) : succ a * b = a * b + b := by
+  Hint (hidden := true) "This level needs induction. Try `induction b with d hd`."
   induction b with d hd
   · rw [mul_zero]
     rw [mul_zero]
     rw [add_zero]
     rfl
-  · rw [mul_succ]
+  · Hint (hidden := true) "`add_right_comm`, which you proved in the last level of
+    Addition World, will be useful here."
+    rw [mul_succ]
     rw [mul_succ]
     rw [hd]
     rw [add_succ]

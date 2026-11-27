@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-26\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1382,7 +1382,7 @@ msgstr ""
 #. §0: $a$
 #. §1: $b$
 #. §2: $(\\operatorname{succ}\\ a) \\times b = a\\times b + b$
-#: Game/Levels/Multiplication/L03succ_mul.lean:30
+#: Game/Levels/Multiplication/L03succ_mul.lean:25
 msgid "For all natural numbers §0 and §1, we have\n"
 "§2."
 msgstr ""
@@ -2844,12 +2844,7 @@ msgstr ""
 #: Game/Levels/Multiplication/L03succ_mul.lean:10
 msgid "Similarly we have §0\n"
 "but we're going to need §1 (guess what it says -- maybe you\n"
-"are getting the hang of Lean's naming conventions).\n"
-"\n"
-"The last level from addition world might help you in this level.\n"
-"If you can't remember what it is, you can go back to the\n"
-"home screen by clicking the house icon and then taking a look.\n"
-"You won't lose any progress."
+"are getting the hang of Lean's naming conventions)."
 msgstr ""
 
 #: Game/Levels/Algorithm/L02add_algo1.lean:40
@@ -3127,6 +3122,11 @@ msgstr ""
 #: Game/Levels/Multiplication/L06two_mul.lean:9
 msgid "This level is more important than you think; it plays\n"
 "a useful role when battling a big boss later on."
+msgstr ""
+
+#. §0: `induction b with d hd`
+#: Game/Levels/Multiplication/L03succ_mul.lean:29
+msgid "This level needs induction. Try §0."
 msgstr ""
 
 #. §0: `a ≠ 0`
@@ -4522,7 +4522,7 @@ msgstr ""
 #. §3: `mul_comm`
 #. §4: `mul_comm`
 #. §5: `mul_succ`
-#: Game/Levels/Multiplication/L03succ_mul.lean:22
+#: Game/Levels/Multiplication/L03succ_mul.lean:17
 msgid "§0 is the proof that §1.\n"
 "\n"
 "It could be deduced from §2 and §3, however this argument\n"
@@ -4612,6 +4612,12 @@ msgstr ""
 #. §0: `rw [one_eq_succ_zero]`
 #: Game/Levels/Tutorial/L07add_succ.lean:44
 msgid "§0 will do this."
+msgstr ""
+
+#. §0: `add_right_comm`
+#: Game/Levels/Multiplication/L03succ_mul.lean:35
+msgid "§0, which you proved in the last level of\n"
+"Addition World, will be useful here."
 msgstr ""
 
 #. §0: `Add a b`
