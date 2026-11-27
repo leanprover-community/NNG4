@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-26\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -2857,7 +2857,7 @@ msgid "So that's the algorithm: now let's use automation to perform it\n"
 "automatically."
 msgstr ""
 
-#. §0: `simp only [add_left_comm, add_comm]`
+#. §0: `simp [add_left_comm, add_comm]`
 #: Game/Levels/Algorithm/L03add_algo2.lean:36
 msgid "Solve this level in one line with §0"
 msgstr ""
@@ -3691,10 +3691,10 @@ msgstr ""
 
 #. §0: ```
 #. macro \"simp_add\" : tactic => `(tactic|(
-#.   simp only [add_assoc, add_left_comm, add_comm]))
+#.   simp [add_assoc, add_left_comm, add_comm]))
 #. ```
 #. §1: `simp_add`
-#. §2: `simp only [add_assoc, add_left_comm, add_comm]`
+#. §2: `simp [add_assoc, add_left_comm, add_comm]`
 #. §3: `simp_add`
 #: Game/Levels/Algorithm/L04add_algo3.lean:25
 msgid "You can make your own tactics in Lean.\n"
