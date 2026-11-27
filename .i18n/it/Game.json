@@ -267,8 +267,8 @@
  "Concludi la dimostrazione con `exact h`.",
  "You can now `apply mul_left_cancel at h`":
  "Ora puoi fare `apply mul_left_cancel at h`",
- "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp only [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
- "Puoi creare le tue tattiche personalizzate su Lean.\nCon questo codice\n```\nmacro \"simp_add\" : tattica => `(tattica|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nabbiamo creato la nuova tattica `simp_add`, che esegue\n`simp only [add_assoc, add_left_comm, add_comm]`.\nProva ad eseguire `simp_add` per risolvere questo livello!",
+ "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
+ "Puoi creare le tue tattiche personalizzate su Lean.\nCon questo codice\n```\nmacro \"simp_add\" : tattica => `(tattica|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nabbiamo creato la nuova tattica `simp_add`, che esegue\n`simp [add_assoc, add_left_comm, add_comm]`.\nProva ad eseguire `simp_add` per risolvere questo livello!",
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "Puoi imitare la dimostrazione precedente per risolvere questa qua -- oppure potresti cercare un\nmodo di applicarla.",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
@@ -418,8 +418,8 @@
  "Start by unravelling the `1`.": "Comincia espandendo `1`.",
  "Split into cases `c = 0` and `c = succ e` with `cases c with e`.":
  "Suddividi la dimostrazione nei casi `c = 0` e `c = succ e` con `cases c with e`.",
- "Solve this level in one line with `simp only [add_left_comm, add_comm]`":
- "Completa questo livello in un'unica riga con `simp only [add_left_comm, add_comm]`",
+ "Solve this level in one line with `simp [add_left_comm, add_comm]`":
+ "Completa questo livello in un'unica riga con `simp [add_left_comm, add_comm]`",
  "So that's the algorithm: now let's use automation to perform it\nautomatically.":
  "Questo è l'algoritmo: ora cerchiamo di automatizzarlo con\nl'automazione di Lean.",
  "Similarly we have `mul_succ`\nbut we're going to need `succ_mul` (guess what it says -- maybe you\nare getting the hang of Lean's naming conventions).\n\nThe last level from addition world might help you in this level.\nIf you can't remember what it is, you can go back to the\nhome screen by clicking the house icon and then taking a look.\nYou won't lose any progress.":

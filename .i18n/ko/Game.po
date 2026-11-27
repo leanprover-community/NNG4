@@ -2183,7 +2183,7 @@ msgid "The rfl tactic"
 msgstr "rfl 택틱"
 
 #. macro \"simp_add\" : tactic => `(tactic|(
-#.   simp only [add_assoc, add_left_comm, add_comm]))
+#.   simp [add_assoc, add_left_comm, add_comm]))
 #. ```
 #: Game.Levels.Algorithm.L04add_algo3
 msgid ""
@@ -2191,18 +2191,18 @@ msgid ""
 "This code here\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
-"  simp only [add_assoc, add_left_comm, add_comm]))\n"
+"  simp [add_assoc, add_left_comm, add_comm]))\n"
 "```\n"
 "was used to create a new tactic `simp_add`, which runs\n"
-"`simp only [add_assoc, add_left_comm, add_comm]`.\n"
+"`simp [add_assoc, add_left_comm, add_comm]`.\n"
 "Try running `simp_add` to solve this level!"
 msgstr ""
 "Lean에서는 자신만의 택틱을 만들 수 있습니다. 여기의 코드\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
-"  simp only [add_assoc, add_left_comm, add_comm]))\n"
+"  simp [add_assoc, add_left_comm, add_comm]))\n"
 "```\n"
-"로 새로운 택틱 `simp_add`을 만들었고, 이 택틱은 `simp only [add_assoc, add_left_comm, add_comm]`를 실행합니다. `simp_add`을 실행해서 이 레벨을 해결해 보세요!"
+"로 새로운 택틱 `simp_add`을 만들었고, 이 택틱은 `simp [add_assoc, add_left_comm, add_comm]`를 실행합니다. `simp_add`을 실행해서 이 레벨을 해결해 보세요!"
 
 #: Game.Levels.Tutorial.L05add_zero Game.Levels.Tutorial.L06add_zero2
 #: Game.Levels.Power.L01zero_pow_zero Game.Levels.Algorithm.L09decide2
@@ -4426,8 +4426,8 @@ msgid "Solve this level in one line with `simp only [add_assoc, add_left_comm, a
 msgstr "`simp only [add_assoc, add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요."
 
 #: Game.Levels.Algorithm.L03add_algo2
-msgid "Solve this level in one line with `simp only [add_left_comm, add_comm]`"
-msgstr "`simp only [add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요."
+msgid "Solve this level in one line with `simp [add_left_comm, add_comm]`"
+msgstr "`simp [add_left_comm, add_comm]`를 사용해 이 레벨을 한 줄로 해결하세요."
 
 #: Game.Levels.AdvMultiplication.L09mul_left_cancel
 msgid "Split into cases `c = 0` and `c = succ e` with `cases c with e`."

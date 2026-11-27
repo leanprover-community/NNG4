@@ -254,8 +254,8 @@
  "You can now finish with `exact h`.": "现在您可以使用 `exact h` 来完成证明。",
  "You can now `apply mul_left_cancel at h`":
  "现在您可以 `apply mul_left_cancel at h` 。",
- "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp only [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
- "你可以在 Lean 中创建自己的策略。\n这里的代码\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\n被用来创建一个新的策略 `simp_add`，它会执行\n`simp only [add_assoc, add_left_comm, add_comm]`。\n尝试运行 `simp_add` 来解决这个关卡！",
+ "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
+ "你可以在 Lean 中创建自己的策略。\n这里的代码\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\n被用来创建一个新的策略 `simp_add`，它会执行\n`simp [add_assoc, add_left_comm, add_comm]`。\n尝试运行 `simp_add` 来解决这个关卡！",
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "你可以模仿之前的证明来完成这个——或者你可以想出一种方法\n使用之前的证明。",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":
@@ -399,8 +399,8 @@
  "Start by unravelling the `1`.": "从展开 \"1 \"开始。",
  "Split into cases `c = 0` and `c = succ e` with `cases c with e`.":
  "用 `c cases c with e` 分成 `c = 0` 和 `c = succ e` 两种情况讨论。",
- "Solve this level in one line with `simp only [add_left_comm, add_comm]`":
- "用 `simp only [add_assoc, add_left_comm, add_comm]` 在一行中证明这一关",
+ "Solve this level in one line with `simp [add_left_comm, add_comm]`":
+ "用 `simp [add_assoc, add_left_comm, add_comm]` 在一行中证明这一关",
  "So that's the algorithm: now let's use automation to perform it\nautomatically.":
  "所以这就是算法：现在让我们使用机器来自动执行它。",
  "Similarly we have `mul_succ`\nbut we're going to need `succ_mul` (guess what it says -- maybe you\nare getting the hang of Lean's naming conventions).\n\nThe last level from addition world might help you in this level.\nIf you can't remember what it is, you can go back to the\nhome screen by clicking the house icon and then taking a look.\nYou won't lose any progress.":

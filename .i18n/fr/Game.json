@@ -267,8 +267,8 @@
  "Vous pouvez maintenant terminer avec `exact h`.",
  "You can now `apply mul_left_cancel at h`":
  "Vous pouvez maintenant `apply mul_left_cancel at h`",
- "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp only [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
- "Vous pouvez créer vos propres tactiques dans Lean.\nCe code ci-dessous\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp only [add_assoc, add_left_comm, add_comm]))\n```\na été utilisé pour créer une nouvelle tactique `simp_add`, qui exécute\n`simp only [add_assoc, add_left_comm, add_comm]`.\nEssayez d'exécuter `simp_add` pour résoudre ce niveau !",
+ "You can make your own tactics in Lean.\nThis code here\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\nwas used to create a new tactic `simp_add`, which runs\n`simp [add_assoc, add_left_comm, add_comm]`.\nTry running `simp_add` to solve this level!":
+ "Vous pouvez créer vos propres tactiques dans Lean.\nCe code ci-dessous\n```\nmacro \"simp_add\" : tactic => `(tactic|(\n  simp [add_assoc, add_left_comm, add_comm]))\n```\na été utilisé pour créer une nouvelle tactique `simp_add`, qui exécute\n`simp [add_assoc, add_left_comm, add_comm]`.\nEssayez d'exécuter `simp_add` pour résoudre ce niveau !",
  "You can just mimic the previous proof to do this one -- or you can figure out a way\nof using it.":
  "Vous pouvez simplement imiter la preuve précédente pour celui-ci -- ou trouver un moyen\nde l'utiliser.",
  "You can do induction on any of the three variables. Some choices\nare harder to push through than others. Can you do the inductive step in\n5 rewrites only?":

@@ -3360,8 +3360,8 @@ msgstr "从`induction «{y}» with d hd`开始。"
 
 #: Game.Levels.Algorithm.L03add_algo2
 #, fuzzy
-msgid "Solve this level in one line with `simp only [add_left_comm, add_comm]`"
-msgstr "用 `simp only [add_assoc, add_left_comm, add_comm]` 在一行中证明这一关"
+msgid "Solve this level in one line with `simp [add_left_comm, add_comm]`"
+msgstr "用 `simp [add_assoc, add_left_comm, add_comm]` 在一行中证明这一关"
 
 #: Game.Levels.LessOrEqual.L09succ_le_succ
 msgid ""
@@ -3616,20 +3616,20 @@ msgid ""
 "This code here\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
-"  simp only [add_assoc, add_left_comm, add_comm]))\n"
+"  simp [add_assoc, add_left_comm, add_comm]))\n"
 "```\n"
 "was used to create a new tactic `simp_add`, which runs\n"
-"`simp only [add_assoc, add_left_comm, add_comm]`.\n"
+"`simp [add_assoc, add_left_comm, add_comm]`.\n"
 "Try running `simp_add` to solve this level!"
 msgstr ""
 "你可以在 Lean 中创建自己的策略。\n"
 "这里的代码\n"
 "```\n"
 "macro \"simp_add\" : tactic => `(tactic|(\n"
-"  simp only [add_assoc, add_left_comm, add_comm]))\n"
+"  simp [add_assoc, add_left_comm, add_comm]))\n"
 "```\n"
 "被用来创建一个新的策略 `simp_add`，它会执行\n"
-"`simp only [add_assoc, add_left_comm, add_comm]`。\n"
+"`simp [add_assoc, add_left_comm, add_comm]`。\n"
 "尝试运行 `simp_add` 来解决这个关卡！"
 
 #: Game.Levels.Power.L06pow_add
