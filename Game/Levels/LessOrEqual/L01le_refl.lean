@@ -51,6 +51,8 @@ means \"there exists\". So `a ≤ b` means that there exists
 a number `c` such that `b = a + c`. This definition works
 because there are no negative numbers in this game.
 
+In the names of theorems, `≤` is written `le`, which is short for \"less than or equal\".
+
 To *prove* an \"exists\" statement, use the `use` tactic.
 Let's see an example.
 "

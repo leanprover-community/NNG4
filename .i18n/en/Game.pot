@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.36.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-26\n"
+"POT-Creation-Date: 2026-11-27\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -1210,9 +1210,11 @@ msgstr ""
 #. §1: `0 ≠ 1`
 #. §2: `zero_ne_succ n`
 #. §3: `0 ≠ succ n`
+#. §4: `ne`
 #: Game/Levels/Implication/L09zero_ne_succ.lean:23
 msgid "As warm-up for §0 let's prove §1. To do this we need to\n"
 "introduce Peano's last axiom §2, a proof that §3.\n"
+"The §4 in the name is short for \"not equal\".\n"
 "To learn about this result, click on it in the list of lemmas on the right."
 msgstr ""
 
@@ -1919,7 +1921,7 @@ msgstr ""
 
 #. §0: $x$
 #. §1: $x \\le x$
-#: Game/Levels/LessOrEqual/L01le_refl.lean:65
+#: Game/Levels/LessOrEqual/L01le_refl.lean:67
 #: Game/Levels/LessOrEqual/L02zero_le.lean:17
 #: Game/Levels/LessOrEqual/L03le_succ_self.lean:15
 msgid "If §0 is a number, then §1."
@@ -1978,7 +1980,7 @@ msgstr ""
 #. §1: $x=3$
 #: Game/Levels/Implication/L04succ_inj.lean:52
 #: Game/Levels/Implication/L05succ_inj2.lean:21
-#: Game/Levels/Algorithm/L05pred.lean:38
+#: Game/Levels/Algorithm/L05pred.lean:39
 #: Game/Levels/Algorithm/L07succ_ne_succ.lean:61
 #: Game/Levels/AdvAddition/L05add_right_eq_zero.lean:76
 #: Game/Levels/AdvAddition/L06add_left_eq_zero.lean:19
@@ -2455,7 +2457,7 @@ msgstr ""
 msgid "Next turn §0 into §1 with §2."
 msgstr ""
 
-#: Game/Levels/Implication/L09zero_ne_succ.lean:42
+#: Game/Levels/Implication/L09zero_ne_succ.lean:43
 #: Game/Levels/AdvAddition/L01add_right_cancel.lean:34
 msgid "Nice!"
 msgstr ""
@@ -2472,7 +2474,7 @@ msgstr ""
 
 #. §0: `succ_inj`
 #. §1: $0$
-#: Game/Levels/Algorithm/L05pred.lean:48
+#: Game/Levels/Algorithm/L05pred.lean:49
 msgid "Nice! You've proved §0!\n"
 "Let's now prove Peano's other axiom, that successors can't be §1."
 msgstr ""
@@ -2499,7 +2501,7 @@ msgstr ""
 #. §0: `1`
 #. §1: `succ 0`
 #. §2: `h`
-#: Game/Levels/Implication/L09zero_ne_succ.lean:36
+#: Game/Levels/Implication/L09zero_ne_succ.lean:37
 msgid "Now change §0 to §1 in §2."
 msgstr ""
 
@@ -2580,7 +2582,7 @@ msgid "Now you can §0"
 msgstr ""
 
 #. §0: `apply zero_ne_succ at h`
-#: Game/Levels/Implication/L09zero_ne_succ.lean:38
+#: Game/Levels/Implication/L09zero_ne_succ.lean:39
 #: Game/Levels/AdvMultiplication/L06mul_right_eq_one.lean:75
 msgid "Now you can §0."
 msgstr ""
@@ -2888,7 +2890,7 @@ msgid "Start with §0 (remembering that §1 is just notation\n"
 msgstr ""
 
 #. §0: `rw [← pred_succ a]`
-#: Game/Levels/Algorithm/L05pred.lean:40
+#: Game/Levels/Algorithm/L05pred.lean:41
 msgid "Start with §0 and take it from there."
 msgstr ""
 
@@ -2942,7 +2944,7 @@ msgid "Start with §0, to change the goal into its\n"
 msgstr ""
 
 #. §0: `intro h`
-#: Game/Levels/Implication/L09zero_ne_succ.lean:34
+#: Game/Levels/Implication/L09zero_ne_succ.lean:35
 #: Game/Levels/LessOrEqual/L04le_trans.lean:33
 #: Game/Levels/LessOrEqual/L08le_total.lean:24
 #: Game/Levels/AdvMultiplication/L02mul_left_ne_zero.lean:22
@@ -3061,7 +3063,7 @@ msgstr ""
 #. §0: `«{x}» ≤ «{x}»`
 #. §1: `«{x}» = «{x}» + 0`
 #. §2: `use 0`
-#: Game/Levels/LessOrEqual/L01le_refl.lean:67
+#: Game/Levels/LessOrEqual/L01le_refl.lean:69
 msgid "The reason §0 is because §1.\n"
 "So you should start this proof with §2."
 msgstr ""
@@ -3420,7 +3422,8 @@ msgid "We now start work on an algorithm to do addition more efficiently. Recall
 "way to define functions from types such as the naturals.\n"
 "\n"
 "Let's define a new function §1 from the naturals to the naturals, which\n"
-"attempts to subtract 1 from the input. The definition is this:\n"
+"attempts to subtract 1 from the input. The name is short for \"predecessor\".\n"
+"The definition is this:\n"
 "\n"
 "§2\n"
 "\n"
@@ -3715,7 +3718,7 @@ msgstr ""
 msgid "You can now §0"
 msgstr ""
 
-#: Game/Levels/LessOrEqual/L01le_refl.lean:70
+#: Game/Levels/LessOrEqual/L01le_refl.lean:72
 msgid "You can probably take it from here."
 msgstr ""
 
@@ -4130,14 +4133,18 @@ msgstr ""
 #. §2: `a ≤ b`
 #. §3: `c`
 #. §4: `b = a + c`
-#. §5: `use`
+#. §5: `≤`
+#. §6: `le`
+#. §7: `use`
 #: Game/Levels/LessOrEqual/L01le_refl.lean:47
 msgid "§0 is *notation* for §1. This \"backwards E\"\n"
 "means \"there exists\". So §2 means that there exists\n"
 "a number §3 such that §4. This definition works\n"
 "because there are no negative numbers in this game.\n"
 "\n"
-"To *prove* an \"exists\" statement, use the §5 tactic.\n"
+"In the names of theorems, §5 is written §6, which is short for \"less than or equal\".\n"
+"\n"
+"To *prove* an \"exists\" statement, use the §7 tactic.\n"
 "Let's see an example."
 msgstr ""
 
@@ -4184,8 +4191,8 @@ msgstr ""
 #: Game/Levels/Tutorial/L03two_eq_ss0.lean:33
 #: Game/Levels/Tutorial/L03two_eq_ss0.lean:36
 #: Game/Levels/Addition/L03add_comm.lean:18
-#: Game/Levels/Implication/L09zero_ne_succ.lean:29
-#: Game/Levels/Algorithm/L05pred.lean:33
+#: Game/Levels/Implication/L09zero_ne_succ.lean:30
+#: Game/Levels/Algorithm/L05pred.lean:34
 #: Game/Levels/Algorithm/L06is_zero.lean:30
 #: Game/Levels/Algorithm/L06is_zero.lean:33
 #: Game/Levels/Algorithm/L06is_zero.lean:36
@@ -4196,7 +4203,7 @@ msgstr ""
 #. §0: `le_refl x`
 #. §1: `x ≤ x`
 #. §2: $\\le$
-#: Game/Levels/LessOrEqual/L01le_refl.lean:58
+#: Game/Levels/LessOrEqual/L01le_refl.lean:60
 msgid "§0 is a proof of §1.\n"
 "\n"
 "The reason for the name is that this lemma is \"reflexivity of §2\""
@@ -4671,7 +4678,7 @@ msgstr ""
 #: Game/Levels/Tutorial/L08twoaddtwo.lean:21
 #: Game/Levels/Implication/L06intro.lean:34
 #: Game/Levels/Implication/L07intro2.lean:14
-#: Game/Levels/Implication/L09zero_ne_succ.lean:32
+#: Game/Levels/Implication/L09zero_ne_succ.lean:33
 #: Game/Levels/Implication/L10one_ne_zero.lean:42
 #: Game/Levels/Implication/L11two_add_two_ne_five.lean:17
 #: Game/Levels/Algorithm/L02add_algo1.lean:34
