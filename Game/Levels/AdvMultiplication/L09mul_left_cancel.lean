@@ -40,7 +40,9 @@ Statement mul_left_cancel (a b c : ℕ) (ha : a ≠ 0) (h : a * b = a * c) : b =
     · rw [h2]
       rfl
   · Hint "The inductive hypothesis `hd` is \"For all natural numbers `c`, `a * d = a * c → d = c`\".
-    You can `apply` it `at` any hypothesis of the form `a * d = a * ?`."
+    You can `apply` it `at` any hypothesis of the form `a * d = a * ?`.
+    A hypothesis like `a * succ d = a * succ e` is not of this form yet,
+    so get rid of the `succ`s first."
     Hint (hidden := true) "Split into cases `c = 0` and `c = succ e` with `cases c with e`."
     cases c with e
     · rw [mul_succ, mul_zero] at h

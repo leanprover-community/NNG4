@@ -2832,7 +2832,7 @@ msgstr ""
 #. §0: `c = 0`
 #. §1: `c = succ e`
 #. §2: `cases c with e`
-#: Game/Levels/AdvMultiplication/L09mul_left_cancel.lean:44
+#: Game/Levels/AdvMultiplication/L09mul_left_cancel.lean:46
 msgid "Split into cases §0 and §1 with §2."
 msgstr ""
 
@@ -2951,9 +2951,13 @@ msgstr ""
 #. §3: `apply`
 #. §4: `at`
 #. §5: `a * d = a * ?`
+#. §6: `a * succ d = a * succ e`
+#. §7: `succ`
 #: Game/Levels/AdvMultiplication/L09mul_left_cancel.lean:42
 msgid "The inductive hypothesis §0 is \"For all natural numbers §1, §2\".\n"
-"You can §3 it §4 any hypothesis of the form §5."
+"You can §3 it §4 any hypothesis of the form §5.\n"
+"A hypothesis like §6 is not of this form yet,\n"
+"so get rid of the §7s first."
 msgstr ""
 
 #: Game/Levels/AdvMultiplication/L10mul_right_eq_self.lean:14
